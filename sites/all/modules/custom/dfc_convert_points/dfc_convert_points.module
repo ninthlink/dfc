@@ -1,0 +1,48 @@
+<?php
+
+function dfc_convert_points_cron(){
+  $cur_month = date('n');
+  $points_converted_month = variable_get('points_coverted_month', 0);
+  if($points_converted_month <> $cur_month){
+    $num_updated = db_update('userpoints_txn')
+      ->fields(array(
+        'tid' => 0,
+      ))
+      ->condition('tid', 1, '=')
+      ->execute();
+  
+    $result = db_select('userpoints', 'u')
+      ->fields('u', array('points', 'max_points', 'uid', 'tid', 'pid'))
+      ->orderBy('tid', 'ASC')
+      ->execute();
+    while($record = $result->fetchAssoc()){
+      if($record['tid'] == 0){
+        $lifetime_points[$record['uid']] = $record;
+      }elseif($record['tid'] ==1){
+        if(!isset($lifetime_points[$record['uid']])){
+          $num_updated = db_update('userpoints')
+            ->fields(array(
+              'tid' => 0,
+            ))
+          ->condition('pid', $record['pid'], '=')
+          ->execute();
+        }else{
+          $points = $lifetime_points[$record['uid']]['points'] + $record['points'];
+          $max_points = $lifetime_points[$record['uid']]['max_points'] + $record['max_points'];
+          $num_updated = db_update('userpoints')
+            ->fields(array(
+              'points' => $points,
+              'max_points' => $max_points
+            ))
+          ->condition('pid', $lifetime_points[$record['uid']]['pid'], '=')
+          ->execute();
+          $num_deleted = db_delete('userpoints')
+            ->condition('pid', $record['pid'])
+            ->execute();
+        }
+      }
+    }
+    variable_set('points_coverted_month', $cur_month);
+  }
+}
+?>

@@ -1,0 +1,4 @@
+name = DFC Convert Points
+project = "DFC"
+description = Converts the monthly points to lifetime points
+core = 7.x

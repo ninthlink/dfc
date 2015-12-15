@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DFC Content Types feature.
+ */
+
+include_once 'dfc_content_types.features.inc';

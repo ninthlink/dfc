@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DFC Contexts feature.
+ */
+
+include_once 'dfc_contexts.features.inc';

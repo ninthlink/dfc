@@ -2632,15 +2632,15 @@
   content: ""; }
 
 /* line 1, ../sass/abstractions/_abstractions.scss */
-.no-list, .block--menu-menu-footer-menu ul.menu, .footer-copyright ul.social-links {
+.no-list, .block--menu-menu-footer-menu ul.menu, .block--bean-footer-copyright ul.social-links {
   margin: 0;
   padding: 0;
   list-style: none; }
   /* line 6, ../sass/abstractions/_abstractions.scss */
-  .no-list li, .block--menu-menu-footer-menu ul.menu li, .footer-copyright ul.social-links li,
+  .no-list li, .block--menu-menu-footer-menu ul.menu li, .block--bean-footer-copyright ul.social-links li,
   .no-list li.leaf,
   .block--menu-menu-footer-menu ul.menu li.leaf,
-  .footer-copyright ul.social-links li.leaf {
+  .block--bean-footer-copyright ul.social-links li.leaf {
     margin: 0;
     padding: 0;
     list-style-image: none;
@@ -2907,39 +2907,39 @@ body.node-type-page article.node--page--full {
           color: #ffffff; }
 
 /* line 44, ../sass/components/_footer.scss */
-.footer-copyright .copyright-info {
+.block--bean-footer-copyright .copyright-info {
   color: #ebebeb;
   margin-bottom: 40px; }
 /* line 53, ../sass/components/_footer.scss */
-.footer-copyright ul.social-links li {
+.block--bean-footer-copyright ul.social-links li {
   display: inline-block;
   margin: 0 15px; }
   /* line 57, ../sass/components/_footer.scss */
-  .footer-copyright ul.social-links li a {
+  .block--bean-footer-copyright ul.social-links li a {
     color: #828384;
     text-decoration: none; }
     /* line 61, ../sass/components/_footer.scss */
-    .footer-copyright ul.social-links li a span {
+    .block--bean-footer-copyright ul.social-links li a span {
       display: none; }
     /* line 65, ../sass/components/_footer.scss */
-    .footer-copyright ul.social-links li a:before {
+    .block--bean-footer-copyright ul.social-links li a:before {
       display: block;
       font-family: "FontAwesome", Arial;
       font-size: 25px; }
     /* line 71, ../sass/components/_footer.scss */
-    .footer-copyright ul.social-links li a:hover:before {
+    .block--bean-footer-copyright ul.social-links li a:hover:before {
       color: #f1592a; }
   /* line 80, ../sass/components/_footer.scss */
-  .footer-copyright ul.social-links li.social-twitter a:before {
+  .block--bean-footer-copyright ul.social-links li.social-twitter a:before {
     content: "\f099"; }
   /* line 90, ../sass/components/_footer.scss */
-  .footer-copyright ul.social-links li.social-facebook a:before {
+  .block--bean-footer-copyright ul.social-links li.social-facebook a:before {
     content: "\f09a"; }
   /* line 100, ../sass/components/_footer.scss */
-  .footer-copyright ul.social-links li.social-googleplus a:before {
+  .block--bean-footer-copyright ul.social-links li.social-googleplus a:before {
     content: "\f0d5"; }
   /* line 110, ../sass/components/_footer.scss */
-  .footer-copyright ul.social-links li.social-instagram a:before {
+  .block--bean-footer-copyright ul.social-links li.social-instagram a:before {
     content: "\f16d"; }
 
 /* line 1, ../sass/components/_header.scss */

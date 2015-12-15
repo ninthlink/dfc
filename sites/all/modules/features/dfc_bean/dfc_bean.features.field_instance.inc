@@ -65,7 +65,7 @@ function dfc_bean_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -102,7 +102,7 @@ function dfc_bean_field_default_field_instances() {
         'rows' => 10,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 

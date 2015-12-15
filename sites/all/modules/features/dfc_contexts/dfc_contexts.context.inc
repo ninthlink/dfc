@@ -44,9 +44,9 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
-        'block-2' => array(
-          'module' => 'block',
-          'delta' => '2',
+        'bean-footer-copyright' => array(
+          'module' => 'bean',
+          'delta' => 'footer-copyright',
           'region' => 'footer',
           'weight' => '-9',
         ),

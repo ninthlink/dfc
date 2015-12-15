@@ -1,0 +1,16 @@
+// 320px has been designed 
+// 1090px has been designed
+
+// 590 - 959
+$bp590: 590px;
+
+// 960 - 1179
+$bp960: 960px;
+
+// 1180 + 
+$bp1180: 1180px;
+
+// then the styles for 
+$bp-tab: $bp590;
+$bp-desk: $bp960;
+$bp-full: $bp1180;

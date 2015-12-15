@@ -1,0 +1,35 @@
+body.node-type-page {
+	
+	article.node--page--full {
+		background-color: $color-white;
+		color: $color-black;
+		
+		.field--title-field {
+			background-color: $color-orange;
+			min-height: 58px;
+			padding: 20px;
+	
+		  @include breakpoint($bp-desk) {
+				padding: 20px 50px;
+		  }
+			
+			h1 {
+				font-family: $dr;
+				@include rem(font-size, 30px);
+				margin: 0;
+				padding: 0;
+				line-height: .8;
+				text-transform: uppercase;
+				color: $color-white;
+			}
+		}
+		
+		.field--body {
+			padding: 20px;
+	
+		  @include breakpoint($bp-desk) {
+				padding: 50px;
+		  }
+		}
+	}
+}

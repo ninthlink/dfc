@@ -1,0 +1,12 @@
+body.page-user {
+	
+	 .l-main {
+		background-color: $color-white;
+		color: $color-black;
+		padding: 20px;
+
+	  @include breakpoint($bp-desk) {
+			padding: 50px;
+	  }
+	}
+}

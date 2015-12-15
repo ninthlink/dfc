@@ -1,0 +1,82 @@
+.l-header {
+	height: 110px;
+	text-align: center;
+	
+  @include breakpoint($bp-desk) {
+		height: 130px;
+  }
+}
+
+.site-logo {
+	display: block;
+	width: 90px;
+	margin: auto;
+	padding-top: 10px;
+
+  @include breakpoint($bp-tab) {
+		width: 110px;
+  }
+	
+  @include breakpoint($bp-desk) {
+		width: auto;
+  }
+}
+
+.header-info {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100px;
+
+  @include breakpoint($bp-tab) {
+		width: 260px;
+		text-align: right;
+		top: 20px;
+  }
+	
+  @include breakpoint($bp-desk) {
+		top: 50px;
+		right: 50px;
+  }
+	
+	.header-links {
+		font-family: $sr;
+		@include rem(font-size, 11px);
+		color: $color-gray-lighter;
+	
+	  @include breakpoint($bp-desk) {
+			margin-bottom: 5px;
+			@include rem(font-size, 12.5px);
+	  }
+		
+		a {
+			text-decoration: none;
+			color: $color-gray-lighter;
+	
+		  @include breakpoint($bp-desk) {
+				margin: 0 5px;
+		  }
+
+			&:hover {
+				color: $color-orange
+			}
+		}
+	}
+
+	.header-join {
+		text-transform: uppercase;
+		@include rem(font-size, 18px);
+		font-family: $dr;
+		letter-spacing: 1px;
+		
+		a {
+			text-decoration: none;
+			color: $color-orange;
+			
+			&:hover {
+				color: $color-white;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,49 @@
+.tabs.tabs--primary {
+	background: $color-orange;
+	margin: -20px -20px 20px;
+	border: 0;
+	padding: 10px 10px 0 10px;
+
+  @include breakpoint($bp-tab) {
+		padding: 20px 20px 0 20px;
+  }
+	
+  @include breakpoint($bp-desk) {
+		margin: -50px -50px 50px;
+		padding: 20px 20px 0 50px;
+  }
+	
+	li {
+		float: none;
+		display: block;
+		margin: 0 0 10px;
+
+	  @include breakpoint($bp-tab) {
+			display: inline-block;
+			margin: 0;
+	  }
+		
+		a {
+			display: block;
+			padding: 0 10px;
+			height: 30px;
+			line-height: 30px;
+			background: $color-gray-dark;
+			color: $color-white;
+			text-decoration: none;
+
+		  @include breakpoint($bp-tab) {
+				display: inline-block;
+		  }
+			
+			&:hover {
+				background: $color-black;
+			}
+			
+			&.active {
+				background: $color-white;
+				color: $color-black;
+			}
+		}
+	}
+}

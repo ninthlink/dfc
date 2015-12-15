@@ -1,0 +1,50 @@
+body {
+	overflow-x: hidden;
+	background: $color-black;
+	color: $color-white;
+	
+}
+
+.l-page {
+	width: 100%;
+	
+	* {
+	  -webkit-transition: all .5s ease;
+	  -moz-transition: all .5s ease;
+	  -ms-transition: all .5s ease;
+	  -o-transition: all .5s ease;
+	  transition: all .5s ease;
+	}
+}
+
+.container {
+	position: relative;
+	max-width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.l-main {
+	@include clearfix;
+	@extend .container;
+}
+
+.content-bottom {
+	@include clearfix;
+	clear: both;
+}
+
+.row-padding {
+  @include rem(padding-left, 10px);
+  @include rem(padding-right, 10px);
+
+  @include breakpoint($bp-tab) {
+    @include rem(padding-left, 30px);
+    @include rem(padding-right, 30px);
+  }
+
+  @include breakpoint($bp-full) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -2825,8 +2825,8 @@ p:last-child {
       padding: 0 10px;
       height: 30px;
       line-height: 30px;
-      background: #666666;
-      color: #ffffff;
+      background: #666;
+      color: #fff;
       text-decoration: none; }
       @media (min-width: 590px) {
         /* line 26, ../sass/components/_admin.scss */
@@ -2834,11 +2834,22 @@ p:last-child {
           display: inline-block; } }
       /* line 39, ../sass/components/_admin.scss */
       .tabs.tabs--primary li a:hover {
-        background: #000000; }
+        background: #000; }
       /* line 43, ../sass/components/_admin.scss */
       .tabs.tabs--primary li a.active {
-        background: #ffffff;
-        color: #000000; }
+        background: #fff;
+        color: #000; }
+
+/* line 54, ../sass/components/_admin.scss */
+body.node-type-landing-page .tabs.tabs--primary,
+body.node-type-page .tabs.tabs--primary {
+  background: #333;
+  margin: 0; }
+  /* line 62, ../sass/components/_admin.scss */
+  body.node-type-landing-page .tabs.tabs--primary li a.active,
+  body.node-type-page .tabs.tabs--primary li a.active {
+    background: #f1592a;
+    color: #fff; }
 
 /* line 3, ../sass/components/_basic-page.scss */
 body.node-type-page article.node--page--full {

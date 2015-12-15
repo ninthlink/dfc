@@ -24,14 +24,5 @@ function dfc_blocks_default_fe_block_boxes() {
 
   $export['footer_copyright'] = $fe_block_boxes;
 
-  $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Header Info';
-  $fe_block_boxes->format = 'full_html';
-  $fe_block_boxes->machine_name = 'header_info';
-  $fe_block_boxes->body = '<div class="header-links"><a href="#">Member Login</a> | <a href="#">Points Leaderboard</a></div>
-<div class="header-join"><a href="#">Join DFC Now</a></div>';
-
-  $export['header_info'] = $fe_block_boxes;
-
   return $export;
 }

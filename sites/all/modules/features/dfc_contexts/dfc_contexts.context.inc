@@ -26,9 +26,9 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => '1',
+        'bean-header-info' => array(
+          'module' => 'bean',
+          'delta' => 'header-info',
           'region' => 'header',
           'weight' => '-10',
         ),

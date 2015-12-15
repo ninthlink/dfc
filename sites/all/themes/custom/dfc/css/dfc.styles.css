@@ -2967,58 +2967,58 @@ body.node-type-page article.node--page--full {
       width: auto; } }
 
 /* line 25, ../sass/components/_header.scss */
-.header-info {
+.block--bean-header-info {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 100px; }
   @media (min-width: 590px) {
     /* line 25, ../sass/components/_header.scss */
-    .header-info {
+    .block--bean-header-info {
       width: 260px;
       text-align: right;
       top: 20px; } }
   @media (min-width: 960px) {
     /* line 25, ../sass/components/_header.scss */
-    .header-info {
+    .block--bean-header-info {
       top: 50px;
       right: 50px; } }
   /* line 42, ../sass/components/_header.scss */
-  .header-info .header-links {
+  .block--bean-header-info .header-links {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 11px;
     font-size: 0.6875rem;
     color: #ebebeb; }
     @media (min-width: 960px) {
       /* line 42, ../sass/components/_header.scss */
-      .header-info .header-links {
+      .block--bean-header-info .header-links {
         margin-bottom: 5px;
         font-size: 13px;
         font-size: 0.78125rem; } }
     /* line 52, ../sass/components/_header.scss */
-    .header-info .header-links a {
+    .block--bean-header-info .header-links a {
       text-decoration: none;
       color: #ebebeb; }
       @media (min-width: 960px) {
         /* line 52, ../sass/components/_header.scss */
-        .header-info .header-links a {
+        .block--bean-header-info .header-links a {
           margin: 0 5px; } }
       /* line 60, ../sass/components/_header.scss */
-      .header-info .header-links a:hover {
+      .block--bean-header-info .header-links a:hover {
         color: #f1592a; }
   /* line 66, ../sass/components/_header.scss */
-  .header-info .header-join {
+  .block--bean-header-info .header-join {
     text-transform: uppercase;
     font-size: 18px;
     font-size: 1.125rem;
     font-family: "dangerregular", Helvetica, sans-serif;
     letter-spacing: 1px; }
     /* line 72, ../sass/components/_header.scss */
-    .header-info .header-join a {
+    .block--bean-header-info .header-join a {
       text-decoration: none;
       color: #f1592a; }
       /* line 76, ../sass/components/_header.scss */
-      .header-info .header-join a:hover {
+      .block--bean-header-info .header-join a:hover {
         color: #ffffff; }
 
 /* line 7, ../sass/components/_menu.scss */

@@ -2917,37 +2917,37 @@ body.node-type-page article.node--page--full {
   padding-top: 10px; }
 
 /* line 25, ../sass/components/_header.scss */
-.header-info {
+.block--bean-header-info {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 100px; }
   /* line 42, ../sass/components/_header.scss */
-  .header-info .header-links {
+  .block--bean-header-info .header-links {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 11px;
     font-size: 0.6875rem;
     color: #ebebeb; }
     /* line 52, ../sass/components/_header.scss */
-    .header-info .header-links a {
+    .block--bean-header-info .header-links a {
       text-decoration: none;
       color: #ebebeb; }
       /* line 60, ../sass/components/_header.scss */
-      .header-info .header-links a:hover {
+      .block--bean-header-info .header-links a:hover {
         color: #f1592a; }
   /* line 66, ../sass/components/_header.scss */
-  .header-info .header-join {
+  .block--bean-header-info .header-join {
     text-transform: uppercase;
     font-size: 18px;
     font-size: 1.125rem;
     font-family: "dangerregular", Helvetica, sans-serif;
     letter-spacing: 1px; }
     /* line 72, ../sass/components/_header.scss */
-    .header-info .header-join a {
+    .block--bean-header-info .header-join a {
       text-decoration: none;
       color: #f1592a; }
       /* line 76, ../sass/components/_header.scss */
-      .header-info .header-join a:hover {
+      .block--bean-header-info .header-join a:hover {
         color: #ffffff; }
 
 /* line 7, ../sass/components/_menu.scss */

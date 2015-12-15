@@ -33,27 +33,6 @@ function dfc_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['block-header_info'] = array(
-    'cache' => -1,
-    'css_class' => 'header-info',
-    'custom' => 0,
-    'machine_name' => 'header_info',
-    'module' => 'block',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'dfc' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'dfc',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '<none>',
-    'visibility' => 0,
-  );
-
   $export['menu-menu-footer-menu'] = array(
     'cache' => -1,
     'css_class' => '',

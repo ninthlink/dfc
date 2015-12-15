@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DFC Bean feature.
+ */
+
+include_once 'dfc_bean.features.inc';

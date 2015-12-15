@@ -1,6 +1,7 @@
 name = DFC Contexts
 core = 7.x
 package = Features
+dependencies[] = bean
 dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools

@@ -48,6 +48,7 @@
 	}
 }
 
+
 body.node-type-landing-page,
 body.node-type-page {
 	
@@ -65,5 +66,12 @@ body.node-type-page {
 				}
 			}
 		}
+	}
+}
+
+.form-actions {
+	
+	input.form-submit {
+		@extend .button;
 	}
 }

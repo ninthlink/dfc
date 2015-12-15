@@ -22,5 +22,6 @@ features[field_instance][] = bean-static_bean-field_background_image
 features[field_instance][] = bean-static_bean-field_text
 features[uuid_bean][] = 06e0b1cc-7fa3-4510-8616-d2ab543fa3fd
 features[uuid_bean][] = 0da51c59-56be-42bc-92c0-65e2faf4cf0c
+features[uuid_bean][] = e4c204d3-b33a-4624-b19a-93fe4a11ab74
 features_exclude[dependencies][dfc_content_types] = dfc_content_types
 features_exclude[field_instance][bean-static_bean-title_field] = bean-static_bean-title_field

@@ -48,15 +48,6 @@ function dfc_bean_uuid_features_default_beans() {
         ),
       ),
     ),
-    'title_field' => array(
-      'und' => array(
-        0 => array(
-          'value' => '',
-          'format' => NULL,
-          'safe_value' => '',
-        ),
-      ),
-    ),
   );
   $beans[] = array(
     'label' => 'Header Info',
@@ -85,15 +76,6 @@ function dfc_bean_uuid_features_default_beans() {
           'safe_value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="#">Points Leaderboard</a></div>
 <div class="header-join"><a href="#">Join DFC Now</a></div>
 ',
-        ),
-      ),
-    ),
-    'title_field' => array(
-      'und' => array(
-        0 => array(
-          'value' => '',
-          'format' => NULL,
-          'safe_value' => '',
         ),
       ),
     ),

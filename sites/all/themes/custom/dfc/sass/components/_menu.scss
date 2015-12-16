@@ -28,7 +28,7 @@
 		  }
 			
 			&:before {
-				@include get-sprite($icons-sprites, menu);
+				@include get-sprite($icons-sprites, icon-menu);
 
 			  @include breakpoint($bp-tab) {
 					margin-right: 10px;
@@ -43,6 +43,16 @@
 			
 			span.toggler {
 				border: 0;
+				
+				&:after {
+
+					@include breakpoint($bp-desk) {
+						@include get-sprite($icons-sprites, icon-close);
+						position: absolute;
+						top: 15px;
+						right: -166px;
+					}
+				}
 			}
 			
 			.responsive-menus-simple {

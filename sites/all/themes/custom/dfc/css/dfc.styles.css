@@ -2665,9 +2665,9 @@
     background: #000000;
     color: #f1592a; }
 
-/* line 88, icons/*.png */
-.icons-sprite, .icons-how-check, .icons-how-perks, .icons-how-points, .icons-how-upload, .icons-line-arrow, .icons-menu {
-  background-image: url('../images/generated/icons-s39c9756eb5.png');
+/* line 96, icons/*.png */
+.icons-sprite, .icons-how-check, .icons-how-perks, .icons-how-points, .icons-how-upload, .icons-icon-close, .icons-icon-menu, .icons-line-arrow {
+  background-image: url('../images/generated/icons-s2a38ffb8de.png');
   background-repeat: no-repeat; }
 
 /* line 84, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
@@ -2687,12 +2687,16 @@
   background-position: 0 -167px; }
 
 /* line 84, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-line-arrow {
+.icons-icon-close {
   background-position: 0 -222px; }
 
 /* line 84, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-menu {
-  background-position: 0 -270px; }
+.icons-icon-menu {
+  background-position: 0 -229px; }
+
+/* line 84, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-line-arrow {
+  background-position: 0 -251px; }
 
 /* REMS with a PX Fallback */
 @font-face {
@@ -3148,7 +3152,7 @@ body.front .l-main {
       font-size: 0.6875rem; }
     /* line 177, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-01:before {
-      background: url('../images/generated/icons-s39c9756eb5.png') 0 0 no-repeat;
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 0 no-repeat;
       width: 54px;
       height: 53px;
       content: "";
@@ -3156,7 +3160,7 @@ body.front .l-main {
       margin-left: -27px; }
     /* line 185, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-02:before {
-      background: url('../images/generated/icons-s39c9756eb5.png') 0 -114px no-repeat;
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -114px no-repeat;
       width: 54px;
       height: 53px;
       content: "";
@@ -3164,7 +3168,7 @@ body.front .l-main {
       margin-left: -27px; }
     /* line 193, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-03:before {
-      background: url('../images/generated/icons-s39c9756eb5.png') 0 -167px no-repeat;
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -167px no-repeat;
       width: 55px;
       height: 55px;
       content: "";
@@ -3172,7 +3176,7 @@ body.front .l-main {
       margin-left: -27px; }
     /* line 201, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-04:before {
-      background: url('../images/generated/icons-s39c9756eb5.png') 0 -53px no-repeat;
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -53px no-repeat;
       width: 50px;
       height: 61px;
       content: "";
@@ -3191,7 +3195,7 @@ body.front .l-main {
     @media (min-width: 960px) {
       /* line 218, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta:before {
-        background: url('../images/generated/icons-s39c9756eb5.png') 0 -222px no-repeat;
+        background: url('../images/generated/icons-s2a38ffb8de.png') 0 -251px no-repeat;
         width: 347px;
         height: 48px;
         content: "";
@@ -3356,7 +3360,7 @@ body.front .l-main {
       left: 50px; } }
   /* line 30, ../sass/components/_menu.scss */
   .responsive-menus.responsified span.toggler:before {
-    background: url('../images/generated/icons-s39c9756eb5.png') 0 -270px no-repeat;
+    background: url('../images/generated/icons-s2a38ffb8de.png') 0 -229px no-repeat;
     width: 33px;
     height: 22px;
     content: "";
@@ -3370,7 +3374,18 @@ body.front .l-main {
 /* line 44, ../sass/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled span.toggler {
   border: 0; }
-/* line 48, ../sass/components/_menu.scss */
+  @media (min-width: 960px) {
+    /* line 47, ../sass/components/_menu.scss */
+    .responsive-menus.responsified.responsive-toggled span.toggler:after {
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -222px no-repeat;
+      width: 16px;
+      height: 7px;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: -166px; } }
+/* line 58, ../sass/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled .responsive-menus-simple {
   width: 100%;
   border-radius: 0;
@@ -3385,10 +3400,10 @@ body.front .l-main {
   z-index: 999;
   background: rgba(239, 87, 41, 0.95); }
   @media (min-width: 590px) {
-    /* line 48, ../sass/components/_menu.scss */
+    /* line 58, ../sass/components/_menu.scss */
     .responsive-menus.responsified.responsive-toggled .responsive-menus-simple {
       width: 300px; } }
-  /* line 71, ../sass/components/_menu.scss */
+  /* line 81, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a {
     position: relative;
     color: #ffffff;

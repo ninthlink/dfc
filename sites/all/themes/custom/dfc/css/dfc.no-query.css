@@ -3157,29 +3157,33 @@ body.front .l-main {
     .block--bean-home-how-it-works .how-cta .how-cta-link span {
       display: none; }
 
-/* line 32, ../sass/components/_hp-offers.scss */
-.view-offers .views-row a {
+/* line 21, ../sass/components/_hp-offers.scss */
+.view-offers .views-row {
   position: relative;
-  display: block;
-  float: left;
-  max-width: 100%; }
-  /* line 38, ../sass/components/_hp-offers.scss */
-  .view-offers .views-row a:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    opacity: 0; }
-  /* line 50, ../sass/components/_hp-offers.scss */
-  .view-offers .views-row a:hover:before {
-    opacity: .3; }
-/* line 55, ../sass/components/_hp-offers.scss */
-.view-offers .views-row img {
   float: left; }
+  /* line 33, ../sass/components/_hp-offers.scss */
+  .view-offers .views-row a {
+    display: block;
+    float: left;
+    max-width: 100%;
+    text-indent: -9999px; }
+    /* line 39, ../sass/components/_hp-offers.scss */
+    .view-offers .views-row a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: 0; }
+    /* line 51, ../sass/components/_hp-offers.scss */
+    .view-offers .views-row a:hover:before {
+      opacity: .3; }
+  /* line 56, ../sass/components/_hp-offers.scss */
+  .view-offers .views-row img {
+    float: left; }
 
 /* line 7, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {

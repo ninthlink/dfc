@@ -19,9 +19,10 @@
 .view-offers {
 	
 	.views-row {
+		position: relative;
+		float: left;
 
 	  @include breakpoint($bp-tab) {
-			float: left;
 			width: 50%;
 	  }
 
@@ -30,10 +31,10 @@
 	  }
 		
 		a {
-			position: relative;
 			display: block;
 			float: left;
 			max-width: 100%;
+			text-indent: -9999px;
 			
 			&:before {
 				content: "";

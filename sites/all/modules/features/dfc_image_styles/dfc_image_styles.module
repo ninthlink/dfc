@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DFC Image Styles feature.
+ */
+
+include_once 'dfc_image_styles.features.inc';

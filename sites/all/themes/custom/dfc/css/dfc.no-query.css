@@ -2729,13 +2729,13 @@ body {
     transition: all .5s ease; }
 
 /* line 20, ../sass/base/_layout.scss */
-.container, .l-main {
+.container, .l-main, .block--views-offers-block .block__content, .block--views-offers-block-1 .block__content {
   position: relative;
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto; }
   /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
-  .container:after, .l-main:after {
+  .container:after, .l-main:after, .block--views-offers-block .block__content:after, .block--views-offers-block-1 .block__content:after {
     content: "";
     display: table;
     clear: both; }
@@ -2859,27 +2859,33 @@ p:last-child {
         color: #000; }
 
 /* line 55, ../sass/components/_admin.scss */
+body.node-type-offers .tabs.tabs--primary,
 body.node-type-landing-page .tabs.tabs--primary,
-body.node-type-page .tabs.tabs--primary {
+body.node-type-page .tabs.tabs--primary,
+body.node-type-offers .tabs.tabs--primary {
   background: #333;
   margin: 0; }
   /* line 63, ../sass/components/_admin.scss */
+  body.node-type-offers .tabs.tabs--primary li a.active,
   body.node-type-landing-page .tabs.tabs--primary li a.active,
-  body.node-type-page .tabs.tabs--primary li a.active {
+  body.node-type-page .tabs.tabs--primary li a.active,
+  body.node-type-offers .tabs.tabs--primary li a.active {
     background: #f1592a;
     color: #fff; }
 
-/* line 3, ../sass/components/_basic-page.scss */
-body.node-type-page article.node--page--full {
+/* line 3, ../sass/components/_ct-basic-page.scss */
+body.node-type-page article.node--full, body.node-type-offers article.node--full {
   background-color: #ffffff;
-  color: #000000; }
-  /* line 7, ../sass/components/_basic-page.scss */
-  body.node-type-page article.node--page--full .field--title-field {
+  color: #000000;
+  padding: 20px; }
+  /* line 12, ../sass/components/_ct-basic-page.scss */
+  body.node-type-page article.node--full .field--title-field, body.node-type-offers article.node--full .field--title-field {
     background-color: #f1592a;
     min-height: 58px;
-    padding: 20px; }
-    /* line 16, ../sass/components/_basic-page.scss */
-    body.node-type-page article.node--page--full .field--title-field h1 {
+    padding: 20px;
+    margin: -20px -20px 20px; }
+    /* line 23, ../sass/components/_ct-basic-page.scss */
+    body.node-type-page article.node--full .field--title-field h1, body.node-type-offers article.node--full .field--title-field h1 {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;
@@ -2888,9 +2894,6 @@ body.node-type-page article.node--page--full {
       line-height: .8;
       text-transform: uppercase;
       color: #ffffff; }
-  /* line 27, ../sass/components/_basic-page.scss */
-  body.node-type-page article.node--page--full .field--body {
-    padding: 20px; }
 
 /* line 1, ../sass/components/_footer.scss */
 .l-footer {
@@ -2967,145 +2970,6 @@ body.node-type-page article.node--page--full {
 body.front .l-main {
   max-width: none; }
 
-/* line 9, ../sass/components/_front.scss */
-.block--bean-home-how-it-works {
-  position: relative;
-  text-align: center; }
-  /* line 13, ../sass/components/_front.scss */
-  .block--bean-home-how-it-works .field--background-image {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    z-index: 10;
-    height: 180px; }
-    /* line 49, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .field--background-image img {
-      height: 100%;
-      width: auto; }
-  /* line 55, ../sass/components/_front.scss */
-  .block--bean-home-how-it-works .how-text {
-    position: relative;
-    background: #f1592a;
-    padding: 40px 20px 0;
-    height: 160px; }
-    /* line 72, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-text .how-text-title {
-      position: relative;
-      z-index: 11;
-      font-family: "dangerregular", Helvetica, sans-serif;
-      color: #ffffff;
-      font-size: 33px;
-      font-size: 2.0625rem;
-      text-transform: uppercase; }
-      /* line 95, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .how-text .how-text-title span {
-        color: #000000;
-        display: block; }
-  /* line 106, ../sass/components/_front.scss */
-  .block--bean-home-how-it-works .how-steps {
-    position: relative;
-    background: #ffffff;
-    padding: 70px 50px 60px; }
-    /* line 126, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps:before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -20px;
-      content: "";
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid #f1592a; }
-    /* line 137, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps .step {
-      position: relative;
-      margin-bottom: 65px;
-      padding-top: 80px; }
-      /* line 151, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .how-steps .step:last-child {
-        margin-bottom: 0; }
-      /* line 155, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .how-steps .step:before {
-        position: absolute;
-        left: 50%;
-        top: 0; }
-    /* line 162, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps h3 {
-      text-transform: uppercase;
-      color: #f1592a;
-      font-size: 23px;
-      font-size: 1.4375rem;
-      margin-bottom: 22px; }
-    /* line 169, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps p {
-      margin: 0;
-      font-family: "sanchezregular", Helvetica, sans-serif;
-      font-size: 11px;
-      font-size: 0.6875rem; }
-    /* line 177, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps .step-01:before {
-      background: url('../images/generated/icons-s2a38ffb8de.png') 0 0 no-repeat;
-      width: 54px;
-      height: 53px;
-      content: "";
-      display: inline-block;
-      margin-left: -27px; }
-    /* line 185, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps .step-02:before {
-      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -114px no-repeat;
-      width: 54px;
-      height: 53px;
-      content: "";
-      display: inline-block;
-      margin-left: -27px; }
-    /* line 193, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps .step-03:before {
-      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -167px no-repeat;
-      width: 55px;
-      height: 55px;
-      content: "";
-      display: inline-block;
-      margin-left: -27px; }
-    /* line 201, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-steps .step-04:before {
-      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -53px no-repeat;
-      width: 50px;
-      height: 61px;
-      content: "";
-      display: inline-block;
-      margin-left: -25px; }
-  /* line 208, ../sass/components/_front.scss */
-  .block--bean-home-how-it-works .how-cta {
-    position: relative;
-    background: #ebebeb;
-    padding: 50px 28px 40px;
-    text-transform: uppercase; }
-    /* line 244, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-cta .how-cta-title {
-      font-family: "dangerregular", Helvetica, sans-serif;
-      font-size: 30px;
-      font-size: 1.875rem;
-      margin-bottom: 15px; }
-      /* line 255, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .how-cta .how-cta-title span {
-        color: #f1592a; }
-    /* line 260, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-cta .how-cta-subtitle {
-      font-weight: bold;
-      color: #f1592a;
-      font-size: 20px;
-      font-size: 1.25rem;
-      margin-bottom: 15px; }
-    /* line 275, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-cta .how-cta-link a {
-      display: inline-block;
-      width: 276px;
-      height: 102px;
-      background: url(../images/button-how-cta.png) no-repeat; }
-    /* line 282, ../sass/components/_front.scss */
-    .block--bean-home-how-it-works .how-cta .how-cta-link span {
-      display: none; }
-
 /* line 1, ../sass/components/_header.scss */
 .l-header {
   height: 110px;
@@ -3151,6 +3015,169 @@ body.front .l-main {
       /* line 76, ../sass/components/_header.scss */
       .block--bean-header-info .header-join a:hover {
         color: #ffffff; }
+
+/* line 2, ../sass/components/_hp-how-it-works.scss */
+.block--bean-home-how-it-works {
+  position: relative;
+  text-align: center; }
+  /* line 6, ../sass/components/_hp-how-it-works.scss */
+  .block--bean-home-how-it-works .field--background-image {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: 10;
+    height: 180px; }
+    /* line 31, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .field--background-image img {
+      height: 100%;
+      width: auto; }
+  /* line 37, ../sass/components/_hp-how-it-works.scss */
+  .block--bean-home-how-it-works .how-text {
+    position: relative;
+    background: #f1592a;
+    padding: 40px 20px 0;
+    height: 160px; }
+    /* line 54, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-text .how-text-title {
+      position: relative;
+      z-index: 11;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      color: #ffffff;
+      font-size: 33px;
+      font-size: 2.0625rem;
+      text-transform: uppercase; }
+      /* line 77, ../sass/components/_hp-how-it-works.scss */
+      .block--bean-home-how-it-works .how-text .how-text-title span {
+        color: #000000;
+        display: block; }
+  /* line 88, ../sass/components/_hp-how-it-works.scss */
+  .block--bean-home-how-it-works .how-steps {
+    position: relative;
+    background: #ffffff;
+    padding: 70px 50px 60px; }
+    /* line 108, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -20px;
+      content: "";
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #f1592a; }
+    /* line 119, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps .step {
+      position: relative;
+      margin-bottom: 65px;
+      padding-top: 80px; }
+      /* line 133, ../sass/components/_hp-how-it-works.scss */
+      .block--bean-home-how-it-works .how-steps .step:last-child {
+        margin-bottom: 0; }
+      /* line 137, ../sass/components/_hp-how-it-works.scss */
+      .block--bean-home-how-it-works .how-steps .step:before {
+        position: absolute;
+        left: 50%;
+        top: 0; }
+    /* line 144, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps h3 {
+      text-transform: uppercase;
+      color: #f1592a;
+      font-size: 23px;
+      font-size: 1.4375rem;
+      margin-bottom: 22px; }
+    /* line 151, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps p {
+      margin: 0;
+      font-family: "sanchezregular", Helvetica, sans-serif;
+      font-size: 11px;
+      font-size: 0.6875rem; }
+    /* line 159, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps .step-01:before {
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 0 no-repeat;
+      width: 54px;
+      height: 53px;
+      content: "";
+      display: inline-block;
+      margin-left: -27px; }
+    /* line 167, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps .step-02:before {
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -114px no-repeat;
+      width: 54px;
+      height: 53px;
+      content: "";
+      display: inline-block;
+      margin-left: -27px; }
+    /* line 175, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps .step-03:before {
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -167px no-repeat;
+      width: 55px;
+      height: 55px;
+      content: "";
+      display: inline-block;
+      margin-left: -27px; }
+    /* line 183, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-steps .step-04:before {
+      background: url('../images/generated/icons-s2a38ffb8de.png') 0 -53px no-repeat;
+      width: 50px;
+      height: 61px;
+      content: "";
+      display: inline-block;
+      margin-left: -25px; }
+  /* line 190, ../sass/components/_hp-how-it-works.scss */
+  .block--bean-home-how-it-works .how-cta {
+    position: relative;
+    background: #ebebeb;
+    padding: 50px 28px 40px;
+    text-transform: uppercase; }
+    /* line 226, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-cta .how-cta-title {
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 30px;
+      font-size: 1.875rem;
+      margin-bottom: 15px; }
+      /* line 237, ../sass/components/_hp-how-it-works.scss */
+      .block--bean-home-how-it-works .how-cta .how-cta-title span {
+        color: #f1592a; }
+    /* line 242, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-cta .how-cta-subtitle {
+      font-weight: bold;
+      color: #f1592a;
+      font-size: 20px;
+      font-size: 1.25rem;
+      margin-bottom: 15px; }
+    /* line 257, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-cta .how-cta-link a {
+      display: inline-block;
+      width: 276px;
+      height: 102px;
+      background: url(../images/button-how-cta.png) no-repeat; }
+    /* line 264, ../sass/components/_hp-how-it-works.scss */
+    .block--bean-home-how-it-works .how-cta .how-cta-link span {
+      display: none; }
+
+/* line 32, ../sass/components/_hp-offers.scss */
+.view-offers .views-row a {
+  position: relative;
+  display: block;
+  float: left;
+  max-width: 100%; }
+  /* line 38, ../sass/components/_hp-offers.scss */
+  .view-offers .views-row a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0; }
+  /* line 50, ../sass/components/_hp-offers.scss */
+  .view-offers .views-row a:hover:before {
+    opacity: .3; }
+/* line 55, ../sass/components/_hp-offers.scss */
+.view-offers .views-row img {
+  float: left; }
 
 /* line 7, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {

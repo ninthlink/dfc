@@ -1,0 +1,11 @@
+name = DFC Views & Nodequeues
+core = 7.x
+package = Features
+dependencies[] = fe_nodequeue
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[fe_nodequeue][] = homepage_offers_3
+features[fe_nodequeue][] = homepage_offers_6
+features[features_api][] = api:2
+features[views_view][] = offers
+features_exclude[dependencies][ctools] = ctools

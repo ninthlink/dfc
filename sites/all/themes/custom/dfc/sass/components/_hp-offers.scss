@@ -1,0 +1,59 @@
+// Homepage Offers
+// 6 Offers
+.block--views-offers-block {
+	
+	.block__content {
+		@extend .container;
+	}
+}
+
+// 3 Offers
+.block--views-offers-block-1 {
+	
+	.block__content {
+		@extend .container;
+	}
+}
+
+//
+.view-offers {
+	
+	.views-row {
+
+	  @include breakpoint($bp-tab) {
+			float: left;
+			width: 50%;
+	  }
+
+	  @include breakpoint($bp-desk) {
+			width: 33.3333%;
+	  }
+		
+		a {
+			position: relative;
+			display: block;
+			float: left;
+			max-width: 100%;
+			
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: $color-black;
+				opacity: 0;
+			}
+			
+			&:hover:before {
+				opacity: .3;
+			}
+		}
+		
+		img {
+			float: left;
+		}
+	}
+}

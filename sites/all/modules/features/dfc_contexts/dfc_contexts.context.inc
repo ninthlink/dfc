@@ -32,6 +32,18 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-10',
         ),
+        'views-offers-block' => array(
+          'module' => 'views',
+          'delta' => 'offers-block',
+          'region' => 'content_top',
+          'weight' => '-9',
+        ),
+        'views-offers-block_1' => array(
+          'module' => 'views',
+          'delta' => 'offers-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

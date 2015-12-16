@@ -1,16 +1,23 @@
 body.node-type-page {
-	
-	article.node--page--full {
+
+	article.node--full {
 		background-color: $color-white;
 		color: $color-black;
+		padding: 20px;
+
+	  @include breakpoint($bp-desk) {
+			padding: 50px;
+	  }
 		
 		.field--title-field {
 			background-color: $color-orange;
 			min-height: 58px;
 			padding: 20px;
+			margin: -20px -20px 20px;
 	
 		  @include breakpoint($bp-desk) {
 				padding: 20px 50px;
+				margin: -50px -50px 20px;
 		  }
 			
 			h1 {
@@ -22,14 +29,6 @@ body.node-type-page {
 				text-transform: uppercase;
 				color: $color-white;
 			}
-		}
-		
-		.field--body {
-			padding: 20px;
-	
-		  @include breakpoint($bp-desk) {
-				padding: 50px;
-		  }
 		}
 	}
 }

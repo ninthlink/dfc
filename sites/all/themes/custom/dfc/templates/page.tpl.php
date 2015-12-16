@@ -97,8 +97,8 @@
 	
   <div class="l-main">
 
-    <?php print render($tabs); ?>
 		<?php print $messages; ?>
+    <?php print render($tabs); ?>
 
 		<?php if ($page['content_top']): ?>
 			<div class="content-top">

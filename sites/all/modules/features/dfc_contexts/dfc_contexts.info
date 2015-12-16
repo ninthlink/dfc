@@ -6,6 +6,7 @@ dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = menu
+dependencies[] = views
 features[context][] = front
 features[context][] = global
 features[ctools][] = context:context:3

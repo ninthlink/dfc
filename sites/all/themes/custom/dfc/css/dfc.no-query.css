@@ -2974,17 +2974,17 @@ body.front .l-main {
     left: 0;
     z-index: 10;
     height: 180px; }
-    /* line 43, ../sass/components/_front.scss */
+    /* line 49, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .field--background-image img {
       height: 100%;
       width: auto; }
-  /* line 49, ../sass/components/_front.scss */
+  /* line 55, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-text {
     position: relative;
     background: #f1592a;
     padding: 40px 20px 0;
     height: 160px; }
-    /* line 71, ../sass/components/_front.scss */
+    /* line 72, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-text .how-text-title {
       position: relative;
       z-index: 11;
@@ -2993,16 +2993,16 @@ body.front .l-main {
       font-size: 33px;
       font-size: 2.0625rem;
       text-transform: uppercase; }
-      /* line 88, ../sass/components/_front.scss */
+      /* line 95, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-text .how-text-title span {
         color: #000000;
         display: block; }
-  /* line 99, ../sass/components/_front.scss */
+  /* line 106, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-steps {
     position: relative;
     background: #ffffff;
     padding: 70px 50px 60px; }
-    /* line 119, ../sass/components/_front.scss */
+    /* line 126, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps:before {
       position: absolute;
       top: 0;
@@ -3012,33 +3012,33 @@ body.front .l-main {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-top: 20px solid #f1592a; }
-    /* line 130, ../sass/components/_front.scss */
+    /* line 137, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step {
       position: relative;
       margin-bottom: 65px;
       padding-top: 80px; }
-      /* line 144, ../sass/components/_front.scss */
+      /* line 151, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps .step:last-child {
         margin-bottom: 0; }
-      /* line 148, ../sass/components/_front.scss */
+      /* line 155, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps .step:before {
         position: absolute;
         left: 50%;
         top: 0; }
-    /* line 155, ../sass/components/_front.scss */
+    /* line 162, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps h3 {
       text-transform: uppercase;
       color: #f1592a;
       font-size: 23px;
       font-size: 1.4375rem;
       margin-bottom: 22px; }
-    /* line 162, ../sass/components/_front.scss */
+    /* line 169, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps p {
       margin: 0;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 11px;
       font-size: 0.6875rem; }
-    /* line 170, ../sass/components/_front.scss */
+    /* line 177, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-01:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 0 no-repeat;
       width: 54px;
@@ -3046,7 +3046,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 178, ../sass/components/_front.scss */
+    /* line 185, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-02:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -114px no-repeat;
       width: 54px;
@@ -3054,7 +3054,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 186, ../sass/components/_front.scss */
+    /* line 193, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-03:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -167px no-repeat;
       width: 55px;
@@ -3062,7 +3062,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 194, ../sass/components/_front.scss */
+    /* line 201, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-04:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -53px no-repeat;
       width: 50px;
@@ -3070,35 +3070,35 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -25px; }
-  /* line 201, ../sass/components/_front.scss */
+  /* line 208, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-cta {
     position: relative;
     background: #ebebeb;
     padding: 50px 28px 40px;
     text-transform: uppercase; }
-    /* line 237, ../sass/components/_front.scss */
+    /* line 244, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-title {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;
       margin-bottom: 15px; }
-      /* line 248, ../sass/components/_front.scss */
+      /* line 255, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta .how-cta-title span {
         color: #f1592a; }
-    /* line 253, ../sass/components/_front.scss */
+    /* line 260, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-subtitle {
       font-weight: bold;
       color: #f1592a;
       font-size: 20px;
       font-size: 1.25rem;
       margin-bottom: 15px; }
-    /* line 268, ../sass/components/_front.scss */
+    /* line 275, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-link a {
       display: inline-block;
       width: 276px;
       height: 102px;
       background: url(../images/button-how-cta.png) no-repeat; }
-    /* line 275, ../sass/components/_front.scss */
+    /* line 282, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-link span {
       display: none; }
 

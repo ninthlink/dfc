@@ -3012,20 +3012,15 @@ body.front .l-main {
     left: 0;
     z-index: 10;
     height: 180px; }
-    @media (min-width: 590px) {
+    @media (min-width: 960px) {
       /* line 13, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .field--background-image {
-        top: -30px;
-        height: 260px;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         -moz-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0); } }
-    @media (min-width: 960px) {
-      /* line 13, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .field--background-image {
+        transform: translate(-50%, 0);
         height: 218px;
         top: -118px;
         margin-left: -130px; } }
@@ -3035,33 +3030,28 @@ body.front .l-main {
         height: 270px;
         top: -133px;
         margin-left: -300px; } }
-    /* line 43, ../sass/components/_front.scss */
+    /* line 49, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .field--background-image img {
       height: 100%;
       width: auto; }
-  /* line 49, ../sass/components/_front.scss */
+  /* line 55, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-text {
     position: relative;
     background: #f1592a;
     padding: 40px 20px 0;
     height: 160px; }
-    @media (min-width: 590px) {
-      /* line 49, ../sass/components/_front.scss */
-      .block--bean-home-how-it-works .how-text {
-        padding-top: 175px;
-        height: 230px; } }
     @media (min-width: 960px) {
-      /* line 49, ../sass/components/_front.scss */
+      /* line 55, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-text {
         padding-top: 30px;
         height: 100px;
         text-align: left; } }
     @media (min-width: 1180px) {
-      /* line 49, ../sass/components/_front.scss */
+      /* line 55, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-text {
         padding-top: 40px;
         height: 136px; } }
-    /* line 71, ../sass/components/_front.scss */
+    /* line 72, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-text .how-text-title {
       position: relative;
       z-index: 11;
@@ -3070,42 +3060,48 @@ body.front .l-main {
       font-size: 33px;
       font-size: 2.0625rem;
       text-transform: uppercase; }
-      @media (min-width: 960px) {
-        /* line 71, ../sass/components/_front.scss */
+      @media (min-width: 590px) {
+        /* line 72, ../sass/components/_front.scss */
         .block--bean-home-how-it-works .how-text .how-text-title {
-          padding-left: 340px; } }
+          width: 40%;
+          margin: auto; } }
+      @media (min-width: 960px) {
+        /* line 72, ../sass/components/_front.scss */
+        .block--bean-home-how-it-works .how-text .how-text-title {
+          padding-left: 340px;
+          width: auto; } }
       @media (min-width: 1180px) {
-        /* line 71, ../sass/components/_front.scss */
+        /* line 72, ../sass/components/_front.scss */
         .block--bean-home-how-it-works .how-text .how-text-title {
           padding-left: 450px;
           font-size: 42px;
           font-size: 2.625rem; } }
-      /* line 88, ../sass/components/_front.scss */
+      /* line 95, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-text .how-text-title span {
         color: #000000;
         display: block; }
         @media (min-width: 590px) {
-          /* line 88, ../sass/components/_front.scss */
+          /* line 95, ../sass/components/_front.scss */
           .block--bean-home-how-it-works .how-text .how-text-title span {
             display: inline; } }
-  /* line 99, ../sass/components/_front.scss */
+  /* line 106, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-steps {
     position: relative;
     background: #ffffff;
     padding: 70px 50px 60px; }
     @media (min-width: 590px) {
-      /* line 99, ../sass/components/_front.scss */
+      /* line 106, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps {
         padding: 85px 80px 155px; } }
-    @media (min-width: 1180px) {
-      /* line 99, ../sass/components/_front.scss */
+    @media (min-width: 960px) {
+      /* line 106, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps {
         padding-bottom: 80px; } }
     @media (min-width: 1180px) {
-      /* line 112, ../sass/components/_front.scss */
+      /* line 119, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps .container, .block--bean-home-how-it-works .how-steps .l-main {
         padding: 0 150px; } }
-    /* line 119, ../sass/components/_front.scss */
+    /* line 126, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps:before {
       position: absolute;
       top: 0;
@@ -3115,13 +3111,13 @@ body.front .l-main {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-top: 20px solid #f1592a; }
-    /* line 130, ../sass/components/_front.scss */
+    /* line 137, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step {
       position: relative;
       margin-bottom: 65px;
       padding-top: 80px; }
-      @media (min-width: 1180px) {
-        /* line 130, ../sass/components/_front.scss */
+      @media (min-width: 960px) {
+        /* line 137, ../sass/components/_front.scss */
         .block--bean-home-how-it-works .how-steps .step {
           float: left;
           display: inline-block;
@@ -3129,28 +3125,28 @@ body.front .l-main {
           padding-left: 25px;
           padding-right: 25px;
           margin-bottom: 0; } }
-      /* line 144, ../sass/components/_front.scss */
+      /* line 151, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps .step:last-child {
         margin-bottom: 0; }
-      /* line 148, ../sass/components/_front.scss */
+      /* line 155, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-steps .step:before {
         position: absolute;
         left: 50%;
         top: 0; }
-    /* line 155, ../sass/components/_front.scss */
+    /* line 162, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps h3 {
       text-transform: uppercase;
       color: #f1592a;
       font-size: 23px;
       font-size: 1.4375rem;
       margin-bottom: 22px; }
-    /* line 162, ../sass/components/_front.scss */
+    /* line 169, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps p {
       margin: 0;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 11px;
       font-size: 0.6875rem; }
-    /* line 170, ../sass/components/_front.scss */
+    /* line 177, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-01:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 0 no-repeat;
       width: 54px;
@@ -3158,7 +3154,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 178, ../sass/components/_front.scss */
+    /* line 185, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-02:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -114px no-repeat;
       width: 54px;
@@ -3166,7 +3162,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 186, ../sass/components/_front.scss */
+    /* line 193, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-03:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -167px no-repeat;
       width: 55px;
@@ -3174,7 +3170,7 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -27px; }
-    /* line 194, ../sass/components/_front.scss */
+    /* line 201, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-steps .step-04:before {
       background: url('../images/generated/icons-s39c9756eb5.png') 0 -53px no-repeat;
       width: 50px;
@@ -3182,18 +3178,18 @@ body.front .l-main {
       content: "";
       display: inline-block;
       margin-left: -25px; }
-  /* line 201, ../sass/components/_front.scss */
+  /* line 208, ../sass/components/_front.scss */
   .block--bean-home-how-it-works .how-cta {
     position: relative;
     background: #ebebeb;
     padding: 50px 28px 40px;
     text-transform: uppercase; }
     @media (min-width: 960px) {
-      /* line 201, ../sass/components/_front.scss */
+      /* line 208, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta {
         padding: 50px 0 40px; } }
     @media (min-width: 960px) {
-      /* line 211, ../sass/components/_front.scss */
+      /* line 218, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta:before {
         background: url('../images/generated/icons-s39c9756eb5.png') 0 -222px no-repeat;
         width: 347px;
@@ -3205,7 +3201,7 @@ body.front .l-main {
         left: 50%;
         margin-left: -175px; } }
     @media (min-width: 960px) {
-      /* line 222, ../sass/components/_front.scss */
+      /* line 229, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta .how-cta-column {
         float: left;
         width: 60%;
@@ -3213,26 +3209,26 @@ body.front .l-main {
         padding-left: 220px;
         padding-right: 60px; } }
     @media (min-width: 960px) {
-      /* line 222, ../sass/components/_front.scss */
+      /* line 229, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta .how-cta-column {
         padding-left: 150px; } }
-    /* line 237, ../sass/components/_front.scss */
+    /* line 244, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-title {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;
       margin-bottom: 15px; }
       @media (min-width: 960px) {
-        /* line 237, ../sass/components/_front.scss */
+        /* line 244, ../sass/components/_front.scss */
         .block--bean-home-how-it-works .how-cta .how-cta-title {
           font-size: 38px;
           font-size: 2.375rem;
           line-height: .95;
           margin-bottom: 10px; } }
-      /* line 248, ../sass/components/_front.scss */
+      /* line 255, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta .how-cta-title span {
         color: #f1592a; }
-    /* line 253, ../sass/components/_front.scss */
+    /* line 260, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-subtitle {
       font-weight: bold;
       color: #f1592a;
@@ -3240,18 +3236,18 @@ body.front .l-main {
       font-size: 1.25rem;
       margin-bottom: 15px; }
     @media (min-width: 960px) {
-      /* line 260, ../sass/components/_front.scss */
+      /* line 267, ../sass/components/_front.scss */
       .block--bean-home-how-it-works .how-cta .how-cta-link {
         float: right;
         width: 40%;
         text-align: left; } }
-    /* line 268, ../sass/components/_front.scss */
+    /* line 275, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-link a {
       display: inline-block;
       width: 276px;
       height: 102px;
       background: url(../images/button-how-cta.png) no-repeat; }
-    /* line 275, ../sass/components/_front.scss */
+    /* line 282, ../sass/components/_front.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-link span {
       display: none; }
 

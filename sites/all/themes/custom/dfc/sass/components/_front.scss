@@ -17,18 +17,24 @@ body.front {
 		z-index: 10;
 		height: 180px;
 		
-	  @include breakpoint($bp-tab) {
-			top: -30px;
-	  	height: 260px;
+//	  @include breakpoint($bp-tab) {
+//			top: -30px;
+//	  	height: 260px;
+//			left: 50%;
+//	    -webkit-transform: translate(-50%, 0);
+//	    -moz-transform: translate(-50%, 0);
+//	    -ms-transform: translate(-50%, 0);
+//	    -o-transform: translate(-50%, 0);
+//	    transform: translate(-50%, 0);
+//	  }
+
+	  @include breakpoint($bp-desk) {
 			left: 50%;
 	    -webkit-transform: translate(-50%, 0);
 	    -moz-transform: translate(-50%, 0);
 	    -ms-transform: translate(-50%, 0);
 	    -o-transform: translate(-50%, 0);
 	    transform: translate(-50%, 0);
-	  }
-
-	  @include breakpoint($bp-desk) {
 	  	height: 218px;
 			top: -118px;
 			margin-left: -130px;
@@ -51,11 +57,6 @@ body.front {
 		background: $color-orange;
 		padding: 40px 20px 0;
 		height: 160px;
-		
-	  @include breakpoint($bp-tab) {
-			padding-top: 175px;
-	  	height: 230px;
-	  }
 
 	  @include breakpoint($bp-desk) {
 			padding-top: 30px;
@@ -76,8 +77,14 @@ body.front {
 			@include rem(font-size, 33px);
 			text-transform: uppercase;
 
+		  @include breakpoint($bp-tab) {
+				width: 40%;
+				margin: auto;
+		  }
+
 		  @include breakpoint($bp-desk) {
 				padding-left: 340px;
+				width: auto;
 		  }
 
 		  @include breakpoint($bp-full) {
@@ -105,7 +112,7 @@ body.front {
 			padding: 85px 80px 155px;
 	  }
 
-	  @include breakpoint($bp-full) {
+	  @include breakpoint($bp-desk) {
 			padding-bottom: 80px;
 	  }
 		
@@ -132,7 +139,7 @@ body.front {
 			margin-bottom: 65px;
 			padding-top: 80px;
 			
-		  @include breakpoint($bp-full) {
+		  @include breakpoint($bp-desk) {
 				float: left;
 				display: inline-block;
 				width: 25%;

@@ -95,11 +95,10 @@
 		</div>
 	<?php endif; ?>
 	
+	<?php print $messages; ?>
+  <?php print render($tabs); ?>
+	
   <div class="l-main">
-
-		<?php print $messages; ?>
-    <?php print render($tabs); ?>
-
 		<?php if ($page['content_top']): ?>
 			<div class="content-top">
 				<?php print render($page['content_top']); ?>

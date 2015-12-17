@@ -81,6 +81,50 @@ function dfc_bean_uuid_features_default_beans() {
     ),
   );
   $beans[] = array(
+    'label' => 'Home - CTA',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'home---cta',
+    'view_mode' => 'default',
+    'created' => 1450325918,
+    'log' => '',
+    'uid' => 4,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => 'f19bf831-d131-4c35-8903-9d3f5b120738',
+    'uuid' => '6d6ba047-f41f-47d8-8088-876308784bb2',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="home-cta">
+	<div class="container">
+		<div class="home-cta-column"><div class="home-cta-title">Now you are ready!</div>
+		<div class="home-cta-subtitle">Hit the big ass button to join DFC for a buck</div>
+	</div>
+		<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+	</div>
+</div>',
+          'format' => 'full_html',
+          'safe_value' => '<div class="home-cta">
+<div class="container">
+<div class="home-cta-column">
+<div class="home-cta-title">Now you are ready!</div>
+<div class="home-cta-subtitle">Hit the big ass button to join DFC for a buck</div>
+</div>
+<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+</div>
+</div>
+',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
     'label' => 'Home - How it works',
     'description' => NULL,
     'title' => '',

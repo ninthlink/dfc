@@ -50,6 +50,12 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'footer_top',
           'weight' => '-10',
         ),
+        'bean-home---cta' => array(
+          'module' => 'bean',
+          'delta' => 'home---cta',
+          'region' => 'footer_top',
+          'weight' => '-9',
+        ),
       ),
     ),
   );

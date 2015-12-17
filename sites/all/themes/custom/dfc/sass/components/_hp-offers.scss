@@ -21,6 +21,7 @@
 	.views-row {
 		position: relative;
 		float: left;
+		max-width: 100%;
 
 	  @include breakpoint($bp-tab) {
 			width: 50%;

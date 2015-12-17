@@ -218,7 +218,7 @@
 				padding-right: 60px;
 		  }
 			
-		  @include breakpoint($bp-desk) {
+		  @include breakpoint($bp-full) {
 				padding-left: 150px;
 		  }
 		}

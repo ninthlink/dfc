@@ -2729,13 +2729,13 @@ body {
     transition: all .5s ease; }
 
 /* line 20, ../sass/base/_layout.scss */
-.container, .l-main, .block--views-offers-block .block__content, .block--views-offers-block-1 .block__content {
+.container, .l-main, .block--views-offers-block .block__content, .block--views-offers-block-1 .block__content, .block--views-partners-block .block__content {
   position: relative;
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto; }
   /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
-  .container:after, .l-main:after, .block--views-offers-block .block__content:after, .block--views-offers-block-1 .block__content:after {
+  .container:after, .l-main:after, .block--views-offers-block .block__content:after, .block--views-offers-block-1 .block__content:after, .block--views-partners-block .block__content:after {
     content: "";
     display: table;
     clear: both; }
@@ -3010,6 +3010,9 @@ body.node-type-page article.node--full, body.node-type-offers article.node--full
 /* line 3, ../sass/components/_front.scss */
 body.front .l-main {
   max-width: none; }
+/* line 9, ../sass/components/_front.scss */
+body.front .footer-top > .container, body.front .footer-top > .l-main, body.front .block--views-offers-block .footer-top > .block__content, .block--views-offers-block body.front .footer-top > .block__content, body.front .block--views-offers-block-1 .footer-top > .block__content, .block--views-offers-block-1 body.front .footer-top > .block__content, body.front .block--views-partners-block .footer-top > .block__content, .block--views-partners-block body.front .footer-top > .block__content {
+  max-width: none; }
 
 /* line 1, ../sass/components/_header.scss */
 .l-header {
@@ -3188,7 +3191,7 @@ body.front .l-main {
         padding-bottom: 80px; } }
     @media (min-width: 1180px) {
       /* line 101, ../sass/components/_hp-how-it-works.scss */
-      .block--bean-home-how-it-works .how-steps .container, .block--bean-home-how-it-works .how-steps .l-main, .block--bean-home-how-it-works .how-steps .block--views-offers-block .block__content, .block--views-offers-block .block--bean-home-how-it-works .how-steps .block__content, .block--bean-home-how-it-works .how-steps .block--views-offers-block-1 .block__content, .block--views-offers-block-1 .block--bean-home-how-it-works .how-steps .block__content {
+      .block--bean-home-how-it-works .how-steps .container, .block--bean-home-how-it-works .how-steps .l-main, .block--bean-home-how-it-works .how-steps .block--views-offers-block .block__content, .block--views-offers-block .block--bean-home-how-it-works .how-steps .block__content, .block--bean-home-how-it-works .how-steps .block--views-offers-block-1 .block__content, .block--views-offers-block-1 .block--bean-home-how-it-works .how-steps .block__content, .block--bean-home-how-it-works .how-steps .block--views-partners-block .block__content, .block--views-partners-block .block--bean-home-how-it-works .how-steps .block__content {
         padding: 0 150px; } }
     /* line 108, ../sass/components/_hp-how-it-works.scss */
     .block--bean-home-how-it-works .how-steps:before {
@@ -3375,6 +3378,43 @@ body.front .l-main {
   /* line 56, ../sass/components/_hp-offers.scss */
   .view-offers .views-row img {
     float: left; }
+
+/* line 2, ../sass/components/_hp-partners.scss */
+.block--views-partners-block {
+  position: relative;
+  text-align: center;
+  background: #ffffff;
+  padding: 50px 0 40px; }
+  /* line 12, ../sass/components/_hp-partners.scss */
+  .block--views-partners-block h2.block__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #666666;
+    letter-spacing: 6px; }
+
+@media (min-width: 960px) {
+  /* line 22, ../sass/components/_hp-partners.scss */
+  .view-partners .owl-carousel {
+    margin: 0 auto;
+    width: 80%; } }
+/* line 29, ../sass/components/_hp-partners.scss */
+.view-partners .owl-carousel .owl-item {
+  position: relative; }
+  /* line 32, ../sass/components/_hp-partners.scss */
+  .view-partners .owl-carousel .owl-item a {
+    display: block;
+    float: left;
+    max-width: 100%;
+    text-indent: -9999px; }
+    /* line 38, ../sass/components/_hp-partners.scss */
+    .view-partners .owl-carousel .owl-item a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 /* line 7, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {

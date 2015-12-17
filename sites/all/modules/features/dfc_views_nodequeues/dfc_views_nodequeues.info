@@ -2,6 +2,7 @@ name = DFC Views & Nodequeues
 core = 7.x
 package = Features
 dependencies[] = fe_nodequeue
+dependencies[] = owlcarousel_views
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[fe_nodequeue][] = homepage_offers_3

@@ -3,4 +3,11 @@ body.front {
 	.l-main {
 		max-width: none;
 	}
+	
+	.footer-top {
+		
+		> .container {
+			max-width: none;
+		}
+	}
 }

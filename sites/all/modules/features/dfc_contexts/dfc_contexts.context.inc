@@ -13,6 +13,74 @@ function dfc_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'clubhouse';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'clubhouse' => 'clubhouse',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-clubhouse-feature' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-feature',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+        'bean-clubhouse-intro-text' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-intro-text',
+          'region' => 'content_top',
+          'weight' => '-9',
+        ),
+        'bean-clubhouse-boat-tour' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-boat-tour',
+          'region' => 'content_top',
+          'weight' => '-8',
+        ),
+        'bean-clubhouse-slideshow' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-slideshow',
+          'region' => 'content_top',
+          'weight' => '-7',
+        ),
+        'bean-clubhouse-features-and-highlight' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-features-and-highlight',
+          'region' => 'content_top',
+          'weight' => '-6',
+        ),
+        'bean-clubhouse-book' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-book',
+          'region' => 'content_top',
+          'weight' => '-5',
+        ),
+        'bean-clubhouse-location' => array(
+          'module' => 'bean',
+          'delta' => 'clubhouse-location',
+          'region' => 'content_top',
+          'weight' => '-4',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['clubhouse'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'front';
   $context->description = '';
   $context->tag = '';

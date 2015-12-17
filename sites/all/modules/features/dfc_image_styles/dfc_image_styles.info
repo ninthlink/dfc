@@ -4,3 +4,4 @@ package = Features
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = 394x392
+features[image][] = 784x520

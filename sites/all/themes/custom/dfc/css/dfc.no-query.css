@@ -2867,31 +2867,32 @@ body.node-type-offers .tabs.tabs--primary,
 body.node-type-landing-page .tabs.tabs--primary,
 body.node-type-page .tabs.tabs--primary,
 body.node-type-offers .tabs.tabs--primary,
-body.node-type-partner .tabs.tabs--primary {
-  background: #333;
-  margin: 0; }
-  /* line 68, ../sass/components/_admin.scss */
+body.node-type-partner .tabs.tabs--primary,
+body.node-type-webform .tabs.tabs--primary {
+  background: #333; }
+  /* line 67, ../sass/components/_admin.scss */
   body.node-type-offers .tabs.tabs--primary li a.active,
   body.node-type-landing-page .tabs.tabs--primary li a.active,
   body.node-type-page .tabs.tabs--primary li a.active,
   body.node-type-offers .tabs.tabs--primary li a.active,
-  body.node-type-partner .tabs.tabs--primary li a.active {
+  body.node-type-partner .tabs.tabs--primary li a.active,
+  body.node-type-webform .tabs.tabs--primary li a.active {
     background: #f1592a;
     color: #fff; }
 
 /* line 3, ../sass/components/_ct-basic-page.scss */
-body.node-type-page article.node--full, body.node-type-offers article.node--full, body.node-type-partner article.node--full {
+body.node-type-page article.node--full, body.node-type-offers article.node--full, body.node-type-partner article.node--full, body.node-type-webform article.node--full {
   background-color: #ffffff;
   color: #000000;
   padding: 20px; }
   /* line 12, ../sass/components/_ct-basic-page.scss */
-  body.node-type-page article.node--full .field--title-field, body.node-type-offers article.node--full .field--title-field, body.node-type-partner article.node--full .field--title-field {
+  body.node-type-page article.node--full .field--title-field, body.node-type-offers article.node--full .field--title-field, body.node-type-partner article.node--full .field--title-field, body.node-type-webform article.node--full .field--title-field {
     background-color: #f1592a;
     min-height: 58px;
     padding: 20px;
     margin: -20px -20px 20px; }
     /* line 23, ../sass/components/_ct-basic-page.scss */
-    body.node-type-page article.node--full .field--title-field h1, body.node-type-offers article.node--full .field--title-field h1, body.node-type-partner article.node--full .field--title-field h1 {
+    body.node-type-page article.node--full .field--title-field h1, body.node-type-offers article.node--full .field--title-field h1, body.node-type-partner article.node--full .field--title-field h1, body.node-type-webform article.node--full .field--title-field h1 {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;

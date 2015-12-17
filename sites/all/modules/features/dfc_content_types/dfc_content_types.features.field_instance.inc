@@ -675,6 +675,57 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-webform-title_field'.
+  $field_instances['node-webform-title_field'] = array(
+    'bundle' => 'webform',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'title',
+        'settings' => array(
+          'title_class' => 'page-title',
+          'title_link' => '',
+          'title_style' => 'h1',
+        ),
+        'type' => 'title_linked',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => 1,
+    'settings' => array(
+      'hide_label' => array(
+        'entity' => 0,
+        'page' => 'page',
+      ),
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');

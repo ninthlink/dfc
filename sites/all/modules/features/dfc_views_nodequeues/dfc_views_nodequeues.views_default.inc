@@ -41,7 +41,7 @@ function dfc_views_nodequeues_views_default_views() {
     'homepage_offers_6' => 'homepage_offers_6',
     'homepage_offers_3' => 0,
   );
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -142,7 +142,7 @@ function dfc_views_nodequeues_views_default_views() {
     'homepage_offers_3' => 0,
     'homepage_offers_6' => 0,
   );
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

@@ -181,7 +181,7 @@
 			padding: 4px 0 0 70px;
 			
 			&:before {
-				@include get-sprite($icons-sprites, icon-video);
+				@include use-sprite($icon-video);
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -235,7 +235,7 @@
 				opacity: 1;
 				padding: 0;
 				text-indent: -9999px;
-				@include get-sprite($icons-sprites, icon-arrow-left);
+				@include use-sprite($icon-arrow-left);
 	
 			  @include breakpoint($bp-tab) {
 					left: 8%;
@@ -245,7 +245,7 @@
 			.owl-next {
 				left: auto;
 				right: 0;
-				@include get-sprite($icons-sprites, icon-arrow-right);
+				@include use-sprite($icon-arrow-right);
 	
 			  @include breakpoint($bp-full) {
 					right: 5%;
@@ -426,7 +426,7 @@
 	  }
 		
 		&:after {
-			@include get-sprite($icons-sprites, icon-gps);
+			@include use-sprite($icon-gps);
 			position: absolute;
 			top: 20px;
 			right: 20px;

@@ -1,3 +1,4 @@
 {
-  "directory" : "libraries"
+  "directory" : "libraries",
+  "analytics": false
 }

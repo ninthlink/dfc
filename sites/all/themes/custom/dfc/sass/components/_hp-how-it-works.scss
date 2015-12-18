@@ -101,7 +101,7 @@
 		.container {
 			
 		  @include breakpoint($bp-full) {
-				padding: 0 150px;
+				padding: 0 130px;
 		  }
 		}
 	
@@ -157,7 +157,7 @@
 		.step-01 {
 			
 			&:before {
-				@include get-sprite($icons-sprites, how-check);
+				@include use-sprite($how-check);
 		    margin-left: -27px;
 			}
 		}
@@ -165,7 +165,7 @@
 		.step-02 {
 			
 			&:before {
-				@include get-sprite($icons-sprites, how-points);
+				@include use-sprite($how-points);
 		    margin-left: -27px;
 			}
 		}
@@ -173,7 +173,7 @@
 		.step-03 {
 			
 			&:before {
-				@include get-sprite($icons-sprites, how-upload);
+				@include use-sprite($how-upload);
 		    margin-left: -27px;
 			}
 		}
@@ -181,7 +181,7 @@
 		.step-04 {
 			
 			&:before {
-				@include get-sprite($icons-sprites, how-perks);
+				@include use-sprite($how-perks);
 		    margin-left: -25px;
 			}
 		}
@@ -200,11 +200,11 @@
 		&:before {
 
 		  @include breakpoint($bp-desk) {
-				@include get-sprite($icons-sprites, line-arrow);
+				@include use-sprite($line-arrow);
 				position: absolute;
 				top: -20px;
-				left: 50%;
-				margin-left: -175px;
+				left: 53%;
+        @extend .transform-50-left;
 		  }
 		}
 		

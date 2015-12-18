@@ -1,5 +1,5 @@
 name = Dollar Fishing Club
-description = Custom theme based on omega
+description = DFC Custom Drupal 7 sub theme.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate

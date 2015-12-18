@@ -1,11 +1,18 @@
 {
   "name": "dfc",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "front-end dependencies for DFC theme",
   "dependencies": {
-    "respond": "fubhy/respond",
-    "selectivizr": "fubhy/selectivizr",
-    "html5shiv": "fubhy/html5shiv",
-    "matchmedia": "fubhy/matchmedia",
-    "pie": "fubhy/pie"
+    "formstone": "~0.7.10",
+    "modernizr": "~2.8.3",
+    "compass-mixins": "~1.0.2",
+    "breakpoint-sass": "~2.5.0",
+    "susy": "2.2.7",
+    "swiper": "https://github.com/nolimits4web/Swiper.git#3.1.0",
+    "html5shiv": "https://github.com/afarkas/html5shiv.git#3.7.3",
+    "matchmedia": "https://github.com/paulirish/matchMedia.js.git#0.2.0",
+    "js-cookie": "https://github.com/js-cookie/js-cookie.git",
+    "postscribe": "https://github.com/krux/postscribe.git",
+    "fontawesome": "https://github.com/FortAwesome/Font-Awesome.git#~4.2.0"
   }
 }

@@ -1,0 +1,12 @@
+// susy config
+$susy: (
+  container: 1180px, // max-width of a container
+  columns: 36, // number of columns
+  column-width: 20px, // column width at 1180
+  gutters: 0.6, // guter size in relation to a single column 12px/20px
+  math: fluid, // use fluid widths
+  output: float, // output based on floats
+  global-box-sizing: border-box, // use the border-box box sizing method
+  gutter-position: after, // position gutter after column as margin
+  last-flow: from // float the last element in a row left
+);

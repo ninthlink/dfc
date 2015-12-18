@@ -14,20 +14,24 @@ body {
 	  -ms-transition: all .5s ease;
 	  -o-transition: all .5s ease;
 	  transition: all .5s ease;
+		// font smoothing
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .container {
-	position: relative;
-	max-width: 1180px;
-	margin-left: auto;
-	margin-right: auto;
-	@include clearfix;
+  @include container;
+  position: relative;
 }
 
 .l-main {
 	@include clearfix;
 	@extend .container;
+  overflow: visible;
 }
 
 .content-bottom {

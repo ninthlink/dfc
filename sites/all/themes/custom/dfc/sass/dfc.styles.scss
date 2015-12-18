@@ -1,9 +1,8 @@
 // Import external libraries.
 @import "compass";
+@import "compass/css3/user-interface";
+@import "susy";
 @import "breakpoint";
-@import "singularitygs";
-@import "toolkit";
-@import "fa/font-awesome.scss";
 
 // Import variables, abstractions, base styles and components using globbing.
 //
@@ -17,8 +16,7 @@
 // directly. Variables-, function- or mixin providing partials should never
 // output any styles themselves: Importing them multiple times to resolve
 // dependencies shouldn't be a problem.
-@import "variables/**/*";
-@import "abstractions/**/*";
-@import "base/**/*";
-@import "components/**/*";
-@import "fa/**/*";
+@import "variables";
+@import "abstractions";
+@import "base";
+@import "components";

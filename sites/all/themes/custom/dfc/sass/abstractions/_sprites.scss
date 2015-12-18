@@ -1,0 +1,48 @@
+// this file exists to bridge the gap between the existing CSS and the
+// spritesmith-generated _spritemaps.scss file, with the use-sprite mixin being
+// the entry point. use-sprite has been updated from the original mixin to use
+// new spritesmith functions, but still outputs the same CSS properties. the one
+// major difference is that it accepts a map variable instead of a string as its
+// only param.
+//
+// a little more about sprite generation on the site...
+//
+// this site was originally built to support retina-size sprites only.
+// spritesmith can generate retina sprites, but it requires having normal-sized
+// sprites and retina sprites co-existing in same dir, with the retina images
+// named with a specified pattern (see retinaSrcFilter param). that pattern
+// must lexically sort both sets of images into two corresponding arrays.
+//
+// we have two problems with that setup: 1) our images don't lexically sort into
+// to identical arrays, and 2) at least one of our 2x images is odd-sized, so
+// the resizing rounds the image and spritesmith complains.
+//
+// it is because of the above that the following *-retina mixins exist. we use
+// the same technique as the spritesmith-generated mixins, but divide the
+// dimensions in half to accommdoate retina images.
+//
+// note: $sprite is a map variable in all params below.
+
+@mixin sprite-width-retina($sprite) {
+  width: map-get($sprite, 'width') / 2;
+}
+
+@mixin sprite-height-retina($sprite) {
+  height: map-get($sprite, 'height') / 2;
+}
+
+@mixin sprite-position-retina($sprite) {
+  background-position: (map-get($sprite, 'offset-x') / 2) (map-get($sprite, 'offset-y') / 2);
+}
+
+@mixin use-sprite($sprite) {
+  content: "";
+  display: inline-block;
+  overflow: hidden;
+  @include sprite-image($sprite);
+  background-size: (map-get($sprite, 'total-width') / 2) (map-get($sprite, 'total-height') / 2);
+  background-repeat: no-repeat;
+  @include sprite-position-retina($sprite);
+  @include sprite-width-retina($sprite);
+  @include sprite-height-retina($sprite);
+}

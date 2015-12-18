@@ -28,7 +28,7 @@
 		  }
 			
 			&:before {
-				@include get-sprite($icons-sprites, icon-menu);
+				@include use-sprite($icon-menu);
 
 			  @include breakpoint($bp-tab) {
 					margin-right: 10px;
@@ -47,7 +47,7 @@
 				&:after {
 
 					@include breakpoint($bp-desk) {
-						@include get-sprite($icons-sprites, icon-close);
+						@include use-sprite($icon-close);
 						position: absolute;
 						top: 15px;
 						right: -166px;
@@ -59,7 +59,7 @@
 				width: 100%;
 				border-radius: 0;
 				box-shadow: none;
-				@include font-size(14px);
+				@include rem(font-size, 14px);
 				font-family: $sr;
 				line-height: 1;
 				position: absolute;

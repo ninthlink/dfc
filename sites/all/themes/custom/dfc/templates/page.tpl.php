@@ -138,9 +138,7 @@
 
 	<?php if ($page['footer_top']): ?>
 		<div class="footer-top">
-			<div class="container">
-				<?php print render($page['footer_top']); ?>
-			</div>
+			<?php print render($page['footer_top']); ?>
 		</div>
 	<?php endif; ?>
 

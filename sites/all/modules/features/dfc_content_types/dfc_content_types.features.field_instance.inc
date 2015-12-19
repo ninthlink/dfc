@@ -254,7 +254,7 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-media_item-field_image'] = array(
     'bundle' => 'media_item',
     'deleted' => 0,
-    'description' => 'Upload either an image or a video',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -267,10 +267,14 @@ function dfc_content_types_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => '348x196',
+        ),
+        'type' => 'image',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -314,7 +318,7 @@ function dfc_content_types_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -337,7 +341,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -355,7 +359,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -363,7 +367,7 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-media_item-field_media_link'] = array(
     'bundle' => 'media_item',
     'deleted' => 0,
-    'description' => 'Upload a video or an image.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -381,13 +385,13 @@ function dfc_content_types_field_default_field_instances() {
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_media_link',
-    'label' => 'Media Link',
+    'label' => 'Video',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -421,7 +425,7 @@ function dfc_content_types_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -442,7 +446,7 @@ function dfc_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -460,7 +464,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -482,7 +486,7 @@ function dfc_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -503,7 +507,7 @@ function dfc_content_types_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -515,7 +519,7 @@ function dfc_content_types_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'owlcarousel_fields',
         'settings' => array(
           'settings_group' => 'owlcarousel_settings_media-related-videos',
@@ -528,13 +532,13 @@ function dfc_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_related_media',
-    'label' => 'Related Videos',
+    'label' => 'Related Media',
     'required' => 0,
     'settings' => array(
       'membership_entity_join_form' => FALSE,
@@ -550,7 +554,7 @@ function dfc_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -581,7 +585,7 @@ function dfc_content_types_field_default_field_instances() {
           'title_style' => '_none',
         ),
         'type' => 'title_linked',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -1094,15 +1098,13 @@ function dfc_content_types_field_default_field_instances() {
   t('Image');
   t('Link');
   t('Media Category');
-  t('Media Link');
   t('Media Type');
-  t('Related Videos');
+  t('Related Media');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');
   t('Title');
-  t('Upload a video or an image.');
   t('Upload an image to go with this article.');
-  t('Upload either an image or a video');
+  t('Video');
 
   return $field_instances;
 }

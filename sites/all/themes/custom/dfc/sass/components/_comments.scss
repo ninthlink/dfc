@@ -1,0 +1,38 @@
+#comments {
+  background: $color-white;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  @include breakpoint($bp-desk) {
+    padding: 50px;
+  }
+  
+  article.comment {
+    margin-bottom: 20px;
+
+    @include breakpoint($bp-desk) {
+      margin-bottom: 50px;
+    }
+    
+    h3 {
+      margin-bottom: 10px;
+    }
+    
+    .comment__info {
+      @include rem(font-size, 13px);
+      margin-bottom: 10px;
+      
+      p.submitted {
+        display: inline;
+      }
+    }
+    
+    .comment__content {
+      margin-bottom: 10px;
+    }
+    
+    .comment__links {
+      @include rem(font-size, 14px);
+    }
+  }
+}

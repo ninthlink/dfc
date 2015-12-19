@@ -17,56 +17,215 @@ body.node-type-media-item {
 	  }
 	}
 	
-	.field--media-link {
-		margin-bottom: 20px;
+  .group-media-header {
+
+  	.field--media-link {
+  		margin-bottom: 20px;
+
+  	  @include breakpoint($bp-full) {
+  			padding: 0 50px;
+  			margin-bottom: 65px;
+  	  }
+		
+  		iframe {
+  			width: 100%;
+
+  		  @include breakpoint($bp-full) {
+  				height: 610px;
+  		  }
+  		}
+  	}    
+  }
+	
+	.group-media-content {
+	  @extend .row-padding;
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-desk) {
+      width: 70%;
+	  }
+	
+  	.field--media-category {
+  		font-family: $dr;
+  		@include rem(font-size, 20px);
+  		line-height: .8;
+  		text-transform: uppercase;
+  		color: $color-orange;
+  		margin-bottom: 20px;
+		
+  		&:before {
+  			@include use-sprite($icon-video-small);
+  			display: inline-block;
+  			margin-right: 10px;
+  		}
+  	}
+	
+  	.field--title-field {
+      margin-bottom: 20px;
+
+		  @include breakpoint($bp-desk) {
+        margin-bottom: 50px;
+        width: 70%;
+		  }
+		
+  		h2 {
+  			font-family: Helvetica;
+        font-weight: bold;
+  			@include rem(font-size, 42px);
+  			line-height: 1;
+  			color: $color-white;
+  			margin-bottom: 0;
+        
+        a {
+    			color: $color-white;
+          text-decoration: none;
+          
+          &:hover {
+            color: $color-orange;
+          }
+        }
+  		}
+  	}
+	
+  	.field--product-description {
+  		font-family: $sr;
+  		color: $color-white;
+  	}
+  }
+	
+	.group-related-videos {
+    background: $color-gray-3;
+    padding: 20px 20px 0;
+    @include clearfix;
 
 	  @include breakpoint($bp-full) {
-			padding: 0 50px;
-			margin-bottom: 65px;
+      padding: 60px 50px 0;
 	  }
-		
-		iframe {
-			width: 100%;
+	  
+    h3.field-label {
+  		font-family: $dr;
+  		@include rem(font-size, 30px);
+  		line-height: .8;
+  		text-transform: uppercase;
+  		color: $color-orange;
+  		margin-bottom: 20px;
+    }
+    
+    .node--media-item--teaser {
+      position: relative;
+      background: $color-gray-19;
+      height: 380px;
+      
+      header,
+      .node__links {
+        display: none;
+      }
 
-		  @include breakpoint($bp-full) {
-				height: 610px;
+    	.field--media-link {
+		
+    		iframe {
+    			width: 100%;
+          height: 188px;
+    		}
+    	}
+    
+    	.field--media-category {
+    		font-family: $dr;
+    		@include rem(font-size, 20px);
+    		line-height: .8;
+    		text-transform: uppercase;
+    		color: $color-orange;
+        padding: 30px 30px 0;
+		
+    		&:before {
+    			@include use-sprite($icon-video-smaller);
+    			display: inline-block;
+    			margin-right: 10px;
+    		}
+    	}
+    
+      .field--title-field {
+  			font-family: Helvetica;
+        font-weight: bold;
+  			@include rem(font-size, 25px);
+  			line-height: .8;
+  			color: $color-white;
+        padding: 15px 30px 20px;
+        
+        a {
+    			color: $color-white;
+          text-decoration: none;
+          
+          &:hover {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+	}
+  
+  .owl-carousel {
+    
+    .owl-wrapper {
+      .owl-item {
+        padding-right: 15px;
+      }
+    }
+    
+    .owl-controls {
+      position: relative;
+      width: 270px;
+      margin: 30px auto;
+
+		  @include breakpoint($bp-tab) {
+        width: 300px;
 		  }
-		}
-	}
-	
-	.group-media-content {}
-	
-	.field--media-category {
-		font-family: $dr;
-		@include rem(font-size, 20px);
-		line-height: .8;
-		text-transform: uppercase;
-		color: $color-orange;
-		margin-bottom: 20px;
-		
-		&:before {
-			@include use-sprite($icon-gps);
-			display: inline-block;
-			margin-right: 10px;
-		}
-		
-	}
-	
-	.field--title-field {
-		
-		h2 {
-			font-family: Helvetica;
-			@include rem(font-size, 42px);
-			line-height: .8;
-			color: $color-white;
-			margin-bottom: 50px;
-		}
-	}
-	
-	.field--product-description {
-		font-family: $sr;
-		color: $color-white;
-	}
-	
-	.group-related-videos {}
+      
+      .owl-pagination {
+
+         .owl-page {
+
+          span {
+            border-radius: 0;
+            opacity: 1;
+            background: $color-gray-9;
+            height: 4px;
+            width: 32px;
+            margin: 10px 8px;
+          }
+          
+          &.active {
+            
+            span {
+              background: $color-orange;
+            }
+          }
+        }
+      }
+      
+      .owl-buttons {
+        
+  			.owl-prev,
+  			.owl-next {
+  				@extend .transform-50;
+  			  background: none;
+  				border-radius: 0;
+  				margin: 0;
+  				opacity: 1;
+  				padding: 0;
+  				text-indent: -9999px;
+  				@include use-sprite($icon-arrow-left);
+          position: absolute;
+          top: 10px;
+          left: 10px;
+  			}
+			
+  			.owl-next {
+  				@include use-sprite($icon-arrow-right);
+          left: auto;
+          right: -5px;
+				}
+      }
+    }
+  }
 }

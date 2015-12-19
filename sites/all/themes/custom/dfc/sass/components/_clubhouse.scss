@@ -235,7 +235,7 @@
 				opacity: 1;
 				padding: 0;
 				text-indent: -9999px;
-				@include use-sprite($icon-arrow-left);
+				@include use-sprite($icon-circle-arrow-left);
 	
 			  @include breakpoint($bp-tab) {
 					left: 8%;
@@ -245,7 +245,7 @@
 			.owl-next {
 				left: auto;
 				right: 0;
-				@include use-sprite($icon-arrow-right);
+				@include use-sprite($icon-circle-arrow-right);
 	
 			  @include breakpoint($bp-full) {
 					right: 5%;
@@ -412,7 +412,7 @@
   }
 	
 	.ch-location-header {
-		background: $color-gray-medium;
+		background: $color-gray-9;
 		position: relative;
 		color: $color-white;
 		padding: 20px 70px 20px 20px;

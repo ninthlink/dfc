@@ -196,6 +196,44 @@ function dfc_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'media';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'media' => 'media',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-media_items-block_1' => array(
+          'module' => 'views',
+          'delta' => 'media_items-block_1',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+        'views-media_items-block' => array(
+          'module' => 'views',
+          'delta' => 'media_items-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['media'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'media_item';
   $context->description = 'Media Content Type';
   $context->tag = 'content type';

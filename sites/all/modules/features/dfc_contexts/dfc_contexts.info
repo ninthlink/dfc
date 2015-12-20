@@ -10,6 +10,7 @@ dependencies[] = views
 features[context][] = clubhouse
 features[context][] = front
 features[context][] = global
+features[context][] = media
 features[context][] = media_item
 features[ctools][] = context:context:3
 features[features_api][] = api:2

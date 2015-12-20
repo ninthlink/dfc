@@ -1,6 +1,14 @@
+body.section-media {
+  
+  .l-main {
+    max-width: none;
+  }
+}
+
 // Media Filter Block
 .block--views-media-items-block-1 {
   position: relative;
+  @include container;
   
   h2.block__title {
     background-color: $color-orange;
@@ -190,35 +198,154 @@
   
   .owl-controls {
     @extend .owl-controls-bars;
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
+
+	  @include breakpoint($bp-desk) {
+      position: absolute;
+      bottom: 30px;
+      right: -30px;
+	  }
+
+	  @include breakpoint($bp-full) {
+      right: 40px;
+	  }
   }
 }
 
 //Media grid
 .block--views-media-items-block {
- 
-  h2.block__title {}
+  background: $color-gray-29 url(../images/bg-media.jpg) no-repeat 50% 0;
+  background-size: cover;
   
-  .views-row {}
+  .inner {
+    @include container;
+    padding: 30px 20px 60px;
+
+	  @include breakpoint($bp-desk) {
+      padding: 30px 50px 60px;
+	  }
+  }
+ 
+  h2.block__title {  
+		font-family: $dr;
+		@include rem(font-size, 30px);
+		line-height: .8;
+		text-transform: uppercase;
+		color: $color-orange;
+		margin-bottom: 20px;
+  }
+  
+  .view-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .views-row {
+    position: relative;
+    height: 390px;
+    max-width: 348px;
+    margin: 0 auto 15px;
+    text-align: left;
+    z-index: 1;
+
+	  @include breakpoint($bp-tab) {
+      width: 348px;
+	  }
+
+	  @include breakpoint($bp-desk) {
+      float: left;
+      margin: 0 15px 15px 0;
+	  }
+    
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $color-black;
+      opacity: .5;
+      z-index: -1;
+    }
+    
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(3n+1) {
+      clear: left;
+    }
+  }
   
   .media-header {
     
-    .field--media-link {}
+    .field--media-link {
+      
+      iframe {
+        width: 100%;
+        height: 166px;
+
+  		  @include breakpoint($bp-tab) {
+  				height: 196px;
+  		  }
+      }
+    }
     
     .field--image {}
   }
   
   .media-content {
+    padding: 25px 30px;
     
-    .field--media-category {}
+    .field--media-category {
+  		font-family: $dr;
+  		@include rem(font-size, 13px);
+  		line-height: .8;
+  		text-transform: uppercase;
+  		color: $color-orange;
+  		margin-bottom: 20px;
+		
+  		&:before {
+  			@include use-sprite($icon-video-smaller);
+  			display: inline-block;
+  			margin-right: 10px;
+  		}
+    }
     
-    .views-field-title {}
+    .views-field-title {
+			font-family: Helvetica;
+      font-weight: bold;
+			@include rem(font-size, 25px);
+			line-height: 1;
+			color: $color-white;
+			margin-bottom: 0;
+      
+      a {
+  			color: $color-white;
+        text-decoration: none;
+        
+        &:hover {
+          color: $color-orange;
+        }
+      }
+    }
   }
   
   ul.pager {
+    margin: 0;
+    @extend .no-list;
     
-    a {}
+	  @include breakpoint($bp-full) {
+      padding-top: 20px;
+	  }
+    
+    a {
+      @extend .button;
+    
+  	  @include breakpoint($bp-desk) {
+        width: 348px;
+  	  }
+    }
   }
 }

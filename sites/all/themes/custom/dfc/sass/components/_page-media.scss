@@ -129,6 +129,9 @@
   				height: 314px;
   		  }
 
+  		  @include breakpoint($bp-desk) {
+  				height: 380px;
+  		  }
       }
     }
   }
@@ -179,7 +182,7 @@
       }
     }
     
-    .field--product-description {
+    .views-field-field-product-description {
   		font-family: $sr;
       color: $color-white;
     }
@@ -187,6 +190,9 @@
   
   .owl-controls {
     @extend .owl-controls-bars;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
   }
 }
 

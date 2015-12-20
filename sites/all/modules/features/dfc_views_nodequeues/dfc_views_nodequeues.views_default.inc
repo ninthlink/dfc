@@ -300,10 +300,10 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_description']['table'] = 'field_data_field_product_description';
   $handler->display->display_options['fields']['field_product_description']['field'] = 'field_product_description';
   $handler->display->display_options['fields']['field_product_description']['label'] = '';
-  $handler->display->display_options['fields']['field_product_description']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_product_description']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['field_product_description']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_product_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_product_description']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_product_description']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;

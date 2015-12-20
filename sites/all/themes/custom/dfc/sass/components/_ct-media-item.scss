@@ -181,71 +181,15 @@ body.node-type-media-item {
     }
   
     .owl-carousel {
-    
+
       .owl-wrapper {
         .owl-item {
           padding-right: 15px;
         }
       }
-    
+      
       .owl-controls {
-        position: relative;
-        width: 270px;
-        margin: 30px auto 0;
-
-  		  @include breakpoint($bp-tab) {
-          width: 300px;
-  		  }
-
-  		  @include breakpoint($bp-full) {
-          margin-bottom: -30px;
-  		  }
-      
-        .owl-pagination {
-
-           .owl-page {
-
-            span {
-              border-radius: 0;
-              opacity: 1;
-              background: $color-gray-9;
-              height: 4px;
-              width: 32px;
-              margin: 10px 8px;
-            }
-          
-            &.active {
-            
-              span {
-                background: $color-orange;
-              }
-            }
-          }
-        }
-      
-        .owl-buttons {
-        
-    			.owl-prev,
-    			.owl-next {
-    				@extend .transform-50;
-    			  background: none;
-    				border-radius: 0;
-    				margin: 0;
-    				opacity: 1;
-    				padding: 0;
-    				text-indent: -9999px;
-    				@include use-sprite($icon-arrow-left);
-            position: absolute;
-            top: 10px;
-            left: 10px;
-    			}
-			
-    			.owl-next {
-    				@include use-sprite($icon-arrow-right);
-            left: auto;
-            right: -5px;
-  				}
-        }
+        @extend .owl-controls-bars;
       }
     }
 	}

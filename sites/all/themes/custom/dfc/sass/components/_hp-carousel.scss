@@ -1,0 +1,151 @@
+// Home Media
+.block--views-media-items-block-2 {
+	position: relative;
+  background: url(../images/bg-media-home.jpg) no-repeat 50% 0;
+  background-size: cover;
+  
+  .inner {
+    padding: 20px;
+
+    @include breakpoint($bp-tab) {
+      padding: 40px 100px;
+    }
+
+    @include breakpoint($bp-full) {
+      @include container;
+      padding: 110px 180px;
+    }
+  }
+  
+  .media-header {
+    margin-bottom: 0;
+    
+	  @include breakpoint($bp-desk) {
+      float: right;
+      width: 55%;
+	  }
+    
+    .field--media-link {
+      
+      iframe {
+        width: 100%;
+        height: 188px;
+
+  		  @include breakpoint($bp-tab) {
+  				height: 230px;
+  		  }
+
+  		  @include breakpoint($bp-full) {
+  				height: 260px;
+  		  }
+      }
+    }
+  }
+
+  .media-content {
+    padding: 20px;
+    
+	  @include breakpoint($bp-tab) {
+      padding: 80px 0 0;
+	  }
+    
+	  @include breakpoint($bp-desk) {
+      float: left;
+      width: 45%;
+	  }
+    
+	  @include breakpoint($bp-full) {
+      padding-right: 50px;
+	  }
+    
+    .views-field-title {
+      position: relative;
+			font-family: $dr;
+			@include rem(font-size, 30px);
+			line-height: .8;
+			color: $color-white;
+			margin-bottom: 5px;
+      text-transform: uppercase;
+
+  	  @include breakpoint($bp-desk) {
+        @include rem(font-size, 78px);
+  	  }
+      
+  		&:before {
+  			@include use-sprite($icon-video-home-media);
+  			display: inline-block;
+        position: absolute;
+        top: -40px;
+        left: 0;
+  		}
+      
+      a {
+  			color: $color-white;
+        text-decoration: none;
+      }
+    }
+    
+    .views-field-nothing {
+      font-family: $sr;
+      text-transform: uppercase;
+			@include rem(font-size, 18px);
+      color: $color-orange;
+    }
+  }
+  
+
+  .owl-controls {
+
+    .owl-pagination {
+      display: none;
+    }
+		
+		.owl-buttons {
+			
+			.owl-prev,
+			.owl-next {
+				position: absolute;
+				top: 50%;
+				left: 10%;
+				@extend .transform-50;
+			  background: none;
+				border-radius: 0;
+				margin: 0;
+				opacity: 1;
+				padding: 0;
+				text-indent: -9999px;
+				@include use-sprite($icon-arrow-thin-left);
+	
+			  @include breakpoint($bp-tab) {
+					left: -15%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					left: -8%;
+			  }
+
+			  @include breakpoint($bp-full) {
+					left: -15%;
+			  }
+			}
+			
+			.owl-next {
+				left: auto;
+				right: 0;
+				@include use-sprite($icon-arrow-thin-right);
+	
+			  @include breakpoint($bp-tab) {
+					right: -20%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					right: -10%;
+			  }
+        
+			  @include breakpoint($bp-full) {
+					right: -20%;
+			  }
+			}
+		}
+  }
+}

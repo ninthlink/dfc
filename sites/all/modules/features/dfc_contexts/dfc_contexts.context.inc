@@ -94,17 +94,23 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-media_items-block_2' => array(
+          'module' => 'views',
+          'delta' => 'media_items-block_2',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
         'bean-home---how-it-works' => array(
           'module' => 'bean',
           'delta' => 'home---how-it-works',
           'region' => 'content_top',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-offers-block' => array(
           'module' => 'views',
           'delta' => 'offers-block',
           'region' => 'content_top',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'views-offers-block_1' => array(
           'module' => 'views',

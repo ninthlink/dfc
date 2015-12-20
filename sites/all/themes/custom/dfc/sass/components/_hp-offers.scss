@@ -2,7 +2,7 @@
 // 6 Offers
 .block--views-offers-block {
 	
-	.block__content {
+	.inner {
 		@extend .container;
 	}
 }
@@ -10,7 +10,7 @@
 // 3 Offers
 .block--views-offers-block-1 {
 	
-	.block__content {
+	.inner {
 		@extend .container;
 	}
 }

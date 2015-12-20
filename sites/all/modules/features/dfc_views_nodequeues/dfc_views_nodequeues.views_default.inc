@@ -223,6 +223,20 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'media_media_carousel' => 'media_media_carousel',
+    'homepage_offers_3' => 0,
+    'homepage_offers_6' => 0,
+    'homepage_partners' => 0,
+    'media_homepage' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
@@ -305,6 +319,12 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */

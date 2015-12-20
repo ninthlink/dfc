@@ -118,7 +118,7 @@ function dfc_views_nodequeues_fe_nodequeue_export_fields() {
     'name' => 'media_media_carousel',
     'title' => 'Media - Media Carousel',
     'subqueue_title' => '',
-    'size' => 4,
+    'size' => 8,
     'link' => '',
     'link_remove' => '',
     'owner' => 'nodequeue',

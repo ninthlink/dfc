@@ -10,10 +10,10 @@ body.node-type-media-item {
 		line-height: .8;
 		text-transform: uppercase;
 		color: $color-white;
-		
 
 	  @include breakpoint($bp-desk) {
 			padding: 20px 50px;
+      margin-bottom: 40px;
 	  }
 	}
 	

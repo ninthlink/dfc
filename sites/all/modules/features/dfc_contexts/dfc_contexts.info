@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
 dependencies[] = views
+features[context][] = blog_landing
 features[context][] = clubhouse
 features[context][] = front
 features[context][] = global

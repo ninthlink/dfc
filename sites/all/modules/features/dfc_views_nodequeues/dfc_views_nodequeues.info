@@ -13,6 +13,7 @@ features[fe_nodequeue][] = homepage_partners
 features[fe_nodequeue][] = media_homepage
 features[fe_nodequeue][] = media_media_carousel
 features[features_api][] = api:2
+features[views_view][] = blog
 features[views_view][] = media_items
 features[views_view][] = offers
 features[views_view][] = partners

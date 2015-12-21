@@ -14,6 +14,7 @@ features[context][] = front
 features[context][] = global
 features[context][] = media
 features[context][] = media_item
+features[context][] = news_events_landing
 features[ctools][] = context:context:3
 features[features_api][] = api:2
 features_exclude[dependencies][dfc_content_types] = dfc_content_types

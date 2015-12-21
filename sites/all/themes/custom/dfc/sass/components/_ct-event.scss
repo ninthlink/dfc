@@ -1,0 +1,22 @@
+body.node-type-event {
+	@extend body.node-type-page;
+  
+  .field--date {
+    font-family: $sr;
+    @include rem(font-size, 14px);
+    margin-bottom: 10px;
+  }
+  
+  .group-location {
+    margin-bottom: 20px;
+    @include rem(font-size, 14px);
+    
+    .field-label {
+      font-weight: bold;
+    }
+    
+    .field--location {
+      display: inline;
+    }
+  }
+}

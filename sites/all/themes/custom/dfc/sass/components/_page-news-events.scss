@@ -1,0 +1,132 @@
+body.node-type-landing-page.section-news-events {
+  
+  .block--views-news-events-block {
+    
+    h2.block__title {
+      background-color: $color-orange;
+      height: 58px;
+      line-height: 58px;
+      margin: 0;
+      font-family: $dr;
+      @include rem(font-size, 30px);
+      text-transform: uppercase;
+      color: $color-white;
+  		padding: 0 20px;
+
+  	  @include breakpoint($bp-desk) {
+  			padding: 0 50px;
+  	  }
+    }
+    
+  
+    .view-filters {
+      position: absolute;
+      top: 0;
+      right: 0;
+    
+      .views-exposed-widgets {
+        margin: 0;
+      }
+    
+      .views-exposed-form .views-exposed-widget {
+        padding: 0;
+      }
+    
+      .views-submit-button,
+      .description, 
+      .form-item-edit-type-all {
+        display: none;
+      }
+    
+
+      // video
+      .form-item-edit-type-event,
+      .form-item-edit-type-news {
+        position: relative;
+        display: block;
+        float: left;
+        font-family: $sr;
+        text-transform: uppercase;
+        margin-left: 1px;
+      
+        a {
+          position: relative;
+          display: block;
+          height: 58px;
+          line-height: 58px;
+          padding: 0 20px;
+          background: $color-gray-89;
+          color: $color-white;
+          text-decoration: none;
+
+      	  @include breakpoint($bp-desk) {
+      	  }
+
+          &.active {
+            background: $color-white;
+            color: $color-default;
+          }
+        }
+      }
+    }
+    
+    .view-news-events {
+      padding: 20px;
+      background: $color-white;
+
+  	  @include breakpoint($bp-desk) {
+        padding: 50px;
+  	  }
+    }
+    
+    .views-row {
+      @include clearfix;
+      margin-bottom: 20px;
+
+  	  @include breakpoint($bp-desk) {
+        margin-bottom: 50px;
+  	  }
+    }
+    
+    .views-field-title {
+      font-family: $dr;
+      @include rem(font-size, 30px);
+      margin-bottom: 10px;
+      line-height: 1;
+      
+      a {
+        color: $color-orange;
+        text-decoration: none;
+        
+        &:hover {
+          color: $color-default;
+        }
+      }
+    }
+    
+    .views-field-field-date {
+      font-family: $sr;
+      @include rem(font-size, 14px);
+      margin-bottom: 5px;
+    }
+    
+    .views-field-field-location {
+      margin-bottom: 5px;
+      @include rem(font-size, 14px);
+      
+      .views-label {
+        font-weight: bold;
+      }
+      
+      .field-content {
+        display: inline;
+      }
+    }
+
+    .views-field-body {}
+
+    ul.pager {
+      @extend .load-more;
+    }
+  }
+}

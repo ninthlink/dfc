@@ -26,6 +26,14 @@ function dfc_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'event' => array(
+      'name' => t('Event'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'landing_page' => array(
       'name' => t('Landing Page'),
       'base' => 'node_content',
@@ -36,6 +44,14 @@ function dfc_content_types_node_info() {
     ),
     'media_item' => array(
       'name' => t('Media Item'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'news' => array(
+      'name' => t('News'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

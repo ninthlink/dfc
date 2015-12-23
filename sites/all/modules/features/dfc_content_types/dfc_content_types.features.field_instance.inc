@@ -708,53 +708,6 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-media_item-field_related_media'.
-  $field_instances['node-media_item-field_related_media'] = array(
-    'bundle' => 'media_item',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'owlcarousel_fields',
-        'settings' => array(
-          'settings_group' => 'owlcarousel_settings_media-related-videos',
-          'view_mode' => 'teaser',
-        ),
-        'type' => 'owlcarousel_er_formatter',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_related_media',
-    'label' => 'Related Media',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-media_item-title_field'.
   $field_instances['node-media_item-title_field'] = array(
     'bundle' => 'media_item',
@@ -1395,7 +1348,6 @@ function dfc_content_types_field_default_field_instances() {
   t('Location of Event');
   t('Media Category');
   t('Media Type');
-  t('Related Media');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');
   t('Title');

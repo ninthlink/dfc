@@ -220,7 +220,7 @@ function dfc_content_types_field_group_info() {
     'children' => array(
       0 => 'field_related_media',
     ),
-    'format_type' => 'div',
+    'format_type' => 'hidden',
     'format_settings' => array(
       'label' => 'Related Videos',
       'instance_settings' => array(

@@ -289,6 +289,12 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-related_videos-block' => array(
+          'module' => 'views',
+          'delta' => 'related_videos-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
         'views-partners-block' => array(
           'module' => 'views',
           'delta' => 'partners-block',

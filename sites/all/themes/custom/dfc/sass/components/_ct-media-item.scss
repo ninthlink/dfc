@@ -106,7 +106,7 @@ body.node-type-media-item {
   	}
   }
 	
-	.group-related-videos {
+	.block--views-related-videos-block {
     background: $color-gray-3;
     padding: 20px 20px;
     @include clearfix;
@@ -116,7 +116,7 @@ body.node-type-media-item {
       padding: 60px 50px;
 	  }
 	  
-    h3 {
+    h2.block__title {
   		font-family: $dr;
   		@include rem(font-size, 30px);
   		line-height: .8;

@@ -358,13 +358,9 @@ function dfc_contexts_context_default_contexts() {
         'users/*' => 'users/*',
       ),
     ),
-    'user_page' => array(
+    'user' => array(
       'values' => array(
-        'form' => 'form',
-        'view' => 'view',
-      ),
-      'options' => array(
-        'mode' => 'all',
+        'authenticated user' => 'authenticated user',
       ),
     ),
   );
@@ -380,7 +376,7 @@ function dfc_contexts_context_default_contexts() {
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

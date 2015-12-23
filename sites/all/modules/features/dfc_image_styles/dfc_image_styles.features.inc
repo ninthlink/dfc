@@ -25,6 +25,21 @@ function dfc_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 200x200.
+  $styles['200x200'] = array(
+    'label' => '200x200',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 200,
+          'height' => 200,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 348x196.
   $styles['348x196'] = array(
     'label' => '348x196',

@@ -1,13 +1,215 @@
-body.section-block,
-body.page-user {
+body.section-user,
+body.section-users {
 	
-	 .l-main {
-		background-color: $color-white;
-		color: $color-black;
-		padding: 20px;
+  .l-main {
+    color: $color-gray-c;
+	}
+  
+  h1 {
+    display: none;
+  }
+
+  .block--bean-title-my-profile {
+    @include container;
+	
+  	h2.block__title {
+  		background-color: $color-orange;
+  		min-height: 58px;
+  		padding: 20px;
+  		margin-bottom: 0;
+  		font-family: $dr;
+  		@include rem(font-size, 30px);
+  		line-height: .8;
+  		text-transform: uppercase;
+  		color: $color-white;
+
+  	  @include breakpoint($bp-desk) {
+  			padding: 20px 50px;
+  	  }
+  	}
+  }
+}
+
+// User Profile
+article.user-profile {
+  @include clearfix;
+  background: $color-gray-36;
+  padding: 60px 50px 50px;
+
+  .user-picture {
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-tab) {
+      float: left;
+      width: 40%;
+	  }
 
 	  @include breakpoint($bp-desk) {
-			padding: 50px;
+      width: 18%;
+      margin-bottom: 0;
 	  }
-	}
+    
+    img {
+      width: 136px;
+      border-radius: 200px;
+      overflow: hidden;
+      border: 2px solid $color-white;
+    }
+  }
+  
+  .group-personal {
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-tab) {
+      float: left;
+      width: 60%;
+      padding-top: 10px;
+	  }
+    
+	  @include breakpoint($bp-desk) {
+      width: 32%;
+      margin-bottom: 0;
+	  }
+    
+    .field--first-name,
+    .field--last-name {
+      font-family: $dr;
+      @include rem(font-size, 33px);
+      line-height: .9;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+    
+    .field--last-name {
+      margin-bottom: 5px;
+    }
+    
+    .field--city-state {
+      font-family: $sr;
+      @include rem(font-size, 16px);
+    }
+  }
+  
+  .group-profile-points {
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-tab) {
+      clear: both;
+	  }
+    
+	  @include breakpoint($bp-desk) {
+      clear: none;
+      float: left;
+      width: 50%;
+      margin-bottom: 0;
+	  }
+    
+    h3 {
+      display: none;
+    }
+    
+    .userpoints-points {
+      @extend .no-list;
+      
+      li {
+        font-family: $sr;
+        color: $color-white;
+        @include rem(font-size, 36px);
+        
+        .placeholder {
+          display: block;
+          @include rem(font-size, 16px);
+          color: $color-orange;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+// User Edit Form
+form.user-profile-form {
+  padding: 20px;
+
+  @include breakpoint($bp-desk) {
+    padding: 50px;
+  }
+  
+  .form-item {
+    
+    label {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      @include rem(font-size, 18px);
+    }
+
+    input.form-text {
+      width: 100%;
+      height: 42px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .description {
+      @include rem(font-size, 12.5px);
+      line-height: 1.3;
+    }
+  }
+  
+  .group-personal {
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-desk) {
+      float: left;
+      width: 50%;
+      padding-right: 25px;
+	  }
+    
+    h3 {
+      font-family: $dr;
+      color: $color-orange;
+      @include rem(font-size, 25px);
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+  }
+
+  .group-access {
+    margin-bottom: 50px;
+
+	  @include breakpoint($bp-desk) {
+      float: right;
+      width: 50%;
+      padding-left: 25px;
+	  }
+
+    h3 {
+      font-family: $dr;
+      color: $color-orange;
+      @include rem(font-size, 25px);
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    
+    .form-item.password-parent,
+    .form-item.confirm-parent {
+      
+      input.form-text {
+
+    	  @include breakpoint($bp-tab) {
+          width: 45%;
+    	  }
+      }
+    }
+  }
+  
+  #edit-picture {
+    margin-bottom: 50px;
+  }
+  
+  #edit-timezone {
+    margin-bottom: 50px;
+  }
+  
+  .form-actions {}
 }

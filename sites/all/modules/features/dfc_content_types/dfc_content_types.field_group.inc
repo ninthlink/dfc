@@ -88,9 +88,10 @@ function dfc_content_types_field_group_info() {
     'label' => 'Media Content',
     'weight' => '3',
     'children' => array(
-      0 => 'title_field',
-      1 => 'field_product_description',
+      0 => 'field_product_description',
+      1 => 'title_field',
       2 => 'field_media_category',
+      3 => 'sharethis',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -155,8 +156,8 @@ function dfc_content_types_field_group_info() {
     'label' => 'Media Header',
     'weight' => '0',
     'children' => array(
-      0 => 'field_media_link',
-      1 => 'field_image',
+      0 => 'field_image',
+      1 => 'field_media_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -217,9 +218,7 @@ function dfc_content_types_field_group_info() {
   $field_group->data = array(
     'label' => 'Related Videos',
     'weight' => '4',
-    'children' => array(
-      0 => 'field_related_media',
-    ),
+    'children' => array(),
     'format_type' => 'hidden',
     'format_settings' => array(
       'label' => 'Related Videos',

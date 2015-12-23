@@ -123,8 +123,8 @@ function dfc_content_types_field_group_info() {
     'label' => 'Media Header',
     'weight' => '0',
     'children' => array(
-      0 => 'field_media_link',
-      1 => 'field_image',
+      0 => 'field_image',
+      1 => 'field_media_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(

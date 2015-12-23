@@ -107,6 +107,7 @@ body.node-type-media-item {
   	}
   }
 	
+  // Related Video
 	.block--views-related-videos-block {
     background: $color-gray-3;
     padding: 20px 20px;
@@ -184,8 +185,13 @@ body.node-type-media-item {
     .owl-carousel {
 
       .owl-wrapper {
+        
         .owl-item {
           padding-right: 15px;
+    
+          @include breakpoint($bp-tab) {
+            min-width: 348px;
+          }
         }
       }
       

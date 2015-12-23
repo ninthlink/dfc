@@ -345,5 +345,47 @@ function dfc_contexts_context_default_contexts() {
   t('page');
   $export['news_events_landing'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'user_pages';
+  $context->description = '';
+  $context->tag = 'section';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'user/*' => 'user/*',
+        'users/*' => 'users/*',
+      ),
+    ),
+    'user_page' => array(
+      'values' => array(
+        'form' => 'form',
+        'view' => 'view',
+      ),
+      'options' => array(
+        'mode' => 'all',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-title-my-profile' => array(
+          'module' => 'bean',
+          'delta' => 'title-my-profile',
+          'region' => 'featured_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('section');
+  $export['user_pages'] = $context;
+
   return $export;
 }

@@ -34,6 +34,7 @@ features[field_instance][] = bean-slideshow_bean-field_image
 features[field_instance][] = bean-static_bean-field_background_image
 features[field_instance][] = bean-static_bean-field_text
 features[uuid_bean][] = 06e0b1cc-7fa3-4510-8616-d2ab543fa3fd
+features[uuid_bean][] = 0cab0625-2f3a-428b-a55e-0c30057a9f84
 features[uuid_bean][] = 0da51c59-56be-42bc-92c0-65e2faf4cf0c
 features[uuid_bean][] = 1cf0551d-bbfd-49f6-93e3-245d4dad7dec
 features[uuid_bean][] = 55960cd6-d480-4cf5-81b4-c012065d00ec

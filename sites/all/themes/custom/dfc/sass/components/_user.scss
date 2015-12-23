@@ -30,6 +30,14 @@ body.section-users {
   }
 }
 
+.user-login {
+  padding: 20px;
+
+  @include breakpoint($bp-desk) {
+		padding: 50px;
+  }
+}
+
 // User Profile
 article.user-profile {
   @include clearfix;

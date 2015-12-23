@@ -1,0 +1,18 @@
+.sharethis-buttons {
+  .sharethis-wrapper {}
+  
+  .st_twitter_custom,
+  .st_facebook_custom {
+		@include use-sprite($icon-twitter);
+    cursor: pointer;
+  }
+
+  .st_facebook_custom {
+		@include use-sprite($icon-facebook);
+    margin-left: 50px;
+
+	  @include breakpoint($bp-desk) {
+      margin-left: 150px;
+	  }
+  }
+}

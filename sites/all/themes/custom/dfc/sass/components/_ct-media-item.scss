@@ -199,9 +199,11 @@ body.node-type-media-item {
     background: $color-orange;
     color: $color-white;
     padding: 20px;
-
+    margin-bottom: 20px;
+    
     @include breakpoint($bp-desk) {
       padding: 20px 50px;
+      margin-bottom: 50px;
     }
     
     li {

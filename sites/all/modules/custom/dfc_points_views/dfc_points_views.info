@@ -1,0 +1,9 @@
+name = DFC Points Views
+project = "DFC"
+description = Views handlers for monthly and lifetime points
+core = 7.x
+dependencies[] = views
+files[] = views/dfc_lifetime_points.inc
+files[] = views/dfc_lifetime_points_sort.inc
+files[] = views/dfc_monthly_points_sort.inc
+files[] = views/dfc_monthly_points.inc

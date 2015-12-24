@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_views_api
+ */
+function dfc_points_views_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'dfc_points_views'),
+  );
+}
+function dfc_points_views_views_pre_render(&$view) {
+  switch ($view->name) {
+    case 'leaderboards':
+      $label = str_replace('Monthly', date('F'), $view->field['monthly_points']->options['label']);
+      $view->field['monthly_points']->options['label'] = $label;
+      break;
+  }
+}
+
+?>

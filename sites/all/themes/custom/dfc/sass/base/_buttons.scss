@@ -1,3 +1,4 @@
+// This button is orange to black for gray backgrouns
 .button {
 	border: 0;
 	background: $color-orange;
@@ -17,6 +18,16 @@
 	}
 }
 
+// This button is orange to dark gray
+.button-to-gray {
+  @extend .button;
+	
+	&:hover {
+		background: $color-gray-27;
+	}
+}
+
+// This button would appear on an image background
 .button-clear {
 	border: 2px solid $color-white;
 	background: transparent;

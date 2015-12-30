@@ -77,6 +77,6 @@ body.node-type-page {
 .form-actions {
 	
 	input.form-submit {
-		@extend .button;
+		@extend .button-to-gray;
 	}
 }

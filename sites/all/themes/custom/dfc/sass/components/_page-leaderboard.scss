@@ -5,6 +5,11 @@ body.node-type-landing-page.section-leaderboard {
     @include container;
     @extend .row-padding;
     text-align: center;
+    margin-bottom: 60px;
+    
+    .view-content {
+      @include clearfix;
+    }
     
     .views-row {
       margin-bottom: 50px;
@@ -85,11 +90,72 @@ body.node-type-landing-page.section-leaderboard {
     
     .views-field-lifetime-points,
     .views-field-monthly-points {
-      
-      .views-label {}
+
       .field-content {
         color: $color-orange;
       }
+    }
+    
+    .pager {
+      @extend .no-list;
+      margin-bottom: 30px;
+
+  	  @include breakpoint($bp-desk) {
+        float: right;
+        width: 22%;
+  	  }
+      
+  	  @include breakpoint($bp-full) {
+        width: 22.8%;
+  	  }
+      
+      li {
+        
+        a {
+          @extend .button-to-gray;
+          display: block;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+    
+    .leader-board-links {
+      margin-bottom: 40px;
+      @include clearfix;
+      
+      .link {
+
+    	  @include breakpoint($bp-desk) {
+          float: left;
+          width: 30.6%;
+          margin-right: 20px;
+    	  }
+
+    	  @include breakpoint($bp-full) {
+          width: 31.1%;
+    	  }
+      }
+      
+      a {
+        @extend .button-to-gray;
+        margin-bottom: 30px;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    
+    .leaderboard-text {
+      @include rem(font-size, 14px);
+      font-family: $sr;
+      color: $color-white;
+      clear: both;
+
+  	  @include breakpoint($bp-desk) {
+        margin: auto;
+        width: 54%;
+  	  }
     }
   }
 }

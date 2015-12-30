@@ -1,0 +1,95 @@
+body.node-type-landing-page.section-leaderboard {
+
+
+  .view-leaderboards {
+    @include container;
+    @extend .row-padding;
+    text-align: center;
+    
+    .views-row {
+      margin-bottom: 50px;
+      font-family: $sr;
+      color: $color-gray-9;
+      @include rem(font-size, 14px);
+      text-align: center;
+
+  	  @include breakpoint($bp-tab) {
+        text-align: left;
+        float: left;
+        width: 50%;
+  	  }
+
+  	  @include breakpoint($bp-desk) {
+        width: 25%;
+        padding-right: 30px;
+  	  }
+      
+      &:nth-of-type(2n+1) {
+
+    	  @include breakpoint($bp-tab) {
+          clear: left;
+    	  }
+
+    	  @include breakpoint($bp-desk) {
+          clear: none;
+    	  }
+      }
+      
+      &:nth-of-type(4n+1) {
+
+    	  @include breakpoint($bp-desk) {
+          clear: left;
+    	  }
+      }
+    }
+    
+    .views-field-picture {
+      margin-bottom: 30px;
+      
+      img {
+        width: 100px;
+        border-radius: 100px;
+        overflow: hidden;
+        border: 2px solid $color-white;
+      }
+    }
+    
+    .views-field-counter {
+      font-family: $dr;
+      color: $color-orange;
+      @include rem(font-size, 33px);
+      line-height: .9;
+      margin-bottom: 15px;
+      
+      &:after {
+        content: ".";
+      }
+    }
+
+    .member-name  {
+      color: $color-white;
+      text-transform: uppercase;
+      @include rem(font-size, 15px);
+      margin-bottom: 5px;
+    }
+
+    .views-field-field-first-name,
+    .views-field-field-last-name {
+      display: inline-block;
+    }
+    
+    .field--city-state {
+      @include rem(font-size, 12px);
+      margin-bottom: 20px;
+    }
+    
+    .views-field-lifetime-points,
+    .views-field-monthly-points {
+      
+      .views-label {}
+      .field-content {
+        color: $color-orange;
+      }
+    }
+  }
+}

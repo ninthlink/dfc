@@ -12,6 +12,7 @@ features[context][] = blog_landing
 features[context][] = clubhouse
 features[context][] = front
 features[context][] = global
+features[context][] = leaderboard_landing
 features[context][] = media
 features[context][] = media_item
 features[context][] = news_events_landing

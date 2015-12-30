@@ -198,7 +198,7 @@ body {
   clear: both; }
 
 /* line 42, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/base/_layout.scss */
-.row-padding, body.node-type-media-item .group-media-content, .l-footer {
+.row-padding, body.node-type-media-item .group-media-content, .l-footer, body.node-type-landing-page.section-leaderboard .view-leaderboards {
   padding-left: 10px;
   padding-left: 0.625rem;
   padding-right: 10px;
@@ -1445,6 +1445,66 @@ body.node-type-landing-page.section-blog .block--views-blog-block .views-field-f
     font-size: 0.875rem;
     text-transform: uppercase;
     color: #ffffff; }
+
+/* line 4, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+body.node-type-landing-page.section-leaderboard .view-leaderboards {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  /* line 12, libraries/susy/sass/susy/output/support/_clearfix.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 9, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-row {
+    margin-bottom: 50px;
+    font-family: "sanchezregular", Helvetica, sans-serif;
+    color: #999999;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-align: center; }
+  /* line 46, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-picture {
+    margin-bottom: 30px; }
+    /* line 49, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-picture img {
+      width: 100px;
+      border-radius: 100px;
+      overflow: hidden;
+      border: 2px solid #ffffff; }
+  /* line 57, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-counter {
+    font-family: "dangerregular", Helvetica, sans-serif;
+    color: #f1592a;
+    font-size: 33px;
+    font-size: 2.0625rem;
+    line-height: .9;
+    margin-bottom: 15px; }
+    /* line 64, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-counter:after {
+      content: "."; }
+  /* line 69, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .member-name {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    margin-bottom: 5px; }
+  /* line 77, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-field-first-name,
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-field-last-name {
+    display: inline-block; }
+  /* line 81, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .field--city-state {
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin-bottom: 20px; }
+  /* line 90, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-lifetime-points .field-content,
+  body.node-type-landing-page.section-leaderboard .view-leaderboards .views-field-monthly-points .field-content {
+    color: #f1592a; }
 
 /* line 3, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 body.node-type-landing-page.section-media .l-main {

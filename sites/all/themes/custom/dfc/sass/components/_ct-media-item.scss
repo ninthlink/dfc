@@ -187,9 +187,12 @@ body.node-type-media-item {
       .owl-wrapper {
         
         .owl-item {
-          padding-right: 15px;
     
           @include breakpoint($bp-tab) {
+            padding-right: 15px;
+          }    
+
+          @include breakpoint($bp-full) {
             min-width: 348px;
           }
         }

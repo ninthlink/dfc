@@ -21,4 +21,5 @@ features[views_view][] = news_events
 features[views_view][] = offers
 features[views_view][] = partners
 features[views_view][] = related_videos
+features[views_view][] = user_ranking
 features_exclude[dependencies][ctools] = ctools

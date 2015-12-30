@@ -7,3 +7,7 @@ files[] = views/dfc_lifetime_points.inc
 files[] = views/dfc_lifetime_points_sort.inc
 files[] = views/dfc_monthly_points_sort.inc
 files[] = views/dfc_monthly_points.inc
+files[] = views/dfc_monthly_user_standing.inc
+files[] = views/dfc_lifetime_user_standing.inc
+files[] = views/dfc_max_lifetime_user_standing.inc
+files[] = views/dfc_max_monthly_user_standing.inc

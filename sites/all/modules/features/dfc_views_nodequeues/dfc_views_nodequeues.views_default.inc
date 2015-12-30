@@ -1234,5 +1234,116 @@ function dfc_views_nodequeues_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $export['related_videos'] = $view;
 
+  $view = new view();
+  $view->name = 'user_ranking';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'users';
+  $view->human_name = 'User ranking';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'leaderboards';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'access user profiles';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['link_photo_to_profile'] = FALSE;
+  /* Field: DFC Points: Max Lifetime User Standing */
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['id'] = 'lifetime_max_user_standing';
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['field'] = 'lifetime_max_user_standing';
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['label'] = '';
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['lifetime_max_user_standing']['element_label_colon'] = FALSE;
+  /* Field: DFC Points: Lifetime User Standing */
+  $handler->display->display_options['fields']['lifetime_user_standing']['id'] = 'lifetime_user_standing';
+  $handler->display->display_options['fields']['lifetime_user_standing']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['lifetime_user_standing']['field'] = 'lifetime_user_standing';
+  $handler->display->display_options['fields']['lifetime_user_standing']['label'] = '';
+  $handler->display->display_options['fields']['lifetime_user_standing']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: User: City, State */
+  $handler->display->display_options['fields']['field_city_state']['id'] = 'field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['table'] = 'field_data_field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['field'] = 'field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['label'] = '';
+  $handler->display->display_options['fields']['field_city_state']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_city_state']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_city_state']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_city_state']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_city_state']['field_api_classes'] = TRUE;
+  /* Field: DFC Points: Monthly Points */
+  $handler->display->display_options['fields']['monthly_points']['id'] = 'monthly_points';
+  $handler->display->display_options['fields']['monthly_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['monthly_points']['field'] = 'monthly_points';
+  /* Field: DFC Points: Lifetime Points */
+  $handler->display->display_options['fields']['lifetime_points']['id'] = 'lifetime_points';
+  $handler->display->display_options['fields']['lifetime_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['lifetime_points']['field'] = 'lifetime_points';
+  /* Filter criterion: User: Active */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'users';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: User: Name */
+  $handler->display->display_options['filters']['uid']['id'] = 'uid';
+  $handler->display->display_options['filters']['uid']['table'] = 'users';
+  $handler->display->display_options['filters']['uid']['field'] = 'uid';
+  $handler->display->display_options['filters']['uid']['value'] = '';
+  $handler->display->display_options['filters']['uid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['uid']['expose']['operator_id'] = 'uid_op';
+  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Enter name to check ranking';
+  $handler->display->display_options['filters']['uid']['expose']['operator'] = 'uid_op';
+  $handler->display->display_options['filters']['uid']['expose']['identifier'] = 'uid';
+  $handler->display->display_options['filters']['uid']['expose']['remember_roles'] = array(
+    2 => 0,
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['uid']['group_info']['label'] = 'Name';
+  $handler->display->display_options['filters']['uid']['group_info']['identifier'] = 'uid';
+  $handler->display->display_options['filters']['uid']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['uid']['group_info']['group_items'] = array(
+    1 => array(),
+    2 => array(),
+    3 => array(),
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'test_ranking';
+  $export['user_ranking'] = $view;
+
   return $export;
 }

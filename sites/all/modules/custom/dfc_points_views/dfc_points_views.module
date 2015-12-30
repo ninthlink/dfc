@@ -10,12 +10,29 @@ function dfc_points_views_views_api() {
   );
 }
 function dfc_points_views_views_pre_render(&$view) {
-  switch ($view->name) {
-    case 'leaderboards':
-      $label = str_replace('Monthly', date('F'), $view->field['monthly_points']->options['label']);
-      $view->field['monthly_points']->options['label'] = $label;
-      break;
+  if($view->name == 'leaderboards' || $view->name == 'user_ranking'){
+    $label = str_replace('Monthly', date('F'), $view->field['monthly_points']->options['label']);
+    $view->field['monthly_points']->options['label'] = $label;
+  }
+  if($view->name == 'user_ranking'){
+    if(!empty($view->result)){
+      if(isset($view->result[0]->userpoints_monthly_points) && empty($view->result[0]->userpoints_monthly_points)){
+        $view->result[0]->userpoints_monthly_standing = $view->result[0]->userpoints_max_monthly_standing;
+      }
+      if(isset($view->result[0]->userpoints_lifetime_points) && empty($view->result[0]->userpoints_lifetime_points)){
+        $view->result[0]->userpoints_lifetime_standing = $view->result[0]->userpoints_max_lifetime_standing;
+      }
+    }
   }
 }
 
+function dfc_points_views_views_query_alter(&$view, &$query) {
+  global $user;
+  if ($view->name == 'user_ranking'){
+    if(!isset($view->exposed_data['uid']) || empty($view->exposed_data['uid'])){
+      $query->where[1]['conditions'][] = array('field' => 'users.uid', 'value' => array($user->uid), 'operator' => 'in');
+      $view->exposed_data['uid'] = $user->uid;
+    }
+  }
+}
 ?>

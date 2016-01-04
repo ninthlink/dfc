@@ -1,0 +1,85 @@
+<?php
+
+function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'invite_form') {
+    $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
+    $form['#validate'][] = 'dfc_points_award_grant_points_invite_form_validate';
+    $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_invite_form';
+  }
+}
+
+function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state) {
+  global $user;
+  $max_invites = 10;
+  $num = sizeof(db_select('invite', 'i')->fields('i')->condition('uid', $user->uid)->execute()->fetchALLAssoc('iid'));
+  if($num > $max_invites) {
+    form_set_error('invitation_email_address', "You've already invited your maximum of {$max_invites} people");
+    return FALSE;
+  }
+
+  return TRUE;
+}
+
+function dfc_points_award_grant_points_invite_form(&$form, &$form_state) {
+  $invite_points = 10;
+  dfc_points_award_grant_points($invite_points);
+  $form_state['redirect'] = '/user';
+}
+
+function dfc_points_award_grant_points($points) {
+  userpoints_userpointsapi($points);
+}
+
+function dfc_points_award_rules_condition_info() {
+  return array(
+    'dfc_points_award_condition_check_refer' => array(
+      'label' => t('Check if user was referred'),
+      'arguments' => array(
+        'user' => array('type' => 'user', 'label' => t('User Signing Up')),
+      ),
+      'group' => t('DFC'),
+    ),
+  );
+}
+
+function dfc_points_award_rules_action_info() {
+  return array(
+    'dfc_points_award_action_load_invite_user' => array(
+      'label' => t('Load inviting user'),
+      'arguments' => array(
+          'user' => array('type' => 'user', 'label' => t('User Signing Up')),
+      ),
+      'new variables' => array(
+        'invite_user' => array(
+          'type' => 'user',
+          'label' => t('Invite User'),
+          'save' => TRUE,
+        ),
+      ),
+      'group' => t('DFC'),
+    )
+  );
+}
+
+function dfc_points_award_condition_check_refer($user) {
+  if(dfc_points_award_action_load_invite_user($user)) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+function dfc_points_award_action_load_invite_user($user) {
+  $invite = db_select('invite', 'i')
+    ->fields('i')
+    ->condition('invitee', $user->uid)
+    ->execute()
+    ->fetchAssoc();
+
+  if ($invite->uid) {
+    $invite_user = user_load($invite->uid);
+    if ($invite_user) {
+      return array('user' => $invite_user);
+    }
+  }
+  return FALSE;
+}

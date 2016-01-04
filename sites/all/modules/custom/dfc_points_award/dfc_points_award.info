@@ -1,0 +1,5 @@
+name = DFC Award Points
+project = "DFC"
+package = "DFC"
+description = Awards points for various actions
+core = 7.x

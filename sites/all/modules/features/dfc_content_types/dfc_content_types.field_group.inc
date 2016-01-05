@@ -236,5 +236,76 @@ function dfc_content_types_field_group_info() {
   );
   $export['group_related_videos|node|media_item|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_resort_first|node|resort|teaser';
+  $field_group->group_name = 'group_resort_first';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'resort';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Resort First',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_image_gallery',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Resort First',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-resort-first field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_resort_first|node|resort|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_resort_last|node|resort|teaser';
+  $field_group->group_name = 'group_resort_last';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'resort';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Resort Last',
+    'weight' => '2',
+    'children' => array(
+      0 => 'title_field',
+      1 => 'field_product_description',
+      2 => 'field_location',
+      3 => 'field_phone_number',
+      4 => 'field_website_link',
+      5 => 'field_link',
+      6 => 'field_resort_category',
+      7 => 'sharethis',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Resort Last',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-resort-last field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_resort_last|node|resort|teaser'] = $field_group;
+
   return $export;
 }

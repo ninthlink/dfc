@@ -10,8 +10,8 @@
 function dfc_bean_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-slideshow_bean-field_image'.
-  $field_instances['bean-slideshow_bean-field_image'] = array(
+  // Exported field_instance: 'bean-slideshow_bean-field_image_gallery'.
+  $field_instances['bean-slideshow_bean-field_image_gallery'] = array(
     'bundle' => 'slideshow_bean',
     'deleted' => 0,
     'description' => '',
@@ -25,14 +25,14 @@ function dfc_bean_field_default_field_instances() {
           'trim_length' => '',
         ),
         'type' => 'owlcarousel_formatter',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'bean',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_image',
-    'label' => 'Image',
-    'required' => 0,
+    'field_name' => 'field_image_gallery',
+    'label' => 'Image Gallery',
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -52,13 +52,21 @@ function dfc_bean_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
         ),
         'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
           'image' => 'image',
+          'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
       ),
       'type' => 'media_generic',
       'weight' => 2,
@@ -164,7 +172,7 @@ function dfc_bean_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Background Image');
-  t('Image');
+  t('Image Gallery');
   t('Text');
 
   return $field_instances;

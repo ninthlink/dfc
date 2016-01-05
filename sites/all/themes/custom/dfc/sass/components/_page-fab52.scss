@@ -1,0 +1,291 @@
+body.node-type-landing-page.section-fab-52-resorts {
+
+  .content-bottom {
+    @include container;
+    max-width: 1080px;
+    @extend .row-padding;
+  }
+}
+
+.block--bean-fab-52-resorts-top-block {
+	position: relative;
+	height: 220px;
+	overflow: hidden;
+
+  @include breakpoint($bp-desk) {
+		height: 360px;
+  }
+
+  @include breakpoint($bp-full) {
+		height: 400px;
+  }
+	
+	.field--background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 220px;
+
+	  @include breakpoint($bp-desk) {
+			height: auto;
+	  }
+		
+		img {
+			height: 100%;
+			max-width: none;
+			width: auto;
+
+		  @include breakpoint($bp-tab) {
+				height: auto;
+				max-width: 100%;
+				width: 100%;
+		  }
+		}
+	}
+  
+	
+	.field--text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 40px;
+
+	  @include breakpoint($bp-desk) {
+			width: 35%;
+      padding: 70px 0 0 130px;
+	  }
+	}
+  
+	.fab-pre-title {
+		font-family: $sr;
+		color: $color-green-light;
+		line-height: 1;
+		text-transform: uppercase;
+
+	  @include breakpoint($bp-full) {
+			@include rem(font-size, 14px);
+	  }
+	}
+	
+	h1 {
+		font-family: $dr;
+		color: $color-green-light;
+		line-height: .9;
+		text-transform: uppercase;
+		@include rem(font-size, 42px);
+		margin-bottom: 10px;
+
+	  @include breakpoint($bp-desk) {
+			@include rem(font-size, 78px);
+	  }
+    
+    span {
+  		color: $color-white;
+
+  	  @include breakpoint($bp-tab) {
+        display: block;
+  	  }
+    }
+	}
+
+  .fab-subtitle {
+		font-family: $dr;
+    color: $color-white;
+		@include rem(font-size, 20px);
+		line-height: 1;
+		text-transform: uppercase;
+  }
+}
+
+.block--bean-fab-52-intro {
+	background: $color-green;
+  color: $color-white;
+	padding: 30px 20px;
+	font-family: $sr;
+
+  @include breakpoint($bp-tab) {
+		padding: 20px;
+		@include rem(font-size, 14px);
+  }
+	
+  @include breakpoint($bp-desk) {
+		@include rem(font-size, 16px);
+		line-height: 1.6;
+		padding: 50px;
+  }	
+}
+
+.block--views-resorts-block-1 {
+  padding: 60px 0 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid $color-gray-3;
+  
+  .view-resorts {
+  
+    .views-row {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+.view-resorts {
+
+  h2.block__title {
+    font-family: $dr;
+		@include rem(font-size, 38px);
+    color: $color-green-light;
+    text-transform: uppercase;
+    
+    span {
+      color: $color-white;
+    }
+  }
+  
+  .views-row {
+    @include container;
+    padding-bottom: 55px;
+    margin-bottom: 65px;
+    border-bottom: 1px solid $color-gray-3;
+  }
+  
+  .pager-load-more {
+    @extend .no-list;
+    margin-bottom: 60px;
+    
+    a {
+      @extend .button;
+    }
+  }
+}
+
+.node.node--resort--teaser {
+  
+  .group-resort-first {
+    margin-bottom: 20px;
+
+	  @include breakpoint($bp-tab) {
+	    width: 60%;
+      margin: 0 auto;
+	  }
+    
+    @include breakpoint($bp-desk) {
+      float: left;
+	    width: 40%;
+    }
+  }
+  
+  .field--image-gallery {
+    
+    .owl-controls {
+      @extend .owl-control-bars2;
+    }
+  }
+  
+  .group-resort-last {
+    
+    @include breakpoint($bp-desk) {
+      float: right;
+	    width: 53%;
+    }
+  }
+  
+  .sharethis-buttons {
+
+	  @include breakpoint($bp-tab) {
+      float: right;
+	  }
+  
+    .st_twitter_custom,
+    .st_facebook_custom {
+      border: 0;
+    }
+  }
+  
+  .field--resort-category {
+    font-family: $dr;
+		@include rem(font-size, 16px);
+    color: $color-orange;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .field--title-field {
+    color: $color-white;
+		@include rem(font-size, 32px);
+    font-weight: bold;
+    line-height: 1;
+    clear: both;
+  }
+
+  .field--location {
+		@include rem(font-size, 25px);
+    color: $color-gray-9;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  .field--product-description {
+    font-family: $sr;
+		@include rem(font-size, 15px);
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+  
+  .field--phone-number {
+    font-family: $sr;
+		@include rem(font-size, 15px);
+    font-weight: bold;
+    color: $color-white;
+    line-height: 1;
+    margin-bottom: 20px;
+
+	  @include breakpoint($bp-tab) {
+      display: inline-block;
+      margin-bottom: 60px;
+	  }
+    
+    &:before {
+  		@include use-sprite($icon-phone);
+      position: relative;
+      top: 6px;
+      margin-right: 5px;
+    }
+  }
+  
+  .field--website-link {
+    font-family: $sr;
+    font-weight: bold;
+		@include rem(font-size, 15px);
+    line-height: 1;
+    margin-bottom: 20px;
+
+	  @include breakpoint($bp-tab) {
+      display: inline-block;
+      margin-left: 20px;
+      padding-left: 20px;
+      margin-bottom: 60px;
+      border-left: 1px solid $color-gray-6;
+	  }
+    
+    a {
+      color: $color-white;
+    }
+  }
+  
+  .field--link {
+    clear: both;
+    
+    a {
+      @extend .button;
+    }
+  }
+  
+  .node__links {
+    display: none;
+  }
+}

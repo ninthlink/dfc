@@ -70,6 +70,21 @@ function dfc_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 425x280.
+  $styles['425x280'] = array(
+    'label' => '425x280',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 425,
+          'height' => 280,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 440x282.
   $styles['440x282'] = array(
     'label' => '440x282',

@@ -114,6 +114,69 @@ function dfc_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'fab_52_resort';
+  $context->description = 'Resorts';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'fab-52-resorts' => 'fab-52-resorts',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-fab-52-resorts-top-block' => array(
+          'module' => 'bean',
+          'delta' => 'fab-52-resorts-top-block',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+        'bean-fab-52-intro' => array(
+          'module' => 'bean',
+          'delta' => 'fab-52-intro',
+          'region' => 'content_top',
+          'weight' => '-9',
+        ),
+        'views-resorts-block_1' => array(
+          'module' => 'views',
+          'delta' => 'resorts-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'views-resorts-block' => array(
+          'module' => 'views',
+          'delta' => 'resorts-block',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'views-offers-block_1' => array(
+          'module' => 'views',
+          'delta' => 'offers-block_1',
+          'region' => 'footer_top',
+          'weight' => '-10',
+        ),
+        'views-partners-block' => array(
+          'module' => 'views',
+          'delta' => 'partners-block',
+          'region' => 'footer_top',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Resorts');
+  t('page');
+  $export['fab_52_resort'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'front';
   $context->description = '';
   $context->tag = '';
@@ -382,6 +445,47 @@ function dfc_contexts_context_default_contexts() {
   t('News and Events Landing');
   t('page');
   $export['news_events_landing'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'user_page';
+  $context->description = 'User profile page, not edit form';
+  $context->tag = '';
+  $context->conditions = array(
+    'user_page' => array(
+      'values' => array(
+        'view' => 'view',
+      ),
+      'options' => array(
+        'mode' => 'all',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-my_invitiations-block' => array(
+          'module' => 'views',
+          'delta' => 'my_invitiations-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'invite-invite_add_invite_by_email' => array(
+          'module' => 'invite',
+          'delta' => 'invite_add_invite_by_email',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('User profile page, not edit form');
+  $export['user_page'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

@@ -82,6 +82,14 @@ function dfc_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'resort' => array(
+      'name' => t('Resort'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'webform' => array(
       'name' => t('Webform'),
       'base' => 'node_content',

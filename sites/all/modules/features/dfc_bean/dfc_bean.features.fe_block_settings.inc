@@ -159,6 +159,48 @@ function dfc_bean_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['bean-fab-52-intro'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'fab-52-intro',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dfc' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dfc',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-fab-52-resorts-top-block'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'fab-52-resorts-top-block',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dfc' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dfc',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['bean-footer-copyright'] = array(
     'cache' => 1,
     'css_class' => '',

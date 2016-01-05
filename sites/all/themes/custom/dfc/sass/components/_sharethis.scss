@@ -1,10 +1,10 @@
 .sharethis-buttons {
-  .sharethis-wrapper {}
   
   .st_twitter_custom,
   .st_facebook_custom {
 		@include use-sprite($icon-twitter);
     cursor: pointer;
+    border: 2px solid $color-gray-7f;
   }
 
   .st_facebook_custom {

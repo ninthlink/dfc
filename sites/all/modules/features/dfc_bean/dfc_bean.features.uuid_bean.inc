@@ -81,7 +81,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450150434,
     'log' => '',
-    'uid' => 4,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6e781f86-cf14-4af4-a541-4a7951021be0',
@@ -90,11 +90,11 @@ function dfc_bean_uuid_features_default_beans() {
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="#">Points Leaderboard</a></div>
-<div class="header-join"><a href="#">Join DFC Now</a></div>',
+          'value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="/leaderboard">Points Leaderboard</a></div>
+<div class="header-join"><a href="/membership">Join DFC Now</a></div>',
           'format' => 'full_html',
-          'safe_value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="#">Points Leaderboard</a></div>
-<div class="header-join"><a href="#">Join DFC Now</a></div>
+          'safe_value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="/leaderboard">Points Leaderboard</a></div>
+<div class="header-join"><a href="/membership">Join DFC Now</a></div>
 ',
         ),
       ),

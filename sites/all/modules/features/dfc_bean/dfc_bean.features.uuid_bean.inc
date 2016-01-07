@@ -436,52 +436,6 @@ function dfc_bean_uuid_features_default_beans() {
     ),
   );
   $beans[] = array(
-    'label' => 'Clubhouse Location',
-    'description' => NULL,
-    'title' => '',
-    'type' => 'static_bean',
-    'data' => array(
-      'view_mode' => 'default',
-    ),
-    'delta' => 'clubhouse-location',
-    'view_mode' => 'default',
-    'created' => 1450332741,
-    'log' => '',
-    'uid' => 4,
-    'default_revision' => 1,
-    'revisions' => array(),
-    'vuuid' => '8600f085-68e3-4014-b25e-303c347ac870',
-    'uuid' => 'de0e8d76-0c1f-468f-ab10-0eaf8b81f743',
-    'field_background_image' => array(),
-    'field_text' => array(
-      'und' => array(
-        0 => array(
-          'value' => '<div class="ch-location-header">
-<h2>CURRENT LOCATION</h2>
-<div class="ch-location-spot">Tahiti, French Polynesia</div>
-</div>
-<div class="ch-location-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.9682727326!2d76.8271452781938!3d11.011677489706484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1448649601217"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
-<div class="ch-location-more">
-<div class="ch-location-title">We\'re making waves. <span>In the South Pacific.</span></div>
-<div class="ch-location-text">The Pacific Provider is currently performing offshore Superyacht operations in the South Pacific. </div>
-</div>',
-          'format' => 'full_html',
-          'safe_value' => '<div class="ch-location-header">
-<h2>CURRENT LOCATION</h2>
-<div class="ch-location-spot">Tahiti, French Polynesia</div>
-</div>
-<div class="ch-location-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.9682727326!2d76.8271452781938!3d11.011677489706484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1448649601217" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
-<div class="ch-location-more">
-<div class="ch-location-title">We\'re making waves. <span>In the South Pacific.</span></div>
-<div class="ch-location-text">The Pacific Provider is currently performing offshore Superyacht operations in the South Pacific. </div>
-</div>
-',
-        ),
-      ),
-    ),
-  );
-  $beans[] = array(
     'label' => 'Home - How it works',
     'description' => NULL,
     'title' => '',

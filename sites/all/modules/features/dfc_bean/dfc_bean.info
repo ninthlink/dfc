@@ -45,7 +45,6 @@ features[uuid_bean][] = 6ee2d4c5-d655-405d-ba99-114cfc4c0691
 features[uuid_bean][] = 7252900f-41a4-47b1-81c1-3b23296fa6d6
 features[uuid_bean][] = af2e9d3e-dce5-474b-b812-09e31c1c140f
 features[uuid_bean][] = ce6a09c3-9758-47a3-bc34-64296e5ce2a5
-features[uuid_bean][] = de0e8d76-0c1f-468f-ab10-0eaf8b81f743
 features[uuid_bean][] = e4c204d3-b33a-4624-b19a-93fe4a11ab74
 features[uuid_bean][] = fa0a21e7-d127-4c75-8401-11246c05f3db
 features_exclude[dependencies][dfc_content_types] = dfc_content_types

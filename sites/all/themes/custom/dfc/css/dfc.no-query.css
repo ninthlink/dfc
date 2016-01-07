@@ -1180,7 +1180,7 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       width: 61px;
       height: 61px;
       position: absolute;
-      top: -10px;
+      top: -5px;
       left: 0; }
     /* line 45, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .prize-header h2 span {
@@ -1211,61 +1211,64 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       font-size: 0.8125rem;
       font-weight: bold;
       padding: 15px 0; }
-  /* line 95, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table tr.odd {
-    background-color: #27282a; }
-  /* line 99, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table tr.even {
-    background-color: #161618; }
-  /* line 104, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table td {
-    padding: 10px;
-    color: #999999;
-    font-family: "sanchezregular", Helvetica, sans-serif;
-    line-height: 1;
-    font-size: 15px;
-    font-size: 0.9375rem; }
-  /* line 112, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table td.views-field-counter {
-    padding-left: 15px; }
-  /* line 116, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table td.views-field-picture {
-    padding: 10px 0; }
-    /* line 119, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-    .view-giveaway-winners .views-table td.views-field-picture img {
-      border-radius: 100px;
-      width: 40px;
-      overflow: hidden;
-      border: 1px solid #ffffff; }
-  /* line 127, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table td.views-field-field-last-name {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-    font-size: 0.8125rem;
-    font-family: inherit; }
-  /* line 139, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-  .view-giveaway-winners .views-table .views-field-field-winners-points {
-    white-space: nowrap; }
-    /* line 142, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-    .view-giveaway-winners .views-table .views-field-field-winners-points .field-label {
-      color: #f1592a;
-      font-family: "sanchezregular", Helvetica, sans-serif; }
-    /* line 147, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-    .view-giveaway-winners .views-table .views-field-field-winners-points .field-content {
-      color: #ffffff;
+  /* line 91, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  .view-giveaway-winners .views-table {
+    width: 100%; }
+    /* line 96, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table tr.odd {
+      background-color: #27282a; }
+    /* line 100, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table tr.even {
+      background-color: #161618; }
+    /* line 105, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table td {
+      padding: 10px;
+      color: #999999;
       font-family: "sanchezregular", Helvetica, sans-serif;
-      font-weight: bold; }
-      /* line 152, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
-      .view-giveaway-winners .views-table .views-field-field-winners-points .field-content div {
-        display: inline; }
+      line-height: 1;
+      font-size: 15px;
+      font-size: 0.9375rem; }
+    /* line 113, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table td.views-field-counter {
+      padding-left: 15px; }
+    /* line 117, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table td.views-field-picture {
+      padding: 10px 0; }
+      /* line 120, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      .view-giveaway-winners .views-table td.views-field-picture img {
+        border-radius: 100px;
+        width: 40px;
+        overflow: hidden;
+        border: 1px solid #ffffff; }
+    /* line 128, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table td.views-field-field-last-name {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px;
+      font-size: 0.8125rem;
+      font-family: inherit; }
+    /* line 140, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    .view-giveaway-winners .views-table .views-field-field-winners-points {
+      white-space: nowrap; }
+      /* line 143, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      .view-giveaway-winners .views-table .views-field-field-winners-points .field-label {
+        color: #f1592a;
+        font-family: "sanchezregular", Helvetica, sans-serif; }
+      /* line 148, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      .view-giveaway-winners .views-table .views-field-field-winners-points .field-content {
+        color: #ffffff;
+        font-family: "sanchezregular", Helvetica, sans-serif;
+        font-weight: bold; }
+        /* line 153, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+        .view-giveaway-winners .views-table .views-field-field-winners-points .field-content div {
+          display: inline; }
 
-/* line 205, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+/* line 206, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
 body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-header {
   padding: 20px 0 40px; }
 
-/* line 214, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+/* line 215, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
 body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-content {
   margin-bottom: 40px; }
 

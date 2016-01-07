@@ -2,6 +2,7 @@ name = DFC Content Types
 description = Content Types, Taxonomy
 core = 7.x
 package = Features
+dependencies[] = content_access
 dependencies[] = date
 dependencies[] = entityreference
 dependencies[] = features

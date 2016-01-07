@@ -507,7 +507,7 @@ function dfc_content_types_field_default_field_instances() {
     'bundle' => 'giveaway_prize',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This field is filled automatically by the system.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -553,7 +553,7 @@ function dfc_content_types_field_default_field_instances() {
     'bundle' => 'giveaway_prize',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This field is filled automatically by the system.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1974,6 +1974,7 @@ function dfc_content_types_field_default_field_instances() {
   t('Sponsor');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');
+  t('This field is filled automatically by the system.');
   t('Title');
   t('Upload an image to go with this article.');
   t('Video');

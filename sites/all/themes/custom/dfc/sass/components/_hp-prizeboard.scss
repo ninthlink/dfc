@@ -1,0 +1,216 @@
+// Home prizeboard
+.block--views-giveaway-winners-block {
+  padding: 40px 20px;
+
+  @include breakpoint($bp-desk) {
+    padding: 30px;
+  }
+
+  @include breakpoint($bp-full) {
+    padding: 50px;
+  }
+}
+
+.view-giveaway-winners {
+  @include container;
+  
+  .view-header {}
+  
+  .prize-header {
+
+	  @include breakpoint($bp-desk) {
+      padding-top: 30px;
+	  }
+    
+    h2 {
+      position: relative;
+      font-family: $dr;
+      color: $color-white;
+      @include rem(font-size, 40px);
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      padding-left: 85px;
+
+  	  @include breakpoint($bp-full) {
+        @include rem(font-size, 50px);
+  	  }
+      
+      &:before {
+    		@include use-sprite($icon-bookmark);
+        position: absolute;
+        top: -10px;
+        left: 0;
+      }
+      
+      span {
+        color: $color-orange;
+      }
+    }
+    
+    .prize-intro {
+      font-family: $sr;
+      color: $color-gray-ae;
+      margin-bottom: 50px;
+    }
+    
+    .prize-buttons {
+      @include container;
+      
+      a {
+        @extend .button-clear;
+        color: $color-orange;
+        border-color: $color-orange;
+        display: block;
+        margin-bottom: 20px;
+        font-family: inherit;
+        @include rem(font-size, 13px);
+        font-weight: bold;
+        padding: 15px 0;
+      
+        &:first-child {
+
+          @include breakpoint($bp-full) {
+            float: left;
+            width: 48%;
+          }
+        }
+
+        &:last-child {
+
+          @include breakpoint($bp-full) {
+            float: right;
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+  
+  .view-content {}
+  
+  .views-table {
+    
+    tr {
+      
+      &.odd {
+        background-color: $color-gray-darker;
+      }
+
+      &.even {
+        background-color: $color-gray-darkest;
+      }
+    }
+    
+    td {
+      padding: 10px;
+      color: $color-gray-9;
+      font-family: $sr;
+      line-height: 1;
+    }
+    
+    td.views-field-counter {
+      padding-left: 15px;
+    }
+    
+    td.views-field-picture {
+      padding: 10px 0;
+      
+      img {
+        border-radius: 100px;
+        width: 40px;
+        overflow: hidden;
+        border: 1px solid $color-white;
+      }
+    }
+    
+    td.views-field-field-last-name {
+      color: $color-white;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include rem(font-size, 13px);
+    }
+    
+    td.views-field-title {}
+    
+    td.views-field-field-sponsor {}
+    
+    .views-field-field-winners-points {
+      white-space: nowrap;
+      
+      .field-label {
+        color: $color-orange;
+        font-family: $sr;
+      }
+      
+      .field-content {
+        color: $color-white;
+        font-family: $sr;
+        font-weight: bold;
+        
+        div {
+          display: inline;
+        }
+      }
+    }
+  }
+  
+  ul.pager-load-more {
+    @extend .no-list;
+    
+    a {
+      @extend .button;
+    }
+  }
+}
+
+// On Homepage, 2 columns
+body.front {
+  
+	.view-giveaway-winners {
+
+	  .view-header {
+
+	    @include breakpoint($bp-desk) {
+	      float: left;
+	      width: 35%;
+	    }
+
+	    @include breakpoint($bp-full) {
+	      width: 40%;
+	    }
+	  }
+  
+	  .view-content {
+
+	    @include breakpoint($bp-desk) {
+	      float: right;
+	      width: 60%;
+	    }
+    
+	    @include breakpoint($bp-full) {
+	      width: 52.4%;
+	    }
+	  }
+	}
+}
+
+// prizeboard landing page
+body.node-type-landing-page.section-dfc-prizeboard {
+
+	.view-giveaway-winners {
+    @extend .row-padding;
+
+	  .view-header {
+      padding: 20px 0 40px;
+
+	    @include breakpoint($bp-desk) {
+        margin: 0 auto 50px;
+        width: 50%;
+	    }
+	  }
+  
+	  .view-content {
+      margin-bottom: 40px;
+	  }
+	}
+}

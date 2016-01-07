@@ -208,11 +208,17 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-8',
         ),
+        'views-giveaway_winners-block' => array(
+          'module' => 'views',
+          'delta' => 'giveaway_winners-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
         'views-offers-block_1' => array(
           'module' => 'views',
           'delta' => 'offers-block_1',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-partners-block' => array(
           'module' => 'views',
@@ -445,6 +451,38 @@ function dfc_contexts_context_default_contexts() {
   t('News and Events Landing');
   t('page');
   $export['news_events_landing'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'prizeboard';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'dfc-prizeboard' => 'dfc-prizeboard',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-giveaway_winners-block_1' => array(
+          'module' => 'views',
+          'delta' => 'giveaway_winners-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['prizeboard'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

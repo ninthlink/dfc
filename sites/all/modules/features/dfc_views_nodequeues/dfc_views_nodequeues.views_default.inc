@@ -90,6 +90,132 @@ function dfc_views_nodequeues_views_default_views() {
   $export['blog'] = $view;
 
   $view = new view();
+  $view->name = 'giveaway_winners';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Giveaway Winners';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Giveaway Winners';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_winner_target_id']['id'] = 'field_winner_target_id';
+  $handler->display->display_options['relationships']['field_winner_target_id']['table'] = 'field_data_field_winner';
+  $handler->display->display_options['relationships']['field_winner_target_id']['field'] = 'field_winner_target_id';
+  $handler->display->display_options['relationships']['field_winner_target_id']['required'] = TRUE;
+  /* Field: Global: View result counter */
+  $handler->display->display_options['fields']['counter']['id'] = 'counter';
+  $handler->display->display_options['fields']['counter']['table'] = 'views';
+  $handler->display->display_options['fields']['counter']['field'] = 'counter';
+  $handler->display->display_options['fields']['counter']['label'] = '';
+  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
+  $handler->display->display_options['fields']['counter']['reverse'] = 0;
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['link_photo_to_profile'] = FALSE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['field_api_classes'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Sponsor */
+  $handler->display->display_options['fields']['field_sponsor']['id'] = 'field_sponsor';
+  $handler->display->display_options['fields']['field_sponsor']['table'] = 'field_data_field_sponsor';
+  $handler->display->display_options['fields']['field_sponsor']['field'] = 'field_sponsor';
+  $handler->display->display_options['fields']['field_sponsor']['label'] = '';
+  $handler->display->display_options['fields']['field_sponsor']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_sponsor']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sponsor']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_sponsor']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_sponsor']['field_api_classes'] = TRUE;
+  /* Field: Content: Winner's points */
+  $handler->display->display_options['fields']['field_winners_points']['id'] = 'field_winners_points';
+  $handler->display->display_options['fields']['field_winners_points']['table'] = 'field_data_field_winners_points';
+  $handler->display->display_options['fields']['field_winners_points']['field'] = 'field_winners_points';
+  $handler->display->display_options['fields']['field_winners_points']['label'] = '';
+  $handler->display->display_options['fields']['field_winners_points']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_winners_points']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_winners_points']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_winners_points']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_winners_points']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['fields']['field_winners_points']['field_api_classes'] = TRUE;
+  /* Sort criterion: Content: Winner&#039;s points (field_winners_points) */
+  $handler->display->display_options['sorts']['field_winners_points_value']['id'] = 'field_winners_points_value';
+  $handler->display->display_options['sorts']['field_winners_points_value']['table'] = 'field_data_field_winners_points';
+  $handler->display->display_options['sorts']['field_winners_points_value']['field'] = 'field_winners_points_value';
+  $handler->display->display_options['sorts']['field_winners_points_value']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'giveaway_prize' => 'giveaway_prize',
+  );
+  /* Filter criterion: Content: Month and Year (field_month_and_year) */
+  $handler->display->display_options['filters']['field_month_and_year_value']['id'] = 'field_month_and_year_value';
+  $handler->display->display_options['filters']['field_month_and_year_value']['table'] = 'field_data_field_month_and_year';
+  $handler->display->display_options['filters']['field_month_and_year_value']['field'] = 'field_month_and_year_value';
+  $handler->display->display_options['filters']['field_month_and_year_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_month_and_year_value']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_month_and_year_value']['default_date'] = '-5 months';
+  $handler->display->display_options['filters']['field_month_and_year_value']['year_range'] = '-1:+1';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['giveaway_winners'] = $view;
+
+  $view = new view();
   $view->name = 'leaderboards';
   $view->description = '';
   $view->tag = 'default';

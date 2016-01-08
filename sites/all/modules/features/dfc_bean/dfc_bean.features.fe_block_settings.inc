@@ -285,5 +285,47 @@ function dfc_bean_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['bean-membership-header'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'membership-header',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dfc' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dfc',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-title-my-profile'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'title-my-profile',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dfc' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dfc',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }

@@ -1,4 +1,53 @@
 <?php
+/**
+ * Implements hook_block_info().
+ */
+function dfc_convert_points_block_info() {
+  $blocks = array();
+  $blocks['giveaway_countdown'] = array(
+    'info' => t('Giveaway Countdown'),
+  );
+  
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function dfc_convert_points_block_view($delta='') {
+  $block = array();
+  
+  switch($delta) {
+    case 'giveaway_countdown' :
+      $prize_query = new EntityFieldQuery();
+      $prize_query->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', 'giveaway_prize')
+        ->propertyCondition('status', NODE_PUBLISHED)
+        ->fieldCondition('field_month_and_year', 'value', date('Y-m-01 00:00:00'), '=')
+        ->range(0, 1);
+
+      $prize_result = $prize_query->execute();
+    
+    if(isset($prize_result['node'])) {
+      $prize_nids = array_keys($prize_result['node']);
+      $prize_nid = reset($prize_nids);
+      $prize = node_load($prize_nid);
+      $block['content'] = '<div id="countdown_title">'.t('Giveaway Countdown').'</div>';
+      $block['content'] .= '<div id="countdown_sponsor">'.$prize->field_sponsor['und'][0]['value'].'</div>';
+      $block['content'] .= '<div id="countdown_prize">'.$prize->title.'</div>';
+      $block['content'] .= theme('jquery_countdown',
+        array('options' => array(
+          'until' => date("F 01, Y 12:00 \a\m", strtotime('+1 month')),
+          'format' => 'DHMS',
+        ),
+        'id' => 'jquery_countdown-' . $delta ));
+      break;
+    }
+  }
+  
+  return $block;
+}
+
 function dfc_convert_points_cron(){
   $cur_month = date('n');
   $last_month = date('Y-m-01 00:00:00', strtotime('-1 month'));

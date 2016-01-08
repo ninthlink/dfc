@@ -976,6 +976,130 @@ function dfc_views_nodequeues_views_default_views() {
   $export['media_items'] = $view;
 
   $view = new view();
+  $view->name = 'memberships';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Memberships';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['style_plugin'] = 'quicktabs';
+  $handler->display->display_options['style_options']['tab_title_field'] = 'nothing';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'memberships' => 'memberships',
+    'homepage_offers_3' => 0,
+    'homepage_offers_6' => 0,
+    'homepage_partners' => 0,
+    'media_homepage' => 0,
+    'media_media_carousel' => 0,
+    'featured_resort' => 0,
+  );
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Membership info';
+  $handler->display->display_options['fields']['fieldset']['children'] = array(
+    0 => 'title',
+    1 => 'field_product_description',
+    2 => 'field_price',
+    3 => 'field_membership_product_referen',
+  );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Field: Description */
+  $handler->display->display_options['fields']['field_product_description']['id'] = 'field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['table'] = 'field_data_field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['field'] = 'field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['label'] = '';
+  $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
+  /* Field: Content: Price */
+  $handler->display->display_options['fields']['field_price']['id'] = 'field_price';
+  $handler->display->display_options['fields']['field_price']['table'] = 'field_data_field_price';
+  $handler->display->display_options['fields']['field_price']['field'] = 'field_price';
+  $handler->display->display_options['fields']['field_price']['label'] = '$';
+  $handler->display->display_options['fields']['field_price']['element_label_colon'] = FALSE;
+  /* Field: Content: Membership Product Reference */
+  $handler->display->display_options['fields']['field_membership_product_referen']['id'] = 'field_membership_product_referen';
+  $handler->display->display_options['fields']['field_membership_product_referen']['table'] = 'field_data_field_membership_product_referen';
+  $handler->display->display_options['fields']['field_membership_product_referen']['field'] = 'field_membership_product_referen';
+  $handler->display->display_options['fields']['field_membership_product_referen']['label'] = '';
+  $handler->display->display_options['fields']['field_membership_product_referen']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_membership_product_referen']['settings'] = array(
+    'show_quantity' => 0,
+    'default_quantity' => '1',
+    'combine' => 1,
+    'show_single_product_attributes' => 0,
+    'line_item_type' => 'membership_entity_line_item',
+  );
+  $handler->display->display_options['fields']['field_membership_product_referen']['field_api_classes'] = TRUE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[title] @';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'membership_display' => 'membership_display',
+  );
+
+  /* Display: Tabbed Block */
+  $handler = $view->new_display('block', 'Tabbed Block', 'block');
+  $export['memberships'] = $view;
+
+  $view = new view();
   $view->name = 'news_events';
   $view->description = '';
   $view->tag = 'default';

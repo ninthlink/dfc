@@ -229,6 +229,27 @@ function dfc_content_types_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_membership_product_referen'.
+  $field_bases['field_membership_product_referen'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_membership_product_referen',
+    'indexes' => array(
+      'product_id' => array(
+        0 => 'product_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'commerce_product_reference',
+    'settings' => array(
+      'options_list_limit' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'commerce_product_reference',
+  );
+
   // Exported field_base: 'field_month_and_year'.
   $field_bases['field_month_and_year'] = array(
     'active' => 1,
@@ -265,6 +286,27 @@ function dfc_content_types_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_phone_number',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_price'.
+  $field_bases['field_price'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_price',
     'indexes' => array(
       'format' => array(
         0 => 'format',

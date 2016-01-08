@@ -1,0 +1,367 @@
+body.node-type-landing-page.section-membership {
+
+}
+
+.block--bean-membership-header {
+	position: relative;
+	overflow: hidden;
+  padding: 20px;
+  background: $color-gray-2;
+  text-align: center;
+
+  @include breakpoint($bp-desk) {
+		height: 360px;
+    padding: 0;
+    background: transparent;
+  }
+
+  @include breakpoint($bp-full) {
+		height: 410px;
+  }
+
+  .field--background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+    display: none;
+
+	  @include breakpoint($bp-desk) {
+      display: block;
+			height: auto;
+	  }
+		
+		img {
+			height: 100%;
+			max-width: none;
+			width: auto;
+
+		  @include breakpoint($bp-tab) {
+				height: auto;
+				max-width: 100%;
+				width: 100%;
+		  }
+		}
+  }
+
+  .field--text {
+
+	  @include breakpoint($bp-desk) {
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+      width: 100%;
+	  }
+    
+    .ms-text {
+
+  	  @include breakpoint($bp-desk) {
+        float: left;
+        width: 50%;
+        padding-top: 150px;
+        padding-left: 50px;
+  	  }
+    }
+    
+    .ms-video {
+
+  	  @include breakpoint($bp-desk) {
+        float: right;
+        width: 50%;
+        padding-top: 60px;
+        text-align: left;
+  	  }
+    }
+
+    h1 {
+  		font-family: $dr;
+  		color: $color-white;
+  		line-height: .9;
+  		text-transform: uppercase;
+  		@include rem(font-size, 42px);
+  		margin-bottom: 10px;
+
+  	  @include breakpoint($bp-desk) {
+  			@include rem(font-size, 68px);
+  	  }
+    }
+    
+    .ms-subtitle {
+  		font-family: $sr;
+  		color: $color-white;
+  		line-height: .9;
+  		text-transform: uppercase;
+  		@include rem(font-size, 16px);
+  		margin-bottom: 10px;
+    }
+    
+    .ms-video {
+
+      iframe {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.view-memberships {
+  
+  ul.quicktabs-tabs {
+    @extend .no-list;
+    @include clearfix;
+    
+    li {
+      font-family: $dr;
+      @include rem(font-size, 42px);
+      text-transform: uppercase;
+      text-align: center;
+
+  	  @include breakpoint($bp-desk) {
+        float: left;
+        width: 33.33%;
+  	  }
+      
+      a {
+        display: block;
+        background: $color-silver;
+        color: $color-white;
+        text-decoration: none;
+        padding: 10px 0;
+
+    	  @include breakpoint($bp-desk) {
+          padding: 50px 0;
+    	  }
+        
+        &:hover {
+          opacity: .7;
+        }
+        
+        &:after {
+          content: "$1";
+          color: $color-black;
+          margin-left: 10px;
+        }
+      }
+      
+      &:nth-of-type(2) {
+
+    	  @include breakpoint($bp-desk) {
+          padding: 0 3px;
+    	  }
+        
+        a {
+          background: $color-gold;
+        
+          &:after {
+            content: "$5";
+          }
+        }
+      }
+      
+      &:nth-of-type(3) {
+        
+        a {
+          background: $color-platinum;
+        
+          &:after {
+            content: "$10";
+          }
+        }
+      }
+    }
+  }
+  
+  .quicktabs_main {
+    
+    .membership-info {
+      padding: 20px;
+
+  	  @include breakpoint($bp-desk) {
+        float: left;
+        width: 50%;
+        padding: 85px 90px 130px 110px;
+  	  }
+
+  	  @include breakpoint($bp-full) {
+        width: 38%;
+  	  }
+    }
+    
+    .views-field-title {
+  		font-family: $dr;
+  		color: $color-silver;
+  		line-height: .9;
+  		text-transform: uppercase;
+  		@include rem(font-size, 42px);
+  		margin-bottom: 20px;
+
+  	  @include breakpoint($bp-desk) {
+  			@include rem(font-size, 62px);
+  	  }
+    }
+
+    .views-field-field-product-description {
+  		font-family: $sr;
+  		color: $color-white;
+  		@include rem(font-size, 18px);
+      line-height: 1;
+  		text-transform: uppercase;
+  		margin-bottom: 20px;
+    }
+
+    .views-field-field-price {
+      position: relative;
+  		font-family: $dr;
+  		color: $color-orange;
+  		line-height: .9;
+  		text-transform: uppercase;
+  		@include rem(font-size, 42px);
+  		margin-bottom: 70px;
+
+  	  @include breakpoint($bp-desk) {
+  			@include rem(font-size, 88px);
+  	  }
+      
+      .views-label {
+        position: relative;
+    		@include rem(font-size, 22px);
+        top: -15px;
+
+    	  @include breakpoint($bp-desk) {
+    			@include rem(font-size, 68px);
+    	  }
+      }
+      
+      .field-content {
+        display: inline;
+        
+        div {
+          display: inline;
+        }
+      }
+    }
+
+    .views-field-field-membership-product-referen {
+      
+      .form-submit {
+        border: 2px solid $color-white;
+        color: $color-white;
+        background: transparent;
+    		@include rem(font-size, 22px);
+        font-family: $dr;
+        text-transform: uppercase;
+        display: block;
+        height: 64px;
+        padding: 0 90px;
+        
+        &:hover {
+          border-color: $color-orange;
+          background: $color-orange;
+        }
+      }
+    }
+    
+    .views-field-body {
+      padding: 20px;
+  		color: $color-white;
+
+  	  @include breakpoint($bp-desk) {
+        float: left;
+        width: 50%;
+        padding: 85px 0 130px;
+  	  }
+
+  	  @include breakpoint($bp-desk) {
+        width: 38%;
+  	  }
+      
+      strong {
+  		  font-family: $sr;
+      }
+      
+      h2 {
+  		  font-family: $sr;
+        text-transform: uppercase;
+    		@include rem(font-size, 18px);
+        margin-bottom: 30px;
+      }
+      
+      .note-billing {
+    		@include rem(font-size, 18px);
+        color: $color-gray-9;
+        margin-bottom: 50px;
+      }
+      
+      h3 {
+    		@include rem(font-size, 25px);
+        margin-bottom: 40px;
+        font-family: inherit;
+        color: $color-silver;
+        
+        span {
+          color: $color-white;
+        }
+      }
+      
+      ul {
+        @extend .no-list;
+
+        li {
+          position: relative;
+          padding: 0 0 10px 10px;
+          
+          &:before {
+            content:"";
+            background: $color-orange-secondary;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            height: 4px;
+            width: 4px;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    
+    .quicktabs-tabpage {
+      
+      &:nth-of-type(2) {
+        
+        .views-field-title {
+      		color: $color-gold;
+        }
+        
+        .views-field-body {
+      
+          h2 {
+            margin-bottom: 10px;
+          }
+      
+          h3 {
+            color: $color-gold;
+          }
+        }
+      }
+      
+      &:nth-of-type(3) {
+        
+        .views-field-title {
+      		color: $color-platinum;
+        }
+        
+        .views-field-body {
+      
+          h2 {
+            margin-bottom: 10px;
+          }
+      
+          h3 {
+            color: $color-platinum;
+          }
+        }
+      }
+    }
+  }
+}

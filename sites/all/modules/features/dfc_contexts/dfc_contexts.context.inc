@@ -422,6 +422,44 @@ function dfc_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'membership';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'membership' => 'membership',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-membership-header' => array(
+          'module' => 'bean',
+          'delta' => 'membership-header',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+        'views-memberships-block' => array(
+          'module' => 'views',
+          'delta' => 'memberships-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['membership'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'news_events_landing';
   $context->description = 'News and Events Landing';
   $context->tag = 'page';

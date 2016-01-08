@@ -58,6 +58,14 @@ function dfc_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'membership_display' => array(
+      'name' => t('Membership Display'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'news' => array(
       'name' => t('News'),
       'base' => 'node_content',

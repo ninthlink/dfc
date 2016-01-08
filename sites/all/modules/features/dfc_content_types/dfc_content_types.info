@@ -71,6 +71,7 @@ features[field_instance][] = node-membership_display-body
 features[field_instance][] = node-membership_display-field_membership_product_referen
 features[field_instance][] = node-membership_display-field_price
 features[field_instance][] = node-membership_display-field_product_description
+features[field_instance][] = node-membership_display-title_field
 features[field_instance][] = node-news-body
 features[field_instance][] = node-news-title_field
 features[field_instance][] = node-offers-field_image

@@ -323,11 +323,17 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-10',
         ),
+        'dfc_convert_points-giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'giveaway_countdown',
+          'region' => 'footer_top',
+          'weight' => '-10',
+        ),
         'bean-home---cta' => array(
           'module' => 'bean',
           'delta' => 'home---cta',
           'region' => 'footer_top',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

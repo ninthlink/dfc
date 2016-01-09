@@ -5,6 +5,7 @@ dependencies[] = bean
 dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = dfc_convert_points
 dependencies[] = features
 dependencies[] = invite
 dependencies[] = menu

@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function dfc_content_types_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -40,7 +40,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_location|node|event|default'] = $field_group;
+  $field_groups['group_location|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -73,7 +73,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_media_content_teaser|node|media_item|teaser'] = $field_group;
+  $field_groups['group_media_content_teaser|node|media_item|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -108,7 +108,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_media_content|node|media_item|default'] = $field_group;
+  $field_groups['group_media_content|node|media_item|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -141,7 +141,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_media_header_teaser|node|media_item|teaser'] = $field_group;
+  $field_groups['group_media_header_teaser|node|media_item|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -174,7 +174,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_media_header|node|media_item|default'] = $field_group;
+  $field_groups['group_media_header|node|media_item|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -204,7 +204,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_media|node|media_item|form'] = $field_group;
+  $field_groups['group_media|node|media_item|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -234,7 +234,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_related_videos|node|media_item|default'] = $field_group;
+  $field_groups['group_related_videos|node|media_item|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -266,7 +266,7 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_resort_first|node|resort|teaser'] = $field_group;
+  $field_groups['group_resort_first|node|resort|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -305,7 +305,17 @@ function dfc_content_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_resort_last|node|resort|teaser'] = $field_group;
+  $field_groups['group_resort_last|node|resort|teaser'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Location');
+  t('Media');
+  t('Media Content');
+  t('Media Header');
+  t('Related Videos');
+  t('Resort First');
+  t('Resort Last');
+
+  return $field_groups;
 }

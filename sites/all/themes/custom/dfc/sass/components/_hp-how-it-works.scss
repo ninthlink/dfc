@@ -88,6 +88,7 @@
 	.how-steps {
 		position: relative;
 		background: $color-white;
+    color: $color-black;
 		padding: 70px 50px 60px;
 
 	  @include breakpoint($bp-tab) {
@@ -227,6 +228,7 @@
 		  font-family: $dr;
 			@include rem(font-size, 30px);
 			margin-bottom: 15px;
+      color: $color-black;
 			
 		  @include breakpoint($bp-desk) {
 		    @include rem(font-size, 38px);

@@ -36,6 +36,7 @@
 			@include rem(font-size, 40px);
 			margin-bottom: 10px;
 			line-height: 1;
+      color: $color-black;
 			
 		  @include breakpoint($bp-desk) {
 		    @include rem(font-size, 52px);

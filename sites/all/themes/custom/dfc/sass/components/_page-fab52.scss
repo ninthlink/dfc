@@ -203,13 +203,73 @@ body.node-type-landing-page.section-fab-52-resorts {
     }
   }
   
-  .field--resort-category {
+  .group-resort-price {
+    position: relative;
+    display: inline-block;
     font-family: $dr;
 		@include rem(font-size, 16px);
+    line-height: 1;
+    
+    &:before {
+      content: "$$$$";
+      color: $color-gray-6;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 30px;
+    }
+
+    &:after {
+      content: "$";
+      color: $color-white;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 30px;
+    }
+  }
+  
+  &.price-two-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$";
+      } 
+    }
+  }
+  
+  &.price-three-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$$";
+      } 
+    }
+  }
+  
+  &.price-four-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$$$";
+      } 
+    }
+  }
+  
+  .field--resort-category {
     color: $color-orange;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 20px;
+    
+    &:after {
+      content: "|";
+      color: $color-gray-9;
+      margin-left: 6px;
+    }
   }
 
   .field--title-field {

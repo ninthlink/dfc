@@ -285,10 +285,10 @@ function dfc_content_types_field_group_info() {
       1 => 'field_location',
       2 => 'field_phone_number',
       3 => 'field_product_description',
-      4 => 'field_resort_category',
-      5 => 'field_website_link',
-      6 => 'title_field',
-      7 => 'sharethis',
+      4 => 'field_website_link',
+      5 => 'title_field',
+      6 => 'sharethis',
+      7 => 'group_resort_price',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -307,6 +307,38 @@ function dfc_content_types_field_group_info() {
   );
   $field_groups['group_resort_last|node|resort|teaser'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_resort_price|node|resort|teaser';
+  $field_group->group_name = 'group_resort_price';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'resort';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = 'group_resort_last';
+  $field_group->data = array(
+    'label' => 'Resort Price',
+    'weight' => '11',
+    'children' => array(
+      0 => 'field_resort_category',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Resort Price',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-resort-price field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_resort_price|node|resort|teaser'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Location');
@@ -316,6 +348,7 @@ function dfc_content_types_field_group_info() {
   t('Related Videos');
   t('Resort First');
   t('Resort Last');
+  t('Resort Price');
 
   return $field_groups;
 }

@@ -1,0 +1,123 @@
+// Home User Ranking
+.block--views-user-ranking-block-1 {
+	position: relative;
+  background: $color-gray-36;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @include breakpoint($bp-tab) {
+    text-align: left;
+    padding: 50px;
+  }
+
+  h2.block__title {
+    font-family: $dr;
+    @include rem(font-size, 25px);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+
+.view-user-ranking {
+  text-align: center;
+
+  @include breakpoint($bp-tab) {
+    text-align: left;
+  }
+  
+  .views-row {
+    @include clearfix;
+    line-height: 1;
+  }
+  
+  .profile-info {
+
+    @include breakpoint($bp-tab) {
+      float: left;
+      width: 50%;
+    }
+    
+    .views-field-picture {
+      margin-bottom: 30px;
+
+      @include breakpoint($bp-tab) {
+        float: left;
+        width: 26%;
+      }
+      
+      img {
+        width: 140px;
+        border-radius: 200px;
+        overflow: hidden;
+        border: 2px solid $color-white;
+      }
+    }
+    
+    .personal-info {
+      font-family: $sr;
+      margin-bottom: 20px;
+
+      @include breakpoint($bp-tab) {
+        float: right;
+        width: 63%;
+      }
+      
+      .views-field-lifetime-user-standing {
+        font-family: $dr;
+        @include rem(font-size, 42px);
+        color: $color-orange;
+        margin-bottom: 25px;
+      
+        &:after {
+          content: ".";
+        }
+      }
+      
+      .member-name {
+        @include rem(font-size, 18px);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+        div {
+          display: inline-block;
+        }
+      }
+            
+      .field--city-state {
+        @include rem(font-size, 16px);
+        color: $color-gray-9;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+  .views-field-monthly-points,
+  .views-field-lifetime-points {
+    font-family: $sr;
+    margin-bottom: 20px;
+
+    @include breakpoint($bp-tab) {
+      float: left;
+      width: 25%;
+      margin-bottom: 0;
+      border-left: 1px solid $color-gray-4d;
+      padding: 10px 0 20px 40px;
+    }
+    
+    .views-label {
+      @include rem(font-size, 16px);
+      color: $color-orange;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .field-content {
+      @include rem(font-size, 36px);
+      display: block;
+    }
+  }
+
+  .views-field-lifetime-points {}
+  
+}

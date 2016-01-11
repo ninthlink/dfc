@@ -2,7 +2,6 @@ name = DFC Blocks
 core = 7.x
 package = Features
 dependencies[] = fe_block
-dependencies[] = jquery_countdown
 dependencies[] = menu
 features[fe_block_settings][] = menu-menu-footer-menu
 features[fe_block_settings][] = system-main-menu

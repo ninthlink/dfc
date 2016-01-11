@@ -32,15 +32,25 @@ function dfc_convert_points_block_view($delta='') {
       $prize_nids = array_keys($prize_result['node']);
       $prize_nid = reset($prize_nids);
       $prize = node_load($prize_nid);
+      $prize_date = 
       $block['content'] = '<div id="countdown_title">'.t('Giveaway Countdown').'</div>';
-      $block['content'] .= '<div id="countdown_sponsor">'.$prize->field_sponsor['und'][0]['value'].'</div>';
+      $block['content'] .= '<div id="countdown_sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
       $block['content'] .= '<div id="countdown_prize">'.$prize->title.'</div>';
-      $block['content'] .= theme('jquery_countdown',
-        array('options' => array(
-          'until' => date("F 01, Y 12:00 \a\m", strtotime('+1 month')),
-          'format' => 'DHMS',
-        ),
-        'id' => 'jquery_countdown-' . $delta ));
+      $block['content'] .= '<div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
+        <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
+        <script type="text/javascript">
+          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("'.date("Y/m/01", strtotime('+1 month')).'", function(event) {
+            if(event.offset.days < 1) {
+              jQuery(this).addClass("last_day")
+            }
+            jQuery(this).html(
+              event.strftime("<span class=\'countdown_section\'><span class=\'countdown_amount\'>%D</span><br>Days</span>"
+              +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%H</span><br>Hours</span>"
+              +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%M</span><br>Minutes</span>"
+              +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%S</span><br>Seconds</span>")
+            );
+          });
+        </script>';
       break;
     }
   }
@@ -75,8 +85,8 @@ function dfc_convert_points_cron(){
         ->range(0, 1)
         ->execute();
       $giveaway_winner = $giveaway_result->fetchAssoc();
-      $prize->field_winner['und'][0]['target_id'] = $giveaway_winner['uid'];
-      $prize->field_winners_points['und'][0]['value'] = $giveaway_winner['points'];
+      $prize->field_winner[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
+      $prize->field_winners_points[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
       node_save($prize);
     }
     //convert monthly points to lifetime points

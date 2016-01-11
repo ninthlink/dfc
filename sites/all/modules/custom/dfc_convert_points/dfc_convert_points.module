@@ -32,10 +32,10 @@ function dfc_convert_points_block_view($delta='') {
       $prize_nids = array_keys($prize_result['node']);
       $prize_nid = reset($prize_nids);
       $prize = node_load($prize_nid);
-      $prize_date = 
-      $block['content'] = '<div id="countdown_title">'.t('Giveaway Countdown').'</div>';
-      $block['content'] .= '<div id="countdown_sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
-      $block['content'] .= '<div id="countdown_prize">'.$prize->title.'</div>';
+      $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('Giveaway <span>Countdown</span>').'</div>';
+      $block['content'] .= '<div class="countdown-sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
+      $block['content'] .= '<div class="countdown-prize">'.$prize->title.'</div></div>';
+
       $block['content'] .= '<div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
         <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
         <script type="text/javascript">

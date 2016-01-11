@@ -4,7 +4,7 @@
       var player = $('iframe');
       var playerOrigin = '*';
       var status = $('.status');
-      var awarded = false;
+      var awarded = Drupal.settings.dfcPointsAward.awarded;
 
       // Listen for messages from the player
       if (window.addEventListener) {
@@ -61,15 +61,12 @@
       }
 
       function onReady() {
-        status.text('ready');
-
         post('addEventListener', 'pause');
         post('addEventListener', 'finish');
         post('addEventListener', 'playProgress');
       }
 
       function onPlayProgress(data, id) {
-        status.text(data.seconds + 's played');
         if (data.seconds > 10 && !awarded) {
           var nid = Drupal.settings.dfcPointsAward.vid;
           var vcode = Drupal.settings.dfcPointsAward.vcode;
@@ -77,6 +74,7 @@
           $.get(url, function(data) {
             console.log(data);
           });
+          awarded = true;
         }
       }
     }

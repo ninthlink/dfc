@@ -39,14 +39,14 @@
 .load-more {
   margin: 0;
   @extend .no-list;
-  
+
   @include breakpoint($bp-full) {
     padding-top: 20px;
   }
-  
+
   a {
     @extend .button;
-  
+
 	  @include breakpoint($bp-desk) {
       width: 348px;
 	  }

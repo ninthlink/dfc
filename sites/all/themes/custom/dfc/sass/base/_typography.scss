@@ -33,6 +33,16 @@ h5 {
   @include rem(font-size, 18px);
 }
 
+.dfc-header-lg {
+  font-family: "dangerregular", Helvetica, sans-serif;
+  color: $color-gray-light;
+}
+
+.dfc-header-o {
+  font-family: "dangerregular", Helvetica, sans-serif;
+  color: $color-orange;
+}
+
 a {
 	color: $color-orange;
   text-decoration: none;

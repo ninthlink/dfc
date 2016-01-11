@@ -1,11 +1,48 @@
 <?php
 
+function dfc_points_award_menu() {
+  $items['dfc/points/grant/video/%/%'] = array(
+    'page callback' => 'dfc_points_award_video',
+    'page arguments' => array(4, 5),
+    'type' => MENU_CALLBACK
+  );
+  $items['dfc/points/grant/link'] = array(
+    'page callback' => 'dfc_points_award_link',
+    //'page arguments' => array(),
+    'type' => MENU_CALLBACK
+  );
+  return $items;
+}
+
 function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'invite_form') {
-    $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
     $form['#validate'][] = 'dfc_points_award_grant_points_invite_form_validate';
+    $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
     $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_invite_form';
   }
+}
+
+function dfc_points_award_node_view($node, $view_mode, $langcode) {
+  if ($node->type == 'media_item') {
+    $settings['dfcPointsAward']['vid'] = $node->nid;
+    $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
+    drupal_add_js($settings, 'setting');
+    drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
+  }
+}
+
+function dfc_points_award_video ($vid, $time) {
+  //@todo verify points
+  $video_points = 10;
+  dfc_points_award_grant_points($video_points);
+  watchdog('dfc', 'awarding video points');
+}
+
+function dfc_points_award_link ($vid, $time) {
+  //@todo verify points
+  $link_points = 10;
+  dfc_points_award_grant_points($link_points);
+  watchdog('dfc', 'awarding link points');
 }
 
 function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state) {
@@ -32,6 +69,13 @@ function dfc_points_award_grant_points($points) {
 
 function dfc_points_award_rules_condition_info() {
   return array(
+    'dfc_points_award_condition_check_refer' => array(
+      'label' => t('Check if user was referred'),
+      'arguments' => array(
+        'user' => array('type' => 'user', 'label' => t('User Signing Up')),
+      ),
+      'group' => t('DFC'),
+    ),
     'dfc_points_award_condition_check_refer' => array(
       'label' => t('Check if user was referred'),
       'arguments' => array(
@@ -82,4 +126,14 @@ function dfc_points_award_action_load_invite_user($user) {
     }
   }
   return FALSE;
+}
+
+function dfc_points_award_get_random_string($length = 10) {
+  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  $charactersLength = strlen($characters);
+  $randomString = '';
+  for ($i = 0; $i < $length; $i++) {
+    $randomString .= $characters[rand(0, $charactersLength - 1)];
+  }
+  return $randomString;
 }

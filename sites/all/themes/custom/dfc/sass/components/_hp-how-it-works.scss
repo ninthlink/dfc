@@ -2,7 +2,7 @@
 .block--bean-home-how-it-works {
 	position: relative;
 	text-align: center;
-	
+
 	.field--background-image {
 		position: absolute;
 		top: -20px;
@@ -27,7 +27,7 @@
 			top: -133px;
 			margin-left: -300px;
 	  }
-		
+
 		img {
 			height: 100%;
 			width: auto;
@@ -50,7 +50,7 @@
 			padding-top: 40px;
 	  	height: 136px;
 	  }
-	
+
 		.how-text-title {
 			position: relative;
 			z-index: 11;
@@ -73,11 +73,11 @@
 				padding-left: 450px;
 				@include rem(font-size, 42px);
 		  }
-		
+
 			span {
 				color: $color-black;
 				display: block;
-		
+
 			  @include breakpoint($bp-tab) {
 					display: inline;
 			  }
@@ -97,14 +97,14 @@
 	  @include breakpoint($bp-desk) {
 			padding-bottom: 80px;
 	  }
-		
+
 		.container {
-			
+
 		  @include breakpoint($bp-full) {
 				padding: 0 130px;
 		  }
 		}
-	
+
 		&:before {
 			position: absolute;
 			top: 0;
@@ -115,12 +115,12 @@
 	    border-right: 20px solid transparent;
 	    border-top: 20px solid $color-orange;
 		}
-		
+
 		.step {
 			position: relative;
 			margin-bottom: 65px;
 			padding-top: 80px;
-			
+
 		  @include breakpoint($bp-desk) {
 				float: left;
 				display: inline-block;
@@ -129,57 +129,57 @@
 				padding-right: 25px;
 				margin-bottom: 0;
 		  }
-			
+
 			&:last-child {
 				margin-bottom: 0;
 			}
-			
+
 			&:before {
 		    position: absolute;
 		    left: 50%;
 		    top: 0;
 			}
 		}
-		
+
 		h3 {
 			text-transform: uppercase;
 			color: $color-orange;
 			@include rem(font-size, 23px);
 			margin-bottom: 22px;
 		}
-		
+
 		p {
 			margin: 0;
 			font-family: $sr;
 			@include rem(font-size, 11px);
 		}
-		
+
 		.step-01 {
-			
+
 			&:before {
 				@include use-sprite($how-check);
 		    margin-left: -27px;
 			}
 		}
-		
+
 		.step-02 {
-			
+
 			&:before {
 				@include use-sprite($how-points);
 		    margin-left: -27px;
 			}
 		}
-		
+
 		.step-03 {
-			
+
 			&:before {
 				@include use-sprite($how-upload);
 		    margin-left: -27px;
 			}
 		}
-		
+
 		.step-04 {
-			
+
 			&:before {
 				@include use-sprite($how-perks);
 		    margin-left: -25px;
@@ -192,11 +192,11 @@
 		background: $color-gray-lighter;
 		padding: 50px 28px 40px;
 		text-transform: uppercase;
-		
+
 	  @include breakpoint($bp-desk) {
 			padding: 50px 0 40px;
 	  }
-		
+
 		&:before {
 
 		  @include breakpoint($bp-desk) {
@@ -207,9 +207,9 @@
         @extend .transform-50-left;
 		  }
 		}
-		
+
 		.how-cta-column {
-			
+
 		  @include breakpoint($bp-desk) {
 				float: left;
 				width: 60%;
@@ -217,37 +217,37 @@
 				padding-left: 220px;
 				padding-right: 60px;
 		  }
-			
+
 		  @include breakpoint($bp-full) {
 				padding-left: 150px;
 		  }
 		}
-		
+
 		.how-cta-title {
 		  font-family: $dr;
 			@include rem(font-size, 30px);
 			margin-bottom: 15px;
-			
+
 		  @include breakpoint($bp-desk) {
 		    @include rem(font-size, 38px);
 				line-height: .95;
 				margin-bottom: 10px;
 		  }
-			
+
 			span {
 				color: $color-orange;
 			}
 		}
-		
+
 		.how-cta-subtitle {
 			font-weight: bold;
 			color: $color-orange;
 			@include rem(font-size, 20px);
 			margin-bottom: 15px;
 		}
-		
+
 		.how-cta-link {
-			
+
 		  @include breakpoint($bp-desk) {
 				float: right;
 				width: 40%;
@@ -260,7 +260,7 @@
 				height: 102px;
 				background: url(../images/button-how-cta.png) no-repeat;
 			}
-			
+
 			span {
 				display: none;
 			}

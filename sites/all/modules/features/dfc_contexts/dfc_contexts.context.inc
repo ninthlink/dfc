@@ -317,17 +317,29 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-user_ranking-block_1' => array(
+          'module' => 'views',
+          'delta' => 'user_ranking-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
         'views-leaderboards-block_1' => array(
           'module' => 'views',
           'delta' => 'leaderboards-block_1',
           'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'dfc_convert_points-giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'giveaway_countdown',
+          'region' => 'footer_top',
           'weight' => '-10',
         ),
         'bean-home---cta' => array(
           'module' => 'bean',
           'delta' => 'home---cta',
           'region' => 'footer_top',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

@@ -55,6 +55,29 @@ function dfc_content_types_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'price' => array(
+      'name' => 'Price',
+      'machine_name' => 'price',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'resort_category' => array(
       'name' => 'Resort Category',
       'machine_name' => 'resort_category',

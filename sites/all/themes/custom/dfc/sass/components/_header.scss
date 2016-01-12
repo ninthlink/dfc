@@ -56,6 +56,13 @@
 		  @include breakpoint($bp-desk) {
 				margin: 0 5px;
 		  }
+      
+      &:last-child {
+	
+  		  @include breakpoint($bp-desk) {
+  				margin-right: 0;
+  		  }
+      }
 
 			&:hover {
 				color: $color-orange
@@ -72,7 +79,7 @@
 		a {
 			text-decoration: none;
 			color: $color-orange;
-			
+      
 			&:hover {
 				color: $color-white;
 			}

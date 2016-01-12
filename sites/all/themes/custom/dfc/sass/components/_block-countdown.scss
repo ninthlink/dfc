@@ -1,0 +1,119 @@
+.block--dfc-convert-points-giveaway-countdown {
+  background: $color-gray-27;
+  
+  .inner {
+    @include container;
+    padding: 20px;
+
+	  @include breakpoint($bp-desk) {
+      padding: 45px 75px;
+	  }
+  }
+  
+  .countdown-text {
+    margin-bottom: 30px;
+
+	  @include breakpoint($bp-tab) {
+      float: left;
+      width: 50%;
+      margin-bottom: 0;
+	  }
+  }
+  
+  .countdown-title {
+	  font-family: $dr;
+    text-transform: uppercase;
+		@include rem(font-size, 32px);
+    line-height: .9;
+    margin-bottom: 20px;
+    color: $color-white;
+    
+    span {
+      color: $color-orange;
+    }
+  }
+  
+  .countdown-sponsor,
+  .countdown-prize {
+    color: $color-gray-9;
+	  font-family: $sr;
+		@include rem(font-size, 14px);
+  }
+  
+  .countdown-prize {
+    color: $color-white;
+  }
+  
+  .jquery-countdown {
+    background: none;
+    border: 0;
+    
+	  @include breakpoint($bp-tab) {
+      float: right;
+      width: 50%;
+	  }
+    
+    br {
+//      display: none;
+    }
+    
+    // small text
+    .countdown_section {
+      position: relative;
+      display: inline-block;
+      color: $color-gray-9;
+      font-family: $sr;
+      @include rem(font-size, 14px);
+      text-align: right;
+      padding-right: 20px;
+      width: auto;
+      
+      &:after {
+        content: ":";
+        display: block;
+        color: $color-white;
+        font-family: $dr;
+        @include rem(font-size, 42px);
+        position: absolute;
+        top: -10px;
+        right: 5px;
+      }
+      
+      &:last-child {
+      
+        &:after {
+          display: none;
+        }
+      }
+    }
+    
+    // big number
+    .countdown_amount {
+      position: relative;
+      background: $color-white;
+      color: $color-orange;
+      font-family: $dr;
+      @include rem(font-size, 42px);
+      letter-spacing: 30px;
+      height: 56px;
+      line-height: 56px;
+      width: 100px;
+      text-align: right;
+      text-indent: 15px;
+      display: inline-block;
+      margin-bottom: 10px;
+      
+      &:before {
+        content: "";
+        display: block;
+        background: $color-gray-27;
+        height: 56px;
+        width: 5px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2px;
+      }
+    }
+  }
+}

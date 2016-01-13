@@ -22,7 +22,8 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_invite_form';
   }
   else if ($form_id == 'user_profile_form') {
-    $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_upload';
+//    $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_upload';
+    $form['#submit'][] = 'dfc_points_award_grant_points_upload';
   }
 }
 
@@ -98,10 +99,14 @@ function dfc_points_award_grant_points($points) {
 }
 
 function dfc_points_award_grant_points_upload(&$form, &$form_state) {
+  global $user;
   if($form_state['values']['field_user_images']) {
-    $u = $form_state['user'];
-    $imgs_num_u = $u->field_user_images ? sizeof($u->field_user_images[LANGUAGE_NONE]) : 0;
+    $imgs_num_u = $u->field_user_images ? sizeof($user->field_user_images[LANGUAGE_NONE]) : 0;
     $imgs_num_f = sizeof($form_state['values']['field_user_images'][LANGUAGE_NONE]);
+
+    if ($form_state['values']['field_user_images'][LANGUAGE_NONE][0]['fid'] == 0) {
+      $imgs_num_f--;
+    }
 
     if ($imgs_num_f > $imgs_num_u) {
       //new upload, award points

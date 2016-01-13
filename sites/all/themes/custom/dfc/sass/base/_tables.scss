@@ -1,3 +1,7 @@
 table.views-table {
   background: $color-black;
+
+  th, td {
+    background: $color-black;
+  }
 }

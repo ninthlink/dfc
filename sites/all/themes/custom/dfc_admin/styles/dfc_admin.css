@@ -1,0 +1,17 @@
+/* Node access */
+
+body.page-node-access .content_access-div {
+	display: none;
+}
+body.page-node-access .content_access-div:nth-of-type(2) {
+	display: block;
+}
+body.page-node-access .content_access-div .form-checkboxes .form-item {
+	display: none;
+}
+body.page-node-access .content_access-div .form-checkboxes .form-item:nth-of-type(4),
+body.page-node-access .content_access-div .form-checkboxes .form-item:nth-of-type(5),
+body.page-node-access .content_access-div .form-checkboxes .form-item:nth-of-type(6),
+body.page-node-access .content_access-div .form-checkboxes .form-item:nth-of-type(7) {
+	display: block;
+}

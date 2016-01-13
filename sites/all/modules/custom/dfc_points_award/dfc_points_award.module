@@ -101,7 +101,7 @@ function dfc_points_award_grant_points($points) {
 function dfc_points_award_grant_points_upload(&$form, &$form_state) {
   global $user;
   if($form_state['values']['field_user_images']) {
-    $imgs_num_u = $u->field_user_images ? sizeof($user->field_user_images[LANGUAGE_NONE]) : 0;
+    $imgs_num_u = $user->field_user_images ? sizeof($user->field_user_images[LANGUAGE_NONE]) : 0;
     $imgs_num_f = sizeof($form_state['values']['field_user_images'][LANGUAGE_NONE]);
 
     if ($form_state['values']['field_user_images'][LANGUAGE_NONE][0]['fid'] == 0) {

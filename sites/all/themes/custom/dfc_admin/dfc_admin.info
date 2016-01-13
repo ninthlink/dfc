@@ -1,0 +1,16 @@
+name = DFC Custom Admin
+description = Admin theme for DFC.
+core = 7.x
+base theme = seven
+
+; Stylesheets
+stylesheets[screen][] = styles/dfc_admin.css
+
+; Regions
+regions[content] = Content
+regions[help] = Help
+regions[messages] = Messages
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[sidebar_first] = First sidebar
+regions_hidden[] = sidebar_first

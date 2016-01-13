@@ -90,10 +90,20 @@ function dfc_bean_uuid_features_default_beans() {
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="/leaderboard">Points Leaderboard</a></div>
+          'value' => '<div class="header-links">
+<ul>
+	<li><a href="/user">Member Login</a></li>
+	<li><a href="/leaderboard">Points Leaderboard</a></li>
+	<li class="link-logout"><a href="/user/logout">Log Out</a></li>
+</ul>
+</div>
 <div class="header-join"><a href="/membership">Join DFC Now</a></div>',
           'format' => 'full_html',
-          'safe_value' => '<div class="header-links"><a href="/user">Member Login</a> | <a href="/leaderboard">Points Leaderboard</a></div>
+          'safe_value' => '<div class="header-links">
+<ul><li><a href="/user">Member Login</a></li>
+<li><a href="/leaderboard">Points Leaderboard</a></li>
+<li class="link-logout"><a href="/user/logout">Log Out</a></li>
+</ul></div>
 <div class="header-join"><a href="/membership">Join DFC Now</a></div>
 ',
         ),

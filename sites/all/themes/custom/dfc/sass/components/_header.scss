@@ -29,7 +29,7 @@
 	width: 100px;
 
   @include breakpoint($bp-tab) {
-		width: 260px;
+		width: 310px;
 		text-align: right;
 		top: 20px;
   }
@@ -42,32 +42,47 @@
 	.header-links {
 		font-family: $sr;
 		@include rem(font-size, 11px);
+    line-height: 1;
 		color: $color-gray-lighter;
+    @include clearfix;
 	
 	  @include breakpoint($bp-desk) {
 			margin-bottom: 5px;
 			@include rem(font-size, 12.5px);
 	  }
-		
-		a {
-			text-decoration: none;
-			color: $color-gray-lighter;
-	
-		  @include breakpoint($bp-desk) {
-				margin: 0 5px;
-		  }
+    
+    ul {
+      @extend .no-list;
       
-      &:last-child {
-	
-  		  @include breakpoint($bp-desk) {
-  				margin-right: 0;
-  		  }
-      }
+      li {
+        margin-bottom: 8px;
 
-			&:hover {
-				color: $color-orange
-			}
-		}
+  		  @include breakpoint($bp-desk) {
+          margin-left: 5px;
+          padding-left: 10px;
+          border-left: 1px solid $color-gray-lighter;
+          display: inline-block;
+  		  }
+    
+        &:first-child {
+
+    		  @include breakpoint($bp-desk) {
+            margin-left: 0;
+            padding-left: 0;
+            border-left: 0;
+    		  }
+        }
+        
+    		a {
+    			text-decoration: none;
+    			color: $color-gray-lighter;
+
+    			&:hover {
+    				color: $color-orange
+    			}
+    		}
+      }
+    }
 	}
 
 	.header-join {
@@ -85,5 +100,11 @@
 			}
 		}
 	}
-	
+}
+
+body.not-logged-in {
+  
+  .link-logout {
+    display: none !important;
+  }
 }

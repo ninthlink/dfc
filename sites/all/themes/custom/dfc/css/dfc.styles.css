@@ -39,7 +39,7 @@ The `sprites` mixin generates identical output to the CSS template
 */
 /* generated with grunt-sass-globbing */
 /* line 1, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-.no-list, .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager, .block--menu-menu-footer-menu ul.menu, .block--bean-footer-copyright ul.social-links, .view-giveaway-winners ul.pager-load-more, .view-resorts .pager-load-more, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager, .view-memberships ul.quicktabs-tabs, .view-memberships .quicktabs_main .views-field-body ul, article.user-profile .group-profile-points .userpoints-points {
+.no-list, .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager, .block--menu-menu-footer-menu ul.menu, .block--bean-footer-copyright ul.social-links, .block--bean-header-info .header-links ul, .view-giveaway-winners ul.pager-load-more, .view-resorts .pager-load-more, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager, .view-memberships ul.quicktabs-tabs, .view-memberships .quicktabs_main .views-field-body ul, article.user-profile .group-profile-points .userpoints-points {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -48,13 +48,14 @@ The `sprites` mixin generates identical output to the CSS template
   .load-more li,
   body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li, .block--views-media-items-block ul.pager li, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li, .block--menu-menu-footer-menu ul.menu li,
   .block--bean-footer-copyright ul.social-links li,
+  .block--bean-header-info .header-links ul li,
   .view-giveaway-winners ul.pager-load-more li,
   .view-resorts .pager-load-more li,
   body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li,
   .view-memberships ul.quicktabs-tabs li,
   .view-memberships .quicktabs_main .views-field-body ul li,
   article.user-profile .group-profile-points .userpoints-points li,
-  .no-list li.leaf, .load-more li.leaf, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li.leaf, .block--views-media-items-block ul.pager li.leaf, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li.leaf, .block--menu-menu-footer-menu ul.menu li.leaf, .block--bean-footer-copyright ul.social-links li.leaf, .view-giveaway-winners ul.pager-load-more li.leaf, .view-resorts .pager-load-more li.leaf, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li.leaf, .view-memberships ul.quicktabs-tabs li.leaf, .view-memberships .quicktabs_main .views-field-body ul li.leaf, article.user-profile .group-profile-points .userpoints-points li.leaf {
+  .no-list li.leaf, .load-more li.leaf, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li.leaf, .block--views-media-items-block ul.pager li.leaf, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li.leaf, .block--menu-menu-footer-menu ul.menu li.leaf, .block--bean-footer-copyright ul.social-links li.leaf, .block--bean-header-info .header-links ul li.leaf, .view-giveaway-winners ul.pager-load-more li.leaf, .view-resorts .pager-load-more li.leaf, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li.leaf, .view-memberships ul.quicktabs-tabs li.leaf, .view-memberships .quicktabs_main .views-field-body ul li.leaf, article.user-profile .group-profile-points .userpoints-points li.leaf {
     margin: 0;
     padding: 0;
     list-style-image: none;
@@ -1238,7 +1239,7 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
   @media (min-width: 590px) {
     /* line 25, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
     .block--bean-header-info {
-      width: 260px;
+      width: 310px;
       text-align: right;
       top: 20px; } }
   @media (min-width: 960px) {
@@ -1251,42 +1252,57 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 11px;
     font-size: 0.6875rem;
-    color: #ebebeb; }
+    line-height: 1;
+    color: #ebebeb;
+    overflow: hidden;
+    *zoom: 1; }
     @media (min-width: 960px) {
       /* line 42, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
       .block--bean-header-info .header-links {
         margin-bottom: 5px;
         font-size: 12.5px;
         font-size: 0.78125rem; } }
-    /* line 52, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
-    .block--bean-header-info .header-links a {
-      text-decoration: none;
-      color: #ebebeb; }
+    /* line 57, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+    .block--bean-header-info .header-links ul li {
+      margin-bottom: 8px; }
       @media (min-width: 960px) {
-        /* line 52, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
-        .block--bean-header-info .header-links a {
-          margin: 0 5px; } }
+        /* line 57, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+        .block--bean-header-info .header-links ul li {
+          margin-left: 5px;
+          padding-left: 10px;
+          border-left: 1px solid #ebebeb;
+          display: inline-block; } }
       @media (min-width: 960px) {
-        /* line 60, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
-        .block--bean-header-info .header-links a:last-child {
-          margin-right: 0; } }
-      /* line 67, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
-      .block--bean-header-info .header-links a:hover {
-        color: #f1592a; }
-  /* line 73, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+        /* line 67, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+        .block--bean-header-info .header-links ul li:first-child {
+          margin-left: 0;
+          padding-left: 0;
+          border-left: 0; } }
+      /* line 76, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+      .block--bean-header-info .header-links ul li a {
+        text-decoration: none;
+        color: #ebebeb; }
+        /* line 80, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+        .block--bean-header-info .header-links ul li a:hover {
+          color: #f1592a; }
+  /* line 88, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
   .block--bean-header-info .header-join {
     text-transform: uppercase;
     font-size: 18px;
     font-size: 1.125rem;
     font-family: "dangerregular", Helvetica, sans-serif;
     letter-spacing: 1px; }
-    /* line 79, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+    /* line 94, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
     .block--bean-header-info .header-join a {
       text-decoration: none;
       color: #f1592a; }
-      /* line 83, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+      /* line 98, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
       .block--bean-header-info .header-join a:hover {
         color: #ffffff; }
+
+/* line 107, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_header.scss */
+body.not-logged-in .link-logout {
+  display: none !important; }
 
 /* line 2, /Users/troyshields/work/dfc/site/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_hp-carousel.scss */
 .block--views-media-items-block-2 {

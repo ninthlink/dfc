@@ -16,6 +16,12 @@ function dfc_menus_menu_default_menu_custom() {
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
   );
+  // Exported menu: menu-flop-menu.
+  $menus['menu-flop-menu'] = array(
+    'menu_name' => 'menu-flop-menu',
+    'title' => 'Flop Menu',
+    'description' => '',
+  );
   // Exported menu: menu-footer-menu.
   $menus['menu-footer-menu'] = array(
     'menu_name' => 'menu-footer-menu',
@@ -24,6 +30,7 @@ function dfc_menus_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Flop Menu');
   t('Footer Menu');
   t('Main menu');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');

@@ -1,8 +1,11 @@
 name = DFC Menus
 core = 7.x
 package = Features
+dependencies[] = dfc_flop_menu
 dependencies[] = features
 dependencies[] = menu
+dependencies[] = menu_token
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
+features[menu_custom][] = menu-flop-menu
 features[menu_custom][] = menu-footer-menu

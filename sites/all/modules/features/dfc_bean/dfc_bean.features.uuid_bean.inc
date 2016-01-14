@@ -93,6 +93,7 @@ function dfc_bean_uuid_features_default_beans() {
           'value' => '<div class="header-links">
 <ul>
 	<li><a href="/user">Member Login</a></li>
+	<li><a href="#" id="member_info_link">Member Info</a></li>
 	<li><a href="/leaderboard">Points Leaderboard</a></li>
 	<li class="link-logout"><a href="/user/logout">Log Out</a></li>
 </ul>
@@ -101,6 +102,7 @@ function dfc_bean_uuid_features_default_beans() {
           'format' => 'full_html',
           'safe_value' => '<div class="header-links">
 <ul><li><a href="/user">Member Login</a></li>
+<li><a href="#" id="member_info_link">Member Info</a></li>
 <li><a href="/leaderboard">Points Leaderboard</a></li>
 <li class="link-logout"><a href="/user/logout">Log Out</a></li>
 </ul></div>

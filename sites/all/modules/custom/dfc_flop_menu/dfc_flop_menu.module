@@ -34,40 +34,42 @@ function dfc_flop_menu_block_flop_view() {
   $user = user_load($user->uid);
 
   if($user->uid == 0) {
-    return '';
-  }
-  $uname = '';
-  if (!empty($user->field_first_name)) {
-    $uname .= $user->field_first_name[LANGUAGE_NONE][0]['value'];
-  }
-  $uname .= ' ';
-  if (!empty($user->field_last_name)) {
-    $uname .= $user->field_last_name[LANGUAGE_NONE][0]['value'];
-  }
-  $uname_markup = dfc_flop_menu_markup_wrapper( check_plain( $uname ), array('class' => 'user-name' ) );
-  
-  $ulocation_markup = dfc_flop_menu_markup_wrapper( check_plain( $user->field_city_state[LANGUAGE_NONE][0]['value'] ), array('class' => 'user-city-state' ) );
+    $markup = drupal_get_form('user_login_block');
+    $link_markup = dfc_flop_menu_markup_wrapper('Member Login', array('id' => 'dfc-user-flop-login-link'));
+  }else{
+    $uname = '';
+    if (!empty($user->field_first_name)) {
+      $uname .= $user->field_first_name[LANGUAGE_NONE][0]['value'];
+    }
+    $uname .= ' ';
+    if (!empty($user->field_last_name)) {
+      $uname .= $user->field_last_name[LANGUAGE_NONE][0]['value'];
+    }
+    $uname_markup = dfc_flop_menu_markup_wrapper( check_plain( $uname ), array('class' => 'user-name' ) );
 
-  $picture_markup = theme('user_picture', array('account' =>$user));;
+    $ulocation_markup = dfc_flop_menu_markup_wrapper( check_plain( $user->field_city_state[LANGUAGE_NONE][0]['value'] ), array('class' => 'user-city-state' ) );
 
-  $menu = menu_navigation_links('menu-flop-menu');
-  $menu_markup = theme('links__menu-flop-menu', array('links' => $menu));
-  
-  $lifetime_points = userpoints_get_current_points($user->uid, 0);
-  $monthly_points = userpoints_get_current_points($user->uid, 1);
-  $points = dfc_flop_menu_markup_wrapper('DFC Points', array('class' => 'points-title-wrapper'));
-  $points .= dfc_flop_menu_markup_wrapper(date('F'), array('class' => 'monthly-title-wrapper'));
-  $points .= dfc_flop_menu_markup_wrapper($monthly_points, array('class' => 'monthly-points-wrapper'));
-  $points .= dfc_flop_menu_markup_wrapper(l('Redeem', '#').' | '.l('Donate', '#'), array('class' => 'monthly_points_links'));
-  $points .= dfc_flop_menu_markup_wrapper('Lifetime', array('class' => 'lifetime-title-wrapper'));
-  $points .= dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'lifetime-points-wrapper'));
-  $points .= dfc_flop_menu_markup_wrapper(l('Redeem', '#').' | '.l('Donate', '#'), array('class' => 'lietime_points_links'));
-  $points_markup = dfc_flop_menu_markup_wrapper($points, array('class' => 'flop-points-wrapper'));
-  
-  // put it all together
-  $markup = $picture_markup . $uname_markup . $ulocation_markup . $menu_markup . $points_markup;
-	
-  return dfc_flop_menu_markup_wrapper($markup, array('id' => 'dfc-user-flop'));
+    $picture_markup = theme('user_picture', array('account' =>$user));
+
+    $menu = menu_navigation_links('menu-flop-menu');
+    $menu_markup = theme('links__menu-flop-menu', array('links' => $menu));
+
+    $lifetime_points = userpoints_get_current_points($user->uid, 0);
+    $monthly_points = userpoints_get_current_points($user->uid, 1);
+    $points = dfc_flop_menu_markup_wrapper('DFC Points', array('class' => 'points-title-wrapper'));
+    $points .= dfc_flop_menu_markup_wrapper(date('F'), array('class' => 'monthly-title-wrapper'));
+    $points .= dfc_flop_menu_markup_wrapper($monthly_points, array('class' => 'monthly-points-wrapper'));
+    $points .= dfc_flop_menu_markup_wrapper(l('Redeem', '#').' | '.l('Donate', '#'), array('class' => 'monthly_points_links'));
+    $points .= dfc_flop_menu_markup_wrapper('Lifetime', array('class' => 'lifetime-title-wrapper'));
+    $points .= dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'lifetime-points-wrapper'));
+    $points .= dfc_flop_menu_markup_wrapper(l('Redeem', '#').' | '.l('Donate', '#'), array('class' => 'lifetime_points_links'));
+    $points_markup = dfc_flop_menu_markup_wrapper($points, array('class' => 'flop-points-wrapper'));
+
+    // put it all together
+    $markup = $picture_markup . $uname_markup . $ulocation_markup . $menu_markup . $points_markup;
+    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a id="member_info_link">'.theme('user_picture', array('account' =>$user)).'</a>', array('id' => 'dfc-user-flop-link'));
+  }
+  return $link_markup.dfc_flop_menu_markup_wrapper($markup, array('id' => 'dfc-user-flop'));
 }
 function dfc_flop_menu_markup_wrapper($markup, $attributes = NULL, $tag = 'div') {
   if ( $tag == 'usermenu' ) {

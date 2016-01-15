@@ -1,6 +1,0 @@
-name = DFC Flop Menu
-project = "DFC"
-package = "DFC"
-description = Custom flopout menu
-core = 7.x
-scripts[]   =    dfc_flop_menu.js

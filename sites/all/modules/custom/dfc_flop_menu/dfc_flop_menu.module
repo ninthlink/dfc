@@ -7,6 +7,9 @@ function dfc_flop_menu_block_info() {
   $blocks['userflop'] = array(
     'info' => t('User Flop Menu'),
   );
+  $blocks['userfloplink'] = array(
+    'info' => t('User Flop Link'),
+  );
   
   return $blocks;
 }
@@ -19,11 +22,27 @@ function dfc_flop_menu_block_view($delta = '') {
         '#markup' =>  dfc_flop_menu_block_flop_view()
       );
       break;
+    case 'userfloplink':
+      $block['content'] = array(
+        '#markup' =>  dfc_flop_menu_block_flop_link()
+      );
+      break;
   }
 
   return $block;
 }
+function dfc_flop_menu_block_flop_link(){
+  global $user;
+  $user = user_load($user->uid);
 
+  if($user->uid == 0) {
+    $link_markup = l('Member Login', 'javascript:void(0)', array('attributes' => array('id' => 'member_info_link'), 'external' => TRUE)); 
+  }else{
+    $lifetime_points = userpoints_get_current_points($user->uid, 0);
+    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image_style', array('path' => $user->picture->uri, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
+  }
+  return $link_markup;
+}
 /*
  * Provides content for the detailed user block, for flop out,
  * displaying larger user image thumbnail + points total
@@ -34,8 +53,7 @@ function dfc_flop_menu_block_flop_view() {
   $user = user_load($user->uid);
 
   if($user->uid == 0) {
-    $markup = drupal_get_form('user_login_block');
-    $link_markup = dfc_flop_menu_markup_wrapper('Member Login', array('id' => 'dfc-user-flop-login-link'));
+    $markup = drupal_render(drupal_get_form('user_login_block'));
   }else{
     $uname = '';
     if (!empty($user->field_first_name)) {
@@ -50,7 +68,7 @@ function dfc_flop_menu_block_flop_view() {
     $ulocation_markup = dfc_flop_menu_markup_wrapper( check_plain( $user->field_city_state[LANGUAGE_NONE][0]['value'] ), array('class' => 'user-city-state' ) );
 
     $picture_markup = theme('user_picture', array('account' =>$user));
-
+    
     $menu = menu_navigation_links('menu-flop-menu');
     $menu_markup = theme('links__menu-flop-menu', array('links' => $menu));
 
@@ -67,9 +85,8 @@ function dfc_flop_menu_block_flop_view() {
 
     // put it all together
     $markup = $picture_markup . $uname_markup . $ulocation_markup . $menu_markup . $points_markup;
-    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a id="member_info_link">'.theme('user_picture', array('account' =>$user)).'</a>', array('id' => 'dfc-user-flop-link'));
   }
-  return $link_markup.dfc_flop_menu_markup_wrapper($markup, array('id' => 'dfc-user-flop'));
+  return dfc_flop_menu_markup_wrapper($markup, array('id' => 'dfc-user-flop'));
 }
 function dfc_flop_menu_markup_wrapper($markup, $attributes = NULL, $tag = 'div') {
   if ( $tag == 'usermenu' ) {

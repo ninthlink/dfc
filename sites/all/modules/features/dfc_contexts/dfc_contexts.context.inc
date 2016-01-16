@@ -260,6 +260,18 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'header',
           'weight' => '-10',
         ),
+        'dfc_flop_menu-userfloplink' => array(
+          'module' => 'dfc_flop_menu',
+          'delta' => 'userfloplink',
+          'region' => 'header',
+          'weight' => '-9',
+        ),
+        'dfc_flop_menu-userflop' => array(
+          'module' => 'dfc_flop_menu',
+          'delta' => 'userflop',
+          'region' => 'header',
+          'weight' => '-8',
+        ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',

@@ -1,6 +1,8 @@
 .l-header {
 	height: 110px;
 	text-align: center;
+  position: relative;
+  z-index: 100;
 	
   @include breakpoint($bp-desk) {
 		height: 130px;
@@ -24,66 +26,24 @@
 
 .block--bean-header-info {
 	position: absolute;
-	top: 10px;
+	top: 60px;
 	right: 10px;
 	width: 100px;
+  display: none;
 
   @include breakpoint($bp-tab) {
 		width: 310px;
 		text-align: right;
-		top: 20px;
   }
 	
   @include breakpoint($bp-desk) {
 		top: 50px;
 		right: 50px;
   }
-	
-	.header-links {
-		font-family: $sr;
-		@include rem(font-size, 11px);
-    line-height: 1;
-		color: $color-gray-lighter;
-    @include clearfix;
-	
-	  @include breakpoint($bp-desk) {
-			margin-bottom: 5px;
-			@include rem(font-size, 12.5px);
-	  }
-    
-    ul {
-      @extend .no-list;
-      
-      li {
-        margin-bottom: 8px;
-
-  		  @include breakpoint($bp-desk) {
-          margin-left: 5px;
-          padding-left: 10px;
-          border-left: 1px solid $color-gray-lighter;
-          display: inline-block;
-  		  }
-    
-        &:first-child {
-
-    		  @include breakpoint($bp-desk) {
-            margin-left: 0;
-            padding-left: 0;
-            border-left: 0;
-    		  }
-        }
-        
-    		a {
-    			text-decoration: none;
-    			color: $color-gray-lighter;
-
-    			&:hover {
-    				color: $color-orange
-    			}
-    		}
-      }
-    }
-	}
+  
+  body.not-logged-in & {
+    display: block;
+  }
 
 	.header-join {
 		text-transform: uppercase;
@@ -100,11 +60,4 @@
 			}
 		}
 	}
-}
-
-body.not-logged-in {
-  
-  .link-logout {
-    display: none !important;
-  }
 }

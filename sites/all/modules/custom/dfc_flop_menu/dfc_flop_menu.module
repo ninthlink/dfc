@@ -39,7 +39,7 @@ function dfc_flop_menu_block_flop_link(){
     $link_markup = l('Member Login', 'javascript:void(0)', array('attributes' => array('id' => 'member_info_link'), 'external' => TRUE)); 
   }else{
     $lifetime_points = userpoints_get_current_points($user->uid, 0);
-    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image_style', array('path' => $user->picture->uri, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
+    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image', array('path' => $user->picture->uri, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
   }
   return $link_markup;
 }

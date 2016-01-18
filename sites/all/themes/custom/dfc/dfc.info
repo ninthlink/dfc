@@ -12,13 +12,13 @@ stylesheets[all][] = css/dfc.normalize.css
 stylesheets[all][] = css/dfc.hacks.css
 stylesheets[all][] = css/dfc.styles.css
 stylesheets[all][] = css/dfc.no-query.css
-stylesheets[all][] = css/bxslider.css
+stylesheets[all][] = bxslider/bxslider.css
 
 ; ========================================
 ; Scripts
 ; ========================================
 scripts[] = js/dfc.behaviors.js
-scripts[] = js/bxslider.js
+scripts[] = bxslider/bxslider.js
 scripts[] = js/custom.js
 
 ; ========================================

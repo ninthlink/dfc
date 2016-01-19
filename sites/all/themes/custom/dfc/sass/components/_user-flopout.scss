@@ -276,6 +276,16 @@ body.logged-in {
         color: $color-white;
         margin-bottom: 10px;
       }
+      
+      .monthly_points_markup,
+      .lifetime_points_markup {
+        float: left;
+        width: 50%;
+      }
+      
+      .lifetime_points_markup {
+        float: right;
+      }
 
       .monthly-title-wrapper,
       .lifetime-title-wrapper {

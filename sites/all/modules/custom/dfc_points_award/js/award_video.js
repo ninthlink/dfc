@@ -67,8 +67,8 @@
         post('addEventListener', 'playProgress');
       }
 
-      function onPlayProgress(data, id) {
-        if (data.seconds > threshold && !awarded) {
+      function onPlayProgress(data, id) {console.log(data.seconds);
+        if (data.seconds > threshold && !awarded) {console.log('awarded');
           var nid = Drupal.settings.dfcPointsAward.vid;
           var vcode = Drupal.settings.dfcPointsAward.vcode;
           var url = '/dfc/points/grant/video/' + nid + '/' + vcode;

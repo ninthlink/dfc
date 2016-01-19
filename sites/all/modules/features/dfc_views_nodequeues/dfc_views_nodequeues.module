@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the DFC Views & Nodequeues feature.
- */
-
-include_once 'dfc_views_nodequeues.features.inc';

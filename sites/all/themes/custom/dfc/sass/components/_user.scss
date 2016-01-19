@@ -28,6 +28,168 @@ body.section-users {
   	  }
   	}
   }
+
+  #user-media-node-form {
+
+    #edit-field-media-link {
+      display: inline-block;
+      width: 20%;
+
+      .form-item-field-media-link-und-0 {
+        display: none;
+      }
+    }
+
+    #edit-field-media-link:before {
+      background-color: $color-gray-darker;
+      background-image: url('../images/video_icon_light.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: $color-white;
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      height: 150px;
+      margin-bottom: 16px;
+      width: 100%;
+      text-align: center;
+      vertical-align: top;
+    }
+    #edit-field-media-link:hover:before {
+      background-color:rgba(128,128,128,.5);
+    }
+    #edit-field-media-link:after {
+      background: $color-orange;
+      display: inline-block;
+      color: $color-white;
+      content: 'Select Video';
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      height: 60px;
+      margin-right: 20%;
+      padding-top: 16px;
+      width: 100%;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    #edit-field-image {
+      display: inline-block;
+      margin-right: 25%;
+      width: 20%;
+
+      .form-item-field-image-und-0 {
+        display: none;
+      }
+    }
+
+    #edit-field-image:before {
+      background-color: $color-gray-darker;
+      background-image: url('../images/camera_icon_light.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: $color-white;
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      height: 150px;
+      margin-bottom: 16px;
+      width: 100%;
+      text-align: center;
+      vertical-align: top;
+    }
+    #edit-field-image:hover:before {
+      background-color:rgba(128,128,128,.5);
+    }
+    #edit-field-image:after {
+      background: $color-orange;
+      color: $color-white;
+      content: 'Select Image';
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      height: 60px;
+      padding-top: 16px;
+      width: 100%;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    .form-submit,
+    .vertical-tabs {
+      display: none;
+    }
+  }
+
+
+  .content-bottom {
+    padding: 60px 50px 50px;
+
+    #block-views-user-media-block-1 {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+
+      img {
+        float: left;
+        width: 100px;
+      }
+
+      .views-row {
+        min-height: 75px;
+        padding-bottom: 10px;
+      }
+
+      .views-field-created,
+      .views-field-field-ugc-moderation {
+        padding-left: 110px;
+      }
+
+      .views-field-field-ugc-moderation .views-label {
+        font-weight: bold;
+      }
+
+      .views-field-field-ugc-moderation .field-content {
+        color: $color-orange;
+        display: inline-block;
+      }
+    }
+
+    #block-views-user-media-block-2 {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+
+      img {
+        float: left;
+        width: 100px;
+      }
+
+      .views-row {
+        min-height: 75px;
+      }
+
+      .views-field-created,
+      .views-field-field-ugc-moderation {
+        padding-left: 110px;
+      }
+
+      .views-field-field-ugc-moderation .views-label {
+        font-weight: bold;
+      }
+
+      .views-field-field-ugc-moderation .field-content {
+        color: $color-orange;
+        display: inline-block;
+      }
+    }
+  }
 }
 
 .user-register-form,
@@ -135,6 +297,7 @@ article.user-profile {
       }
     }
   }
+
 }
 
 // User Edit Form
@@ -220,6 +383,4 @@ form.user-profile-form {
   #edit-timezone {
     margin-bottom: 50px;
   }
-  
-  .form-actions {}
 }

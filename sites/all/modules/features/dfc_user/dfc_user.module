@@ -1,0 +1,62 @@
+<?php
+/**
+ * @file
+ * Code for the DFC User feature.
+ */
+
+include_once 'dfc_user.features.inc';
+
+function dfc_user_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_media_node_form') {
+    $form['field_media_type'][LANGUAGE_NONE]['#default_value'] = 3;
+    $form['field_media_type'][LANGUAGE_NONE]['#type'] = 'hidden';
+    if (arg(0) == 'user') {
+      $form['field_ugc_moderation']['#access'] = FALSE;
+      $form['#submit'][] = 'dfc_user_form_assign_media_type';
+      $form['actions']['submit']['#submit'][] = 'dfc_user_form_assign_media_type';
+      drupal_add_js(drupal_get_path('module', 'dfc_user') . '/js/user_uploads.js');
+    }
+  }
+}
+
+function dfc_user_action_info() {
+  return array(
+    'dfc_user_ugc_approve' => array(
+      'type' => 'node',
+      'label' => t('Approve user media'),
+      'behavior' => array(),
+      'configurable' => FALSE,
+    ),
+    'dfc_user_ugc_dent' => array(
+      'type' => 'node',
+      'label' => t('Deny user media approval'),
+      'behavior' => array(),
+      'configurable' => FALSE,
+    ),
+  );
+}
+
+function dfc_user_form_assign_media_type(&$form, &$form_state) {
+  $type = 3;
+  if ($form_state['values']['field_media_link'][LANGUAGE_NONE][0]['fid'] != 0) {
+    $type = 2;
+  }
+  $form_state['values']['field_media_type']['und'][0]['tid'] = $type;
+
+  dfc_user_form_noredirect($form, $form_state);
+}
+
+function dfc_user_form_noredirect (&$form, &$form_state) {
+  drupal_get_messages();
+  $form_state['redirect'] = drupal_get_path_alias();
+}
+
+function dfc_user_ugc_approve(&$node, $context) {
+  $node->field_ugc_moderation[LANGUAGE_NONE][0]['value'] = 1;
+  node_save($node);
+}
+
+function dfc_user_ugc_deny(&$node, $context) {
+  $node->field_ugc_moderation[LANGUAGE_NONE][0]['value'] = 2;
+  node_save($node);
+}

@@ -22,7 +22,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450153673,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '2c83c955-fff2-4f65-b157-3f1647230710',
@@ -61,7 +61,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450843080,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'ea98e245-cba1-48a9-b19a-e60effd0a792',
@@ -90,19 +90,9 @@ function dfc_bean_uuid_features_default_beans() {
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => '<div class="header-links">
-<ul>
-	<li><a href="/leaderboard">Points Leaderboard</a></li>
-	<li class="link-logout"><a href="/user/logout">Log Out</a></li>
-</ul>
-</div>
-<div class="header-join"><a href="/membership">Join DFC Now</a></div>',
+          'value' => '<div class="header-join"><a href="/membership">Join DFC Now</a></div>',
           'format' => 'full_html',
-          'safe_value' => '<div class="header-links">
-<ul><li><a href="/leaderboard">Points Leaderboard</a></li>
-<li class="link-logout"><a href="/user/logout">Log Out</a></li>
-</ul></div>
-<div class="header-join"><a href="/membership">Join DFC Now</a></div>
+          'safe_value' => '<div class="header-join"><a href="/membership">Join DFC Now</a></div>
 ',
         ),
       ),
@@ -120,7 +110,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450332189,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6c8c3de9-a439-49ee-9021-eb4c1b955eb2',
@@ -177,7 +167,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331904,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '55894b8a-1450-4acd-afef-e174e370d407',
@@ -233,7 +223,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450325918,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f19bf831-d131-4c35-8903-9d3f5b120738',
@@ -277,7 +267,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331675,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '95dcb470-9820-483b-871c-bf63e2b924bb',
@@ -306,7 +296,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331544,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fa179783-eefd-4ff5-b5b7-6d47c733add9',
@@ -366,7 +356,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1451964697,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '07279184-cf34-4ae2-8200-abed8432394d',
@@ -395,7 +385,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1451964648,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f2fabb72-bdfb-4919-aaa4-6dd2422e02e1',
@@ -455,7 +445,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450158080,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fabaa558-6a24-470a-8ed7-80fef4da0516',
@@ -586,7 +576,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450332494,
     'log' => '',
-    'uid' => 4,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '294e0638-1575-460c-9d9c-d650f3ea3154',

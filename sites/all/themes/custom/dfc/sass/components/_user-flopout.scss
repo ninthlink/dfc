@@ -112,3 +112,210 @@ body.not-logged-in {
     }
   }
 }
+
+body.logged-in {
+
+  .block--dfc-flop-menu-userfloplink {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 110px;
+    padding: 20px 0 0 10px;
+	
+    @include breakpoint($bp-tab) {
+      width: 220px;
+      padding: 30px 0 0 30px;
+    }
+
+    @include breakpoint($bp-desk) {
+      width: 330px;
+      height: 130px;
+      padding-top: 45px;
+    }
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-left: 1px solid $color-gray-46;
+      height: 100%;
+    }
+	    
+    .flop-link-points-wrapper {
+      float: right;
+      width: 50%;
+      font-family: $sr;
+      @include rem(font-size, 15px);
+      text-transform: uppercase;
+      text-align: left;
+	
+      @include breakpoint($bp-tab) {
+        width: 70%;
+      }
+      
+      @include breakpoint($bp-desk) {
+        width: 75%;
+      }
+    }
+
+    #member_info_link {
+      display: block;
+      height: 45px;
+      width: 45px;
+      overflow: hidden;
+      float: left;
+    
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        @extend .transform-50;
+        @include use-sprite($icon-open);
+
+        @include breakpoint($bp-desk) {
+          bottom: auto;
+          left: auto;
+          top: 50px;
+          right: 30px;
+        }
+      }
+      
+      img {
+        min-width: 45px;
+        min-height: 45px;
+        border-radius: 100%;
+        border: 2px solid $color-white;
+      }
+    }
+  }
+  
+  .block--dfc-flop-menu-userflop {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background: $color-gray-1c;
+	
+    @include breakpoint($bp-desk) {
+      width: 330px;
+    }
+    
+    #dfc-user-flop {
+      
+      .user-picture {
+        padding: 40px 0 20px;
+        
+        img {
+          width: 140px;
+          border-radius: 100%;
+          border: 2px solid $color-white;
+        }
+      }
+
+      .user-name {
+        font-family: $sr;
+        @include rem(font-size, 18px);
+        text-transform: uppercase;
+      }
+
+      .user-city-state {
+        @include rem(font-size, 14px);
+        color: $color-gray-9;
+        margin-bottom: 20px;
+      }
+      
+      ul.links {
+        @extend .no-list;
+        text-align: left;
+        
+        li {
+          border-top: 1px solid $color-gray-4e;
+          font-family: $sr;
+          @include rem(font-size, 14px);
+          line-height: 1;
+          
+          a {
+            display: block;
+            color: $color-gray-9;
+            text-decoration: none;
+            padding: 15px 30px;
+            
+            &:hover {
+              background: $color-orange;
+              color: $color-white;
+            }
+          }
+        }
+      }
+      
+      .flop-points-wrapper {
+        background: $color-orange;
+        color: $color-black;
+        font-family: $sr;
+        line-height: 1;
+        padding: 15px 30px;
+        text-align: left;
+        @include clearfix;
+      }
+      
+      .points-title-wrapper {
+        @include rem(font-size, 17px);
+        color: $color-white;
+        margin-bottom: 10px;
+      }
+
+      .monthly-title-wrapper,
+      .lifetime-title-wrapper {
+        @include rem(font-size, 18px);
+      }
+
+      .monthly-points-wrapper,
+      .lifetime-points-wrapper {
+        @include rem(font-size, 28px);
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .monthly_points_links,
+      .lifetime_points_links {
+        @include rem(font-size, 12px);
+        color: $color-white;
+        margin-bottom: 20px;
+        
+        a {
+          color: $color-white;
+        }
+      }
+
+      .lifetime-title-wrapper {
+      }
+
+      .lifetime-points-wrapper {
+      }
+
+      .lifetime_points_links {
+      }
+    }
+    
+    a.x {
+      margin: 0;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+			@include use-sprite($icon-close);
+    }
+  }
+}

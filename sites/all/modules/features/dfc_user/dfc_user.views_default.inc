@@ -31,10 +31,62 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'table';
-  /* Field: Invite: Invite ID */
-  $handler->display->display_options['fields']['iid']['id'] = 'iid';
-  $handler->display->display_options['fields']['iid']['table'] = 'invite';
-  $handler->display->display_options['fields']['iid']['field'] = 'iid';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'joined' => 'joined',
+    'field_invitation_email_address' => 'field_invitation_email_address',
+    'status' => 'status',
+    'invite_resend_link' => 'invite_resend_link',
+    'invite_withdraw_link' => 'invite_resend_link',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'joined' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_invitation_email_address' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'status' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'invite_resend_link' => array(
+      'align' => '',
+      'separator' => ' | ',
+      'empty_column' => 0,
+    ),
+    'invite_withdraw_link' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Invite: Joined */
+  $handler->display->display_options['fields']['joined']['id'] = 'joined';
+  $handler->display->display_options['fields']['joined']['table'] = 'invite';
+  $handler->display->display_options['fields']['joined']['field'] = 'joined';
+  $handler->display->display_options['fields']['joined']['label'] = '';
+  $handler->display->display_options['fields']['joined']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['joined']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['joined']['date_format'] = 'long';
+  $handler->display->display_options['fields']['joined']['second_date_format'] = 'long';
+  /* Field: Global: View result counter */
+  $handler->display->display_options['fields']['counter']['id'] = 'counter';
+  $handler->display->display_options['fields']['counter']['table'] = 'views';
+  $handler->display->display_options['fields']['counter']['field'] = 'counter';
+  $handler->display->display_options['fields']['counter']['label'] = '';
+  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
+  $handler->display->display_options['fields']['counter']['reverse'] = 0;
   /* Field: Invite: E-mail */
   $handler->display->display_options['fields']['field_invitation_email_address']['id'] = 'field_invitation_email_address';
   $handler->display->display_options['fields']['field_invitation_email_address']['table'] = 'field_data_field_invitation_email_address';
@@ -45,34 +97,31 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['fields']['field_invitation_email_address']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_invitation_email_address']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_invitation_email_address']['field_api_classes'] = TRUE;
+  /* Field: Invite: Status */
+  $handler->display->display_options['fields']['status']['id'] = 'status';
+  $handler->display->display_options['fields']['status']['table'] = 'views_entity_invite';
+  $handler->display->display_options['fields']['status']['field'] = 'status';
+  $handler->display->display_options['fields']['status']['label'] = '';
+  $handler->display->display_options['fields']['status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['status']['link_to_entity'] = 0;
   /* Field: Invite: Invite action link: resend */
   $handler->display->display_options['fields']['invite_resend_link']['id'] = 'invite_resend_link';
   $handler->display->display_options['fields']['invite_resend_link']['table'] = 'views_entity_invite';
   $handler->display->display_options['fields']['invite_resend_link']['field'] = 'invite_resend_link';
+  $handler->display->display_options['fields']['invite_resend_link']['label'] = '';
+  $handler->display->display_options['fields']['invite_resend_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['invite_resend_link']['alter']['text'] = 'resend';
+  $handler->display->display_options['fields']['invite_resend_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['invite_resend_link']['link_to_entity'] = 0;
   /* Field: Invite: Invite action link: withdrawn */
   $handler->display->display_options['fields']['invite_withdraw_link']['id'] = 'invite_withdraw_link';
   $handler->display->display_options['fields']['invite_withdraw_link']['table'] = 'views_entity_invite';
   $handler->display->display_options['fields']['invite_withdraw_link']['field'] = 'invite_withdraw_link';
+  $handler->display->display_options['fields']['invite_withdraw_link']['label'] = '';
+  $handler->display->display_options['fields']['invite_withdraw_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['invite_withdraw_link']['alter']['text'] = 'withdraw';
+  $handler->display->display_options['fields']['invite_withdraw_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['invite_withdraw_link']['link_to_entity'] = 0;
-  /* Field: Invite: Joined */
-  $handler->display->display_options['fields']['joined']['id'] = 'joined';
-  $handler->display->display_options['fields']['joined']['table'] = 'invite';
-  $handler->display->display_options['fields']['joined']['field'] = 'joined';
-  $handler->display->display_options['fields']['joined']['date_format'] = 'long';
-  $handler->display->display_options['fields']['joined']['second_date_format'] = 'long';
-  /* Field: Invite: Rendered Invite */
-  $handler->display->display_options['fields']['rendered_entity']['id'] = 'rendered_entity';
-  $handler->display->display_options['fields']['rendered_entity']['table'] = 'views_entity_invite';
-  $handler->display->display_options['fields']['rendered_entity']['field'] = 'rendered_entity';
-  $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 1;
-  $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['rendered_entity']['bypass_access'] = 0;
-  /* Field: Invite: Status */
-  $handler->display->display_options['fields']['status']['id'] = 'status';
-  $handler->display->display_options['fields']['status']['table'] = 'views_entity_invite';
-  $handler->display->display_options['fields']['status']['field'] = 'status';
-  $handler->display->display_options['fields']['status']['link_to_entity'] = 0;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');

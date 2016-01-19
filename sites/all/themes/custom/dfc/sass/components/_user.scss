@@ -131,6 +131,39 @@ body.section-users {
   .content-bottom {
     padding: 60px 50px 50px;
 
+    .view-id-my_invitiations {
+      table {
+        width: 100%;
+      }
+    }
+
+    #block-invite-invite-add-invite-by-email {
+      font-size: 0;
+      .field-name-field-invitation-email-address {
+        display: inline-block;
+        font-size: 16px;
+
+        input {
+          color: #000000;
+          height: 40px;
+          width: 200px;
+        }
+      }
+
+      .description {
+        display: none;
+      }
+
+      #edit-submit {
+        background-color: $color-orange;
+        border: 0;
+        color: $color-white;
+        font-size: 16px;
+        height: 40px;
+        padding: 10px;
+      }
+    }
+
     #block-views-user-media-block-1 {
       display: inline-block;
       width: 45%;

@@ -30,9 +30,9 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id)
 }
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
-  if ($node->type == 'media_item' || TRUE) {
+  if ($node->type == 'media_item') {
     $settings['dfcPointsAward']['awarded'] = dfc_points_award_check_video_awarded($node->nid);
-    $settings['dfcPointsAward']['threshold'] = 10;//22 * 60;
+    $settings['dfcPointsAward']['threshold'] = 22 * 60;
     $settings['dfcPointsAward']['vid'] = $node->nid;
     $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
     drupal_add_js($settings, 'setting');

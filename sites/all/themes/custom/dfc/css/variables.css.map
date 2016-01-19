@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wCAAwC;ACAxC;;;;;;;;EAQE;AAgUF;;;;;;;;;;EAUE;AAwBF;;;;;EAKE",
+"sources": ["../sass/variables.scss","../sass/variables/_spritemap.scss"],
+"names": [],
+"file": "variables.css"
+}

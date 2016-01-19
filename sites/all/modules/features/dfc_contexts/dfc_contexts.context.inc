@@ -174,69 +174,68 @@ function dfc_contexts_context_default_contexts() {
   t('page');
   $export['fab_52_resort'] = $context;
 
-  	$context = new stdClass();
-	$context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-	$context->api_version = 3;
-	$context->name = 'front';
-	$context->description = '';
-	$context->tag = '';
-	$context->conditions = array(
-	  'path' => array(
-	    'values' => array(
-	      '<front>' => '<front>',
-	    ),
-	  ),
-	);
-	$context->reactions = array(
-	  'block' => array(
-	    'blocks' => array(
-	      'bean-home---how-it-works' => array(
-	        'module' => 'bean',
-	        'delta' => 'home---how-it-works',
-	        'region' => 'content_top',
-	        'weight' => '-9',
-	      ),
-	      'views-offers-block' => array(
-	        'module' => 'views',
-	        'delta' => 'offers-block',
-	        'region' => 'content_top',
-	        'weight' => '-8',
-	      ),
-	      'views-homepage_slider-bxsliderblock' => array(
-	        'module' => 'views',
-	        'delta' => 'homepage_slider-bxsliderblock',
-	        'region' => 'content_top',
-	        'weight' => '-10',
-	      ),
-	      'views-giveaway_winners-block' => array(
-	        'module' => 'views',
-	        'delta' => 'giveaway_winners-block',
-	        'region' => 'content_bottom',
-	        'weight' => '-10',
-	      ),
-	      'views-offers-block_1' => array(
-	        'module' => 'views',
-	        'delta' => 'offers-block_1',
-	        'region' => 'content_bottom',
-	        'weight' => '-9',
-	      ),
-	      'views-partners-block' => array(
-	        'module' => 'views',
-	        'delta' => 'partners-block',
-	        'region' => 'footer_top',
-	        'weight' => '-10',
-	      ),
-	      'bean-home---cta' => array(
-	        'module' => 'bean',
-	        'delta' => 'home---cta',
-	        'region' => 'footer_top',
-	        'weight' => '-9',
-	      ),
-	    ),
-	  ),
-	);
-	$context->condition_mode = 0;
-
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'front';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-home---how-it-works' => array(
+          'module' => 'bean',
+          'delta' => 'home---how-it-works',
+          'region' => 'content_top',
+          'weight' => '-9',
+        ),
+        'views-offers-block' => array(
+          'module' => 'views',
+          'delta' => 'offers-block',
+          'region' => 'content_top',
+          'weight' => '-8',
+        ),
+        'views-homepage_slider-bxsliderblock' => array(
+          'module' => 'views',
+          'delta' => 'homepage_slider-bxsliderblock',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+        'views-giveaway_winners-block' => array(
+          'module' => 'views',
+          'delta' => 'giveaway_winners-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'views-offers-block_1' => array(
+          'module' => 'views',
+          'delta' => 'offers-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'views-partners-block' => array(
+          'module' => 'views',
+          'delta' => 'partners-block',
+          'region' => 'footer_top',
+          'weight' => '-10',
+        ),
+        'bean-home---cta' => array(
+          'module' => 'bean',
+          'delta' => 'home---cta',
+          'region' => 'footer_top',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
   $export['front'] = $context;
 
   $context = new stdClass();
@@ -546,47 +545,6 @@ function dfc_contexts_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('page');
   $export['prizeboard'] = $context;
-
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'user_page';
-  $context->description = 'User profile page, not edit form';
-  $context->tag = '';
-  $context->conditions = array(
-    'user_page' => array(
-      'values' => array(
-        'view' => 'view',
-      ),
-      'options' => array(
-        'mode' => 'all',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-my_invitiations-block' => array(
-          'module' => 'views',
-          'delta' => 'my_invitiations-block',
-          'region' => 'content_bottom',
-          'weight' => '-10',
-        ),
-        'invite-invite_add_invite_by_email' => array(
-          'module' => 'invite',
-          'delta' => 'invite_add_invite_by_email',
-          'region' => 'content_bottom',
-          'weight' => '-9',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('User profile page, not edit form');
-  $export['user_page'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

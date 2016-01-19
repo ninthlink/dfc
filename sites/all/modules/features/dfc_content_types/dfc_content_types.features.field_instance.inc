@@ -401,202 +401,6 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-giveaway_prize-field_month_and_year'.
-  $field_instances['node-giveaway_prize-field_month_and_year'] = array(
-    'bundle' => 'giveaway_prize',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => FALSE,
-        ),
-        'type' => 'date_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_month_and_year',
-    'label' => 'Month and Year',
-    'required' => 1,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'no_fieldset' => 0,
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_select',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance: 'node-giveaway_prize-field_sponsor'.
-  $field_instances['node-giveaway_prize-field_sponsor'] = array(
-    'bundle' => 'giveaway_prize',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_sponsor',
-    'label' => 'Sponsor',
-    'required' => 1,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'node-giveaway_prize-field_winner'.
-  $field_instances['node-giveaway_prize-field_winner'] = array(
-    'bundle' => 'giveaway_prize',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This field is filled automatically by the system.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_winner',
-    'label' => 'Winner',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'node-giveaway_prize-field_winners_points'.
-  $field_instances['node-giveaway_prize-field_winners_points'] = array(
-    'bundle' => 'giveaway_prize',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This field is filled automatically by the system.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_winners_points',
-    'label' => 'Winner\'s points',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-landing_page-title_field'.
   $field_instances['node-landing_page-title_field'] = array(
     'bundle' => 'landing_page',
@@ -890,7 +694,7 @@ function dfc_content_types_field_default_field_instances() {
     'settings' => array(
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -957,241 +761,6 @@ function dfc_content_types_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance: 'node-membership_display-body'.
-  $field_instances['node-membership_display-body'] = array(
-    'bundle' => 'membership_display',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-membership_display-field_membership_product_referen'.
-  $field_instances['node-membership_display-field_membership_product_referen'] = array(
-    'bundle' => 'membership_display',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'commerce_cart',
-        'settings' => array(
-          'combine' => 1,
-          'default_quantity' => 1,
-          'line_item_type' => 'membership_entity_line_item',
-          'show_quantity' => 0,
-          'show_single_product_attributes' => 0,
-        ),
-        'type' => 'commerce_cart_add_to_cart_form',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_membership_product_referen',
-    'label' => 'Membership Product Reference',
-    'required' => 1,
-    'settings' => array(
-      'field_injection' => 1,
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'referenceable_types' => array(
-        'membership_entity_product' => 'membership_entity_product',
-        'product' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance: 'node-membership_display-field_price'.
-  $field_instances['node-membership_display-field_price'] = array(
-    'bundle' => 'membership_display',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Numeric price without decimals.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_price',
-    'label' => 'Price',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-membership_display-field_product_description'.
-  $field_instances['node-membership_display-field_product_description'] = array(
-    'bundle' => 'membership_display',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_product_description',
-    'label' => 'Description',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-membership_display-title_field'.
-  $field_instances['node-membership_display-title_field'] = array(
-    'bundle' => 'membership_display',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'title',
-        'settings' => array(
-          'title_class' => '',
-          'title_link' => '',
-          'title_style' => '',
-        ),
-        'type' => 'title_linked',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'title_field',
-    'label' => 'Title',
-    'required' => 1,
-    'settings' => array(
-      'hide_label' => array(
-        'entity' => 0,
-        'page' => 'page',
-      ),
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -5,
     ),
   );
 
@@ -1786,7 +1355,7 @@ function dfc_content_types_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -1814,7 +1383,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 18,
+        'weight' => 17,
       ),
     ),
     'entity_type' => 'node',
@@ -1852,7 +1421,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -1875,7 +1444,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'node',
@@ -1896,7 +1465,7 @@ function dfc_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -1919,7 +1488,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 15,
       ),
     ),
     'entity_type' => 'node',
@@ -1940,7 +1509,7 @@ function dfc_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1963,7 +1532,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 14,
       ),
     ),
     'entity_type' => 'node',
@@ -1984,18 +1553,14 @@ function dfc_content_types_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
   // Exported field_instance: 'node-resort-field_resort_category'.
   $field_instances['node-resort-field_resort_category'] = array(
     'bundle' => 'resort',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -2011,14 +1576,14 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 12,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_resort_category',
     'label' => 'Resort Category',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
@@ -2030,55 +1595,6 @@ function dfc_content_types_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'node-resort-field_resort_price'.
-  $field_instances['node-resort-field_resort_price'] = array(
-    'bundle' => 'resort',
-    'default_value' => array(
-      0 => array(
-        'tid' => 12,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'field_formatter_css_class',
-        'settings' => array(
-          'depth' => 0,
-          'hidden' => 1,
-          'target' => 'node',
-        ),
-        'type' => 'cssclass_formatter',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_resort_price',
-    'label' => 'Resort Price',
-    'required' => 1,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
     ),
   );
 
@@ -2101,7 +1617,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 17,
+        'weight' => 16,
       ),
     ),
     'entity_type' => 'node',
@@ -2139,7 +1655,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -2161,7 +1677,7 @@ function dfc_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'node',
@@ -2187,6 +1703,209 @@ function dfc_content_types_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-user_media-field_image'.
+  $field_instances['node-user_media-field_image'] = array(
+    'bundle' => 'user_media',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-user_media-field_media_link'.
+  $field_instances['node-user_media-field_media_link'] = array(
+    'bundle' => 'user_media',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_media_link',
+    'label' => 'Video',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'mov',
+      'max_filesize' => '',
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-user_media-field_media_type'.
+  $field_instances['node-user_media-field_media_type'] = array(
+    'bundle' => 'user_media',
+    'default_value' => array(
+      0 => array(
+        'tid' => 3,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_media_type',
+    'label' => 'Media Type',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-user_media-field_ugc_moderation'.
+  $field_instances['node-user_media-field_ugc_moderation'] = array(
+    'bundle' => 'user_media',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_ugc_moderation',
+    'label' => 'Moderation Status',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
     ),
   );
 
@@ -2255,24 +1974,16 @@ function dfc_content_types_field_default_field_instances() {
   t('Location of Event');
   t('Media Category');
   t('Media Type');
-  t('Membership Product Reference');
-  t('Month and Year');
-  t('Numeric price without decimals.');
+  t('Moderation Status');
   t('Phone Number');
-  t('Price');
   t('Reservation Link');
   t('Resort Category');
-  t('Resort Price');
-  t('Sponsor');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');
-  t('This field is filled automatically by the system.');
   t('Title');
   t('Upload an image to go with this article.');
   t('Video');
   t('Website Link');
-  t('Winner');
-  t('Winner\'s points');
 
   return $field_instances;
 }

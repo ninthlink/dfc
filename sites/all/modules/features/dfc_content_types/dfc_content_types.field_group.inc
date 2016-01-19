@@ -13,38 +13,6 @@ function dfc_content_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_location|node|event|default';
-  $field_group->group_name = 'group_location';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'event';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Location',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_location',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Location',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-location field-group-div',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_location|node|event|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_media_content_teaser|node|media_item|teaser';
   $field_group->group_name = 'group_media_content_teaser';
   $field_group->entity_type = 'node';
@@ -78,41 +46,6 @@ function dfc_content_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_media_content|node|media_item|default';
-  $field_group->group_name = 'group_media_content';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'media_item';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Media Content',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_product_description',
-      1 => 'title_field',
-      2 => 'field_media_category',
-      3 => 'sharethis',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Media Content',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-media-content field-group-div',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_media_content|node|media_item|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_media_header_teaser|node|media_item|teaser';
   $field_group->group_name = 'group_media_header_teaser';
   $field_group->entity_type = 'node';
@@ -142,99 +75,6 @@ function dfc_content_types_field_group_info() {
     ),
   );
   $field_groups['group_media_header_teaser|node|media_item|teaser'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_media_header|node|media_item|default';
-  $field_group->group_name = 'group_media_header';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'media_item';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Media Header',
-    'weight' => '0',
-    'children' => array(
-      0 => 'field_image',
-      1 => 'field_media_link',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Media Header',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-media-header field-group-div',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_media_header|node|media_item|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_media|node|media_item|form';
-  $field_group->group_name = 'group_media';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'media_item';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Media',
-    'weight' => '1',
-    'children' => array(
-      0 => 'field_media_link',
-      1 => 'field_media_type',
-      2 => 'field_image',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'label' => 'Media',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => 'group-media field-group-fieldset',
-        'description' => 'Upload a video OR an image, but not both.',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_media|node|media_item|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_related_videos|node|media_item|default';
-  $field_group->group_name = 'group_related_videos';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'media_item';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Related Videos',
-    'weight' => '4',
-    'children' => array(),
-    'format_type' => 'hidden',
-    'format_settings' => array(
-      'label' => 'Related Videos',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-related-videos field-group-div',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_related_videos|node|media_item|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -285,10 +125,10 @@ function dfc_content_types_field_group_info() {
       1 => 'field_location',
       2 => 'field_phone_number',
       3 => 'field_product_description',
-      4 => 'field_website_link',
-      5 => 'title_field',
-      6 => 'sharethis',
-      7 => 'group_resort_price',
+      4 => 'field_resort_category',
+      5 => 'field_website_link',
+      6 => 'title_field',
+      7 => 'sharethis',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -307,48 +147,12 @@ function dfc_content_types_field_group_info() {
   );
   $field_groups['group_resort_last|node|resort|teaser'] = $field_group;
 
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_resort_price|node|resort|teaser';
-  $field_group->group_name = 'group_resort_price';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'resort';
-  $field_group->mode = 'teaser';
-  $field_group->parent_name = 'group_resort_last';
-  $field_group->data = array(
-    'label' => 'Resort Price',
-    'weight' => '11',
-    'children' => array(
-      0 => 'field_resort_category',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Resort Price',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-resort-price field-group-div',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_resort_price|node|resort|teaser'] = $field_group;
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Location');
-  t('Media');
   t('Media Content');
   t('Media Header');
-  t('Related Videos');
   t('Resort First');
   t('Resort Last');
-  t('Resort Price');
 
   return $field_groups;
 }

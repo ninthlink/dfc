@@ -6,6 +6,11 @@ body.not-logged-in {
     position: absolute;
     top: 10px;
     right: 10px;
+	
+    @include breakpoint($bp-desk) {
+  		top: 40px;
+  		right: 50px;
+    }
 
     #member_info_link {
     	font-family: $sr;
@@ -25,10 +30,85 @@ body.not-logged-in {
   }
   
   .block--dfc-flop-menu-userflop {
+    display: none;
     position: absolute;
     top: 0px;
     right: 0px;
     width: 100%;
     background: $color-gray-1c;
+    padding: 40px 50px;
+	
+    @include breakpoint($bp-desk) {
+      width: 330px;
+    }
+    
+    form.user-login-form {
+      position: relative;
+      padding-bottom: 100px;
+      
+      .form-item {
+        margin: -1px 0 0;
+      }
+      
+      input.form-text {
+        width: 100%;
+        font-family: $sr;
+        @include rem(font-size, 12px);
+        color: $color-gray-9;
+        border: 1px solid $color-gray-61;
+        background: transparent;
+        padding: 10px;
+      }
+      
+      ul {
+        @extend .no-list;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        white-space: nowrap;
+        
+        li {
+          display: inline-block;
+          font-family: $sr;
+          @include rem(font-size, 12px);
+          line-height: 1;
+          border-left: 1px solid $color-gray-9;
+          padding-left: 5px;
+          
+          &:first-child {
+            border-left: 0;
+            padding-left: 0;
+          }
+          
+          a {
+            color: $color-gray-9;
+          }
+        }
+      }
+      
+      .form-actions {
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        
+        .form-submit {
+          display: block;
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    a.x {
+      margin: 0;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      @extend .transform-50;
+			@include use-sprite($icon-close);
+    }
   }
 }

@@ -1,0 +1,328 @@
+ body.page-cart .l-main, body.page-checkout .l-main {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 50px;
+}
+
+body.page-cart .l-main > .l-content > h1, body.page-checkout .l-main > .l-content > h1 {
+    padding: 20px 50px;
+    margin: -50px -50px 50px;
+    background-color: #f1592a;
+    min-height: 58px;
+    font-size: 1.875rem;
+	margin-bottom: 1.25rem;
+	font-family: "dangerregular",Helvetica,sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+body.page-cart table.views-table, body.page-checkout table.views-table
+{
+	background: #FFF;
+	color: #333;
+	width: 100%;
+}
+
+body.page-checkout table.views-table
+{
+	font-size: 13px;
+}
+
+
+body.page-cart table.views-table tr, body.page-checkout table.views-table tr
+{
+	border-bottom: 1px solid #EEE;	
+}
+
+body.page-cart table.views-table td
+{
+	padding: 25px;
+	background: #FFF;
+}
+
+body.page-checkout table.views-table td
+{
+	padding: 10px;
+	background: #FFF;
+}
+
+
+body.page-cart table.views-table thead tr, body.page-checkout table.views-table thead tr
+{
+	border-bottom: 0px solid #000;	
+}
+
+body.page-cart table.views-table thead tr th
+{
+	color: #f1592a;
+	background: #FFF;
+	padding: 25px;
+}
+
+ body.page-checkout table.views-table thead tr th
+{
+	color: #f1592a;
+	background: #FFF;
+	padding: 10px;
+}
+
+
+body.page-cart table.views-table td , body.page-cart table.views-table td a
+{
+	color: #333;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+body.page-cart .commerce-line-item-views-form input.delete-line-item
+{
+	background: #FFF;
+	border: 0px solid #FFF;
+	text-indent: -9999px;
+	background: url('../images/icon_cross.png') 0 0 no-repeat transparent;
+	height: 8px;
+	width: 8px;
+	display: block;
+}
+
+body.page-cart .line-item-summary
+{
+	margin-top: 30px;
+}
+
+body.page-cart #edit-actions input#edit-submit
+{
+	float: left;
+	margin-bottom: 20px;
+	background: #FFF;
+	color: #f1592a;
+	font-size: 14px;
+	border: 2px solid #f1592a;
+}
+
+body.page-cart #edit-actions input#edit-submit:hover
+{
+	background: #000;
+}
+
+body.page-cart #edit-actions input#edit-checkout
+{
+	background: #000;
+	color: #FFF;
+	font-size: 14px;
+}
+
+body.page-cart #edit-actions input#edit-checkout:hover
+{
+	background: #f1592a;
+}
+
+#edit-customer-profile-billing
+{
+	float: left;
+	width: 45%;
+	border: 0px solid #FFF;
+}
+
+#edit-cart-contents
+{
+	float: right;
+	width: 45%;
+	margin-right: 2%;
+	border: 0px solid #FFF;
+}
+
+body.page-checkout #commerce-checkout-form-checkout
+{
+	margin-top: 30px;	
+}
+
+body.page-checkout  legend
+{
+	color: #f1592a;
+	font-family: 'sanchezregular';
+	font-size: 16px;
+}
+
+ body.page-checkout table.views-table thead tr th, body.page-checkout table.views-table tr td {
+ 	padding-left: 0px;
+ }	
+
+body.page-checkout .field--commerce-order-total
+{
+	margin-top: 30px;
+	background: #FFF; 	
+}
+
+body.page-checkout .commerce-order-handler-area-order-total .commerce-price-formatted-components {
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+body.page-checkout .field--commerce-order-total tr
+{
+	background: #FFF;	
+}
+
+body.page-checkout .commerce-order-handler-area-order-total .commerce-price-formatted-components .component-title
+{
+	font-size: 14px;
+}
+
+body.page-checkout label
+{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+body.page-checkout input[type="text"], body.page-checkout input[type="email"], body.page-checkout input[type="tel"],  body.page-checkout  select
+{
+	border: 1px solid #777;
+	border-radius: 0px;
+	xheight: 25px;
+	width: 100%;
+	max-width: 350px;
+	font-size: 13px;
+	color: #000;
+	padding: 7px 5px;
+}
+
+div.addressfield-container-inline > div.form-item
+{
+	float: none;
+	margin-right: 0px;
+}
+
+body.page-checkout .checkout-buttons.form-wrapper
+{
+	clear: both;
+	padding-top: 30px;
+	border: 0px solid #FFF;		
+}
+
+body.page-checkout .checkout-buttons.form-wrapper #edit-continue, .checkout-completion-message p:last-child a
+{
+	border: 0px none;
+    color: #FFF;
+    font-size: 1.25rem;
+    display: block;
+    font-family: "dangerregular",Helvetica,sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+	background: #000;
+	color: #FFF;
+	font-size: 14px;
+	min-width: 275px;
+	margin-left: auto;
+}
+
+ .checkout-completion-message p:last-child a
+ {
+ 	max-width: 355px;
+ 	margin-left: 0px;
+ }
+
+body.page-checkout .checkout-buttons.form-wrapper #edit-continue:hover, .checkout-completion-message p:last-child a:hover
+{
+	background: #f1592a;
+}
+
+body.page-checkout .checkout-buttons.form-wrapper .button-operator
+{
+	opacity: 0;
+}
+
+body.page-checkout .checkout-buttons.form-wrapper #edit-cancel, body.page-checkout .checkout-buttons.form-wrapper #edit-back
+{
+	border: 2px solid #999999;
+    color: #999999;
+    font-size: 1.25rem;
+    display: block;
+    font-family: "dangerregular",Helvetica,sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+	background: #FFF;
+	font-size: 14px;
+	min-width: 275px;
+	margin-left: auto;
+}
+
+body.page-checkout .checkout-buttons.form-wrapper #edit-cancel:hover, body.page-checkout .checkout-buttons.form-wrapper #edit-back:hover
+{
+	background: #f1592a;
+	color: #FFF;
+}
+
+body.page-checkout .checkout-help
+{
+	color: #F1592A;
+	font-family: "sanchezregular";
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+table.checkout-review
+{
+	font-size: 13px;	
+}
+
+table.checkout-review .pane-data-full
+{
+	padding: 0px;	
+}
+
+table.checkout-review .pane-title td
+{
+	padding: 0px;
+	font-weight: 400;
+	padding-top: 30px;
+}
+body.page-checkout .pane-title
+{
+	color: #F1592A;
+	font-family: "sanchezregular";
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+body.page-checkout table.checkout-review
+{
+	width: 100%;
+}
+
+body.page-checkout table.checkout-review tr
+{
+	background: #FFF;
+}
+
+body.page-checkout table.checkout-review > tr > td
+{
+	padding: 0px;
+}
+
+body.page-checkout #edit-commerce-payment
+{
+	border: 0px solid #FFF;
+	padding: 0px;
+	margin-top: 30px;
+}
+
+
+.checkout-completion-message p
+{
+	font-size: 16px;
+	xfont-family: "dangerregular",Helvetica,sans-serif;
+	color: #999999;
+}
+
+

@@ -45,7 +45,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -180,7 +180,7 @@ function dfc_views_nodequeues_views_default_views() {
 	</div>
 </div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
-  /* Relationship: Broken/missing handler */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_winner_target_id']['id'] = 'field_winner_target_id';
   $handler->display->display_options['relationships']['field_winner_target_id']['table'] = 'field_data_field_winner';
   $handler->display->display_options['relationships']['field_winner_target_id']['field'] = 'field_winner_target_id';
@@ -228,13 +228,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Sponsor */
   $handler->display->display_options['fields']['field_sponsor']['id'] = 'field_sponsor';
   $handler->display->display_options['fields']['field_sponsor']['table'] = 'field_data_field_sponsor';
   $handler->display->display_options['fields']['field_sponsor']['field'] = 'field_sponsor';
   $handler->display->display_options['fields']['field_sponsor']['label'] = '';
   $handler->display->display_options['fields']['field_sponsor']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Winner's points */
   $handler->display->display_options['fields']['field_winners_points']['id'] = 'field_winners_points';
   $handler->display->display_options['fields']['field_winners_points']['table'] = 'field_data_field_winners_points';
   $handler->display->display_options['fields']['field_winners_points']['field'] = 'field_winners_points';
@@ -242,7 +242,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_winners_points']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_winners_points']['alter']['text'] = '<span class="field-label">Points:</span> <span class="field-content">[field_winners_points]</span>';
   $handler->display->display_options['fields']['field_winners_points']['element_label_colon'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Content: Winner&#039;s points (field_winners_points) */
   $handler->display->display_options['sorts']['field_winners_points_value']['id'] = 'field_winners_points_value';
   $handler->display->display_options['sorts']['field_winners_points_value']['table'] = 'field_data_field_winners_points';
   $handler->display->display_options['sorts']['field_winners_points_value']['field'] = 'field_winners_points_value';
@@ -261,7 +261,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'giveaway_prize' => 'giveaway_prize',
   );
-  /* Filter criterion: Broken/missing handler */
+  /* Filter criterion: Content: Month and Year (field_month_and_year) */
   $handler->display->display_options['filters']['field_month_and_year_value']['id'] = 'field_month_and_year_value';
   $handler->display->display_options['filters']['field_month_and_year_value']['table'] = 'field_data_field_month_and_year';
   $handler->display->display_options['filters']['field_month_and_year_value']['field'] = 'field_month_and_year_value';
@@ -329,6 +329,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['empty'] = '<img src="/sites/all/themes/custom/dfc/images/img-default.jpg" />';
   $handler->display->display_options['fields']['picture']['link_photo_to_profile'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = '200x200';
   /* Field: Global: View result counter */
@@ -467,7 +468,7 @@ function dfc_views_nodequeues_views_default_views() {
     'file_view_mode' => 'default',
   );
   $handler->display->display_options['fields']['field_media_link']['field_api_classes'] = TRUE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -668,7 +669,7 @@ function dfc_views_nodequeues_views_default_views() {
     'file_view_mode' => 'default',
   );
   $handler->display->display_options['fields']['field_media_link']['field_api_classes'] = TRUE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -882,7 +883,7 @@ function dfc_views_nodequeues_views_default_views() {
     'file_view_mode' => 'default',
   );
   $handler->display->display_options['fields']['field_media_link']['field_api_classes'] = TRUE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -1031,13 +1032,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_description']['label'] = '';
   $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Price */
   $handler->display->display_options['fields']['field_price']['id'] = 'field_price';
   $handler->display->display_options['fields']['field_price']['table'] = 'field_data_field_price';
   $handler->display->display_options['fields']['field_price']['field'] = 'field_price';
   $handler->display->display_options['fields']['field_price']['label'] = '$';
   $handler->display->display_options['fields']['field_price']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Membership Product Reference */
   $handler->display->display_options['fields']['field_membership_product_referen']['id'] = 'field_membership_product_referen';
   $handler->display->display_options['fields']['field_membership_product_referen']['table'] = 'field_data_field_membership_product_referen';
   $handler->display->display_options['fields']['field_membership_product_referen']['field'] = 'field_membership_product_referen';
@@ -1294,7 +1295,7 @@ function dfc_views_nodequeues_views_default_views() {
     'homepage_offers_6' => 'homepage_offers_6',
     'homepage_offers_3' => 0,
   );
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -1395,7 +1396,7 @@ function dfc_views_nodequeues_views_default_views() {
     'homepage_offers_3' => 0,
     'homepage_offers_6' => 0,
   );
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -1701,7 +1702,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_ad_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ad_link']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ad_link']['click_sort_column'] = 'url';
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -1715,7 +1716,7 @@ function dfc_views_nodequeues_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image_1']['id'] = 'field_image_1';
   $handler->display->display_options['fields']['field_image_1']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';

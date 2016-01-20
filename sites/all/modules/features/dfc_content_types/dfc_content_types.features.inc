@@ -18,6 +18,14 @@ function dfc_content_types_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function dfc_content_types_node_info() {
   $items = array(
+    'advertisement' => array(
+      'name' => t('Advertisement'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'article' => array(
       'name' => t('Article'),
       'base' => 'node_content',
@@ -92,6 +100,14 @@ function dfc_content_types_node_info() {
     ),
     'partner' => array(
       'name' => t('Partner'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'product_display' => array(
+      'name' => t('Product Display'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

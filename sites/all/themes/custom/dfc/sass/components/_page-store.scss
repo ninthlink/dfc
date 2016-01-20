@@ -1,0 +1,158 @@
+body.page-store {
+
+  h1 {
+    display: none;
+  }
+  .l-main {
+    padding: 50px
+  }
+
+  .view-store {
+    background: $color-gray-light;
+
+    h1 {display: inline;}
+  }
+
+  .view-header {
+    background-color: #000000;
+    background-image: url(../images/dfc-product-banner.jpg);
+    padding-top: 50px;
+    height: 235px;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      color: $color-white;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 56px;
+    }
+
+    h2 {
+      color: $color-orange;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 56px;
+    }
+
+    h4 {
+      color: $color-white;
+      font-size: 30px;
+    }
+  }
+
+  .view-content {
+    clear: both;
+    margin: 10px;
+    position: relative;
+  }
+
+  .views-row {
+    background-color: #000000;
+    display: inline-block;
+//    float: left;
+    margin: 0 3%;
+    height: 320px;
+    width: 26%;
+
+    .views-field {
+      margin: 0 10px;
+    }
+
+    .views-field-field-image {
+      margin: 0;
+    }
+
+    .views-field-title {
+      color: #FFFFFF;
+      font-size: 18px;
+    }
+
+    .views-field-field-image,{
+      margin: 0;
+
+      img {
+        max-height: 200px;
+      }
+    }
+
+    .views-field-field-image-1 {
+      margin: 0;
+
+      img {
+        max-height: 300px;
+      }
+    }
+  }
+
+}
+
+body.node-type-product-display {
+  .l-main {
+    padding: 50px;
+
+    .back-banner {
+      background-color: $color-orange;
+      color: $color-white;
+      height: 50px;
+      padding: 10px;
+
+      a, a:visited {
+        color: $color-white;
+        font-family: "dangerregular", Helvetica, sans-serif;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+    }
+
+    .l-content {
+      background: $color-white;
+      color: $color-black;
+
+      .content {
+        padding: 20px;
+      }
+
+      h1 {display: none;}
+
+      .node {
+         h1 {
+           display: block;
+         }
+
+        .field--image {
+          float: left;
+          margin: 10px 40px 10px 10px;
+
+          img {
+            max-width: 600px;
+          }
+        }
+
+        .title {
+          font-family: "dangerregular", Helvetica, sans-serif;
+          font-size: 36px;
+        }
+
+        .inline {
+          display: inline-block;
+        }
+
+        #edit-submit {
+          background-color: $color-orange;
+          border: 0;
+          color: $color-white;
+          font-family: "dangerregular", Helvetica, sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          height: 60px;
+          width: 260px;
+          text-transform: uppercase;
+        }
+
+        #edit-submit:hover {
+          background-color: $color-gray-medium-dark;
+          color: $color-orange;
+        }
+      }
+    }
+  }
+}

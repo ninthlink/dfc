@@ -44,7 +44,7 @@ function dfc_flop_menu_block_flop_link(){
     }else{
       $filepath = variable_get('user_picture_default', '');
     }
-    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image', array('path' => $user->picture->uri, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
+    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image', array('path' => $filepath, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
   }
   return $link_markup;
 }

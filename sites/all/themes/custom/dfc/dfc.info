@@ -14,6 +14,7 @@ stylesheets[all][] = css/dfc.styles.css
 stylesheets[all][] = css/dfc.no-query.css
 stylesheets[all][] = bxslider/bxslider.css
 stylesheets[all][] = css2/checkout.css
+stylesheets[all][] = css2/style.css
 
 ; ========================================
 ; Scripts

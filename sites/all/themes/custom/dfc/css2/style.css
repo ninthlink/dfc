@@ -8,3 +8,10 @@
 	display: block;
 	margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 767px)  {
+	.l-main .l-content .media-vimeo-video iframe
+	{
+		min-height: 350px;
+	}
+}

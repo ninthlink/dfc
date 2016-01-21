@@ -1910,10 +1910,24 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['monthly_points']['id'] = 'monthly_points';
   $handler->display->display_options['fields']['monthly_points']['table'] = 'dfc_points_views';
   $handler->display->display_options['fields']['monthly_points']['field'] = 'monthly_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/store">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   /* Field: DFC Points: Lifetime Points */
   $handler->display->display_options['fields']['lifetime_points']['id'] = 'lifetime_points';
   $handler->display->display_options['fields']['lifetime_points']['table'] = 'dfc_points_views';
   $handler->display->display_options['fields']['lifetime_points']['field'] = 'lifetime_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';

@@ -1,13 +1,52 @@
-.l-main .l-content .media-vimeo-video iframe
+.l-main .l-content .node--media-item--full
 {
-	min-height: 550px;
-	width: 100%;
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
+	display: block;	
+}
+
+.l-main .l-content .node--media-item--full .media-vimeo-video iframe
+{
+	min-height: 550px;
+	width: 100%;
 	margin-bottom: 30px;
 }
+
+.l-main .l-content .node--media-item--full .field--media-category
+{
+    display: block;
+    background: url("../images/icons2x/icon-video-smaller.png") no-repeat 0 0 transparent;
+    padding-left: 45px;
+    line-height: 21px;
+	margin-bottom: 10px;
+	color: #F1592A;
+	text-transform: uppercase;
+	font-family: "dangerregular";
+	letter-spacing: 1px;
+	background-size: 32px;
+}
+
+.l-main .l-content .node--media-item--full .field--title-field h2
+{
+	font-family: Helvetica;
+	font-size: 40px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	max-width: 550px;
+}
+
+.l-main .l-content .node--media-item--full .sharethis-buttons
+{
+	margin-bottom: 30px;	
+}
+
+.l-main .l-content .node--media-item--full .field--product-description
+{
+	margin-bottom: 20px;
+	max-width: 550px;
+}
+
 
 @media only screen and (max-width: 767px)  {
 	.l-main .l-content .media-vimeo-video iframe

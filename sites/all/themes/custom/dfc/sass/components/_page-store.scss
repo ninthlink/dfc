@@ -147,6 +147,12 @@ body.node-type-product-display {
           margin-bottom: 0;
         }
 
+        .form-item-attributes-field-product-color {
+          label {
+            display: none;
+          }
+        }
+
         .inline {
           display: inline-block;
         }

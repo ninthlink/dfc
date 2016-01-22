@@ -2808,10 +2808,13 @@ body.node-type-product-display .l-main {
     /* line 146, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display .l-main .l-content .node .form-type-commerce-fancy-attributes {
       margin-bottom: 0; }
-    /* line 150, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 151, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .form-item-attributes-field-product-color label {
+      display: none; }
+    /* line 156, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display .l-main .l-content .node .inline {
       display: inline-block; }
-    /* line 154, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 160, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display .l-main .l-content .node #edit-submit {
       background-color: #f1592a;
       border: 0;
@@ -2822,7 +2825,7 @@ body.node-type-product-display .l-main {
       height: 60px;
       width: 260px;
       text-transform: uppercase; }
-    /* line 166, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 172, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display .l-main .l-content .node #edit-submit:hover {
       background-color: #828384;
       color: #f1592a; }

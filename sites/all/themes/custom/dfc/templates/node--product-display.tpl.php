@@ -88,11 +88,9 @@
     <div class="sidebar">
       <div class="title"><?php print $title; ?></div>
       <?php print render($content['body']);?>
-      <?php print render($content['product:field_product_color']);?>
-      <?php print render($content['product:field_product_size']);?>
       <?php print render($content['product:commerce_price']);?>
+      <?php print render($content['product:field_product_color']);?>
       <?php print render($content['field_products']);?>
-      <?php //print_r($content);?>
     </div>
   </div>
 

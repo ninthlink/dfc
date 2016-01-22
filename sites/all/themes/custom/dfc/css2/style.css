@@ -129,6 +129,10 @@
 	display: none;
 }
 
+.node.node--staff--teaser footer {
+    display: none;
+}
+
 @media only screen and (max-width: 767px)  {
 	.l-main .l-content .media-vimeo-video iframe
 	{

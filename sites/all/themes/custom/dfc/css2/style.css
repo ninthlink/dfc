@@ -104,6 +104,7 @@
 	background: #F1592A;
 	display: block;
 	padding-bottom: 20px;
+	z-index: 2;
 }
 
 .group-bottomctas .collapsible.collapsed .field-group-format-wrapper

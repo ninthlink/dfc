@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pro Staffs feature.
+ */
+
+include_once 'pro_staffs.features.inc';

@@ -1,0 +1,434 @@
+body.node-type-landing-page.section-pro-staff {
+
+  .content-bottom {
+    @include container;
+    max-width: 1080px;
+    @extend .row-padding;
+  }
+}
+
+.block--bean-pro-staff-top-block {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+
+  @include breakpoint($bp-desk) {
+    height: 360px;
+  }
+
+  @include breakpoint($bp-full) {
+    height: 400px;
+  }
+  
+  
+  .field--background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+
+    @include breakpoint($bp-desk) {
+      height: auto;
+    }
+    
+    img {
+      height: 100%;
+      max-width: none;
+      width: auto;
+
+      @include breakpoint($bp-tab) {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .field--text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 473px;
+    padding: 5em 4em;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0px;
+    left: auto;
+    width: 100%;
+    
+    @include breakpoint($bp-desk) {
+      padding: 5em 4em;
+    }
+  }
+  
+  .fab-pre-title {
+    font-family: $sr;
+    color: $color-white;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    @include breakpoint($bp-full) {
+      @include rem(font-size, 14px);
+    }
+  }
+  
+  h1 {
+    font-family: $dr;
+    color: $color-skyblue;
+    line-height: .9;
+    text-transform: uppercase;
+    @include rem(font-size, 42px);
+    margin-bottom: 10px;
+
+    @include breakpoint($bp-desk) {
+      @include rem(font-size, 78px);
+    }
+    
+    span {
+      color: $color-white;
+
+      @include breakpoint($bp-tab) {
+        display: block;
+      }
+    }
+  }
+
+  .fab-subtitle {
+    font-family: $dr;
+    color: $color-white;
+    @include rem(font-size, 20px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.block--bean-staff-pro-intro {
+  background: $color-skyblue;
+  color: $color-white;
+  xpadding: 30px 20px;
+  font-family: $sr;
+  
+  .intro_text
+  {
+    padding: 30px 20px;
+  }
+  
+  .intro_cta
+  {
+    padding: 30px;
+    max-width: 473px;
+    background: url('../images/staff_intro_bg.jpg') 0 0 no-repeat transparent;
+    min-height: 232px;
+    h2
+    {
+      @include rem(font-size, 24px);
+      line-height: 1.1;
+       margin-bottom: 20px;
+       text-transform: uppercase;
+    }
+  }
+  
+  @include breakpoint($bp-tab) {
+    xpadding: 20px;
+    @include rem(font-size, 15px);
+    
+    .intro_text
+    {
+       padding: 20px;
+       float: none;
+       width: 100%;
+    }
+    
+    .intro_cta
+    {
+      float: none;
+      width: 100%;
+      padding: 30px;
+      margin: 20px auto;
+      display: block;
+        
+      h2
+      {
+         @include rem(font-size, 30px);
+         line-height: 1.1;
+      }
+    }
+    
+  }
+  
+  @include breakpoint($bp-desk) {
+    @include rem(font-size, 14px);
+    line-height: 1.2;
+    
+    .intro_text
+    {
+      float: left;
+       width: 55%;
+       padding: 50px;
+    } 
+    
+    .intro_cta
+    {
+      float: right;
+      width: 40%;
+      padding: 60px 50px 10px;
+      margin: 0px;
+    }  
+  } 
+}
+
+.block--views-staffs-block-1 {
+  padding: 60px 0 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid $color-gray-3;
+  
+  .view-resorts, .view-staffs {
+  
+    .views-row {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+.view-staffs {
+
+  h2.block__title {
+    font-family: $dr;
+    @include rem(font-size, 38px);
+    color: $color-white;
+    text-transform: uppercase;
+    
+    span {
+      color: $color-skyblue;
+    }
+  }
+  
+  .views-row {
+    @include container;
+    padding-bottom: 55px;
+    margin-bottom: 65px;
+    border-bottom: 1px solid $color-gray-3;
+  }
+  
+  .pager-load-more {
+    @extend .no-list;
+    margin-bottom: 60px;
+    
+    a {
+      @extend .button;
+    }
+  }
+}
+
+.node.node--staff--teaser {
+  
+  header
+  {
+    display: none;
+  }
+  
+  .group-resort-first {
+    margin-bottom: 20px;
+
+    @include breakpoint($bp-tab) {
+      width: 60%;
+      margin: 0 auto;
+    }
+    
+    @include breakpoint($bp-desk) {
+      float: left;
+      width: 40%;
+    }
+  }
+  
+  .field--image-gallery {
+    
+    .owl-controls {
+      @extend .owl-control-bars2;
+    }
+  }
+  
+  .group-resort-last {
+    
+    @include breakpoint($bp-desk) {
+      float: right;
+      width: 53%;
+    }
+  }
+  
+  .sharethis-buttons {
+
+    @include breakpoint($bp-tab) {
+      float: right;
+    }
+  
+    .st_twitter_custom,
+    .st_facebook_custom {
+      border: 0;
+    }
+  }
+  
+  .group-resort-price {
+    position: relative;
+    display: inline-block;
+    font-family: $dr;
+    @include rem(font-size, 16px);
+    line-height: 1;
+    
+    &:before {
+      content: "$$$$";
+      color: $color-gray-6;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 30px;
+    }
+
+    &:after {
+      content: "$";
+      color: $color-white;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 30px;
+    }
+  }
+  
+  &.price-two-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$";
+      } 
+    }
+  }
+  
+  &.price-three-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$$";
+      } 
+    }
+  }
+  
+  &.price-four-dollars  {
+  
+    .group-resort-price {
+
+      &:after {
+        content: "$$$$";
+      } 
+    }
+  }
+  
+  .field--staff-category {
+    color: $color-white;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-family: $sr;
+    font-weight: 700;
+     @include rem(font-size, 15px);
+     
+    &:before {
+      content: "Category |";
+      color: $color-orange;
+      margin-right: 6px;
+      
+    }
+  }
+
+  .field--title-field {
+    color: $color-white;
+    @include rem(font-size, 32px);
+    font-weight: bold;
+    line-height: 1;
+    clear: both;
+  }
+  
+  
+  .field--businessname {
+    @include rem(font-size, 25px);
+    color: $color-gray-9;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  
+  .field--location {
+    @include rem(font-size, 19px);
+    color: $color-gray-9;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  
+  .field--product-description {
+    font-family: $sr;
+    @include rem(font-size, 15px);
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+  
+  .field--phone-number {
+    font-family: $sr;
+    @include rem(font-size, 15px);
+    font-weight: bold;
+    color: $color-white;
+    line-height: 1;
+    margin-bottom: 20px;
+
+    @include breakpoint($bp-tab) {
+      display: inline-block;
+      margin-bottom: 60px;
+    }
+    
+    &:before {
+      @include use-sprite($icon-phone);
+      position: relative;
+      top: 6px;
+      margin-right: 5px;
+    }
+  }
+  
+  .field--website-link {
+    font-family: $sr;
+    font-weight: bold;
+    @include rem(font-size, 15px);
+    line-height: 1;
+    margin-bottom: 20px;
+
+    @include breakpoint($bp-tab) {
+      display: inline-block;
+      margin-left: 20px;
+      padding-left: 20px;
+      margin-bottom: 60px;
+      border-left: 1px solid $color-gray-6;
+    }
+    
+    a {
+      color: $color-white;
+    }
+  }
+  
+  .field--link {
+    clear: both;
+    
+    a {
+      @extend .button;
+    }
+  }
+  
+  .node__links {
+    display: none;
+  }
+}

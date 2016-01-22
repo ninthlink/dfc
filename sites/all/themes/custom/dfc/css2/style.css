@@ -29,7 +29,7 @@
 
 .l-main .l-content .node--media-item--full .field--title-field h2
 {
-	font-family: Helvetica;
+	font-family: "sans-serif";
 	font-size: 40px;
 	line-height: 44px;
 	margin-bottom: 20px;
@@ -45,12 +45,106 @@
 {
 	margin-bottom: 20px;
 	max-width: 550px;
+	font-family: "sanchezregular";
+}
+.group-bottomctas
+{
+	clear: both;	
 }
 
+.group-bottomctas .collapsible
+{
+	border: 0px none;
+	background: #F1592A none repeat scroll 0% 0%;
+	color: #FFF;
+	font-size: 1.25rem;
+	display: block;
+	font-family: "dangerregular",Helvetica,sans-serif;
+	letter-spacing: 2px;
+	padding: 15px 60px;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+	width: 40%;
+	position: relative;
+}
+
+.group-bottomctas .collapsible h3 a
+{
+	color: #FFF;
+	font-size: 1.25rem;
+	display: block;
+	font-family: "dangerregular",Helvetica,sans-serif;
+	letter-spacing: 2px;
+}
+
+.group-bottomctas .collapsible .field-label
+{
+	margin-top: 20px;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	color: #FFF:
+}
+
+.group-bottomctas .collapsible .field-label
+{
+	font-size: 15px;
+	line-height: 19px;
+	color: #FFF:
+	font-weight: bold;
+}
+.group-bottomctas .collapsible .field-group-format-wrapper
+{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	background: #F1592A;
+	display: block;
+	padding-bottom: 20px;
+}
+
+.group-bottomctas .collapsible.collapsed .field-group-format-wrapper
+{
+	display: none !important;
+}
+
+.group-bottomctas .field--link
+{
+	float: left;
+	margin-left: 25px;
+	clear: none !important;
+	width: 40%;
+}
+
+.group-bottomctas .field--link a
+{
+	line-height: 1;	
+}
+
+.group-rates.field-group-html5 h3, .group-rates.field-group-html5 div
+{
+	display: none;
+}
 
 @media only screen and (max-width: 767px)  {
 	.l-main .l-content .media-vimeo-video iframe
 	{
 		min-height: 350px;
+	}
+	
+	.group-bottomctas .collapsible, .group-bottomctas .field--link
+	{
+		width: 100%;
+		float: none;
+		max-width: 350px;
+		margin: 20px auto;
+	}
+	
+	.group-bottomctas .field--link a
+	{
+		width: 100%;
 	}
 }

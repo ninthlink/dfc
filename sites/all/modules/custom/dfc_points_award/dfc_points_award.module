@@ -50,12 +50,14 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
   }
 }
 
-function dfc_points_award_views_pre_render(&$view) {
-//  print_r($view->field['field_product_description']->options);
-  if($view->name == 'media_items') {
-    foreach ($view->result as $r) {
-//      $view->field['field_product_description']->options['alter']['text'] = '10 Points';
-    }
+function dfc_points_award_preprocess_views_view_field(&$vars) {
+  $view = $vars['view'];
+  $field = &$vars['field'];
+  $row = $vars['row'];
+  if($view->name == 'media_items' && $view->current_display == 'block' && $field->field == 'nothing') {
+    $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
+    $points = dfc_points_award_points_by_cat($cat);
+    $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
   }
 }
 
@@ -64,15 +66,7 @@ function dfc_points_award_video ($vid, $time) {
   $node = node_load($vid);
   $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
 
-  //cat 6 and 7 are most used, and both default to 20 pts
-  $points = 20;
-  if ($cat == 17) {
-    //advertisement
-    $points = 5;
-  } else if ($cat == 6) {
-    //sponsored video
-    $points = 10;
-  }
+  $points = dfc_points_award_points_by_cat($cat);
   if(!dfc_points_award_check_video_awarded($vid)) {
     $video_points = array(
         'points' => $points,
@@ -85,6 +79,20 @@ function dfc_points_award_video ($vid, $time) {
   }
 
   drupal_json_output($ret);
+}
+
+function dfc_points_award_points_by_cat($cat) {
+  //cat 4 and 7 are most used, and both default to 20 pts
+  $points = 20;
+  if ($cat == 17) {
+    //advertisement
+    $points = 5;
+  } else if ($cat == 6) {
+    //sponsored video
+    $points = 10;
+  }
+
+  return $points;
 }
 
 function dfc_points_award_check_video_awarded($vid) {
@@ -134,7 +142,7 @@ function dfc_points_award_grant_points($points) {
 function dfc_points_award_grant_points_upload(&$form, &$form_state) {
   global $user;
   $u = user_load($user->uid);
-//  var_dump($user);die();
+
   if($form_state['values']['field_user_images']) {
     $imgs_num_u = isset($u->field_user_images[LANGUAGE_NONE]) ? sizeof($u->field_user_images[LANGUAGE_NONE]) : 0;
     $imgs_num_f = sizeof($form_state['values']['field_user_images'][LANGUAGE_NONE]);

@@ -330,6 +330,17 @@ body.node-type-landing-page.section-media {
         }
       }
     }
+
+    .views-field-nothing {
+      font-family: 'sanchezregular';
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+
+      .pts-value {
+        color: $color-orange;
+      }
+    }
   }
   
   ul.pager {

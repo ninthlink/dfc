@@ -10,7 +10,9 @@ body.page-store {
   .view-store {
     background: $color-gray-light;
 
-    h1 {display: inline;}
+    h1 {
+      display: inline;
+    }
   }
 
   .view-header {
@@ -66,7 +68,8 @@ body.page-store {
       font-size: 18px;
     }
 
-    .views-field-field-image,{
+    .views-field-field-image,
+    .views-field-field-product-image{
       margin: 0;
 
       img {
@@ -111,6 +114,10 @@ body.node-type-product-display {
         padding: 20px;
       }
 
+      .sidebar {
+        margin-left: 620px;
+      }
+
       h1 {display: none;}
 
       .node {
@@ -118,7 +125,7 @@ body.node-type-product-display {
            display: block;
          }
 
-        .field--image {
+        .field--product-image {
           float: left;
           margin: 10px 40px 10px 10px;
 
@@ -130,6 +137,14 @@ body.node-type-product-display {
         .title {
           font-family: "dangerregular", Helvetica, sans-serif;
           font-size: 36px;
+        }
+
+        .form-item-attributes-field-product-color {
+          display: inline-block;
+        }
+
+        .form-type-commerce-fancy-attributes {
+          margin-bottom: 0;
         }
 
         .inline {

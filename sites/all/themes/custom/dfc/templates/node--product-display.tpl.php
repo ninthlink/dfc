@@ -79,18 +79,21 @@
  *
  * @ingroup themeable
  */
+
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="back-banner"><a href="/store">Back to DFC Store</a></div>
   <div class="content"<?php print $content_attributes; ?>>
-    <?php print render($content['product:field_image']);?>
-    <div class="title"><?php print $title; ?></div>
-    <?php print render($content['body']);?>
-    <?php print render($content['product:field_product_color']);?>
-    <?php print render($content['product:field_product_size']);?>
-    <?php print render($content['product:commerce_price']);?>
-    <?php print render($content['field_products']);?>
-    <?php //print_r($content);?>
+    <?php print render($content['product:field_product_image']);?>
+    <div class="sidebar">
+      <div class="title"><?php print $title; ?></div>
+      <?php print render($content['body']);?>
+      <?php print render($content['product:field_product_color']);?>
+      <?php print render($content['product:field_product_size']);?>
+      <?php print render($content['product:commerce_price']);?>
+      <?php print render($content['field_products']);?>
+      <?php //print_r($content);?>
+    </div>
   </div>
 
 </div>

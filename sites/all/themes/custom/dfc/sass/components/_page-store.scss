@@ -8,7 +8,7 @@ body.page-store {
   }
 
   .view-store {
-    background: $color-gray-light;
+    background: $color-gray-medium-dark;
 
     h1 {
       display: inline;
@@ -43,17 +43,17 @@ body.page-store {
 
   .view-content {
     clear: both;
-    margin: 10px;
+    margin: 0 auto;
+    padding: 26px 0;
     position: relative;
   }
 
   .views-row {
     background-color: #000000;
-    display: inline-block;
-//    float: left;
-    margin: 0 3%;
-    height: 320px;
-    width: 26%;
+    margin: 20px 0;
+    overflow: hidden;
+    height: 340px;
+    width: 300px;
 
     .views-field {
       margin: 0 10px;
@@ -65,7 +65,9 @@ body.page-store {
 
     .views-field-title {
       color: #FFFFFF;
-      font-size: 18px;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 30px;
+      text-transform: uppercase;
     }
 
     .views-field-field-image,
@@ -77,12 +79,14 @@ body.page-store {
       }
     }
 
+    .views-field-commerce-price {
+      font-family: 'sanchezregular';
+    }
+
     .views-field-field-image-1 {
       margin: 0;
 
-      img {
-        max-height: 300px;
-      }
+      img {}
     }
   }
 

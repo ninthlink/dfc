@@ -417,3 +417,10 @@ form.user-profile-form {
     margin-bottom: 50px;
   }
 }
+
+// User Login Page Tabs
+body.section-user.not-logged-in {
+  .tabs.tabs--primary {
+    display: none;
+  }
+}

@@ -112,3 +112,12 @@ function dfc_flop_menu_markup_wrapper($markup, $attributes = NULL, $tag = 'div')
   }
   return $output;
 }
+
+function dfc_flop_menu_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'user_login_block') {
+    // replace default list from user.module ~ line 1355 to remove Create..
+    $items = array();
+    $items[] = l(t('Request new password'), 'user/password', array('attributes' => array('title' => t('Request new password via e-mail.'))));
+    $form['links'] = array('#markup' => theme('item_list', array('items' => $items)));
+  }
+}

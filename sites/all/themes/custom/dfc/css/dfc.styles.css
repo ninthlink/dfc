@@ -5063,4 +5063,8 @@ form.user-profile-form {
   form.user-profile-form #edit-timezone {
     margin-bottom: 50px; }
 
+/* line 423, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+body.section-user.not-logged-in .tabs.tabs--primary {
+  display: none; }
+
 /*# sourceMappingURL=dfc.styles.css.map */

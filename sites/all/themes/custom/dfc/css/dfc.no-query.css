@@ -3149,12 +3149,16 @@ body.node-type-product-display .l-main {
   height: 41px;
   margin-left: 50px; }
 
-/* line 5, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+input.form-text {
+  color: #000000; }
+
+/* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.not-logged-in .block--dfc-flop-menu-userfloplink {
   position: absolute;
   top: 10px;
   right: 10px; }
-  /* line 15, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 20, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userfloplink #member_info_link {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 11px;
@@ -3162,11 +3166,11 @@ body.not-logged-in .block--dfc-flop-menu-userfloplink {
     line-height: 1;
     color: #ebebeb;
     text-decoration: none; }
-    /* line 26, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 31, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userfloplink #member_info_link:hover {
       color: #f1592a; }
 
-/* line 32, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 37, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.not-logged-in .block--dfc-flop-menu-userflop {
   display: none;
   position: absolute;
@@ -3175,14 +3179,14 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
   width: 100%;
   background: #1c1c1c;
   padding: 40px 50px; }
-  /* line 45, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 50, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form {
     position: relative;
     padding-bottom: 100px; }
-    /* line 49, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 54, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-item {
       margin: -1px 0 0; }
-    /* line 53, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 58, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form input.form-text {
       width: 100%;
       font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3192,13 +3196,13 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
       border: 1px solid #616161;
       background: transparent;
       padding: 10px; }
-    /* line 63, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 68, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul {
       position: absolute;
       bottom: 0;
       left: 0;
       white-space: nowrap; }
-      /* line 70, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 75, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li {
         display: inline-block;
         font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3207,27 +3211,27 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
         line-height: 1;
         border-left: 1px solid #999999;
         padding-left: 5px; }
-        /* line 78, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 83, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li:first-child {
           border-left: 0;
           padding-left: 0; }
-        /* line 83, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 88, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li a {
           color: #999999; }
-    /* line 89, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 94, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-actions {
       margin: 0;
       position: absolute;
       bottom: 40px;
       left: 0;
       width: 100%; }
-      /* line 96, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 101, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-actions .form-submit {
         display: block;
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px; }
-  /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 110, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userflop a.x {
     margin: 0;
     position: absolute;
@@ -3243,7 +3247,7 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
     width: 16px;
     height: 7px; }
 
-/* line 118, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 123, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.logged-in .block--dfc-flop-menu-userfloplink {
   position: absolute;
   top: 0px;
@@ -3251,7 +3255,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
   width: 100px;
   height: 110px;
   padding: 20px 0 0 10px; }
-  /* line 137, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 142, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink:before {
     content: "";
     position: absolute;
@@ -3259,7 +3263,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
     left: 0;
     border-left: 1px solid #464646;
     height: 100%; }
-  /* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink .flop-link-points-wrapper {
     float: right;
     width: 50%;
@@ -3268,14 +3272,14 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
     font-size: 0.9375rem;
     text-transform: uppercase;
     text-align: left; }
-  /* line 163, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 168, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link {
     display: block;
     height: 45px;
     width: 45px;
     overflow: hidden;
     float: left; }
-    /* line 170, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 175, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link:before {
       content: "";
       position: absolute;
@@ -3283,7 +3287,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
       left: 0;
       height: 100%;
       width: 100%; }
-    /* line 179, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 184, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link:after {
       content: "";
       position: absolute;
@@ -3298,14 +3302,14 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
       background-position: -50px 0px;
       width: 16px;
       height: 7px; }
-    /* line 195, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 200, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link img {
       min-width: 45px;
       min-height: 45px;
       border-radius: 100%;
       border: 2px solid #ffffff; }
 
-/* line 204, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 209, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.logged-in .block--dfc-flop-menu-userflop {
   display: none;
   position: absolute;
@@ -3313,47 +3317,47 @@ body.logged-in .block--dfc-flop-menu-userflop {
   right: 0px;
   width: 100%;
   background: #1c1c1c; }
-  /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 223, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-picture {
     padding: 40px 0 20px; }
-    /* line 221, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-picture img {
       width: 140px;
       border-radius: 100%;
       border: 2px solid #ffffff; }
-  /* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-name {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: uppercase; }
-  /* line 234, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-city-state {
     font-size: 14px;
     font-size: 0.875rem;
     color: #999999;
     margin-bottom: 20px; }
-  /* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links {
     text-align: left; }
-    /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li {
       border-top: 1px solid #4e4e4e;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 14px;
       font-size: 0.875rem;
       line-height: 1; }
-      /* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 255, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a {
         display: block;
         color: #999999;
         text-decoration: none;
         padding: 15px 30px; }
-        /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a:hover {
           background: #f1592a;
           color: #ffffff; }
-  /* line 264, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 269, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .flop-points-wrapper {
     background: #f1592a;
     color: #000000;
@@ -3363,44 +3367,44 @@ body.logged-in .block--dfc-flop-menu-userflop {
     text-align: left;
     overflow: hidden;
     *zoom: 1; }
-  /* line 274, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .points-title-wrapper {
     font-size: 17px;
     font-size: 1.0625rem;
     color: #ffffff;
     margin-bottom: 10px; }
-  /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 285, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_markup,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: left;
     width: 50%; }
-  /* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 291, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: right; }
-  /* line 290, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 295, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-title-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-title-wrapper {
     font-size: 18px;
     font-size: 1.125rem; }
-  /* line 295, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-points-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-points-wrapper {
     font-size: 28px;
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 10px; }
-  /* line 302, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 307, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links {
     font-size: 12px;
     font-size: 0.75rem;
     color: #ffffff;
     margin-bottom: 20px; }
-    /* line 308, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links a,
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links a {
       color: #ffffff; }
-  /* line 323, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 328, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop a.x {
     margin: 0;
     position: absolute;

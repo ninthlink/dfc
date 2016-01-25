@@ -1,3 +1,8 @@
+// general form text color fix
+input.form-text {
+  color: $color-black;
+}
+
 // User flopout. 2 different styles based on whether you are logged in
 
 body.not-logged-in {

@@ -26,6 +26,13 @@
     text-align: left;
   }
   
+  h3 {
+    @include rem(font-size, 20px);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
   .views-row {
     @include clearfix;
     line-height: 1;
@@ -65,7 +72,7 @@
       
       .views-field-lifetime-user-standing {
         font-family: $dr;
-        @include rem(font-size, 42px);
+        @include rem(font-size, 30px);
         color: $color-orange;
         margin-bottom: 25px;
       
@@ -92,8 +99,8 @@
     }
   }
   
-  .views-field-monthly-points,
-  .views-field-lifetime-points {
+  .current-profile-month,
+  .current-profile-lifetime {
     font-family: $sr;
     margin-bottom: 20px;
 
@@ -113,7 +120,7 @@
     }
     
     .field-content {
-      @include rem(font-size, 36px);
+      @include rem(font-size, 25px);
       display: block;
     }
   }

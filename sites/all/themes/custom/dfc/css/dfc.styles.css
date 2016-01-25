@@ -93,7 +93,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* generated with grunt-sass-globbing */
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
+.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
   border: 0;
   background: #f1592a;
   color: #ffffff;
@@ -108,7 +108,7 @@ The `sprites` mixin generates identical output to the CSS template
   vertical-align: middle;
   text-align: center; }
   /* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
+  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
     background: #000000;
     color: #f1592a; }
 
@@ -136,6 +136,19 @@ The `sprites` mixin generates identical output to the CSS template
     background: #f1592a;
     color: #ffffff;
     border: 2px solid #f1592a; }
+
+/* line 54, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+.button-outline {
+  border: 2px solid #ffffff;
+  background: none;
+  font-size: 14px;
+  margin: 41px 0 0;
+  padding: 15px 45px; }
+  /* line 63, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+  .button-outline:hover {
+    border: #f1592a;
+    background: #f1592a;
+    color: #ffffff; }
 
 @font-face {
   font-family: 'sanchezregular';
@@ -720,90 +733,97 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     .view-user-ranking {
       text-align: left; } }
   /* line 29, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  .view-user-ranking h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  /* line 36, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .views-row {
     overflow: hidden;
     *zoom: 1;
     line-height: 1; }
   @media (min-width: 590px) {
-    /* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 41, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info {
       float: left;
       width: 50%; } }
-  /* line 41, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .views-field-picture {
     margin-bottom: 30px; }
     @media (min-width: 590px) {
-      /* line 41, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .views-field-picture {
         float: left;
         width: 26%; } }
-    /* line 49, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .views-field-picture img {
       width: 140px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .personal-info {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
     @media (min-width: 590px) {
-      /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info {
         float: right;
         width: 63%; } }
-    /* line 66, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 73, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing {
       font-family: "dangerregular", Helvetica, sans-serif;
-      font-size: 42px;
-      font-size: 2.625rem;
+      font-size: 30px;
+      font-size: 1.875rem;
       color: #f1592a;
       margin-bottom: 25px; }
-      /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing:after {
         content: "."; }
-    /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 84, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .member-name {
       font-size: 18px;
       font-size: 1.125rem;
       text-transform: uppercase;
       margin-bottom: 10px; }
-      /* line 82, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 89, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info .member-name div {
         display: inline-block; }
-    /* line 87, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 94, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .field--city-state {
       font-size: 16px;
       font-size: 1rem;
       color: #999999;
       margin-bottom: 30px; }
-  /* line 95, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-  .view-user-ranking .views-field-monthly-points,
-  .view-user-ranking .views-field-lifetime-points {
+  /* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  .view-user-ranking .current-profile-month,
+  .view-user-ranking .current-profile-lifetime {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
     @media (min-width: 590px) {
-      /* line 95, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-      .view-user-ranking .views-field-monthly-points,
-      .view-user-ranking .views-field-lifetime-points {
+      /* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      .view-user-ranking .current-profile-month,
+      .view-user-ranking .current-profile-lifetime {
         float: left;
         width: 25%;
         margin-bottom: 0;
         border-left: 1px solid #4d4d4d;
         padding: 10px 0 20px 40px; } }
-    /* line 108, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-    .view-user-ranking .views-field-monthly-points .views-label,
-    .view-user-ranking .views-field-lifetime-points .views-label {
+    /* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    .view-user-ranking .current-profile-month .views-label,
+    .view-user-ranking .current-profile-lifetime .views-label {
       font-size: 16px;
       font-size: 1rem;
       color: #f1592a;
       display: block;
       margin-bottom: 10px; }
-    /* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-    .view-user-ranking .views-field-monthly-points .field-content,
-    .view-user-ranking .views-field-lifetime-points .field-content {
-      font-size: 36px;
-      font-size: 2.25rem;
+    /* line 122, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    .view-user-ranking .current-profile-month .field-content,
+    .view-user-ranking .current-profile-lifetime .field-content {
+      font-size: 25px;
+      font-size: 1.5625rem;
       display: block; }
 
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_comments.scss */

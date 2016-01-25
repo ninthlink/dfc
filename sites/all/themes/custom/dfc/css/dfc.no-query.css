@@ -3613,8 +3613,8 @@ body.section-users .content-bottom {
     body.section-users .content-bottom #block-invite-invite-add-invite-by-email .description {
       display: none; }
     /* line 157, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
-    body.section-user .content-bottom #block-invite-invite-add-invite-by-email #edit-submit,
-    body.section-users .content-bottom #block-invite-invite-add-invite-by-email #edit-submit {
+    body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
+    body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit {
       background-color: #f1592a;
       border: 0;
       color: #ffffff;

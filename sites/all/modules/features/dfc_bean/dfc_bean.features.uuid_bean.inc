@@ -22,7 +22,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450153673,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '2c83c955-fff2-4f65-b157-3f1647230710',
@@ -61,7 +61,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450843080,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'ea98e245-cba1-48a9-b19a-e60effd0a792',
@@ -81,7 +81,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450150434,
     'log' => '',
-    'uid' => 4,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6e781f86-cf14-4af4-a541-4a7951021be0',
@@ -110,7 +110,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450332189,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6c8c3de9-a439-49ee-9021-eb4c1b955eb2',
@@ -156,6 +156,98 @@ function dfc_bean_uuid_features_default_beans() {
     ),
   );
   $beans[] = array(
+    'label' => 'Silver Benefits',
+    'description' => NULL,
+    'title' => 'Membership Benefits',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'silver-benefits',
+    'view_mode' => 'default',
+    'created' => 1453754659,
+    'log' => '',
+    'uid' => 6,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '05876674-e68c-4782-849c-040d6c5ce5ce',
+    'uuid' => '271c40aa-18bf-451e-9b5a-a5720f8bf5c2',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Membership Benefits
+<ul>
+  <li>FREE Membership to IGFA ($35 Value)</li>
+  <li>FREE 6 Month Access to Pro Angler ($18 Value)</li>
+  <li>FREE 6 Month Access to Fishidy.com ($30 Value)</li>
+  <li>FREE 1 Year Wild Oceans Membership ($35 Value)</li>
+  <li>Eligible for all \\gear give-ways worth $1,000</li>
+  <li>Earn FREE Day Charter fishing trips in your area</li>
+  <li>10% discount at over 50 Top Fishing Resorts</li>
+  <li>10% discount at selected charter operations</li>
+  <li>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</li>
+</ul>',
+          'format' => 'full_html',
+          'safe_value' => '<p>Membership Benefits</p>
+<ul><li>FREE Membership to IGFA ($35 Value)</li>
+<li>FREE 6 Month Access to Pro Angler ($18 Value)</li>
+<li>FREE 6 Month Access to Fishidy.com ($30 Value)</li>
+<li>FREE 1 Year Wild Oceans Membership ($35 Value)</li>
+<li>Eligible for all \\gear give-ways worth $1,000</li>
+<li>Earn FREE Day Charter fishing trips in your area</li>
+<li>10% discount at over 50 Top Fishing Resorts</li>
+<li>10% discount at selected charter operations</li>
+<li>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</li>
+</ul>',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
+    'label' => 'Gold Benefits',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'gold-benefits',
+    'view_mode' => 'default',
+    'created' => 1453757653,
+    'log' => '',
+    'uid' => 6,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '751fee72-ec66-42f1-8487-71351f74f2a3',
+    'uuid' => '44825a9a-2e6d-4408-9dba-d51a8899838d',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Membership Benefits
+Silver Membership +
+<ul>
+  <li>Earn FREE Multi-day International fishing trips</li>
+  <li>10%-40% discount on products at Marineandoutdoor.com</li>
+  <li>Includes an instant entry to qualifying for a spot on the DFC Top Angler show aboard the Pacific Provider.</li>
+  <li>Bill Boyce Screen Savers - 2 FREE Downloads</li>
+  <li>DFC hat and sticker</li>
+</ul>',
+          'format' => 'full_html',
+          'safe_value' => '<p>Membership Benefits<br />
+Silver Membership +</p>
+<ul><li>Earn FREE Multi-day International fishing trips</li>
+<li>10%-40% discount on products at Marineandoutdoor.com</li>
+<li>Includes an instant entry to qualifying for a spot on the DFC Top Angler show aboard the Pacific Provider.</li>
+<li>Bill Boyce Screen Savers - 2 FREE Downloads</li>
+<li>DFC hat and sticker</li>
+</ul>',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
     'label' => 'Clubhouse Boat Tour',
     'description' => NULL,
     'title' => '',
@@ -167,7 +259,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331904,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '55894b8a-1450-4acd-afef-e174e370d407',
@@ -223,7 +315,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450325918,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f19bf831-d131-4c35-8903-9d3f5b120738',
@@ -267,7 +359,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331675,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '95dcb470-9820-483b-871c-bf63e2b924bb',
@@ -296,7 +388,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450331544,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fa179783-eefd-4ff5-b5b7-6d47c733add9',
@@ -356,7 +448,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1451964697,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '07279184-cf34-4ae2-8200-abed8432394d',
@@ -385,7 +477,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1451964648,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f2fabb72-bdfb-4919-aaa4-6dd2422e02e1',
@@ -445,7 +537,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450158080,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fabaa558-6a24-470a-8ed7-80fef4da0516',
@@ -565,6 +657,41 @@ function dfc_bean_uuid_features_default_beans() {
     ),
   );
   $beans[] = array(
+    'label' => 'Diamond Benefits',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'diamond-benefits',
+    'view_mode' => 'default',
+    'created' => 1453757978,
+    'log' => '',
+    'uid' => 6,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '060ce1ad-1cff-4bb9-a707-b7a5214465d9',
+    'uuid' => 'f797c0ca-5b00-4782-84ea-5d676736e488',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Membership Benefits
+Platinum Membership +
+<ul>
+  <li>Something here</li>
+</ul>',
+          'format' => 'full_html',
+          'safe_value' => '<p>Membership Benefits<br />
+Platinum Membership +</p>
+<ul><li>Something here</li>
+</ul>',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
     'label' => 'Clubhouse Book',
     'description' => NULL,
     'title' => '',
@@ -576,7 +703,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450332494,
     'log' => '',
-    'uid' => 0,
+    'uid' => 6,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '294e0638-1575-460c-9d9c-d650f3ea3154',
@@ -620,6 +747,41 @@ function dfc_bean_uuid_features_default_beans() {
 <div class="ch-book-text">The Pacific Provider SuperYacht offers the ultimate in adventure, fishing, and filming</div>
 <div class="ch-book-link"><a href="/book-your-adventure">Check Availability</a></div>
 ',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
+    'label' => 'Platinum Benefits',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'platinum-benefits',
+    'view_mode' => 'default',
+    'created' => 1453757943,
+    'log' => '',
+    'uid' => 6,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '19b81831-f5f2-432e-8adc-7e45c0254fae',
+    'uuid' => 'fcd100e5-54e7-4cfc-bcf5-d4f6a4a861b5',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Membership Benefits
+Gold Membership +
+<ul>
+  <li>Something here</li>
+</ul>',
+          'format' => 'full_html',
+          'safe_value' => '<p>Membership Benefits<br />
+Gold Membership +</p>
+<ul><li>Something here</li>
+</ul>',
         ),
       ),
     ),

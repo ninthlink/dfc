@@ -10,13 +10,13 @@ function dfc_points_award_menu() {
   $items['dfc/points/grant/link'] = array(
     'page callback' => 'dfc_points_award_link',
     //'page arguments' => array(),
+    'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
   return $items;
 }
 
-function dfc_points_award_form_alter(&$form, &$form_state, $form_id)
-{
+function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
   global $user;
   $role = is_array($user->roles) && in_array('administrator', $user->roles);
 
@@ -59,6 +59,11 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
     $points = dfc_points_award_points_by_cat($cat);
     $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
   }
+  //display store items in points?
+//  if($view->name == 'store' && $field->field == 'commerce_price') {
+//    $points = $row->field_commerce_price[0]['raw']['amount'];
+//    $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
+//  }
 }
 
 function dfc_points_award_video ($vid, $time) {
@@ -110,11 +115,14 @@ function dfc_points_award_check_video_awarded($vid) {
   return FALSE;
 }
 
-function dfc_points_award_link ($vid, $time) {
-  //@todo verify points
-  $link_points = 10;
-  dfc_points_award_grant_points($link_points);
-  watchdog('dfc', 'awarding link points');
+function dfc_points_award_link () {
+  if ($l = $_GET['l']) {
+    //@todo verify points
+    $link_points = 10;
+    dfc_points_award_grant_points($link_points);
+    drupal_goto($l);
+    watchdog('dfc', 'awarding link points: ' . $l);
+  }
 }
 
 function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state) {

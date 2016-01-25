@@ -81,6 +81,7 @@ body.node-type-landing-page.section-news-events {
     
     .views-row {
       @include clearfix;
+      color: $color-black;
       margin-bottom: 20px;
 
   	  @include breakpoint($bp-desk) {
@@ -99,7 +100,7 @@ body.node-type-landing-page.section-news-events {
         text-decoration: none;
         
         &:hover {
-          color: $color-default;
+          color: $color-black;
         }
       }
     }

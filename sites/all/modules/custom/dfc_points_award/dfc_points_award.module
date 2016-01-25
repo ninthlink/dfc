@@ -33,7 +33,7 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
     $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
 
-    $threshold = 22 * 60;
+    $threshold = 21 * 60;
     if ($cat == 17) {
       //advertisement
       $threshold = 30;

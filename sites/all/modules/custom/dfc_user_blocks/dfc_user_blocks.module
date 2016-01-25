@@ -7,6 +7,9 @@ function dfc_user_blocks_block_info() {
   $blocks['your_membership'] = array(
     'info' => t('Your Membership'),
   );
+  $blocks['membership_benefits'] = array(
+    'info' => t('Membership Benefits'),
+  );
   return $blocks;
 }
 
@@ -18,6 +21,11 @@ function dfc_user_blocks_block_view($delta = '') {
         '#markup' =>  dfc_user_blocks_your_membership_view()
       );
       break;
+    case 'membership_benefits':
+      $block['content'] = array(
+        '#markup' =>  dfc_user_blocks_membership_benefits_view()
+      );
+      break;
   }
 
   return $block;
@@ -25,7 +33,7 @@ function dfc_user_blocks_block_view($delta = '') {
 function dfc_user_blocks_your_membership_view(){
   global $user;
   $user = user_load($user->uid);
-  foreach($user->roles as $rid => $role){
+  foreach($user->roles as $role){
     if(in_array($role, array('Silver', 'Gold', 'Platinum', 'Diamond'))){
       break;
     }
@@ -40,22 +48,19 @@ function dfc_user_blocks_your_membership_view(){
     $markup .= dfc_user_blocks_markup_wrapper($upgrade_markup, array('class' => 'upgrade-membership-wrapper'));
   }
   return $markup;
-//  dpm($roles);
-  //dpm($user);
-  //if(user_has_level(user_has_role($rid, $account = NULL)))
-
-/*  if($user->uid == 0) {
-    $link_markup = l('Member Login', 'javascript:void(0)', array('attributes' => array('id' => 'member_info_link'), 'external' => TRUE)); 
-  }else{
-    $lifetime_points = userpoints_get_current_points($user->uid, 0);
-    if(!empty($user->picture)){
-      $filepath = $user->picture->uri;
-    }else{
-      $filepath = variable_get('user_picture_default', '');
+}
+function dfc_user_blocks_membership_benefits_view(){
+  global $user;
+  $user = user_load($user->uid);
+  foreach($user->roles as $role){
+    if(in_array($role, array('Silver', 'Gold', 'Platinum', 'Diamond'))){
+      break;
     }
-    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image', array('path' => $filepath, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
   }
-  return $link_markup;*/
+  if(isset($role)){
+    $bean = bean_block_view(strtolower($role).'-benefits');
+    return theme('bean', $bean);
+  }
 }
 
 function dfc_user_blocks_markup_wrapper($markup, $attributes = NULL, $tag = 'div') {

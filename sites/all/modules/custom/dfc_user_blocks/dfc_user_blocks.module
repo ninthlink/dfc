@@ -1,0 +1,79 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function dfc_user_blocks_block_info() {
+  $blocks = array();
+  $blocks['your_membership'] = array(
+    'info' => t('Your Membership'),
+  );
+  return $blocks;
+}
+
+function dfc_user_blocks_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'your_membership':
+      $block['content'] = array(
+        '#markup' =>  dfc_user_blocks_your_membership_view()
+      );
+      break;
+  }
+
+  return $block;
+}
+function dfc_user_blocks_your_membership_view(){
+  global $user;
+  $user = user_load($user->uid);
+  foreach($user->roles as $rid => $role){
+    if(in_array($role, array('Silver', 'Gold', 'Platinum', 'Diamond'))){
+      break;
+    }
+  }
+  $current_markup = dfc_user_blocks_markup_wrapper('Current Membership Level', array('class' => 'current-membership-title'));
+  $current_markup .= dfc_user_blocks_markup_wrapper($role, array('class' => 'current-role'));
+  //$current_markup .= dfc_user_blocks_markup_wrapper('Your annual membership is scheduled to auto-renew on ', array('class' => 'auto-renew'));
+  $markup = dfc_user_blocks_markup_wrapper($current_markup, array('class' => 'current-membership-wrapper'));
+  if($role <> 'Diamond'){
+    $upgrade_markup = dfc_user_blocks_markup_wrapper('Want to upgrade?', array('class' => 'upgrade-membership-title'));
+    $upgrade_markup .= l('Membership Levels', '/membership');
+    $markup .= dfc_user_blocks_markup_wrapper($upgrade_markup, array('class' => 'upgrade-membership-wrapper'));
+  }
+  return $markup;
+//  dpm($roles);
+  //dpm($user);
+  //if(user_has_level(user_has_role($rid, $account = NULL)))
+
+/*  if($user->uid == 0) {
+    $link_markup = l('Member Login', 'javascript:void(0)', array('attributes' => array('id' => 'member_info_link'), 'external' => TRUE)); 
+  }else{
+    $lifetime_points = userpoints_get_current_points($user->uid, 0);
+    if(!empty($user->picture)){
+      $filepath = $user->picture->uri;
+    }else{
+      $filepath = variable_get('user_picture_default', '');
+    }
+    $link_markup = dfc_flop_menu_markup_wrapper(dfc_flop_menu_markup_wrapper($lifetime_points, array('class' => 'flop-link-points-wrapper')).'<a href="javascript:void(0);" id="member_info_link">'.theme('image', array('path' => $filepath, 'attributes' => array())).'</a>', array('id' => 'dfc-user-flop-link'));
+  }
+  return $link_markup;*/
+}
+
+function dfc_user_blocks_markup_wrapper($markup, $attributes = NULL, $tag = 'div') {
+  if ( $tag == 'usermenu' ) {
+    $output = '<span class="icon"></span><span class="title">'. $markup .'</span>';
+    if (isset($attributes) && is_array($attributes)) {
+      if ( isset( $attributes['count'] ) ) {
+        $output .= '<span class="count">'. $attributes['count'] .'</span>';
+      }
+    }
+  } else {
+    $attrs = '';
+    if (isset($attributes) && is_array($attributes)) {
+      foreach($attributes as $k => $v) {
+        $attrs .= " $k='$v'";
+      }
+    }
+    $output = "<$tag$attrs>$markup</$tag>";
+  }
+  return $output;
+}

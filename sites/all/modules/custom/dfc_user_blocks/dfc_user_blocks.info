@@ -1,0 +1,5 @@
+name = DFC User Blocks
+project = "DFC"
+package = "DFC"
+description = Blocks on the user page
+core = 7.x

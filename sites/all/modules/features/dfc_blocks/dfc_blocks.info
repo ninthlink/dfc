@@ -1,6 +1,7 @@
 name = DFC Blocks
 core = 7.x
 package = Features
+dependencies[] = dfc_user_blocks
 dependencies[] = fe_block
 dependencies[] = menu
 features[fe_block_settings][] = menu-menu-footer-menu

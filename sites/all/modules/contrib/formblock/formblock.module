@@ -70,6 +70,10 @@ function formblock_block_info() {
     'info' => t('Request new password form'),
     'cache' => DRUPAL_NO_CACHE,
   );
+  $blocks['user_profile_form'] = array(
+      'info' => t('User profile form'),
+      'cache' => DRUPAL_NO_CACHE,
+  );
 
   return $blocks;
 }
@@ -89,6 +93,18 @@ function formblock_block_view($delta = '') {
         $block['subject'] = t('Create new account');
         return $block;
       }
+      break;
+    case 'user_profile_form':
+      global $user;
+      $account = user_load($user->uid);
+      module_load_include('inc', 'user', 'user.pages');
+      $form_state = array();
+      $form_state['build_info']['args'] = array($account);
+      form_load_include($form_state, 'inc', 'user', 'user.pages');
+
+      $block['content'] = render(drupal_build_form('user_profile_form', $form_state));
+      $block['subject'] = t('User Profile');
+        return $block;
       break;
     case 'user_password_request':
       module_load_include('inc', 'user', 'user.pages');

@@ -150,7 +150,7 @@
             
       .field--city-state {
         @include rem(font-size, 16px);
-        color: $color-gray-9;
+        color: $color-gray-c;
         margin-bottom: 30px;
       }
     }
@@ -187,18 +187,42 @@
 }
 
 // override for my profile section
-body.section-users .view-user-ranking {
-  
+body.section-users {
+  .view-user-ranking {
+    
     @include breakpoint($bp-tab) {
       float: right;
       width: 50%;
       margin-top: -200px;
     }
 
-  .current-profile-month,
-  .current-profile-lifetime {
-    @include breakpoint($bp-tab) {
-      width: 50%;
+    .current-profile-month,
+    .current-profile-lifetime {
+      @include breakpoint($bp-tab) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// override for my profile Edit section
+body.section-user {
+  .view-user-ranking {
+    .profile-info {
+      .personal-info {
+      
+        .member-name {
+          color: $color-white;
+          font-family: $dr;
+          @include rem(font-size, 33px);
+          line-height: 0.9;
+          padding-top: 10px;
+          
+          div {
+            display: block;
+          }
+        }
+      }
     }
   }
 }

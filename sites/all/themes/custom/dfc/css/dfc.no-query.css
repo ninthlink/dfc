@@ -702,7 +702,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     .view-user-ranking .profile-info .personal-info .field--city-state {
       font-size: 16px;
       font-size: 1rem;
-      color: #999999;
+      color: #CCCCCC;
       margin-bottom: 30px; }
   /* line 159, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .current-profile-month,
@@ -723,6 +723,18 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       font-size: 25px;
       font-size: 1.5625rem;
       display: block; }
+
+/* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+body.section-user .view-user-ranking .profile-info .personal-info .member-name {
+  color: #ffffff;
+  font-family: "dangerregular", Helvetica, sans-serif;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 0.9;
+  padding-top: 10px; }
+  /* line 221, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  body.section-user .view-user-ranking .profile-info .personal-info .member-name div {
+    display: block; }
 
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_comments.scss */
 #comments {

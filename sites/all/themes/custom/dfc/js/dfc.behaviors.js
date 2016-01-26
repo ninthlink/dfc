@@ -56,16 +56,20 @@
       });
       
       if ( $('#block-views-user-ranking-block-1').size() > 0 ) {
-        // add x
-        $('#block-views-user-ranking-block-1').each(function() {
-          if ( $(this).find('.xcollapse').size() == 0 ) {
-            $(this).find('.view-content').append('<a href="#x" class="xcollapse">x</a>')
-              .children('.xcollapse').click(function() {
-                $(this).parent().toggle();
-                return false;
-              });
-          }
-        });
+        // add x?
+        if ( $('body').hasClass('section-user') ) {
+          $('#block-views-user-ranking-block-1').find('h2, h3, .view-filters, .views-field-lifetime-user-standing').remove();
+        } else {
+          $('#block-views-user-ranking-block-1').each(function() {
+            if ( $(this).find('.xcollapse').size() == 0 ) {
+              $(this).find('.view-content').append('<a href="#x" class="xcollapse">x</a>')
+                .children('.xcollapse').click(function() {
+                  $(this).parent().toggle();
+                  return false;
+                });
+            }
+          });
+        }
       }
     }
   };

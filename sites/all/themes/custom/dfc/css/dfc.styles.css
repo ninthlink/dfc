@@ -93,8 +93,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* generated with grunt-sass-globbing */
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
-  border: 0;
+.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
+  border: 2px solid #f1592a;
   background: #f1592a;
   color: #ffffff;
   font-size: 20px;
@@ -108,15 +108,17 @@ The `sprites` mixin generates identical output to the CSS template
   vertical-align: middle;
   text-align: center; }
   /* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
+  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
     background: #000000;
-    color: #f1592a; }
+    color: #f1592a;
+    text-decoration: none; }
 
-/* line 26, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-.button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover {
-  background: #272727; }
+/* line 27, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+.button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover {
+  background: #272727;
+  border-color: #272727; }
 
-/* line 32, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+/* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
 .button-clear, .view-giveaway-winners .prize-header .prize-buttons a, .block--bean-clubhouse-feature .ch-feature-link a, .block--bean-clubhouse-book .ch-book-link a {
   border: 2px solid #ffffff;
   background: transparent;
@@ -131,22 +133,22 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase;
   vertical-align: middle;
   text-align: center; }
-  /* line 46, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+  /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
   .button-clear:hover, .view-giveaway-winners .prize-header .prize-buttons a:hover, .block--bean-clubhouse-feature .ch-feature-link a:hover, .block--bean-clubhouse-book .ch-book-link a:hover {
     background: #f1592a;
     color: #ffffff;
     border: 2px solid #f1592a; }
 
-/* line 54, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+/* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
 .button-outline {
   border: 2px solid #ffffff;
   background: none;
   font-size: 14px;
   margin: 41px 0 0;
   padding: 15px 45px; }
-  /* line 63, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+  /* line 65, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
   .button-outline:hover {
-    border: #f1592a;
+    border: 2px solid #f1592a;
     background: #f1592a;
     color: #ffffff; }
 
@@ -161,6 +163,13 @@ The `sprites` mixin generates identical output to the CSS template
   font-family: 'dangerregular';
   src: url("../fonts/danger-webfont.eot");
   src: url("../fonts/danger-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/danger-webfont.woff2") format("woff2"), url("../fonts/danger-webfont.woff") format("woff"), url("../fonts/danger-webfont.ttf") format("truetype"), url("../fonts/danger-webfont.svg#dangerregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'tradegothic-bold';
+  src: url("../fonts/TradeGothicLTStd-Bold.eot");
+  src: url("../fonts/TradeGothicLTStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TradeGothicLTStd-Bold.woff2") format("woff2"), url("../fonts/TradeGothicLTStd-Bold.woff") format("woff"), url("../fonts/TradeGothicLTStd-Bold.ttf") format("truetype"), url("../fonts/TradeGothicLTStd-Bold.svg#tradegothic-bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -675,7 +684,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
         color: #f1592a; }
     /* line 51, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-cta.scss */
     .block--bean-home-cta .home-cta .home-cta-subtitle {
-      font-weight: bold;
+      font-family: "tradegothic-bold", Georgia, serif;
       color: #ffffff;
       font-size: 20px;
       font-size: 1.25rem;
@@ -683,8 +692,8 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       @media (min-width: 960px) {
         /* line 51, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-cta.scss */
         .block--bean-home-cta .home-cta .home-cta-subtitle {
-          font-size: 16px;
-          font-size: 1rem; } }
+          font-size: 18px;
+          font-size: 1.125rem; } }
     @media (min-width: 960px) {
       /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-cta.scss */
       .block--bean-home-cta .home-cta .home-cta-link {
@@ -881,6 +890,19 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       font-size: 25px;
       font-size: 1.5625rem;
       display: block; }
+
+@media (min-width: 590px) {
+  /* line 190, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  body.section-users .view-user-ranking {
+    float: right;
+    width: 50%;
+    margin-top: -200px; } }
+
+@media (min-width: 590px) {
+  /* line 198, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  body.section-users .view-user-ranking .current-profile-month,
+  body.section-users .view-user-ranking .current-profile-lifetime {
+    width: 50%; } }
 
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_comments.scss */
 #comments {
@@ -1742,7 +1764,7 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
         color: #f1592a; }
     /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-subtitle {
-      font-weight: bold;
+      font-family: "tradegothic-bold", Georgia, serif;
       color: #f1592a;
       font-size: 20px;
       font-size: 1.25rem;
@@ -1781,8 +1803,13 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
     display: block;
     float: left;
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     text-indent: -9999px; }
-    /* line 40, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
+    /* line 45, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
     .view-offers .views-row a:before {
       content: "";
       display: block;
@@ -1793,10 +1820,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       height: 100%;
       background: #000000;
       opacity: 0; }
-    /* line 52, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
+    /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
     .view-offers .views-row a:hover:before {
       opacity: .3; }
-  /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
+  /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-offers.scss */
   .view-offers .views-row img {
     float: left; }
 
@@ -1920,31 +1947,30 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       border-color: #f1592a;
       display: block;
       margin-bottom: 20px;
-      font-family: inherit;
-      font-size: 13px;
-      font-size: 0.8125rem;
-      font-weight: bold;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 14px;
+      font-size: 0.875rem;
       padding: 15px 0; }
       @media (min-width: 1180px) {
-        /* line 70, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+        /* line 69, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
         .view-giveaway-winners .prize-header .prize-buttons a:first-child {
           float: left;
           width: 48%; } }
       @media (min-width: 1180px) {
-        /* line 78, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+        /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
         .view-giveaway-winners .prize-header .prize-buttons a:last-child {
           float: right;
           width: 48%; } }
-  /* line 91, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  /* line 90, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
   .view-giveaway-winners .views-table {
     width: 100%; }
-    /* line 96, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 95, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table tr.odd {
       background-color: #27282a; }
-    /* line 100, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 99, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table tr.even {
       background-color: #161618; }
-    /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 104, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table td {
       padding: 10px;
       color: #999999;
@@ -1952,19 +1978,19 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       line-height: 1;
       font-size: 15px;
       font-size: 0.9375rem; }
-    /* line 113, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 112, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table td.views-field-counter {
       padding-left: 15px; }
-    /* line 117, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 116, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table td.views-field-picture {
       padding: 10px 0; }
-      /* line 120, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      /* line 119, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
       .view-giveaway-winners .views-table td.views-field-picture img {
         border-radius: 100px;
         width: 40px;
         overflow: hidden;
         border: 1px solid #ffffff; }
-    /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table td.views-field-field-last-name {
       color: #ffffff;
       text-transform: uppercase;
@@ -1972,54 +1998,54 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       font-size: 13px;
       font-size: 0.8125rem;
       font-family: inherit; }
-    /* line 140, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 139, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     .view-giveaway-winners .views-table .views-field-field-winners-points {
       white-space: nowrap; }
-      /* line 143, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      /* line 142, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
       .view-giveaway-winners .views-table .views-field-field-winners-points .field-label {
         color: #f1592a;
         font-family: "sanchezregular", Helvetica, sans-serif; }
-      /* line 148, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+      /* line 147, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
       .view-giveaway-winners .views-table .views-field-field-winners-points .field-content {
         color: #ffffff;
         font-family: "sanchezregular", Helvetica, sans-serif;
         font-weight: bold; }
-        /* line 153, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+        /* line 152, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
         .view-giveaway-winners .views-table .views-field-field-winners-points .field-content div {
           display: inline; }
 
 @media (min-width: 960px) {
-  /* line 174, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  /* line 173, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
   body.front .view-giveaway-winners .view-header {
     float: left;
     width: 35%; } }
 
 @media (min-width: 1180px) {
-  /* line 174, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  /* line 173, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
   body.front .view-giveaway-winners .view-header {
     width: 40%; } }
 
 @media (min-width: 960px) {
-  /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  /* line 185, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
   body.front .view-giveaway-winners .view-content {
     float: right;
     width: 60%; } }
 
 @media (min-width: 1180px) {
-  /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  /* line 185, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
   body.front .view-giveaway-winners .view-content {
     width: 52.4%; } }
 
-/* line 206, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+/* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
 body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-header {
   padding: 20px 0 40px; }
   @media (min-width: 960px) {
-    /* line 206, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+    /* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
     body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-header {
       margin: 0 auto 50px;
       width: 50%; } }
 
-/* line 215, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+/* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
 body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-content {
   margin-bottom: 40px; }
 
@@ -2094,7 +2120,7 @@ body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-
   font-family: "sanchezregular", Helvetica, sans-serif;
   line-height: 1;
   position: absolute;
-  top: 110px !important;
+  top: 130px !important;
   left: 0;
   z-index: 999;
   background: rgba(239, 87, 41, 0.95); }
@@ -4657,31 +4683,32 @@ body.logged-in .block--dfc-flop-menu-userflop {
     text-transform: uppercase; }
   /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-city-state {
+    font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;
     font-size: 0.875rem;
     color: #999999;
     margin-bottom: 20px; }
-  /* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 246, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links {
     text-align: left; }
-    /* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li {
       border-top: 1px solid #4e4e4e;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 14px;
       font-size: 0.875rem;
       line-height: 1; }
-      /* line 255, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a {
         display: block;
         color: #999999;
         text-decoration: none;
         padding: 15px 30px; }
-        /* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 262, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a:hover {
           background: #f1592a;
           color: #ffffff; }
-  /* line 269, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .flop-points-wrapper {
     background: #f1592a;
     color: #000000;
@@ -4691,44 +4718,44 @@ body.logged-in .block--dfc-flop-menu-userflop {
     text-align: left;
     overflow: hidden;
     *zoom: 1; }
-  /* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .points-title-wrapper {
     font-size: 17px;
     font-size: 1.0625rem;
     color: #ffffff;
     margin-bottom: 10px; }
-  /* line 285, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_markup,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: left;
     width: 50%; }
-  /* line 291, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: right; }
-  /* line 295, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 296, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-title-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-title-wrapper {
     font-size: 18px;
     font-size: 1.125rem; }
-  /* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-points-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-points-wrapper {
     font-size: 28px;
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 10px; }
-  /* line 307, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 308, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links {
     font-size: 12px;
     font-size: 0.75rem;
     color: #ffffff;
     margin-bottom: 20px; }
-    /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links a,
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links a {
       color: #ffffff; }
-  /* line 328, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 329, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop a.x {
     margin: 0;
     position: absolute;

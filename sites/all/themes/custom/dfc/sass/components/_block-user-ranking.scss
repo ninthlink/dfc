@@ -185,3 +185,20 @@
   .views-field-lifetime-points {}
   
 }
+
+// override for my profile section
+body.section-users .view-user-ranking {
+  
+    @include breakpoint($bp-tab) {
+      float: right;
+      width: 50%;
+      margin-top: -200px;
+    }
+
+  .current-profile-month,
+  .current-profile-lifetime {
+    @include breakpoint($bp-tab) {
+      width: 50%;
+    }
+  }
+}

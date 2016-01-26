@@ -1,6 +1,6 @@
 // This button is orange to black for gray backgrouns
 .button {
-	border: 0;
+	border: 2px solid $color-orange;
 	background: $color-orange;
 	color: $color-white;
 	@include rem(font-size, 20px);
@@ -16,6 +16,7 @@
 	&:hover {
 		background: $color-black;
 		color: $color-orange;
+    text-decoration: none;
 	}
 }
 
@@ -25,6 +26,7 @@
 	
 	&:hover {
 		background: $color-gray-27;
+    border-color: $color-gray-27;
 	}
 }
 
@@ -61,7 +63,7 @@
   padding: 15px 45px;
   
   &:hover {
-    border: $color-orange;
+    border: 2px solid $color-orange;
     background: $color-orange;
     color: $color-white;
   }

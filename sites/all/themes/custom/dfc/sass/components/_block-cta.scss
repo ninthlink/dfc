@@ -49,13 +49,13 @@
 		}
 		
 		.home-cta-subtitle {
-			font-weight: bold;
+			font-family: $tg;
 			color: $color-white;
 			@include rem(font-size, 20px);
 			margin-bottom: 10px;
 			
 		  @include breakpoint($bp-desk) {
-		    @include rem(font-size, 16px);
+		    @include rem(font-size, 18px);
 		  }
 		}
 		

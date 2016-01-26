@@ -242,7 +242,7 @@
 		}
 		
 		.how-cta-subtitle {
-			font-weight: bold;
+			font-family: $tg;
 			color: $color-orange;
 			@include rem(font-size, 20px);
 			margin-bottom: 15px;

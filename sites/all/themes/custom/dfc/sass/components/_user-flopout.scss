@@ -237,6 +237,7 @@ body.logged-in {
       }
 
       .user-city-state {
+        font-family: $sr;
         @include rem(font-size, 14px);
         color: $color-gray-9;
         margin-bottom: 20px;

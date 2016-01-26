@@ -61,7 +61,7 @@
 	display: block;
 	font-family: "dangerregular",Helvetica,sans-serif;
 	letter-spacing: 2px;
-	padding: 15px 60px;
+	padding: 0;
 	text-decoration: none;
 	text-transform: uppercase;
 	vertical-align: middle;
@@ -73,12 +73,22 @@
 
 .group-bottomctas .collapsible h3 a
 {
+  border: 2px solid #f1592a;
 	color: #FFF;
 	font-size: 1.25rem;
 	display: block;
 	font-family: "dangerregular",Helvetica,sans-serif;
 	letter-spacing: 2px;
+  padding: 15px 60px;
 }
+
+.group-bottomctas .collapsible h3 a:hover
+{
+  text-decoration: none;
+  background: #000;
+  color: #f1592a;
+}
+
 
 .group-bottomctas .collapsible .field-label
 {

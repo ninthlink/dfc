@@ -20,6 +20,5 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   }
 }

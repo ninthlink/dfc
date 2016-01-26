@@ -218,7 +218,7 @@ $databases['default']['default'] = array(
 	'driver' => 'mysql',
     'database' => 'dfc',
     'username' => 'root',
-    'password' => 'root',
+    'password' => '',
     'host' => 'localhost',
     'prefix' => '',
  );

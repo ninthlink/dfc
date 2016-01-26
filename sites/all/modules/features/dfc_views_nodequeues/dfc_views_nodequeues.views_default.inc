@@ -1855,6 +1855,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['label'] = '';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'Current ranking';
+  $handler->display->display_options['fields']['nothing_2']['element_type'] = 'h3';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
   /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset_2']['id'] = 'fieldset_2';
@@ -1934,6 +1935,17 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_city_state']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_city_state']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_city_state']['field_api_classes'] = TRUE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_3']['id'] = 'fieldset_3';
+  $handler->display->display_options['fields']['fieldset_3']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_3']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_3']['label'] = 'Current Points Month';
+  $handler->display->display_options['fields']['fieldset_3']['children'] = array(
+    0 => 'monthly_points',
+    1 => 'nothing_1',
+  );
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['classes'] = 'current-profile-month';
   /* Field: DFC Points: Monthly Points */
   $handler->display->display_options['fields']['monthly_points']['id'] = 'monthly_points';
   $handler->display->display_options['fields']['monthly_points']['table'] = 'dfc_points_views';
@@ -1943,8 +1955,19 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/store">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_4']['id'] = 'fieldset_4';
+  $handler->display->display_options['fields']['fieldset_4']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_4']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_4']['label'] = 'Current Points Lifetime';
+  $handler->display->display_options['fields']['fieldset_4']['children'] = array(
+    0 => 'lifetime_points',
+    1 => 'nothing',
+  );
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['classes'] = 'current-profile-lifetime';
   /* Field: DFC Points: Lifetime Points */
   $handler->display->display_options['fields']['lifetime_points']['id'] = 'lifetime_points';
   $handler->display->display_options['fields']['lifetime_points']['table'] = 'dfc_points_views';
@@ -1954,7 +1977,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';

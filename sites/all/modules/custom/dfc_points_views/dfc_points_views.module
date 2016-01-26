@@ -35,4 +35,15 @@ function dfc_points_views_views_query_alter(&$view, &$query) {
     }
   }
 }
-?>
+
+function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'views_exposed_form') {
+    if ( $form['#id'] == 'views-exposed-form-user-ranking-block-1' ) {
+      // replace
+      unset( $form['#info']['filter-uid'] );
+      $form['uid']['#description'] = '';
+      $form['uid']['#attributes']['placeholder'] = t('Enter name to check ranking');
+    }
+  }
+  //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
+}

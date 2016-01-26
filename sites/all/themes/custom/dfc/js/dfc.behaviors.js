@@ -54,6 +54,19 @@
         // The anchor is then appended to the current element.
         $anchor.appendTo(this);
       });
+      
+      if ( $('#block-views-user-ranking-block-1').size() > 0 ) {
+        // add x
+        $('#block-views-user-ranking-block-1').each(function() {
+          if ( $(this).find('.xcollapse').size() == 0 ) {
+            $(this).find('.view-content').append('<a href="#x" class="xcollapse">x</a>')
+              .children('.xcollapse').click(function() {
+                $(this).parent().toggle();
+                return false;
+              });
+          }
+        });
+      }
     }
   };
 

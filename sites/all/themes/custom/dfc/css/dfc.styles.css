@@ -3074,6 +3074,24 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
         margin: auto;
         width: 54%; } }
 
+/* line 167, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+.content-bottom .block {
+  float: left;
+  width: 100%; }
+  /* line 171, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  .content-bottom .block .inner,
+  .content-bottom .block .view-user-ranking .view-content {
+    float: left;
+    width: 100%; }
+  /* line 177, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  .content-bottom .block .xcollapse {
+    font-size: 20px;
+    font-size: 1.25rem;
+    color: #999999;
+    position: absolute;
+    right: 50px;
+    bottom: 20px; }
+
 /* line 3, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 body.node-type-landing-page.section-media .l-main {
   max-width: none; }

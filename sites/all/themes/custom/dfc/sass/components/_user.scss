@@ -424,3 +424,61 @@ body.section-user.not-logged-in {
     display: none;
   }
 }
+
+// Points landing
+body.section-user.page-user-points {
+  form {
+    background: $color-white;
+    color: $color-black;
+    
+    .form-item {
+      background: $color-gray-c;
+      float: left;
+      margin: 0;
+      width: 100%;
+      
+      label {
+        float: left;
+        padding: 20px;
+        
+        @include breakpoint($bp-desk) {
+          padding-left: 50px;
+        }
+      }
+      
+      select {
+        float: left;
+        margin: 20px 0;
+      }
+      
+    }
+  }
+  table {
+    width: 100%;
+    
+    th {
+      background: $color-white;
+      padding: 20px;
+      
+      @include breakpoint($bp-desk) {
+        padding: 20px 50px;
+      }
+    }
+    th.active img {
+      width: auto;
+    }
+    
+    td {
+      padding: 10px 20px;
+
+      @include breakpoint($bp-desk) {
+        padding: 10px 50px;
+      }
+    }
+    
+    td.userpoints-transactions-field-points {
+      text-align: left;
+    }
+
+  }
+}

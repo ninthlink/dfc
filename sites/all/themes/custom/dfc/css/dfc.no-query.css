@@ -3828,4 +3828,40 @@ form.user-profile-form {
 body.section-user.not-logged-in .tabs.tabs--primary {
   display: none; }
 
+/* line 430, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+body.section-user.page-user-points form {
+  background: #ffffff;
+  color: #000000; }
+  /* line 434, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  body.section-user.page-user-points form .form-item {
+    background: #CCCCCC;
+    float: left;
+    margin: 0;
+    width: 100%; }
+    /* line 440, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    body.section-user.page-user-points form .form-item label {
+      float: left;
+      padding: 20px; }
+    /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    body.section-user.page-user-points form .form-item select {
+      float: left;
+      margin: 20px 0; }
+
+/* line 456, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+body.section-user.page-user-points table {
+  width: 100%; }
+  /* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  body.section-user.page-user-points table th {
+    background: #ffffff;
+    padding: 20px; }
+  /* line 467, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  body.section-user.page-user-points table th.active img {
+    width: auto; }
+  /* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  body.section-user.page-user-points table td {
+    padding: 10px 20px; }
+  /* line 479, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  body.section-user.page-user-points table td.userpoints-transactions-field-points {
+    text-align: left; }
+
 /*# sourceMappingURL=dfc.no-query.css.map */

@@ -600,76 +600,107 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
 .block--views-user-ranking-block-1 {
   position: relative;
   background: #363636;
-  padding: 20px;
-  text-align: center;
+  padding: 0;
+  text-align: left;
   margin-bottom: 50px; }
-  /* line 14, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 9, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .block--views-user-ranking-block-1 h2.block__title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
+    background: #f1592a;
     text-transform: uppercase;
-    margin-bottom: 40px; }
+    margin: 0;
+    padding: 20px; }
 
-/* line 22, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 36, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+#views-exposed-form-user-ranking-block-1 {
+  background: #ffffff;
+  margin: 0 0 40px;
+  padding: 20px;
+  text-align: left; }
+  /* line 55, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  #views-exposed-form-user-ranking-block-1 .views-exposed-widget {
+    padding: 0 !important; }
+  /* line 58, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  #views-exposed-form-user-ranking-block-1 .views-exposed-widgets {
+    margin: 0 !important; }
+  /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  #views-exposed-form-user-ranking-block-1 .form-text,
+  #views-exposed-form-user-ranking-block-1 .form-submit {
+    float: left;
+    margin: 0;
+    max-width: 80%; }
+
+/* line 69, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+#edit-uid {
+  border: none;
+  font-family: "dangerregular", Helvetica, sans-serif;
+  letter-spacing: 2px;
+  line-height: 22px;
+  max-width: 100%;
+  padding: 0 6px;
+  text-transform: uppercase; }
+
+/* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 .view-user-ranking {
   text-align: center; }
-  /* line 29, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 86, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking h3 {
     font-size: 20px;
     font-size: 1.25rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: uppercase; }
-  /* line 36, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 93, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .views-row {
     overflow: hidden;
     *zoom: 1;
     line-height: 1; }
-  /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .views-field-picture {
     margin-bottom: 30px; }
-    /* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 113, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .views-field-picture img {
       width: 140px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 121, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .personal-info {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
-    /* line 73, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;
       color: #f1592a;
       margin-bottom: 25px; }
-      /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 136, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing:after {
         content: "."; }
-    /* line 84, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 141, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .member-name {
       font-size: 18px;
       font-size: 1.125rem;
       text-transform: uppercase;
       margin-bottom: 10px; }
-      /* line 89, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info .member-name div {
         display: inline-block; }
-    /* line 94, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .field--city-state {
       font-size: 16px;
       font-size: 1rem;
       color: #999999;
       margin-bottom: 30px; }
-  /* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 159, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .current-profile-month,
   .view-user-ranking .current-profile-lifetime {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
-    /* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 172, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .current-profile-month .views-label,
     .view-user-ranking .current-profile-lifetime .views-label {
       font-size: 16px;
@@ -677,7 +708,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       color: #f1592a;
       display: block;
       margin-bottom: 10px; }
-    /* line 122, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 179, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .current-profile-month .field-content,
     .view-user-ranking .current-profile-lifetime .field-content {
       font-size: 25px;

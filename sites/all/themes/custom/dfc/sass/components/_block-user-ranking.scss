@@ -2,21 +2,78 @@
 .block--views-user-ranking-block-1 {
 	position: relative;
   background: $color-gray-36;
-  padding: 20px;
-  text-align: center;
+  padding: 0;
+  text-align: left;
   margin-bottom: 50px;
-
-  @include breakpoint($bp-tab) {
-    text-align: left;
-    padding: 50px;
-  }
 
   h2.block__title {
     font-family: $dr;
     @include rem(font-size, 25px);
+    background: $color-orange;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin: 0;
+    padding: 20px;
+
+    @include breakpoint($bp-tab) {
+      width: 50%;
+    }
+    
+    @include breakpoint($bp-desk) {
+      width: 66.66666667%;
+    }
   }
+  
+  .view-content {
+    @include breakpoint($bp-tab) {
+      padding: 20px;
+    }
+    
+    @include breakpoint($bp-tab) {
+      padding: 50px;
+    }
+  }
+}
+#views-exposed-form-user-ranking-block-1 {
+  background: $color-white;
+  margin: 0 0 40px;
+  padding: 20px;
+  text-align: left;
+
+  @include breakpoint($bp-tab) {
+    margin-bottom: 0;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+  }
+  
+  @include breakpoint($bp-desk) {
+    left: 66.66666667%;
+    width: 33.33333333%;
+  }
+  .views-exposed-widget {
+    padding: 0 !important;
+  }
+  .views-exposed-widgets {
+    margin: 0 !important;
+  }
+  
+  .form-text,
+  .form-submit {
+    float: left;
+    margin: 0;
+    max-width: 80%;
+  }
+}
+#edit-uid {
+  border: none;
+  font-family: $dr;
+  letter-spacing: 2px;
+  line-height: 22px;
+  max-width: 100%;
+  padding: 0 6px;
+  text-transform: uppercase;
 }
 
 .view-user-ranking {

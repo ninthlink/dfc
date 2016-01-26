@@ -47,3 +47,20 @@ function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
   }
   //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }
+
+/*
+ * hook_userpoints_list_transactions_alter
+ * to remove unwanted columns from /user/#/points via the drupal_alter('userpoints_list_transactions', $output);
+ */
+function dfc_points_views_userpoints_list_transactions_alter( &$data ) {
+	// remove Status + Actions columns
+	$remove = array(4,5);
+	foreach ( $remove as $r ) {
+		unset($data['list']['table']['#header'][$r]);
+	}
+	foreach ( $data['list']['table']['#rows'] as $k => $v ) {
+		foreach ( $remove as $r ) {
+			unset($data['list']['table']['#rows'][$k]['data'][$r]);
+		}
+	}
+}

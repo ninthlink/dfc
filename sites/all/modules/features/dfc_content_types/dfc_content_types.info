@@ -1,7 +1,7 @@
 name = DFC Content Types
 description = Content Types, Taxonomy
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = commerce_cart
 dependencies[] = content_access
 dependencies[] = date

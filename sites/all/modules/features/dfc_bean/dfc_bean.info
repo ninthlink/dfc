@@ -1,6 +1,6 @@
 name = DFC Bean
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = bean
 dependencies[] = bean_admin_ui
 dependencies[] = bean_uuid

@@ -22,7 +22,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450153673,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '2c83c955-fff2-4f65-b157-3f1647230710',
@@ -33,17 +33,17 @@ function dfc_bean_uuid_features_default_beans() {
         0 => array(
           'value' => '<div class="copyright-info">© 2016 Dollar Fishing Club. All Rights Reserved.</div>
 <ul class="social-links">
-<li class="social-twitter"><a href="http://www.twitter.com"><span class="social-text">Twitter</span></a></li>
-<li class="social-facebook"><a href="http://www.facebook.com"><span class="social-text">Facebook</span></a></li>
-<li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
-<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li>
+<li class="social-twitter"><a href="https://twitter.com/DollarFishing" title="Twitter" target="_blank"><span class="social-text">Twitter</span></a></li>
+<li class="social-facebook"><a href="https://www.facebook.com/dollarfishingclub" title="Facebook" target="_blank"><span class="social-text">Facebook</span></a></li>
+<!--li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
+<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li-->
 <ul>',
           'format' => 'full_html',
           'safe_value' => '<div class="copyright-info">© 2016 Dollar Fishing Club. All Rights Reserved.</div>
-<ul class="social-links"><li class="social-twitter"><a href="http://www.twitter.com"><span class="social-text">Twitter</span></a></li>
-<li class="social-facebook"><a href="http://www.facebook.com"><span class="social-text">Facebook</span></a></li>
-<li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
-<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li>
+<ul class="social-links"><li class="social-twitter"><a href="https://twitter.com/DollarFishing" title="Twitter" target="_blank"><span class="social-text">Twitter</span></a></li>
+<li class="social-facebook"><a href="https://www.facebook.com/dollarfishingclub" title="Facebook" target="_blank"><span class="social-text">Facebook</span></a></li>
+<!--li class="social-googleplus"><p><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
+<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li-->
 <ul></ul></ul>',
         ),
       ),
@@ -61,7 +61,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450843080,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'ea98e245-cba1-48a9-b19a-e60effd0a792',
@@ -81,7 +81,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450150434,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6e781f86-cf14-4af4-a541-4a7951021be0',
@@ -110,7 +110,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450332189,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '6c8c3de9-a439-49ee-9021-eb4c1b955eb2',
@@ -167,7 +167,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453754659,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '05876674-e68c-4782-849c-040d6c5ce5ce',
@@ -216,7 +216,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453757653,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '751fee72-ec66-42f1-8487-71351f74f2a3',
@@ -259,7 +259,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1450331904,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '55894b8a-1450-4acd-afef-e174e370d407',
@@ -315,7 +315,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1450325918,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f19bf831-d131-4c35-8903-9d3f5b120738',
@@ -359,7 +359,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1450331675,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '95dcb470-9820-483b-871c-bf63e2b924bb',
@@ -388,7 +388,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1450331544,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fa179783-eefd-4ff5-b5b7-6d47c733add9',
@@ -448,7 +448,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1451964697,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '07279184-cf34-4ae2-8200-abed8432394d',
@@ -477,7 +477,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1451964648,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'f2fabb72-bdfb-4919-aaa4-6dd2422e02e1',
@@ -537,7 +537,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1450158080,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'fabaa558-6a24-470a-8ed7-80fef4da0516',
@@ -668,7 +668,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1453757978,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '060ce1ad-1cff-4bb9-a707-b7a5214465d9',
@@ -703,7 +703,7 @@ Platinum Membership +</p>
     'view_mode' => 'default',
     'created' => 1450332494,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '294e0638-1575-460c-9d9c-d650f3ea3154',
@@ -763,7 +763,7 @@ Platinum Membership +</p>
     'view_mode' => 'default',
     'created' => 1453757943,
     'log' => '',
-    'uid' => 6,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '19b81831-f5f2-432e-8adc-7e45c0254fae',

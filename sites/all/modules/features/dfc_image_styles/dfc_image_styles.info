@@ -1,6 +1,6 @@
 name = DFC Image Styles
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = 1070x610

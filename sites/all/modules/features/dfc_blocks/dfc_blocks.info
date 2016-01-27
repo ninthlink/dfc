@@ -1,6 +1,6 @@
 name = DFC Blocks
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = dfc_user_blocks
 dependencies[] = fe_block
 dependencies[] = menu

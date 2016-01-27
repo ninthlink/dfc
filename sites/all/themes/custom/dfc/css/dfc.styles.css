@@ -1266,28 +1266,29 @@ body.node-type-media-item ul.node__links {
   /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
   .block--bean-footer-copyright ul.social-links li a {
     color: #828384;
+    float: left;
     text-decoration: none; }
-    /* line 61, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+    /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
     .block--bean-footer-copyright ul.social-links li a span {
       display: none; }
-    /* line 65, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+    /* line 66, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
     .block--bean-footer-copyright ul.social-links li a:before {
       display: block;
       font-family: "fontawesome", Arial;
       font-size: 25px; }
-    /* line 71, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+    /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
     .block--bean-footer-copyright ul.social-links li a:hover:before {
       color: #f1592a; }
-  /* line 80, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+  /* line 81, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
   .block--bean-footer-copyright ul.social-links li.social-twitter a:before {
     content: "\f099"; }
-  /* line 90, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+  /* line 91, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
   .block--bean-footer-copyright ul.social-links li.social-facebook a:before {
     content: "\f09a"; }
-  /* line 100, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+  /* line 101, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
   .block--bean-footer-copyright ul.social-links li.social-googleplus a:before {
     content: "\f0d5"; }
-  /* line 110, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
+  /* line 111, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_footer.scss */
   .block--bean-footer-copyright ul.social-links li.social-instagram a:before {
     content: "\f16d"; }
 

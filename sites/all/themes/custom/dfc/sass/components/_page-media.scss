@@ -169,11 +169,10 @@ body.node-type-landing-page.section-media {
     }
     
     .views-field-title {
-			font-family: Helvetica;
-      font-weight: bold;
+			color: $color-white;
+			font-family: $tgc;
 			@include rem(font-size, 25px);
 			line-height: 1;
-			color: $color-white;
 			margin-bottom: 0;
 
   	  @include breakpoint($bp-desk) {
@@ -314,11 +313,10 @@ body.node-type-landing-page.section-media {
     }
     
     .views-field-title {
-			font-family: Helvetica;
-      font-weight: bold;
+			color: $color-white;
+			font-family: $tgc;
 			@include rem(font-size, 25px);
 			line-height: 1;
-			color: $color-white;
 			margin-bottom: 0;
       
       a {

@@ -2353,30 +2353,29 @@ body.node-type-landing-page.section-media .l-main {
         margin-right: 10px; }
     /* line 171, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-content .views-field-title {
-      font-family: Helvetica;
-      font-weight: bold;
+      color: #ffffff;
+      font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 25px;
       font-size: 1.5625rem;
       line-height: 1;
-      color: #ffffff;
       margin-bottom: 0; }
-      /* line 183, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .media-content .views-field-title a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 187, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-content .views-field-title a:hover {
           color: #f1592a; }
-    /* line 193, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 192, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-content .views-field-field-product-description {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff; }
 
-/* line 215, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .block--views-media-items-block {
   background: #292929 url(../images/bg-media.jpg) no-repeat 50% 0;
   background-size: cover; }
-  /* line 219, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .inner {
     max-width: 1180px;
     margin-left: auto;
@@ -2387,7 +2386,7 @@ body.node-type-landing-page.section-media .l-main {
       content: " ";
       display: block;
       clear: both; }
-  /* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block h2.block__title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 30px;
@@ -2396,11 +2395,11 @@ body.node-type-landing-page.section-media .l-main {
     text-transform: uppercase;
     color: #f1592a;
     margin-bottom: 20px; }
-  /* line 237, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .view-content {
     margin-bottom: 40px;
     text-align: center; }
-  /* line 242, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .views-row {
     position: relative;
     height: 390px;
@@ -2408,7 +2407,7 @@ body.node-type-landing-page.section-media .l-main {
     margin: 0 auto 15px;
     text-align: left;
     z-index: 1; }
-    /* line 259, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 258, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:after {
       content: "";
       display: block;
@@ -2420,20 +2419,20 @@ body.node-type-landing-page.section-media .l-main {
       background: #000000;
       opacity: .5;
       z-index: -1; }
-    /* line 272, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 271, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:nth-of-type(3n) {
       margin-right: 0; }
-    /* line 276, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 275, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:nth-of-type(3n+1) {
       clear: left; }
-  /* line 285, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 284, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .media-header .field--media-link iframe {
     width: 100%;
     height: 166px; }
-  /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 297, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .media-content {
     padding: 25px 30px; }
-    /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .field--media-category {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 13px;
@@ -2442,7 +2441,7 @@ body.node-type-landing-page.section-media .l-main {
       text-transform: uppercase;
       color: #f1592a;
       margin-bottom: 20px; }
-      /* line 309, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 308, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .field--media-category:before {
         content: "";
         display: inline-block;
@@ -2455,29 +2454,28 @@ body.node-type-landing-page.section-media .l-main {
         height: 12px;
         display: inline-block;
         margin-right: 10px; }
-    /* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 315, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .views-field-title {
-      font-family: Helvetica;
-      font-weight: bold;
+      color: #ffffff;
+      font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 25px;
       font-size: 1.5625rem;
       line-height: 1;
-      color: #ffffff;
       margin-bottom: 0; }
-      /* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 322, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .views-field-title a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 328, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block .media-content .views-field-title a:hover {
           color: #f1592a; }
-    /* line 334, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 332, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .views-field-nothing {
       font-family: 'sanchezregular';
       font-size: 16px;
       font-weight: bold;
       margin-top: 20px; }
-      /* line 340, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 338, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .views-field-nothing .pts-value {
         color: #f1592a; }
 

@@ -13,6 +13,29 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
+  /*
+  // Returns AJAX commands if the user has JavaScript turned on.
+  $items['dfc/points/award/ajax'] = array(
+    'title' => 'My custom ajax callback',
+    'page callback' => 'dfc_points_award_ajax_callback',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  // Returns a Non-JavaScript alternative.
+  $items['dfc/points/award/nojs'] = array(
+    'title' => 'My custom non-javascript callback',
+    'page callback' => 'dfc_points_award_nojs_callback',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  // The page that will run the command.
+  $items['dfc/points/award/trigger-page'] = array(
+    'title' => 'AJAX trigger page',
+    'page callback' => 'dfc_points_award_trigger_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  */
   return $items;
 }
 
@@ -32,7 +55,7 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
     $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
-
+    // set up our custom JS for triggering points for watching a video
     $threshold = 21 * 60;
     if ($cat == 17) {
       //advertisement
@@ -47,6 +70,27 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
     $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
     drupal_add_js($settings, 'setting');
     drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
+    /*
+    // also inject html after the ShareThis buttons
+    // First get all of the options for the sharethis widget from the database:
+    $data_options = sharethis_get_options_array();
+
+    // Get the full path to insert into the Share Buttons.
+    $mPath = url('node/' . $node->nid, array('absolute' => TRUE));
+    $mTitle = $node->title;
+
+  
+    $enabled_types = $data_options['sharethis_node_types'];
+    if (isset($enabled_types[$node->type]) && $enabled_types[$node->type] === $node->type) {
+      $node->content['thensharethiscatch'] = array(
+        '#tag' => 'div', // Wrap it in a div?
+        '#type' => 'html_tag',
+        '#attributes' => array('class' => 'sharethis-buttons also'),
+        '#value' => dfc_points_award_trigger_page(),
+        '#weight' => intval(variable_get('sharethis_weight', 10)) + 1,
+      );
+    }
+    */
   }
 }
 
@@ -243,3 +287,45 @@ function dfc_points_award_get_random_string($length = 10) {
   }
   return $randomString;
 }
+/*
+function dfc_points_award_trigger_page() {
+  // Load in Drupal core AJAX library.
+  drupal_add_library('system', 'drupal.ajax');
+ 
+  // Load in our custom JavaScript.
+  drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/ajaxtest.js');
+ 
+  // Present the user with a link with the id 'my-special-link'.
+  $oot = l('Get share points', 'dfc/points/award/nojs', array(
+    'attributes' => array(
+      'id' => 'my-special-link',
+      'class' => array( 'button' )
+    )
+  ));
+  
+  $oot .= ' '. l('Another trigger chain', '', array(
+    'attributes' => array(
+      'class' => array( 'button', 'triggererd' )
+    )
+  ));
+  
+  return $oot;
+}
+
+// AJAX callback that prints hello world underneath our link.
+function dfc_points_award_ajax_callback() {
+  // Define a new array to hold our AJAX commands.
+  $ajax_commands = array();
+  
+  // Create a new AJAX command that replaces the #page text with our own text.
+  $ajax_commands[] = ajax_command_after('#my-special-link', 'You have earned 5 Points?');
+   
+  // Return our commands in JSON.
+  ajax_deliver(array('#type' => 'ajax', '#commands' => $ajax_commands));
+}
+
+// Non-JavaScript callback that returns whatever
+function dfc_points_award_nojs_callback() {
+  return 'You have earned 5 Points?';
+}
+*/

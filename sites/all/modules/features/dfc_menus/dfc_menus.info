@@ -1,6 +1,6 @@
 name = DFC Menus
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = dfc_flop_menu
 dependencies[] = features
 dependencies[] = menu

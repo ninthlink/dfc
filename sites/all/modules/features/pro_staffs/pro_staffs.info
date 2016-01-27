@@ -1,7 +1,7 @@
 name = Pro Staffs
 description = Pro Staffs
 core = 7.x
-package = Features
+package = DFC
 version = 7.x-1.0
 dependencies[] = bean_admin_ui
 dependencies[] = bean_uuid
@@ -66,4 +66,3 @@ features_exclude[field_base][field_location] = field_location
 features_exclude[field_base][field_image_gallery] = field_image_gallery
 features_exclude[field_base][field_phone_number] = field_phone_number
 features_exclude[field_base][field_website_link] = field_website_link
-project path = sites/all/modules/features

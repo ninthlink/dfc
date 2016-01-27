@@ -161,7 +161,14 @@ The `sprites` mixin generates identical output to the CSS template
 @font-face {
   font-family: 'tradegothic-bold';
   src: url("../fonts/TradeGothicLTStd-Bold.eot");
-  src: url("../fonts/TradeGothicLTStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TradeGothicLTStd-Bold.woff2") format("woff2"), url("../fonts/TradeGothicLTStd-Bold.woff") format("woff"), url("../fonts/TradeGothicLTStd-Bold.ttf") format("truetype"), url("../fonts/TradeGothicLTStd-Bold.svg#tradegothic-bold") format("svg");
+  src: url("../fonts/TradeGothicLTStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TradeGothicLTStd-Bold.woff") format("woff"), url("../fonts/TradeGothicLTStd-Bold.ttf") format("truetype"), url("../fonts/TradeGothicLTStd-Bold.svg#tradegothic-bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'tradegothic-bold-condensed20';
+  src: url("../fonts/TradeGothicLTStd-BdCn20.eot");
+  src: url("../fonts/TradeGothicLTStd-BdCn20.eot?#iefix") format("embedded-opentype"), url("../fonts/TradeGothicLTStd-BdCn20.woff") format("woff"), url("../fonts/TradeGothicLTStd-BdCn20.ttf") format("truetype"), url("../fonts/TradeGothicLTStd-BdCn20.svg#tradegothic-bold-condensed20") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2864,17 +2871,18 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   background: #2897d7;
   color: #ffffff;
   xpadding: 30px 20px;
-  font-family: "sanchezregular", Helvetica, sans-serif; }
-  /* line 114, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  font-family: "sanchezregular", Helvetica, sans-serif;
+  line-height: 1.5; }
+  /* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .block--bean-staff-pro-intro .intro_text {
     padding: 30px 20px; }
-  /* line 119, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 120, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .block--bean-staff-pro-intro .intro_cta {
     padding: 30px;
     max-width: 473px;
     background: url("../images/staff_intro_bg.jpg") 0 0 no-repeat transparent;
     min-height: 232px; }
-    /* line 125, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+    /* line 126, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
     .block--bean-staff-pro-intro .intro_cta h2 {
       font-size: 24px;
       font-size: 1.5rem;
@@ -2978,48 +2986,48 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 20px;
-  font-family: "sanchezregular", Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-  /* line 341, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  font-family: "dangerregular", Helvetica, sans-serif;
+  font-size: 17px;
+  font-size: 1.0625rem; }
+  /* line 340, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--staff-category:before {
     content: "Category |";
     color: #f1592a;
     margin-right: 6px; }
 
-/* line 349, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 348, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--title-field {
   color: #ffffff;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 32px;
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1;
   clear: both; }
 
-/* line 358, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 357, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--businessname {
+  color: #999999;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 25px;
   font-size: 1.5625rem;
-  color: #999999;
-  font-weight: bold;
   line-height: 1;
   margin-bottom: 5px; }
 
-/* line 366, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 365, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--location {
+  color: #999999;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 19px;
   font-size: 1.1875rem;
-  color: #999999;
-  font-weight: bold;
   line-height: 1;
   margin-bottom: 20px; }
 
-/* line 375, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
+  line-height: 1.25;
   color: #ffffff;
   margin-bottom: 20px; }
 

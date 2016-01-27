@@ -26,10 +26,20 @@
   font-family: 'tradegothic-bold';
   src: url('../fonts/TradeGothicLTStd-Bold.eot');
   src: url('../fonts/TradeGothicLTStd-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/TradeGothicLTStd-Bold.woff2') format('woff2'),
        url('../fonts/TradeGothicLTStd-Bold.woff') format('woff'),
        url('../fonts/TradeGothicLTStd-Bold.ttf') format('truetype'),
        url('../fonts/TradeGothicLTStd-Bold.svg#tradegothic-bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tradegothic-bold-condensed20';
+  src: url('../fonts/TradeGothicLTStd-BdCn20.eot');
+  src: url('../fonts/TradeGothicLTStd-BdCn20.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff'),
+       url('../fonts/TradeGothicLTStd-BdCn20.ttf') format('truetype'),
+       url('../fonts/TradeGothicLTStd-BdCn20.svg#tradegothic-bold-condensed20') format('svg');
   font-weight: normal;
   font-style: normal;
 }

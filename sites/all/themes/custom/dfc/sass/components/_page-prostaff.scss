@@ -110,6 +110,7 @@ body.node-type-landing-page.section-pro-staff {
   color: $color-white;
   xpadding: 30px 20px;
   font-family: $sr;
+  line-height: 1.5;
   
   .intro_text
   {
@@ -161,7 +162,6 @@ body.node-type-landing-page.section-pro-staff {
   
   @include breakpoint($bp-desk) {
     @include rem(font-size, 14px);
-    line-height: 1.2;
     
     .intro_text
     {
@@ -334,9 +334,8 @@ body.node-type-landing-page.section-pro-staff {
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 20px;
-    font-family: $sr;
-    font-weight: 700;
-     @include rem(font-size, 15px);
+    font-family: $dr;
+    @include rem(font-size, 17px);
      
     &:before {
       content: "Category |";
@@ -348,25 +347,25 @@ body.node-type-landing-page.section-pro-staff {
 
   .field--title-field {
     color: $color-white;
+    font-family: $tgc;
     @include rem(font-size, 32px);
-    font-weight: bold;
     line-height: 1;
     clear: both;
   }
   
   
   .field--businessname {
-    @include rem(font-size, 25px);
     color: $color-gray-9;
-    font-weight: bold;
+    font-family: $tgc;
+    @include rem(font-size, 25px);
     line-height: 1;
     margin-bottom: 5px;
   }
   
   .field--location {
-    @include rem(font-size, 19px);
     color: $color-gray-9;
-    font-weight: bold;
+    font-family: $tgc;
+    @include rem(font-size, 19px);
     line-height: 1;
     margin-bottom: 20px;
   }
@@ -375,6 +374,7 @@ body.node-type-landing-page.section-pro-staff {
   .field--product-description {
     font-family: $sr;
     @include rem(font-size, 15px);
+    line-height: 1.25;
     color: $color-white;
     margin-bottom: 20px;
   }

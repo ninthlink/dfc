@@ -1,7 +1,8 @@
 name = DFC Views & Nodequeues
 core = 7.x
-package = Features
+package = DFC
 dependencies[] = better_exposed_filters
+dependencies[] = ctools
 dependencies[] = dfc_points_views
 dependencies[] = entity
 dependencies[] = fe_nodequeue
@@ -30,4 +31,3 @@ features[views_view][] = related_videos
 features[views_view][] = resorts
 features[views_view][] = store
 features[views_view][] = user_ranking
-features_exclude[dependencies][ctools] = ctools

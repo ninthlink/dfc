@@ -2019,6 +2019,65 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['path'] = 'test_ranking';
+
+  /* Display: User Profile Points Block */
+  $handler = $view->new_display('block', 'User Profile Points Block', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_3']['id'] = 'fieldset_3';
+  $handler->display->display_options['fields']['fieldset_3']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_3']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_3']['label'] = 'Current Points Month';
+  $handler->display->display_options['fields']['fieldset_3']['children'] = array(
+    0 => 'monthly_points',
+    1 => 'nothing_1',
+  );
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['classes'] = 'current-profile-month';
+  /* Field: DFC Points: Monthly Points */
+  $handler->display->display_options['fields']['monthly_points']['id'] = 'monthly_points';
+  $handler->display->display_options['fields']['monthly_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['monthly_points']['field'] = 'monthly_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_4']['id'] = 'fieldset_4';
+  $handler->display->display_options['fields']['fieldset_4']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_4']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_4']['label'] = 'Current Points Lifetime';
+  $handler->display->display_options['fields']['fieldset_4']['children'] = array(
+    0 => 'lifetime_points',
+    1 => 'nothing',
+  );
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['classes'] = 'current-profile-lifetime';
+  /* Field: DFC Points: Lifetime Points */
+  $handler->display->display_options['fields']['lifetime_points']['id'] = 'lifetime_points';
+  $handler->display->display_options['fields']['lifetime_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['lifetime_points']['field'] = 'lifetime_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: User: Active */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'users';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   $export['user_ranking'] = $view;
 
   return $export;

@@ -565,35 +565,59 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-user_ranking-block_2' => array(
+          'module' => 'views',
+          'delta' => 'user_ranking-block_2',
+          'region' => 'content',
+          'weight' => '10',
+        ),
+        'dfc_user_blocks-your_membership' => array(
+          'module' => 'dfc_user_blocks',
+          'delta' => 'your_membership',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'dfc_user_blocks-membership_benefits' => array(
+          'module' => 'dfc_user_blocks',
+          'delta' => 'membership_benefits',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
         'views-my_invitiations-block' => array(
           'module' => 'views',
           'delta' => 'my_invitiations-block',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-8',
         ),
         'invite-invite_add_invite_by_email' => array(
           'module' => 'invite',
           'delta' => 'invite_add_invite_by_email',
           'region' => 'content_bottom',
-          'weight' => '-9',
+          'weight' => '-7',
         ),
         'formblock-user_media' => array(
           'module' => 'formblock',
           'delta' => 'user_media',
           'region' => 'content_bottom',
-          'weight' => '-8',
+          'weight' => '-6',
         ),
         'views-user_media-block_1' => array(
           'module' => 'views',
           'delta' => 'user_media-block_1',
           'region' => 'content_bottom',
-          'weight' => '-7',
+          'weight' => '-5',
         ),
         'views-user_media-block_2' => array(
           'module' => 'views',
           'delta' => 'user_media-block_2',
           'region' => 'content_bottom',
-          'weight' => '-6',
+          'weight' => '-4',
+        ),
+        'views-partners-block' => array(
+          'module' => 'views',
+          'delta' => 'partners-block',
+          'region' => 'footer_top',
+          'weight' => '-10',
         ),
       ),
     ),
@@ -604,6 +628,89 @@ function dfc_contexts_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('User profile page, not edit form');
   $export['user_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'user_page_edit';
+  $context->description = 'User profile page, edit form';
+  $context->tag = '';
+  $context->conditions = array(
+    'user_page' => array(
+      'values' => array(
+        'form' => 'form',
+      ),
+      'options' => array(
+        'mode' => 'all',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-user_ranking-block_1' => array(
+          'module' => 'views',
+          'delta' => 'user_ranking-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'dfc_user_blocks-your_membership' => array(
+          'module' => 'dfc_user_blocks',
+          'delta' => 'your_membership',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'dfc_user_blocks-membership_benefits' => array(
+          'module' => 'dfc_user_blocks',
+          'delta' => 'membership_benefits',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'views-my_invitiations-block' => array(
+          'module' => 'views',
+          'delta' => 'my_invitiations-block',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
+        'invite-invite_add_invite_by_email' => array(
+          'module' => 'invite',
+          'delta' => 'invite_add_invite_by_email',
+          'region' => 'content_bottom',
+          'weight' => '-7',
+        ),
+        'formblock-user_media' => array(
+          'module' => 'formblock',
+          'delta' => 'user_media',
+          'region' => 'content_bottom',
+          'weight' => '-6',
+        ),
+        'views-user_media-block_1' => array(
+          'module' => 'views',
+          'delta' => 'user_media-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-5',
+        ),
+        'views-user_media-block_2' => array(
+          'module' => 'views',
+          'delta' => 'user_media-block_2',
+          'region' => 'content_bottom',
+          'weight' => '-4',
+        ),
+        'views-partners-block' => array(
+          'module' => 'views',
+          'delta' => 'partners-block',
+          'region' => 'footer_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('User profile page, edit form');
+  $export['user_page_edit'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

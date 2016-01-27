@@ -161,11 +161,24 @@ function dfc_points_award_check_video_awarded($vid) {
 
 function dfc_points_award_link () {
   if ($l = $_GET['l']) {
-    //@todo verify points
-    $link_points = 10;
-    dfc_points_award_grant_points($link_points);
+    $ls = substr($l, 128);
+    global $user;
+    //@todo verify url validity, don't grant points for just any url
+    $chk = db_select('userpoints_txn', 'upt')
+        ->fields('upt')
+        ->condition('uid', $user->uid)
+        ->condition('reference', $ls)
+        ->execute()->fetchAssoc();
+
+    if(!$chk) {
+      $link_points = array(
+        'points' => 10,
+        'reference' => $ls
+      );
+      dfc_points_award_grant_points($link_points);
+      watchdog('dfc', 'awarding link points: ' . $l);
+    }
     drupal_goto($l);
-    watchdog('dfc', 'awarding link points: ' . $l);
   }
 }
 

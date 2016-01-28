@@ -176,30 +176,57 @@ function dfc_bean_uuid_features_default_beans() {
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'Membership Benefits
-<ul>
-  <li>FREE Membership to IGFA ($35 Value)</li>
-  <li>FREE 6 Month Access to Pro Angler ($18 Value)</li>
-  <li>FREE 6 Month Access to Fishidy.com ($30 Value)</li>
-  <li>FREE 1 Year Wild Oceans Membership ($35 Value)</li>
-  <li>Eligible for all \\gear give-ways worth $1,000</li>
-  <li>Earn FREE Day Charter fishing trips in your area</li>
-  <li>10% discount at over 50 Top Fishing Resorts</li>
-  <li>10% discount at selected charter operations</li>
-  <li>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</li>
+          'value' => '<h3>Membership Benefits</h3>
+<dl>
+  <dt><h5>Current Benefits</h5></dt>
+  <dd><h5>Access & Promo Codes</h5></dd>
+  <dt>FREE Membership to IGFA ($35 Value)</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>FREE 6 Month Access to Pro Angler ($18 Value)</dt>
+  <dd>Promo code: <a href="#">DFCProangler6</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>FREE 6 Month Access to Fishidy.com ($30 Value)</dt>
+  <dd>Promo code: <a href="#">DFCfishidy6</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>FREE 1 Year Wild Oceans Membership ($35 Value)</dt>
+  <dd>Promo code: <a href="#">DFCwildoceans1</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>Eligible for all gear give-ways worth $1,000</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>Earn FREE Day Charter fishing trips in your area</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>10% discount at over 50 Top Fishing Resorts</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>10% discount at selected charter operations</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</dt>
+  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
 </ul>',
           'format' => 'full_html',
-          'safe_value' => '<p>Membership Benefits</p>
-<ul><li>FREE Membership to IGFA ($35 Value)</li>
-<li>FREE 6 Month Access to Pro Angler ($18 Value)</li>
-<li>FREE 6 Month Access to Fishidy.com ($30 Value)</li>
-<li>FREE 1 Year Wild Oceans Membership ($35 Value)</li>
-<li>Eligible for all \\gear give-ways worth $1,000</li>
-<li>Earn FREE Day Charter fishing trips in your area</li>
-<li>10% discount at over 50 Top Fishing Resorts</li>
-<li>10% discount at selected charter operations</li>
-<li>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</li>
-</ul>',
+          'safe_value' => '<h3>Membership Benefits</h3>
+<dl><dt>
+<h5>Current Benefits</h5>
+</dt>
+<dd>
+<h5>Access &amp; Promo Codes</h5>
+</dd>
+<dt>FREE Membership to IGFA ($35 Value)</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt>FREE 6 Month Access to Pro Angler ($18 Value)</dt>
+<dd>Promo code: <a href="#">DFCProangler6</a>  |  <a href="#">Sign Up</a></dd>
+<dt>FREE 6 Month Access to Fishidy.com ($30 Value)</dt>
+<dd>Promo code: <a href="#">DFCfishidy6</a>  |  <a href="#">Sign Up</a></dd>
+<dt>FREE 1 Year Wild Oceans Membership ($35 Value)</dt>
+<dd>Promo code: <a href="#">DFCwildoceans1</a>  |  <a href="#">Sign Up</a></dd>
+<dt>Eligible for all gear give-ways worth $1,000</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt>Earn FREE Day Charter fishing trips in your area</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt>10% discount at over 50 Top Fishing Resorts</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt>10% discount at selected charter operations</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</dt>
+<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+
+</dl>',
         ),
       ),
     ),

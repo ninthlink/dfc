@@ -17,10 +17,14 @@ function dfc_points_views_views_pre_render(&$view) {
   if($view->name == 'user_ranking'){
     if(!empty($view->result)){
       if(empty($view->result[0]->userpoints_monthly_points)){
-        $view->result[0]->userpoints_monthly_standing = $view->result[0]->userpoints_max_monthly_standing;
+        if ( isset( $view->result[0]->userpoints_max_monthly_standing ) ) {
+          $view->result[0]->userpoints_monthly_standing = $view->result[0]->userpoints_max_monthly_standing;
+        }
       }
       if(empty($view->result[0]->userpoints_lifetime_points)){
-        $view->result[0]->userpoints_lifetime_standing = $view->result[0]->userpoints_max_lifetime_standing;
+        if ( isset( $view->result[0]->userpoints_max_lifetime_standing ) ) {
+          $view->result[0]->userpoints_lifetime_standing = $view->result[0]->userpoints_max_lifetime_standing;
+        }
       }
     }
   }

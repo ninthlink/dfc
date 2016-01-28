@@ -75,6 +75,11 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
     // set up our custom JS for triggering points for watching a video
     $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
+    $mtype = $node->field_media_type[LANGUAGE_NONE][0]['tid'];
+    if ( $mtype == 3 ) {
+      dfc_points_award_image( $node->nid );
+    }
+    
     // by default, must watch the video for 10 minutes to get credit
     $threshold = 10 * 60;
     if ($cat == 17) {
@@ -88,6 +93,7 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
     $settings['dfcPointsAward']['threshold'] = $threshold;
     $settings['dfcPointsAward']['vid'] = $node->nid;
     $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
+    //$settings['dfcPointsAward']['mtype'] = $mtype;
     drupal_add_js($settings, 'setting');
     drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
     /*
@@ -139,6 +145,7 @@ function dfc_points_award_video ($vid, $time) {
   if(!dfc_points_award_check_video_awarded($vid)) {
     $video_points = array(
         'points' => $points,
+        'operation' => 'dfc_points_award_video',
         'entity_type' => 'node',
         'entity_id' => $vid,
     );
@@ -150,6 +157,23 @@ function dfc_points_award_video ($vid, $time) {
   drupal_json_output($ret);
 }
 
+function dfc_points_award_image ($vid) {
+  //$node = node_load($vid);
+  $cat = 3; //$node->field_media_type[LANGUAGE_NONE][0]['tid'];
+  
+  $points = dfc_points_award_points_by_cat($cat);
+  if(!dfc_points_award_check_video_awarded($vid)) {
+    $video_points = array(
+        'points' => $points,
+        'operation' => 'dfc_points_award_image',
+        'entity_type' => 'node',
+        'entity_id' => $vid,
+    );
+    dfc_points_award_grant_points($video_points);
+    watchdog('dfc', 'awarding image points');
+  }
+}
+
 function dfc_points_award_points_by_cat($cat) {
   //cat 4 and 7 are most used, and both default to 20 pts
   $points = 20;
@@ -159,6 +183,9 @@ function dfc_points_award_points_by_cat($cat) {
   } else if ($cat == 6) {
     //sponsored video
     $points = 10;
+  } else if ( $cat == 3 ) {
+    // Image / photo
+    $points = 5;
   }
 
   return $points;
@@ -362,3 +389,54 @@ function dfc_points_award_nojs_callback() {
   return 'You have earned 5 Points?';
 }
 */
+
+// Implements hook_userpoints_info().
+function dfc_points_award_userpoints_info() {
+  // one callback for all
+  $cb = 'dfc_points_award_userpoints_description_callback';
+  
+  return array(
+    'dfc_points_award_image' => array(
+      'description callback' => $cb,
+    ),
+    'dfc_points_award_video' => array(
+      'description callback' => $cb,
+    ),
+    /*
+    'userbase_custom_quiz_finished' => array(
+      'description callback' => 'dfc_points_award_userpoints_description_callback',
+    ),
+    */
+  );
+}
+
+/**
+ * Description callback for userpoint operation description/reason.
+ */
+function dfc_points_award_userpoints_description_callback($operation, $entity) {
+
+  $arguments = array();
+  // Try to load content type name.
+  if ($operation->entity_type == 'node' && $entity) {
+    $arguments['%title'] = $entity->title;
+  }
+
+  // Fallback to string content if the above failed for some reason.
+  if (empty($arguments['%title'])) {
+    $arguments['%title'] = t('content');
+  }
+
+  switch ($operation->operation) {
+    case 'dfc_points_award_image':
+      return t('Viewed Photo "%title"', $arguments);
+      break;
+    case 'dfc_points_award_video':
+      return t('Watched Video "%title"', $arguments);
+      break;
+    /*
+    case 'userbase_custom_quiz_finished':
+      return t('Completed training quiz "%title"', $arguments);
+      break;
+    */
+	}
+}

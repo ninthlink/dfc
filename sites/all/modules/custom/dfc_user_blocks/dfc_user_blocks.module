@@ -38,17 +38,22 @@ function dfc_user_blocks_your_membership_view(){
       break;
     }
   }
-  $current_markup = dfc_user_blocks_markup_wrapper('Current Membership Level', array('class' => 'current-membership-title'));
-  $current_markup .= dfc_user_blocks_markup_wrapper($role, array('class' => 'current-role'));
+  // do we always show title?
+  $markup = '<h3 class="membership-title">'. t('YOUR MEMBERSHIP') .'</h3>';
+  // Current...  
+  $current_markup = dfc_user_blocks_markup_wrapper( t('Current Membership Level:'), array('class' => 'current-membership-title'), 'h5' );
+  $current_markup .= dfc_user_blocks_markup_wrapper($role, array('class' => 'current-role'), 'h2');
   //$current_markup .= dfc_user_blocks_markup_wrapper('Your annual membership is scheduled to auto-renew on ', array('class' => 'auto-renew'));
-  $markup = dfc_user_blocks_markup_wrapper($current_markup, array('class' => 'current-membership-wrapper'));
+  $markup .= dfc_user_blocks_markup_wrapper($current_markup, array('class' => 'current-membership-wrapper'));
+  // Upgrade...
   if($role <> 'Diamond'){
-    $upgrade_markup = dfc_user_blocks_markup_wrapper('Want to upgrade?', array('class' => 'upgrade-membership-title'));
-    $upgrade_markup .= l('Membership Levels', '/membership');
+    $upgrade_markup = dfc_user_blocks_markup_wrapper( t('Want to upgrade?'), array('class' => 'upgrade-membership-title'), 'h5' );
+    $upgrade_markup .= l(t('Membership Levels'), '/membership', array( 'attributes' => array( 'class' => array( 'button', 'button-small' ) ) ));
     $markup .= dfc_user_blocks_markup_wrapper($upgrade_markup, array('class' => 'upgrade-membership-wrapper'));
   }
   return $markup;
 }
+
 function dfc_user_blocks_membership_benefits_view(){
   global $user;
   $user = user_load($user->uid);

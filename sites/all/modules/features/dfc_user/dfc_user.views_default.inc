@@ -33,7 +33,8 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'joined' => 'joined',
-    'field_invitation_email_address' => 'field_invitation_email_address',
+    'counter' => 'counter',
+    'field_invitation_email_address' => 'counter',
     'status' => 'status',
     'invite_resend_link' => 'invite_resend_link',
     'invite_withdraw_link' => 'invite_resend_link',
@@ -45,6 +46,11 @@ function dfc_user_views_default_views() {
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
+    ),
+    'counter' => array(
+      'align' => '',
+      'separator' => '. ',
       'empty_column' => 0,
     ),
     'field_invitation_email_address' => array(
@@ -70,6 +76,12 @@ function dfc_user_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'Invite up to 10 friends or family to become members and when they do you earn <strong>500 points</strong>.';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Field: Invite: Joined */
   $handler->display->display_options['fields']['joined']['id'] = 'joined';
   $handler->display->display_options['fields']['joined']['table'] = 'invite';
@@ -83,25 +95,25 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
   $handler->display->display_options['fields']['counter']['field'] = 'counter';
-  $handler->display->display_options['fields']['counter']['label'] = '';
+  $handler->display->display_options['fields']['counter']['label'] = 'E-mail';
   $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['counter']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['counter']['counter_start'] = '1';
   $handler->display->display_options['fields']['counter']['reverse'] = 0;
   /* Field: Invite: E-mail */
   $handler->display->display_options['fields']['field_invitation_email_address']['id'] = 'field_invitation_email_address';
   $handler->display->display_options['fields']['field_invitation_email_address']['table'] = 'field_data_field_invitation_email_address';
   $handler->display->display_options['fields']['field_invitation_email_address']['field'] = 'field_invitation_email_address';
-  $handler->display->display_options['fields']['field_invitation_email_address']['label'] = '';
   $handler->display->display_options['fields']['field_invitation_email_address']['element_type'] = '0';
   $handler->display->display_options['fields']['field_invitation_email_address']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_invitation_email_address']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_invitation_email_address']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_invitation_email_address']['field_api_classes'] = TRUE;
+  $handler->display->display_options['fields']['field_invitation_email_address']['type'] = 'text_plain';
   /* Field: Invite: Status */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'views_entity_invite';
   $handler->display->display_options['fields']['status']['field'] = 'status';
-  $handler->display->display_options['fields']['status']['label'] = '';
+  $handler->display->display_options['fields']['status']['label'] = 'Invite Status';
   $handler->display->display_options['fields']['status']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['status']['link_to_entity'] = 0;
   /* Field: Invite: Invite action link: resend */
@@ -158,7 +170,7 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['fields']['field_ugc_moderation']['id'] = 'field_ugc_moderation';
   $handler->display->display_options['fields']['field_ugc_moderation']['table'] = 'field_data_field_ugc_moderation';
   $handler->display->display_options['fields']['field_ugc_moderation']['field'] = 'field_ugc_moderation';
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -203,7 +215,7 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Photo Upload History';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -386,7 +398,7 @@ function dfc_user_views_default_views() {
       'label' => 'Deny item approval',
     ),
   );
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

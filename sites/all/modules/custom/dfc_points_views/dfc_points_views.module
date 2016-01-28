@@ -62,8 +62,10 @@ function dfc_points_views_userpoints_list_transactions_alter( &$data ) {
 	foreach ( $remove as $r ) {
 		unset($data['list']['table']['#header'][$r]);
 	}
+  // loop through each table row
 	foreach ( $data['list']['table']['#rows'] as $k => $v ) {
 		foreach ( $remove as $r ) {
+      // remove that column of data
 			unset($data['list']['table']['#rows'][$k]['data'][$r]);
 		}
 	}

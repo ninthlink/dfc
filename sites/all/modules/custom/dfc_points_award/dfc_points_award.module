@@ -39,6 +39,7 @@ function dfc_points_award_menu() {
   return $items;
 }
 
+// hook_form_alter
 function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
   global $user;
   $role = is_array($user->roles) && in_array('administrator', $user->roles);
@@ -47,21 +48,40 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['#validate'][] = 'dfc_points_award_grant_points_invite_form_validate';
     $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
     $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_invite_form';
+    
+    
+    // and sigh, change label?
+    $form['field_invitation_email_address'][LANGUAGE_NONE]['#title'] = t('Add E-mail');
+    $form['field_invitation_email_address'][LANGUAGE_NONE][0]['#title'] = t('Add E-mail');
+    $form['field_invitation_email_address'][LANGUAGE_NONE][0]['value']['#title'] = t('Add E-mail');
+    //watchdog('fcatc', '<pre>'. print_r($form['field_invitation_email_address'], true) .'</pre>');
+    
   } else if ($form_id == 'user_profile_form') {
-
+    // change user picture area some things
+    //$form['picture']['#type'] = 'div';
+    // change size of upload field?
+    $form['picture']['picture_upload']['#size'] = 24;
+    // change the Profile Picture / Upload Picture label
+    $form['picture']['picture_upload']['#title'] = t('Profile Picture');
+    // wipe the default Upload Picture description
+    $form['picture']['picture_upload']['#description'] = '';
+    // wipe the default Delete Picture description
+    $form['picture']['picture_delete']['#description'] = '';
   }
+  //watchdog('dfalt', 'form_id '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
-    $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
     // set up our custom JS for triggering points for watching a video
-    $threshold = 21 * 60;
+    $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
+    // by default, must watch the video for 10 minutes to get credit
+    $threshold = 10 * 60;
     if ($cat == 17) {
-      //advertisement
+      // for Advertisements, watching for 30 seconds is enough
       $threshold = 30;
     } else if ($cat == 6) {
-      //sponsored video
+      // for Sponsored video, 2 minutes is ok
       $threshold = 60 * 2;
     }
     $settings['dfcPointsAward']['awarded'] = dfc_points_award_check_video_awarded($node->nid);

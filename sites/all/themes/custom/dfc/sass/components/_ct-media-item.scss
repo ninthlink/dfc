@@ -45,6 +45,18 @@ body.node-type-media-item {
   	}    
   }
 	
+  .field--title-field {
+    h2 {
+      color: $color-white;
+  		font-family: $tgc;
+  		@include rem(font-size, 41px);
+  		line-height: 1;
+      margin-bottom: 20px;
+      max-width: 550px;
+    }
+  }
+  
+  // is this even used any more?
 	.group-media-content {
 	  @extend .row-padding;
     margin-bottom: 50px;

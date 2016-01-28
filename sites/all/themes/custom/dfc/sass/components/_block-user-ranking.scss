@@ -206,6 +206,17 @@ body.section-users {
 }
 
 // override for my profile Edit section
+body.page-user-edit {
+  .view-user-ranking {
+    .profile-info {
+      @include breakpoint( $bp-tab ) {
+        img {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
 body.section-user {
   .view-user-ranking {
     .profile-info {

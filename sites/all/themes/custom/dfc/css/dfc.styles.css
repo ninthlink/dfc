@@ -93,7 +93,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* generated with grunt-sass-globbing */
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
+.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-small, body.section-user #user-media-node-form #edit-field-media-link:after,
+body.section-users #user-media-node-form #edit-field-media-link:after, body.section-user #user-media-node-form #edit-field-image:after,
+body.section-users #user-media-node-form #edit-field-image:after, body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
   border: 2px solid #f1592a;
   background: #f1592a;
   color: #ffffff;
@@ -108,17 +111,32 @@ The `sprites` mixin generates identical output to the CSS template
   vertical-align: middle;
   text-align: center; }
   /* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
+  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-small:hover, body.section-user #user-media-node-form #edit-field-media-link:hover:after,
+  body.section-users #user-media-node-form #edit-field-media-link:hover:after, body.section-user #user-media-node-form #edit-field-image:hover:after,
+  body.section-users #user-media-node-form #edit-field-image:hover:after, body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit:hover,
+  body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
     background: #000000;
     color: #f1592a;
     text-decoration: none; }
 
-/* line 27, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+/* line 23, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+.button-small, body.section-user #user-media-node-form #edit-field-media-link:after,
+body.section-users #user-media-node-form #edit-field-media-link:after, body.section-user #user-media-node-form #edit-field-image:after,
+body.section-users #user-media-node-form #edit-field-image:after, body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit {
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  padding: 10px 25px;
+  margin-top: 5px;
+  vertical-align: baseline; }
+
+/* line 36, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
 .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover {
   background: #272727;
   border-color: #272727; }
 
-/* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+/* line 43, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
 .button-clear, .view-giveaway-winners .prize-header .prize-buttons a, .block--bean-clubhouse-feature .ch-feature-link a, .block--bean-clubhouse-book .ch-book-link a {
   border: 2px solid #ffffff;
   background: transparent;
@@ -133,20 +151,36 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase;
   vertical-align: middle;
   text-align: center; }
-  /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+  @media (min-width: 590px) {
+    /* line 43, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+    .button-clear, .view-giveaway-winners .prize-header .prize-buttons a, .block--bean-clubhouse-feature .ch-feature-link a, .block--bean-clubhouse-book .ch-book-link a {
+      padding: 15px; } }
+  @media (min-width: 960px) {
+    /* line 43, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+    .button-clear, .view-giveaway-winners .prize-header .prize-buttons a, .block--bean-clubhouse-feature .ch-feature-link a, .block--bean-clubhouse-book .ch-book-link a {
+      padding: 15px 45px; } }
+  /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
   .button-clear:hover, .view-giveaway-winners .prize-header .prize-buttons a:hover, .block--bean-clubhouse-feature .ch-feature-link a:hover, .block--bean-clubhouse-book .ch-book-link a:hover {
     background: #f1592a;
     color: #ffffff;
     border: 2px solid #f1592a; }
 
-/* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+/* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
 .button-outline {
   border: 2px solid #ffffff;
   background: none;
   font-size: 14px;
   margin: 41px 0 0;
   padding: 15px 45px; }
-  /* line 65, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+  @media (min-width: 590px) {
+    /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+    .button-outline {
+      padding: 15px; } }
+  @media (min-width: 960px) {
+    /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
+    .button-outline {
+      padding: 15px 45px; } }
+  /* line 88, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
   .button-outline:hover {
     border: 2px solid #f1592a;
     background: #f1592a;
@@ -911,7 +945,12 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
   body.section-users .view-user-ranking .current-profile-lifetime {
     width: 50%; } }
 
-/* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+@media (min-width: 590px) {
+  /* line 213, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  body.page-user-edit .view-user-ranking .profile-info img {
+    opacity: 0; } }
+
+/* line 225, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   color: #ffffff;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -919,7 +958,7 @@ body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   font-size: 2.0625rem;
   line-height: 0.9;
   padding-top: 10px; }
-  /* line 221, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   body.section-user .view-user-ranking .profile-info .personal-info .member-name div {
     display: block; }
 
@@ -4867,32 +4906,23 @@ body.section-users #user-media-node-form #edit-field-media-link:hover:before {
 /* line 63, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form #edit-field-media-link:after,
 body.section-users #user-media-node-form #edit-field-media-link:after {
-  background: #f1592a;
-  display: inline-block;
-  color: #ffffff;
   content: 'Select Video';
   cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  height: 60px;
-  margin-right: 20%;
-  padding-top: 16px;
-  width: 100%;
-  text-align: center;
-  vertical-align: top; }
+  padding: 17px 0;
+  width: 100%; }
 
-/* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form #edit-field-image,
 body.section-users #user-media-node-form #edit-field-image {
   display: inline-block;
   margin-right: 25%;
   width: 20%; }
-  /* line 84, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user #user-media-node-form #edit-field-image .form-item-field-image-und-0,
   body.section-users #user-media-node-form #edit-field-image .form-item-field-image-und-0 {
     display: none; }
 
-/* line 89, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 82, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form #edit-field-image:before,
 body.section-users #user-media-node-form #edit-field-image:before {
   background-color: #27282a;
@@ -4911,184 +4941,167 @@ body.section-users #user-media-node-form #edit-field-image:before {
   text-align: center;
   vertical-align: top; }
 
-/* line 106, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 99, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form #edit-field-image:hover:before,
 body.section-users #user-media-node-form #edit-field-image:hover:before {
   background-color: rgba(128, 128, 128, 0.5); }
 
-/* line 109, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form #edit-field-image:after,
 body.section-users #user-media-node-form #edit-field-image:after {
-  background: #f1592a;
-  color: #ffffff;
   content: 'Select Image';
   cursor: pointer;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bold;
-  height: 60px;
-  padding-top: 16px;
-  width: 100%;
-  text-align: center;
-  vertical-align: top; }
+  padding: 17px 0;
+  width: 100%; }
 
-/* line 124, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 111, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user #user-media-node-form .form-submit,
 body.section-user #user-media-node-form .vertical-tabs,
 body.section-users #user-media-node-form .form-submit,
 body.section-users #user-media-node-form .vertical-tabs {
   display: none; }
 
-/* line 131, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 118, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user .content-bottom,
 body.section-users .content-bottom {
   padding: 60px 50px 50px; }
-  /* line 135, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 122, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user .content-bottom .view-id-my_invitiations table,
   body.section-users .content-bottom .view-id-my_invitiations table {
     width: 100%; }
-  /* line 140, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user .content-bottom #block-invite-invite-add-invite-by-email,
   body.section-users .content-bottom #block-invite-invite-add-invite-by-email {
     font-size: 0; }
-    /* line 142, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 129, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-invite-invite-add-invite-by-email .field-name-field-invitation-email-address,
     body.section-users .content-bottom #block-invite-invite-add-invite-by-email .field-name-field-invitation-email-address {
       display: inline-block;
       font-size: 16px; }
-      /* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 133, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       body.section-user .content-bottom #block-invite-invite-add-invite-by-email .field-name-field-invitation-email-address input,
       body.section-users .content-bottom #block-invite-invite-add-invite-by-email .field-name-field-invitation-email-address input {
         color: #000000;
         height: 40px;
         width: 200px; }
-    /* line 153, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 140, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-invite-invite-add-invite-by-email .description,
     body.section-users .content-bottom #block-invite-invite-add-invite-by-email .description {
       display: none; }
-    /* line 157, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
-    body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
-    body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit {
-      background-color: #f1592a;
-      border: 0;
-      color: #ffffff;
-      font-size: 16px;
-      height: 40px;
-      padding: 10px; }
-  /* line 167, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 149, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user .content-bottom #block-views-user-media-block-1,
   body.section-users .content-bottom #block-views-user-media-block-1 {
     display: inline-block;
     width: 45%;
     vertical-align: top; }
-    /* line 172, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 154, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 img,
     body.section-users .content-bottom #block-views-user-media-block-1 img {
       float: left;
       width: 100px; }
-    /* line 177, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 159, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-row,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-row {
       min-height: 75px;
       padding-bottom: 10px; }
-    /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 164, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-created,
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-created,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation {
       padding-left: 110px; }
-    /* line 187, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 169, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .views-label,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .views-label {
       font-weight: bold; }
-    /* line 191, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 173, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .field-content,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .field-content {
       color: #f1592a;
       display: inline-block; }
-  /* line 197, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 179, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user .content-bottom #block-views-user-media-block-2,
   body.section-users .content-bottom #block-views-user-media-block-2 {
     display: inline-block;
     width: 45%;
     vertical-align: top; }
-    /* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 184, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 img,
     body.section-users .content-bottom #block-views-user-media-block-2 img {
       float: left;
       width: 100px; }
-    /* line 207, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 189, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-row,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-row {
       min-height: 75px; }
-    /* line 211, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 193, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-created,
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-created,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation {
       padding-left: 110px; }
-    /* line 216, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 198, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .views-label,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .views-label {
       font-weight: bold; }
-    /* line 220, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .field-content,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .field-content {
       color: #f1592a;
       display: inline-block; }
 
-/* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .user-register-form,
 .user-pass,
 .user-login {
   padding: 20px; }
   @media (min-width: 960px) {
-    /* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     .user-register-form,
     .user-pass,
     .user-login {
       padding: 50px; } }
 
-/* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 221, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 article.user-profile {
   overflow: hidden;
   *zoom: 1;
   background: #363636;
   padding: 60px 50px 50px; }
-  /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .user-picture {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .user-picture {
         float: left;
         width: 40%; } }
     @media (min-width: 960px) {
-      /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .user-picture {
         width: 18%;
         margin-bottom: 0; } }
-    /* line 257, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .user-picture img {
       width: 136px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-personal {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-personal {
         float: left;
         width: 60%;
         padding-top: 10px; } }
     @media (min-width: 960px) {
-      /* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-personal {
         width: 32%;
         margin-bottom: 0; } }
-    /* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--first-name,
     article.user-profile .group-personal .field--last-name {
       font-family: "dangerregular", Helvetica, sans-serif;
@@ -5097,38 +5110,38 @@ article.user-profile {
       line-height: .9;
       color: #ffffff;
       text-transform: uppercase; }
-    /* line 288, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--last-name {
       margin-bottom: 5px; }
-    /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 274, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--city-state {
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 16px;
       font-size: 1rem; }
-  /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-profile-points {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points {
         clear: both; } }
     @media (min-width: 960px) {
-      /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points {
         clear: none;
         float: left;
         width: 50%;
         margin-bottom: 0; } }
-    /* line 312, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 294, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points h3 {
       display: none; }
-    /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points .userpoints-points li {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff;
       font-size: 36px;
       font-size: 2.25rem; }
-      /* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 306, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points .userpoints-points li .placeholder {
         display: block;
         font-size: 16px;
@@ -5136,40 +5149,48 @@ article.user-profile {
         color: #f1592a;
         font-style: normal; }
 
-/* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 form.user-profile-form {
-  padding: 20px; }
+  float: left;
+  width: 100%;
+  max-width: 1080px;
+  padding: 0;
+  margin: 20px;
+  border-bottom: 1px solid #505050; }
   @media (min-width: 960px) {
-    /* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form {
-      padding: 50px; } }
-  /* line 346, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      margin: 0 50px; } }
+  /* line 333, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item label {
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    color: #999999;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 18px;
-    font-size: 1.125rem; }
-  /* line 352, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  /* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item input.form-text {
     width: 100%;
     height: 42px;
     padding: 10px;
     margin-bottom: 10px; }
-  /* line 359, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 349, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item .description {
     font-size: 12.5px;
     font-size: 0.78125rem;
     line-height: 1.3; }
-  /* line 365, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 355, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-personal {
     margin-bottom: 50px; }
     @media (min-width: 960px) {
-      /* line 365, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 355, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-personal {
         float: left;
         width: 50%;
         padding-right: 25px; } }
-    /* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 364, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-personal h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -5177,16 +5198,16 @@ form.user-profile-form {
       font-size: 1.5625rem;
       text-transform: uppercase;
       margin-bottom: 40px; }
-  /* line 383, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 373, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-access {
     margin-bottom: 50px; }
     @media (min-width: 960px) {
-      /* line 383, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 373, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-access {
         float: right;
         width: 50%;
         padding-left: 25px; } }
-    /* line 392, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 382, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-access h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -5195,67 +5216,234 @@ form.user-profile-form {
       text-transform: uppercase;
       margin-bottom: 40px; }
     @media (min-width: 590px) {
-      /* line 403, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-access .form-item.password-parent input.form-text,
       form.user-profile-form .group-access .form-item.confirm-parent input.form-text {
         width: 45%; } }
-  /* line 412, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
-  form.user-profile-form #edit-picture {
-    margin-bottom: 50px; }
-  /* line 416, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  form.user-profile-form fieldset#edit-picture {
+    border: none;
+    padding: 0;
+    width: auto; }
+    @media (min-width: 590px) {
+      /* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      form.user-profile-form fieldset#edit-picture {
+        position: absolute;
+        top: 50px;
+        right: 81%;
+        left: 48px; }
+        /* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
+          position: absolute;
+          left: 0;
+          top: 151px;
+          width: 83px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: inline-block;
+          overflow: hidden; } }
+    @media (min-width: 590px) and (min-width: 720px) {
+      /* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
+        width: 111px; } }
+    @media (min-width: 590px) and (min-width: 820px) {
+      /* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
+        width: 150px; } }
+    @media (min-width: 590px) {
+        /* line 434, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        form.user-profile-form fieldset#edit-picture .form-item-files-picture-upload {
+          position: absolute;
+          right: -330px;
+          top: 151px;
+          width: auto;
+          max-width: 320px; } }
+    /* line 443, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    form.user-profile-form fieldset#edit-picture legend {
+      display: none; }
+    /* line 447, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    form.user-profile-form fieldset#edit-picture img {
+      max-width: 144px;
+      border: 2px solid #fff;
+      border-radius: 72px;
+      -webkit-border-radius: 72px;
+      -moz-border-radius: 72px;
+      -ms-border-radius: 72px; }
+  /* line 457, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form #edit-timezone {
     margin-bottom: 50px; }
 
-/* line 423, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 464, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.not-logged-in .tabs.tabs--primary {
   display: none; }
 
-/* line 430, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points form {
   background: #ffffff;
   color: #000000; }
-  /* line 434, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 475, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points form .form-item {
     background: #CCCCCC;
     float: left;
     margin: 0;
     width: 100%; }
-    /* line 440, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 481, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item label {
       float: left;
       padding: 20px; }
       @media (min-width: 960px) {
-        /* line 440, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        /* line 481, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
         body.section-user.page-user-points form .form-item label {
           padding-left: 50px; } }
-    /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 490, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item select {
       float: left;
       margin: 20px 0; }
 
-/* line 456, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 497, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points table {
   width: 100%; }
-  /* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 500, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th {
     background: #ffffff;
     padding: 20px; }
     @media (min-width: 960px) {
-      /* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 500, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       body.section-user.page-user-points table th {
         padding: 20px 50px; } }
-  /* line 467, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 508, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th.active img {
     width: auto; }
-  /* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 512, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td {
     padding: 10px 20px; }
     @media (min-width: 960px) {
-      /* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 512, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       body.section-user.page-user-points table td {
         padding: 10px 50px; } }
-  /* line 479, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 520, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td.userpoints-transactions-field-points {
     text-align: left; }
+
+/* line 528, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--dfc-user-blocks-your-membership {
+  margin-bottom: 60px; }
+  /* line 531, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-your-membership h3 {
+    color: #f1592a;
+    margin-bottom: 50px; }
+  /* line 536, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-your-membership h5 {
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  /* line 542, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-your-membership h2 {
+    color: #ffffff;
+    font-size: 43px;
+    font-size: 2.6875rem;
+    text-transform: uppercase; }
+  @media (min-width: 590px) {
+    /* line 549, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    .block--dfc-user-blocks-your-membership .current-membership-wrapper,
+    .block--dfc-user-blocks-your-membership .upgrade-membership-wrapper {
+      float: left;
+      width: 50%; } }
+
+/* line 559, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--dfc-user-blocks-membership-benefits h3 {
+  color: #f1592a;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+/* line 565, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--dfc-user-blocks-membership-benefits dt,
+.block--dfc-user-blocks-membership-benefits dd {
+  color: #ffffff;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+  padding: 0;
+  text-indent: 0; }
+  @media (min-width: 590px) {
+    /* line 565, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    .block--dfc-user-blocks-membership-benefits dt,
+    .block--dfc-user-blocks-membership-benefits dd {
+      float: left;
+      width: 50%; } }
+  /* line 578, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-membership-benefits dt h5,
+  .block--dfc-user-blocks-membership-benefits dd h5 {
+    color: #999999;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+
+@media (min-width: 590px) {
+  /* line 587, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-membership-benefits dl {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  /* line 593, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--dfc-user-blocks-membership-benefits dt {
+    clear: left; } }
+
+/* line 599, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--views-my-invitiations-block {
+  margin: 40px 0 0;
+  padding: 60px 0 0;
+  border-top: 1px solid #505050; }
+  /* line 604, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--views-my-invitiations-block h2 {
+    color: #f1592a;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase; }
+  /* line 610, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--views-my-invitiations-block .view-header {
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin: 20px 0 50px; }
+  /* line 615, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--views-my-invitiations-block th {
+    color: #999999;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    padding-bottom: 1em;
+    text-transform: uppercase; }
+
+/* line 624, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--invite-invite-add-invite-by-email {
+  margin: 40px 0 0;
+  padding: 0 0 70px;
+  border-bottom: 1px solid #505050; }
+  /* line 629, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--invite-invite-add-invite-by-email h2 {
+    display: none; }
+  /* line 633, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--invite-invite-add-invite-by-email .form-item label {
+    color: #999999;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    font-weight: normal;
+    padding-bottom: 1em;
+    text-transform: uppercase; }
+
+/* line 644, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+.block--formblock-user-media {
+  margin: 30px 0 0; }
+  /* line 647, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  .block--formblock-user-media h2 {
+    color: #f1592a;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 40px 0;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=dfc.styles.css.map */

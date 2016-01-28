@@ -20,6 +20,15 @@
 	}
 }
 
+.button-small {
+  @extend .button;
+  font-family: $tgc;
+	@include rem(font-size, 15px);
+  padding: 10px 25px;
+  margin-top: 5px;
+  vertical-align: baseline;
+}
+
 // This button is orange to dark gray
 .button-to-gray {
   @extend .button;
@@ -45,6 +54,13 @@
   vertical-align: middle;
   text-align: center;
 	
+  @include breakpoint( $bp-tab ) {
+    padding: 15px;
+  }
+  @include breakpoint( $bp-desk ) {
+    padding: 15px 45px;
+  }
+  
 	&:hover {
 		background: $color-orange;
 		color: $color-white;
@@ -61,6 +77,13 @@
   font-size: 14px;
   margin: 41px 0 0;
   padding: 15px 45px;
+	
+  @include breakpoint( $bp-tab ) {
+    padding: 15px;
+  }
+  @include breakpoint( $bp-desk ) {
+    padding: 15px 45px;
+  }
   
   &:hover {
     border: 2px solid $color-orange;

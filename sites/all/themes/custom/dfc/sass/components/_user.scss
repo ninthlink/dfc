@@ -61,19 +61,12 @@ body.section-users {
       background-color:rgba(128,128,128,.5);
     }
     #edit-field-media-link:after {
-      background: $color-orange;
-      display: inline-block;
-      color: $color-white;
+      @extend .button-small;
+      
       content: 'Select Video';
       cursor: pointer;
-      font-size: 20px;
-      font-weight: bold;
-      height: 60px;
-      margin-right: 20%;
-      padding-top: 16px;
+      padding: 17px 0;
       width: 100%;
-      text-align: center;
-      vertical-align: top;
     }
 
     #edit-field-image {
@@ -107,18 +100,12 @@ body.section-users {
       background-color:rgba(128,128,128,.5);
     }
     #edit-field-image:after {
-      background: $color-orange;
-      color: $color-white;
+      @extend .button-small;
+      
       content: 'Select Image';
       cursor: pointer;
-      display: inline-block;
-      font-size: 20px;
-      font-weight: bold;
-      height: 60px;
-      padding-top: 16px;
+      padding: 17px 0;
       width: 100%;
-      text-align: center;
-      vertical-align: top;
     }
 
     .form-submit,
@@ -155,12 +142,7 @@ body.section-users {
       }
 
       .form-submit {
-        background-color: $color-orange;
-        border: 0;
-        color: $color-white;
-        font-size: 16px;
-        height: 40px;
-        padding: 10px;
+        @extend .button-small;
       }
     }
 
@@ -335,18 +317,26 @@ article.user-profile {
 
 // User Edit Form
 form.user-profile-form {
-  padding: 20px;
-
+  float: left;
+  width: 100%;
+  max-width: 1080px;
+  padding: 0;
+  margin: 20px;
+  border-bottom: 1px solid $color-gray-50;
+  
   @include breakpoint($bp-desk) {
-    padding: 50px;
+    margin: 0 50px;
   }
   
   .form-item {
     
     label {
-      text-transform: uppercase;
-      margin-bottom: 10px;
+      color: $color-gray-9;
+      font-family: $tgc;
       @include rem(font-size, 18px);
+      font-weight: normal;
+      margin-bottom: 10px;
+      text-transform: uppercase;
     }
 
     input.form-text {
@@ -409,8 +399,59 @@ form.user-profile-form {
     }
   }
   
-  #edit-picture {
-    margin-bottom: 50px;
+  fieldset#edit-picture {
+    border: none;
+    padding: 0;
+    width: auto;
+    
+    @include breakpoint( $bp-tab ) {
+      position: absolute;
+      top: 50px;
+      right: 81%;
+      left: 48px;
+      
+      .form-item-picture-delete {
+        position: absolute;
+        left: 0;
+        top: 151px;
+        width: 83px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        
+        @include breakpoint( 720px ) {
+          width: 111px;
+        }
+        
+        
+        @include breakpoint( 820px ) {
+          width: 150px;
+        }
+        
+      }
+        
+      .form-item-files-picture-upload {
+        position: absolute;
+        right: -330px;
+        top: 151px;
+        width: auto;
+        max-width: 320px;
+      }
+    }
+    
+    legend {
+      display: none;
+    }
+    
+    img {
+      max-width: 144px;
+      border: 2px solid #fff;
+      border-radius: 72px;
+      -webkit-border-radius: 72px;
+      -moz-border-radius: 72px;
+      -ms-border-radius: 72px;
+    }
   }
   
   #edit-timezone {
@@ -480,5 +521,133 @@ body.section-user.page-user-points {
       text-align: left;
     }
 
+  }
+}
+
+// Membership section(s)
+.block--dfc-user-blocks-your-membership {
+  margin-bottom: 60px;
+  
+  h3 {
+    color: $color-orange;
+    margin-bottom: 50px;
+  }
+  
+  h5 {
+    font-family: $tgc;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: $color-white;
+    @include rem(font-size, 43px);
+    text-transform: uppercase;
+  }
+  
+  @include breakpoint( $bp-tab ) {
+    .current-membership-wrapper,
+    .upgrade-membership-wrapper {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+// Membership Benefits section(s)
+.block--dfc-user-blocks-membership-benefits {
+  h3 {
+    color: $color-orange;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  dt,
+  dd {
+    color: $color-white;
+    @include rem(font-size, 14px);
+    line-height: 1.5;
+    margin: 0 0 0.5em;
+    padding: 0;
+    text-indent: 0;
+      
+    @include breakpoint( $bp-tab ) {
+      float: left;
+      width: 50%;
+    }
+    h5 {
+      color: $color-gray-9;
+      font-family: $tgc;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @include breakpoint( $bp-tab ) {
+    dl {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    dt {
+      clear: left;
+    }
+  }
+}
+// User "My Invitations" block
+.block--views-my-invitiations-block {
+  margin: 40px 0 0;
+  padding: 60px 0 0;
+  border-top: 1px solid $color-gray-50;
+  
+  h2 {
+    color: $color-orange;
+    @include rem(font-size, 24px);
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .view-header {
+    @include rem(font-size, 12px);
+    margin: 20px 0 50px;
+  }
+  
+  th {
+    color: $color-gray-9;
+    font-family: $tgc;
+    @include rem(font-size, 17px);
+    padding-bottom: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.block--invite-invite-add-invite-by-email {
+  margin: 40px 0 0;
+  padding: 0 0 70px;
+  border-bottom: 1px solid $color-gray-50;
+  
+  h2 {
+    display: none;
+  }
+  
+  .form-item label {
+    color: $color-gray-9;
+    font-family: $tgc;
+    @include rem(font-size, 17px);
+    font-weight: normal;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+  }
+}
+
+// User Media Uploads block
+.block--formblock-user-media {
+  margin: 30px 0 0;
+  
+  h2 {
+    color: $color-orange;
+    @include rem(font-size, 24px);
+    margin: 40px 0;
+    text-transform: uppercase;
   }
 }

@@ -158,19 +158,28 @@ function dfc_points_award_video ($vid, $time) {
 }
 
 function dfc_points_award_image( $nid ) {
-  //$node = node_load($vid);
-  $cat = 3; //$node->field_media_type[LANGUAGE_NONE][0]['tid'];
-  $op = 'dfc_points_award_image';
-  $points = dfc_points_award_points_by_cat($cat);
-  if( !dfc_points_award_check_points_awarded( $nid, $op ) ) {
-    $award_points = array(
-        'points' => $points,
-        'entity_type' => 'node',
-        'entity_id' => $nid,
-        'operation' => $op
-    );
-    dfc_points_award_grant_points($award_points);
-    watchdog('dfc', 'awarding image points');
+  // only award points for viewing image on image details page :
+  //watchdog('dfcpaw', 'dfc_points_award_image('. $nid .') : arg0 = '. arg(0) .' / arg1 = '. arg(1) );
+  
+  if ( ( arg(0) == 'node' ) && ( arg(1) == $nid ) ) {
+    //$node = node_load($vid);
+    $cat = 3; //$node->field_media_type[LANGUAGE_NONE][0]['tid'];
+    $op = 'dfc_points_award_image';
+    $points = dfc_points_award_points_by_cat($cat);
+    if( !dfc_points_award_check_points_awarded( $nid, $op ) ) {
+      $award_points = array(
+          'points' => $points,
+          'entity_type' => 'node',
+          'entity_id' => $nid,
+          'operation' => $op
+      );
+      dfc_points_award_grant_points($award_points);
+      watchdog('dfc', 'awarding image points : <pre>'. print_r($award_points,true) .'</pre>');
+    } else {
+      //watchdog( 'dfc', 'already got pts for nid '. $nid .' op '. $op );
+    }
+  } else {
+    //watchdog('dfc', 'also loaded '. $nid .' but not on that details?');
   }
 }
 

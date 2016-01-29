@@ -4,6 +4,9 @@
       if ( $('body').hasClass('section-fab-52-resorts') ) {
         //console.log('ello fab 52!');
         $('.node--resort').each(function() {
+          // fix price showup?
+          $(this).find('.field--resort-category').append('<div class="group-resort-price" />');
+          
           var thisnid = $(this).find('.share_vid').data('share-vid');
           // hook to share btns
           if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {

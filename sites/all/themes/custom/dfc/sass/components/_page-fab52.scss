@@ -214,8 +214,8 @@ body.node-type-landing-page.section-fab-52-resorts {
       content: "$$$$";
       color: $color-gray-6;
       position: absolute;
-      top: 0;
-      right: -40px;
+      top: -15px;
+      right: -50px;
       width: 30px;
     }
 
@@ -223,8 +223,8 @@ body.node-type-landing-page.section-fab-52-resorts {
       content: "$";
       color: $color-white;
       position: absolute;
-      top: 0;
-      right: -40px;
+      top: -15px;
+      right: -50px;
       width: 30px;
     }
   }
@@ -262,6 +262,7 @@ body.node-type-landing-page.section-fab-52-resorts {
   .field--resort-category {
     color: $color-orange;
     text-transform: uppercase;
+    display: inline-block;
     line-height: 1;
     margin-bottom: 20px;
     

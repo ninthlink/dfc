@@ -246,6 +246,18 @@ body.node-type-landing-page.section-media {
     text-align: left;
     z-index: 1;
 
+    .views-item-media-item {
+      .views-field-field-image-1 {
+        display: none;
+      }
+    }
+
+    .views-item-advertisement {
+      .views-fieldset {
+        display: none;
+      }
+    }
+
 	  @include breakpoint($bp-tab) {
       width: 348px;
 	  }

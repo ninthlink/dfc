@@ -13,6 +13,12 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
+  $items['dfc/points/grant/share/%/%'] = array(
+    'page callback' => 'dfc_points_award_share',
+    'page arguments' => array(4, 5),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
   /*
   // Returns AJAX commands if the user has JavaScript turned on.
   $items['dfc/points/award/ajax'] = array(
@@ -137,6 +143,7 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
 }
 
 function dfc_points_award_video ($vid, $time) {
+  // but $time is never used or checked?!
   $ret = array('success' => FALSE);
   $node = node_load($vid);
   $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
@@ -145,9 +152,9 @@ function dfc_points_award_video ($vid, $time) {
   if(!dfc_points_award_check_video_awarded($vid)) {
     $video_points = array(
         'points' => $points,
-        'operation' => 'dfc_points_award_video',
         'entity_type' => 'node',
         'entity_id' => $vid,
+        'operation' => 'dfc_points_award_video'
     );
     dfc_points_award_grant_points($video_points);
     watchdog('dfc', 'awarding video points');
@@ -157,19 +164,19 @@ function dfc_points_award_video ($vid, $time) {
   drupal_json_output($ret);
 }
 
-function dfc_points_award_image ($vid) {
+function dfc_points_award_image( $nid ) {
   //$node = node_load($vid);
   $cat = 3; //$node->field_media_type[LANGUAGE_NONE][0]['tid'];
-  
+  $op = 'dfc_points_award_image';
   $points = dfc_points_award_points_by_cat($cat);
-  if(!dfc_points_award_check_video_awarded($vid)) {
-    $video_points = array(
+  if( !dfc_points_award_check_points_awarded( $nid, $op ) ) {
+    $award_points = array(
         'points' => $points,
-        'operation' => 'dfc_points_award_image',
         'entity_type' => 'node',
-        'entity_id' => $vid,
+        'entity_id' => $nid,
+        'operation' => $op
     );
-    dfc_points_award_grant_points($video_points);
+    dfc_points_award_grant_points($award_points);
     watchdog('dfc', 'awarding image points');
   }
 }
@@ -191,6 +198,7 @@ function dfc_points_award_points_by_cat($cat) {
   return $points;
 }
 
+// for a more robust, see below dfc_points_award_check_points_awarded
 function dfc_points_award_check_video_awarded($vid) {
   global $user;
   $chk = db_select('userpoints_txn', 'upt')
@@ -206,11 +214,28 @@ function dfc_points_award_check_video_awarded($vid) {
   return FALSE;
 }
 
+// query userpoints_txn table direct to see if op points are given
+function dfc_points_award_check_points_awarded( $nid, $op ) {
+  global $user;
+  $chk = db_select('userpoints_txn', 'upt')
+      ->fields('upt')
+      ->condition('uid', $user->uid)
+      ->condition('entity_type', 'node')
+      ->condition('entity_id', $nid)
+      ->condition('operation', $op)
+      ->execute()->fetchAssoc();
+
+  if($chk) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
 function dfc_points_award_link () {
   if ($l = $_GET['l']) {
     $ls = substr($l, 128);
     global $user;
-    //@todo verify url validity, don't grant points for just any url
+    //@todo verify url validity, don't grant points for just any url?
     $chk = db_select('userpoints_txn', 'upt')
         ->fields('upt')
         ->condition('uid', $user->uid)
@@ -226,6 +251,41 @@ function dfc_points_award_link () {
       watchdog('dfc', 'awarding link points: ' . $l);
     }
     drupal_goto($l);
+  }
+}
+
+function dfc_points_award_share( $wher, $nid ) {
+  if ( in_array( $wher, array( 'tw', 'fb' ) ) ) {
+    
+    $node = node_load( (int) $nid );
+    if ( $node !== FALSE ) {
+      //watchdog('nchk', '<pre>'. print_r($node,true) .'</pre>');
+      if ( $node->type == 'media_item' ) {
+        $op = 'dfc_points_award_share_'. $wher;
+        global $user;
+        //@todo node load nid
+        $chk = db_select('userpoints_txn', 'upt')
+            ->fields('upt')
+            ->condition('uid', $user->uid)
+            ->condition('entity_type', 'node')
+            ->condition('entity_id', $nid)
+            ->condition('operation', $op)
+            ->execute()->fetchAssoc();
+
+        if(!$chk) {
+          $link_points = array(
+            'points' => 5,
+            'entity_type' => 'node',
+            'entity_id' => $nid,
+            'operation' => $op
+          );
+          dfc_points_award_grant_points($link_points);
+          watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
+        } else {
+          //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
+        }
+        }
+    }
   }
 }
 
@@ -392,27 +452,20 @@ function dfc_points_award_nojs_callback() {
 
 // Implements hook_userpoints_info().
 function dfc_points_award_userpoints_info() {
-  // one callback for all
-  $cb = 'dfc_points_award_userpoints_description_callback';
-  
+  // one callback to rule them all
+  $ar = array(
+    'description callback' => 'dfc_points_award_userpoints_description_callback'
+  );
+  // and return our new points actions
   return array(
-    'dfc_points_award_image' => array(
-      'description callback' => $cb,
-    ),
-    'dfc_points_award_video' => array(
-      'description callback' => $cb,
-    ),
-    /*
-    'userbase_custom_quiz_finished' => array(
-      'description callback' => 'dfc_points_award_userpoints_description_callback',
-    ),
-    */
+    'dfc_points_award_image' => $ar,
+    'dfc_points_award_video' => $ar,
+    'dfc_points_award_share_tw' => $ar,
+    'dfc_points_award_share_fb' => $ar
   );
 }
 
-/**
- * Description callback for userpoint operation description/reason.
- */
+// Description callback for userpoint operation description/reason.
 function dfc_points_award_userpoints_description_callback($operation, $entity) {
 
   $arguments = array();
@@ -433,10 +486,11 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
     case 'dfc_points_award_video':
       return t('Watched Video "%title"', $arguments);
       break;
-    /*
-    case 'userbase_custom_quiz_finished':
-      return t('Completed training quiz "%title"', $arguments);
+    case 'dfc_points_award_share_fb':
+      return t('Shared "%title" on Facebook', $arguments);
       break;
-    */
+    case 'dfc_points_award_share_tw':
+      return t('Tweeted about "%title"', $arguments);
+      break;
 	}
 }

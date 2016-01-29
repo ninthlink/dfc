@@ -6,7 +6,35 @@
       var status = $('.status');
       var awarded = Drupal.settings.dfcPointsAward.awarded;
       var threshold = Drupal.settings.dfcPointsAward.threshold;
-
+      
+      // hook to share buttons
+      // Only run if the link exists in the current page load or fragment refresh.
+      if ($('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
+        $('.st_facebook_custom').addClass('dfc_hookd').click(function() {
+          console.log('clicked fb');
+          var nid = Drupal.settings.dfcPointsAward.vid;
+          var url = '/dfc/points/grant/share/fb/' + nid;
+          $.get(url, function(data) {
+            console.log('got it');
+            //console.log(data);
+          });
+        });
+      }
+      if ($('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
+        $('.st_twitter_custom').addClass('dfc_hookd').click(function() {
+          console.log('clicked tw');
+          var nid = Drupal.settings.dfcPointsAward.vid;
+          var url = '/dfc/points/grant/share/tw/' + nid;
+          $.get(url, function(data) {
+            console.log('got it');
+            //console.log(data);
+          });
+        });
+      }
+      
+      
+      // video player listener code for awarding...
+      
       // Listen for messages from the player
       if (window.addEventListener) {
         window.addEventListener('message', onMessageReceived, false);

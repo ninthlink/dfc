@@ -36,7 +36,7 @@ class dfc_monthly_points extends views_handler_field {
       $extra[] = array(
         'table' => $alias,
         'field' => 'tid',
-        'value' => 0,
+        'value' => 1,
         'operator' => '=',
       );
       $join->construct($table, $left_table, $left_field, $field, $extra, 'LEFT');

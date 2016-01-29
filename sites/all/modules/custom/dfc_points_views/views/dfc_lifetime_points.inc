@@ -36,7 +36,7 @@ class dfc_lifetime_points extends views_handler_field_numeric {
       $extra[] = array(
         'table' => $alias,
         'field' => 'tid',
-        'value' => 1,
+        'value' => 0,
         'operator' => '=',
       );
       $join->construct($table, $left_table, $left_field, $field, $extra, 'LEFT');

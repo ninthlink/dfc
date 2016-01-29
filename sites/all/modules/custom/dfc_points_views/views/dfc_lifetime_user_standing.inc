@@ -33,13 +33,13 @@ class dfc_lifetime_user_standing extends views_handler_field {
         $extra[] = array(
           'table' => $alias,
           'field' => 'tid',
-          'value' => 1,
+          'value' => 0,
           'operator' => '=',
         );
         $join->construct($table, $left_table, $left_field, $field, $extra, 'LEFT');
         $alias = $this->query->add_relationship($alias, $join, $this->table_alias, $this->relationship);
         $this->query->add_field($alias, 'points');
     }
-    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_lifetime_count.uid) FROM userpoints userpoints_lifetime_count INNER JOIN users userpoints_lifetime_count_users ON userpoints_lifetime_count_users.uid = userpoints_lifetime_count.uid AND userpoints_lifetime_count_users.status=1 WHERE userpoints_lifetime_count.points > userpoints_lifetime_points AND userpoints_lifetime_count.tid=1)', 'userpoints_lifetime_standing');
+    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_lifetime_count.uid) FROM userpoints userpoints_lifetime_count INNER JOIN users userpoints_lifetime_count_users ON userpoints_lifetime_count_users.uid = userpoints_lifetime_count.uid AND userpoints_lifetime_count_users.status=1 WHERE userpoints_lifetime_count.points > userpoints_lifetime_points AND userpoints_lifetime_count.tid=0)', 'userpoints_lifetime_standing');
   }
 }

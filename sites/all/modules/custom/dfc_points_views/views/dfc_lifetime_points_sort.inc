@@ -29,7 +29,7 @@ class dfc_lifetime_points_sort extends views_handler_sort {
       $extra[] = array(
         'table' => $alias,
         'field' => 'tid',
-        'value' => 1,
+        'value' => 0,
         'operator' => '=',
       );
       $join->construct($table, $left_table, $left_field, $field, $extra, 'LEFT');

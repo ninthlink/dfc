@@ -31,6 +31,33 @@
           }
         });
       }
+      if ( $('body').hasClass('section-pro-staff') ) {
+        //console.log('ello pro staff!');
+        $('.node--staff').each(function() {
+          var thisnid = $(this).find('.share_vid').data('share-vid');
+          // hook to share btns
+          if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
+            $(this).find('.st_facebook_custom').addClass('dfc_hookd').click(function() {
+              //console.log('clicked fb for nid '+ thisnid);
+              var url = '/dfc/points/grant/share/fb/' + thisnid;
+              $.get(url, function(data) {
+                console.log('got it');
+                //console.log(data);
+              });
+            });
+          }
+          if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
+            $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
+              //console.log('clicked tw for nid '+ thisnid);
+              var url = '/dfc/points/grant/share/tw/' + thisnid;
+              $.get(url, function(data) {
+                console.log('got it');
+                //console.log(data);
+              });
+            });
+          }
+        });
+      }
       
       if ( $('body').hasClass('node-type-media-item') ) {
         var player = $('iframe');

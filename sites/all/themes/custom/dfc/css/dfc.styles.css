@@ -2274,6 +2274,32 @@ body.node-type-landing-page.section-blog .block--views-blog-block .views-field-f
     body.node-type-landing-page.section-blog .block--views-blog-block .views-field-field-image {
       max-width: 20%; } }
 
+/* line 3, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+body.page-checkout #commerce-userpoints-discount fieldset {
+  border: 0;
+  float: right;
+  width: 510px; }
+  /* line 8, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+  body.page-checkout #commerce-userpoints-discount fieldset .form-submit {
+    border: 0px none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    display: block;
+    font-family: "dangerregular",Helvetica,sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    background: #000000;
+    font-size: 14px;
+    min-width: 275px;
+    margin-left: auto; }
+  /* line 26, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+  body.page-checkout #commerce-userpoints-discount fieldset .form-submit:hover {
+    background: #f1592a; }
+
 /* line 2, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-feature {
   position: relative;

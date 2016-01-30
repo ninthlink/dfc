@@ -432,11 +432,23 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-banner_ads-block_1' => array(
+          'module' => 'views',
+          'delta' => 'banner_ads-block_1',
+          'region' => 'content',
+          'weight' => '10',
+        ),
         'views-related_videos-block' => array(
           'module' => 'views',
           'delta' => 'related_videos-block',
           'region' => 'content_bottom',
           'weight' => '-10',
+        ),
+        'views-banner_ads-block' => array(
+          'module' => 'views',
+          'delta' => 'banner_ads-block',
+          'region' => 'content_bottom',
+          'weight' => '0',
         ),
         'views-partners-block' => array(
           'module' => 'views',

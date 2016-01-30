@@ -355,5 +355,12 @@ body.node-type-landing-page.section-media {
   
   ul.pager {
     @extend .load-more;
+    
+    @include breakpoint( $bp-tab ) {
+      li {
+        float: left;
+        width: 33%;
+      }
+    }
   }
 }

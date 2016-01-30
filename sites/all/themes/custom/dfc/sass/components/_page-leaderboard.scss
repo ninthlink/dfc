@@ -118,6 +118,12 @@ body.node-type-landing-page.section-leaderboard {
           padding-right: 0;
         }
       }
+      .pager-current {
+        display: none;
+      }
+      .pager-next a {
+        margin-top: -24px;
+      }
     }
     
     .view-footer {

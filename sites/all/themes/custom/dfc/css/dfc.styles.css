@@ -577,6 +577,15 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     height: auto;
     max-width: 100%; }
 
+@media (min-width: 590px) {
+  /* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ads.scss */
+  .block--views-banner-ads-block-1 .view-banner-ads {
+    float: right;
+    text-align: right; }
+    /* line 20, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ads.scss */
+    .block--views-banner-ads-block-1 .view-banner-ads img {
+      max-width: 346px; } }
+
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
 .block--dfc-convert-points-giveaway-countdown {
   background: #272727; }

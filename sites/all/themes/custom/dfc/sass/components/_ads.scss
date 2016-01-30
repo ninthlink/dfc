@@ -10,3 +10,16 @@
     max-width: 100%;
   }
 }
+
+.block--views-banner-ads-block-1 {
+  @include breakpoint( $bp-tab ) {
+    .view-banner-ads {
+      float: right;
+      text-align: right;
+      
+      img {
+        max-width: 346px;
+      }
+    }
+  }
+}

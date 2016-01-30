@@ -531,6 +531,16 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Most Popular */
   $handler = $view->new_display('block', 'Most Popular', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
+  $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
+  $handler->display->display_options['fields']['field_ad_link']['field'] = 'field_ad_link';
+  $handler->display->display_options['fields']['field_ad_link']['label'] = '';
+  $handler->display->display_options['fields']['field_ad_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ad_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ad_link']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_ad_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_ad_link']['type'] = 'link_plain';
   /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
   $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
@@ -606,6 +616,9 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_image_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image_1']['settings'] = array(
@@ -1792,6 +1805,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_ad_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ad_link']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ad_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_ad_link']['type'] = 'link_plain';
   /* Field: Commerce Product: Product Image */
   $handler->display->display_options['fields']['field_product_image']['id'] = 'field_product_image';
   $handler->display->display_options['fields']['field_product_image']['table'] = 'field_data_field_product_image';

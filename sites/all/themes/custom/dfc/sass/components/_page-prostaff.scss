@@ -224,6 +224,16 @@ body.node-type-landing-page.section-pro-staff {
     }
   }
 }
+// different color for the rest of staffs h2
+.block--views-staffs-block {
+  .view-staffs {
+    h2.block__title {
+      color: $color-skyblue;
+      margin-top: 20px;
+    }
+  }
+}
+
 
 .node.node--staff--teaser {
   

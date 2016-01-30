@@ -19,6 +19,12 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
+  $items['dfc/points/grant/slideshow/%/%'] = array(
+    'page callback' => 'dfc_points_award_slideshow',
+    'page arguments' => array(4, 5),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
   /*
   // Returns AJAX commands if the user has JavaScript turned on.
   $items['dfc/points/award/ajax'] = array(
@@ -255,7 +261,7 @@ function dfc_points_award_link () {
     drupal_goto($l);
   }
 }
-
+// "page" callback for sharing some nid to twitter or facebook
 function dfc_points_award_share( $wher, $nid ) {
   if ( in_array( $wher, array( 'tw', 'fb' ) ) ) {
     
@@ -286,7 +292,39 @@ function dfc_points_award_share( $wher, $nid ) {
         } else {
           //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
         }
-        }
+      }
+    }
+  }
+}
+// "page" callback for clicking through some gallery
+function dfc_points_award_slideshow( $nid, $count ) {
+  $node = node_load( (int) $nid );
+  if ( $node !== FALSE ) {
+    //watchdog('nchk', '<pre>'. print_r($node,true) .'</pre>');
+    if ( in_array( $node->type, array( 'landing_page', 'resort', 'staff' ) ) ) {
+      $op = 'dfc_points_award_slideshow';
+      global $user;
+      //@todo node load nid
+      $chk = db_select('userpoints_txn', 'upt')
+          ->fields('upt')
+          ->condition('uid', $user->uid)
+          ->condition('entity_type', 'node')
+          ->condition('entity_id', $nid)
+          ->condition('operation', $op)
+          ->execute()->fetchAssoc();
+
+      if(!$chk) {
+        $link_points = array(
+          'points' => 5,
+          'entity_type' => 'node',
+          'entity_id' => $nid,
+          'operation' => $op
+        );
+        dfc_points_award_grant_points($link_points);
+        watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
+      } else {
+        //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
+      }
     }
   }
 }
@@ -463,7 +501,8 @@ function dfc_points_award_userpoints_info() {
     'dfc_points_award_image' => $ar,
     'dfc_points_award_video' => $ar,
     'dfc_points_award_share_tw' => $ar,
-    'dfc_points_award_share_fb' => $ar
+    'dfc_points_award_share_fb' => $ar,
+    'dfc_points_award_slideshow' => $ar
   );
 }
 
@@ -493,6 +532,9 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
       break;
     case 'dfc_points_award_share_tw':
       return t('Tweeted about "%title"', $arguments);
+      break;
+    case 'dfc_points_award_slideshow':
+      return t('Viewed Slideshow for "%title"', $arguments);
       break;
 	}
 }

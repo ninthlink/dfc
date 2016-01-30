@@ -11,8 +11,8 @@
           setTimeout( function() { 
             var thisowlc = thiscar.children('.owl-carousel');
             var thisowl = thisowlc.data('owlCarousel');
-            console.log('nid '+ thisnid);
-            console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
+            //console.log('nid '+ thisnid);
+            //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
             thisowlc.bind('owlcheck', function() {
               console.log(thisnid + ' showing #'+ thisowl.currentItem);
               $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');

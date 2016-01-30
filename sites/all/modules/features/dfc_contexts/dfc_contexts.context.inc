@@ -149,6 +149,12 @@ function dfc_contexts_context_default_contexts() {
           'module' => 'views',
           'delta' => 'resorts-block',
           'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
+        'views-banner_ads-block' => array(
+          'module' => 'views',
+          'delta' => 'banner_ads-block',
+          'region' => 'content_bottom',
           'weight' => '-9',
         ),
         'views-offers-block_1' => array(
@@ -338,6 +344,12 @@ function dfc_contexts_context_default_contexts() {
         'views-leaderboards-block_1' => array(
           'module' => 'views',
           'delta' => 'leaderboards-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
+        'views-banner_ads-block' => array(
+          'module' => 'views',
+          'delta' => 'banner_ads-block',
           'region' => 'content_bottom',
           'weight' => '-9',
         ),

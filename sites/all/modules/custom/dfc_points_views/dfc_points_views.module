@@ -69,4 +69,18 @@ function dfc_points_views_userpoints_list_transactions_alter( &$data ) {
 			unset($data['list']['table']['#rows'][$k]['data'][$r]);
 		}
 	}
+  
+  // override "Approved Points" and "Pending Points" in the summary table
+  $lifetime_points = userpoints_get_current_points($data['#account']->uid, 0);
+  $monthly_points = userpoints_get_current_points($data['#account']->uid, 1);
+  $data['list']['summary_table']['#rows'] = array(
+    array(
+      'data' => array(date('F') .' '. t('!points', userpoints_translation()), $monthly_points),
+      'class' => array('userpoints-myuserpoints-total-approved'),
+    ),
+    array(
+      'data' => array(t('Lifetime !points', userpoints_translation()), $lifetime_points),
+      'class' => array('userpoints-myuserpoints-total-pending'),
+    ),
+  );
 }

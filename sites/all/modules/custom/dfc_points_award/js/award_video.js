@@ -60,6 +60,12 @@
       }
       
       if ( $('body').hasClass('node-type-media-item') ) {
+        // quick fix move ad inline
+        if ( $('.block--views-banner-ads-block-1').size() > 0 ) {
+          if ( $('.node--full .field--media-category').size() > 0 ) {
+            $('.block--views-banner-ads-block-1').insertBefore( $('.node--full .field--media-category') );
+          }
+        }
         var player = $('iframe');
         var playerOrigin = '*';
         var status = $('.status');

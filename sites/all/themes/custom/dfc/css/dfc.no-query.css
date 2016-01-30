@@ -496,6 +496,17 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     background: #f1592a;
     color: #fff; }
 
+/* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ads.scss */
+.view-banner-ads {
+  margin-bottom: 50px;
+  text-align: center; }
+  /* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ads.scss */
+  .view-banner-ads img {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%; }
+
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
 .block--dfc-convert-points-giveaway-countdown {
   background: #272727; }
@@ -2996,19 +3007,24 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   margin-bottom: 60px; }
 
 /* line 230, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+.block--views-staffs-block .view-staffs h2.block__title {
+  color: #2897d7;
+  margin-top: 20px; }
+
+/* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser header {
   display: none; }
 
-/* line 235, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .group-resort-first {
   margin-bottom: 20px; }
 
-/* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--staff--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 276, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -3016,7 +3032,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 283, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 293, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -3024,7 +3040,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 0;
     right: -40px;
     width: 30px; }
-  /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 302, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -3033,19 +3049,19 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     right: -40px;
     width: 30px; }
 
-/* line 306, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 336, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 332, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--staff-category {
   color: #ffffff;
   text-transform: uppercase;
@@ -3054,13 +3070,13 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-family: "dangerregular", Helvetica, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem; }
-  /* line 340, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 350, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--staff-category:before {
     content: "Category |";
     color: #f1592a;
     margin-right: 6px; }
 
-/* line 348, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 358, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3069,7 +3085,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   clear: both; }
 
-/* line 357, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 367, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--businessname {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3078,7 +3094,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 5px; }
 
-/* line 365, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 375, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3087,7 +3103,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
 
-/* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 384, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -3096,7 +3112,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   color: #ffffff;
   margin-bottom: 20px; }
 
-/* line 382, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 392, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -3105,7 +3121,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 395, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 405, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -3120,7 +3136,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 403, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -3128,15 +3144,15 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 0.9375rem;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 418, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 428, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 423, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 433, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--link {
   clear: both; }
 
-/* line 431, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 441, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .node__links {
   display: none; }
 

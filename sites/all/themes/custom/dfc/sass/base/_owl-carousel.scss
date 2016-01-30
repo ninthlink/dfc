@@ -114,3 +114,20 @@
 		}
 	}
 }
+
+// bean and image field other option
+.owl-control-bars3 {
+  @extend .owl-control-bars2;
+	
+	.owl-buttons {
+		
+		.owl-prev,
+		.owl-next {
+			@include use-sprite($icon-arrow-left);
+		}
+		
+		.owl-next {
+			@include use-sprite($icon-arrow-right);
+		}
+	}
+}

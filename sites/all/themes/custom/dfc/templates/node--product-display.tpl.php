@@ -84,6 +84,7 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="back-banner"><a href="/store">Back to DFC Store</a></div>
   <div class="content"<?php print $content_attributes; ?>>
+    <div id="main-image"></div>
     <?php print render($content['product:field_product_image']);?>
     <div class="sidebar">
       <div class="title"><?php print $title; ?></div>

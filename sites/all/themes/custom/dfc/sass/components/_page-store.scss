@@ -129,12 +129,29 @@ body.node-type-product-display {
            display: block;
          }
 
-        .field--product-image {
-          float: left;
+        .field-field-product-image {
           margin: 10px 40px 10px 10px;
 
-          img {
-            max-width: 600px;
+          #main-image {
+            img {
+              width: 535px;
+            }
+          }
+
+          .field--product-image {
+            display: inline-block;
+
+            img {
+              border: 1px solid $color-black;
+              height: 60px;
+              width: 60px;
+              margin: 10px;
+              padding: 5px;
+            }
+
+            img:hover {
+              border-color: $color-gray-ae;
+            }
           }
         }
 
@@ -177,6 +194,30 @@ body.node-type-product-display {
           background-color: $color-gray-medium-dark;
           color: $color-orange;
         }
+      }
+    }
+  }
+
+  #block-views-store-block-1 {
+    background: $color-white;
+    color: $color-black;
+    padding: 20px 50px;
+
+    h2.block__title {
+      color: $color-orange;
+      font-size: 34px;
+      text-transform: uppercase;
+    }
+
+    .views-field-title {
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    .views-field-field-product-image {
+
+      img {
+        border: 1px solid $color-gray-light;
+        width: 200px;
       }
     }
   }

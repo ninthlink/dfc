@@ -14,7 +14,7 @@
             //console.log('nid '+ thisnid);
             //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
             thisowlc.bind('owlcheck', function() {
-              console.log(thisnid + ' showing #'+ thisowl.currentItem);
+              //console.log(thisnid + ' showing #'+ thisowl.currentItem);
               $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
               if ( $(this).find('.unseen').size() == 0 ) {
                 console.log('you have viewed all for '+ thisnid +' !!');
@@ -69,10 +69,10 @@
           setTimeout( function() { 
             var thisowlc = thiscar.children('.owl-carousel');
             var thisowl = thisowlc.data('owlCarousel');
-            console.log('nid '+ thisnid);
-            console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
+            //console.log('nid '+ thisnid);
+            //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
             thisowlc.bind('owlcheck', function() {
-              console.log(thisnid + ' showing #'+ thisowl.currentItem);
+              //console.log(thisnid + ' showing #'+ thisowl.currentItem);
               $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
               if ( $(this).find('.unseen').size() == 0 ) {
                 console.log('you have viewed all for '+ thisnid +' !!');
@@ -116,6 +116,38 @@
                 //console.log(data);
               });
             });
+          }
+          
+          // hook to gallery
+          var thiscar = $(this).find('.field--image-gallery');
+          if ( thiscar.size() > 0 ) {
+            // wrap in timeout delay so it fires after owl-carousel init?
+            setTimeout( function() { 
+              var thisowlc = thiscar.children('.owl-carousel');
+              var thisowl = thisowlc.data('owlCarousel');
+              //console.log('nid '+ thisnid);
+              //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
+              if ( thisowl.itemsAmount > 1 ) {
+                thisowlc.bind('owlcheck', function() {
+                  //console.log(thisnid + ' showing #'+ thisowl.currentItem);
+                  $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
+                  if ( $(this).find('.unseen').size() == 0 ) {
+                    console.log('you have viewed all for '+ thisnid +' !!');
+                    
+                    var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
+                    $.get(url, function(data) {
+                      console.log('got it');
+                      //console.log(data);
+                    });
+                  } else {
+                    console.log('keep going..');
+                  }
+                }).find('.owl-item:gt(0)').addClass('unseen');
+                thisowlc.find('.owl-next, .owl-prev').bind('click', function() {
+                  thisowlc.trigger('owlcheck');
+                });
+              }
+            }, 300 );
           }
         });
       }

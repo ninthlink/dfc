@@ -129,14 +129,17 @@ body.node-type-product-display {
            display: block;
          }
 
+        #main-image {
+          float:left;
+          width: 535px;
+
+          img {
+            width: 535px;
+          }
+        }
+
         .field-field-product-image {
           margin: 10px 40px 10px 10px;
-
-          #main-image {
-            img {
-              width: 535px;
-            }
-          }
 
           .field--product-image {
             display: inline-block;

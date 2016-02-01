@@ -195,6 +195,7 @@ body.node-type-landing-page.section-fab-52-resorts {
 
 	  @include breakpoint($bp-tab) {
       float: right;
+      margin: -9px 0;
 	  }
   
     .st_twitter_custom,
@@ -261,6 +262,7 @@ body.node-type-landing-page.section-fab-52-resorts {
   
   .field--resort-category {
     color: $color-orange;
+    font-family: $dr;
     text-transform: uppercase;
     display: inline-block;
     line-height: 1;
@@ -275,16 +277,16 @@ body.node-type-landing-page.section-fab-52-resorts {
 
   .field--title-field {
     color: $color-white;
+    font-family: $tgc;
 		@include rem(font-size, 32px);
-    font-weight: bold;
     line-height: 1;
     clear: both;
   }
 
   .field--location {
-		@include rem(font-size, 25px);
     color: $color-gray-9;
-    font-weight: bold;
+    font-family: $tgc;
+		@include rem(font-size, 25px);
     line-height: 1;
     margin-bottom: 20px;
   }
@@ -293,7 +295,7 @@ body.node-type-landing-page.section-fab-52-resorts {
     font-family: $sr;
 		@include rem(font-size, 15px);
     color: $color-white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .field--phone-number {

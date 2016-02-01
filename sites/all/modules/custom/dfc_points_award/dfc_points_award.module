@@ -246,17 +246,19 @@ function dfc_points_award_link () {
     //@todo verify url validity, don't grant points for just any url?
     $chk = db_select('userpoints_txn', 'upt')
         ->fields('upt')
-        ->condition('uid', $user->uid)
-        ->condition('reference', $ls)
+        ->condition( 'uid', $user->uid )
+        ->condition( 'reference', $ls )
+        ->condition( 'reference', 'dfc_points_award_link' )
         ->execute()->fetchAssoc();
 
     if(!$chk) {
       $link_points = array(
-        'points' => 10,
-        'reference' => $ls
+        'points' => 5,
+        'reference' => $ls,
+        'operation' => 'dfc_points_award_link'
       );
       dfc_points_award_grant_points($link_points);
-      watchdog('dfc', 'awarding link points: ' . $l);
+      watchdog('dfc', 'awarding link points: ' . $l .' : <pre>'. print_r($link_points,true) .'</pre>');
     }
     drupal_goto($l);
   }
@@ -499,6 +501,7 @@ function dfc_points_award_userpoints_info() {
   // and return our new points actions
   return array(
     'dfc_points_award_image' => $ar,
+    'dfc_points_award_link' => $ar,
     'dfc_points_award_video' => $ar,
     'dfc_points_award_share_tw' => $ar,
     'dfc_points_award_share_fb' => $ar,
@@ -523,6 +526,9 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
   switch ($operation->operation) {
     case 'dfc_points_award_image':
       return t('Viewed Photo "%title"', $arguments);
+      break;
+    case 'dfc_points_award_link':
+      return t('Viewed Sponsored Link / Ad', $arguments);
       break;
     case 'dfc_points_award_video':
       return t('Watched Video "%title"', $arguments);

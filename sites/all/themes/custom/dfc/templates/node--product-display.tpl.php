@@ -86,6 +86,7 @@
   <div class="content"<?php print $content_attributes; ?>>
     <div class="main-content">
       <div id="main-image"></div>
+      <p class="images-enlarge">+ enlarge</p>
       <div id="image-thumbnails">
         <?php print render($content['product:field_product_image']);?>
       </div>

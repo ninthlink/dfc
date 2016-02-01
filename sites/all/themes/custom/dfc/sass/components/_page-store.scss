@@ -159,8 +159,18 @@ body.node-type-product-display {
               }
             }
           }
+
+          .images-enlarge {
+            cursor: pointer;
+            float: right;
+            font-family: 'sanchezregular';
+            font-weight: 600;
+            font-size: 18px;
+            padding-top: 20px;
+            text-align: right;
+          }
         }
-        
+
         .title {
           font-family: "dangerregular", Helvetica, sans-serif;
           font-size: 36px;

@@ -275,6 +275,7 @@ body.node-type-landing-page.section-pro-staff {
 
     @include breakpoint($bp-tab) {
       float: right;
+      margin: -9px 0;
     }
   
     .st_twitter_custom,
@@ -361,6 +362,7 @@ body.node-type-landing-page.section-pro-staff {
     @include rem(font-size, 32px);
     line-height: 1;
     clear: both;
+    margin-bottom: 4px;
   }
   
   
@@ -377,7 +379,6 @@ body.node-type-landing-page.section-pro-staff {
     font-family: $tgc;
     @include rem(font-size, 19px);
     line-height: 1;
-    margin-bottom: 20px;
   }
   
   
@@ -386,7 +387,7 @@ body.node-type-landing-page.section-pro-staff {
     @include rem(font-size, 15px);
     line-height: 1.25;
     color: $color-white;
-    margin-bottom: 20px;
+    margin: 36px 0;
   }
   
   .field--phone-number {

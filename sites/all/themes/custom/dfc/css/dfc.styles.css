@@ -53,8 +53,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* line 15, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
 .transform-50, .owl-controls-bars .owl-buttons .owl-prev, body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-controls .owl-buttons .owl-prev, .block--views-media-items-block-1 .owl-controls .owl-buttons .owl-prev,
-.owl-controls-bars .owl-buttons .owl-next, body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-controls .owl-buttons .owl-next, .block--views-media-items-block-1 .owl-controls .owl-buttons .owl-next, .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev,
-.owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--views-media-items-block-2 .owl-controls .owl-buttons .owl-prev,
+.owl-controls-bars .owl-buttons .owl-next, body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-controls .owl-buttons .owl-next, .block--views-media-items-block-1 .owl-controls .owl-buttons .owl-next, .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev,
+.owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .block--views-media-items-block-2 .owl-controls .owl-buttons .owl-prev,
 .block--views-media-items-block-2 .owl-controls .owl-buttons .owl-next, .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a:after,
 .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a:after, body.not-logged-in .block--dfc-flop-menu-userflop a.x, body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link:after {
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -356,21 +356,21 @@ img, media {
     right: -5px; }
 
 /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-.owl-control-bars2, .owl-control-bars3, .node.node--resort--teaser .field--image-gallery .owl-controls, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls, .node.node--staff--teaser .field--image-gallery .owl-controls {
+.owl-control-bars2, .owl-control-bars3, .node.node--resort--teaser .field--image-gallery .owl-controls, .node.node--staff--teaser .field--image-gallery .owl-controls, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls {
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%; }
   /* line 71, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-  .owl-control-bars2 .owl-pagination, .owl-control-bars3 .owl-pagination, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-pagination, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-pagination, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-pagination {
+  .owl-control-bars2 .owl-pagination, .owl-control-bars3 .owl-pagination, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-pagination, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-pagination, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-pagination {
     position: absolute;
     left: 0;
     bottom: 20px;
     width: 100%;
     z-index: 11; }
   /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-  .owl-control-bars2 .owl-buttons, .owl-control-bars3 .owl-buttons, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons {
+  .owl-control-bars2 .owl-buttons, .owl-control-bars3 .owl-buttons, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons {
     position: absolute;
     left: 0;
     top: 0;
@@ -378,8 +378,8 @@ img, media {
     height: 100%;
     z-index: 10; }
     /* line 87, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-    .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev,
-    .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+    .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev,
+    .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next {
       position: absolute;
       top: 50%;
       left: 10%;
@@ -400,11 +400,11 @@ img, media {
       height: 19.5px; }
       @media (min-width: 590px) {
         /* line 87, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-        .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev,
-        .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+        .owl-control-bars2 .owl-buttons .owl-prev, .owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-prev,
+        .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next {
           left: 8%; } }
     /* line 106, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-    .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+    .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next {
       left: auto;
       right: 0;
       content: "";
@@ -418,12 +418,12 @@ img, media {
       height: 19.5px; }
       @media (min-width: 1180px) {
         /* line 106, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-        .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+        .owl-control-bars2 .owl-buttons .owl-next, .owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .block--bean-clubhouse-slideshow .owl-carousel .owl-controls .owl-buttons .owl-next {
           right: 5%; } }
 
 /* line 124, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-.owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev,
-.owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+.owl-control-bars3 .owl-buttons .owl-prev, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-prev,
+.owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
   content: "";
   display: inline-block;
   overflow: hidden;
@@ -435,7 +435,7 @@ img, media {
   height: 23px; }
 
 /* line 129, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_owl-carousel.scss */
-.owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
+.owl-control-bars3 .owl-buttons .owl-next, .node.node--resort--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next, .node.node--staff--teaser .field--image-gallery .owl-controls .owl-buttons .owl-next {
   content: "";
   display: inline-block;
   overflow: hidden;

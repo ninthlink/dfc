@@ -85,29 +85,48 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
-    // set up our custom JS for triggering points for watching a video
-    $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
-    $mtype = $node->field_media_type[LANGUAGE_NONE][0]['tid'];
-    if ( $mtype == 3 ) {
-      dfc_points_award_image( $node->nid );
-    }
     
-    // by default, must watch the video for 10 minutes to get credit
-    $threshold = 10 * 60;
-    if ($cat == 17) {
-      // for Advertisements, watching for 30 seconds is enough
-      $threshold = 30;
-    } else if ($cat == 6) {
-      // for Sponsored video, 2 minutes is ok
-      $threshold = 60 * 2;
+    if ( ( arg(0) == 'node' ) && ( arg(1) == $node->nid ) ) {
+      // set up our custom JS for triggering points for watching a video
+      $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
+      $mtype = $node->field_media_type[LANGUAGE_NONE][0]['tid'];
+      if ( $mtype == 3 ) {
+        // image media type
+        dfc_points_award_image( $node->nid );
+      }
+      
+      // by default, must watch the video for 10 minutes to get credit
+      $threshold = 10 * 60;
+      if ($cat == 17) {
+        // for Advertisements, watching for 30 seconds is enough
+        $threshold = 30;
+      } else if ($cat == 6) {
+        // for Sponsored video, 2 minutes is ok
+        $threshold = 60 * 2;
+      }
+      $settings['dfcPointsAward']['awarded'] = dfc_points_award_check_video_awarded($node->nid);
+      $settings['dfcPointsAward']['threshold'] = $threshold;
+      $settings['dfcPointsAward']['vid'] = $node->nid;
+      $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
+      //$settings['dfcPointsAward']['mtype'] = $mtype;
+      drupal_add_js($settings, 'setting');
+      drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
+      
+      $desc_weight = $node->content['field_product_description']['#weight'];
+      // on media details, inject # Points field right after Description
+      $node->content['dfc_points'] = array(
+        '#tag' => 'div', // Wrap it in a div?
+        '#type' => 'html_tag',
+        '#attributes' => array('class' => 'dfc-points' ),
+        '#value' => '<span class="pts-value">'. dfc_points_award_points_by_cat( $cat ) .'</span> Points',
+        '#weight' => $desc_weight + 1
+      );
+      // if theres also Related Terms, make sure Related Terms weight is next
+      if ( isset( $node->content['field_related_terms'] ) ) {
+        $node->content['field_related_terms']['#weight'] = $desc_weight + 2;
+      }
+      
     }
-    $settings['dfcPointsAward']['awarded'] = dfc_points_award_check_video_awarded($node->nid);
-    $settings['dfcPointsAward']['threshold'] = $threshold;
-    $settings['dfcPointsAward']['vid'] = $node->nid;
-    $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
-    //$settings['dfcPointsAward']['mtype'] = $mtype;
-    drupal_add_js($settings, 'setting');
-    drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
   } else if ( $node->type == 'landing_page' ) {
     $settings['dfcPointsAward']['vid'] = $node->nid;
     drupal_add_js($settings, 'setting');

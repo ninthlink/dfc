@@ -3443,7 +3443,7 @@ body.node-type-product-display #block-views-store-block-1 {
   width: 42px;
   height: 41px;
   cursor: pointer;
-  border: 2px solid #7f7f7f; }
+  border: none; }
 
 /* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
 .sharethis-buttons .st_facebook_custom {

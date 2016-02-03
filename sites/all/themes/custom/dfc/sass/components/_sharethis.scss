@@ -4,7 +4,7 @@
   .st_facebook_custom {
 		@include use-sprite($icon-twitter);
     cursor: pointer;
-    border: 2px solid $color-gray-7f;
+    border: none;
   }
 
   .st_facebook_custom {

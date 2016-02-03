@@ -190,17 +190,11 @@ function dfc_points_award_image( $nid ) {
 }
 
 function dfc_points_award_points_by_cat($cat) {
-  //cat 4 and 7 are most used, and both default to 20 pts
-  $points = 20;
-  if ($cat == 17) {
-    //advertisement
-    $points = 5;
-  } else if ($cat == 6) {
-    //sponsored video
+  // default everything points to 5 points
+  $points = 5;
+  if ( in_array( $cat, array( 4, 5, 6, 7 ) ) ) {
+    // Media Category videos
     $points = 10;
-  } else if ( $cat == 3 ) {
-    // Image / photo
-    $points = 5;
   }
 
   return $points;

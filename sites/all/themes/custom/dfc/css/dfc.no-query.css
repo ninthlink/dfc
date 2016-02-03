@@ -2617,6 +2617,27 @@ body.node-type-landing-page.section-media .l-main {
       .block--views-media-items-block .media-content .views-field-nothing .pts-value {
         color: #f1592a; }
 
+/* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+.l-main .l-content .node--media-item--full .field--product-description {
+  font-family: "sanchezregular", Helvetica, sans-serif;
+  margin-bottom: 20px;
+  max-width: 550px; }
+
+/* line 410, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+.l-main .l-content .node--media-item--full .dfc-points {
+  color: #ffffff;
+  font-family: "sanchezregular", Helvetica, sans-serif;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+  /* line 417, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .l-main .l-content .node--media-item--full .dfc-points .pts-value {
+    color: #f1592a;
+    font-family: "dangerregular", Helvetica, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem; }
+
 /* line 5, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .block--bean-membership-header {
   position: relative;

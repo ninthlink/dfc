@@ -394,3 +394,32 @@ body.node-type-landing-page.section-media {
     }
   }
 }
+
+// media details
+.l-main {
+  .l-content {
+    .node--media-item--full {
+      .field--product-description {
+        font-family: $sr;
+        margin-bottom: 20px;
+        max-width: 550px;
+      }
+      
+        
+      // points styling
+      .dfc-points {
+        color: $color-white;
+        font-family: $sr;
+        @include rem(font-size, 17px);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        
+        .pts-value {
+          color: $color-orange;
+          font-family: $dr;
+          @include rem(font-size, 18px);
+        }
+      }
+    }
+  }
+}

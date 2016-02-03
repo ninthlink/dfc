@@ -51,7 +51,7 @@
                 console.log('got it');
                 //console.log(data);
               });
-            });
+            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
           if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
             $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
@@ -61,7 +61,7 @@
                 console.log('got it');
                 //console.log(data);
               });
-            });
+            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
           // hook to gallery
           var thiscar = $(this).find('.field--image-gallery');
@@ -105,7 +105,7 @@
                 console.log('got it');
                 //console.log(data);
               });
-            });
+            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
           if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
             $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
@@ -115,7 +115,7 @@
                 console.log('got it');
                 //console.log(data);
               });
-            });
+            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
           
           // hook to gallery
@@ -178,7 +178,7 @@
               console.log('got it');
               //console.log(data);
             });
-          });
+          }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }
         if ($('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
           $('.st_twitter_custom').addClass('dfc_hookd').click(function() {
@@ -189,7 +189,7 @@
               console.log('got it');
               //console.log(data);
             });
-          });
+          }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }
         
         

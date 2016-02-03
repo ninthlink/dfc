@@ -121,11 +121,12 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
         '#value' => '<span class="pts-value">'. dfc_points_award_points_by_cat( $cat ) .'</span> Points',
         '#weight' => $desc_weight + 1
       );
+      /*
       // if theres also Related Terms, make sure Related Terms weight is next
       if ( isset( $node->content['field_related_terms'] ) ) {
         $node->content['field_related_terms']['#weight'] = $desc_weight + 2;
       }
-      
+      */
     }
   } else if ( $node->type == 'landing_page' ) {
     $settings['dfcPointsAward']['vid'] = $node->nid;

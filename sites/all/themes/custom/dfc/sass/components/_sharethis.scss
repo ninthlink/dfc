@@ -5,11 +5,33 @@
 		@include use-sprite($icon-twitter);
     cursor: pointer;
     border: none;
+    overflow: visible;
+    position: relative;
+    
+    
+    // points styling
+    .dfc-point-value {
+      color: $color-white;
+      font-family: $sr;
+      @include rem(font-size, 15px);
+      text-transform: uppercase;
+      white-space: nowrap;
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      
+      span {
+        color: $color-orange;
+        font-family: $dr;
+        @include rem(font-size, 16px);
+      }
+    }
   }
 
   .st_facebook_custom {
 		@include use-sprite($icon-facebook);
     margin-left: 50px;
+    overflow: visible;
 
 	  @include breakpoint($bp-desk) {
       margin-left: 150px;

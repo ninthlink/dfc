@@ -276,6 +276,7 @@ body.node-type-landing-page.section-pro-staff {
     @include breakpoint($bp-tab) {
       float: right;
       margin: -9px 0;
+      padding-right: 80px;
     }
   
     .st_twitter_custom,

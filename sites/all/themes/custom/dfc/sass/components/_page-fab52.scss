@@ -196,6 +196,8 @@ body.node-type-landing-page.section-fab-52-resorts {
 	  @include breakpoint($bp-tab) {
       float: right;
       margin: -9px 0;
+      position: relative;
+      padding-right: 80px;
 	  }
   
     .st_twitter_custom,

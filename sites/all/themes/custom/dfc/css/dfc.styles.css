@@ -2961,14 +2961,16 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   /* line 194, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .sharethis-buttons {
     float: right;
-    margin: -9px 0; } }
+    margin: -9px 0;
+    position: relative;
+    padding-right: 80px; } }
 
-/* line 201, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 203, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--resort--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 207, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 209, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -2976,7 +2978,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 216, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -2984,7 +2986,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: -15px;
     right: -50px;
     width: 30px; }
-  /* line 223, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 225, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -2993,19 +2995,19 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     right: -50px;
     width: 30px; }
 
-/* line 237, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 257, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 259, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 263, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--resort-category {
   color: #f1592a;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -3013,13 +3015,13 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   display: inline-block;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 271, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 273, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--resort-category:after {
     content: "|";
     color: #999999;
     margin-left: 6px; }
 
-/* line 278, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3028,7 +3030,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   clear: both; }
 
-/* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 288, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3037,7 +3039,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
 
-/* line 294, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 296, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -3045,7 +3047,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 303, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -3055,11 +3057,11 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
   @media (min-width: 590px) {
-    /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 303, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .node.node--resort--teaser .field--phone-number {
       display: inline-block;
       margin-bottom: 60px; } }
-  /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -3074,7 +3076,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 322, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -3083,22 +3085,22 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
   @media (min-width: 590px) {
-    /* line 322, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .node.node--resort--teaser .field--website-link {
       display: inline-block;
       margin-left: 20px;
       padding-left: 20px;
       margin-bottom: 60px;
       border-left: 1px solid #666666; } }
-  /* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 339, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 344, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--link {
   clear: both; }
 
-/* line 350, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 352, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .node__links {
   display: none; }
 
@@ -3662,7 +3664,7 @@ body.node-type-landing-page.section-media .l-main {
   margin-bottom: 20px;
   max-width: 550px; }
 
-/* line 410, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 409, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .l-main .l-content .node--media-item--full .dfc-points {
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3670,7 +3672,7 @@ body.node-type-landing-page.section-media .l-main {
   font-size: 1.0625rem;
   margin-bottom: 40px;
   text-transform: uppercase; }
-  /* line 417, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 416, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .l-main .l-content .node--media-item--full .dfc-points .pts-value {
     color: #f1592a;
     font-family: "dangerregular", Helvetica, sans-serif;
@@ -4341,14 +4343,15 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   /* line 274, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .sharethis-buttons {
     float: right;
-    margin: -9px 0; } }
+    margin: -9px 0;
+    padding-right: 80px; } }
 
-/* line 281, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 282, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--staff--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 287, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 288, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -4356,7 +4359,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 294, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 295, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -4364,7 +4367,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 0;
     right: -40px;
     width: 30px; }
-  /* line 303, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 304, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -4373,19 +4376,19 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     right: -40px;
     width: 30px; }
 
-/* line 317, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 318, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 327, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 328, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 338, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 343, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 344, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--staff-category {
   color: #ffffff;
   text-transform: uppercase;
@@ -4394,13 +4397,13 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-family: "dangerregular", Helvetica, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem; }
-  /* line 351, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 352, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--staff-category:before {
     content: "Category |";
     color: #f1592a;
     margin-right: 6px; }
 
-/* line 359, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 360, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4410,7 +4413,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   clear: both;
   margin-bottom: 4px; }
 
-/* line 369, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 370, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--businessname {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4419,7 +4422,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 5px; }
 
-/* line 377, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 378, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4427,7 +4430,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 1.1875rem;
   line-height: 1; }
 
-/* line 385, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 386, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -4436,7 +4439,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   color: #ffffff;
   margin: 36px 0; }
 
-/* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 394, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -4446,11 +4449,11 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
   @media (min-width: 590px) {
-    /* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+    /* line 394, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
     .node.node--staff--teaser .field--phone-number {
       display: inline-block;
       margin-bottom: 60px; } }
-  /* line 406, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 407, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -4465,7 +4468,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 414, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 415, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -4474,22 +4477,22 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
   @media (min-width: 590px) {
-    /* line 414, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+    /* line 415, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
     .node.node--staff--teaser .field--website-link {
       display: inline-block;
       margin-left: 20px;
       padding-left: 20px;
       margin-bottom: 60px;
       border-left: 1px solid #666666; } }
-  /* line 429, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 430, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 434, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 435, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--link {
   clear: both; }
 
-/* line 442, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 443, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .node__links {
   display: none; }
 
@@ -4699,9 +4702,30 @@ body.node-type-product-display #block-views-store-block-1 {
   width: 42px;
   height: 41px;
   cursor: pointer;
-  border: none; }
+  border: none;
+  overflow: visible;
+  position: relative; }
+  /* line 13, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+  .sharethis-buttons .st_twitter_custom .dfc-point-value,
+  .sharethis-buttons .st_facebook_custom .dfc-point-value {
+    color: #ffffff;
+    font-family: "sanchezregular", Helvetica, sans-serif;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    left: 50px;
+    top: 10px; }
+    /* line 23, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+    .sharethis-buttons .st_twitter_custom .dfc-point-value span,
+    .sharethis-buttons .st_facebook_custom .dfc-point-value span {
+      color: #f1592a;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 16px;
+      font-size: 1rem; }
 
-/* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+/* line 31, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
 .sharethis-buttons .st_facebook_custom {
   content: "";
   display: inline-block;
@@ -4712,9 +4736,10 @@ body.node-type-product-display #block-views-store-block-1 {
   background-position: -554px 0px;
   width: 42px;
   height: 41px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  overflow: visible; }
   @media (min-width: 960px) {
-    /* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+    /* line 31, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
     .sharethis-buttons .st_facebook_custom {
       margin-left: 150px; } }
 

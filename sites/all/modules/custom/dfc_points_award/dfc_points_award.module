@@ -129,10 +129,31 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   $view = $vars['view'];
   $field = &$vars['field'];
   $row = $vars['row'];
-  if($view->name == 'media_items' && $view->current_display == 'block' && $field->field == 'nothing') {
-    $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
-    $points = dfc_points_award_points_by_cat($cat);
-    $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
+  if($view->name == 'media_items' && $view->current_display == 'block' ) {
+    if( $field->field == 'nothing') {
+      $cat = 0;
+      if ( isset( $row->_field_data['nid']['entity'] ) ) {
+        if ( isset( $row->_field_data['nid']['entity']->field_media_category ) ) {
+          if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE] ) ) {
+            if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0] ) ) {
+              if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'] ) ) {
+                $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
+              }
+            }
+          }
+        }
+      }
+      $points = dfc_points_award_points_by_cat($cat);
+      $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
+    }
+    if ( $field->field == 'field_media_category' ) {
+      //$vars['output'] .= " cathello";
+      //watchdog('chkm', '<pre>'. print_r($vars['output'],true) .'</pre>');
+      // inject class if 'Member Photo' / 'DFC Exclusive Photo'
+      if ( strpos( $vars['output'], 'Photo') !== false ) {
+        $vars['output'] = str_replace( 'field--media-category', 'field--media-category photo', $vars['output'] );
+      }
+    }
   }
   //display store items in points?
 //  if($view->name == 'store' && $field->field == 'commerce_price') {
@@ -192,8 +213,9 @@ function dfc_points_award_image( $nid ) {
 function dfc_points_award_points_by_cat($cat) {
   // default everything points to 5 points
   $points = 5;
-  if ( in_array( $cat, array( 4, 5, 6, 7 ) ) ) {
-    // Media Category videos
+  // Media Category of some Videos
+  if ( in_array( $cat, array( 5, 7 ) ) ) {
+    // cat ID 5 = Member video, 7 = TV Episode
     $points = 10;
   }
 

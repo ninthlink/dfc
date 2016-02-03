@@ -287,6 +287,23 @@ body.node-type-landing-page.section-media {
     &:nth-of-type(3n+1) {
       clear: left;
     }
+    
+    // points styling
+    .views-field-nothing {
+      color: $color-white;
+      font-family: $sr;
+  		@include rem(font-size, 14px);
+      text-transform: uppercase;
+      position: absolute;
+      left: 30px;
+      bottom: 25px;
+      
+      .pts-value {
+        color: $color-orange;
+        font-family: $dr;
+  		  @include rem(font-size, 16px);
+      }
+    }
   }
   
   .media-header {
@@ -321,6 +338,19 @@ body.node-type-landing-page.section-media {
   			@include use-sprite($icon-video-smaller);
   			display: inline-block;
   			margin-right: 10px;
+  		}
+    }
+    .field--media-category.photo {
+  		&:before {
+  			@include use-sprite($icon-image-filter);
+  			display: inline-block;
+  			margin-right: 10px;
+        // hax
+        width: 20px;
+        height: 15px;
+        background-size: 718px 31px;
+        background-position: -252px 0;
+        opacity: 0.5;
   		}
     }
     

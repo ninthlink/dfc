@@ -224,6 +224,14 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
         $points = dfc_points_award_points_by_cat($cat);
         $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
       }
+      if ( $field->field == 'field_media_link' ) {
+        // add extra link on top of video area
+        $vars['output'] .= l('View Video', 'node/'. $row->_field_data['nid']['entity']->nid, array(
+          'attributes' => array(
+            'class' => array( 'vlink' )
+          )
+        ));
+      }
     }
   }
   //display store items in points?

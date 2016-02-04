@@ -1261,8 +1261,8 @@ body.node-type-media-item .block--views-related-videos-block {
     /* line 164, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .field--media-category {
       font-family: "dangerregular", Helvetica, sans-serif;
-      font-size: 20px;
-      font-size: 1.25rem;
+      font-size: 13px;
+      font-size: 0.8125rem;
       line-height: .8;
       text-transform: uppercase;
       color: #f1592a;
@@ -1282,40 +1282,55 @@ body.node-type-media-item .block--views-related-videos-block {
         margin-right: 10px; }
     /* line 179, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .field--title-field {
-      font-family: Helvetica;
-      font-weight: bold;
+      color: #ffffff;
+      font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 25px;
       font-size: 1.5625rem;
-      line-height: .8;
-      color: #ffffff; }
-      /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+      line-height: 1; }
+      /* line 185, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
       body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .field--title-field a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 190, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+        /* line 189, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
         body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .field--title-field a:hover {
           color: #f1592a; }
+    /* line 196, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+    body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .dfc-points {
+      color: #ffffff;
+      font-family: "sanchezregular", Helvetica, sans-serif;
+      font-size: 15px;
+      font-size: 0.9375rem;
+      text-transform: uppercase;
+      position: absolute;
+      left: 30px;
+      bottom: 30px; }
+      /* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+      body.node-type-media-item .block--views-related-videos-block .node--media-item--teaser .dfc-points .pts-value {
+        color: #f1592a;
+        font-family: "dangerregular", Helvetica, sans-serif;
+        font-size: 16px;
+        font-size: 1rem; }
   @media (min-width: 590px) {
-    /* line 201, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+    /* line 217, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-wrapper .owl-item {
       padding-right: 15px; } }
   @media (min-width: 1180px) {
-    /* line 201, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+    /* line 217, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-wrapper .owl-item {
       min-width: 348px; } }
 
-/* line 220, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+/* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
 body.node-type-media-item ul.node__links {
   background: #f1592a;
   color: #ffffff;
   padding: 20px;
   margin-bottom: 20px; }
   @media (min-width: 960px) {
-    /* line 220, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+    /* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item ul.node__links {
       padding: 20px 50px;
       margin-bottom: 50px; } }
-  /* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
+  /* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
   body.node-type-media-item ul.node__links li a {
     color: #ffffff;
     font-weight: bold; }
@@ -3300,30 +3315,51 @@ body.node-type-landing-page.section-media .l-main {
       /* line 13, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 h2.block__title {
         padding: 0 50px; } }
-  /* line 29, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 30, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block-1 .views-field-nothing {
+    color: #ffffff;
+    font-family: "sanchezregular", Helvetica, sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px; }
+    @media (min-width: 960px) {
+      /* line 30, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block-1 .views-field-nothing {
+        float: right;
+        width: 37%;
+        padding: 15px 0 0 60px; } }
+    /* line 44, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block-1 .views-field-nothing .pts-value {
+      color: #f1592a;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 16px;
+      font-size: 1rem; }
+  /* line 51, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block-1 .view-filters {
     position: absolute;
     top: 0;
     right: 0; }
-    /* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .views-exposed-widgets {
       margin: 0; }
-    /* line 38, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 60, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .views-exposed-form .views-exposed-widget {
       padding: 0; }
-    /* line 42, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .views-submit-button,
     .block--views-media-items-block-1 .view-filters .description,
     .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-all {
       display: none; }
-    /* line 50, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2,
     .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 {
       position: relative;
       display: block;
       float: left;
       text-indent: -9999px; }
-      /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a,
       .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a {
         position: relative;
@@ -3332,11 +3368,11 @@ body.node-type-landing-page.section-media .l-main {
         width: 80px;
         background: #898989; }
         @media (min-width: 960px) {
-          /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+          /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
           .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a,
           .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a {
             width: 210px; } }
-        /* line 68, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 90, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a:after,
         .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a:after {
           content: "";
@@ -3351,11 +3387,11 @@ body.node-type-landing-page.section-media .l-main {
           position: absolute;
           top: 50%;
           left: 50%; }
-        /* line 76, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 98, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a.active,
         .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a.active {
           background: #ffffff; }
-          /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+          /* line 101, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
           .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-2 a.active:after,
           .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a.active:after {
             content: "";
@@ -3367,7 +3403,7 @@ body.node-type-landing-page.section-media .l-main {
             background-position: -658px 0px;
             width: 43px;
             height: 26px; }
-    /* line 91, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 113, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a:after {
       content: "";
       display: inline-block;
@@ -3378,7 +3414,7 @@ body.node-type-landing-page.section-media .l-main {
       background-position: -504px 0px;
       width: 40px;
       height: 30px; }
-    /* line 97, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 119, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .view-filters .form-item-edit-field-media-type-tid-3 a.active:after {
       content: "";
       display: inline-block;
@@ -3389,49 +3425,49 @@ body.node-type-landing-page.section-media .l-main {
       background-position: -454px 0px;
       width: 40px;
       height: 30px; }
-  /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block-1 .view-content {
     padding: 30px 0;
     overflow: hidden;
     *zoom: 1; }
     @media (min-width: 960px) {
-      /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .view-content {
         padding: 30px 50px; } }
-  /* line 116, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 138, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block-1 .media-header {
     margin-bottom: 0; }
     @media (min-width: 960px) {
-      /* line 116, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 138, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .media-header {
         float: left;
         width: 63%; } }
-    /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 150, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-header .field--media-link iframe {
       width: 100%;
       height: 188px; }
       @media (min-width: 590px) {
-        /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 150, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-header .field--media-link iframe {
           height: 334px; } }
       @media (min-width: 960px) {
-        /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 150, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-header .field--media-link iframe {
           height: 314px; } }
       @media (min-width: 960px) {
-        /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 150, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-header .field--media-link iframe {
           height: 380px; } }
-  /* line 147, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 169, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block-1 .media-content {
     padding: 20px; }
     @media (min-width: 960px) {
-      /* line 147, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 169, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .media-content {
         float: right;
         width: 37%;
-        padding: 15px 0 0 60px; } }
-    /* line 156, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        padding: 15px 60px; } }
+    /* line 178, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-content .field--media-category {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 20px;
@@ -3440,7 +3476,7 @@ body.node-type-landing-page.section-media .l-main {
       text-transform: uppercase;
       color: #f1592a;
       margin-bottom: 20px; }
-      /* line 164, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .media-content .field--media-category:before {
         content: "";
         display: inline-block;
@@ -3453,46 +3489,46 @@ body.node-type-landing-page.section-media .l-main {
         height: 18px;
         display: inline-block;
         margin-right: 10px; }
-    /* line 171, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 193, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-content .views-field-title {
       color: #ffffff;
       font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 25px;
       font-size: 1.5625rem;
       line-height: 1;
-      margin-bottom: 0; }
+      margin-bottom: 24px; }
       @media (min-width: 960px) {
-        /* line 171, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 193, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-content .views-field-title {
-          font-size: 42px;
-          font-size: 2.625rem; } }
-      /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+          font-size: 31px;
+          font-size: 1.9375rem; } }
+      /* line 204, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block-1 .media-content .views-field-title a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 208, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block-1 .media-content .views-field-title a:hover {
           color: #f1592a; }
-    /* line 192, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .media-content .views-field-field-product-description {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff; }
   @media (min-width: 960px) {
-    /* line 198, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 220, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .owl-controls {
       position: absolute;
       bottom: 30px;
       right: -30px; } }
   @media (min-width: 1180px) {
-    /* line 198, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 220, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block-1 .owl-controls {
       right: 40px; } }
 
-/* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .block--views-media-items-block {
   background: #292929 url(../images/bg-media.jpg) no-repeat 50% 0;
   background-size: cover; }
-  /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .inner {
     max-width: 1180px;
     margin-left: auto;
@@ -3504,10 +3540,10 @@ body.node-type-landing-page.section-media .l-main {
       display: block;
       clear: both; }
     @media (min-width: 960px) {
-      /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .inner {
         padding: 30px 50px 60px; } }
-  /* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block h2.block__title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 30px;
@@ -3516,11 +3552,11 @@ body.node-type-landing-page.section-media .l-main {
     text-transform: uppercase;
     color: #f1592a;
     margin-bottom: 20px; }
-  /* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 258, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .view-content {
     margin-bottom: 40px;
     text-align: center; }
-  /* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 263, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .views-row {
     position: relative;
     height: 390px;
@@ -3528,22 +3564,22 @@ body.node-type-landing-page.section-media .l-main {
     margin: 0 auto 15px;
     text-align: left;
     z-index: 1; }
-    /* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 272, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row .views-item-media-item .views-field-field-image-1 {
       display: none; }
-    /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 278, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row .views-item-advertisement .views-fieldset {
       display: none; }
     @media (min-width: 590px) {
-      /* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 263, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .views-row {
         width: 348px; } }
     @media (min-width: 960px) {
-      /* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 263, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .views-row {
         float: left;
         margin: 0 15px 15px 0; } }
-    /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:after {
       content: "";
       display: block;
@@ -3555,13 +3591,13 @@ body.node-type-landing-page.section-media .l-main {
       background: #000000;
       opacity: .5;
       z-index: -1; }
-    /* line 283, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 305, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:nth-of-type(3n) {
       margin-right: 0; }
-    /* line 287, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 309, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row:nth-of-type(3n+1) {
       clear: left; }
-    /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .views-row .views-field-nothing {
       color: #ffffff;
       font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3571,24 +3607,24 @@ body.node-type-landing-page.section-media .l-main {
       position: absolute;
       left: 30px;
       bottom: 25px; }
-      /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 323, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .views-row .views-field-nothing .pts-value {
         color: #f1592a;
         font-family: "dangerregular", Helvetica, sans-serif;
         font-size: 16px;
         font-size: 1rem; }
-  /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 335, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .media-header .field--media-link iframe {
     width: 100%;
     height: 166px; }
     @media (min-width: 590px) {
-      /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 335, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-header .field--media-link iframe {
         height: 196px; } }
-  /* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 348, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .block--views-media-items-block .media-content {
     padding: 25px 30px; }
-    /* line 329, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 351, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .field--media-category {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 13px;
@@ -3597,7 +3633,7 @@ body.node-type-landing-page.section-media .l-main {
       text-transform: uppercase;
       color: #f1592a;
       margin-bottom: 20px; }
-      /* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 359, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .field--media-category:before {
         content: "";
         display: inline-block;
@@ -3610,7 +3646,7 @@ body.node-type-landing-page.section-media .l-main {
         height: 12px;
         display: inline-block;
         margin-right: 10px; }
-    /* line 344, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 366, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .field--media-category.photo:before {
       content: "";
       display: inline-block;
@@ -3628,7 +3664,7 @@ body.node-type-landing-page.section-media .l-main {
       background-size: 718px 31px;
       background-position: -252px 0;
       opacity: 0.5; }
-    /* line 357, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 379, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .views-field-title {
       color: #ffffff;
       font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -3636,35 +3672,45 @@ body.node-type-landing-page.section-media .l-main {
       font-size: 1.5625rem;
       line-height: 1;
       margin-bottom: 0; }
-      /* line 364, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 386, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .views-field-title a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 368, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        /* line 390, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
         .block--views-media-items-block .media-content .views-field-title a:hover {
           color: #f1592a; }
-    /* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 396, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block .media-content .views-field-nothing {
       font-family: 'sanchezregular';
       font-size: 16px;
       font-weight: bold;
       margin-top: 20px; }
-      /* line 380, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      /* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
       .block--views-media-items-block .media-content .views-field-nothing .pts-value {
         color: #f1592a; }
   @media (min-width: 590px) {
-    /* line 390, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    /* line 412, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
     .block--views-media-items-block ul.pager li {
       float: left;
       width: 33%; } }
 
-/* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 421, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+.vlink {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  text-indent: -999em; }
+
+/* line 435, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .l-main .l-content .node--media-item--full .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   margin-bottom: 20px;
   max-width: 550px; }
 
-/* line 409, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 442, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .l-main .l-content .node--media-item--full .dfc-points {
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3672,7 +3718,7 @@ body.node-type-landing-page.section-media .l-main {
   font-size: 1.0625rem;
   margin-bottom: 40px;
   text-transform: uppercase; }
-  /* line 416, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .l-main .l-content .node--media-item--full .dfc-points .pts-value {
     color: #f1592a;
     font-family: "dangerregular", Helvetica, sans-serif;

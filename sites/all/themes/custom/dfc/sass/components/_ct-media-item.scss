@@ -163,7 +163,7 @@ body.node-type-media-item {
       
     	.field--media-category {
     		font-family: $dr;
-    		@include rem(font-size, 20px);
+    		@include rem(font-size, 13px);
     		line-height: .8;
     		text-transform: uppercase;
     		color: $color-orange;
@@ -177,11 +177,10 @@ body.node-type-media-item {
     	}
     
       .field--title-field {
-  			font-family: Helvetica;
-        font-weight: bold;
-  			@include rem(font-size, 25px);
-  			line-height: .8;
   			color: $color-white;
+  			font-family: $tgc;
+  			@include rem(font-size, 25px);
+  			line-height: 1;
         
         a {
     			color: $color-white;
@@ -190,6 +189,23 @@ body.node-type-media-item {
           &:hover {
             color: $color-orange;
           }
+        }
+      }
+      
+      // points styling
+      .dfc-points {
+        color: $color-white;
+        font-family: $sr;
+        @include rem(font-size, 15px);
+        text-transform: uppercase;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        
+        .pts-value {
+          color: $color-orange;
+          font-family: $dr;
+          @include rem(font-size, 16px);
         }
       }
     }

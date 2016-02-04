@@ -26,6 +26,28 @@ body.node-type-landing-page.section-media {
 	  }
   }
   
+  // points styling
+  .views-field-nothing {
+    color: $color-white;
+    font-family: $sr;
+    @include rem(font-size, 14px);
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px;
+    
+	  @include breakpoint($bp-desk) {
+      float: right;
+      width: 37%;
+      padding: 15px 0 0 60px;
+	  }
+    
+    .pts-value {
+      color: $color-orange;
+      font-family: $dr;
+      @include rem(font-size, 16px);
+    }
+  }
+    
   .view-filters {
     position: absolute;
     top: 0;
@@ -150,7 +172,7 @@ body.node-type-landing-page.section-media {
 	  @include breakpoint($bp-desk) {
       float: right;
       width: 37%;
-      padding: 15px 0 0 60px;
+      padding: 15px 60px;
 	  }
     
     .field--media-category {
@@ -173,10 +195,10 @@ body.node-type-landing-page.section-media {
 			font-family: $tgc;
 			@include rem(font-size, 25px);
 			line-height: 1;
-			margin-bottom: 0;
+			margin-bottom: 24px;
 
   	  @include breakpoint($bp-desk) {
-        @include rem(font-size, 42px);
+        @include rem(font-size, 31px);
   	  }
       
       a {
@@ -394,7 +416,18 @@ body.node-type-landing-page.section-media {
     }
   }
 }
-
+    
+// vlink hiding
+.vlink {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  text-indent: -999em;
+}
+    
 // media details
 .l-main {
   .l-content {

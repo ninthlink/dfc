@@ -47,6 +47,14 @@ body.node-type-landing-page.section-media {
       @include rem(font-size, 16px);
     }
   }
+  
+  .vlink {
+    @include breakpoint( $bp-desk ) {
+      // cover player
+      right: 37%;
+      bottom: 0;
+    }
+  }
     
   .view-filters {
     position: absolute;

@@ -1080,6 +1080,12 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';

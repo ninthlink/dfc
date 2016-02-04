@@ -86,9 +86,9 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'media_item') {
     
+    $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
     if ( ( arg(0) == 'node' ) && ( arg(1) == $node->nid ) ) {
       // set up our custom JS for triggering points for watching a video
-      $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
       $mtype = $node->field_media_type[LANGUAGE_NONE][0]['tid'];
       if ( $mtype == 3 ) {
         // image media type
@@ -127,6 +127,29 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
         $node->content['field_related_terms']['#weight'] = $desc_weight + 2;
       }
       */
+    } else {
+      // some other view, like Related Content
+      //watchdog('rv', 'node <pre>'. print_r($node,true) .'</pre>');
+      
+      // add extra link on top of video area
+      $node->content['vlink'] = array(
+        '#tag' => 'div',
+        '#type' => 'html_tag',
+        '#attributes' => array(),
+        '#value' => l('View Video', 'node/'. $node->nid, array(
+          'attributes' => array(
+            'class' => array( 'vlink' )
+          )
+        )),
+        '#weight' => 10
+      );
+      $node->content['dfc_points'] = array(
+        '#tag' => 'div', // Wrap it in a div?
+        '#type' => 'html_tag',
+        '#attributes' => array('class' => 'dfc-points' ),
+        '#value' => '<span class="pts-value">'. dfc_points_award_points_by_cat( $cat ) .'</span> Points',
+        '#weight' => 9
+      );
     }
   } else if ( $node->type == 'landing_page' ) {
     $settings['dfcPointsAward']['vid'] = $node->nid;
@@ -149,29 +172,57 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   $view = $vars['view'];
   $field = &$vars['field'];
   $row = $vars['row'];
-  if($view->name == 'media_items' && $view->current_display == 'block' ) {
-    if( $field->field == 'nothing') {
-      $cat = 0;
-      if ( isset( $row->_field_data['nid']['entity'] ) ) {
-        if ( isset( $row->_field_data['nid']['entity']->field_media_category ) ) {
-          if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE] ) ) {
-            if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0] ) ) {
-              if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'] ) ) {
-                $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
+  if($view->name == 'media_items' ) {
+    if( $view->current_display == 'block' ) {
+      if( $field->field == 'nothing') {
+        $cat = 0;
+        if ( isset( $row->_field_data['nid']['entity'] ) ) {
+          if ( isset( $row->_field_data['nid']['entity']->field_media_category ) ) {
+            if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE] ) ) {
+              if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0] ) ) {
+                if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'] ) ) {
+                  $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
+                }
               }
             }
           }
         }
+        $points = dfc_points_award_points_by_cat($cat);
+        $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
       }
-      $points = dfc_points_award_points_by_cat($cat);
-      $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
+      if ( $field->field == 'field_media_category' ) {
+        // inject class if 'Member Photo' / 'DFC Exclusive Photo'
+        if ( strpos( $vars['output'], 'Photo') !== false ) {
+          $vars['output'] = str_replace( 'field--media-category', 'field--media-category photo', $vars['output'] );
+        }
+      }
+      if ( $field->field == 'field_media_link' ) {
+        // add extra link on top of video area
+        $vars['output'] .= l('View Video', 'node/'. $row->_field_data['nid']['entity']->nid, array(
+          'attributes' => array(
+            'class' => array( 'vlink' )
+          )
+        ));
+      }
     }
-    if ( $field->field == 'field_media_category' ) {
-      //$vars['output'] .= " cathello";
-      //watchdog('chkm', '<pre>'. print_r($vars['output'],true) .'</pre>');
-      // inject class if 'Member Photo' / 'DFC Exclusive Photo'
-      if ( strpos( $vars['output'], 'Photo') !== false ) {
-        $vars['output'] = str_replace( 'field--media-category', 'field--media-category photo', $vars['output'] );
+    // top section view block
+    
+    if( $view->current_display == 'block_1' ) {
+      if( $field->field == 'nothing') {
+        $cat = 0;
+        if ( isset( $row->_field_data['nid']['entity'] ) ) {
+          if ( isset( $row->_field_data['nid']['entity']->field_media_category ) ) {
+            if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE] ) ) {
+              if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0] ) ) {
+                if ( isset( $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'] ) ) {
+                  $cat = $row->_field_data['nid']['entity']->field_media_category[LANGUAGE_NONE][0]['tid'];
+                }
+              }
+            }
+          }
+        }
+        $points = dfc_points_award_points_by_cat($cat);
+        $vars['output'] = "<span class='pts-value'>{$points}</span> Points";
       }
     }
   }

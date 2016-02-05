@@ -183,17 +183,34 @@ body.node-type-product-display {
           text-transform: uppercase;
         }
 
-        .form-item-attributes-field-product-color {
+        .form-type-commerce-fancy-attributes {
           display: inline-block;
+          height: 36px;
+          width: 100%;
+
+          label {
+            display: none;
+          }
+
+          .form-item-attributes-field-product-color {
+            display: inline-block;
+            width: 36px;
+          }
         }
 
         .form-type-commerce-fancy-attributes {
           margin-bottom: 0;
+          .commerce-fancy-attributes-color {
+            height: 36px;
+            width: 36px;
+          }
+
         }
 
-        .form-item-attributes-field-product-color {
-          label {
-            display: none;
+        .form-item-attributes-field-product-size {
+          select {
+            border: 1px #959595 solid;
+            width: 150px;
           }
         }
 

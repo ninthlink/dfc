@@ -2152,6 +2152,111 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'store';
+
+  /* Display: Related Products */
+  $handler = $view->new_display('block', 'Related Products', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Related Products';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_product_related_target_id']['id'] = 'field_product_related_target_id';
+  $handler->display->display_options['relationships']['field_product_related_target_id']['table'] = 'field_data_field_product_related';
+  $handler->display->display_options['relationships']['field_product_related_target_id']['field'] = 'field_product_related_target_id';
+  $handler->display->display_options['relationships']['field_product_related_target_id']['label'] = 'related';
+  $handler->display->display_options['relationships']['field_product_related_target_id']['required'] = TRUE;
+  /* Relationship: Content: Referenced products */
+  $handler->display->display_options['relationships']['field_products_product_id']['id'] = 'field_products_product_id';
+  $handler->display->display_options['relationships']['field_products_product_id']['table'] = 'field_data_field_products';
+  $handler->display->display_options['relationships']['field_products_product_id']['field'] = 'field_products_product_id';
+  $handler->display->display_options['relationships']['field_products_product_id']['relationship'] = 'field_product_related_target_id';
+  $handler->display->display_options['relationships']['field_products_product_id']['label'] = 'referenced';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['relationship'] = 'field_product_related_target_id';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Commerce Product: Product Image */
+  $handler->display->display_options['fields']['field_product_image']['id'] = 'field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['table'] = 'field_data_field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['field'] = 'field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['relationship'] = 'field_products_product_id';
+  $handler->display->display_options['fields']['field_product_image']['label'] = '';
+  $handler->display->display_options['fields']['field_product_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_product_image']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_product_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_product_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_product_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_product_related_target_id';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['relationship'] = 'field_product_related_target_id';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Commerce Product: Price */
+  $handler->display->display_options['fields']['commerce_price']['id'] = 'commerce_price';
+  $handler->display->display_options['fields']['commerce_price']['table'] = 'field_data_commerce_price';
+  $handler->display->display_options['fields']['commerce_price']['field'] = 'commerce_price';
+  $handler->display->display_options['fields']['commerce_price']['relationship'] = 'field_products_product_id';
+  $handler->display->display_options['fields']['commerce_price']['label'] = '';
+  $handler->display->display_options['fields']['commerce_price']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['commerce_price']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_price']['settings'] = array(
+    'calculation' => '0',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['operator'] = 'OR';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'node';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
+  $handler->display->display_options['filters']['status_1']['group'] = 1;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'product_display' => 'product_display',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Products (field_products:delta) */
+  $handler->display->display_options['filters']['delta']['id'] = 'delta';
+  $handler->display->display_options['filters']['delta']['table'] = 'field_data_field_products';
+  $handler->display->display_options['filters']['delta']['field'] = 'delta';
+  $handler->display->display_options['filters']['delta']['relationship'] = 'field_product_related_target_id';
+  $handler->display->display_options['filters']['delta']['value']['value'] = '0';
+  $handler->display->display_options['filters']['delta']['group'] = 1;
   $export['store'] = $view;
 
   $view = new view();

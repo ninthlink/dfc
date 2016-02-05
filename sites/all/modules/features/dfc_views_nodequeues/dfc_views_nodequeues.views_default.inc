@@ -2063,6 +2063,7 @@ function dfc_views_nodequeues_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image_1']['id'] = 'field_image_1';
@@ -2194,6 +2195,7 @@ function dfc_views_nodequeues_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';

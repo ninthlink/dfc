@@ -79,7 +79,8 @@
  *
  * @ingroup themeable
  */
-
+$points = $content['product:commerce_price']['#object']->commerce_price[LANGUAGE_NONE][0]['amount'];
+$content['product:commerce_price']['#suffix'] = ' <span class="points">/ <span class="points-value">' . $points . '</span> Points</span>' . $content['product:commerce_price']['#suffix'];
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="back-banner"><a href="/store">Back to DFC Store</a></div>
@@ -93,10 +94,10 @@
     </div>
     <div class="sidebar">
       <div class="title"><?php print $title; ?></div>
-      <?php print render($content['body']);?>
       <?php print render($content['product:commerce_price']);?>
       <?php print render($content['product:field_product_color']);?>
       <?php print render($content['field_products']);?>
+      <?php print render($content['body']);?>
     </div>
   </div>
 

@@ -124,10 +124,6 @@ body.node-type-product-display {
         padding: 20px;
       }
 
-      .sidebar {
-        margin-left: 620px;
-      }
-
       h1 {display: none;}
 
       .node {
@@ -177,62 +173,90 @@ body.node-type-product-display {
           }
         }
 
-        .title {
-          font-family: "dangerregular", Helvetica, sans-serif;
-          font-size: 36px;
-          text-transform: uppercase;
-        }
+        .sidebar {
+          font-family: 'sanchezregular';
+          margin-left: 620px;
 
-        .form-type-commerce-fancy-attributes {
-          display: inline-block;
-          height: 36px;
-          width: 100%;
 
-          label {
-            display: none;
+
+          .field--body {
+            margin-top: 20px;
           }
 
-          .form-item-attributes-field-product-color {
+          .title {
+            font-family: "dangerregular", Helvetica, sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+          }
+
+          .field--commerce-price {
             display: inline-block;
-            width: 36px;
-          }
-        }
-
-        .form-type-commerce-fancy-attributes {
-          margin-bottom: 0;
-          .commerce-fancy-attributes-color {
-            height: 36px;
-            width: 36px;
+            margin-bottom: 10px;
           }
 
-        }
-
-        .form-item-attributes-field-product-size {
-          select {
-            border: 1px #959595 solid;
-            width: 150px;
+          .points-value {
+            color: $color-orange;
+            font-weight: bold;
           }
-        }
 
-        .inline {
-          display: inline-block;
-        }
+          .attribute-widgets {
+            display: inline-block;
+            max-width: 180px;
 
-        #edit-submit {
-          background-color: $color-orange;
-          border: 0;
-          color: $color-white;
-          font-family: "dangerregular", Helvetica, sans-serif;
-          font-size: 18px;
-          font-weight: bold;
-          height: 60px;
-          width: 260px;
-          text-transform: uppercase;
-        }
+            .form-type-commerce-fancy-attributes {
+              display: inline-block;
+              height: 36px;
+              width: 100%;
+              margin-bottom: 0;
+              margin-right: 10px;
 
-        #edit-submit:hover {
-          background-color: $color-gray-medium-dark;
-          color: $color-orange;
+              label {
+                display: none;
+              }
+
+              .form-item-attributes-field-product-color {
+                display: inline-block;
+                width: 36px;
+              }
+
+              .commerce-fancy-attributes-color {
+                height: 36px;
+                width: 36px;
+              }
+            }
+
+            .form-item-attributes-field-product-size {
+              select {
+                border: 1px #959595 solid;
+                width: 150px;
+              }
+            }
+          }
+          .form-item-quantity {
+            display: inline-block;
+            margin-left: 10px;
+          }
+          #edit-line-item-fields,
+          .inline {
+            display: inline-block;
+          }
+
+          #edit-submit {
+            background-color: $color-orange;
+            border: 0;
+            color: $color-white;
+            font-family: "dangerregular", Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            height: 60px;
+            width: 260px;
+            text-transform: uppercase;
+          }
+
+          #edit-submit:hover {
+            background-color: $color-gray-medium-dark;
+            color: $color-orange;
+          }
         }
       }
     }

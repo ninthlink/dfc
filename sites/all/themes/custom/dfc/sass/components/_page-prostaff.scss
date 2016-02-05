@@ -261,6 +261,55 @@ body.node-type-landing-page.section-pro-staff {
     .owl-controls {
       @extend .owl-control-bars3;
     }
+    
+    // point values too
+    .pt-values {
+      color: $color-white;
+      font-family: $sr;
+      @include rem(font-size, 15px);
+      line-height: 1;
+      margin: 16px 0;
+      text-transform: uppercase;
+      
+      
+      span {
+        float: left;
+        
+        &:before {
+          @include use-sprite($icon-video-filter);
+          
+          margin-top: -4px;
+          opacity: 0.5;
+          transform: scale(0.6,0.6);
+          vertical-align: middle;
+        }
+        
+        strong {
+          color: $color-orange;
+          font-family: $dr;
+          @include rem(font-size, 16px);
+          font-weight: normal;
+        }
+      }
+      
+      span.img {
+        &:before {
+          @include use-sprite($icon-image-filter);
+          
+          margin-top: -5px;
+        }
+      }
+      span.vid {
+        &:after {
+          content: "";
+          float: right;
+          width: 2px;
+          height: 13px;
+          background: $color-gray-9;
+          margin: 5px 10px 0 19px;
+        }
+      }
+    }
   }
   
   .group-resort-last {

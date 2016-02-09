@@ -88,7 +88,13 @@ function dfc_flop_menu_block_flop_view() {
     
     $menu = menu_navigation_links('menu-flop-menu');
     $menu_markup = theme('links__menu-flop-menu', array('links' => $menu));
-
+    
+    // generate "Upload..." section markup
+    $upload_markup = l(t('Upload Photo'), 'user', array('fragment' => 'upload'));
+    $upload_markup .= l(t('Upload Video'), 'user', array('attributes' => array( 'class' => array('vid')), 'fragment' => 'upload'));
+    $upload_markup = dfc_flop_menu_markup_wrapper( $upload_markup, array('class' => 'upload-links') );
+    
+    // generate "DFC Points" section markup
     $lifetime_points = userpoints_get_current_points($user->uid, 0);
     $monthly_points = userpoints_get_current_points($user->uid, 1);
     $points = dfc_flop_menu_markup_wrapper('DFC Points', array('class' => 'points-title-wrapper'));
@@ -101,7 +107,7 @@ function dfc_flop_menu_block_flop_view() {
     $points_markup = dfc_flop_menu_markup_wrapper($points . dfc_flop_menu_markup_wrapper($monthly_points_markup, array('class' => 'monthly_points_markup')) . dfc_flop_menu_markup_wrapper($lifetime_points_markup, array('class' => 'lifetime_points_markup')), array('class' => 'flop-points-wrapper'));
 
     // put it all together
-    $markup = $picture_markup . $uname_markup . $ulocation_markup . $menu_markup . $points_markup;
+    $markup = $picture_markup . $uname_markup . $ulocation_markup . $menu_markup . $upload_markup . $points_markup;
   }
   return dfc_flop_menu_markup_wrapper($markup, array('id' => 'dfc-user-flop'));
 }

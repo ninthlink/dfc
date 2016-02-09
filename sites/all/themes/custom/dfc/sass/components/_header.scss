@@ -2,7 +2,7 @@
 	height: 110px;
 	text-align: center;
   position: relative;
-  z-index: 100;
+  z-index: 99999;
 	
   @include breakpoint($bp-desk) {
 		height: 130px;

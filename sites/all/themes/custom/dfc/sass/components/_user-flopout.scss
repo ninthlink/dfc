@@ -267,6 +267,56 @@ body.logged-in {
         }
       }
       
+      .upload-links {
+        border-top: 1px solid $color-gray-4e;
+        float: left;
+        width: 100%;
+          
+        a {
+          color: $color-gray-9;
+          float: left;
+          font-family: $sr;
+          @include rem(font-size, 14px);
+          line-height: 1;
+          padding: 20px 0;
+          width: 50%;
+          
+          &:before {
+            @include use-sprite($icon-image-filter);
+            
+            display: block;
+            margin: 0 auto 20px;
+            opacity: 0.5;
+          }
+          
+          &:hover {
+            color: $color-white;
+            text-decoration: none;
+            
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+        
+        a.vid {
+          &:before {
+            @include use-sprite($icon-video-filter);
+            
+            display: block;
+            // correct for slightly less height..
+            margin: 2px auto 22px;
+            opacity: 0.5;
+          }
+          
+          &:hover {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      
       .flop-points-wrapper {
         background: $color-orange;
         color: $color-black;

@@ -134,6 +134,16 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['fields']['invite_withdraw_link']['alter']['text'] = 'withdraw';
   $handler->display->display_options['fields']['invite_withdraw_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['invite_withdraw_link']['link_to_entity'] = 0;
+  /* Contextual filter: Invite: Inviter uid */
+  $handler->display->display_options['arguments']['inviter']['id'] = 'inviter';
+  $handler->display->display_options['arguments']['inviter']['table'] = 'invite';
+  $handler->display->display_options['arguments']['inviter']['field'] = 'inviter';
+  $handler->display->display_options['arguments']['inviter']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['inviter']['default_argument_type'] = 'user';
+  $handler->display->display_options['arguments']['inviter']['default_argument_options']['user'] = FALSE;
+  $handler->display->display_options['arguments']['inviter']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['inviter']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['inviter']['summary_options']['items_per_page'] = '25';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');

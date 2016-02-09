@@ -143,6 +143,8 @@ ul.bxslider
 	height: 108px;
 	text-indent: -9999px;
 	z-index: 9999;
+  
+  transform: scale(0.5,0.5);
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

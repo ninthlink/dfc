@@ -2055,8 +2055,9 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
 .block--views-exp-resorts-block {
   background: #999999;
   color: #333333;
-  padding: 30px 20px; }
-  /* line 144, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  padding: 30px 20px;
+  position: relative; }
+  /* line 145, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .block--views-exp-resorts-block .views-exposed-form label {
     color: #000000;
     display: block;
@@ -2068,7 +2069,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     text-transform: uppercase;
     height: 66px;
     white-space: nowrap; }
-    /* line 155, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 156, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .block--views-exp-resorts-block .views-exposed-form label:before {
       content: "";
       display: inline-block;
@@ -2081,7 +2082,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       height: 39px;
       float: left;
       margin: -3px 13px 0 0; }
-  /* line 161, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 162, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .block--views-exp-resorts-block .views-exposed-form input.form-text {
     border: 2px solid #ebebeb;
     float: left;
@@ -2090,12 +2091,12 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     font-size: 0.875rem;
     padding: 15px 21px;
     width: 100%; }
-  /* line 169, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 170, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .block--views-exp-resorts-block .views-exposed-form .views-exposed-widget {
     float: left;
     padding: 0;
     width: 210px; }
-  /* line 184, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 185, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .block--views-exp-resorts-block .views-exposed-form .views-exposed-widget.views-submit-button {
     background-color: #79e0b3;
     width: 50px;
@@ -2103,7 +2104,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     position: absolute;
     top: 96px;
     left: 230px; }
-    /* line 204, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .block--views-exp-resorts-block .views-exposed-form .views-exposed-widget.views-submit-button:before {
       content: "";
       display: inline-block;
@@ -2119,7 +2120,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       left: 50%;
       margin: -8px 0 0 -12px;
       z-index: 1; }
-    /* line 213, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .block--views-exp-resorts-block .views-exposed-form .views-exposed-widget.views-submit-button .form-submit {
       background: none;
       border: none;
@@ -2135,29 +2136,29 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       top: 0;
       z-index: 2; }
 
-/* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .block--views-resorts-block-1 {
   padding: 60px 0 40px;
   margin-bottom: 60px;
   border-bottom: 1px solid #333333; }
-  /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .block--views-resorts-block-1 .view-resorts .views-row {
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0; }
 
-/* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .view-resorts h2.block__title {
   font-family: "dangerregular", Helvetica, sans-serif;
   font-size: 38px;
   font-size: 2.375rem;
   color: #79e0b3;
   text-transform: uppercase; }
-  /* line 255, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .view-resorts h2.block__title span {
     color: #ffffff; }
 
-/* line 260, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .view-resorts .views-row {
   max-width: 1180px;
   margin-left: auto;
@@ -2171,15 +2172,19 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     display: block;
     clear: both; }
 
-/* line 267, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 268, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+.view-resorts .view-empty {
+  margin-bottom: 65px; }
+
+/* line 272, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .view-resorts .pager-load-more {
   margin-bottom: 60px; }
 
-/* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 284, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .group-resort-first {
   margin-bottom: 20px; }
 
-/* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 305, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--image-gallery .pt-values {
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif;
@@ -2188,10 +2193,10 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin: 16px 0;
   text-transform: uppercase; }
-  /* line 309, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--image-gallery .pt-values span {
     float: left; }
-    /* line 312, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 317, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .node.node--resort--teaser .field--image-gallery .pt-values span:before {
       content: "";
       display: inline-block;
@@ -2206,14 +2211,14 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       opacity: 0.5;
       transform: scale(0.6, 0.6);
       vertical-align: middle; }
-    /* line 321, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+    /* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
     .node.node--resort--teaser .field--image-gallery .pt-values span strong {
       color: #f1592a;
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 16px;
       font-size: 1rem;
       font-weight: normal; }
-  /* line 330, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 335, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--image-gallery .pt-values span.img:before {
     content: "";
     display: inline-block;
@@ -2225,7 +2230,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     width: 40px;
     height: 30px;
     margin-top: -5px; }
-  /* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--image-gallery .pt-values span.vid:after {
     content: "";
     float: right;
@@ -2234,12 +2239,12 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     background: #999999;
     margin: 5px 10px 0 19px; }
 
-/* line 366, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 371, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--resort--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 372, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 377, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -2247,7 +2252,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 379, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 384, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -2255,7 +2260,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: -15px;
     right: -50px;
     width: 30px; }
-  /* line 388, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -2264,19 +2269,19 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     right: -50px;
     width: 30px; }
 
-/* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 407, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 412, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 417, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 422, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 427, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 428, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 433, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--resort-category {
   color: #f1592a;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -2284,13 +2289,13 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   display: inline-block;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 436, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 441, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--resort-category:after {
     content: "|";
     color: #999999;
     margin-left: 6px; }
 
-/* line 443, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 448, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -2299,7 +2304,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   clear: both; }
 
-/* line 451, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 456, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -2308,7 +2313,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
 
-/* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 464, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -2316,7 +2321,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 466, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -2325,7 +2330,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 479, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 484, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -2340,7 +2345,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 487, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 492, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -2348,15 +2353,15 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   font-size: 0.9375rem;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 502, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 507, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 507, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 512, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--link {
   clear: both; }
 
-/* line 515, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 520, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .node__links {
   display: none; }
 

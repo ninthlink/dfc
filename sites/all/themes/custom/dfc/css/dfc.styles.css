@@ -2178,6 +2178,28 @@ body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-
 body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-content {
   margin-bottom: 40px; }
 
+/* line 221, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+.block--views-prizes-block {
+  background: #ffffff;
+  padding: 62px 0 30px;
+  text-align: center; }
+  /* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  .block--views-prizes-block .view-header h2 {
+    color: #f1592a;
+    font-size: 50px;
+    font-size: 3.125rem;
+    margin: 0; }
+  /* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  .block--views-prizes-block .view-header h4 {
+    color: #666666;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    font-size: 19px;
+    font-size: 1.1875rem; }
+  /* line 238, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_hp-prizeboard.scss */
+  .block--views-prizes-block .view-content {
+    margin: 40px auto 0;
+    max-width: 1062px; }
+
 /* line 7, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {
   position: absolute;

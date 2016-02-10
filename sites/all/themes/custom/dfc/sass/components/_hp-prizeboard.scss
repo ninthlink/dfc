@@ -216,3 +216,27 @@ body.node-type-landing-page.section-dfc-prizeboard {
 	  }
 	}
 }
+
+// Prizes rewards / products block
+.block--views-prizes-block {
+  background: $color-white;
+  padding: 62px 0 30px;
+  text-align: center;
+  
+  .view-header {
+    h2 {
+      color: $color-orange;
+      @include rem(font-size, 50px);
+      margin: 0;
+    }
+    h4 {
+      color: $color-gray-6;
+      font-family: $tgc;
+      @include rem(font-size, 19px);
+    }
+  }
+  .view-content {
+    margin: 40px auto 0;
+    max-width: 1062px;
+  }
+}

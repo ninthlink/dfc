@@ -409,7 +409,7 @@ function dfc_contexts_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'media';
-  $context->description = '';
+  $context->description = 'Media landing page';
   $context->tag = 'page';
   $context->conditions = array(
     'path' => array(
@@ -433,6 +433,24 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-media_items-block_3' => array(
+          'module' => 'views',
+          'delta' => 'media_items-block_3',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-media_items-block_4' => array(
+          'module' => 'views',
+          'delta' => 'media_items-block_4',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+        'views-prizes-block' => array(
+          'module' => 'views',
+          'delta' => 'prizes-block',
+          'region' => 'footer_top',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
@@ -440,6 +458,7 @@ function dfc_contexts_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Media landing page');
   t('page');
   $export['media'] = $context;
 

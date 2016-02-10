@@ -445,12 +445,6 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content',
           'weight' => '-8',
         ),
-        'views-prizes-block' => array(
-          'module' => 'views',
-          'delta' => 'prizes-block',
-          'region' => 'footer_top',
-          'weight' => '-10',
-        ),
       ),
     ),
   );

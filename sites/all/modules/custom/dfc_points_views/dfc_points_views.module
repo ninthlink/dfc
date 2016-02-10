@@ -48,6 +48,10 @@ function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
       $form['uid']['#description'] = '';
       $form['uid']['#attributes']['placeholder'] = t('Enter name to check ranking');
     }
+    if ( $form['#id'] == 'views-exposed-form-resorts-block' ) {
+      //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
+      $form['combine']['#attributes']['placeholder'] = t('Enter City or Country');
+    }
   }
   //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }

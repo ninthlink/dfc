@@ -176,7 +176,7 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   $field = &$vars['field'];
   $row = $vars['row'];
   if($view->name == 'media_items' ) {
-    if( $view->current_display == 'block' ) {
+    if( in_array( $view->current_display, array('block', 'block_3', 'block_4'))) {
       if( $field->field == 'nothing') {
         $cat = 0;
         if ( isset( $row->_field_data['nid']['entity'] ) ) {

@@ -139,23 +139,29 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-9',
         ),
+        'views--exp-resorts-block' => array(
+          'module' => 'views',
+          'delta' => '-exp-resorts-block',
+          'region' => 'content_top',
+          'weight' => '-8',
+        ),
         'views-resorts-block_1' => array(
           'module' => 'views',
           'delta' => 'resorts-block_1',
           'region' => 'content_bottom',
           'weight' => '-10',
         ),
-        'views-resorts-block' => array(
-          'module' => 'views',
-          'delta' => 'resorts-block',
-          'region' => 'content_bottom',
-          'weight' => '-8',
-        ),
         'views-banner_ads-block' => array(
           'module' => 'views',
           'delta' => 'banner_ads-block',
           'region' => 'content_bottom',
           'weight' => '-9',
+        ),
+        'views-resorts-block' => array(
+          'module' => 'views',
+          'delta' => 'resorts-block',
+          'region' => 'content_bottom',
+          'weight' => '-8',
         ),
         'views-offers-block_1' => array(
           'module' => 'views',
@@ -196,6 +202,12 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-homepage_slider-bxsliderblock' => array(
+          'module' => 'views',
+          'delta' => 'homepage_slider-bxsliderblock',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
         'bean-home---how-it-works' => array(
           'module' => 'bean',
           'delta' => 'home---how-it-works',
@@ -208,23 +220,23 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-8',
         ),
-        'views-homepage_slider-bxsliderblock' => array(
+        'views-prizes-block' => array(
           'module' => 'views',
-          'delta' => 'homepage_slider-bxsliderblock',
+          'delta' => 'prizes-block',
           'region' => 'content_top',
-          'weight' => '-10',
+          'weight' => '-7',
         ),
         'views-giveaway_winners-block' => array(
           'module' => 'views',
           'delta' => 'giveaway_winners-block',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-offers-block_1' => array(
           'module' => 'views',
           'delta' => 'offers-block_1',
           'region' => 'content_bottom',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'views-partners-block' => array(
           'module' => 'views',

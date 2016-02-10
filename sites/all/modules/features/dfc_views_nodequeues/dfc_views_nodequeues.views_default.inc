@@ -1808,6 +1808,107 @@ function dfc_views_nodequeues_views_default_views() {
   $export['partners'] = $view;
 
   $view = new view();
+  $view->name = 'prizes';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Prizes';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_home-partners-carousel';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2>EARN PRIZES, TRIPS & SWAG</h2>
+<h4>JOIN THE CLUB FOR YOUR CHANCE EVERY MONTH</h4>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'prizes' => 'prizes',
+    'homepage_offers_3' => 0,
+    'homepage_offers_6' => 0,
+    'homepage_partners' => 0,
+    'media_homepage' => 0,
+    'media_media_carousel' => 0,
+    'featured_resort' => 0,
+    'memberships' => 0,
+    'featured_staff' => 0,
+  );
+  /* Relationship: Content: Referenced products */
+  $handler->display->display_options['relationships']['field_products_product_id']['id'] = 'field_products_product_id';
+  $handler->display->display_options['relationships']['field_products_product_id']['table'] = 'field_data_field_products';
+  $handler->display->display_options['relationships']['field_products_product_id']['field'] = 'field_products_product_id';
+  $handler->display->display_options['relationships']['field_products_product_id']['label'] = 'Product';
+  $handler->display->display_options['relationships']['field_products_product_id']['required'] = TRUE;
+  /* Field: Commerce Product: Product Image */
+  $handler->display->display_options['fields']['field_product_image']['id'] = 'field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['table'] = 'field_data_field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['field'] = 'field_product_image';
+  $handler->display->display_options['fields']['field_product_image']['relationship'] = 'field_products_product_id';
+  $handler->display->display_options['fields']['field_product_image']['label'] = '';
+  $handler->display->display_options['fields']['field_product_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_product_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_product_image']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_product_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_product_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_product_image']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_product_image']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_product_image']['field_api_classes'] = TRUE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'product_display' => 'product_display',
+  );
+  /* Filter criterion: Content: Products (field_products:delta) */
+  $handler->display->display_options['filters']['delta']['id'] = 'delta';
+  $handler->display->display_options['filters']['delta']['table'] = 'field_data_field_products';
+  $handler->display->display_options['filters']['delta']['field'] = 'delta';
+  $handler->display->display_options['filters']['delta']['value']['value'] = '0';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['prizes'] = $view;
+
+  $view = new view();
   $view->name = 'related_videos';
   $view->description = '';
   $view->tag = 'default';
@@ -1892,7 +1993,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $export['related_videos'] = $view;
 
-    $view = new view();
+  $view = new view();
   $view->name = 'resorts';
   $view->description = '';
   $view->tag = 'default';
@@ -1901,6 +2002,7 @@ function dfc_views_nodequeues_views_default_views() {
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_ajax'] = TRUE;
@@ -1918,7 +2020,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['pager']['options']['more_button_text'] = 'Load More Resorts';
   $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_plugin'] = 'node';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
@@ -1937,8 +2039,8 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_gallery']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image_gallery']['type'] = 'owlcarousel_formatter';
   $handler->display->display_options['fields']['field_image_gallery']['settings'] = array(
-  'settings_group' => 'owlcarousel_settings_default',
-  'image_style' => '',
+    'settings_group' => 'owlcarousel_settings_default',
+    'image_style' => '',
   );
   $handler->display->display_options['fields']['field_image_gallery']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_image_gallery']['field_api_classes'] = TRUE;
@@ -2031,7 +2133,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-  'resort' => 'resort',
+    'resort' => 'resort',
   );
   /* Filter criterion: Global: Combine fields filter */
   $handler->display->display_options['filters']['combine']['id'] = 'combine';
@@ -2044,30 +2146,32 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
   $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
   $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
-  2 => '2',
-  1 => 0,
-  3 => 0,
-  8 => 0,
-  4 => 0,
-  5 => 0,
-  6 => 0,
-  7 => 0,
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    8 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
   );
   $handler->display->display_options['filters']['combine']['group_info']['label'] = 'Combine fields filter';
   $handler->display->display_options['filters']['combine']['group_info']['identifier'] = 'combine';
   $handler->display->display_options['filters']['combine']['group_info']['remember'] = FALSE;
   $handler->display->display_options['filters']['combine']['group_info']['group_items'] = array(
-  1 => array(),
-  2 => array(),
-  3 => array(),
+    1 => array(),
+    2 => array(),
+    3 => array(),
   );
   $handler->display->display_options['filters']['combine']['fields'] = array(
-  'title' => 'title',
-  'field_location' => 'field_location',
+    'title' => 'title',
+    'field_location' => 'field_location',
   );
+
   /* Display: Resorts */
   $handler = $view->new_display('block', 'Resorts', 'block');
   $handler->display->display_options['exposed_block'] = TRUE;
+
   /* Display: Current Giveaway */
   $handler = $view->new_display('block', 'Current Giveaway', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
@@ -2090,12 +2194,12 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
   $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
-  'featured_resort' => 'featured_resort',
-  'homepage_offers_3' => 0,
-  'homepage_offers_6' => 0,
-  'homepage_partners' => 0,
-  'media_homepage' => 0,
-  'media_media_carousel' => 0,
+    'featured_resort' => 'featured_resort',
+    'homepage_offers_3' => 0,
+    'homepage_offers_6' => 0,
+    'homepage_partners' => 0,
+    'media_homepage' => 0,
+    'media_media_carousel' => 0,
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -2111,7 +2215,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-  'resort' => 'resort',
+    'resort' => 'resort',
   );
   $export['resorts'] = $view;
 

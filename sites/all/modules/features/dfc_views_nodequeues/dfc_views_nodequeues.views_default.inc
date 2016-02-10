@@ -2025,8 +2025,16 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<h2 class="block__title">Resorts</h2>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h3>NO RESORTS FOUND.</h3>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Field: Field: Image Gallery */
   $handler->display->display_options['fields']['field_image_gallery']['id'] = 'field_image_gallery';
   $handler->display->display_options['fields']['field_image_gallery']['table'] = 'field_data_field_image_gallery';

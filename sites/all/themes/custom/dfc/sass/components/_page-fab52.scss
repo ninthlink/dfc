@@ -51,15 +51,21 @@ body.node-type-landing-page.section-fab-52-resorts {
 		padding: 40px;
 
 	  @include breakpoint($bp-desk) {
-			width: 35%;
-      padding: 70px 0 0 130px;
+      background: rgba(0,0,0,0.5);
+			width: 41.7%;
+      height: 100%;
+      left: 58.3%;
+      right: 0;
+      bottom: 0;
+      padding: 105px 150px 0 90px;
 	  }
 	}
   
 	.fab-pre-title {
 		font-family: $sr;
-		color: $color-green-light;
+		color: $color-white;
 		line-height: 1;
+    margin: 0 0 10px;
 		text-transform: uppercase;
 
 	  @include breakpoint($bp-full) {
@@ -112,7 +118,115 @@ body.node-type-landing-page.section-fab-52-resorts {
 		@include rem(font-size, 16px);
 		line-height: 1.6;
 		padding: 50px;
-  }	
+    float: left;
+    width: 58.3%;
+    min-height: 275px;
+  }
+}
+
+.block--views-exp-resorts-block {
+	background: $color-gray-9;
+  color: $color-gray-3;
+	padding: 30px 20px;
+
+  @include breakpoint($bp-tab) {
+		padding: 20px;
+  }
+	
+  @include breakpoint($bp-desk) {
+		padding: 55px 50px;
+    float: left;
+    width: 41.7%;
+    min-height: 275px;
+  }
+  
+  .views-exposed-form {
+    label {
+      color: $color-black;
+      display: block;
+      @include rem(font-size, 30px);
+      font-family: $dr;
+      font-weight: normal;
+      line-height: 1;
+      text-transform: uppercase;
+      height: 66px;
+      white-space: nowrap;
+      
+      &:before {
+        @include use-sprite($icon-gps);
+        float: left;
+        margin: -3px 13px 0 0;
+      }
+    }
+    input.form-text {
+      border: 2px solid $color-gray-lighter;
+      float: left;
+      font-family: $sr;
+      @include rem(font-size, 14px);
+      padding: 15px 21px;
+      width: 100%;
+    }
+    .views-exposed-widget {
+      float: left;
+      padding: 0;
+      width: 210px;
+      
+      @include breakpoint($bp-tab) {
+        width: 210px;
+      }
+      @include breakpoint($bp-desk) {
+        width: 210px;
+      }
+      @include breakpoint($bp-full) {
+        width: 330px;
+      }
+    }
+    .views-exposed-widget.views-submit-button {
+      background-color: $color-green-light;
+      width: 50px;
+      height: 53px;
+      position: absolute;
+      top: 96px;
+      left: 230px;
+      
+      @include breakpoint($bp-tab) {
+        top: 86px;
+      }
+      
+      @include breakpoint($bp-desk) {
+        top: 121px;
+        left: 260px;
+      }
+      
+      @include breakpoint($bp-full) {
+        left: 380px;
+      }
+      &:before {
+        @include use-sprite($icon-filter-search);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -8px 0 0 -12px;
+        z-index: 1;
+      }
+        
+      .form-submit {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        text-indent: -999em;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+      }
+    }
+  }
 }
 
 .block--views-resorts-block-1 {

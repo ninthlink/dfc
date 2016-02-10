@@ -640,6 +640,12 @@ function dfc_views_nodequeues_views_default_views() {
 
   /* Display: Monthly block */
   $handler = $view->new_display('block', 'Monthly block', 'block_1');
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: DFC Points: Monthly Points */
+  $handler->display->display_options['sorts']['monthly_points']['id'] = 'monthly_points';
+  $handler->display->display_options['sorts']['monthly_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['sorts']['monthly_points']['field'] = 'monthly_points';
+  $handler->display->display_options['sorts']['monthly_points']['order'] = 'DESC';
   $export['leaderboards'] = $view;
 
   $view = new view();
@@ -2686,8 +2692,8 @@ function dfc_views_nodequeues_views_default_views() {
     3 => array(),
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
+  /* Display: Lifetime Block */
+  $handler = $view->new_display('block', 'Lifetime Block', 'block_1');
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -2751,6 +2757,142 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+  /* Display: Monthly Block */
+  $handler = $view->new_display('block', 'Monthly Block', 'block_3');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+  $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_2']['label'] = '';
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'Current ranking';
+  $handler->display->display_options['fields']['nothing_2']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_2']['id'] = 'fieldset_2';
+  $handler->display->display_options['fields']['fieldset_2']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_2']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_2']['label'] = 'Profile Info';
+  $handler->display->display_options['fields']['fieldset_2']['children'] = array(
+    0 => 'picture',
+    1 => 'fieldset_1',
+  );
+  $handler->display->display_options['fields']['fieldset_2']['fieldset']['type'] = 'div';
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['empty'] = '<img src="/sites/all/themes/custom/dfc/images/img-default.jpg" />';
+  $handler->display->display_options['fields']['picture']['link_photo_to_profile'] = FALSE;
+  $handler->display->display_options['fields']['picture']['image_style'] = '200x200';
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
+  $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_1']['label'] = 'Personal Info';
+  $handler->display->display_options['fields']['fieldset_1']['children'] = array(
+    0 => 'monthly_max_user_standing',
+    1 => 'monthly_user_standing',
+    2 => 'lifetime_max_user_standing',
+    3 => 'lifetime_user_standing',
+    4 => 'fieldset',
+    5 => 'field_city_state',
+  );
+  $handler->display->display_options['fields']['fieldset_1']['fieldset']['type'] = 'div';
+  /* Field: DFC Points: Max Monthly User Standing */
+  $handler->display->display_options['fields']['monthly_max_user_standing']['id'] = 'monthly_max_user_standing';
+  $handler->display->display_options['fields']['monthly_max_user_standing']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['monthly_max_user_standing']['field'] = 'monthly_max_user_standing';
+  $handler->display->display_options['fields']['monthly_max_user_standing']['label'] = '';
+  $handler->display->display_options['fields']['monthly_max_user_standing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['monthly_max_user_standing']['element_label_colon'] = FALSE;
+  /* Field: DFC Points: Monthly User Standing */
+  $handler->display->display_options['fields']['monthly_user_standing']['id'] = 'monthly_user_standing';
+  $handler->display->display_options['fields']['monthly_user_standing']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['monthly_user_standing']['field'] = 'monthly_user_standing';
+  $handler->display->display_options['fields']['monthly_user_standing']['label'] = '';
+  $handler->display->display_options['fields']['monthly_user_standing']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Member Name';
+  $handler->display->display_options['fields']['fieldset']['children'] = array(
+    0 => 'field_first_name',
+    1 => 'field_last_name',
+  );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_first_name']['field_api_classes'] = TRUE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['field_api_classes'] = TRUE;
+  /* Field: User: City, State */
+  $handler->display->display_options['fields']['field_city_state']['id'] = 'field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['table'] = 'field_data_field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['field'] = 'field_city_state';
+  $handler->display->display_options['fields']['field_city_state']['label'] = '';
+  $handler->display->display_options['fields']['field_city_state']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_city_state']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_city_state']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_city_state']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_city_state']['field_api_classes'] = TRUE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_3']['id'] = 'fieldset_3';
+  $handler->display->display_options['fields']['fieldset_3']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_3']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_3']['label'] = 'Current Points Month';
+  $handler->display->display_options['fields']['fieldset_3']['children'] = array(
+    0 => 'monthly_points',
+    1 => 'nothing_1',
+  );
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_3']['fieldset']['classes'] = 'current-profile-month';
+  /* Field: DFC Points: Monthly Points */
+  $handler->display->display_options['fields']['monthly_points']['id'] = 'monthly_points';
+  $handler->display->display_options['fields']['monthly_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['monthly_points']['field'] = 'monthly_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_4']['id'] = 'fieldset_4';
+  $handler->display->display_options['fields']['fieldset_4']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_4']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_4']['label'] = 'Current Points Lifetime';
+  $handler->display->display_options['fields']['fieldset_4']['children'] = array(
+    0 => 'lifetime_points',
+    1 => 'nothing',
+  );
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_4']['fieldset']['classes'] = 'current-profile-lifetime';
+  /* Field: DFC Points: Lifetime Points */
+  $handler->display->display_options['fields']['lifetime_points']['id'] = 'lifetime_points';
+  $handler->display->display_options['fields']['lifetime_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['fields']['lifetime_points']['field'] = 'lifetime_points';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $export['user_ranking'] = $view;
 
   return $export;

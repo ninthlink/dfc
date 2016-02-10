@@ -10,6 +10,9 @@ function dfc_user_blocks_block_info() {
   $blocks['membership_benefits'] = array(
     'info' => t('Membership Benefits'),
   );
+  $blocks['account_form'] = array(
+    'info' => t('Account Form'),
+  );
   return $blocks;
 }
 
@@ -26,10 +29,24 @@ function dfc_user_blocks_block_view($delta = '') {
         '#markup' =>  dfc_user_blocks_membership_benefits_view()
       );
       break;
+    case 'account_form':
+      $block['content'] = array(
+        '#markup' =>  dfc_user_blocks_account_form_view()
+      );
+      break;
   }
 
   return $block;
 }
+
+function dfc_user_blocks_account_form_view(){
+  global $user;
+  $user=user_load($user->uid);
+  module_load_include('inc', 'user', 'user.pages');
+  $user_form = drupal_get_form('user_profile_form', $user);
+  return drupal_render($user_form);
+}
+
 function dfc_user_blocks_your_membership_view(){
   global $user;
   $user = user_load($user->uid);

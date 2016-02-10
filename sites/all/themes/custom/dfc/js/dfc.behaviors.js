@@ -40,20 +40,6 @@
    */
   Drupal.behaviors.dfcExampleBehavior = {
     attach: function (context, settings) {
-      // By using the 'context' variable we make sure that our code only runs on
-      // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
-      // we don't run the same piece of code for an HTML snippet that we already
-      // processed previously. By using .once('foo') all processed elements will
-      // get tagged with a 'foo-processed' class, causing all future invocations
-      // of this behavior to ignore them.
-      $('.some-selector', context).once('foo', function () {
-        // Now, we are invoking the previously declared theme function using two
-        // settings as arguments.
-        var $anchor = Drupal.theme('dfcExampleButton', settings.myExampleLinkPath, settings.myExampleLinkTitle);
-
-        // The anchor is then appended to the current element.
-        $anchor.appendTo(this);
-      });
       
       if ( $('#block-views-user-ranking-block-1').size() > 0 ) {
         // add x?
@@ -70,6 +56,24 @@
             }
           });
         }
+      }
+      
+      if ( $('#edit-field-media-type-tid-wrapper').size() > 0 ) {
+        $('.block--views-media-items-block-3, .block--views-media-items-block-4').hide();
+        // recreate unhooked filders..
+        $('#block-views-media-items-block-1 .view-filters').empty().html('<div class="form-item-edit-field-media-type-tid-2"><a href="#videos" class="active">Videos</a></div><div class="form-item-edit-field-media-type-tid-3"><a href="#images">Images</a></div>');
+        
+        $('.form-item-edit-field-media-type-tid-2 a').unbind('click').bind('click.dfctoggle', function() {
+          $('.block--views-media-items-block, .block--views-media-items-block-3, .block--views-media-items-block-4').hide();
+          $(this).addClass('active').parent().next().children().removeClass('active');
+          $('.block--views-media-items-block-3').show();
+          return false;
+        }).parent().next().children().unbind('click.dfctoggle').bind('click.dfctoggle', function() {
+          $('.block--views-media-items-block, .block--views-media-items-block-3, .block--views-media-items-block-4').hide();
+          $(this).addClass('active').parent().prev().children().removeClass('active');
+          $('.block--views-media-items-block-4').show();
+          return false;
+        });
       }
     }
   };

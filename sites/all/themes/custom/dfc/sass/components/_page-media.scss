@@ -241,7 +241,9 @@ body.node-type-landing-page.section-media {
 }
 
 //Media grid
-.block--views-media-items-block {
+.block--views-media-items-block,
+.block--views-media-items-block-3,
+.block--views-media-items-block-4 {
   background: $color-gray-29 url(../images/bg-media.jpg) no-repeat 50% 0;
   background-size: cover;
   

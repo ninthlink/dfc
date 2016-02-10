@@ -39,13 +39,19 @@ The `sprites` mixin generates identical output to the CSS template
 */
 /* generated with grunt-sass-globbing */
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-.no-list, .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager, .block--menu-menu-footer-menu ul.menu, .block--bean-footer-copyright ul.social-links, .view-giveaway-winners ul.pager-load-more, .view-resorts .pager-load-more, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager, .view-memberships ul.quicktabs-tabs, .view-memberships .quicktabs_main .views-field-body ul, .view-staffs .pager-load-more, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links, article.user-profile .group-profile-points .userpoints-points {
+.no-list, .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager,
+.block--views-media-items-block-3 ul.pager,
+.block--views-media-items-block-4 ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager, .block--menu-menu-footer-menu ul.menu, .block--bean-footer-copyright ul.social-links, .view-giveaway-winners ul.pager-load-more, .view-resorts .pager-load-more, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager, .view-memberships ul.quicktabs-tabs, .view-memberships .quicktabs_main .views-field-body ul, .view-staffs .pager-load-more, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links, article.user-profile .group-profile-points .userpoints-points {
   margin: 0;
   padding: 0;
   list-style: none; }
   /* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-  .no-list li, .load-more li, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li, .block--views-media-items-block ul.pager li, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li, .block--menu-menu-footer-menu ul.menu li, .block--bean-footer-copyright ul.social-links li, .view-giveaway-winners ul.pager-load-more li, .view-resorts .pager-load-more li, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li, .view-memberships ul.quicktabs-tabs li, .view-memberships .quicktabs_main .views-field-body ul li, .view-staffs .pager-load-more li, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li, article.user-profile .group-profile-points .userpoints-points li,
-  .no-list li.leaf, .load-more li.leaf, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li.leaf, .block--views-media-items-block ul.pager li.leaf, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li.leaf, .block--menu-menu-footer-menu ul.menu li.leaf, .block--bean-footer-copyright ul.social-links li.leaf, .view-giveaway-winners ul.pager-load-more li.leaf, .view-resorts .pager-load-more li.leaf, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li.leaf, .view-memberships ul.quicktabs-tabs li.leaf, .view-memberships .quicktabs_main .views-field-body ul li.leaf, .view-staffs .pager-load-more li.leaf, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li.leaf, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li.leaf, article.user-profile .group-profile-points .userpoints-points li.leaf {
+  .no-list li, .load-more li, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li, .block--views-media-items-block ul.pager li,
+  .block--views-media-items-block-3 ul.pager li,
+  .block--views-media-items-block-4 ul.pager li, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li, .block--menu-menu-footer-menu ul.menu li, .block--bean-footer-copyright ul.social-links li, .view-giveaway-winners ul.pager-load-more li, .view-resorts .pager-load-more li, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li, .view-memberships ul.quicktabs-tabs li, .view-memberships .quicktabs_main .views-field-body ul li, .view-staffs .pager-load-more li, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li, article.user-profile .group-profile-points .userpoints-points li,
+  .no-list li.leaf, .load-more li.leaf, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager li.leaf, .block--views-media-items-block ul.pager li.leaf,
+  .block--views-media-items-block-3 ul.pager li.leaf,
+  .block--views-media-items-block-4 ul.pager li.leaf, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager li.leaf, .block--menu-menu-footer-menu ul.menu li.leaf, .block--bean-footer-copyright ul.social-links li.leaf, .view-giveaway-winners ul.pager-load-more li.leaf, .view-resorts .pager-load-more li.leaf, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li.leaf, .view-memberships ul.quicktabs-tabs li.leaf, .view-memberships .quicktabs_main .views-field-body ul li.leaf, .view-staffs .pager-load-more li.leaf, body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li.leaf, body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li.leaf, article.user-profile .group-profile-points .userpoints-points li.leaf {
     margin: 0;
     padding: 0;
     list-style-image: none;
@@ -80,20 +86,28 @@ The `sprites` mixin generates identical output to the CSS template
   backface-visibility: hidden; }
 
 /* line 39, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-.load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager {
+.load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager,
+.block--views-media-items-block-3 ul.pager,
+.block--views-media-items-block-4 ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager {
   margin: 0; }
   @media (min-width: 1180px) {
     /* line 39, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-    .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager {
+    .load-more, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager, .block--views-media-items-block ul.pager,
+    .block--views-media-items-block-3 ul.pager,
+    .block--views-media-items-block-4 ul.pager, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager {
       padding-top: 20px; } }
   @media (min-width: 960px) {
     /* line 47, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/abstractions/_abstractions.scss */
-    .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a {
+    .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a,
+    .block--views-media-items-block-3 ul.pager a,
+    .block--views-media-items-block-4 ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a {
       width: 348px; } }
 
 /* generated with grunt-sass-globbing */
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-small, body.section-user #user-media-node-form #edit-field-media-link:after,
+.button, .load-more a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, .block--views-media-items-block ul.pager a,
+.block--views-media-items-block-3 ul.pager a,
+.block--views-media-items-block-4 ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, .button-small, body.section-user #user-media-node-form #edit-field-media-link:after,
 body.section-users #user-media-node-form #edit-field-media-link:after, body.section-user #user-media-node-form #edit-field-image:after,
 body.section-users #user-media-node-form #edit-field-image:after, body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
 body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit, .button-to-gray, .form-actions input.form-submit, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, .button-outline, .view-giveaway-winners ul.pager-load-more a, .view-resorts .pager-load-more a, .node.node--resort--teaser .field--link a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, .view-staffs .pager-load-more a, .node.node--staff--teaser .field--link a {
@@ -111,7 +125,9 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email .for
   vertical-align: middle;
   text-align: center; }
   /* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/base/_buttons.scss */
-  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-small:hover, body.section-user #user-media-node-form #edit-field-media-link:hover:after,
+  .button:hover, .load-more a:hover, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a:hover, .block--views-media-items-block ul.pager a:hover,
+  .block--views-media-items-block-3 ul.pager a:hover,
+  .block--views-media-items-block-4 ul.pager a:hover, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a:hover, .button-small:hover, body.section-user #user-media-node-form #edit-field-media-link:hover:after,
   body.section-users #user-media-node-form #edit-field-media-link:hover:after, body.section-user #user-media-node-form #edit-field-image:hover:after,
   body.section-users #user-media-node-form #edit-field-image:hover:after, body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit:hover,
   body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit:hover, .button-to-gray:hover, .form-actions input.form-submit:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a:hover, .button-outline:hover, .view-giveaway-winners ul.pager-load-more a:hover, .view-resorts .pager-load-more a:hover, .node.node--resort--teaser .field--link a:hover, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a:hover, .view-staffs .pager-load-more a:hover, .node.node--staff--teaser .field--link a:hover {
@@ -3741,26 +3757,36 @@ body.node-type-landing-page.section-media .l-main {
       right: 40px; } }
 
 /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-.block--views-media-items-block {
+.block--views-media-items-block,
+.block--views-media-items-block-3,
+.block--views-media-items-block-4 {
   background: #292929 url(../images/bg-media.jpg) no-repeat 50% 0;
   background-size: cover; }
-  /* line 248, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block .inner {
+  /* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block .inner,
+  .block--views-media-items-block-3 .inner,
+  .block--views-media-items-block-4 .inner {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px 60px; }
     /* line 12, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/libraries/susy/sass/susy/output/support/_clearfix.scss */
-    .block--views-media-items-block .inner:after {
+    .block--views-media-items-block .inner:after,
+    .block--views-media-items-block-3 .inner:after,
+    .block--views-media-items-block-4 .inner:after {
       content: " ";
       display: block;
       clear: both; }
     @media (min-width: 960px) {
-      /* line 248, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .inner {
+      /* line 250, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .inner,
+      .block--views-media-items-block-3 .inner,
+      .block--views-media-items-block-4 .inner {
         padding: 30px 50px 60px; } }
-  /* line 257, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block h2.block__title {
+  /* line 259, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block h2.block__title,
+  .block--views-media-items-block-3 h2.block__title,
+  .block--views-media-items-block-4 h2.block__title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 30px;
     font-size: 1.875rem;
@@ -3768,35 +3794,49 @@ body.node-type-landing-page.section-media .l-main {
     text-transform: uppercase;
     color: #f1592a;
     margin-bottom: 20px; }
-  /* line 266, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block .view-content {
+  /* line 268, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block .view-content,
+  .block--views-media-items-block-3 .view-content,
+  .block--views-media-items-block-4 .view-content {
     margin-bottom: 40px;
     text-align: center; }
-  /* line 271, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block .views-row {
+  /* line 273, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block .views-row,
+  .block--views-media-items-block-3 .views-row,
+  .block--views-media-items-block-4 .views-row {
     position: relative;
     height: 390px;
     max-width: 348px;
     margin: 0 auto 15px;
     text-align: left;
     z-index: 1; }
-    /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row .views-item-media-item .views-field-field-image-1 {
+    /* line 282, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row .views-item-media-item .views-field-field-image-1,
+    .block--views-media-items-block-3 .views-row .views-item-media-item .views-field-field-image-1,
+    .block--views-media-items-block-4 .views-row .views-item-media-item .views-field-field-image-1 {
       display: none; }
-    /* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row .views-item-advertisement .views-fieldset {
+    /* line 288, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row .views-item-advertisement .views-fieldset,
+    .block--views-media-items-block-3 .views-row .views-item-advertisement .views-fieldset,
+    .block--views-media-items-block-4 .views-row .views-item-advertisement .views-fieldset {
       display: none; }
     @media (min-width: 590px) {
-      /* line 271, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .views-row {
+      /* line 273, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .views-row,
+      .block--views-media-items-block-3 .views-row,
+      .block--views-media-items-block-4 .views-row {
         width: 348px; } }
     @media (min-width: 960px) {
-      /* line 271, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .views-row {
+      /* line 273, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .views-row,
+      .block--views-media-items-block-3 .views-row,
+      .block--views-media-items-block-4 .views-row {
         float: left;
         margin: 0 15px 15px 0; } }
-    /* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row:after {
+    /* line 302, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row:after,
+    .block--views-media-items-block-3 .views-row:after,
+    .block--views-media-items-block-4 .views-row:after {
       content: "";
       display: block;
       position: absolute;
@@ -3807,14 +3847,20 @@ body.node-type-landing-page.section-media .l-main {
       background: #000000;
       opacity: .5;
       z-index: -1; }
-    /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row:nth-of-type(3n) {
+    /* line 315, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row:nth-of-type(3n),
+    .block--views-media-items-block-3 .views-row:nth-of-type(3n),
+    .block--views-media-items-block-4 .views-row:nth-of-type(3n) {
       margin-right: 0; }
-    /* line 317, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row:nth-of-type(3n+1) {
+    /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row:nth-of-type(3n+1),
+    .block--views-media-items-block-3 .views-row:nth-of-type(3n+1),
+    .block--views-media-items-block-4 .views-row:nth-of-type(3n+1) {
       clear: left; }
-    /* line 322, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .views-row .views-field-nothing {
+    /* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .views-row .views-field-nothing,
+    .block--views-media-items-block-3 .views-row .views-field-nothing,
+    .block--views-media-items-block-4 .views-row .views-field-nothing {
       color: #ffffff;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 14px;
@@ -3823,25 +3869,35 @@ body.node-type-landing-page.section-media .l-main {
       position: absolute;
       left: 30px;
       bottom: 25px; }
-      /* line 331, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .views-row .views-field-nothing .pts-value {
+      /* line 333, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .views-row .views-field-nothing .pts-value,
+      .block--views-media-items-block-3 .views-row .views-field-nothing .pts-value,
+      .block--views-media-items-block-4 .views-row .views-field-nothing .pts-value {
         color: #f1592a;
         font-family: "dangerregular", Helvetica, sans-serif;
         font-size: 16px;
         font-size: 1rem; }
-  /* line 343, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block .media-header .field--media-link iframe {
+  /* line 345, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block .media-header .field--media-link iframe,
+  .block--views-media-items-block-3 .media-header .field--media-link iframe,
+  .block--views-media-items-block-4 .media-header .field--media-link iframe {
     width: 100%;
     height: 166px; }
     @media (min-width: 590px) {
-      /* line 343, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .media-header .field--media-link iframe {
+      /* line 345, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .media-header .field--media-link iframe,
+      .block--views-media-items-block-3 .media-header .field--media-link iframe,
+      .block--views-media-items-block-4 .media-header .field--media-link iframe {
         height: 196px; } }
-  /* line 356, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-  .block--views-media-items-block .media-content {
+  /* line 358, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  .block--views-media-items-block .media-content,
+  .block--views-media-items-block-3 .media-content,
+  .block--views-media-items-block-4 .media-content {
     padding: 25px 30px; }
-    /* line 359, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .media-content .field--media-category {
+    /* line 361, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .media-content .field--media-category,
+    .block--views-media-items-block-3 .media-content .field--media-category,
+    .block--views-media-items-block-4 .media-content .field--media-category {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 13px;
       font-size: 0.8125rem;
@@ -3849,8 +3905,10 @@ body.node-type-landing-page.section-media .l-main {
       text-transform: uppercase;
       color: #f1592a;
       margin-bottom: 20px; }
-      /* line 367, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .media-content .field--media-category:before {
+      /* line 369, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .media-content .field--media-category:before,
+      .block--views-media-items-block-3 .media-content .field--media-category:before,
+      .block--views-media-items-block-4 .media-content .field--media-category:before {
         content: "";
         display: inline-block;
         overflow: hidden;
@@ -3862,8 +3920,10 @@ body.node-type-landing-page.section-media .l-main {
         height: 12px;
         display: inline-block;
         margin-right: 10px; }
-    /* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .media-content .field--media-category.photo:before {
+    /* line 376, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .media-content .field--media-category.photo:before,
+    .block--views-media-items-block-3 .media-content .field--media-category.photo:before,
+    .block--views-media-items-block-4 .media-content .field--media-category.photo:before {
       content: "";
       display: inline-block;
       overflow: hidden;
@@ -3880,37 +3940,49 @@ body.node-type-landing-page.section-media .l-main {
       background-size: 718px 31px;
       background-position: -252px 0;
       opacity: 0.5; }
-    /* line 387, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .media-content .views-field-title {
+    /* line 389, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .media-content .views-field-title,
+    .block--views-media-items-block-3 .media-content .views-field-title,
+    .block--views-media-items-block-4 .media-content .views-field-title {
       color: #ffffff;
       font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 25px;
       font-size: 1.5625rem;
       line-height: 1;
       margin-bottom: 0; }
-      /* line 394, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .media-content .views-field-title a {
+      /* line 396, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .media-content .views-field-title a,
+      .block--views-media-items-block-3 .media-content .views-field-title a,
+      .block--views-media-items-block-4 .media-content .views-field-title a {
         color: #ffffff;
         text-decoration: none; }
-        /* line 398, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-        .block--views-media-items-block .media-content .views-field-title a:hover {
+        /* line 400, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+        .block--views-media-items-block .media-content .views-field-title a:hover,
+        .block--views-media-items-block-3 .media-content .views-field-title a:hover,
+        .block--views-media-items-block-4 .media-content .views-field-title a:hover {
           color: #f1592a; }
-    /* line 404, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block .media-content .views-field-nothing {
+    /* line 406, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block .media-content .views-field-nothing,
+    .block--views-media-items-block-3 .media-content .views-field-nothing,
+    .block--views-media-items-block-4 .media-content .views-field-nothing {
       font-family: 'sanchezregular';
       font-size: 16px;
       font-weight: bold;
       margin-top: 20px; }
-      /* line 410, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-      .block--views-media-items-block .media-content .views-field-nothing .pts-value {
+      /* line 412, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+      .block--views-media-items-block .media-content .views-field-nothing .pts-value,
+      .block--views-media-items-block-3 .media-content .views-field-nothing .pts-value,
+      .block--views-media-items-block-4 .media-content .views-field-nothing .pts-value {
         color: #f1592a; }
   @media (min-width: 590px) {
-    /* line 420, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
-    .block--views-media-items-block ul.pager li {
+    /* line 422, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+    .block--views-media-items-block ul.pager li,
+    .block--views-media-items-block-3 ul.pager li,
+    .block--views-media-items-block-4 ul.pager li {
       float: left;
       width: 33%; } }
 
-/* line 429, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 431, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .vlink {
   display: block;
   position: absolute;
@@ -3920,13 +3992,13 @@ body.node-type-landing-page.section-media .l-main {
   left: 0;
   text-indent: -999em; }
 
-/* line 443, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 445, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .l-main .l-content .node--media-item--full .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   margin-bottom: 20px;
   max-width: 550px; }
 
-/* line 450, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+/* line 452, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 .l-main .l-content .node--media-item--full .dfc-points {
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif;
@@ -3934,7 +4006,7 @@ body.node-type-landing-page.section-media .l-main {
   font-size: 1.0625rem;
   margin-bottom: 40px;
   text-transform: uppercase; }
-  /* line 457, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
+  /* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
   .l-main .l-content .node--media-item--full .dfc-points .pts-value {
     color: #f1592a;
     font-family: "dangerregular", Helvetica, sans-serif;

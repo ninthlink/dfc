@@ -7,4 +7,8 @@
     padding-top: 0 !important;
     margin-top: 0 !important; } }
 
+/* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
+body.adminimal-menu div#admin-menu {
+  z-index: 99999; }
+
 /*# sourceMappingURL=dfc.hacks.css.map */

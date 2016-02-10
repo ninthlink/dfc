@@ -605,13 +605,13 @@ function dfc_contexts_context_default_contexts() {
           'module' => 'views',
           'delta' => 'user_ranking-block_2',
           'region' => 'content',
-          'weight' => '10',
+          'weight' => '-48',
         ),
         'dfc_user_blocks-account_form' => array(
           'module' => 'dfc_user_blocks',
           'delta' => 'account_form',
           'region' => 'content',
-          'weight' => '10',
+          'weight' => '-47',
         ),
         'dfc_user_blocks-your_membership' => array(
           'module' => 'dfc_user_blocks',

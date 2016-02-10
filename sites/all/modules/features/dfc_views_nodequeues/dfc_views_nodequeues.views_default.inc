@@ -2016,9 +2016,10 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h4>DFC Store</h4>
-<h1>Earn Points. Get Swag</h1>
-<h2>Join The Club</h2>';
+  $handler->display->display_options['header']['area']['content'] = '<h4>DFC STORE</h4>
+<h1>EARN POINTS. GET SWAG.</h1>
+<h2>JOIN THE CLUB</h2>
+<a href="/membership" class="button">Become a Member</a>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';

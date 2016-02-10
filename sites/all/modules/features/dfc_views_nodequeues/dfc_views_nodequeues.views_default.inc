@@ -1892,7 +1892,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $export['related_videos'] = $view;
 
-  $view = new view();
+    $view = new view();
   $view->name = 'resorts';
   $view->description = '';
   $view->tag = 'default';
@@ -1901,7 +1901,6 @@ function dfc_views_nodequeues_views_default_views() {
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_ajax'] = TRUE;
@@ -1910,17 +1909,50 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'load_more';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['more_button_text'] = 'Load More Resorts';
+  $handler->display->display_options['pager']['options']['effects']['speed'] = 'slow';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'entity';
-  $handler->display->display_options['row_options']['view_mode'] = 'teaser';
+  $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2 class="block__title">Resorts</h2>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Field: Field: Image Gallery */
+  $handler->display->display_options['fields']['field_image_gallery']['id'] = 'field_image_gallery';
+  $handler->display->display_options['fields']['field_image_gallery']['table'] = 'field_data_field_image_gallery';
+  $handler->display->display_options['fields']['field_image_gallery']['field'] = 'field_image_gallery';
+  $handler->display->display_options['fields']['field_image_gallery']['label'] = '';
+  $handler->display->display_options['fields']['field_image_gallery']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_image_gallery']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_gallery']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_image_gallery']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image_gallery']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_gallery']['type'] = 'owlcarousel_formatter';
+  $handler->display->display_options['fields']['field_image_gallery']['settings'] = array(
+  'settings_group' => 'owlcarousel_settings_default',
+  'image_style' => '',
+  );
+  $handler->display->display_options['fields']['field_image_gallery']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_image_gallery']['field_api_classes'] = TRUE;
+  /* Field: Content: Resort Category */
+  $handler->display->display_options['fields']['field_resort_category']['id'] = 'field_resort_category';
+  $handler->display->display_options['fields']['field_resort_category']['table'] = 'field_data_field_resort_category';
+  $handler->display->display_options['fields']['field_resort_category']['field'] = 'field_resort_category';
+  $handler->display->display_options['fields']['field_resort_category']['label'] = '';
+  $handler->display->display_options['fields']['field_resort_category']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_resort_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_resort_category']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_resort_category']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_resort_category']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_resort_category']['field_api_classes'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1928,6 +1960,60 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = '';
+  $handler->display->display_options['fields']['field_location']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_location']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_location']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_location']['field_api_classes'] = TRUE;
+  /* Field: Field: Description */
+  $handler->display->display_options['fields']['field_product_description']['id'] = 'field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['table'] = 'field_data_field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['field'] = 'field_product_description';
+  $handler->display->display_options['fields']['field_product_description']['label'] = '';
+  $handler->display->display_options['fields']['field_product_description']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_product_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_product_description']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_product_description']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_product_description']['field_api_classes'] = TRUE;
+  /* Field: Content: Phone Number */
+  $handler->display->display_options['fields']['field_phone_number']['id'] = 'field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['table'] = 'field_data_field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['field'] = 'field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['label'] = '';
+  $handler->display->display_options['fields']['field_phone_number']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_phone_number']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_phone_number']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_phone_number']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_phone_number']['field_api_classes'] = TRUE;
+  /* Field: Content: Website Link */
+  $handler->display->display_options['fields']['field_website_link']['id'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['table'] = 'field_data_field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['field'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['label'] = '';
+  $handler->display->display_options['fields']['field_website_link']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_website_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_website_link']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_website_link']['field_api_classes'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_link']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_link']['field_api_classes'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1945,12 +2031,43 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'resort' => 'resort',
+  'resort' => 'resort',
   );
-
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'contains';
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Find a Fab 52 Resort';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
+  2 => '2',
+  1 => 0,
+  3 => 0,
+  8 => 0,
+  4 => 0,
+  5 => 0,
+  6 => 0,
+  7 => 0,
+  );
+  $handler->display->display_options['filters']['combine']['group_info']['label'] = 'Combine fields filter';
+  $handler->display->display_options['filters']['combine']['group_info']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['combine']['group_info']['group_items'] = array(
+  1 => array(),
+  2 => array(),
+  3 => array(),
+  );
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+  'title' => 'title',
+  'field_location' => 'field_location',
+  );
   /* Display: Resorts */
   $handler = $view->new_display('block', 'Resorts', 'block');
-
+  $handler->display->display_options['exposed_block'] = TRUE;
   /* Display: Current Giveaway */
   $handler = $view->new_display('block', 'Current Giveaway', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
@@ -1973,12 +2090,28 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
   $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
-    'featured_resort' => 'featured_resort',
-    'homepage_offers_3' => 0,
-    'homepage_offers_6' => 0,
-    'homepage_partners' => 0,
-    'media_homepage' => 0,
-    'media_media_carousel' => 0,
+  'featured_resort' => 'featured_resort',
+  'homepage_offers_3' => 0,
+  'homepage_offers_6' => 0,
+  'homepage_partners' => 0,
+  'media_homepage' => 0,
+  'media_media_carousel' => 0,
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+  'resort' => 'resort',
   );
   $export['resorts'] = $view;
 

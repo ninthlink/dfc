@@ -61,11 +61,14 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
     $form['actions']['submit']['#submit'][] = 'dfc_points_award_grant_points_invite_form';
     
-    
-    // and sigh, change label?
+    // does it really take 3 spots to change 1 label? seems like it..
     $form['field_invitation_email_address'][LANGUAGE_NONE]['#title'] = t('Add E-mail');
     $form['field_invitation_email_address'][LANGUAGE_NONE][0]['#title'] = t('Add E-mail');
     $form['field_invitation_email_address'][LANGUAGE_NONE][0]['value']['#title'] = t('Add E-mail');
+    
+    // also inject an anchor tag below for anchoring to uploads below it?
+    $form['#suffix'] = '<div style="float:left;width:100%"><a name="upload"></a></div>';
+    
     //watchdog('fcatc', '<pre>'. print_r($form['field_invitation_email_address'], true) .'</pre>');
     
   } else if ($form_id == 'user_profile_form') {

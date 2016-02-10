@@ -36,66 +36,93 @@
       }
       
       if ( $('body').hasClass('section-fab-52-resorts') ) {
-        //console.log('ello fab 52!');
-        $('.node--resort').each(function() {
-          // fix price showup?
-          $(this).find('.field--resort-category').append('<div class="group-resort-price" />');
-          
-          var thisnid = $(this).find('.share_vid').data('share-vid');
-          // hook to share btns
-          if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
-            $(this).find('.st_facebook_custom').addClass('dfc_hookd').click(function() {
-              //console.log('clicked fb for nid '+ thisnid);
-              var url = '/dfc/points/grant/share/fb/' + thisnid;
-              $.get(url, function(data) {
-                console.log('got it');
-                //console.log(data);
-              });
-            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
-          }
-          if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
-            $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
-              //console.log('clicked tw for nid '+ thisnid);
-              var url = '/dfc/points/grant/share/tw/' + thisnid;
-              $.get(url, function(data) {
-                console.log('got it');
-                //console.log(data);
-              });
-            }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
-          }
-          // hook to gallery
-          var thiscar = $(this).find('.field--image-gallery');
-          if ( thiscar.size() > 0 ) {
-            // wrap in timeout delay so it fires after owl-carousel init?
-            setTimeout( function() { 
-              var thisowlc = thiscar.children('.owl-carousel');
-              var thisowl = thisowlc.data('owlCarousel');
-              //console.log('nid '+ thisnid);
-              //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
-              thisowlc.bind('owlcheck', function() {
-                //console.log(thisnid + ' showing #'+ thisowl.currentItem);
-                $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
-                if ( $(this).find('.unseen').size() == 0 ) {
-                  console.log('you have viewed all for '+ thisnid +' !!');
-                  
-                  var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
-                  $.get(url, function(data) {
-                    console.log('got it');
-                    //console.log(data);
-                  });
-                } else {
-                  console.log('keep going..');
+        console.log('ello fab 52!');
+        if ( $('.node--resort:not(.checkd)').size() > 0 ) {
+          $('.node--resort:not(.checkd)').each(function() {
+            $(this).addClass('checkd');
+            // fix price showup?
+            if ( $(this).find('.field--resort-category .group-resort-price').size() < 1 ) {
+              $(this).find('.field--resort-category').append('<div class="group-resort-price" />');
+            }
+            var thisnid = $(this).find('.share_vid').data('share-vid');
+            // hook to share btns
+            if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
+              $(this).find('.st_facebook_custom').addClass('dfc_hookd').click(function() {
+                //console.log('clicked fb for nid '+ thisnid);
+                var url = '/dfc/points/grant/share/fb/' + thisnid;
+                $.get(url, function(data) {
+                  console.log('got it');
+                  //console.log(data);
+                });
+              }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
+            }
+            if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
+              $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
+                //console.log('clicked tw for nid '+ thisnid);
+                var url = '/dfc/points/grant/share/tw/' + thisnid;
+                $.get(url, function(data) {
+                  console.log('got it');
+                  //console.log(data);
+                });
+              }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
+            }
+            // hook to gallery
+            var thiscar = $(this).find('.field--image-gallery');
+            if ( thiscar.size() > 0 ) {
+              // wrap in timeout delay so it fires after owl-carousel init?
+              setTimeout( function() {
+                //console.log('checking '+ thisnid +' for owl-carousel...');
+                var thisowlc = thiscar.children('.owl-carousel');
+                var thisowl = thisowlc.data('owlCarousel');
+                if ( thisowl === null ) {
+                  // somehow no owl yet, so re init
+                  //console.log('reinit '+ thisnid);
+                  console.log(settings['owlcarousel']['owlcarousel-fields-64']['settings']);
+                  thiscar.children('.owlcarousel-fields-64').owlCarousel(settings['owlcarousel']['owlcarousel-fields-64']['settings']);
+                  //console.log('and then?');
+                  thisowlc = thiscar.children('.owl-carousel');
+                  thisowl = thisowlc.data('owlCarousel');
+                  //console.log('we coo? ' + thisowl.currentItem +' of '+ thisowl.itemsAmount);
                 }
-              }).find('.owl-item:gt(0)').addClass('unseen');
-              thisowlc.find('.owl-next, .owl-prev').bind('click', function() {
-                thisowlc.trigger('owlcheck');
-              });
-            }, 300 );
-            
-            // also inject html of points / video underneaf
-            thiscar.append('<div class="pt-values"><span class="vid"><strong>10</strong> Points</span><span class="img"><strong>5</strong> Points</span></div>');
+                //console.log('nid '+ thisnid);
+                //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
+                thisowlc.bind('owlcheck', function() {
+                  //console.log(thisnid + ' showing #'+ thisowl.currentItem);
+                  $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
+                  if ( $(this).find('.unseen').size() == 0 ) {
+                    console.log('you have viewed all for '+ thisnid +' !!');
+                    
+                    var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
+                    $.get(url, function(data) {
+                      console.log('got it');
+                      //console.log(data);
+                    });
+                  } else {
+                    console.log('keep going..');
+                  }
+                }).find('.owl-item:gt(0)').addClass('unseen');
+                thisowlc.find('.owl-next, .owl-prev').bind('click', function() {
+                  thisowlc.trigger('owlcheck');
+                });
+              }, 300 );
+              
+              // also inject html of points / video underneaf
+              thiscar.append('<div class="pt-values"><span class="vid"><strong>10</strong> Points</span><span class="img"><strong>5</strong> Points</span></div>');
+            }
+          });
+        } else {
+          // must have just filtered search?
+          var fval = $('#edit-combine').val();
+          if ( fval !== '' ) {
+            // searched for something : scroll to the top of the ad above Resorts
+            var rtop = $('#block-views-banner-ads-block').offset();
+            //var rtop = $('#block-views-resorts-block').offset();
+            //console.log('searched "'+ fval +'" : scroll to '+ rtop.top);
+            $('html,body').animate({
+              scrollTop: rtop.top
+            }, 'normal');
           }
-        });
+        }
       }
       
       if ( $('body').hasClass('section-pro-staff') ) {

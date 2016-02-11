@@ -1446,7 +1446,7 @@ body.node-type-media-item .block--views-related-videos-block {
   @media (min-width: 1180px) {
     /* line 243, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
     body.node-type-media-item .block--views-related-videos-block .owl-carousel .owl-wrapper .owl-item {
-      min-width: 348px; } }
+      min-width: 365px; } }
 
 /* line 262, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_ct-media-item.scss */
 body.node-type-media-item ul.node__links {

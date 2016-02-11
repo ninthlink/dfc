@@ -84,6 +84,19 @@ body.node-type-media-item {
   			margin-right: 10px;
   		}
   	}
+    .field--media-category.photo {
+  		&:before {
+  			@include use-sprite($icon-image-filter);
+  			display: inline-block;
+  			margin-right: 10px;
+        // hax
+        width: 21px;
+        height: 15px;
+        background-size: 735px 30px;
+        background-position: -243px 0;
+        opacity: 0.5;
+  		}
+    }
 	
   	.field--title-field {
       margin-bottom: 20px;
@@ -175,6 +188,19 @@ body.node-type-media-item {
     			margin-right: 10px;
     		}
     	}
+      .field--media-category.photo {
+        &:before {
+          @include use-sprite($icon-image-filter);
+          display: inline-block;
+          margin-right: 10px;
+          // hax
+          width: 21px;
+          height: 15px;
+          background-size: 735px 30px;
+          background-position: -243px 0;
+          opacity: 0.5;
+        }
+      }
     
       .field--title-field {
   			color: $color-white;

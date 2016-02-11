@@ -15,16 +15,21 @@
 
 .l-main .l-content .node--media-item--full .field--media-category
 {
-    display: block;
-    background: url("../images/icons2x/icon-video-smaller.png") no-repeat 0 0 transparent;
-    padding-left: 45px;
-    line-height: 21px;
+  display: block;
+  background: url("../images/icons2x/icon-video-smaller.png") no-repeat 0 0 transparent;
+  padding-left: 45px;
+  line-height: 21px;
 	margin-bottom: 10px;
 	color: #F1592A;
 	text-transform: uppercase;
 	font-family: "dangerregular";
 	letter-spacing: 1px;
 	background-size: 32px;
+}
+
+.l-main .l-content .node--media-item--full .field--media-category.photo {
+  background: url(../images/icons2x/icon-image-filter.png) no-repeat 0 0;
+  background-size: 26px 20px;
 }
 /*
 .l-main .l-content .node--media-item--full .field--title-field h2

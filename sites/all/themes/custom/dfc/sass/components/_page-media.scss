@@ -197,6 +197,19 @@ body.node-type-landing-page.section-media {
   			margin-right: 10px;
   		}
     }
+    .field--media-category.photo {
+  		&:before {
+  			@include use-sprite($icon-image-filter);
+  			display: inline-block;
+  			margin-right: 10px;
+        // hax
+        width: 21px;
+        height: 15px;
+        background-size: 735px 30px;
+        background-position: -243px 0;
+        opacity: 0.5;
+  		}
+    }
     
     .views-field-title {
 			color: $color-white;
@@ -378,10 +391,10 @@ body.node-type-landing-page.section-media {
   			display: inline-block;
   			margin-right: 10px;
         // hax
-        width: 20px;
+        width: 21px;
         height: 15px;
-        background-size: 718px 31px;
-        background-position: -252px 0;
+        background-size: 735px 30px;
+        background-position: -243px 0;
         opacity: 0.5;
   		}
     }

@@ -3,9 +3,6 @@ body.page-store {
   h1 {
     display: none;
   }
-  .l-main {
-    padding: 50px
-  }
 
   .view-store {
     background: $color-gray-medium-dark;
@@ -100,7 +97,6 @@ body.page-store {
 
 body.node-type-product-display {
   .l-main {
-    padding: 50px;
 
     .back-banner {
       background-color: $color-orange;

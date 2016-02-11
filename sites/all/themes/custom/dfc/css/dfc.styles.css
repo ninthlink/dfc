@@ -4943,17 +4943,13 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
 body.page-store h1 {
   display: none; }
 
-/* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-body.page-store .l-main {
-  padding: 50px; }
-
-/* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 7, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.page-store .view-store {
   background: #828384; }
-  /* line 14, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 11, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.page-store .view-store h1 {
     display: inline; }
-  /* line 18, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 15, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.page-store .view-store .view-header {
     background-color: #000000;
     background-image: url(../images/dfc-product-banner.jpg);
@@ -4961,217 +4957,215 @@ body.page-store .view-store {
     height: 235px;
     width: 100%;
     text-align: center; }
-    /* line 26, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 23, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .view-header h1 {
       color: #ffffff;
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 56px; }
-    /* line 32, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 29, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .view-header h2 {
       color: #f1592a;
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 56px; }
-    /* line 38, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 35, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .view-header h4 {
       color: #ffffff;
       font-size: 30px; }
-  /* line 44, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 41, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.page-store .view-store .view-content {
     clear: both;
     margin: 0 auto;
     padding: 26px 0;
     position: relative; }
-  /* line 51, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 48, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.page-store .view-store .views-row {
     background-color: #000000;
     margin: 20px 0;
     overflow: hidden;
     height: 340px;
     width: 300px; }
-    /* line 58, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 55, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field {
       margin: 0 10px; }
-    /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 59, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field-field-image {
       margin: 0; }
-    /* line 66, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 63, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field-title {
       color: #FFFFFF;
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       text-transform: uppercase; }
-    /* line 73, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 70, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field-field-image,
     body.page-store .view-store .views-row .views-field-field-product-image {
       margin: 0; }
-      /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      /* line 74, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
       body.page-store .view-store .views-row .views-field-field-image img,
       body.page-store .view-store .views-row .views-field-field-product-image img {
         max-height: 200px; }
-    /* line 82, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field-commerce-price {
       font-family: 'sanchezregular'; }
-      /* line 85, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      /* line 82, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
       body.page-store .view-store .views-row .views-field-commerce-price .pts-value {
         color: #f1592a;
         font-weight: bold; }
-    /* line 91, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 88, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.page-store .view-store .views-row .views-field-field-image-1 {
       margin: 0; }
 
-/* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-body.node-type-product-display .l-main {
-  padding: 50px; }
-  /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-  body.node-type-product-display .l-main .back-banner {
-    background-color: #f1592a;
+/* line 101, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+body.node-type-product-display .l-main .back-banner {
+  background-color: #f1592a;
+  color: #ffffff;
+  height: 50px;
+  padding: 10px; }
+  /* line 107, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .back-banner a, body.node-type-product-display .l-main .back-banner a:visited {
     color: #ffffff;
-    height: 50px;
-    padding: 10px; }
-    /* line 111, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .back-banner a, body.node-type-product-display .l-main .back-banner a:visited {
+    font-family: "dangerregular", Helvetica, sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle; }
+
+/* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+body.node-type-product-display .l-main .l-content {
+  background: #ffffff;
+  color: #000000; }
+  /* line 119, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .l-content .content {
+    padding: 20px; }
+  /* line 123, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .l-content h1 {
+    display: none; }
+  /* line 126, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .l-content .node h1 {
+    display: block; }
+  /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .l-content .node .main-content {
+    float: left;
+    width: 535px; }
+    /* line 136, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .main-content #main-image img {
+      width: 535px; }
+    /* line 141, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image {
+      margin: 10px 40px 10px 10px; }
+      /* line 144, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image {
+        display: inline-block; }
+        /* line 147, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+        body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image img {
+          border: 1px solid #000000;
+          height: 60px;
+          width: 60px;
+          margin: 10px;
+          padding: 5px; }
+        /* line 155, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+        body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image img:hover {
+          border-color: #aeaeae; }
+    /* line 161, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .main-content .images-enlarge {
+      cursor: pointer;
+      float: right;
+      font-family: 'sanchezregular';
+      font-weight: 600;
+      font-size: 18px;
+      padding-top: 20px;
+      text-align: right; }
+  /* line 172, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  body.node-type-product-display .l-main .l-content .node .sidebar {
+    font-family: 'sanchezregular';
+    margin-left: 620px; }
+    /* line 178, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .field--body {
+      margin-top: 20px; }
+    /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .title {
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 36px;
+      text-transform: uppercase; }
+    /* line 188, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .field--commerce-price {
+      display: inline-block;
+      margin-bottom: 10px; }
+    /* line 193, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .points-value {
+      color: #f1592a;
+      font-weight: bold; }
+    /* line 198, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets {
+      display: inline-block;
+      max-width: 180px; }
+      /* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes {
+        display: inline-block;
+        height: 36px;
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: 10px; }
+        /* line 209, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+        body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes label {
+          display: none; }
+        /* line 213, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+        body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes .form-item-attributes-field-product-color {
+          display: inline-block;
+          width: 36px; }
+        /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+        body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes .commerce-fancy-attributes-color {
+          height: 36px;
+          width: 36px; }
+      /* line 225, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-item-attributes-field-product-size select {
+        border: 1px #959595 solid;
+        width: 150px; }
+    /* line 231, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar .form-item-quantity {
+      display: inline-block;
+      margin-left: 10px; }
+    /* line 235, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar #edit-line-item-fields,
+    body.node-type-product-display .l-main .l-content .node .sidebar .inline {
+      display: inline-block; }
+    /* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar #edit-submit {
+      background-color: #f1592a;
+      border: 0;
       color: #ffffff;
       font-family: "dangerregular", Helvetica, sans-serif;
-      text-transform: uppercase;
-      vertical-align: middle; }
-  /* line 119, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-  body.node-type-product-display .l-main .l-content {
-    background: #ffffff;
-    color: #000000; }
-    /* line 123, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .l-content .content {
-      padding: 20px; }
-    /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .l-content h1 {
-      display: none; }
-    /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .l-content .node h1 {
-      display: block; }
-    /* line 134, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .l-content .node .main-content {
-      float: left;
-      width: 535px; }
-      /* line 140, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .main-content #main-image img {
-        width: 535px; }
-      /* line 145, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image {
-        margin: 10px 40px 10px 10px; }
-        /* line 148, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-        body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image {
-          display: inline-block; }
-          /* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-          body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image img {
-            border: 1px solid #000000;
-            height: 60px;
-            width: 60px;
-            margin: 10px;
-            padding: 5px; }
-          /* line 159, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-          body.node-type-product-display .l-main .l-content .node .main-content .field-field-product-image .field--product-image img:hover {
-            border-color: #aeaeae; }
-      /* line 165, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .main-content .images-enlarge {
-        cursor: pointer;
-        float: right;
-        font-family: 'sanchezregular';
-        font-weight: 600;
-        font-size: 18px;
-        padding-top: 20px;
-        text-align: right; }
-    /* line 176, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-    body.node-type-product-display .l-main .l-content .node .sidebar {
-      font-family: 'sanchezregular';
-      margin-left: 620px; }
-      /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .field--body {
-        margin-top: 20px; }
-      /* line 186, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .title {
-        font-family: "dangerregular", Helvetica, sans-serif;
-        font-size: 36px;
-        text-transform: uppercase; }
-      /* line 192, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .field--commerce-price {
-        display: inline-block;
-        margin-bottom: 10px; }
-      /* line 197, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .points-value {
-        color: #f1592a;
-        font-weight: bold; }
-      /* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets {
-        display: inline-block;
-        max-width: 180px; }
-        /* line 206, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-        body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes {
-          display: inline-block;
-          height: 36px;
-          width: 100%;
-          margin-bottom: 0;
-          margin-right: 10px; }
-          /* line 213, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-          body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes label {
-            display: none; }
-          /* line 217, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-          body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes .form-item-attributes-field-product-color {
-            display: inline-block;
-            width: 36px; }
-          /* line 222, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-          body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-type-commerce-fancy-attributes .commerce-fancy-attributes-color {
-            height: 36px;
-            width: 36px; }
-        /* line 229, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-        body.node-type-product-display .l-main .l-content .node .sidebar .attribute-widgets .form-item-attributes-field-product-size select {
-          border: 1px #959595 solid;
-          width: 150px; }
-      /* line 235, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar .form-item-quantity {
-        display: inline-block;
-        margin-left: 10px; }
-      /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar #edit-line-item-fields,
-      body.node-type-product-display .l-main .l-content .node .sidebar .inline {
-        display: inline-block; }
-      /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar #edit-submit {
-        background-color: #f1592a;
-        border: 0;
-        color: #ffffff;
-        font-family: "dangerregular", Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        height: 60px;
-        width: 260px;
-        text-transform: uppercase; }
-      /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
-      body.node-type-product-display .l-main .l-content .node .sidebar #edit-submit:hover {
-        background-color: #828384;
-        color: #f1592a; }
+      font-size: 18px;
+      font-weight: bold;
+      height: 60px;
+      width: 260px;
+      text-transform: uppercase; }
+    /* line 252, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    body.node-type-product-display .l-main .l-content .node .sidebar #edit-submit:hover {
+      background-color: #828384;
+      color: #f1592a; }
 
-/* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.node-type-product-display #block-views-store-block-1 {
   background: #ffffff;
   color: #000000;
   padding: 20px 50px; }
-  /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 266, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 h2.block__title {
     color: #f1592a;
     font-size: 36px;
     text-transform: uppercase; }
-  /* line 276, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 272, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 25px;
     text-transform: uppercase; }
-  /* line 283, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-field-product-image img {
     border: 1px solid #c6c6c6;
     width: 200px; }
-  /* line 289, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 285, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-commerce-price {
     font-family: 'sanchezregular'; }
-    /* line 292, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 288, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display #block-views-store-block-1 .views-field-commerce-price .pts-value {
       color: #f1592a;
       font-weight: bold; }

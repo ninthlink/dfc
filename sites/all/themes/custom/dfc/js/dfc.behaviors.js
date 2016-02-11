@@ -75,6 +75,16 @@
           return false;
         });
       }
+      
+      // hax for media category photo icon
+      if ( $('.field--media-category').size() > 0 ) {
+        $('.field--media-category').each(function() {
+          var thistxt = $(this).text();
+          if ( thistxt.indexOf('Photo') > 0 ) {
+            $(this).addClass('photo');
+          }
+        });
+      }
     }
   };
 

@@ -1,10 +1,10 @@
-name = Owl Carousel
-description = "Provides Owl Carousel integration into Drupal."
+name = Owl Carousel Colorbox
+description = "Provides integration between Colorbox and Owl Carousel"
 core = 7.x
 package = Owl Carousel
 
-dependencies[] = libraries
-dependencies[] = jquery_update
+dependencies[] = colorbox
+dependencies[] = owlcarousel
 
 
 

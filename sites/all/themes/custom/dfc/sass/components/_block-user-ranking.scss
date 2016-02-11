@@ -1,8 +1,9 @@
 // Home User Ranking
-.block--views-user-ranking-block-1 {
+.block--views-user-ranking-block-1,
+.block--views-user-ranking-block-3 {
 	position: relative;
   background: $color-gray-36;
-  padding: 0;
+  padding: 0 0 64px;
   text-align: left;
   margin-bottom: 50px;
 
@@ -13,14 +14,6 @@
     text-transform: uppercase;
     margin: 0;
     padding: 20px;
-
-    @include breakpoint($bp-tab) {
-      width: 50%;
-    }
-    
-    @include breakpoint($bp-desk) {
-      width: 66.66666667%;
-    }
   }
   
   .view-content {
@@ -32,8 +25,21 @@
       padding: 50px;
     }
   }
+  
+  .xcollapse {
+    @include rem(font-size, 20px);
+    color: $color-gray-9;
+    position: absolute;
+    right: 20px;
+    bottom: 84px;
+    
+    @include breakpoint($bp-tab) {
+      right: 50px;
+    }
+  }
 }
-#views-exposed-form-user-ranking-block-1 {
+#views-exposed-form-user-ranking-block-1,
+#views-exposed-form-user-ranking-block-3 {
   background: $color-white;
   margin: 0 0 40px;
   padding: 20px;
@@ -41,32 +47,46 @@
 
   @include breakpoint($bp-tab) {
     margin-bottom: 0;
-    width: 50%;
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 50%;
+    bottom: 0;
+    left: 0;
     right: 0;
   }
+  .views-exposed-form {
+    .views-exposed-widgets {
+      margin: 0 !important;
+      
+      .views-exposed-widget {
+        padding: 0 !important;
+        width: 100%;
+        
+        .form-text {
+          float: left;
+          margin: 0;
+          padding: 0;
+          width: 80%;
+          max-width: 80%;
+        }
+        
+        .form-submit {
+    			@include use-sprite($search);
+          background-color: $color-white;
+          border: none;
+          cursor: pointer;
+          float: right;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+          text-indent: -999em;
+        }
+      }
+    }
+  }
   
-  @include breakpoint($bp-desk) {
-    left: 66.66666667%;
-    width: 33.33333333%;
-  }
-  .views-exposed-widget {
-    padding: 0 !important;
-  }
-  .views-exposed-widgets {
-    margin: 0 !important;
-  }
-  
-  .form-text,
-  .form-submit {
-    float: left;
-    margin: 0;
-    max-width: 80%;
-  }
 }
 #edit-uid {
+  background: none;
   border: none;
   font-family: $dr;
   letter-spacing: 2px;
@@ -74,6 +94,9 @@
   max-width: 100%;
   padding: 0 6px;
   text-transform: uppercase;
+}
+html.js .form-autocomplete#edit-uid {
+  background: none;
 }
 
 .view-user-ranking {
@@ -127,7 +150,8 @@
         width: 63%;
       }
       
-      .views-field-lifetime-user-standing {
+      .views-field-lifetime-user-standing,
+      .views-field-monthly-user-standing {
         font-family: $dr;
         @include rem(font-size, 30px);
         color: $color-orange;
@@ -236,4 +260,10 @@ body.section-user {
       }
     }
   }
+}
+
+// for now just hide..
+.block--views-user-ranking-block-3,
+.block--views-leaderboards-block-1 {
+  display: none;
 }

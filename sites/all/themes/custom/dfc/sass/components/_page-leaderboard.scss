@@ -179,12 +179,4 @@ body.node-type-landing-page.section-leaderboard {
     float: left;
     width: 100%;
   }
-  
-  .xcollapse {
-    @include rem(font-size, 20px);
-    color: $color-gray-9;
-    position: absolute;
-    right: 50px;
-    bottom: 20px;
-  }
 }

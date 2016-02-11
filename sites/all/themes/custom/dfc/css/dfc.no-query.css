@@ -300,10 +300,10 @@ img, media {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -25px 0px;
+    background-position: 0px 0px;
     width: 15px;
     height: 23px;
     position: absolute;
@@ -314,10 +314,10 @@ img, media {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: -25px 0px;
     width: 15px;
     height: 23px;
     left: auto;
@@ -360,8 +360,8 @@ img, media {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
       background-position: -131px 0px;
       width: 19.5px;
@@ -373,8 +373,8 @@ img, media {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
       background-position: -160.5px 0px;
       width: 19.5px;
@@ -386,10 +386,10 @@ img, media {
   content: "";
   display: inline-block;
   overflow: hidden;
-  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-  background-size: 1470px 61px;
+  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+  background-size: 1513px 61px;
   background-repeat: no-repeat;
-  background-position: -25px 0px;
+  background-position: 0px 0px;
   width: 15px;
   height: 23px; }
 
@@ -398,10 +398,10 @@ img, media {
   content: "";
   display: inline-block;
   overflow: hidden;
-  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-  background-size: 1470px 61px;
+  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+  background-size: 1513px 61px;
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: -25px 0px;
   width: 15px;
   height: 23px; }
 
@@ -679,14 +679,16 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       display: none; }
 
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-.block--views-user-ranking-block-1 {
+.block--views-user-ranking-block-1,
+.block--views-user-ranking-block-3 {
   position: relative;
   background: #363636;
-  padding: 0;
+  padding: 0 0 64px;
   text-align: left;
   margin-bottom: 50px; }
-  /* line 9, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-  .block--views-user-ranking-block-1 h2.block__title {
+  /* line 10, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  .block--views-user-ranking-block-1 h2.block__title,
+  .block--views-user-ranking-block-3 h2.block__title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
@@ -694,28 +696,64 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     text-transform: uppercase;
     margin: 0;
     padding: 20px; }
+  /* line 29, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  .block--views-user-ranking-block-1 .xcollapse,
+  .block--views-user-ranking-block-3 .xcollapse {
+    font-size: 20px;
+    font-size: 1.25rem;
+    color: #999999;
+    position: absolute;
+    right: 20px;
+    bottom: 84px; }
 
-/* line 36, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-#views-exposed-form-user-ranking-block-1 {
+/* line 41, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+#views-exposed-form-user-ranking-block-1,
+#views-exposed-form-user-ranking-block-3 {
   background: #ffffff;
   margin: 0 0 40px;
   padding: 20px;
   text-align: left; }
-  /* line 55, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-  #views-exposed-form-user-ranking-block-1 .views-exposed-widget {
-    padding: 0 !important; }
-  /* line 58, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-  #views-exposed-form-user-ranking-block-1 .views-exposed-widgets {
+  /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  #views-exposed-form-user-ranking-block-1 .views-exposed-form .views-exposed-widgets,
+  #views-exposed-form-user-ranking-block-3 .views-exposed-form .views-exposed-widgets {
     margin: 0 !important; }
-  /* line 62, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-  #views-exposed-form-user-ranking-block-1 .form-text,
-  #views-exposed-form-user-ranking-block-1 .form-submit {
-    float: left;
-    margin: 0;
-    max-width: 80%; }
+    /* line 60, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    #views-exposed-form-user-ranking-block-1 .views-exposed-form .views-exposed-widgets .views-exposed-widget,
+    #views-exposed-form-user-ranking-block-3 .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+      padding: 0 !important;
+      width: 100%; }
+      /* line 64, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      #views-exposed-form-user-ranking-block-1 .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-text,
+      #views-exposed-form-user-ranking-block-3 .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-text {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        max-width: 80%; }
+      /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      #views-exposed-form-user-ranking-block-1 .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit,
+      #views-exposed-form-user-ranking-block-3 .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit {
+        content: "";
+        display: inline-block;
+        overflow: hidden;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
+        background-repeat: no-repeat;
+        background-position: -397px 0px;
+        width: 33px;
+        height: 24px;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        text-indent: -999em; }
 
-/* line 69, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 88, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 #edit-uid {
+  background: none;
   border: none;
   font-family: "dangerregular", Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -724,65 +762,71 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
   padding: 0 6px;
   text-transform: uppercase; }
 
-/* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 98, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+html.js .form-autocomplete#edit-uid {
+  background: none; }
+
+/* line 102, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 .view-user-ranking {
   text-align: center; }
-  /* line 86, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 109, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking h3 {
     font-size: 20px;
     font-size: 1.25rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: uppercase; }
-  /* line 93, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 116, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .views-row {
     overflow: hidden;
     *zoom: 1;
     line-height: 1; }
-  /* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 128, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .views-field-picture {
     margin-bottom: 30px; }
-    /* line 113, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 136, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .views-field-picture img {
       width: 140px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 121, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 144, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .profile-info .personal-info {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
-    /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-    .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing {
+    /* line 153, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing,
+    .view-user-ranking .profile-info .personal-info .views-field-monthly-user-standing {
       font-family: "dangerregular", Helvetica, sans-serif;
       font-size: 30px;
       font-size: 1.875rem;
       color: #f1592a;
       margin-bottom: 25px; }
-      /* line 136, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
-      .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing:after {
+      /* line 160, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      .view-user-ranking .profile-info .personal-info .views-field-lifetime-user-standing:after,
+      .view-user-ranking .profile-info .personal-info .views-field-monthly-user-standing:after {
         content: "."; }
-    /* line 141, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 165, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .member-name {
       font-size: 18px;
       font-size: 1.125rem;
       text-transform: uppercase;
       margin-bottom: 10px; }
-      /* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+      /* line 170, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
       .view-user-ranking .profile-info .personal-info .member-name div {
         display: inline-block; }
-    /* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 175, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .profile-info .personal-info .field--city-state {
       font-size: 16px;
       font-size: 1rem;
       color: #CCCCCC;
       margin-bottom: 30px; }
-  /* line 159, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 183, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   .view-user-ranking .current-profile-month,
   .view-user-ranking .current-profile-lifetime {
     font-family: "sanchezregular", Helvetica, sans-serif;
     margin-bottom: 20px; }
-    /* line 172, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 196, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .current-profile-month .views-label,
     .view-user-ranking .current-profile-lifetime .views-label {
       font-size: 16px;
@@ -790,14 +834,14 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       color: #f1592a;
       display: block;
       margin-bottom: 10px; }
-    /* line 179, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+    /* line 203, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
     .view-user-ranking .current-profile-month .field-content,
     .view-user-ranking .current-profile-lifetime .field-content {
       font-size: 25px;
       font-size: 1.5625rem;
       display: block; }
 
-/* line 225, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   color: #ffffff;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -805,9 +849,14 @@ body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   font-size: 2.0625rem;
   line-height: 0.9;
   padding-top: 10px; }
-  /* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   body.section-user .view-user-ranking .profile-info .personal-info .member-name div {
     display: block; }
+
+/* line 266, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+.block--views-user-ranking-block-3,
+.block--views-leaderboards-block-1 {
+  display: none; }
 
 /* line 1, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_comments.scss */
 #comments {
@@ -928,10 +977,10 @@ body.node-type-media-item .group-media-content {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -358px 0px;
+      background-position: -319px 0px;
       width: 29px;
       height: 18px;
       display: inline-block;
@@ -941,10 +990,10 @@ body.node-type-media-item .group-media-content {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -487px 0px;
+    background-position: -580px 0px;
     width: 40px;
     height: 30px;
     display: inline-block;
@@ -1025,8 +1074,8 @@ body.node-type-media-item .block--views-related-videos-block {
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
         background-position: -190px 0px;
         width: 20px;
@@ -1038,10 +1087,10 @@ body.node-type-media-item .block--views-related-videos-block {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -487px 0px;
+      background-position: -580px 0px;
       width: 40px;
       height: 30px;
       display: inline-block;
@@ -1246,10 +1295,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
-        background-position: -440px 0px;
+        background-position: -483px 0px;
         width: 37px;
         height: 23px;
         display: inline-block;
@@ -1285,8 +1334,8 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -253px 0px;
     width: 23px;
@@ -1298,8 +1347,8 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -220px 0px;
     width: 23px;
@@ -1386,10 +1435,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -916px 0px;
+      background-position: -1023px 0px;
       width: 54px;
       height: 53px;
       margin-left: -27px; }
@@ -1398,10 +1447,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -980px 0px;
+      background-position: -959px 0px;
       width: 54px;
       height: 53px;
       margin-left: -27px; }
@@ -1410,10 +1459,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -1044px 0px;
+      background-position: -1087px 0px;
       width: 55px;
       height: 55px;
       margin-left: -27px; }
@@ -1422,10 +1471,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -856px 0px;
+      background-position: -899px 0px;
       width: 50px;
       height: 61px;
       margin-left: -25px; }
@@ -1560,10 +1609,10 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -1109px 0px;
+      background-position: -1152px 0px;
       width: 61px;
       height: 61px;
       position: absolute;
@@ -1699,10 +1748,10 @@ body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners .view-
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -397px 0px;
+    background-position: -440px 0px;
     width: 33px;
     height: 22px; }
 
@@ -1883,10 +1932,10 @@ body.page-checkout #commerce-userpoints-discount fieldset {
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
-        background-position: -797px 0px;
+        background-position: -840px 0px;
         width: 49px;
         height: 30px;
         position: absolute;
@@ -1978,10 +2027,10 @@ body.page-checkout #commerce-userpoints-discount fieldset {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -319px 0px;
+    background-position: -358px 0px;
     width: 29px;
     height: 39px;
     position: absolute;
@@ -2122,10 +2171,10 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -319px 0px;
+      background-position: -358px 0px;
       width: 29px;
       height: 39px;
       float: left;
@@ -2157,8 +2206,8 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
       background-position: -286px 0px;
       width: 23px;
@@ -2249,10 +2298,10 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -744px 0px;
+      background-position: -734px 0px;
       width: 43px;
       height: 26px;
       margin-top: -4px;
@@ -2271,10 +2320,10 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -487px 0px;
+    background-position: -580px 0px;
     width: 40px;
     height: 30px;
     margin-top: -5px; }
@@ -2383,8 +2432,8 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -102px 0px;
     width: 19px;
@@ -2522,14 +2571,6 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
   .content-bottom .block .view-user-ranking .view-content {
     float: left;
     width: 100%; }
-  /* line 183, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
-  .content-bottom .block .xcollapse {
-    font-size: 20px;
-    font-size: 1.25rem;
-    color: #999999;
-    position: absolute;
-    right: 50px;
-    bottom: 20px; }
 
 /* line 3, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
 body.node-type-landing-page.section-media .l-main {
@@ -2610,10 +2651,10 @@ body.node-type-landing-page.section-media .l-main {
           content: "";
           display: inline-block;
           overflow: hidden;
-          background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-          background-size: 1470px 61px;
+          background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+          background-size: 1513px 61px;
           background-repeat: no-repeat;
-          background-position: -744px 0px;
+          background-position: -734px 0px;
           width: 43px;
           height: 26px;
           position: absolute;
@@ -2629,10 +2670,10 @@ body.node-type-landing-page.section-media .l-main {
             content: "";
             display: inline-block;
             overflow: hidden;
-            background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-            background-size: 1470px 61px;
+            background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+            background-size: 1513px 61px;
             background-repeat: no-repeat;
-            background-position: -691px 0px;
+            background-position: -787px 0px;
             width: 43px;
             height: 26px; }
     /* line 121, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
@@ -2640,10 +2681,10 @@ body.node-type-landing-page.section-media .l-main {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -487px 0px;
+      background-position: -580px 0px;
       width: 40px;
       height: 30px; }
     /* line 127, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
@@ -2651,10 +2692,10 @@ body.node-type-landing-page.section-media .l-main {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -537px 0px;
+      background-position: -530px 0px;
       width: 40px;
       height: 30px; }
   /* line 135, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-media.scss */
@@ -2686,10 +2727,10 @@ body.node-type-landing-page.section-media .l-main {
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
-        background-position: -358px 0px;
+        background-position: -319px 0px;
         width: 29px;
         height: 18px;
         display: inline-block;
@@ -2699,10 +2740,10 @@ body.node-type-landing-page.section-media .l-main {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -487px 0px;
+      background-position: -580px 0px;
       width: 40px;
       height: 30px;
       display: inline-block;
@@ -2863,8 +2904,8 @@ body.node-type-landing-page.section-media .l-main {
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
         background-position: -190px 0px;
         width: 20px;
@@ -2878,10 +2919,10 @@ body.node-type-landing-page.section-media .l-main {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -487px 0px;
+      background-position: -580px 0px;
       width: 40px;
       height: 30px;
       display: inline-block;
@@ -3436,10 +3477,10 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -744px 0px;
+      background-position: -734px 0px;
       width: 43px;
       height: 26px;
       margin-top: -4px;
@@ -3458,10 +3499,10 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
-    background-position: -487px 0px;
+    background-position: -580px 0px;
     width: 40px;
     height: 30px;
     margin-top: -5px; }
@@ -3581,8 +3622,8 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -102px 0px;
     width: 19px;
@@ -3848,10 +3889,10 @@ body.node-type-product-display #block-views-store-block-1 {
   content: "";
   display: inline-block;
   overflow: hidden;
-  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-  background-size: 1470px 61px;
+  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+  background-size: 1513px 61px;
   background-repeat: no-repeat;
-  background-position: -639px 0px;
+  background-position: -682px 0px;
   width: 42px;
   height: 41px;
   cursor: pointer;
@@ -3883,10 +3924,10 @@ body.node-type-product-display #block-views-store-block-1 {
   content: "";
   display: inline-block;
   overflow: hidden;
-  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-  background-size: 1470px 61px;
+  background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+  background-size: 1513px 61px;
   background-repeat: no-repeat;
-  background-position: -587px 0px;
+  background-position: -630px 0px;
   width: 42px;
   height: 41px;
   margin-left: 50px;
@@ -3983,8 +4024,8 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -76px 0px;
     width: 16px;
@@ -4039,8 +4080,8 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
       background-position: -50px 0px;
       width: 16px;
@@ -4121,10 +4162,10 @@ body.logged-in .block--dfc-flop-menu-userflop {
         content: "";
         display: inline-block;
         overflow: hidden;
-        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-        background-size: 1470px 61px;
+        background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+        background-size: 1513px 61px;
         background-repeat: no-repeat;
-        background-position: -487px 0px;
+        background-position: -580px 0px;
         width: 40px;
         height: 30px;
         display: block;
@@ -4142,10 +4183,10 @@ body.logged-in .block--dfc-flop-menu-userflop {
       content: "";
       display: inline-block;
       overflow: hidden;
-      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-      background-size: 1470px 61px;
+      background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+      background-size: 1513px 61px;
       background-repeat: no-repeat;
-      background-position: -744px 0px;
+      background-position: -734px 0px;
       width: 43px;
       height: 26px;
       display: block;
@@ -4210,8 +4251,8 @@ body.logged-in .block--dfc-flop-menu-userflop {
     content: "";
     display: inline-block;
     overflow: hidden;
-    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-ada494ec4f3ae228d2bb12dcba6b0920.png");
-    background-size: 1470px 61px;
+    background-image: url("/sites/all/themes/custom/dfc/images/generated/sprite-74eb97b47aaddae5aefe189c28eed1d4.png");
+    background-size: 1513px 61px;
     background-repeat: no-repeat;
     background-position: -76px 0px;
     width: 16px;

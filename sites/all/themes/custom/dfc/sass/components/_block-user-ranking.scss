@@ -213,11 +213,14 @@ html.js .form-autocomplete#edit-uid {
 // override for my profile section
 body.section-users {
   .view-user-ranking {
+    background-color: $color-gray-36;
+    padding: 20px;
     
     @include breakpoint($bp-tab) {
       float: right;
+      padding: 0;
       width: 50%;
-      margin-top: -200px;
+      margin-top: -286px;
     }
 
     .current-profile-month,

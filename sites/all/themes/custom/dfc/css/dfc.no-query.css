@@ -870,7 +870,12 @@ html.js .form-autocomplete#edit-uid {
       font-size: 1.5625rem;
       display: block; }
 
-/* line 249, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 215, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+body.section-users .view-user-ranking {
+  background-color: #363636;
+  padding: 20px; }
+
+/* line 252, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   color: #ffffff;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -878,11 +883,11 @@ body.section-user .view-user-ranking .profile-info .personal-info .member-name {
   font-size: 2.0625rem;
   line-height: 0.9;
   padding-top: 10px; }
-  /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+  /* line 259, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
   body.section-user .view-user-ranking .profile-info .personal-info .member-name div {
     display: block; }
 
-/* line 266, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
+/* line 269, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-user-ranking.scss */
 .block--views-user-ranking-block-3,
 .block--views-leaderboards-block-1 {
   display: none; }
@@ -4531,19 +4536,19 @@ article.user-profile {
   *zoom: 1;
   background: #363636;
   padding: 60px 50px 50px; }
-  /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 230, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .user-picture {
     margin-bottom: 50px; }
-    /* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 237, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .user-picture img {
       width: 136px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-personal {
     margin-bottom: 50px; }
-    /* line 261, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 260, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--first-name,
     article.user-profile .group-personal .field--last-name {
       font-family: "dangerregular", Helvetica, sans-serif;
@@ -4552,27 +4557,27 @@ article.user-profile {
       line-height: .9;
       color: #ffffff;
       text-transform: uppercase; }
-    /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 269, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--last-name {
       margin-bottom: 5px; }
-    /* line 274, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 273, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--city-state {
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 16px;
       font-size: 1rem; }
-  /* line 280, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 279, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-profile-points {
     margin-bottom: 50px; }
-    /* line 294, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 293, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points h3 {
       display: none; }
-    /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 300, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points .userpoints-points li {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff;
       font-size: 36px;
       font-size: 2.25rem; }
-      /* line 306, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 305, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points .userpoints-points li .placeholder {
         display: block;
         font-size: 16px;
@@ -4580,14 +4585,15 @@ article.user-profile {
         color: #f1592a;
         font-style: normal; }
 
-/* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 318, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 form.user-profile-form {
+  border-bottom: 1px solid #505050;
   float: left;
-  width: 100%;
-  max-width: 1080px;
-  padding: 0;
   margin: 20px;
-  border-bottom: 1px solid #505050; }
+  padding: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1080px; }
   /* line 333, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item label {
     color: #999999;

@@ -222,18 +222,16 @@ article.user-profile {
   @include clearfix;
   background: $color-gray-36;
   padding: 60px 50px 50px;
+  
+  @include breakpoint($bp-tab) {
+    min-height: 336px;
+  }
 
   .user-picture {
     margin-bottom: 50px;
 
 	  @include breakpoint($bp-tab) {
-      float: left;
-      width: 40%;
-	  }
-
-	  @include breakpoint($bp-desk) {
-      width: 18%;
-      margin-bottom: 0;
+      display: none
 	  }
     
     img {
@@ -251,6 +249,7 @@ article.user-profile {
       float: left;
       width: 60%;
       padding-top: 10px;
+      margin-left: 18%;
 	  }
     
 	  @include breakpoint($bp-desk) {
@@ -317,12 +316,13 @@ article.user-profile {
 
 // User Edit Form
 form.user-profile-form {
+  border-bottom: 1px solid $color-gray-50;
   float: left;
+  margin: 20px;
+  padding: 0;
+  position: relative;
   width: 100%;
   max-width: 1080px;
-  padding: 0;
-  margin: 20px;
-  border-bottom: 1px solid $color-gray-50;
   
   @include breakpoint($bp-desk) {
     margin: 50px;
@@ -406,9 +406,9 @@ form.user-profile-form {
     
     @include breakpoint( $bp-tab ) {
       position: absolute;
-      top: -200px;
+      top: -328px;
       right: 81%;
-      left: 48px;
+      left: -2px;
       
       .form-item-picture-delete {
         position: absolute;
@@ -433,7 +433,7 @@ form.user-profile-form {
         
       .form-item-files-picture-upload {
         position: absolute;
-        right: -330px;
+        right: -294px;
         top: 151px;
         width: auto;
         max-width: 320px;

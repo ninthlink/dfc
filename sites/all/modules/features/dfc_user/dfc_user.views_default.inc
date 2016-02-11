@@ -80,8 +80,16 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = 'Invite up to 10 friends or family to become members and when they do you earn <strong>500 points</strong>.';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h4>No Invites found.</h4>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Field: Invite: Joined */
   $handler->display->display_options['fields']['joined']['id'] = 'joined';
   $handler->display->display_options['fields']['joined']['table'] = 'invite';

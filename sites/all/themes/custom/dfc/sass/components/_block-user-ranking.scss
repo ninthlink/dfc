@@ -265,8 +265,18 @@ body.section-user {
   }
 }
 
-// for now just hide..
-.block--views-user-ranking-block-3,
-.block--views-leaderboards-block-1 {
+// for now just hide the Lifetime and default to Monthly
+.block--views-user-ranking-block-1,
+.block--views-leaderboards-block-2 {
   display: none;
+}
+
+// collapsed state
+.block--views-user-ranking-block-1.collapsed,
+.block--views-user-ranking-block-3.collapsed {
+  padding-bottom: 0;
+  
+  .view-user-ranking {
+    display: none;
+  }
 }

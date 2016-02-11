@@ -46,15 +46,33 @@
         if ( $('body').hasClass('section-user') ) {
           $('#block-views-user-ranking-block-1').find('h2, h3, .view-filters, .views-field-lifetime-user-standing').remove();
         } else {
-          $('#block-views-user-ranking-block-1').each(function() {
+          // leaderboard page
+          $('.view-user-ranking').each(function() {
             if ( $(this).find('.xcollapse').size() == 0 ) {
               $(this).find('.view-content').append('<a href="#x" class="xcollapse">x</a>')
                 .children('.xcollapse').click(function() {
-                  $(this).parent().toggle();
+                  $('.block--views-user-ranking-block-1, .block--views-user-ranking-block-3').addClass('collapsed');
                   return false;
                 });
             }
           });
+          // add togglers
+          $('.content-bottom').append('<div class="leadertog"><a href="#" class="lifetime">Lifetime Points</a><a href="#" class="monthly active">Monthly Points</a></div>')
+            .find('.leadertog a.lifetime').click(function() {
+              if ( $(this).hasClass('active') == false ) {
+                $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').hide();
+                $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').show();
+                $(this).addClass('active').next().removeClass('active');
+              }
+              return false;
+            }).next().click(function() {
+              if ( $(this).hasClass('active') == false ) {
+                $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').show();
+                $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').hide();
+                $(this).addClass('active').prev().removeClass('active');
+              }
+              return false;
+            });
         }
       }
       

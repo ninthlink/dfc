@@ -1,6 +1,38 @@
 body.node-type-landing-page.section-leaderboard {
-
-
+  .leadertog {
+    background: $color-silver;
+    padding: 16px 30px;
+    width: 38.5%;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    a {
+      color: $color-black;
+      float: left;
+      font-family: $sr;
+      @include rem(font-size, 14px);
+      line-height: 2;
+      margin-right: 35px;
+		
+  		&:before {
+        background: $color-white;
+        border: 2px solid $color-white;
+        content: '';
+  			display: block;
+        float: left;
+  			margin: 2px 11px 0 0;
+        width: 25px;
+        height: 24px;
+  		}
+    }
+    a.active {
+      &:before {
+        background: $color-orange;
+      }
+    }
+  }
   .view-leaderboards {
     @include container;
     @extend .row-padding;

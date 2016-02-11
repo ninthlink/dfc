@@ -5,7 +5,7 @@ body.page-store {
   }
 
   .view-store {
-    background: $color-gray-medium-dark;
+    background:$color-gray-36;
 //    padding: 0 10px;
 
     h1 {
@@ -15,26 +15,45 @@ body.page-store {
     .view-header {
       background-color: #000000;
       background-image: url(../images/dfc-product-banner.jpg);
-      padding-top: 50px;
-      height: 235px;
+      padding-top: 36px;
+	   padding-bottom: 30px;
       width: 100%;
       text-align: center;
 
       h1 {
-        color: $color-white;
-        font-family: "dangerregular", Helvetica, sans-serif;
-        font-size: 56px;
+
+		font-family: 'dangerregular';
+        font-size: 64px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        line-height: 55px;
+         margin-bottom: 33px;
+		color: $color-orange;
+	
       }
 
       h2 {
-        color: $color-orange;
-        font-family: "dangerregular", Helvetica, sans-serif;
-        font-size: 56px;
+        
+		color: $color-white;
+        font-weight: normal;
+        font-size: 64px;
+		 line-height: 55px;
+
       }
 
       h4 {
-        color: $color-white;
-        font-size: 30px;
+        /*color: $color-white;
+        font-size: 30px;*/
+		
+		font-family: 'sanchezregular';
+        color: #fff;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 4px;
+		margin: 0 0 10px;
+	
+		
       }
     }
 
@@ -51,6 +70,7 @@ body.page-store {
       overflow: hidden;
       height: 340px;
       width: 300px;
+
 
       .views-field {
         margin: 0 10px;

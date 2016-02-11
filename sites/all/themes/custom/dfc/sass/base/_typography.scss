@@ -66,3 +66,30 @@ p:first-child {
 p:last-child {
 	margin-bottom: 0;
 }
+
+p.membership_note {
+    margin-top: 230px !important;
+    position: absolute;
+    color: #fff;
+    float: left;
+    font-family: "sanchezregular";
+    font-size: 16px;
+    font-weight: 600;
+       line-height: 1.5;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 16%;
+    text-align: left;
+    clear: both;
+	
+}
+
+.membership_note .plus {
+    font-size: 25px;
+}
+
+.membership_note  .rate {
+    color: #ff6633;
+    font-size: 25px;
+	padding: 0 5px;
+}

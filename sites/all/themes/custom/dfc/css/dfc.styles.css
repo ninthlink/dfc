@@ -5961,7 +5961,7 @@ form.user-profile-form {
   @media (min-width: 960px) {
     /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form {
-      margin: 0 50px; } }
+      margin: 50px; } }
   /* line 333, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item label {
     color: #999999;
@@ -6030,7 +6030,7 @@ form.user-profile-form {
       /* line 402, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form fieldset#edit-picture {
         position: absolute;
-        top: 50px;
+        top: -200px;
         right: 81%;
         left: 48px; }
         /* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */

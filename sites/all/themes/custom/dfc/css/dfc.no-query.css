@@ -203,6 +203,27 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email .for
   font-style: normal; }
 
 @font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/Rockwell.eot");
+  src: url("../fonts/Rockwell.eot?#iefix") format("embedded-opentype"), url("../fonts/Rockwell.woff") format("woff"), url("../fonts/Rockwell.ttf") format("truetype"), url("../fonts/Rockwell.svg#Rockwell") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/Rockwell-Light.eot");
+  src: url("../fonts/Rockwell-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rockwell-Light.woff") format("woff"), url("../fonts/Rockwell-Light.ttf") format("truetype"), url("../fonts/Rockwell-Light.svg#Rockwell-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/Rockwell-Bold.eot");
+  src: url("../fonts/Rockwell-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rockwell-Bold.woff") format("woff"), url("../fonts/Rockwell-Bold.ttf") format("truetype"), url("../fonts/Rockwell-Bold.svg#Rockwell-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
   font-family: 'fontawesome';
   src: url("../fonts/fa/fontawesome-webfont.eot");
   src: url("../fonts/fa/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fa/fontawesome-webfont.woff") format("woff"), url("../fonts/fa/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fa/fontawesome-webfont.svg") format("svg");
@@ -3226,32 +3247,35 @@ body.node-type-landing-page.section-media .l-main {
     font-family: "sanchezregular", Helvetica, sans-serif; }
   /* line 282, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body h2 {
-    font-family: "sanchezregular", Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family: "Rockwell", Georgia, serif;
     font-size: 18px;
     font-size: 1.125rem;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-transform: uppercase; }
   /* line 289, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body .note-billing {
+    color: #999999;
+    font-family: "Rockwell", Georgia, serif;
     font-size: 18px;
     font-size: 1.125rem;
-    color: #999999;
+    font-weight: 300;
     margin-bottom: 50px; }
-  /* line 295, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 297, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body h3 {
+    color: #b7b7b7;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 25px;
     font-size: 1.5625rem;
-    margin-bottom: 40px;
-    font-family: inherit;
-    color: #b7b7b7; }
-    /* line 301, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+    margin-bottom: 40px; }
+    /* line 303, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
     .view-memberships .quicktabs_main .views-field-body h3 span {
       color: #ffffff; }
-  /* line 309, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 311, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body ul li {
+    font-family: "Rockwell", Georgia, serif;
     position: relative;
     padding: 0 0 10px 10px; }
-    /* line 313, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+    /* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
     .view-memberships .quicktabs_main .views-field-body ul li:before {
       content: "";
       background: #ff6633;
@@ -3263,27 +3287,27 @@ body.node-type-landing-page.section-media .l-main {
       width: 4px;
       border-radius: 100%; }
 
-/* line 332, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 335, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-title {
   color: #b1872c; }
 
-/* line 338, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 341, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-body h2 {
   margin-bottom: 10px; }
 
-/* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 345, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-body h3 {
   color: #b1872c; }
 
-/* line 350, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 353, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-title {
   color: #ff6633; }
 
-/* line 356, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 359, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-body h2 {
   margin-bottom: 10px; }
 
-/* line 360, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 363, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-body h3 {
   color: #ff6633; }
 

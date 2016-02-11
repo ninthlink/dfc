@@ -298,7 +298,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<div class="prize-header">
 	<h2>DFC <span>Prizeboard</span></h2>
-	<div class="prize-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnan ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div class="prize-intro">The DFC Prizeboard is where we recognize members who earn product, swag and trips by consuming content, uploading content, sharing and more.  Participate and earn your way onto the Prizeboard today.</div>
 	<div class="prize-buttons">
 		<a href="/dfc-prizeboard">View More</a><a href="/fab-52-resorts">View Next Giveway</a>
 	</div>

@@ -13,47 +13,36 @@ body.page-store {
     }
 
     .view-header {
-      background-color: #000000;
+      background-color: $color-black;
       background-image: url(../images/dfc-product-banner.jpg);
-      padding-top: 36px;
-	   padding-bottom: 30px;
+      padding: 36px 0 30px;
       width: 100%;
       text-align: center;
 
       h1 {
-
-		font-family: 'dangerregular';
-        font-size: 64px;
-        text-transform: uppercase;
-        margin-top: 0px;
+        color: $color-orange;
+        font-family: $dr;
+        @include rem(font-size, 64px);
         line-height: 55px;
-         margin-bottom: 33px;
-		color: $color-orange;
-	
+        margin: 0 0 33px;
+        text-transform: uppercase;
       }
 
       h2 {
-        
-		color: $color-white;
+        color: $color-white;
         font-weight: normal;
-        font-size: 64px;
-		 line-height: 55px;
-
+        @include rem(font-size, 64px);
+        line-height: 55px;
       }
 
       h4 {
-        /*color: $color-white;
-        font-size: 30px;*/
-		
-		font-family: 'sanchezregular';
-        color: #fff;
-        font-size: 17px;
-        text-transform: uppercase;
-        font-weight: bold;
+        color: $color-white;
+        font-family: $sr;
+        @include rem(font-size, 17px);
+        //font-weight: bold;
         letter-spacing: 4px;
-		margin: 0 0 10px;
-	
-		
+        margin: 0 0 10px;
+        text-transform: uppercase;
       }
     }
 
@@ -65,7 +54,7 @@ body.page-store {
     }
 
     .views-row {
-      background-color: #000000;
+      background-color: $color-black;
       margin: 20px 0;
       overflow: hidden;
       height: 340px;
@@ -81,9 +70,9 @@ body.page-store {
       }
 
       .views-field-title {
-        color: #FFFFFF;
-        font-family: "dangerregular", Helvetica, sans-serif;
-        font-size: 30px;
+        color: $color-white;
+        font-family: $dr;
+        @include rem(font-size, 30px);
         text-transform: uppercase;
       }
 
@@ -97,7 +86,7 @@ body.page-store {
       }
 
       .views-field-commerce-price {
-        font-family: 'sanchezregular';
+        font-family: $sr;
 
         .pts-value {
           color: $color-orange;
@@ -126,7 +115,7 @@ body.node-type-product-display {
 
       a, a:visited {
         color: $color-white;
-        font-family: "dangerregular", Helvetica, sans-serif;
+        font-family: $dr;
         text-transform: uppercase;
         vertical-align: middle;
       }
@@ -181,16 +170,16 @@ body.node-type-product-display {
           .images-enlarge {
             cursor: pointer;
             float: right;
-            font-family: 'sanchezregular';
+            font-family: $sr;
             font-weight: 600;
-            font-size: 18px;
+            @include rem(font-size, 18px);
             padding-top: 20px;
             text-align: right;
           }
         }
 
         .sidebar {
-          font-family: 'sanchezregular';
+          font-family: $sr;
           margin-left: 620px;
 
 
@@ -200,8 +189,8 @@ body.node-type-product-display {
           }
 
           .title {
-            font-family: "dangerregular", Helvetica, sans-serif;
-            font-size: 36px;
+            font-family: $dr;
+            @include rem(font-size, 36px);
             text-transform: uppercase;
           }
 
@@ -261,8 +250,8 @@ body.node-type-product-display {
             background-color: $color-orange;
             border: 0;
             color: $color-white;
-            font-family: "dangerregular", Helvetica, sans-serif;
-            font-size: 18px;
+            font-family: $dr;
+            @include rem(font-size, 18px);
             font-weight: bold;
             height: 60px;
             width: 260px;
@@ -290,8 +279,8 @@ body.node-type-product-display {
     }
 
     .views-field-title {
-      font-family: "dangerregular", Helvetica, sans-serif;
-      font-size: 25px;
+      font-family: $dr;
+      @include rem(font-size, 25px);
       text-transform: uppercase;
     }
     .views-field-field-product-image {
@@ -303,7 +292,7 @@ body.node-type-product-display {
     }
 
     .views-field-commerce-price {
-      font-family: 'sanchezregular';
+      font-family: $sr;
 
       .pts-value {
         color: $color-orange;

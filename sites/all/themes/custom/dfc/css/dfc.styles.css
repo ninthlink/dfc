@@ -4865,12 +4865,12 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
       /* line 166, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
       .block--bean-staff-pro-intro .intro_text {
         float: left;
-        width: 55%;
-        padding: 50px; }
+        width: 50%;
+        padding: 35px; }
       /* line 173, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
       .block--bean-staff-pro-intro .intro_cta {
         float: right;
-        width: 40%;
+        width: 50%;
         padding: 60px 50px 10px;
         margin: 0px; } }
 

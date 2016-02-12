@@ -37,6 +37,9 @@ function dfc_flop_menu_block_flop_link(){
 
   if($user->uid == 0) {
     $link_markup = l('Member Login', 'javascript:void(0)', array('attributes' => array('id' => 'member_info_link'), 'external' => TRUE)); 
+	$link_markup.= ' | ';
+	 $link_markup .= l('Points Leaderboard', 'leaderboard', array('attributes' => array('id' => 'points_leaderboard'), 'external' => TRUE)); 
+	 
   }else{
     //$lifetime_points = userpoints_get_current_points($user->uid, 0);
     if(!empty($user->picture)){

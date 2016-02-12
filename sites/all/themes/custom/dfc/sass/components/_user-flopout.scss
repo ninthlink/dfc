@@ -17,7 +17,7 @@ body.not-logged-in {
   		right: 50px;
     }
 
-    #member_info_link {
+    #member_info_link,#points_leaderboard {
     	font-family: $sr;
     	@include rem(font-size, 11px);
       line-height: 1;
@@ -32,6 +32,8 @@ body.not-logged-in {
         color: $color-orange;
       }
     }
+	
+	
   }
   
   .block--dfc-flop-menu-userflop {

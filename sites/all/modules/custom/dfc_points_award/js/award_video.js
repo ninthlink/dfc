@@ -158,6 +158,16 @@
             setTimeout( function() {
               var thisowlc = thiscar.children('.owl-carousel');
               var thisowl = thisowlc.data('owlCarousel');
+              if ( thisowl === null ) {
+                // somehow no owl yet, so re init
+                //console.log('reinit '+ thisnid);
+                console.log(settings['owlcarousel']['owlcarousel-fields-115']['settings']);
+                thiscar.children('.owlcarousel-fields-115').owlCarousel(settings['owlcarousel']['owlcarousel-fields-115']['settings']);
+                //console.log('and then?');
+                thisowlc = thiscar.children('.owl-carousel');
+                thisowl = thisowlc.data('owlCarousel');
+                //console.log('we coo? ' + thisowl.currentItem +' of '+ thisowl.itemsAmount);
+              }
               //console.log('nid '+ thisnid);
               //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
               if ( thisowl.itemsAmount > 1 ) {

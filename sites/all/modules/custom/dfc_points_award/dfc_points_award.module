@@ -82,7 +82,13 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['picture']['picture_upload']['#description'] = '';
     // wipe the default Delete Picture description
     $form['picture']['picture_delete']['#description'] = '';
+  } else if ( in_array( $form_id, array( 'commerce_cart_add_to_cart_form_1', 'commerce_cart_add_to_cart_form_2', 'commerce_cart_add_to_cart_form_3', 'commerce_cart_add_to_cart_form_4' ) ) ) {
+    // check if this is for a Membership : is this the right check?
+    if ( $form['#action'] == '/membership' ) {
+      $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Select');
+    }
   }
+  
   //watchdog('dfalt', 'form_id '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }
 

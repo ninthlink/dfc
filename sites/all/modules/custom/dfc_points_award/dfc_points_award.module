@@ -504,7 +504,7 @@ function dfc_points_award_rules_action_info() {
       'arguments' => array(
           'user' => array('type' => 'user', 'label' => t('User Signing Up')),
       ),
-      'new variables' => array(
+      'provides' => array(
         'invite_user' => array(
           'type' => 'user',
           'label' => t('Invite User'),
@@ -537,7 +537,7 @@ function dfc_points_award_action_load_invite_user($user) {
   if ($invite['uid']) {
     $invite_user = user_load($invite['uid']);
     if ($invite_user) {
-      return array('user' => $invite_user);
+      return array('invite_user' => $invite_user);
     }
   }
   return FALSE;

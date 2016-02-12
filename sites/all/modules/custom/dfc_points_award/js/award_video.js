@@ -228,17 +228,7 @@
         }
         
         
-        // video player listener code for awarding...
-        
-        // Listen for messages from the player
-        if (window.addEventListener) {
-          window.addEventListener('message', onMessageReceived, false);
-        }
-        else {
-          window.attachEvent('onmessage', onMessageReceived, false);
-        }
-
-        // Handle messages received from the player
+		// Handle messages received from the player
         function onMessageReceived(event) {
           // Handle messages from the vimeo player only
           if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
@@ -269,6 +259,18 @@
               break;
           }
         }
+		
+        // video player listener code for awarding...
+        
+        // Listen for messages from the player
+        if (window.addEventListener) {
+          window.addEventListener('message', onMessageReceived, false);
+        }
+        else {
+          window.attachEvent('onmessage', onMessageReceived, false);
+        }
+
+        
 
         // Helper function for sending a message to the player
         function post(action, value) {

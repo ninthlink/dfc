@@ -282,6 +282,7 @@ body.node-type-landing-page.section-membership {
       h2 {
   		  font-family: $rw;
     		@include rem(font-size, 18px);
+        letter-spacing: 2px;
         margin-bottom: 30px;
         text-transform: uppercase;
       }
@@ -390,19 +391,43 @@ body.node-type-landing-page.section-membership {
     
     .quicktabs_main {
       .views-field-title {
+        display: none;
+      }
+      
+      h2.diamond-title {
         color: $color-white;
     		@include rem(font-size, 45px);
+        letter-spacing: 10px;
         text-align: center;
         position: absolute;
         left: 0;
         right: 0;
-        top: 150px;
+        top: 134px;
+        @include breakpoint($bp-tab) {
+          letter-spacing: 15px;
+        }
+        
+        span.diamond-icon {
+          background: url(../images/diamond.png) no-repeat 0 0;
+          display: block;
+          margin: 0 auto;
+          width: 68px;
+          height: 64px;
+          position: relative;
+          
+          @include breakpoint($bp-desk) {
+            display: inline-block;
+            margin: 0 27px 0 13px;
+            top: 16px;
+          }
+        }
       }
       
       h4 {
         font-family: $rw;
         font-weight: 700;
     		@include rem(font-size, 16px);
+        letter-spacing: 2px;
       }
       
       .views-field-body {

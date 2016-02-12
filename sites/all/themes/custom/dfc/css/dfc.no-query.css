@@ -254,6 +254,10 @@ body {
   box-sizing: border-box; }
 
 /* line 27, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
+.field--image {
+  margin-bottom: 30px; }
+
+/* line 31, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
 .container, .l-main, .tabs.tabs--primary, .messages, .block--views-offers-block .inner, .block--views-offers-block-1 .inner, .block--views-partners-block .inner {
   max-width: 1180px;
   margin-left: auto;
@@ -265,7 +269,7 @@ body {
     display: block;
     clear: both; }
 
-/* line 32, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
+/* line 36, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
 .l-main {
   overflow: hidden;
   *zoom: 1;
@@ -274,13 +278,13 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 42, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
+/* line 46, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
 .content-bottom {
   overflow: hidden;
   *zoom: 1;
   clear: both; }
 
-/* line 47, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
+/* line 51, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_layout.scss */
 .row-padding, body.node-type-media-item .group-media-content, .l-footer, body.node-type-landing-page.section-dfc-prizeboard .view-giveaway-winners, body.node-type-landing-page.section-fab-52-resorts .content-bottom, body.node-type-landing-page.section-leaderboard .view-leaderboards, body.node-type-landing-page.section-pro-staff .content-bottom {
   padding-left: 10px;
   padding-left: 0.625rem;

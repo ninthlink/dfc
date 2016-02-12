@@ -2972,8 +2972,10 @@ body.page-checkout #commerce-userpoints-discount fieldset {
     margin-bottom: 20px; }
     /* line 444, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-location .ch-location-more .ch-location-title span {
-      color: #000000; }
-  /* line 449, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+      color: #000000;
+      float: left;
+      width: 100%; }
+  /* line 451, c:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-more .ch-location-text {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;

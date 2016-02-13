@@ -82,14 +82,33 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['picture']['picture_upload']['#description'] = '';
     // wipe the default Delete Picture description
     $form['picture']['picture_delete']['#description'] = '';
+  } else if ($form_id == 'user_media_node_form') {
+    $form['#submit'][] = 'dfc_points_award_user_media_type_validate';
+    $form['#submit'][] = 'dfc_points_award_user_media_type_assign';
   } else if ( in_array( $form_id, array( 'commerce_cart_add_to_cart_form_1', 'commerce_cart_add_to_cart_form_2', 'commerce_cart_add_to_cart_form_3', 'commerce_cart_add_to_cart_form_4' ) ) ) {
     // check if this is for a Membership : is this the right check?
     if ( $form['#action'] == '/membership' ) {
       $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Select');
     }
   }
-  
   //watchdog('dfalt', 'form_id '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
+}
+
+function dfc_points_award_user_media_type_validate(&$form, &$form_state) {
+  //make sure at least one media item is uploaded and it's not too big
+  $img = $form_state['values']['field_image'][LANGUAGE_NONE][0]['fid'];
+  $vid = $form_state['values']['field_media_link'][LANGUAGE_NONE][0]['fid'];
+  if (!($img || $vid)) {
+    form_set_error('', 'Did you want to upload something?');
+  }
+}
+
+function dfc_points_award_user_media_type_assign(&$form, &$form_state) {
+  $value = 3;
+  if ($form_state['values']['field_media_link'][LANGUAGE_NONE][0]['fid']) {
+    $value = 4;
+  }
+  $form_state['values']['field_media_type'][LANGUAGE_NONE][0]['tid'] = $value;
 }
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
@@ -245,15 +264,14 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   }
   //display store items in points
   if($view->name == 'store' && $field->field == 'commerce_price') {
-    $points = $row->field_commerce_price[0]['raw']['amount'];
+    $points = dfc_points_award_get_points_conversion($row->field_commerce_price[0]['raw']['amount']);
     if ($vars['output']) {
       $vars['output'] .= " / <span class='pts-value'>{$points}</span> Points";
     }
   }
 }
 
-function dfc_points_award_video ($vid, $time) {
-  // but $time is never used or checked?!
+function dfc_points_award_video($vid) {
   $ret = array('success' => FALSE);
   $node = node_load($vid);
   $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
@@ -466,24 +484,24 @@ function dfc_points_award_grant_points($points) {
   userpoints_userpointsapi($points);
 }
 
-function dfc_points_award_grant_points_upload(&$form, &$form_state) {
-  global $user;
-  $u = user_load($user->uid);
-
-  if($form_state['values']['field_user_images']) {
-    $imgs_num_u = isset($u->field_user_images[LANGUAGE_NONE]) ? sizeof($u->field_user_images[LANGUAGE_NONE]) : 0;
-    $imgs_num_f = sizeof($form_state['values']['field_user_images'][LANGUAGE_NONE]);
-
-    if ($form_state['values']['field_user_images'][LANGUAGE_NONE][0]['fid'] == 0) {
-      $imgs_num_f--;
-    }
-
-    if ($imgs_num_f > $imgs_num_u) {
-      //new upload, award points
-      dfc_points_award_grant_points(10);
-    }
-  }
-}
+//function dfc_points_award_grant_points_upload(&$form, &$form_state) {
+//  global $user;
+//  $u = user_load($user->uid);
+//
+//  if($form_state['values']['field_user_images']) {
+//    $imgs_num_u = isset($u->field_user_images[LANGUAGE_NONE]) ? sizeof($u->field_user_images[LANGUAGE_NONE]) : 0;
+//    $imgs_num_f = sizeof($form_state['values']['field_user_images'][LANGUAGE_NONE]);
+//
+//    if ($form_state['values']['field_user_images'][LANGUAGE_NONE][0]['fid'] == 0) {
+//      $imgs_num_f--;
+//    }
+//
+//    if ($imgs_num_f > $imgs_num_u) {
+//      //new upload, award points
+//      dfc_points_award_grant_points(10);
+//    }
+//  }
+//}
 
 function dfc_points_award_rules_condition_info() {
   return array(

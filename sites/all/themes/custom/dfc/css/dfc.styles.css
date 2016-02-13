@@ -6030,109 +6030,112 @@ body.section-users .content-bottom {
     body.section-user .content-bottom #block-views-user-media-block-1 img,
     body.section-users .content-bottom #block-views-user-media-block-1 img {
       float: left;
+      max-height: 75px;
       width: 100px; }
-    /* line 167, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 168, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-row,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-row {
-      min-height: 75px;
-      padding-bottom: 10px; }
-    /* line 172, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      height: 75px;
+      margin-bottom: 10px; }
+    /* line 173, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-created,
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-created,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation {
       padding-left: 110px; }
-    /* line 177, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 178, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .views-label,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .views-label {
       font-weight: bold; }
-    /* line 181, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 182, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .field-content,
     body.section-users .content-bottom #block-views-user-media-block-1 .views-field-field-ugc-moderation .field-content {
       color: #f1592a;
       display: inline-block; }
-  /* line 187, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 188, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user .content-bottom #block-views-user-media-block-2,
   body.section-users .content-bottom #block-views-user-media-block-2 {
     display: inline-block;
     width: 45%;
     vertical-align: top; }
-    /* line 192, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 193, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 img,
     body.section-users .content-bottom #block-views-user-media-block-2 img {
       float: left;
+      max-height: 75px;
       width: 100px; }
-    /* line 197, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 199, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-row,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-row {
-      min-height: 75px; }
-    /* line 201, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      height: 75px;
+      margin-bottom: 10px; }
+    /* line 204, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-created,
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-created,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation {
       padding-left: 110px; }
-    /* line 206, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 209, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .views-label,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .views-label {
       font-weight: bold; }
-    /* line 210, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 213, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .field-content,
     body.section-users .content-bottom #block-views-user-media-block-2 .views-field-field-ugc-moderation .field-content {
       color: #f1592a;
       display: inline-block; }
 
-/* line 218, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 221, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .user-register-form,
 .user-pass,
 .user-login {
   padding: 20px; }
   @media (min-width: 960px) {
-    /* line 218, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 221, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     .user-register-form,
     .user-pass,
     .user-login {
       padding: 50px; } }
 
-/* line 229, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 232, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 article.user-profile {
   overflow: hidden;
   *zoom: 1;
   background: #363636;
   padding: 60px 50px 50px; }
   @media (min-width: 590px) {
-    /* line 229, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 232, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile {
       min-height: 336px; } }
-  /* line 238, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 241, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .user-picture {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 238, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 241, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .user-picture {
         display: none; } }
-    /* line 245, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 248, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .user-picture img {
       width: 136px;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid #ffffff; }
-  /* line 253, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 256, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-personal {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 253, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 256, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-personal {
         float: left;
         width: 60%;
         padding-top: 10px;
         margin-left: 18%; } }
     @media (min-width: 960px) {
-      /* line 253, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 256, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-personal {
         width: 32%;
         margin-bottom: 0; } }
-    /* line 268, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 271, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--first-name,
     article.user-profile .group-personal .field--last-name {
       font-family: "dangerregular", Helvetica, sans-serif;
@@ -6141,38 +6144,38 @@ article.user-profile {
       line-height: .9;
       color: #ffffff;
       text-transform: uppercase; }
-    /* line 277, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 280, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--last-name {
       margin-bottom: 5px; }
-    /* line 281, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 284, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-personal .field--city-state {
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 16px;
       font-size: 1rem; }
-  /* line 287, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 290, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-profile-points {
     margin-bottom: 50px; }
     @media (min-width: 590px) {
-      /* line 287, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 290, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points {
         clear: both; } }
     @media (min-width: 960px) {
-      /* line 287, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 290, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points {
         clear: none;
         float: left;
         width: 50%;
         margin-bottom: 0; } }
-    /* line 301, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 304, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points h3 {
       display: none; }
-    /* line 308, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 311, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points .userpoints-points li {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff;
       font-size: 36px;
       font-size: 2.25rem; }
-      /* line 313, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 316, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points .userpoints-points li .placeholder {
         display: block;
         font-size: 16px;
@@ -6180,7 +6183,7 @@ article.user-profile {
         color: #f1592a;
         font-style: normal; }
 
-/* line 326, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 329, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 form.user-profile-form {
   border-bottom: 1px solid #505050;
   float: left;
@@ -6190,10 +6193,10 @@ form.user-profile-form {
   width: 100%;
   max-width: 1080px; }
   @media (min-width: 960px) {
-    /* line 326, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 329, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form {
       margin: 50px; } }
-  /* line 341, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 344, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item label {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -6202,27 +6205,27 @@ form.user-profile-form {
     font-weight: normal;
     margin-bottom: 10px;
     text-transform: uppercase; }
-  /* line 350, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 353, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item input.form-text {
     width: 100%;
     height: 42px;
     padding: 10px;
     margin-bottom: 10px; }
-  /* line 357, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 360, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item .description {
     font-size: 12.5px;
     font-size: 0.78125rem;
     line-height: 1.3; }
-  /* line 363, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 366, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-personal {
     margin-bottom: 50px; }
     @media (min-width: 960px) {
-      /* line 363, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 366, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-personal {
         float: left;
         width: 50%;
         padding-right: 25px; } }
-    /* line 372, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 375, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-personal h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -6230,16 +6233,16 @@ form.user-profile-form {
       font-size: 1.5625rem;
       text-transform: uppercase;
       margin-bottom: 40px; }
-  /* line 381, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 384, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-access {
     margin-bottom: 50px; }
     @media (min-width: 960px) {
-      /* line 381, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 384, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-access {
         float: right;
         width: 50%;
         padding-left: 25px; } }
-    /* line 390, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 393, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-access h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -6248,23 +6251,23 @@ form.user-profile-form {
       text-transform: uppercase;
       margin-bottom: 40px; }
     @media (min-width: 590px) {
-      /* line 401, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 404, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form .group-access .form-item.password-parent input.form-text,
       form.user-profile-form .group-access .form-item.confirm-parent input.form-text {
         width: 45%; } }
-  /* line 410, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 413, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form fieldset#edit-picture {
     border: none;
     padding: 0;
     width: auto; }
     @media (min-width: 590px) {
-      /* line 410, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 413, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form fieldset#edit-picture {
         position: absolute;
         top: -328px;
         right: 81%;
         left: -2px; }
-        /* line 421, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        /* line 424, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
         form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
           position: absolute;
           left: 0;
@@ -6275,25 +6278,25 @@ form.user-profile-form {
           display: inline-block;
           overflow: hidden; } }
     @media (min-width: 590px) and (min-width: 720px) {
-      /* line 421, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 424, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
         width: 111px; } }
     @media (min-width: 590px) and (min-width: 820px) {
-      /* line 421, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 424, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       form.user-profile-form fieldset#edit-picture .form-item-picture-delete {
         width: 150px; } }
     @media (min-width: 590px) {
-        /* line 442, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        /* line 445, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
         form.user-profile-form fieldset#edit-picture .form-item-files-picture-upload {
           position: absolute;
           right: -294px;
           top: 151px;
           width: auto;
           max-width: 320px; } }
-    /* line 451, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 454, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form fieldset#edit-picture legend {
       display: none; }
-    /* line 455, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 458, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form fieldset#edit-picture img {
       max-width: 144px;
       border: 2px solid #fff;
@@ -6301,94 +6304,94 @@ form.user-profile-form {
       -webkit-border-radius: 72px;
       -moz-border-radius: 72px;
       -ms-border-radius: 72px; }
-  /* line 465, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 468, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form #edit-timezone {
     margin-bottom: 50px; }
 
-/* line 472, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 475, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.not-logged-in .tabs.tabs--primary {
   display: none; }
 
-/* line 479, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 482, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points form {
   background: #ffffff;
   color: #000000; }
-  /* line 483, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 486, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points form .form-item {
     background: #CCCCCC;
     float: left;
     margin: 0;
     width: 100%; }
-    /* line 489, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 492, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item label {
       float: left;
       padding: 20px; }
       @media (min-width: 960px) {
-        /* line 489, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+        /* line 492, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
         body.section-user.page-user-points form .form-item label {
           padding-left: 50px; } }
-    /* line 498, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 501, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item select {
       float: left;
       margin: 20px 0; }
 
-/* line 505, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 508, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points table {
   width: 100%; }
-  /* line 508, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 511, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th {
     background: #ffffff;
     padding: 20px; }
     @media (min-width: 960px) {
-      /* line 508, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 511, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       body.section-user.page-user-points table th {
         padding: 20px 50px; } }
-  /* line 516, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 519, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th.active img {
     width: auto; }
-  /* line 520, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 523, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td {
     padding: 10px 20px; }
     @media (min-width: 960px) {
-      /* line 520, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 523, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       body.section-user.page-user-points table td {
         padding: 10px 50px; } }
-  /* line 528, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 531, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td.userpoints-transactions-field-points {
     text-align: left; }
 
-/* line 536, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 539, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-your-membership {
   margin-bottom: 60px; }
-  /* line 539, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 542, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h3 {
     color: #f1592a;
     margin-bottom: 50px; }
-  /* line 544, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 547, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h5 {
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
     text-transform: uppercase;
     margin-bottom: 15px; }
-  /* line 550, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 553, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h2 {
     color: #ffffff;
     font-size: 43px;
     font-size: 2.6875rem;
     text-transform: uppercase; }
   @media (min-width: 590px) {
-    /* line 557, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 560, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     .block--dfc-user-blocks-your-membership .current-membership-wrapper,
     .block--dfc-user-blocks-your-membership .upgrade-membership-wrapper {
       float: left;
       width: 50%; } }
 
-/* line 567, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 570, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-membership-benefits h3 {
   color: #f1592a;
   text-transform: uppercase;
   margin-bottom: 30px; }
 
-/* line 573, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 576, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-membership-benefits dt,
 .block--dfc-user-blocks-membership-benefits dd {
   color: #ffffff;
@@ -6399,12 +6402,12 @@ body.section-user.page-user-points table {
   padding: 0;
   text-indent: 0; }
   @media (min-width: 590px) {
-    /* line 573, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 576, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     .block--dfc-user-blocks-membership-benefits dt,
     .block--dfc-user-blocks-membership-benefits dd {
       float: left;
       width: 50%; } }
-  /* line 586, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 589, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-membership-benefits dt h5,
   .block--dfc-user-blocks-membership-benefits dd h5 {
     color: #999999;
@@ -6413,34 +6416,34 @@ body.section-user.page-user-points table {
     margin-bottom: 15px; }
 
 @media (min-width: 590px) {
-  /* line 595, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 598, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-membership-benefits dl {
     float: left;
     width: 100%;
     margin: 0;
     padding: 0; }
-  /* line 601, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 604, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-membership-benefits dt {
     clear: left; } }
 
-/* line 607, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 610, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--views-my-invitiations-block {
   margin: 40px 0 0;
   padding: 60px 0 0;
   border-top: 1px solid #505050; }
-  /* line 612, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 615, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block h2 {
     color: #f1592a;
     font-size: 24px;
     font-size: 1.5rem;
     margin: 0;
     text-transform: uppercase; }
-  /* line 618, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 621, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block .view-header {
     font-size: 12px;
     font-size: 0.75rem;
     margin: 20px 0 50px; }
-  /* line 623, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 626, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block th {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -6449,15 +6452,15 @@ body.section-user.page-user-points table {
     padding-bottom: 1em;
     text-transform: uppercase; }
 
-/* line 632, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 635, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--invite-invite-add-invite-by-email {
   margin: 40px 0 0;
   padding: 0 0 70px;
   border-bottom: 1px solid #505050; }
-  /* line 637, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 640, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--invite-invite-add-invite-by-email h2 {
     display: none; }
-  /* line 641, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 644, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--invite-invite-add-invite-by-email .form-item label {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -6467,10 +6470,10 @@ body.section-user.page-user-points table {
     padding-bottom: 1em;
     text-transform: uppercase; }
 
-/* line 652, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 655, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--formblock-user-media {
   margin: 30px 0 0; }
-  /* line 655, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 658, /Users/andrew/workspace/projects/nl/dfc/dollar-fishing-club-dfc/dollar-fishing-club-dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--formblock-user-media h2 {
     color: #f1592a;
     font-size: 24px;

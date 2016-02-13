@@ -161,12 +161,13 @@ body.section-users {
 
       img {
         float: left;
+        max-height: 75px;
         width: 100px;
       }
 
       .views-row {
-        min-height: 75px;
-        padding-bottom: 10px;
+        height: 75px;
+        margin-bottom: 10px;
       }
 
       .views-field-created,
@@ -191,11 +192,13 @@ body.section-users {
 
       img {
         float: left;
+        max-height: 75px;
         width: 100px;
       }
 
       .views-row {
-        min-height: 75px;
+        height: 75px;
+        margin-bottom: 10px;
       }
 
       .views-field-created,

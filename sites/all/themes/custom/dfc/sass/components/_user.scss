@@ -35,8 +35,12 @@ body.section-users {
       display: inline-block;
       width: 20%;
 
-      .form-item-field-media-link-und-0 {
+      .form-item-field-media-link-und-0 .file-widget, label{
         display: none;
+      }
+
+      .description {
+        margin-top: 10px;
       }
     }
 
@@ -60,7 +64,7 @@ body.section-users {
     #edit-field-media-link:hover:before {
       background-color:rgba(128,128,128,.5);
     }
-    #edit-field-media-link:after {
+    #edit-field-media-link .form-item-field-media-link-und-0:before {
       @extend .button-small;
       
       content: 'Select Video';
@@ -74,8 +78,12 @@ body.section-users {
       margin-right: 25%;
       width: 20%;
 
-      .form-item-field-image-und-0 {
+      .form-item-field-image-und-0 .image-widget, label {
         display: none;
+      }
+
+      .description {
+        margin-top: 10px;
       }
     }
 
@@ -99,7 +107,7 @@ body.section-users {
     #edit-field-image:hover:before {
       background-color:rgba(128,128,128,.5);
     }
-    #edit-field-image:after {
+    #edit-field-image .form-item-field-image-und-0:before {
       @extend .button-small;
       
       content: 'Select Image';

@@ -134,12 +134,12 @@ body.node-type-landing-page.section-pro-staff {
   }
   
   @include breakpoint($bp-tab) {
-    xpadding: 20px;
+    /*xpadding: 20px;*/
     @include rem(font-size, 15px);
     
     .intro_text
     {
-       padding: 20px;
+     /*  padding: 20px;*/
        float: none;
        width: 100%;
 	   margin-left: 10px;

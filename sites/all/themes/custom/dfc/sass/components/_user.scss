@@ -1,11 +1,14 @@
 body.section-user,
-body.section-users {
-	
+body.section-users {	
   .l-main {
     color: $color-gray-c;
 	}
   
   h1 {
+    display: none;
+  }
+  
+  ul.tabs--primary {
     display: none;
   }
 

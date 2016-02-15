@@ -440,11 +440,14 @@
 			text-transform: uppercase;
 			color: $color-white;
 			margin-bottom: 20px;
+			line-height: 1;
 			
 			span {
 				color: $color-black;
 				float: left;
 				width: 100%;
+				line-height: 1;
+                 margin-bottom: 30px;
 			}
 		}
 		

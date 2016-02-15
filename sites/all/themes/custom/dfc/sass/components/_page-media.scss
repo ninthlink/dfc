@@ -2,9 +2,14 @@ body.node-type-landing-page.section-media {
   
   .l-main {
     max-width: none;
+	
+	
   }
+  
 }
-
+.node--media-item--full .field--image {
+    margin-bottom: 30px;
+    }
 // Media Filter Block
 .block--views-media-items-block-1 {
   position: relative;

@@ -107,9 +107,15 @@ function dfc_user_blocks_markup_wrapper($markup, $attributes = NULL, $tag = 'div
 
 // hook_init per http://stackoverflow.com/a/32458844
 function dfc_user_blocks_init() {
-  /*
   if ( ( arg(0) == 'user' ) && ( arg(2) == 'edit' ) ) {
-    drupal_goto('user/'. arg(1));
+    $options = array();
+    // with password resets like /user/#/edit?pass-reset-token=sometoken
+    if ( isset( $_GET['pass-reset-token'] ) ) {
+      $options['query'] = array(
+        'pass-reset-token' => $_GET['pass-reset-token']
+      );
+    }
+    
+    drupal_goto( 'user/'. arg(1), $options );
   }
-  */
 }

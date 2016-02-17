@@ -4163,8 +4163,10 @@ input.form-text {
 body.not-logged-in .block--dfc-flop-menu-userfloplink {
   position: absolute;
   top: 10px;
-  right: 10px; }
-  /* line 20, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  right: 10px;
+  width: 37%;
+  text-align: right; }
+  /* line 23, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userfloplink #member_info_link, body.not-logged-in .block--dfc-flop-menu-userfloplink #points_leaderboard {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 11px;
@@ -4172,11 +4174,11 @@ body.not-logged-in .block--dfc-flop-menu-userfloplink {
     line-height: 1;
     color: #ebebeb;
     text-decoration: none; }
-    /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 34, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userfloplink #member_info_link:hover, body.not-logged-in .block--dfc-flop-menu-userfloplink #points_leaderboard:hover {
       color: #f1592a; }
 
-/* line 39, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 42, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.not-logged-in .block--dfc-flop-menu-userflop {
   display: none;
   position: absolute;
@@ -4185,14 +4187,14 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
   width: 100%;
   background: #1c1c1c;
   padding: 40px 50px; }
-  /* line 52, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 55, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form {
     position: relative;
     padding-bottom: 100px; }
-    /* line 56, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 59, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-item {
       margin: -1px 0 0; }
-    /* line 60, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 63, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form input.form-text {
       width: 100%;
       font-family: "sanchezregular", Helvetica, sans-serif;
@@ -4202,13 +4204,13 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
       border: 1px solid #616161;
       background: transparent;
       padding: 10px; }
-    /* line 70, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 73, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul {
       position: absolute;
       bottom: 0;
       left: 0;
       white-space: nowrap; }
-      /* line 77, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 80, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li {
         display: inline-block;
         font-family: "sanchezregular", Helvetica, sans-serif;
@@ -4217,27 +4219,27 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
         line-height: 1;
         border-left: 1px solid #999999;
         padding-left: 5px; }
-        /* line 85, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 88, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li:first-child {
           border-left: 0;
           padding-left: 0; }
-        /* line 90, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 93, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form ul li a {
           color: #999999; }
-    /* line 96, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 99, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-actions {
       margin: 0;
       position: absolute;
       bottom: 40px;
       left: 0;
       width: 100%; }
-      /* line 103, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 106, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.not-logged-in .block--dfc-flop-menu-userflop form.user-login-form .form-actions .form-submit {
         display: block;
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px; }
-  /* line 112, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 115, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.not-logged-in .block--dfc-flop-menu-userflop a.x {
     margin: 0;
     position: absolute;
@@ -4253,7 +4255,7 @@ body.not-logged-in .block--dfc-flop-menu-userflop {
     width: 16px;
     height: 7px; }
 
-/* line 125, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 128, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.logged-in .block--dfc-flop-menu-userfloplink {
   position: absolute;
   top: 0px;
@@ -4261,7 +4263,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
   width: 100px;
   height: 110px;
   padding: 20px 0 0 10px; }
-  /* line 144, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 147, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink:before {
     content: "";
     position: absolute;
@@ -4269,7 +4271,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
     left: 0;
     border-left: 1px solid #464646;
     height: 100%; }
-  /* line 153, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 156, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink .flop-link-points-wrapper {
     float: right;
     width: 50%;
@@ -4278,14 +4280,14 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
     font-size: 0.9375rem;
     text-transform: uppercase;
     text-align: left; }
-  /* line 170, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 173, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link {
     display: block;
     height: 45px;
     width: 45px;
     overflow: hidden;
     float: left; }
-    /* line 177, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 180, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link:before {
       content: "";
       position: absolute;
@@ -4293,7 +4295,7 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
       left: 0;
       height: 100%;
       width: 100%; }
-    /* line 186, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 189, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link:after {
       content: "";
       position: absolute;
@@ -4308,14 +4310,14 @@ body.logged-in .block--dfc-flop-menu-userfloplink {
       background-position: -50px 0px;
       width: 16px;
       height: 7px; }
-    /* line 202, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 205, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userfloplink #member_info_link img {
       min-width: 45px;
       min-height: 45px;
       border-radius: 100%;
       border: 2px solid #ffffff; }
 
-/* line 211, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+/* line 214, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
 body.logged-in .block--dfc-flop-menu-userflop {
   display: none;
   position: absolute;
@@ -4323,53 +4325,53 @@ body.logged-in .block--dfc-flop-menu-userflop {
   right: 0px;
   width: 100%;
   background: #1c1c1c; }
-  /* line 225, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 228, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-picture {
     padding: 40px 0 20px; }
-    /* line 228, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 231, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-picture img {
       width: 140px;
       border-radius: 100%;
       border: 2px solid #ffffff; }
-  /* line 235, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 238, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-name {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: uppercase; }
-  /* line 241, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 244, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .user-city-state {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;
     font-size: 0.875rem;
     color: #999999;
     margin-bottom: 20px; }
-  /* line 248, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 251, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links {
     text-align: left; }
-    /* line 252, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 255, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li {
       border-top: 1px solid #4e4e4e;
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 14px;
       font-size: 0.875rem;
       line-height: 1; }
-      /* line 258, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 261, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a {
         display: block;
         color: #999999;
         text-decoration: none;
         padding: 15px 30px; }
-        /* line 264, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 267, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop ul.links li a:hover {
           background: #f1592a;
           color: #ffffff; }
-  /* line 272, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 275, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links {
     border-top: 1px solid #4e4e4e;
     float: left;
     width: 100%; }
-    /* line 277, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 280, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a {
       color: #999999;
       float: left;
@@ -4379,7 +4381,7 @@ body.logged-in .block--dfc-flop-menu-userflop {
       line-height: 1;
       padding: 20px 0;
       width: 50%; }
-      /* line 286, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 289, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a:before {
         content: "";
         display: inline-block;
@@ -4393,14 +4395,14 @@ body.logged-in .block--dfc-flop-menu-userflop {
         display: block;
         margin: 0 auto 20px;
         opacity: 0.5; }
-      /* line 294, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+      /* line 297, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
       body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a:hover {
         color: #ffffff;
         text-decoration: none; }
-        /* line 298, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+        /* line 301, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
         body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a:hover:before {
           opacity: 1; }
-    /* line 305, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 308, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a.vid:before {
       content: "";
       display: inline-block;
@@ -4414,10 +4416,10 @@ body.logged-in .block--dfc-flop-menu-userflop {
       display: block;
       margin: 2px auto 22px;
       opacity: 0.5; }
-    /* line 315, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 318, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .upload-links a.vid:hover:before {
       opacity: 1; }
-  /* line 322, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 325, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .flop-points-wrapper {
     background: #f1592a;
     color: #000000;
@@ -4427,44 +4429,44 @@ body.logged-in .block--dfc-flop-menu-userflop {
     text-align: left;
     overflow: hidden;
     *zoom: 1; }
-  /* line 332, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 335, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .points-title-wrapper {
     font-size: 17px;
     font-size: 1.0625rem;
     color: #ffffff;
     margin-bottom: 10px; }
-  /* line 338, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 341, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_markup,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: left;
     width: 50%; }
-  /* line 344, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 347, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_markup {
     float: right; }
-  /* line 348, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 351, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-title-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-title-wrapper {
     font-size: 18px;
     font-size: 1.125rem; }
-  /* line 353, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 356, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly-points-wrapper,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime-points-wrapper {
     font-size: 28px;
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 10px; }
-  /* line 360, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 363, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links,
   body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links {
     font-size: 12px;
     font-size: 0.75rem;
     color: #ffffff;
     margin-bottom: 20px; }
-    /* line 366, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+    /* line 369, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .monthly_points_links a,
     body.logged-in .block--dfc-flop-menu-userflop #dfc-user-flop .lifetime_points_links a {
       color: #ffffff; }
-  /* line 381, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
+  /* line 384, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user-flopout.scss */
   body.logged-in .block--dfc-flop-menu-userflop a.x {
     margin: 0;
     position: absolute;

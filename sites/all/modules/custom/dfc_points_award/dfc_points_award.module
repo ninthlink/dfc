@@ -112,6 +112,11 @@ function dfc_points_award_user_media_type_assign(&$form, &$form_state) {
 }
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
+  // in any case make sure maybe we have better_messages?
+  if ( function_exists('better_messages_add_files') ) {
+    better_messages_add_files( false );
+  }
+  
   if ($node->type == 'media_item') {
     
     $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];

@@ -82,6 +82,8 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['picture']['picture_upload']['#description'] = '';
     // wipe the default Delete Picture description
     $form['picture']['picture_delete']['#description'] = '';
+    // also hide club id field
+    $form['field_club_id']['#access'] = 0;
   } else if ($form_id == 'user_media_node_form') {
     $form['#submit'][] = 'dfc_points_award_user_media_type_validate';
     $form['#submit'][] = 'dfc_points_award_user_media_type_assign';

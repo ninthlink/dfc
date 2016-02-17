@@ -4845,23 +4845,28 @@ article.user-profile {
     article.user-profile .group-personal .field--last-name {
       margin-bottom: 5px; }
     /* line 287, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
-    article.user-profile .group-personal .field--city-state {
+    article.user-profile .group-personal .field--city-state,
+    article.user-profile .group-personal .field-label,
+    article.user-profile .group-personal .field--club-id {
       font-family: "sanchezregular", Helvetica, sans-serif;
       font-size: 16px;
       font-size: 1rem; }
-  /* line 293, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 293, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    article.user-profile .group-personal .field--club-id.inline {
+      display: inline; }
+  /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   article.user-profile .group-profile-points {
     margin-bottom: 50px; }
-    /* line 307, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 312, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points h3 {
       display: none; }
-    /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     article.user-profile .group-profile-points .userpoints-points li {
       font-family: "sanchezregular", Helvetica, sans-serif;
       color: #ffffff;
       font-size: 36px;
       font-size: 2.25rem; }
-      /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+      /* line 324, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
       article.user-profile .group-profile-points .userpoints-points li .placeholder {
         display: block;
         font-size: 16px;
@@ -4869,7 +4874,7 @@ article.user-profile {
         color: #f1592a;
         font-style: normal; }
 
-/* line 332, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 form.user-profile-form {
   border-bottom: 1px solid #505050;
   float: left;
@@ -4878,7 +4883,7 @@ form.user-profile-form {
   position: relative;
   width: 100%;
   max-width: 1080px; }
-  /* line 347, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 352, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item label {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4887,21 +4892,21 @@ form.user-profile-form {
     font-weight: normal;
     margin-bottom: 10px;
     text-transform: uppercase; }
-  /* line 356, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 361, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item input.form-text {
     width: 100%;
     height: 42px;
     padding: 10px;
     margin-bottom: 10px; }
-  /* line 363, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 368, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .form-item .description {
     font-size: 12.5px;
     font-size: 0.78125rem;
     line-height: 1.3; }
-  /* line 369, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-personal {
     margin-bottom: 50px; }
-    /* line 378, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 383, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-personal h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -4909,10 +4914,10 @@ form.user-profile-form {
       font-size: 1.5625rem;
       text-transform: uppercase;
       margin-bottom: 40px; }
-  /* line 387, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 392, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form .group-access {
     margin-bottom: 50px; }
-    /* line 396, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 401, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form .group-access h3 {
       font-family: "dangerregular", Helvetica, sans-serif;
       color: #f1592a;
@@ -4920,15 +4925,15 @@ form.user-profile-form {
       font-size: 1.5625rem;
       text-transform: uppercase;
       margin-bottom: 40px; }
-  /* line 416, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 421, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form fieldset#edit-picture {
     border: none;
     padding: 0;
     width: auto; }
-    /* line 457, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 462, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form fieldset#edit-picture legend {
       display: none; }
-    /* line 461, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 466, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     form.user-profile-form fieldset#edit-picture img {
       max-width: 144px;
       border: 2px solid #fff;
@@ -4936,76 +4941,76 @@ form.user-profile-form {
       -webkit-border-radius: 72px;
       -moz-border-radius: 72px;
       -ms-border-radius: 72px; }
-  /* line 471, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 476, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   form.user-profile-form #edit-timezone {
     margin-bottom: 50px; }
 
-/* line 478, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 483, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.not-logged-in .tabs.tabs--primary {
   display: none; }
 
-/* line 485, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 490, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points form {
   background: #ffffff;
   color: #000000; }
-  /* line 489, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 494, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points form .form-item {
     background: #CCCCCC;
     float: left;
     margin: 0;
     width: 100%; }
-    /* line 495, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 500, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item label {
       float: left;
       padding: 20px; }
-    /* line 504, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    /* line 509, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user.page-user-points form .form-item select {
       float: left;
       margin: 20px 0; }
 
-/* line 511, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 516, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 body.section-user.page-user-points table {
   width: 100%; }
-  /* line 514, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 519, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th {
     background: #ffffff;
     padding: 20px; }
-  /* line 522, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 527, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table th.active img {
     width: auto; }
-  /* line 526, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 531, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td {
     padding: 10px 20px; }
-  /* line 534, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 539, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   body.section-user.page-user-points table td.userpoints-transactions-field-points {
     text-align: left; }
 
-/* line 542, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 547, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-your-membership {
   margin-bottom: 60px; }
-  /* line 545, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 550, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h3 {
     color: #f1592a;
     margin-bottom: 50px; }
-  /* line 550, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 555, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h5 {
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
     text-transform: uppercase;
     margin-bottom: 15px; }
-  /* line 556, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 561, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-your-membership h2 {
     color: #ffffff;
     font-size: 43px;
     font-size: 2.6875rem;
     text-transform: uppercase; }
 
-/* line 573, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 578, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-membership-benefits h3 {
   color: #f1592a;
   text-transform: uppercase;
   margin-bottom: 30px; }
 
-/* line 579, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 584, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--dfc-user-blocks-membership-benefits dt,
 .block--dfc-user-blocks-membership-benefits dd {
   color: #ffffff;
@@ -5015,7 +5020,7 @@ body.section-user.page-user-points table {
   margin: 0 0 0.5em;
   padding: 0;
   text-indent: 0; }
-  /* line 592, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 597, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--dfc-user-blocks-membership-benefits dt h5,
   .block--dfc-user-blocks-membership-benefits dd h5 {
     color: #999999;
@@ -5023,24 +5028,24 @@ body.section-user.page-user-points table {
     text-transform: uppercase;
     margin-bottom: 15px; }
 
-/* line 613, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 618, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--views-my-invitiations-block {
   margin: 40px 0 0;
   padding: 60px 0 0;
   border-top: 1px solid #505050; }
-  /* line 618, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 623, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block h2 {
     color: #f1592a;
     font-size: 24px;
     font-size: 1.5rem;
     margin: 0;
     text-transform: uppercase; }
-  /* line 624, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 629, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block .view-header {
     font-size: 12px;
     font-size: 0.75rem;
     margin: 20px 0 50px; }
-  /* line 629, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 634, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--views-my-invitiations-block th {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -5049,15 +5054,15 @@ body.section-user.page-user-points table {
     padding-bottom: 1em;
     text-transform: uppercase; }
 
-/* line 638, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 643, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--invite-invite-add-invite-by-email {
   margin: 40px 0 0;
   padding: 0 0 70px;
   border-bottom: 1px solid #505050; }
-  /* line 643, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 648, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--invite-invite-add-invite-by-email h2 {
     display: none; }
-  /* line 647, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 652, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--invite-invite-add-invite-by-email .form-item label {
     color: #999999;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -5067,10 +5072,10 @@ body.section-user.page-user-points table {
     padding-bottom: 1em;
     text-transform: uppercase; }
 
-/* line 658, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+/* line 663, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
 .block--formblock-user-media {
   margin: 30px 0 0; }
-  /* line 661, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
+  /* line 666, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_user.scss */
   .block--formblock-user-media h2 {
     color: #f1592a;
     font-size: 24px;

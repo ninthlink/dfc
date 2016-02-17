@@ -23,16 +23,16 @@ function dfc_status_messages($variables) {
   $firstmsg = true;
   
   foreach (drupal_get_messages($display) as $type => $messages) {
+    if ( $firstmsg ) {
+      $output .= '<div id="better-messages-wrapper" style="display:none;overflow:visible;position:absolute;z-index:9999;">';
+      $output .= '<div id="better-messages-default"><div id="messages-inner">';
+      $firstmsg = false;
+    }
     $output .= '<div class="messages messages--' . $type . '">';
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>";
     }
     if (count($messages) > 1) {
-      if ( $firstmsg ) {
-        $output .= '<div id="better-messages-wrapper" style="display:none;overflow:visible;position:absolute;z-index:9999;">';
-        $output .= '<div id="better-messages-default"><div id="messages-inner">';
-        $firstmsg = false;
-      }
       $output .= '<ul>';
       foreach ($messages as $message) {
         $output .= '  <li>' . $message . '</li>';

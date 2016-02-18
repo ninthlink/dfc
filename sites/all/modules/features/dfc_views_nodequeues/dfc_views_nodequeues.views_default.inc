@@ -2830,16 +2830,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['title'] = 'Points Leaderboard';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'role';
-  $handler->display->display_options['access']['role'] = array(
-    3 => '3',
-    2 => '2',
-    7 => '7',
-    5 => '5',
-    6 => '6',
-    4 => '4',
-    8 => '8',
-  );
+  $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -3015,6 +3006,12 @@ function dfc_views_nodequeues_views_default_views() {
 
   /* Display: Lifetime Block */
   $handler = $view->new_display('block', 'Lifetime Block', 'block_1');
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: DFC Points: Lifetime Points */
+  $handler->display->display_options['sorts']['lifetime_points']['id'] = 'lifetime_points';
+  $handler->display->display_options['sorts']['lifetime_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['sorts']['lifetime_points']['field'] = 'lifetime_points';
+  $handler->display->display_options['sorts']['lifetime_points']['order'] = 'DESC';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -3214,6 +3211,12 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/store" class="button button-outline">Redeem points</a>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: DFC Points: Monthly Points */
+  $handler->display->display_options['sorts']['monthly_points']['id'] = 'monthly_points';
+  $handler->display->display_options['sorts']['monthly_points']['table'] = 'dfc_points_views';
+  $handler->display->display_options['sorts']['monthly_points']['field'] = 'monthly_points';
+  $handler->display->display_options['sorts']['monthly_points']['order'] = 'DESC';
   $export['user_ranking'] = $view;
 
   return $export;

@@ -342,7 +342,7 @@ ul.bxslider
     padding-bottom: 27% !important;
     position: relative;
 }
-.bx-wrapper .slider-content .video-caption iframe {left: 11%;height: 267px;}
+.bx-wrapper .slider-content .video-caption iframe {left: 0%;height: 267px;}
 .player .video-wrapper {
     position: absolute;
     background: transparent;

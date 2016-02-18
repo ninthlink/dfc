@@ -485,7 +485,8 @@ body.section-user.not-logged-in {
   }
 }
 
-// Points landing
+// Points landing, Orders landing
+body.section-user.page-user-orders,
 body.section-user.page-user-points {
   form {
     background: $color-white;
@@ -514,6 +515,7 @@ body.section-user.page-user-points {
     }
   }
   table {
+    color: $color-black;
     width: 100%;
     
     th {

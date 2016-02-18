@@ -1,7 +1,39 @@
+tr.even {
+  background-color: $color-gray-e;
+}
+tr.odd {
+  background-color: $color-gray-d;
+}
+
 table.views-table {
   background: $color-black;
 
   th, td {
     background: $color-black;
+  }
+}
+body.section-user.page-user-orders {
+  // and undo...
+  table.views-table {
+    background: $color-white;
+    
+    tr.even {
+      background-color: $color-gray-e;
+      
+      th, td {
+        background-color: $color-gray-e;
+      }
+      td.active {
+        background-color: $color-gray-d;
+      }
+    }
+    
+    tr.odd {
+      background-color: $color-gray-d;
+      
+      th, td {
+        background-color: $color-gray-d;
+      }
+    }
   }
 }

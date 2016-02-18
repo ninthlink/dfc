@@ -465,9 +465,31 @@ function dfc_points_award_slideshow( $nid, $count ) {
 function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state) {
   global $user;
   $max_invites = 10;
-  $num = sizeof(db_select('invite', 'i')->fields('i')->condition('uid', $user->uid)->execute()->fetchALLAssoc('iid'));
-  if($num > $max_invites) {
-    form_set_error('invitation_email_address', "You've already invited your maximum of {$max_invites} people");
+  $email = $form_state['values']['field_invitation_email_address'][LANGUAGE_NONE][0]['value'];
+
+  $q = db_select('invite', 'i')
+    ->fields('i')
+    ->condition('uid', $user->uid)
+    ->condition('fiea.field_invitation_email_address_value', $email)
+    ->condition('expiry', time(), '>');
+  $q->join('field_data_field_invitation_email_address', 'fiea', 'i.iid = fiea.entity_id');
+  $chk = $q->execute()->rowCount();
+
+  if($chk) {
+    form_set_error('invitation_email_address', "You've already invited {$email}");
+    return FALSE;
+  }
+
+  $num = db_select('invite', 'i')
+    ->fields('i')
+    ->condition('uid', $user->uid)
+    ->condition('joined', 0)
+    ->condition('canceled', 0)
+    ->condition('expiry', time(), '>')
+    ->execute()->rowCount();
+
+  if($num >= $max_invites) {
+    form_set_error('invitation_email_address', "You already have {$max_invites} invites pending.");
     return FALSE;
   }
 

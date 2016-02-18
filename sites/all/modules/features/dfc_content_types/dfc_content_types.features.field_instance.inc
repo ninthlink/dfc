@@ -651,102 +651,7 @@ function dfc_content_types_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'node-giveaway_prize-field_second_winner'.
-  $field_instances['node-giveaway_prize-field_second_winner'] = array(
-    'bundle' => 'giveaway_prize',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_second_winner',
-    'label' => 'Second Winner',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-giveaway_prize-field_second_winners_points'.
-  $field_instances['node-giveaway_prize-field_second_winners_points'] = array(
-    'bundle' => 'giveaway_prize',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_second_winners_points',
-    'label' => 'Second Winner\'s points',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 6,
+      'weight' => 0,
     ),
   );
 
@@ -789,7 +694,7 @@ function dfc_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -1126,7 +1031,7 @@ function dfc_content_types_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'txt',
+      'file_extensions' => 'mov mpg mp4',
       'max_filesize' => '',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
@@ -1137,6 +1042,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
+          'private' => 0,
           'public' => 'public',
           'vimeo' => 'vimeo',
           'youtube' => 'youtube',
@@ -2810,8 +2716,8 @@ function dfc_content_types_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'mov',
-      'max_filesize' => '',
+      'file_extensions' => 'mov mp4 webm',
+      'max_filesize' => '100 MB',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
       'user_register_form' => FALSE,
@@ -2994,8 +2900,6 @@ function dfc_content_types_field_default_field_instances() {
   t('Reservation Link');
   t('Resort Category');
   t('Resort Price');
-  t('Second Winner');
-  t('Second Winner\'s points');
   t('Sponsor');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');

@@ -345,14 +345,14 @@ ul.bxslider
 .bx-wrapper .slider-content .video-caption iframe {left: 0%;height: 267px;}
 .player .video-wrapper {
     position: absolute;
-    background: transparent;
+    background: transparent !important;
 }
 #player, .fallback, body, html, iframe {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: transparent;
+    background-color: transparent !important;
     overflow: hidden;
 }
 .player button, .player input, .player textarea {

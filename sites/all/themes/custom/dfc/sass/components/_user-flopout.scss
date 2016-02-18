@@ -13,13 +13,27 @@ body.not-logged-in {
     right: 10px;
 	width: 37%;
     text-align: right;
+  
+	 @include breakpoint(max-width $bp-mobile) {
+    	.separator {
+            display: none; 
+         }
+		 
+		 #points_leaderboard {
+           line-height: 2;
+          display: block;
+         }
 
-	
+      }
+	  
+
+    
     @include breakpoint($bp-desk) {
   		top: 40px;
   		right: 50px;
+		
     }
-
+      
     #member_info_link,#points_leaderboard {
     	font-family: $sr;
     	@include rem(font-size, 11px);
@@ -30,7 +44,16 @@ body.not-logged-in {
       @include breakpoint($bp-desk) {
     		@include rem(font-size, 12.5px);
       }
-    
+      
+	   @include breakpoint(max-width $bp-mobile) {
+    	 
+		 #points_leaderboard {
+           line-height: 2;
+          display: block;
+         }
+
+      }
+	  
       &:hover {
         color: $color-orange;
       }

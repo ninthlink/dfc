@@ -10,8 +10,12 @@ $bp960: 960px;
 // 1180 + 
 $bp1180: 1180px;
 
+// <530
+
+$bp530: 530px;
 
 // then the styles for 
 $bp-tab: $bp590;
 $bp-desk: $bp960;
 $bp-full: $bp1180;
+$bp-mobile: $bp530;

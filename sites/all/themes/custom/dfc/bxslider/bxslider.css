@@ -331,7 +331,14 @@ ul.bxslider
 {
 	text-decoration: none;
 }	
-
+#player, .fallback, body, html, iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    overflow: hidden;
+}
 @media only screen and (max-width: 590px)
 {
 .bx-wrapper .slider-content .video-caption {

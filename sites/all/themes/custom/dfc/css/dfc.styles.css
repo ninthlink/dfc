@@ -4689,11 +4689,10 @@ body.node-type-landing-page.section-media .l-main {
   /* line 444, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main .views-field-body ul li {
     font-family: "Rockwell", Georgia, serif;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 300;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-    padding-bottom: 0; }
+    padding: 0 0 10px 10px; }
   /* line 456, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment a.button-outline {
     font-size: 22px;

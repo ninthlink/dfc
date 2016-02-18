@@ -443,10 +443,10 @@ body.node-type-landing-page.section-membership {
         ul {
           li {
             font-family: $rw;
-            @include rem(font-size, 14px);
-            font-weight: 300;
+            @include rem(font-size, 16px);
             line-height: 1.5;
-            padding-bottom: 0;
+            padding: 0 0 10px 10px; 
+	
           }
         }
         

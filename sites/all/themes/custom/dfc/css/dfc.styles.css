@@ -4626,7 +4626,7 @@ body.node-type-landing-page.section-media .l-main {
 .view-memberships .attachment {
   background: #505050 url(../images/diamondboat.jpg) no-repeat 50% 0;
   float: left;
-  width: 100%;
+  width: 99%;
   padding: 330px 0 200px;
   position: relative; }
   @media (min-width: 590px) {

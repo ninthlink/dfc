@@ -284,9 +284,14 @@ article.user-profile {
       margin-bottom: 5px;
     }
     
-    .field--city-state {
+    .field--city-state,
+    .field-label,
+    .field--club-id {
       font-family: $sr;
       @include rem(font-size, 16px);
+    }
+    .field--club-id.inline {
+      display: inline;
     }
   }
   

@@ -82,6 +82,8 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['picture']['picture_upload']['#description'] = '';
     // wipe the default Delete Picture description
     $form['picture']['picture_delete']['#description'] = '';
+    // also hide club id field
+    $form['field_club_id']['#access'] = 0;
   } else if ($form_id == 'user_media_node_form') {
     $form['#submit'][] = 'dfc_points_award_user_media_type_validate';
     $form['#submit'][] = 'dfc_points_award_user_media_type_assign';
@@ -112,6 +114,11 @@ function dfc_points_award_user_media_type_assign(&$form, &$form_state) {
 }
 
 function dfc_points_award_node_view($node, $view_mode, $langcode) {
+  // in any case make sure maybe we have better_messages?
+  if ( function_exists('better_messages_add_files') ) {
+    better_messages_add_files( false );
+  }
+  
   if ($node->type == 'media_item') {
     
     $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];

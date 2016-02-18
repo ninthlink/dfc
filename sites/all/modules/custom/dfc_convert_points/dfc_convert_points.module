@@ -63,7 +63,7 @@ function dfc_convert_points_cron(){
   $last_month = date('Y-m-01 00:00:00', strtotime('-1 month'));
   $points_converted_month = variable_get('points_coverted_month', 0);
   if($points_converted_month <> $cur_month){
-    //find giveaway winner
+    //find giveaway winners
     $prize_query = new EntityFieldQuery();
     $prize_query->entityCondition('entity_type', 'node')
       ->entityCondition('bundle', 'giveaway_prize')
@@ -82,11 +82,14 @@ function dfc_convert_points_cron(){
         ->fields('u', array('points', 'uid'))
         ->condition('tid', 1, '=')
         ->orderBy('points', 'DESC')
-        ->range(0, 1)
+        ->range(0, 2)
         ->execute();
-      $giveaway_winner = $giveaway_result->fetchAssoc();
-      $prize->field_winner[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
-      $prize->field_winners_points[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
+      $winner_num = '';
+      while($giveaway_winner = $giveaway_result->fetchAssoc()){
+        $prize->{'field_'.$winner_num.'winner'}[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
+        $prize->{'field_'.$winner_num.'winners_points'}[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
+        $winner_num = 'second_';
+      }
       node_save($prize);
     }
     //convert monthly points to lifetime points

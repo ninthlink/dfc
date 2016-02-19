@@ -422,7 +422,8 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '50';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_slideshow-bean';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -462,11 +463,14 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_slider_image']['id'] = 'field_slider_image';
   $handler->display->display_options['fields']['field_slider_image']['table'] = 'field_data_field_slider_image';
   $handler->display->display_options['fields']['field_slider_image']['field'] = 'field_slider_image';
+  $handler->display->display_options['fields']['field_slider_image']['label'] = '';
   $handler->display->display_options['fields']['field_slider_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_slider_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slider_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_slider_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_slider_image']['settings'] = array(
-    'file_view_mode' => 'default',
+    'image_style' => '',
+    'image_link' => '',
   );
   /* Field: Content: Slider Caption */
   $handler->display->display_options['fields']['field_slider_caption']['id'] = 'field_slider_caption';

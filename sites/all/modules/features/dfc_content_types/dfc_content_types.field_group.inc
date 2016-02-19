@@ -13,6 +13,41 @@ function dfc_content_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_image|node|user_media|form';
+  $field_group->group_name = 'group_image';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'user_media';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Image',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_image',
+      1 => 'field_photo_description',
+      2 => 'field_photo_title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Image',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-image field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_image|node|user_media|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_media_content_teaser|node|media_item|teaser';
   $field_group->group_name = 'group_media_content_teaser';
   $field_group->entity_type = 'node';
@@ -147,12 +182,49 @@ function dfc_content_types_field_group_info() {
   );
   $field_groups['group_resort_last|node|resort|teaser'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_video|node|user_media|form';
+  $field_group->group_name = 'group_video';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'user_media';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Video',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_media_link',
+      1 => 'field_video_description',
+      2 => 'field_video_title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Video',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-video field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_video|node|user_media|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Image');
   t('Media Content');
   t('Media Header');
   t('Resort First');
   t('Resort Last');
+  t('Video');
 
   return $field_groups;
 }

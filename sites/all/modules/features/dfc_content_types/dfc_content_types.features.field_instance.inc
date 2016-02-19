@@ -2745,8 +2745,8 @@ function dfc_content_types_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
+      'file_extensions' => 'jpg jpeg png',
+      'max_filesize' => '10 MB',
       'max_resolution' => '',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
@@ -2758,28 +2758,11 @@ function dfc_content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 5,
     ),
   );
 
@@ -2811,7 +2794,7 @@ function dfc_content_types_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'mov mp4 webm',
+      'file_extensions' => 'mov mp4',
       'max_filesize' => '100 MB',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
@@ -2824,7 +2807,7 @@ function dfc_content_types_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 4,
+      'weight' => 9,
     ),
   );
 
@@ -2868,7 +2851,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -2910,12 +2893,12 @@ function dfc_content_types_field_default_field_instances() {
       'settings' => array(
         'maxlength_js' => 100,
         'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => '',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -2955,12 +2938,12 @@ function dfc_content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
+        'maxlength_js' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -3004,7 +2987,7 @@ function dfc_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -3051,7 +3034,7 @@ function dfc_content_types_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -3080,7 +3063,7 @@ function dfc_content_types_field_default_field_instances() {
     'fences_wrapper' => 'div',
     'field_name' => 'field_video_title',
     'label' => 'Video Title',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
@@ -3091,12 +3074,12 @@ function dfc_content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
+        'maxlength_js' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 

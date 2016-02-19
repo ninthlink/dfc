@@ -167,7 +167,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453754659,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '05876674-e68c-4782-849c-040d6c5ce5ce',
@@ -180,24 +180,26 @@ function dfc_bean_uuid_features_default_beans() {
 <dl>
   <dt><h5>Current Benefits</h5></dt>
   <dd><h5>Access & Promo Codes</h5></dd>
-  <dt>FREE Membership to IGFA ($35 Value)</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>FREE 6 Month Access to Pro Angler ($18 Value)</dt>
-  <dd>Promo code: <a href="#">DFCProangler6</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>FREE 6 Month Access to Fishidy.com ($30 Value)</dt>
-  <dd>Promo code: <a href="#">DFCfishidy6</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>FREE 1 Year Wild Oceans Membership ($35 Value)</dt>
-  <dd>Promo code: <a href="#">DFCwildoceans1</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>Eligible for all gear give-ways worth $1,000</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>Earn FREE Day Charter fishing trips in your area</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>10% discount at over 50 Top Fishing Resorts</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dt><strong>FREE</strong> 6 Month Access to Pro Angler ($60 Value</dt>
+  <dd>Pro Angler: DFCProAngler6</dd>
+  <dt><strong>FREE</strong> 6 Month Access to Fishidy Premium ($30 Value)</dt>
+  <dd>Fishidy Premium: DFCFishidy6</dd>
+  <dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value)</dt>
+  <dd>Wild Oceans Membership: DFCWildOceans1</dd>
+  <dt>Instant eligibility for all gear giveaways</dt>
+  <dd>Marineandoutdoor.com: DFCmad20</dd>
+  <dt>Earn <strong>FREE</strong> Day Charter fishing trips in your area</dt>
+  <dd></dd>
+  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dd></dd>
+  <dt>20% discount on King Sailfish Mounts</dt>
+  <dd></dd>
+  <dt>10% discount at over 50 top fishing resorts</dt>
+  <dd></dd>
   <dt>10% discount at selected charter operations</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
-  <dt>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</dt>
-  <dd>Promo code: <a href="#">DFCIGFA</a> &nbsp;|&nbsp; <a href="#">Sign Up</a></dd>
+  <dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacth as a Cast Member</dt>
+<dd></dd>
 </ul>',
           'format' => 'full_html',
           'safe_value' => '<h3>Membership Benefits</h3>
@@ -207,24 +209,26 @@ function dfc_bean_uuid_features_default_beans() {
 <dd>
 <h5>Access &amp; Promo Codes</h5>
 </dd>
-<dt>FREE Membership to IGFA ($35 Value)</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
-<dt>FREE 6 Month Access to Pro Angler ($18 Value)</dt>
-<dd>Promo code: <a href="#">DFCProangler6</a>  |  <a href="#">Sign Up</a></dd>
-<dt>FREE 6 Month Access to Fishidy.com ($30 Value)</dt>
-<dd>Promo code: <a href="#">DFCfishidy6</a>  |  <a href="#">Sign Up</a></dd>
-<dt>FREE 1 Year Wild Oceans Membership ($35 Value)</dt>
-<dd>Promo code: <a href="#">DFCwildoceans1</a>  |  <a href="#">Sign Up</a></dd>
-<dt>Eligible for all gear give-ways worth $1,000</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
-<dt>Earn FREE Day Charter fishing trips in your area</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
-<dt>10% discount at over 50 Top Fishing Resorts</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dt><strong>FREE</strong> 6 Month Access to Pro Angler ($60 Value</dt>
+<dd>Pro Angler: DFCProAngler6</dd>
+<dt><strong>FREE</strong> 6 Month Access to Fishidy Premium ($30 Value)</dt>
+<dd>Fishidy Premium: DFCFishidy6</dd>
+<dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value)</dt>
+<dd>Wild Oceans Membership: DFCWildOceans1</dd>
+<dt>Instant eligibility for all gear giveaways</dt>
+<dd>Marineandoutdoor.com: DFCmad20</dd>
+<dt>Earn <strong>FREE</strong> Day Charter fishing trips in your area</dt>
+<dd></dd>
+<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dd></dd>
+<dt>20% discount on King Sailfish Mounts</dt>
+<dd></dd>
+<dt>10% discount at over 50 top fishing resorts</dt>
+<dd></dd>
 <dt>10% discount at selected charter operations</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
-<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yatch as a Cast Member. See Rules</dt>
-<dd>Promo code: <a href="#">DFCIGFA</a>  |  <a href="#">Sign Up</a></dd>
+<dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacth as a Cast Member</dt>
+<dd></dd>
 
 </dl>',
         ),
@@ -243,7 +247,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453757653,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '751fee72-ec66-42f1-8487-71351f74f2a3',
@@ -252,24 +256,71 @@ function dfc_bean_uuid_features_default_beans() {
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'Membership Benefits
-Silver Membership +
-<ul>
-  <li>Earn FREE Multi-day International fishing trips</li>
-  <li>10%-40% discount on products at Marineandoutdoor.com</li>
-  <li>Includes an instant entry to qualifying for a spot on the DFC Top Angler show aboard the Pacific Provider.</li>
-  <li>Bill Boyce Screen Savers - 2 FREE Downloads</li>
-  <li>DFC hat and sticker</li>
+          'value' => '<h3>Membership Benefits</h3>
+<dl>
+  <dt><h5>Current Benefits</h5></dt>
+  <dd><h5>Access & Promo Codes</h5></dd>
+  <dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+  <dd>Pro Angler: DFCProAngler12</dd>
+  <dt>Instant eligibility for all gear giveaways</dt>
+  <dd>Fishidy Premium: DFCFishidy12</dd>
+  <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+  <dd>Wild Oceans Membership: DFCWildOceans1</dd>
+  <dt>20% discount on products at <a href="http://marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</dt>
+  <dd>Marineandoutdoor.com: DFCmad20</dd>
+  <dt>20% discount on King Sailfish Mounts</dt>
+  <dd></dd>
+  <dt>10% discount at over 50 Top Fishing Resorts</dt>
+  <dd></dd>
+  <dt>10% discount at selected charter operations</dt>
+  <dd></dd>
+  <dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+  <dd></dd>
+  <dt>FREE 12 Month Access to Pro Angler ($120 Value)</dt>
+  <dd></dd>
+<dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Gold Members only</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads</dt>
+<dd></dd>
+<dt>DFC hat and sticker ($25 Value)</dt>
 </ul>',
           'format' => 'full_html',
-          'safe_value' => '<p>Membership Benefits<br />
-Silver Membership +</p>
-<ul><li>Earn FREE Multi-day International fishing trips</li>
-<li>10%-40% discount on products at Marineandoutdoor.com</li>
-<li>Includes an instant entry to qualifying for a spot on the DFC Top Angler show aboard the Pacific Provider.</li>
-<li>Bill Boyce Screen Savers - 2 FREE Downloads</li>
-<li>DFC hat and sticker</li>
-</ul>',
+          'safe_value' => '<h3>Membership Benefits</h3>
+<dl><dt>
+<h5>Current Benefits</h5>
+</dt>
+<dd>
+<h5>Access &amp; Promo Codes</h5>
+</dd>
+<dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+<dd>Pro Angler: DFCProAngler12</dd>
+<dt>Instant eligibility for all gear giveaways</dt>
+<dd>Fishidy Premium: DFCFishidy12</dd>
+<dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+<dd>Wild Oceans Membership: DFCWildOceans1</dd>
+<dt>20% discount on products at <a href="http://marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
+<dd>Marineandoutdoor.com: DFCmad20</dd>
+<dt>20% discount on King Sailfish Mounts</dt>
+<dd></dd>
+<dt>10% discount at over 50 Top Fishing Resorts</dt>
+<dd></dd>
+<dt>10% discount at selected charter operations</dt>
+<dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+<dd></dd>
+<dt>FREE 12 Month Access to Pro Angler ($120 Value)</dt>
+<dd></dd>
+<dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Gold Members only</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads</dt>
+<dd></dd>
+<dt>DFC hat and sticker ($25 Value)</dt>
+
+</dl>',
         ),
       ),
     ),
@@ -695,7 +746,7 @@ Silver Membership +</p>
     'view_mode' => 'default',
     'created' => 1453757978,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '060ce1ad-1cff-4bb9-a707-b7a5214465d9',
@@ -704,16 +755,95 @@ Silver Membership +</p>
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'Membership Benefits
-Platinum Membership +
-<ul>
-  <li>Something here</li>
+          'value' => '<h3>Membership Benefits</h3>
+<dl>
+  <dt><h5>Current Benefits</h5></dt>
+  <dd><h5>Access & Promo Codes</h5></dd>
+  <dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+  <dd>Pro Angler: DFCProAngler12</dd>
+  <dt>FREE 12 Month Access to Pro Angler and lure pack ($150 Value)</dt>
+  <dd>Fishidy Premium: DFCFishidy12</dd>
+  <dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+  <dd>Wild Oceans Membership: DFCWildOceans1</dd>
+  <dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+  <dd>Marineandoutdoor.com: DFCmad20</dd>
+  <dt>Instant eligibility for all gear giveaways</dt>
+  <dd></dd>
+  <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+  <dd></dd>
+  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dd></dd>
+  <dt>20% discount on King Sailfish Mounts</dt>
+  <dd></dd>
+  <dt>10% discount at over 50 Top Fishing Resorts</dt>
+  <dd></dd>
+<dt>10% discount at selected charter operations</dt>
+<dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads ($15 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Diamond Members only</dt>
+<dd></dd>
+<dt>Hard Core Welcome Kit - DFC Hat/mouse pad / t-shirt /stickers/ ($55 Value)</dt>
+<dd></dd>
+<dt>6 Day Fishing Trip on DFC Clubhouse: 
+Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 Value)</dt>
+<dd></dd>
+<dt>Canvas gallery wrap Bill Boyce signed fish photograph of your choice ($795 value)</dt>
+<dd></dd>
+<dt>Selection of DFC core sponsorship gear ($100 Value)</dt>
+<dd></dd>
+<dt>Exclusive DFC Diamond Card to gain use of the lounge for up to 4 guests in any of our announced exclusive Mothership ports of call.</dt>
+<dd></dd>
 </ul>',
           'format' => 'full_html',
-          'safe_value' => '<p>Membership Benefits<br />
-Platinum Membership +</p>
-<ul><li>Something here</li>
-</ul>',
+          'safe_value' => '<h3>Membership Benefits</h3>
+<dl><dt>
+<h5>Current Benefits</h5>
+</dt>
+<dd>
+<h5>Access &amp; Promo Codes</h5>
+</dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+<dd>Pro Angler: DFCProAngler12</dd>
+<dt>FREE 12 Month Access to Pro Angler and lure pack ($150 Value)</dt>
+<dd>Fishidy Premium: DFCFishidy12</dd>
+<dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+<dd>Wild Oceans Membership: DFCWildOceans1</dd>
+<dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+<dd>Marineandoutdoor.com: DFCmad20</dd>
+<dt>Instant eligibility for all gear giveaways</dt>
+<dd></dd>
+<dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+<dd></dd>
+<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dd></dd>
+<dt>20% discount on King Sailfish Mounts</dt>
+<dd></dd>
+<dt>10% discount at over 50 Top Fishing Resorts</dt>
+<dd></dd>
+<dt>10% discount at selected charter operations</dt>
+<dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads ($15 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Diamond Members only</dt>
+<dd></dd>
+<dt>Hard Core Welcome Kit - DFC Hat/mouse pad / t-shirt /stickers/ ($55 Value)</dt>
+<dd></dd>
+<dt>6 Day Fishing Trip on DFC Clubhouse:<br />
+Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 Value)</dt>
+<dd></dd>
+<dt>Canvas gallery wrap Bill Boyce signed fish photograph of your choice ($795 value)</dt>
+<dd></dd>
+<dt>Selection of DFC core sponsorship gear ($100 Value)</dt>
+<dd></dd>
+<dt>Exclusive DFC Diamond Card to gain use of the lounge for up to 4 guests in any of our announced exclusive Mothership ports of call.</dt>
+<dd></dd>
+
+</dl>',
         ),
       ),
     ),
@@ -790,7 +920,7 @@ Platinum Membership +</p>
     'view_mode' => 'default',
     'created' => 1453757943,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '19b81831-f5f2-432e-8adc-7e45c0254fae',
@@ -799,16 +929,71 @@ Platinum Membership +</p>
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'Membership Benefits
-Gold Membership +
-<ul>
-  <li>Something here</li>
+          'value' => '<h3>Membership Benefits</h3>
+<dl>
+  <dt><h5>Current Benefits</h5></dt>
+  <dd><h5>Access & Promo Codes</h5></dd>
+  <dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+  <dd>Pro Angler: DFCProAngler12</dd>
+  <dt>Instant eligibility for all gear giveaways</dt>
+  <dd>Fishidy Premium: DFCFishidy12</dd>
+  <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+  <dd>Wild Oceans Membership: DFCWildOceans1</dd>
+  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dd>Marineandoutdoor.com: DFCmad20</dd>
+  <dt>20% discount on King Sailfish Mounts</dt>
+  <dd></dd>
+  <dt>10% discount at over 50 Top Fishing Resorts</dt>
+  <dd></dd>
+  <dt>10% discount at selected charter operations</dt>
+  <dd></dd>
+  <dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+  <dd></dd>
+  <dt>FREE 12 Month Access to Pro Angler and lure pack ($150 Value)</dt>
+  <dd></dd>
+<dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads ($15 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Platinum Members only</dt>
+<dd></dd>
+<dt>Hard Core Welcome Kit - DFC Hat/mouse pad / t-shirt /stickers/ ($55 Value)</dt>
 </ul>',
           'format' => 'full_html',
-          'safe_value' => '<p>Membership Benefits<br />
-Gold Membership +</p>
-<ul><li>Something here</li>
-</ul>',
+          'safe_value' => '<h3>Membership Benefits</h3>
+<dl><dt>
+<h5>Current Benefits</h5>
+</dt>
+<dd>
+<h5>Access &amp; Promo Codes</h5>
+</dd>
+<dt><strong>FREE</strong> 1 Year Wild Oceans Membership ($35 Value) </dt>
+<dd>Pro Angler: DFCProAngler12</dd>
+<dt>Instant eligibility for all gear giveaways</dt>
+<dd>Fishidy Premium: DFCFishidy12</dd>
+<dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
+<dd>Wild Oceans Membership: DFCWildOceans1</dd>
+<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dd>Marineandoutdoor.com: DFCmad20</dd>
+<dt>20% discount on King Sailfish Mounts</dt>
+<dd></dd>
+<dt>10% discount at over 50 Top Fishing Resorts</dt>
+<dd></dd>
+<dt>10% discount at selected charter operations</dt>
+<dd></dd>
+<dt>Earn a spot on the Pacific Provider DFC Clubhouse Yacht as a Cast Member</dt>
+<dd></dd>
+<dt>FREE 12 Month Access to Pro Angler and lure pack ($150 Value)</dt>
+<dd></dd>
+<dt>FREE 12 Month Access to Fishidy Premium ($60 Value)</dt>
+<dd></dd>
+<dt>Bill Boyce Screen Savers - 2 <strong>FREE</strong> Downloads ($15 Value)</dt>
+<dd></dd>
+<dt>Eligible for premium product giveaways for Platinum Members only</dt>
+<dd></dd>
+<dt>Hard Core Welcome Kit - DFC Hat/mouse pad / t-shirt /stickers/ ($55 Value)</dt>
+
+</dl>',
         ),
       ),
     ),

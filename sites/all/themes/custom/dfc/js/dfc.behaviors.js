@@ -108,21 +108,29 @@
         setTimeout(function() {
           
           if ( $('#block-views-homepage-slider-bxsliderblock .owl-carousel').size() > 0 ) {
+            // Home Slides carousel
             $('#block-views-homepage-slider-bxsliderblock .owl-carousel').data('owlCarousel').reinit();
           }
           
           if ( $('#block-views-related-videos-block .owl-carousel').size() > 0 ) {
             // in this case, just hide partners for now
             $('#block-views-partners-block').remove();
-            // and reset the remaining related content carousel
+            // Related Content carousel
             $('#block-views-related-videos-block .owl-carousel').data('owlCarousel').reinit();
           }
           
+          if ( $('#block-views-media-items-block-1 .owl-carousel').size() > 0 ) {
+            // Media landing top carousel
+            $('#block-views-media-items-block-1 .owl-carousel').data('owlCarousel').reinit();
+          }
+
           if ( $('#block-views-prizes-block .owl-carousel').size() > 0 ) {
+            // Prizes carousel
             $('#block-views-prizes-block .owl-carousel').data('owlCarousel').reinit();
           }
           
           if ( $('.view-partners .owl-carousel').size() > 0 ) {
+            // Partners carousel
             $('.view-partners .owl-carousel').data('owlCarousel').reinit();
           }
         }, 1000);

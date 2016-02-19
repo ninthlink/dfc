@@ -289,7 +289,8 @@ function dfc_points_award_video($vid) {
         'points' => $points,
         'entity_type' => 'node',
         'entity_id' => $vid,
-        'operation' => 'dfc_points_award_video'
+        'operation' => 'dfc_points_award_video',
+        'display' => false
     );
     dfc_points_award_grant_points($video_points);
     watchdog('dfc', 'awarding video points');
@@ -418,12 +419,15 @@ function dfc_points_award_share( $wher, $nid ) {
             'points' => 5,
             'entity_type' => 'node',
             'entity_id' => $nid,
-            'operation' => $op
+            'operation' => $op,
+            'display' => false
           );
           dfc_points_award_grant_points($link_points);
           watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
+          return '5';
         } else {
           //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
+          return '0';
         }
       }
     }
@@ -451,7 +455,8 @@ function dfc_points_award_slideshow( $nid, $count ) {
           'points' => 5,
           'entity_type' => 'node',
           'entity_id' => $nid,
-          'operation' => $op
+          'operation' => $op,
+          'display' => false
         );
         dfc_points_award_grant_points($link_points);
         watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
@@ -708,4 +713,5 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
       return t('Viewed Slideshow for "%title"', $arguments);
       break;
 	}
+  
 }

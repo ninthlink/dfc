@@ -1,6 +1,24 @@
 (function ($) {
+  function dfcpointsalert( dfcpts ) {
+    console.log('dfcalert : '+ dfcpts);
+    if ( $('#better-messages-wrapper').size() == 0 ) {
+      $('<div id="better-messages-wrapper" style="display:none;overflow:visible;position:fixed;width:300px;bottom:0;right:10px;z-index:9999;"><div id="better-messages-default"><div id="messages-inner"><a class="message-close" href="#">X</a></div></div></div>').insertAfter('.l-header');
+      $('a.message-close').click(function() {
+        $('#better-messages-wrapper').fadeOut('slow');
+        return false;
+      });
+    }
+    var dfcbmsg = $('#messages-inner');
+    
+    dfcbmsg.children('.messages').remove();
+    dfcbmsg.prepend('<div class="messages messages--status">You just earned <strong>'+ dfcpts +' points.</strong></div>');
+    dfcbmsg.parent().parent().fadeIn('normal');
+  }
+  
   Drupal.behaviors.awardPointsVideo = {
     attach: function (context, settings) {
+      
+      
       if ( $('body').hasClass('section-clubhouse') ) {
         var thisnid = Drupal.settings.dfcPointsAward.vid;
         // hook to gallery
@@ -19,6 +37,7 @@
                 $.get(url, function(data) {
                   console.log('got it');
                   //console.log(data);
+                  dfcpointsalert(5);
                 });
               } else {
                 console.log('keep going..');
@@ -47,6 +66,7 @@
                 $.get(url, function(data) {
                   console.log('got it');
                   //console.log(data);
+                  dfcpointsalert(5);
                 });
               }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
             }
@@ -56,6 +76,7 @@
                 $.get(url, function(data) {
                   console.log('got it');
                   //console.log(data);
+                  dfcpointsalert(5);
                 });
               }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
             }
@@ -82,6 +103,7 @@
                     $.get(url, function(data) {
                       console.log('got it');
                       //console.log(data);
+                      dfcpointsalert(5);
                     });
                   } else {
                     console.log('keep going..');
@@ -119,6 +141,7 @@
               $.get(url, function(data) {
                 console.log('got it');
                 //console.log(data);
+                dfcpointsalert(5);
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -128,6 +151,7 @@
               $.get(url, function(data) {
                 console.log('got it');
                 //console.log(data);
+                dfcpointsalert(5);
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -139,8 +163,8 @@
             setTimeout( function() {
               var thisowlc = thiscar.children('.owl-carousel');
               var thisowl = thisowlc.data('owlCarousel');
-              if ( thisowl === null ) {
-                // somehow no owl yet, so re init
+              if ( !thisowl ) {
+                // somehow no owl yet? re init
                 thiscar.children('.owlcarousel-fields-115').owlCarousel(settings['owlcarousel']['owlcarousel-fields-115']['settings']);
                 thisowlc = thiscar.children('.owl-carousel');
                 thisowl = thisowlc.data('owlCarousel');
@@ -155,6 +179,7 @@
                     $.get(url, function(data) {
                       console.log('got it');
                       //console.log(data);
+                      dfcpointsalert(5);
                     });
                   } else {
                     console.log('keep going..');
@@ -164,7 +189,7 @@
                   thisowlc.trigger('owlcheck');
                 });
               }
-            }, 300 );
+            }, 1000 );
             // also inject html of points / video underneaf
             thiscar.append('<div class="pt-values"><span class="vid"><strong>10</strong> Points</span><span class="img"><strong>5</strong> Points</span></div>');
           }
@@ -195,6 +220,7 @@
             $.get(url, function(data) {
               console.log('got it');
               //console.log(data);
+              dfcpointsalert(5);
             });
           }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }
@@ -205,6 +231,7 @@
             $.get(url, function(data) {
               console.log('got it');
               //console.log(data);
+              dfcpointsalert(5);
             });
           }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }
@@ -274,13 +301,16 @@
           post('addEventListener', 'playProgress');
         }
 
-        function onPlayProgress(data, id) {console.log(data.seconds);
-          if (data.seconds > threshold && !awarded) {console.log('awarded');
+        function onPlayProgress(data, id) {
+          console.log(data.seconds);
+          if (data.seconds > threshold && !awarded) {
+            console.log('awarding');
             var nid = Drupal.settings.dfcPointsAward.vid;
             var vcode = Drupal.settings.dfcPointsAward.vcode;
             var url = '/dfc/points/grant/video/' + nid + '/' + vcode;
             $.get(url, function(data) {
-              console.log(data);
+              //console.log(data);
+              dfcpointsalert(10);
             });
             awarded = true;
           }

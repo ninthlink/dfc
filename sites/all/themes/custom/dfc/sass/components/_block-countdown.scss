@@ -8,6 +8,10 @@
 	  @include breakpoint($bp-desk) {
       padding: 45px 75px;
 	  }
+    
+	  @include breakpoint($bp-full) {
+      padding: 45px 0;
+	  }
   }
   
   .countdown-text {
@@ -27,6 +31,10 @@
     line-height: .9;
     margin-bottom: 20px;
     color: $color-white;
+    
+	  @include breakpoint($bp-desk) {
+      @include rem(font-size, 35px);
+    }
     
     span {
       color: $color-orange;

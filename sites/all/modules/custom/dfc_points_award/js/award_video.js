@@ -2,7 +2,6 @@
   Drupal.behaviors.awardPointsVideo = {
     attach: function (context, settings) {
       if ( $('body').hasClass('section-clubhouse') ) {
-        //console.log('clutchHOUSE');
         var thisnid = Drupal.settings.dfcPointsAward.vid;
         // hook to gallery
         var thiscar = $('.field--image-gallery');
@@ -11,10 +10,7 @@
           setTimeout( function() { 
             var thisowlc = thiscar.children('.owl-carousel');
             var thisowl = thisowlc.data('owlCarousel');
-            //console.log('nid '+ thisnid);
-            //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
             thisowlc.bind('owlcheck', function() {
-              //console.log(thisnid + ' showing #'+ thisowl.currentItem);
               $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
               if ( $(this).find('.unseen').size() == 0 ) {
                 console.log('you have viewed all for '+ thisnid +' !!');
@@ -36,7 +32,6 @@
       }
       
       if ( $('body').hasClass('section-fab-52-resorts') ) {
-        console.log('ello fab 52!');
         if ( $('.node--resort:not(.checkd)').size() > 0 ) {
           $('.node--resort:not(.checkd)').each(function() {
             $(this).addClass('checkd');
@@ -48,7 +43,6 @@
             // hook to share btns
             if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
               $(this).find('.st_facebook_custom').addClass('dfc_hookd').click(function() {
-                //console.log('clicked fb for nid '+ thisnid);
                 var url = '/dfc/points/grant/share/fb/' + thisnid;
                 $.get(url, function(data) {
                   console.log('got it');
@@ -58,7 +52,6 @@
             }
             if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
               $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
-                //console.log('clicked tw for nid '+ thisnid);
                 var url = '/dfc/points/grant/share/tw/' + thisnid;
                 $.get(url, function(data) {
                   console.log('got it');
@@ -71,23 +64,16 @@
             if ( thiscar.size() > 0 ) {
               // wrap in timeout delay so it fires after owl-carousel init?
               setTimeout( function() {
-                //console.log('checking '+ thisnid +' for owl-carousel...');
                 var thisowlc = thiscar.children('.owl-carousel');
                 var thisowl = thisowlc.data('owlCarousel');
                 if ( thisowl === null ) {
                   // somehow no owl yet, so re init
-                  //console.log('reinit '+ thisnid);
                   console.log(settings['owlcarousel']['owlcarousel-fields-64']['settings']);
                   thiscar.children('.owlcarousel-fields-64').owlCarousel(settings['owlcarousel']['owlcarousel-fields-64']['settings']);
-                  //console.log('and then?');
                   thisowlc = thiscar.children('.owl-carousel');
                   thisowl = thisowlc.data('owlCarousel');
-                  //console.log('we coo? ' + thisowl.currentItem +' of '+ thisowl.itemsAmount);
                 }
-                //console.log('nid '+ thisnid);
-                //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
                 thisowlc.bind('owlcheck', function() {
-                  //console.log(thisnid + ' showing #'+ thisowl.currentItem);
                   $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
                   if ( $(this).find('.unseen').size() == 0 ) {
                     console.log('you have viewed all for '+ thisnid +' !!');
@@ -116,8 +102,6 @@
           if ( fval !== '' ) {
             // searched for something : scroll to the top of the ad above Resorts
             var rtop = $('#block-views-banner-ads-block').offset();
-            //var rtop = $('#block-views-resorts-block').offset();
-            //console.log('searched "'+ fval +'" : scroll to '+ rtop.top);
             $('html,body').animate({
               scrollTop: rtop.top
             }, 'normal');
@@ -126,13 +110,11 @@
       }
       
       if ( $('body').hasClass('section-pro-staff') ) {
-        //console.log('ello pro staff!');
         $('.node--staff').each(function() {
           var thisnid = $(this).find('.share_vid').data('share-vid');
           // hook to share btns
           if ($(this).find('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
             $(this).find('.st_facebook_custom').addClass('dfc_hookd').click(function() {
-              //console.log('clicked fb for nid '+ thisnid);
               var url = '/dfc/points/grant/share/fb/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
@@ -142,7 +124,6 @@
           }
           if ($(this).find('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
             $(this).find('.st_twitter_custom').addClass('dfc_hookd').click(function() {
-              //console.log('clicked tw for nid '+ thisnid);
               var url = '/dfc/points/grant/share/tw/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
@@ -160,19 +141,12 @@
               var thisowl = thisowlc.data('owlCarousel');
               if ( thisowl === null ) {
                 // somehow no owl yet, so re init
-                //console.log('reinit '+ thisnid);
-                console.log(settings['owlcarousel']['owlcarousel-fields-115']['settings']);
                 thiscar.children('.owlcarousel-fields-115').owlCarousel(settings['owlcarousel']['owlcarousel-fields-115']['settings']);
-                //console.log('and then?');
                 thisowlc = thiscar.children('.owl-carousel');
                 thisowl = thisowlc.data('owlCarousel');
-                //console.log('we coo? ' + thisowl.currentItem +' of '+ thisowl.itemsAmount);
               }
-              //console.log('nid '+ thisnid);
-              //console.log(thisowl.currentItem +' of '+ thisowl.itemsAmount);
               if ( thisowl.itemsAmount > 1 ) {
                 thisowlc.bind('owlcheck', function() {
-                  //console.log(thisnid + ' showing #'+ thisowl.currentItem);
                   $(this).find('.owl-item:eq('+thisowl.currentItem+')').removeClass('unseen');
                   if ( $(this).find('.unseen').size() == 0 ) {
                     console.log('you have viewed all for '+ thisnid +' !!');
@@ -216,7 +190,6 @@
         // Only run if the link exists in the current page load or fragment refresh.
         if ($('.st_facebook_custom:not(.dfc_hookd)').size() > 0) {
           $('.st_facebook_custom').addClass('dfc_hookd').click(function() {
-            //console.log('clicked fb');
             var nid = Drupal.settings.dfcPointsAward.vid;
             var url = '/dfc/points/grant/share/fb/' + nid;
             $.get(url, function(data) {
@@ -227,7 +200,6 @@
         }
         if ($('.st_twitter_custom:not(.dfc_hookd)').size() > 0) {
           $('.st_twitter_custom').addClass('dfc_hookd').click(function() {
-            //console.log('clicked tw');
             var nid = Drupal.settings.dfcPointsAward.vid;
             var url = '/dfc/points/grant/share/tw/' + nid;
             $.get(url, function(data) {

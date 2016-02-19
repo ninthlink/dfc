@@ -26,9 +26,14 @@
  * @ingroup views_templates
  */
 ?>
-<?php if ($rows): ?>
-    <ul class="bxslider">
+<?php if ($rows):
+    //<ul class="bxslider">
+    ?>
       <?php  print $rows; ?>
-    </ul>
-  <?php elseif ($empty): ?>
-<?php endif; ?>
+    
+  <?php
+  //</ul>
+  //elseif ($empty):
+//<?php
+
+endif; ?>

@@ -14,6 +14,10 @@
 
 body.adminimal-menu {
   div#admin-menu {
-    z-index: 99999;
+    z-index: 999999;
   }
+}
+
+#admin-menu, #admin-menu .dropdown {
+  z-index: 999999;
 }

@@ -1,3 +1,214 @@
+// Home Slider recreated without bx
+.block--views-homepage-slider-bxsliderblock {
+  .owl-item {
+    min-height: 535px;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 535px;
+      
+      @include breakpoint($bp-desk) {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+      }
+    }
+  }
+  .slider-content {
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    top: 20px;
+    bottom: 0;
+    
+    @include breakpoint($bp-tab) {
+      top: 6.5rem;
+      max-width: 900px;
+    }
+    
+    .slider-caption {
+      width: 80%;
+      margin: 20px auto 0;
+      text-align: center;
+    
+      @include breakpoint($bp-tab) {
+        float: left;
+        width: 50%;
+        margin-top: 40px;
+        text-align: left;
+      }
+      
+      .icon_video {
+        display: block;
+  			@include use-sprite($icon-video-home-media);
+        margin: 0 auto 10px;
+        
+        @include breakpoint($bp-tab) {
+          margin: 0 0 10px;
+        }
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      h2 {
+        color: $color-white;
+        font-family: $dr;
+        font-size: 55px;
+        line-height: 0.8;
+        text-transform: uppercase;
+        
+        @include breakpoint($bp-tab) {
+          font-size: 77px;
+        }
+        
+        a {
+          color: $color-white;
+        }
+      }
+      
+      h3 {
+        color: $color-white;
+        font-family: $sr;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        
+        a {
+          color: $color-white;
+        }
+      }
+      
+      p {
+        color: $color-white;
+        font-family: $sr;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        
+        a {
+          color: $color-white;
+        }
+      }
+      
+      .orange_text {
+        color: $color-orange !important;
+        
+        a {
+          color: $color-orange !important;
+        }
+      }
+    }
+    
+    .video-caption {
+      margin: 0 0 0 -152px;
+      width: 304px;
+      max-width: 304px;
+      padding: 0 0 56%;
+      position: absolute;
+      bottom: 27px;
+      left: 50%;
+      
+      @include breakpoint($bp-tab) {
+        float: left;
+        width: 50%;
+        margin: 27px 0 0;
+        max-width: 440px;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      
+      iframe {
+        width: 100%;
+        height: 100%;
+        max-height: 171px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+        
+        @include breakpoint($bp-tab) {
+          max-height: 248px;
+          bottom: auto;
+          top: 0;
+        }
+      }
+
+    }
+  }
+  
+
+  .owl-controls {
+    float: left;
+    
+    .owl-pagination {
+      display: none;
+    }
+		
+		.owl-buttons {
+			
+			.owl-prev,
+			.owl-next {
+				position: absolute;
+				top: 50%;
+				left: 5%;
+				@extend .transform-50;
+			  background: none;
+				border-radius: 0;
+				margin: 0;
+				opacity: 1;
+				padding: 0;
+				text-indent: -9999px;
+				@include use-sprite($icon-arrow-thin-left);
+        /*
+			  @include breakpoint($bp-tab) {
+					left: 20%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					left: 10%;
+			  }
+
+			  @include breakpoint($bp-full) {
+					left: 20%;
+			  }
+        */
+			}
+			
+			.owl-next {
+				left: auto;
+				right: 5%;
+				@include use-sprite($icon-arrow-thin-right);
+        /*
+			  @include breakpoint($bp-tab) {
+					right: 20%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					right: 10%;
+			  }
+        
+			  @include breakpoint($bp-full) {
+					right: 20%;
+			  }
+        */
+			}
+		}
+  }
+}
+
 // Home Media
 .block--views-media-items-block-2 {
 	position: relative;

@@ -103,18 +103,29 @@
           }
         });
       }
-      
       // safari check to fix some owl carousels
       if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         setTimeout(function() {
+          
+          if ( $('#block-views-homepage-slider-bxsliderblock .owl-carousel').size() > 0 ) {
+            $('#block-views-homepage-slider-bxsliderblock .owl-carousel').data('owlCarousel').reinit();
+          }
+          
+          if ( $('#block-views-related-videos-block .owl-carousel').size() > 0 ) {
+            // in this case, just hide partners for now
+            $('#block-views-partners-block').remove();
+            // and reset the remaining related content carousel
+            $('#block-views-related-videos-block .owl-carousel').data('owlCarousel').reinit();
+          }
+          
           if ( $('#block-views-prizes-block .owl-carousel').size() > 0 ) {
-          $('#block-views-prizes-block .owl-carousel').data('owlCarousel').reinit();
+            $('#block-views-prizes-block .owl-carousel').data('owlCarousel').reinit();
           }
           
           if ( $('.view-partners .owl-carousel').size() > 0 ) {
             $('.view-partners .owl-carousel').data('owlCarousel').reinit();
           }
-        }, 500);
+        }, 1000);
       }
     }
   };

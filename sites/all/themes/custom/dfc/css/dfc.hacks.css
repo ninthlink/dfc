@@ -1,14 +1,18 @@
 @media all and (max-width: 800px) {
-  /* line 3, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
+  /* line 3, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
   #toolbar, #admin-menu {
     display: none; }
-  /* line 8, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
+  /* line 8, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }
 
-/* line 16, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
+/* line 16, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
 body.adminimal-menu div#admin-menu {
-  z-index: 99999; }
+  z-index: 999999; }
+
+/* line 21, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/dfc.hacks.scss */
+#admin-menu, #admin-menu .dropdown {
+  z-index: 999999; }
 
 /*# sourceMappingURL=dfc.hacks.css.map */

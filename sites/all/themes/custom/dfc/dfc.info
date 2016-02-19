@@ -12,7 +12,7 @@ stylesheets[all][] = css/dfc.normalize.css
 stylesheets[all][] = css/dfc.hacks.css
 stylesheets[all][] = css/dfc.styles.css
 stylesheets[all][] = css/dfc.no-query.css
-stylesheets[all][] = bxslider/bxslider.css
+;stylesheets[all][] = bxslider/bxslider.css
 stylesheets[all][] = css2/checkout.css
 stylesheets[all][] = css2/style.css
 
@@ -20,8 +20,8 @@ stylesheets[all][] = css2/style.css
 ; Scripts
 ; ========================================
 scripts[] = js/dfc.behaviors.js
-scripts[] = bxslider/bxslider.js
-scripts[] = js/custom.js
+;scripts[] = bxslider/bxslider.js
+;scripts[] = js/custom.js
 
 ; ========================================
 ; Regions

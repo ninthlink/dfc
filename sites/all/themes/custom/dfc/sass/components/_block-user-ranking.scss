@@ -17,11 +17,13 @@
   }
   
   .view-content {
+    padding: 85px 0 0;
+    
     @include breakpoint($bp-tab) {
       padding: 20px;
     }
     
-    @include breakpoint($bp-tab) {
+    @include breakpoint($bp-desk) {
       padding: 50px;
     }
   }
@@ -45,13 +47,15 @@
   padding: 20px;
   text-align: left;
 
-  @include breakpoint($bp-tab) {
+  
     margin-bottom: 0;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+  @include breakpoint($bp-tab) {
+  //
   }
   .views-exposed-form {
     .views-exposed-widgets {
@@ -190,7 +194,11 @@ html.js .form-autocomplete#edit-uid {
       width: 25%;
       margin-bottom: 0;
       border-left: 1px solid $color-gray-4d;
-      padding: 10px 0 20px 40px;
+      padding: 10px 0 20px 20px;
+    }
+    
+    @include breakpoint($bp-desk) {
+      padding-left: 40px;
     }
     
     .views-label {
@@ -203,6 +211,32 @@ html.js .form-autocomplete#edit-uid {
     .field-content {
       @include rem(font-size, 25px);
       display: block;
+    }
+    
+    a.button-outline {
+      padding: 15px 45px;
+        
+      @include breakpoint($bp-tab) {
+        margin-left: -10px;
+        padding: 15px 10px;
+      }
+      @include breakpoint($bp-desk) {
+        margin-left: 0;
+        padding: 15px 30px;
+      }
+      @include breakpoint($bp-full) {
+        padding: 15px 45px;
+      }
+    }
+  }
+  
+  .current-profile-month {
+    a.button {
+      display: none;
+      
+      @include breakpoint($bp-tab) {
+        display: inline-block;
+      }
     }
   }
 

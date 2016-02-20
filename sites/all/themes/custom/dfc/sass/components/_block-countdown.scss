@@ -55,6 +55,7 @@
   .jquery-countdown {
     background: none;
     border: 0;
+    white-space: nowrap;
     
 	  @include breakpoint($bp-tab) {
       float: right;

@@ -866,13 +866,14 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
   /* line 55, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
   .block--dfc-convert-points-giveaway-countdown .jquery-countdown {
     background: none;
-    border: 0; }
+    border: 0;
+    white-space: nowrap; }
     @media (min-width: 590px) {
       /* line 55, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
       .block--dfc-convert-points-giveaway-countdown .jquery-countdown {
         float: right;
         width: 50%; } }
-    /* line 69, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+    /* line 70, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
     .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_section {
       position: relative;
       display: inline-block;
@@ -883,7 +884,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       text-align: right;
       padding-right: 20px;
       width: auto; }
-      /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+      /* line 80, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
       .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_section:after {
         content: ":";
         display: block;
@@ -894,10 +895,10 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
         position: absolute;
         top: -10px;
         right: 5px; }
-      /* line 92, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+      /* line 93, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
       .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_section:last-child:after {
         display: none; }
-    /* line 99, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+    /* line 100, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
     .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_amount {
       position: relative;
       background: #ffffff;
@@ -913,7 +914,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       text-indent: 15px;
       display: inline-block;
       margin-bottom: 10px; }
-      /* line 114, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+      /* line 115, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
       .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_amount:before {
         content: "";
         display: block;

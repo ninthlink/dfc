@@ -16,11 +16,13 @@
   
   .countdown-text {
     margin-bottom: 30px;
+    text-align: center;
 
 	  @include breakpoint($bp-tab) {
       float: left;
-      width: 50%;
       margin-bottom: 0;
+      text-align: left;
+      width: 36%;
 	  }
   }
   
@@ -55,16 +57,14 @@
   .jquery-countdown {
     background: none;
     border: 0;
+    text-align: center;
     white-space: nowrap;
     
 	  @include breakpoint($bp-tab) {
       float: right;
-      width: 50%;
+      text-align: right;
+      width: 64%;
 	  }
-    
-    br {
-//      display: none;
-    }
     
     // small text
     .countdown_section {
@@ -74,8 +74,12 @@
       font-family: $sr;
       @include rem(font-size, 14px);
       text-align: right;
-      padding-right: 20px;
+      padding-right: 10px;
       width: auto;
+        
+      @include breakpoint($bp-desk) {
+        padding-right: 20px;
+      }
       
       &:after {
         content: ":";
@@ -85,11 +89,20 @@
         @include rem(font-size, 42px);
         position: absolute;
         top: -10px;
-        right: 5px;
+        right: 1px;
+        
+        @include breakpoint($bp-desk) {
+          right: 5px;
+        }
       }
       
-      &:last-child {
-      
+      &.secs {
+        padding-right: 0;
+        
+        @include breakpoint($bp-desk) {
+          padding-right: 0;
+        }
+        
         &:after {
           display: none;
         }
@@ -102,16 +115,30 @@
       background: $color-white;
       color: $color-orange;
       font-family: $dr;
-      @include rem(font-size, 42px);
-      letter-spacing: 30px;
+      @include rem(font-size, 36px);
+      letter-spacing: 15px;
       height: 56px;
       line-height: 56px;
-      width: 100px;
+      width: 60px;
       text-align: right;
-      text-indent: 15px;
+      text-indent: 7px;
       display: inline-block;
       margin-bottom: 10px;
       
+      @include breakpoint($bp-tab) {
+        @include rem(font-size, 42px);
+        letter-spacing: 23px;
+        width: 80px;
+        text-indent: 10px;
+      }
+      
+      @include breakpoint($bp-desk) {
+        letter-spacing: 30px;
+        width: 100px;
+        text-indent: 15px;
+      }
+      
+      // the line between #s
       &:before {
         content: "";
         display: block;
@@ -124,69 +151,5 @@
         margin-left: -2px;
       }
     }
-  }
-  
- }
- /*
-  @media only screen and (min-width: 320px) and (max-width: 800px){
-  
-  .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_amount {position: relative;
-      text-align: left !important;
-    color: #F1592A  !important;
-    letter-spacing: 13px !important;
-    padding: 0px 0px 0px 10px !important;
-    margin-bottom: 10px !important;
-    position: relative !important;
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
-    font-size: 22px !important;
-	line-height: 70px !important;
-	display: unset !important;
-	height: auto !important;
-line-height: auto !important;
-	  }
-	  
-	  .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_section {
-	   
-	
-  display: inline-block !important;
-    color: #999 !important;
-    font-family: "sanchezregular",Helvetica,sans-serif !important;
-    text-align: right !important;
-    padding-right: 18px !important;
-    width: auto !important;
-    font-size: 12px !important;
-  
-  }
-  }
-  @media only screen and (min-width: 801px) and (max-width: 1113px){
-  
-  .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_amount {position: relative;
-      text-align: left !important;
-    color: #F1592A  !important;
-    letter-spacing: 20px !important;
-    padding: 10px 0px 10px 11px !important;
-    margin-bottom: 10px !important;
-    position: relative !important;
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
-    font-size: 22px !important;
-	line-height: 70px !important;
-	display: unset !important;
-	height: auto !important;
-line-height: auto !important;
-	  }
-	  
-	  .block--dfc-convert-points-giveaway-countdown .jquery-countdown .countdown_section {
-	   
-	
-  display: inline-block !important;
-    color: #999 !important;
-    font-family: "sanchezregular",Helvetica,sans-serif !important;
-    text-align: right !important;
-    padding-right: 18px !important;
-    width: auto !important;
-    font-size: 22px !important;
-  
-  }
-  
-  }
-  */
+  }  
+}

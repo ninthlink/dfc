@@ -1,19 +1,20 @@
-(function ($) {
-  function dfcpointsalert( dfcpts ) {
-    console.log('dfcalert : '+ dfcpts);
-    if ( $('#better-messages-wrapper').size() == 0 ) {
-      $('<div id="better-messages-wrapper" style="display:none;overflow:visible;position:fixed;width:300px;bottom:0;right:10px;z-index:9999;"><div id="better-messages-default"><div id="messages-inner"><a class="message-close" href="#">X</a></div></div></div>').insertAfter('.l-header');
-      $('a.message-close').click(function() {
-        $('#better-messages-wrapper').fadeOut('slow');
-        return false;
-      });
-    }
-    var dfcbmsg = $('#messages-inner');
-    
-    dfcbmsg.children('.messages').remove();
-    dfcbmsg.prepend('<div class="messages messages--status">You just earned <strong>'+ dfcpts +' points.</strong></div>');
-    dfcbmsg.parent().parent().fadeIn('normal');
+function dfcpointsalert( dfcpts ) {
+  console.log('dfcalert : '+ dfcpts);
+  if ( jQuery('#better-messages-wrapper').size() == 0 ) {
+    jQuery('<div id="better-messages-wrapper" style="display:none;overflow:visible;position:fixed;width:300px;bottom:0;right:10px;z-index:9999;"><div id="better-messages-default"><div id="messages-inner"><a class="message-close" href="#">X</a></div></div></div>').insertAfter('.l-header');
+    jQuery('a.message-close').click(function() {
+      jQuery('#better-messages-wrapper').fadeOut('slow');
+      return false;
+    });
   }
+  var dfcbmsg = jQuery('#messages-inner');
+  
+  dfcbmsg.children('.messages').remove();
+  dfcbmsg.prepend('<div class="messages messages--status">You just earned <strong>'+ dfcpts +' points.</strong></div>');
+  dfcbmsg.parent().parent().fadeIn('normal');
+}
+  
+(function ($) {
   
   Drupal.behaviors.awardPointsVideo = {
     attach: function (context, settings) {
@@ -300,21 +301,29 @@
           post('addEventListener', 'finish');
           post('addEventListener', 'playProgress');
         }
-
+        
         function onPlayProgress(data, id) {
           console.log(data.seconds);
-          if (data.seconds > threshold && !awarded) {
-            console.log('awarding');
-            var nid = Drupal.settings.dfcPointsAward.vid;
-            var vcode = Drupal.settings.dfcPointsAward.vcode;
-            var url = '/dfc/points/grant/video/' + nid + '/' + vcode;
-            $.get(url, function(data) {
-              //console.log(data);
-              dfcpointsalert(10);
-            });
-            awarded = true;
+          if (data.seconds > threshold ) {
+            if ( !awarded) {
+              console.log('awarding');
+              var nid = Drupal.settings.dfcPointsAward.vid;
+              var vcode = Drupal.settings.dfcPointsAward.vcode;
+              var url = '/dfc/points/grant/video/' + nid + '/' + vcode;
+              $.get(url, function(data) {
+                //console.log(data);
+                dfcpointsalert(10);
+              });
+              awarded = true;
+            }
           }
         }
+        
+        $(window).bind('beforeunload', function() {
+          if ( !awarded ) {
+            return 'Wait! You haven\'t earned your points yet. Keep watching to earn your points.';
+          }
+        });
       }
     }
   };

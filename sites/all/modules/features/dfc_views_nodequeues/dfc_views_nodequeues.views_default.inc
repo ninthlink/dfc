@@ -549,8 +549,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="leader-board-links">
 <div class="link"><a href="#">Check Your Ranking</a></div>
-<div class="link"><a href="#">Get More Points</a></div>
-<div class="link"><a href="#">Redeem Points</a></div>
+<div class="link"><a href="/store">Redeem Points</a></div>
 </div>
 
 <div class="leaderboard-text">Remember, you don\'t have to be on the leader board to redeem your DFC points. Check your standings, points and redeem for swag, products and more!</div>';
@@ -2647,7 +2646,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image_1']['settings'] = array(
-    'image_style' => '',
+    'image_style' => '362x243',
     'image_link' => '',
   );
   /* Field: Content: Title */

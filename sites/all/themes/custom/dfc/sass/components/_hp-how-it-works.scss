@@ -89,14 +89,15 @@
 		position: relative;
 		background: $color-white;
     color: $color-black;
-		padding: 70px 50px 60px;
+		/*padding: 70px 50px 60px;*/
+		padding: 60px 0px 0px;
 
 	  @include breakpoint($bp-tab) {
-			padding: 85px 80px 155px;
+			/*padding: 85px 80px 155px;*/
 	  }
 
 	  @include breakpoint($bp-desk) {
-			padding-bottom: 80px;
+			/*padding-bottom: 80px;*/
 	  }
 		
 		.container {

@@ -150,23 +150,22 @@
 			text-transform: uppercase;
 			color: $color-orange;
 			font-family: $tgc;
-            @include rem(font-size, 25px);
+      @include rem(font-size, 25px);
+			margin-top: 22px;
 			margin-bottom: 22px;
 		}
 		
 		p {
 			margin: 0;
 			font-family: $rw;
-            @include rem(font-size, 15px);
-            font-weight: normal;
-            line-height: 1.3;
-			
-			
+      @include rem(font-size, 15px);
+      font-weight: normal;
+      line-height: 1.3;
 		}
 		
 		.step-01 {
 			 a{
-			        @include use-sprite($how-check);
+			    @include use-sprite($how-check);
 					
 					content: "";
 					display: inline-block;

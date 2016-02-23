@@ -102,7 +102,10 @@
 		.container {
 			
 		  @include breakpoint($bp-full) {
-				padding: 0 130px;
+				/*padding: 0 130px;*/
+				     padding-bottom: 72px;
+
+				
 		  }
 		}
 	
@@ -120,7 +123,7 @@
 		.step {
 			position: relative;
 			margin-bottom: 65px;
-			padding-top: 80px;
+			/*padding-top: 80px;*/
 			
 		  @include breakpoint($bp-desk) {
 				float: left;
@@ -145,46 +148,88 @@
 		h3 {
 			text-transform: uppercase;
 			color: $color-orange;
-			@include rem(font-size, 23px);
+			font-family: $tgc;
+            @include rem(font-size, 25px);
 			margin-bottom: 22px;
 		}
 		
 		p {
 			margin: 0;
-			font-family: $sr;
-			@include rem(font-size, 11px);
+			font-family: $rw;
+            @include rem(font-size, 15px);
+            font-weight: normal;
+            line-height: 1.3;
+			
+			
 		}
 		
 		.step-01 {
-			
-			&:before {
+			 a{
+			        @include use-sprite($how-check);
+					
+					content: "";
+					display: inline-block;
+					overflow: hidden;
+					
+	
+			 }
+			/*&:before {
 				@include use-sprite($how-check);
 		    margin-left: -27px;
-			}
+			}*/
 		}
 		
 		.step-02 {
+		
+		     a{
+			        @include use-sprite($how-points);
+					
+					content: "";
+					display: inline-block;
+					overflow: hidden;
+					
+	
+			 }
 			
-			&:before {
+			/*&:before {
 				@include use-sprite($how-points);
 		    margin-left: -27px;
-			}
+			}*/
 		}
 		
 		.step-03 {
 			
-			&:before {
+			 a{
+			        @include use-sprite($how-upload);
+					
+					content: "";
+					display: inline-block;
+					overflow: hidden;
+					
+	
+			 }
+			/*&:before {
 				@include use-sprite($how-upload);
 		    margin-left: -27px;
-			}
+			}*/
 		}
 		
 		.step-04 {
 			
-			&:before {
+			 a{
+			        @include use-sprite($how-perks);
+					
+					content: "";
+					display: inline-block;
+					overflow: hidden;
+					
+	
+			 }
+			 
+			/*&:before {
 				@include use-sprite($how-perks);
 		    margin-left: -25px;
-			}
+			}*/
 		}
 	}
 

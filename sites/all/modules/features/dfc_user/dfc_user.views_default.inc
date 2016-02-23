@@ -82,7 +82,7 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = 'Invite up to 10 friends or family to become members and when they do you earn <strong>500 points</strong>.';
+  $handler->display->display_options['header']['area']['content'] = 'Earn <strong>10 points</strong> for every friend or family member you invite to become a member of DFC and when they join - you earn an additional <strong>50 points</strong>.';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
@@ -153,6 +153,24 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['arguments']['inviter']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['inviter']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['inviter']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Invite: Joined */
+  $handler->display->display_options['filters']['joined']['id'] = 'joined';
+  $handler->display->display_options['filters']['joined']['table'] = 'invite';
+  $handler->display->display_options['filters']['joined']['field'] = 'joined';
+  $handler->display->display_options['filters']['joined']['operator'] = '<';
+  $handler->display->display_options['filters']['joined']['value']['value'] = '1970-01-01';
+  /* Filter criterion: Invite: Expiry */
+  $handler->display->display_options['filters']['expiry']['id'] = 'expiry';
+  $handler->display->display_options['filters']['expiry']['table'] = 'invite';
+  $handler->display->display_options['filters']['expiry']['field'] = 'expiry';
+  $handler->display->display_options['filters']['expiry']['operator'] = '>=';
+  $handler->display->display_options['filters']['expiry']['value']['value'] = '0 sec';
+  $handler->display->display_options['filters']['expiry']['value']['type'] = 'offset';
+  /* Filter criterion: Invite: Canceled */
+  $handler->display->display_options['filters']['canceled']['id'] = 'canceled';
+  $handler->display->display_options['filters']['canceled']['table'] = 'invite';
+  $handler->display->display_options['filters']['canceled']['field'] = 'canceled';
+  $handler->display->display_options['filters']['canceled']['value']['value'] = '0';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');

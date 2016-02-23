@@ -75,6 +75,7 @@ function pro_staffs_views_default_views() {
   /* Display: Single Day Character Giveaway */
   $handler = $view->new_display('block', 'Single Day Character Giveaway', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';

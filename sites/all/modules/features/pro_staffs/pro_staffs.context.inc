@@ -38,23 +38,17 @@ function pro_staffs_context_default_contexts() {
           'region' => 'content_top',
           'weight' => '-9',
         ),
-        'views-staffs-block_1' => array(
+        'views-banner_ads-block' => array(
           'module' => 'views',
-          'delta' => 'staffs-block_1',
+          'delta' => 'banner_ads-block',
           'region' => 'content_bottom',
-          'weight' => '-45',
+          'weight' => '-44',
         ),
         'views-staffs-block' => array(
           'module' => 'views',
           'delta' => 'staffs-block',
           'region' => 'content_bottom',
           'weight' => '-43',
-        ),
-        'views-banner_ads-block' => array(
-          'module' => 'views',
-          'delta' => 'banner_ads-block',
-          'region' => 'content_bottom',
-          'weight' => '-44',
         ),
         'views-offers-block_1' => array(
           'module' => 'views',

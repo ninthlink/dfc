@@ -603,11 +603,11 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-giveaway_winners-block_1' => array(
-          'module' => 'views',
-          'delta' => 'giveaway_winners-block_1',
+        'bean-prizeboard' => array(
+          'module' => 'bean',
+          'delta' => 'prizeboard',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

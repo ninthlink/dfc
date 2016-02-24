@@ -3856,6 +3856,191 @@ body.node-type-landing-page.section-news-events .block--views-news-events-block 
   body.node-type-landing-page.section-news-events .block--views-news-events-block .views-field-field-location .field-content {
     display: inline; }
 
+/* line 2, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard h2.block__title {
+  background-color: #f1592a;
+  color: #ffffff;
+  font-family: "dangerregular",Helvetica,sans-serif;
+  font-size: 1.875rem;
+  height: 58px;
+  line-height: 58px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+/* line 17, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .fishing_trip_clubhouse {
+  background-image: url("../images/clubhouse-img.jpg");
+  background-size: 600px !important;
+  width: 50%; }
+
+/* line 24, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .fab_resort {
+  background-image: url("../images/fab52-img.jpg");
+  width: 50%; }
+
+/* line 33, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard #block-bean-prizeboard .fishing_trip_clubhouse {
+  background-image: url("../images/clubhouse-img.jpg");
+  width: 100%;
+  min-height: 346px;
+  background-size: cover; }
+
+/* line 35, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  background-size: cover; }
+
+/* line 37, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc .giveaway-counter {
+  background: #373737;
+  padding: 30PX;
+  margin-top: -20px;
+  font-family: "sanchezregular",Helvetica,sans-serif;
+  min-height: 140px; }
+
+/* line 39, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .giveaway-counter h3 {
+  font-family: "sanchezregular",Helvetica,sans-serif;
+  ont-size: 20px; }
+
+/* line 40, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .giveaway-counter p {
+  font-family: "sanchezregular",Helvetica,sans-serif;
+  font-size: 20px;
+  margin-top: 2px;
+  color: #989898; }
+
+/* line 42, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc .image-2 {
+  background-image: url("../images/fab52-img.jpg") !important;
+  width: 100%;
+  min-height: 360px;
+  background-size: cover; }
+
+/* line 44, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc .fishing_trip_clubhouse {
+  width: 100%; }
+
+/* line 45, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc h2 {
+  padding-top: 110px;
+  padding-left: 11%;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 340px; }
+
+/* line 47, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 30px; }
+
+/* line 48, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win h2 {
+  font-size: 37px; }
+
+/* line 49, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win h3 {
+  color: #707070;
+  font-size: 26px;
+  font-family: "tradegothic-bold-condensed20",Georgia,serif; }
+
+/* line 50, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win p {
+  font-weight: 700;
+  margin-top: 3px; }
+
+/* line 51, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win li {
+  font-weight: 700; }
+
+/* line 52, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .how-to-win .button, #block-bean-prizeboard .Official-bottom .how-to-win .load-more a, .load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
+.block--views-media-items-block-3 ul.pager a,
+.block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
+.block--views-media-items-block-4 ul.pager a,
+.block--views-media-items-block-4 ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .button-small, #block-bean-prizeboard .Official-bottom .how-to-win body.section-user #user-media-node-form #edit-field-media-link .form-item-field-media-link-und-0:before, body.section-user #user-media-node-form #edit-field-media-link #block-bean-prizeboard .Official-bottom .how-to-win .form-item-field-media-link-und-0:before, #block-bean-prizeboard .Official-bottom .how-to-win
+body.section-users #user-media-node-form #edit-field-media-link .form-item-field-media-link-und-0:before,
+body.section-users #user-media-node-form #edit-field-media-link #block-bean-prizeboard .Official-bottom .how-to-win .form-item-field-media-link-und-0:before, #block-bean-prizeboard .Official-bottom .how-to-win body.section-user #user-media-node-form #edit-field-image .form-item-field-image-und-0:before, body.section-user #user-media-node-form #edit-field-image #block-bean-prizeboard .Official-bottom .how-to-win .form-item-field-image-und-0:before, #block-bean-prizeboard .Official-bottom .how-to-win
+body.section-users #user-media-node-form #edit-field-image .form-item-field-image-und-0:before,
+body.section-users #user-media-node-form #edit-field-image #block-bean-prizeboard .Official-bottom .how-to-win .form-item-field-image-und-0:before, #block-bean-prizeboard .Official-bottom .how-to-win body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit, body.section-user .content-bottom #block-invite-invite-add-invite-by-email #block-bean-prizeboard .Official-bottom .how-to-win .form-submit, #block-bean-prizeboard .Official-bottom .how-to-win
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email #block-bean-prizeboard .Official-bottom .how-to-win .form-submit, #block-bean-prizeboard .Official-bottom .how-to-win .button-to-gray, #block-bean-prizeboard .Official-bottom .how-to-win .form-actions input.form-submit, .form-actions #block-bean-prizeboard .Official-bottom .how-to-win input.form-submit, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .button-outline, #block-bean-prizeboard .Official-bottom .how-to-win .view-giveaway-winners ul.pager-load-more a, .view-giveaway-winners ul.pager-load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .view-resorts .pager-load-more a, .view-resorts .pager-load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .node.node--resort--teaser .field--link a, .node.node--resort--teaser .field--link #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .view-staffs .pager-load-more a, .view-staffs .pager-load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .node.node--staff--teaser .field--link a, .node.node--staff--teaser .field--link #block-bean-prizeboard .Official-bottom .how-to-win a {
+  margin-top: 60px;
+  padding: 10px 30px 10px 30px !important;
+  margin-right: 10px; }
+
+/* line 54, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 30px; }
+
+/* line 55, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort .first-h3 {
+  color: #ED604C;
+  font-family: "tradegothic-bold-condensed20",Georgia,serif;
+  font-size: 26px; }
+
+/* line 56, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort h3 {
+  color: #707070;
+  font-size: 26px;
+  font-family: "tradegothic-bold-condensed20",Georgia,serif; }
+
+/* line 57, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort p {
+  font-weight: 700;
+  margin-top: 3px; }
+
+/* line 58, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort li {
+  font-weight: 700; }
+
+/* line 59, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .Official-bottom .current-resort .button, #block-bean-prizeboard .Official-bottom .current-resort .load-more a, .load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
+.block--views-media-items-block-3 ul.pager a,
+.block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
+.block--views-media-items-block-4 ul.pager a,
+.block--views-media-items-block-4 ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager a, body.node-type-landing-page.section-news-events .block--views-news-events-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .button-small, #block-bean-prizeboard .Official-bottom .current-resort body.section-user #user-media-node-form #edit-field-media-link .form-item-field-media-link-und-0:before, body.section-user #user-media-node-form #edit-field-media-link #block-bean-prizeboard .Official-bottom .current-resort .form-item-field-media-link-und-0:before, #block-bean-prizeboard .Official-bottom .current-resort
+body.section-users #user-media-node-form #edit-field-media-link .form-item-field-media-link-und-0:before,
+body.section-users #user-media-node-form #edit-field-media-link #block-bean-prizeboard .Official-bottom .current-resort .form-item-field-media-link-und-0:before, #block-bean-prizeboard .Official-bottom .current-resort body.section-user #user-media-node-form #edit-field-image .form-item-field-image-und-0:before, body.section-user #user-media-node-form #edit-field-image #block-bean-prizeboard .Official-bottom .current-resort .form-item-field-image-und-0:before, #block-bean-prizeboard .Official-bottom .current-resort
+body.section-users #user-media-node-form #edit-field-image .form-item-field-image-und-0:before,
+body.section-users #user-media-node-form #edit-field-image #block-bean-prizeboard .Official-bottom .current-resort .form-item-field-image-und-0:before, #block-bean-prizeboard .Official-bottom .current-resort body.section-user .content-bottom #block-invite-invite-add-invite-by-email .form-submit, body.section-user .content-bottom #block-invite-invite-add-invite-by-email #block-bean-prizeboard .Official-bottom .current-resort .form-submit, #block-bean-prizeboard .Official-bottom .current-resort
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email .form-submit,
+body.section-users .content-bottom #block-invite-invite-add-invite-by-email #block-bean-prizeboard .Official-bottom .current-resort .form-submit, #block-bean-prizeboard .Official-bottom .current-resort .button-to-gray, #block-bean-prizeboard .Official-bottom .current-resort .form-actions input.form-submit, .form-actions #block-bean-prizeboard .Official-bottom .current-resort input.form-submit, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a, body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .button-outline, #block-bean-prizeboard .Official-bottom .current-resort .view-giveaway-winners ul.pager-load-more a, .view-giveaway-winners ul.pager-load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .view-resorts .pager-load-more a, .view-resorts .pager-load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .node.node--resort--teaser .field--link a, .node.node--resort--teaser .field--link #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a, body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .view-staffs .pager-load-more a, .view-staffs .pager-load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .node.node--staff--teaser .field--link a, .node.node--staff--teaser .field--link #block-bean-prizeboard .Official-bottom .current-resort a {
+  margin-top: 235px;
+  padding: 10px 30px 10px 30px !important;
+  margin-right: 10px; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* line 67, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .clubhouse-dfc {
+    width: 100% !important;
+    display: inline-block;
+    float: left;
+    background-size: cover; }
+  /* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .Official-bottom .how-to-win {
+    display: block;
+    float: left;
+    width: 100% !important;
+    padding: 30px; }
+  /* line 69, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .Official-bottom .current-resort {
+    display: block;
+    float: left;
+    width: 100% !important;
+    padding: 30px; } }
+
 /* line 3, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 body.node-type-landing-page.section-pro-staff .content-bottom {
   max-width: 1180px;

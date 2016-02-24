@@ -4,6 +4,7 @@ body.node-type-landing-page.section-pro-staff {
     @include container;
     max-width: 1080px;
     @extend .row-padding;
+	padding-top: 50px;
   }
 }
 
@@ -106,6 +107,7 @@ body.node-type-landing-page.section-pro-staff {
 }
 
 .block--bean-staff-pro-intro {
+
   background: $color-skyblue;
   color: $color-white;
   xpadding: 30px 20px;

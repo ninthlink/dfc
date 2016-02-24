@@ -52,8 +52,7 @@ body.section-users {
 	height:auto;
 	
    }
-   .group-image{margin-left:0px; float:left;}
-   .group-video{margin-left:0px; float:left;}
+   
    
    .form-textarea-wrapper textarea {
     display: block;
@@ -71,8 +70,8 @@ body.section-users {
     width: 45%;
     float: left;
 	
-    .group-image{margin-left:0px; float:left;}
-   .group-video{margin-left:108px; float:left;}
+    .group-image{margin-right:108px; float:left;}
+   .group-video{float:left;}
    }
    
    }

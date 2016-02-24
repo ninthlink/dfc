@@ -129,7 +129,7 @@ function add_giveaway_clock($date, $id = ''){
     </script>';
 }
 
-function assign_monthly_givweaway($last_month){
+function assign_monthly_giveaway($last_month){
   $prize_query = new EntityFieldQuery();
   $prize_query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'giveaway_prize')
@@ -151,13 +151,17 @@ function assign_monthly_givweaway($last_month){
       ->fields('u', array('points', 'uid'))
       ->condition('tid', 1, '=')
       ->orderBy('points', 'DESC')
-      ->range(0, 2)
+      ->range(0, 3)
       ->execute();
     $winner_num = '';
     while($giveaway_winner = $giveaway_result->fetchAssoc()){
       $prize->{'field_'.$winner_num.'winner'}[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
       $prize->{'field_'.$winner_num.'winners_points'}[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
-      $winner_num = 'second_';
+      if($winner_num == ''){
+        $winner_num = 'second_';
+      }else{
+        $winner_num = 'third_';
+      }
     }
     node_save($prize);
   }

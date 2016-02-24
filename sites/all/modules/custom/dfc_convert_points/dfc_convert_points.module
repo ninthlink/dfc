@@ -5,7 +5,13 @@
 function dfc_convert_points_block_info() {
   $blocks = array();
   $blocks['giveaway_countdown'] = array(
-    'info' => t('Giveaway Countdown'),
+    'info' => t('Monthly Giveaway Countdown'),
+  );
+  $blocks['double_giveaway_countdown'] = array(
+    'info' => t('Double Monthly Giveaway Countdown'),
+  );
+  $blocks['next_timed_giveaway_countdown'] = array(
+    'info' => t('Next Timed Giveaway Countdown'),
   );
   
   return $blocks;
@@ -18,119 +24,235 @@ function dfc_convert_points_block_view($delta='') {
   $block = array();
   
   switch($delta) {
-    case 'giveaway_countdown' :
-      $prize_query = new EntityFieldQuery();
-      $prize_query->entityCondition('entity_type', 'node')
-        ->entityCondition('bundle', 'giveaway_prize')
-        ->propertyCondition('status', NODE_PUBLISHED)
-        ->fieldCondition('field_month_and_year', 'value', date('Y-m-01 00:00:00'), '=')
-        ->range(0, 1);
-
-      $prize_result = $prize_query->execute();
-    
-    if(isset($prize_result['node'])) {
-      $prize_nids = array_keys($prize_result['node']);
-      $prize_nid = reset($prize_nids);
-      $prize = node_load($prize_nid);
-      $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('Giveaway <span>Countdown</span>').'</div>';
-      $block['content'] .= '<div class="countdown-sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
-      $block['content'] .= '<div class="countdown-prize">'.$prize->title.'</div></div>';
-
-      $block['content'] .= '<div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
-        <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
-        <script type="text/javascript">
-          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("'.date("Y/m/01", strtotime('+1 month')).'", function(event) {
-            if(event.offset.days < 1) {
-              jQuery(this).addClass("last_day")
-            }
-            jQuery(this).html(
-              event.strftime("<span class=\'countdown_section\'><span class=\'countdown_amount\'>%D</span><br>Days</span>"
-              +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%H</span><br>Hours</span>"
-              +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%M</span><br>Minutes</span>"
-              +"<span class=\'countdown_section secs\'><span class=\'countdown_amount\'>%S</span><br>Seconds</span>")
-            );
-          });
-        </script>';
+    case 'giveaway_countdown':
+      add_monthly_giveaway_clock($block);
       break;
-    }
+    case 'double_giveaway_countdown':
+      add_double_monthly_giveaway_clock($block);
+      break;
+    case 'next_timed_giveaway_countdown':
+      add_timed_giveaway_clock($block);
+      break;
   }
   
   return $block;
 }
 
+function add_monthly_giveaway_clock(&$block){
+  $prize_query = new EntityFieldQuery();
+  $prize_query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'giveaway_prize')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_month_and_year', 'value', date('Y-m-01 00:00:00'), '=')
+    ->range(0, 1);
+
+  $prize_result = $prize_query->execute();
+    
+  if(isset($prize_result['node'])) {
+    $prize_nids = array_keys($prize_result['node']);
+    $prize_nid = reset($prize_nids);
+    $prize = node_load($prize_nid);
+    $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('Giveaway <span>Countdown</span>').'</div>';
+    $block['content'] .= '<div class="countdown-sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
+    $block['content'] .= '<div class="countdown-prize">'.$prize->title.'</div></div>';
+    $block['content'] .= add_giveaway_clock(date("Y/m/01", strtotime('+1 month')));
+  }
+}
+
+function add_double_monthly_giveaway_clock(&$block){
+  $prize_query = new EntityFieldQuery();
+  $prize_query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'giveaway_prize')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_month_and_year', 'value', date('Y-m-01 00:00:00'), '=')
+    ->range(0, 1);
+
+  $prize_result = $prize_query->execute();
+    
+  if(isset($prize_result['node'])) {
+    $prize_nids = array_keys($prize_result['node']);
+    $prize_nid = reset($prize_nids);
+    $prize = node_load($prize_nid);
+    $end_date = date("Y/m/01", strtotime('+1 month'));
+    $block['content'] = '<div class="countdown-block-month-1"><div class="countdown-text-month-1">';
+    $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
+    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date)).' at 12:00am (PST)</div></div>';
+    $block['content'] .= add_giveaway_clock($end_date, 'month-1').'</div>';
+    $block['content'] .= '<div class="countdown-block-month-2"><div class="countdown-text-month-2">';
+    $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
+    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date)).' at 12:00am (PST)</div></div>';
+    $block['content'] .= add_giveaway_clock($end_date, 'month-2').'</div>';
+  }
+}
+
+function add_timed_giveaway_clock(&$block){
+  $prize_query = new EntityFieldQuery();
+  $prize_query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'timed_giveaway')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_giveaway_date', 'value', date('Y-m-d 00:00:00'), '>')
+    ->fieldOrderBy('field_giveaway_date', 'value', 'ASC')
+    ->range(0, 1);
+
+  $prize_result = $prize_query->execute();
+    
+  if(isset($prize_result['node'])) {
+    $prize_nids = array_keys($prize_result['node']);
+    $prize_nid = reset($prize_nids);
+    $prize = node_load($prize_nid);
+    watchdog('prize_date', '<pre>'.print_r($prize, TRUE).'</pre>');
+    $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('DFC Exclusive <span>Giveaways</span>').'</div>';
+    $block['content'] .= '<div class="countdown-ending-text">Current Giveaway Ends:</div>';
+    $block['content'] .= '<div class="countdown-ending-date">'.date("l, F j, Y", strtotime($prize->field_giveaway_date[LANGUAGE_NONE][0]['value'])).' at 12:00am (PST)</div></div>';
+    $block['content'] .= add_giveaway_clock($prize->field_giveaway_date[LANGUAGE_NONE][0]['value'], 'timed');
+  }
+}
+
+function add_giveaway_clock($date, $id = ''){
+  if(!empty($id)){
+    $id = '-'.$id;
+  }
+  return '<div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown'.$id.'">
+    <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown'.$id.'-span"></span></div>
+    <script type="text/javascript">
+      jQuery("#jquery-countdown-giveaway-countdown'.$id.'-span").countdown("'.$date.'", function(event) {
+        if(event.offset.days < 1) {
+          jQuery(this).addClass("last_day")
+        }
+        jQuery(this).html(
+          event.strftime("<span class=\'countdown_section\'><span class=\'countdown_amount\'>%D</span><br>Days</span>"
+            +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%H</span><br>Hours</span>"
+            +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%M</span><br>Minutes</span>"
+            +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%S</span><br>Seconds</span>")
+        );
+      });
+    </script>';
+}
+
+function assign_monthly_givweaway($last_month){
+  $prize_query = new EntityFieldQuery();
+  $prize_query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'giveaway_prize')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_month_and_year', 'value', $last_month, '=')
+    ->range(0, 1);
+
+  $prize_result = $prize_query->execute();
+  
+  if(isset($prize_result['node'])) {
+    $prize_nids = array_keys($prize_result['node']);
+    $prize_nid = reset($prize_nids);
+    $prize = node_load($prize_nid);
+    if(!empty($prize->field_winner)){
+      return;
+    }
+  
+    $giveaway_result = db_select('userpoints', 'u')
+      ->fields('u', array('points', 'uid'))
+      ->condition('tid', 1, '=')
+      ->orderBy('points', 'DESC')
+      ->range(0, 2)
+      ->execute();
+    $winner_num = '';
+    while($giveaway_winner = $giveaway_result->fetchAssoc()){
+      $prize->{'field_'.$winner_num.'winner'}[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
+      $prize->{'field_'.$winner_num.'winners_points'}[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
+      $winner_num = 'second_';
+    }
+    node_save($prize);
+  }
+}
+
+function convert_monthly_points(){
+  $num_updated = db_update('userpoints_txn')
+    ->fields(array(
+      'tid' => 0,
+    ))
+    ->condition('tid', 1, '=')
+    ->execute();
+
+  $result = db_select('userpoints', 'u')
+    ->fields('u', array('points', 'max_points', 'uid', 'tid', 'pid'))
+    ->orderBy('tid', 'ASC')
+    ->execute();
+  while($record = $result->fetchAssoc()){
+    if($record['tid'] == 0){
+      $lifetime_points[$record['uid']] = $record;
+    }elseif($record['tid'] ==1){
+      if(!isset($lifetime_points[$record['uid']])){
+        $num_updated = db_update('userpoints')
+          ->fields(array(
+            'tid' => 0,
+          ))
+        ->condition('pid', $record['pid'], '=')
+        ->execute();
+      }else{
+        $points = $lifetime_points[$record['uid']]['points'] + $record['points'];
+        $max_points = $lifetime_points[$record['uid']]['max_points'] + $record['max_points'];
+        $num_updated = db_update('userpoints')
+          ->fields(array(
+            'points' => $points,
+            'max_points' => $max_points
+          ))
+        ->condition('pid', $lifetime_points[$record['uid']]['pid'], '=')
+        ->execute();
+        $num_deleted = db_delete('userpoints')
+          ->condition('pid', $record['pid'])
+          ->execute();
+      }
+    }
+  }
+}
+
+function assign_timed_giveaways($yesterday){
+  $prize_query = new EntityFieldQuery();
+  $prize_query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'timed_giveaway')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_giveaway_date', 'value', $yesterday, '=')
+    ->range(0, 1);
+  $prize_result = $prize_query->execute();
+  
+  if(isset($prize_result['node'])) {
+    $prize_nids = array_keys($prize_result['node']);
+    $prize_nid = reset($prize_nids);
+    $prize = node_load($prize_nid);
+    if(!empty($prize->field_prize_winner)){
+      return;
+    }
+    $giveaway_result = db_select('userpoints', 'u')
+      ->fields('u', array('points', 'uid'))
+      ->condition('tid', 1, '=')
+      ->orderBy('points', 'DESC')
+      ->range(0, 1)
+      ->execute();
+    $winner_num = '';
+    $giveaway_winner = $giveaway_result->fetchAssoc();
+    $prize->field_prize_winner[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
+    $prize->field_prize_winner_points[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
+    node_save($prize);
+  }
+}
+
 function dfc_convert_points_cron(){
+  //intermittant chores: timed giveaways
+  $yesterday = date('Y-m-d 00:00:00', strtotime('-1 day'));
+  $last_timed_giveaway = variable_get('last_timed_giveaway', 0);
+  if($last_timed_giveaway <> $yesterday){
+    //find timed giveaway winner
+    assign_timed_giveaways($yesterday);
+    variable_set('last_timed_giveaway', $yesterday);
+  }
+  
+  //monthly chores: monthly giveaways and convert points
   $cur_month = date('n');
   $last_month = date('Y-m-01 00:00:00', strtotime('-1 month'));
   $points_converted_month = variable_get('points_coverted_month', 0);
   if($points_converted_month <> $cur_month){
     //find giveaway winners
-    $prize_query = new EntityFieldQuery();
-    $prize_query->entityCondition('entity_type', 'node')
-      ->entityCondition('bundle', 'giveaway_prize')
-      ->propertyCondition('status', NODE_PUBLISHED)
-      ->fieldCondition('field_month_and_year', 'value', $last_month, '=')
-      ->range(0, 1);
-
-    $prize_result = $prize_query->execute();
-    
-    if(isset($prize_result['node'])) {
-      $prize_nids = array_keys($prize_result['node']);
-      $prize_nid = reset($prize_nids);
-      $prize = node_load($prize_nid);
-  
-      $giveaway_result = db_select('userpoints', 'u')
-        ->fields('u', array('points', 'uid'))
-        ->condition('tid', 1, '=')
-        ->orderBy('points', 'DESC')
-        ->range(0, 2)
-        ->execute();
-      $winner_num = '';
-      while($giveaway_winner = $giveaway_result->fetchAssoc()){
-        $prize->{'field_'.$winner_num.'winner'}[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
-        $prize->{'field_'.$winner_num.'winners_points'}[LANGUAGE_NONE][0]['value'] = $giveaway_winner['points'];
-        $winner_num = 'second_';
-      }
-      node_save($prize);
-    }
+    assign_monthly_giveaway($last_month);
     //convert monthly points to lifetime points
-    $num_updated = db_update('userpoints_txn')
-      ->fields(array(
-        'tid' => 0,
-      ))
-      ->condition('tid', 1, '=')
-      ->execute();
-  
-    $result = db_select('userpoints', 'u')
-      ->fields('u', array('points', 'max_points', 'uid', 'tid', 'pid'))
-      ->orderBy('tid', 'ASC')
-      ->execute();
-    while($record = $result->fetchAssoc()){
-      if($record['tid'] == 0){
-        $lifetime_points[$record['uid']] = $record;
-      }elseif($record['tid'] ==1){
-        if(!isset($lifetime_points[$record['uid']])){
-          $num_updated = db_update('userpoints')
-            ->fields(array(
-              'tid' => 0,
-            ))
-          ->condition('pid', $record['pid'], '=')
-          ->execute();
-        }else{
-          $points = $lifetime_points[$record['uid']]['points'] + $record['points'];
-          $max_points = $lifetime_points[$record['uid']]['max_points'] + $record['max_points'];
-          $num_updated = db_update('userpoints')
-            ->fields(array(
-              'points' => $points,
-              'max_points' => $max_points
-            ))
-          ->condition('pid', $lifetime_points[$record['uid']]['pid'], '=')
-          ->execute();
-          $num_deleted = db_delete('userpoints')
-            ->condition('pid', $record['pid'])
-            ->execute();
-        }
-      }
-    }
+    convert_monthly_points();
     variable_set('points_coverted_month', $cur_month);
   }
 }

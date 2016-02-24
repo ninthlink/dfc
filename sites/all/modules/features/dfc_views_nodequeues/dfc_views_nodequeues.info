@@ -34,4 +34,5 @@ features[views_view][] = prizes
 features[views_view][] = related_videos
 features[views_view][] = resorts
 features[views_view][] = store
+features[views_view][] = timed_giveaways
 features[views_view][] = user_ranking

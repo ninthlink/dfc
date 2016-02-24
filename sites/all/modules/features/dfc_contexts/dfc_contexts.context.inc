@@ -609,6 +609,30 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
+        'dfc_convert_points-double_giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'double_giveaway_countdown',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'dfc_convert_points-next_timed_giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'next_timed_giveaway_countdown',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'views-timed_giveaways-block' => array(
+          'module' => 'views',
+          'delta' => 'timed_giveaways-block',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
+        'views-giveaway_winners-block_1' => array(
+          'module' => 'views',
+          'delta' => 'giveaway_winners-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-7',
+        ),
       ),
     ),
   );

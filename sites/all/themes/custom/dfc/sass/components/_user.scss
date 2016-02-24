@@ -64,16 +64,17 @@ body.section-users {
     height: 150px;
   }
 
-
+.group-image{margin-right:108px; float:left;}
+   .group-video{float:left;}
+   
   @include breakpoint($bp-desk) { 
-  .field-group-div {
+ /* .field-group-div {
     width: 45%;
     float: left;
 	
-    .group-image{margin-right:108px; float:left;}
-   .group-video{float:left;}
+
    }
-   
+   */
    }
 
     #edit-field-media-link {

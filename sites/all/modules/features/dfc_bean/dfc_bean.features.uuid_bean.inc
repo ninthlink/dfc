@@ -382,6 +382,120 @@ function dfc_bean_uuid_features_default_beans() {
     ),
   );
   $beans[] = array(
+    'label' => 'Prizeboard',
+    'description' => NULL,
+    'title' => 'PRIZEBOARD',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'prizeboard',
+    'view_mode' => 'default',
+    'created' => 1456293494,
+    'log' => '',
+    'uid' => 57,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '82897f72-4367-43eb-a688-f38cc325724b',
+    'uuid' => '6ba32d77-bdab-4682-940f-857c46307e4e',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="prizeboard-section">
+<div class="prizeboard-prize clubhouse">
+<h2>Fishing Trip &
+DFC Clubhouse</h2>
+</div>
+<div class="giveaway-counter">
+<h3>Current Giveaway Ends:
+<span>Thursday, March 31, 2016 at 11:59pm (PST)</span></h3>
+</div>
+<div class="details">
+<h2>HOW TO WIN</h2>
+<h3>All Expense Paid Fishing Trip
+For Two On The DFC Clubhouse</h3>
+6 Day Fishing Trip on DFC Clubhouse: Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 value).
+
+<h3>Eligibility:</h3>
+<ol>
+<li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+<li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+</ol>
+<a href="#">Official Rules</a>
+<a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a> 
+</div>
+</div>
+<div class="prizeboard-section">
+<div class="prizeboard-prize resorts">
+<h2>Fab 52 Resorts</h2>
+</div>
+
+<div class="giveaway-counter">
+<h3>Current Giveaway Ends:
+<span>Thursday, March 31, 2016 at 11:59pm (PST)</span></h3>
+</div>
+<div class="details">
+<h2>&nbsp;</h2>
+<h3><strong>Current Resort:</strong>
+Cabo Villas Beach Resort
+Cabo San Lucas, Mexico</h3>
+5 Nights free accomodations + a room upgrade.
+
+<h3>Eligibility:</h3>
+<ol>
+<li>Need from client.</li>
+<li>Need from client.</li>
+</ol>
+<a href="#">Official Rules</a>
+<a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a> 
+</div>
+</div>',
+          'format' => 'full_html',
+          'safe_value' => '<div class="prizeboard-section">
+<div class="prizeboard-prize clubhouse">
+<h2>Fishing Trip &amp;<br />
+DFC Clubhouse</h2>
+</div>
+<div class="giveaway-counter">
+<h3>Current Giveaway Ends:<br /><span>Thursday, March 31, 2016 at 11:59pm (PST)</span></h3>
+</div>
+<div class="details">
+<h2>HOW TO WIN</h2>
+<h3>All Expense Paid Fishing Trip<br />
+For Two On The DFC Clubhouse</h3>
+<p>6 Day Fishing Trip on DFC Clubhouse: Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 value).</p>
+<h3>Eligibility:</h3>
+<ol><li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+<li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+</ol><p><a href="#">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
+</p></div>
+</div>
+<div class="prizeboard-section">
+<div class="prizeboard-prize resorts">
+<h2>Fab 52 Resorts</h2>
+</div>
+<div class="giveaway-counter">
+<h3>Current Giveaway Ends:<br /><span>Thursday, March 31, 2016 at 11:59pm (PST)</span></h3>
+</div>
+<div class="details">
+<h2> </h2>
+<h3><strong>Current Resort:</strong><br />
+Cabo Villas Beach Resort<br />
+Cabo San Lucas, Mexico</h3>
+<p>5 Nights free accomodations + a room upgrade.</p>
+<h3>Eligibility:</h3>
+<ol><li>Need from client.</li>
+<li>Need from client.</li>
+</ol><p><a href="#">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
+</p></div>
+</div>
+',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
     'label' => 'Home - CTA',
     'description' => NULL,
     'title' => '',

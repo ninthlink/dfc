@@ -68,13 +68,13 @@ body.section-users {
    .group-video{float:left;}
    
   @include breakpoint($bp-desk) { 
- /* .field-group-div {
+ .field-group-div {
     width: 45%;
     float: left;
 	
 
    }
-   */
+   
    }
 
     #edit-field-media-link {

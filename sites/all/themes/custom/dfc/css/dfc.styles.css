@@ -6508,15 +6508,15 @@ body.section-users #user-media-node-form .form-textarea-wrapper textarea {
   body.section-users #user-media-node-form .field-group-div {
     width: 45%;
     float: left; }
-    /* line 73, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user.scss */
-    body.section-user #user-media-node-form .field-group-div .group-video,
-    body.section-users #user-media-node-form .field-group-div .group-video {
-      margin-left: 108px;
-      float: right; }
     /* line 74, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user.scss */
     body.section-user #user-media-node-form .field-group-div .group-image,
     body.section-users #user-media-node-form .field-group-div .group-image {
       margin-left: 0px;
+      float: left; }
+    /* line 75, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user.scss */
+    body.section-user #user-media-node-form .field-group-div .group-video,
+    body.section-users #user-media-node-form .field-group-div .group-video {
+      margin-left: 108px;
       float: left; } }
 
 /* line 80, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_user.scss */

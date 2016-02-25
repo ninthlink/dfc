@@ -1914,7 +1914,7 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
   .block--bean-home-how-it-works .how-cta {
     position: relative;
     background: #ebebeb;
-    padding: 50px 28px 40px;
+    padding: 50px 28px 0px;
     text-transform: uppercase; }
     /* line 272, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
     .block--bean-home-how-it-works .how-cta .how-cta-title {

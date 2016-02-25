@@ -2339,7 +2339,7 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
       /* line 103, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
       .block--bean-home-how-it-works .how-steps .container, .block--bean-home-how-it-works .how-steps .l-main, .block--bean-home-how-it-works .how-steps .tabs.tabs--primary, .block--bean-home-how-it-works .how-steps .messages, .block--bean-home-how-it-works .how-steps .block--views-offers-block .inner, .block--views-offers-block .block--bean-home-how-it-works .how-steps .inner, .block--bean-home-how-it-works .how-steps .block--views-offers-block-1 .inner, .block--views-offers-block-1 .block--bean-home-how-it-works .how-steps .inner, .block--bean-home-how-it-works .how-steps .block--views-partners-block .inner, .block--views-partners-block .block--bean-home-how-it-works .how-steps .inner {
         /*padding: 0 130px;*/
-        padding-bottom: 72px; } }
+        padding-bottom: 35px; } }
     /* line 113, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
     .block--bean-home-how-it-works .how-steps:before {
       position: absolute;
@@ -2473,12 +2473,12 @@ body.front .footer-top > .container, body.front .footer-top > .l-main, body.fron
   .block--bean-home-how-it-works .how-cta {
     position: relative;
     background: #ebebeb;
-    padding: 50px 28px 40px;
+    padding: 50px 28px 0px;
     text-transform: uppercase; }
     @media (min-width: 960px) {
       /* line 236, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
       .block--bean-home-how-it-works .how-cta {
-        padding: 50px 0 40px; } }
+        /*padding: 50px 0 40px;*/ } }
     @media (min-width: 960px) {
       /* line 246, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_hp-how-it-works.scss */
       .block--bean-home-how-it-works .how-cta:before {

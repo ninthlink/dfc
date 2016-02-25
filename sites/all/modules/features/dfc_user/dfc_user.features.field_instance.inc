@@ -10,155 +10,183 @@
 function dfc_user_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-user_media-field_image'.
-  $field_instances['node-user_media-field_image'] = array(
-    'bundle' => 'user_media',
+  // Exported field_instance: 'user-user-field_city_state'.
+  $field_instances['user-user-field_city_state'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 3,
       ),
     ),
-    'entity_type' => 'node',
+    'entity_type' => 'user',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_image',
-    'label' => 'Image',
+    'field_name' => 'field_city_state',
+    'label' => 'City, State',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => 0,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'size' => 60,
       ),
-      'type' => 'image_image',
+      'type' => 'text_textfield',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'user-user-field_first_name'.
+  $field_instances['user-user-field_first_name'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'user',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_first_name',
+    'label' => 'First Name',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
       'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-user_media-field_media_link'.
-  $field_instances['node-user_media-field_media_link'] = array(
-    'bundle' => 'user_media',
+  // Exported field_instance: 'user-user-field_last_name'.
+  $field_instances['user-user-field_last_name'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 2,
       ),
     ),
-    'entity_type' => 'node',
+    'entity_type' => 'user',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_media_link',
-    'label' => 'Video',
+    'field_name' => 'field_last_name',
+    'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'mov',
-      'max_filesize' => '',
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => 0,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'text',
       'settings' => array(
-        'progress_indicator' => 'throbber',
+        'size' => 60,
       ),
-      'type' => 'file_generic',
+      'type' => 'text_textfield',
       'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-user_media-field_media_type'.
-  $field_instances['node-user_media-field_media_type'] = array(
-    'bundle' => 'user_media',
+  // Exported field_instance: 'user-user-field_send_special_offers'.
+  $field_instances['user-user-field_send_special_offers'] = array(
+    'bundle' => 'user',
     'default_value' => array(
       0 => array(
-        'tid' => 3,
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '<a href="/privacy-policy">View Privacy Policy</a>',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'user',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_send_special_offers',
+    'label' => 'Send emails with DFC special promotions and/or offers',
+    'required' => 1,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => 1,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'user-user-field_share_email_with_sponsors'.
+  $field_instances['user-user-field_share_email_with_sponsors'] = array(
+    'bundle' => 'user',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
       ),
     ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'inline',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'list_default',
         'weight' => 3,
       ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
     ),
-    'entity_type' => 'node',
+    'entity_type' => 'user',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_media_type',
-    'label' => 'Media Type',
-    'required' => 0,
+    'field_name' => 'field_share_email_with_sponsors',
+    'label' => 'Share my email with select DFC sponsors',
+    'required' => 1,
     'settings' => array(
       'membership_entity_join_form' => FALSE,
       'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
+      'user_register_form' => 1,
     ),
     'widget' => array(
       'active' => 1,
@@ -169,56 +197,14 @@ function dfc_user_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-user_media-field_ugc_moderation'.
-  $field_instances['node-user_media-field_ugc_moderation'] = array(
-    'bundle' => 'user_media',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_ugc_moderation',
-    'label' => 'Moderation Status',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Image');
-  t('Media Type');
-  t('Moderation Status');
-  t('Video');
+  t('<a href="/privacy-policy">View Privacy Policy</a>');
+  t('City, State');
+  t('First Name');
+  t('Last Name');
+  t('Send emails with DFC special promotions and/or offers');
+  t('Share my email with select DFC sponsors');
 
   return $field_instances;
 }

@@ -10,6 +10,479 @@
 function dfc_content_types_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'commerce_product-product-commerce_price'.
+  $field_instances['commerce_product-product-commerce_price'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'commerce_line_item_display' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'commerce_line_item_token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'line_item' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'field_name' => 'commerce_price',
+    'label' => 'Price',
+    'required' => TRUE,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'commerce_price',
+      'settings' => array(
+        'currency_code' => 'default',
+      ),
+      'type' => 'commerce_price_full',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-field_product_color'.
+  $field_instances['commerce_product-product-field_product_color'] = array(
+    'bundle' => 'product',
+    'commerce_cart_settings' => array(
+      'attribute_field' => 1,
+      'attribute_widget' => 'commerce_fancy_attributes',
+      'attribute_widget_title' => 'Color',
+    ),
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 5,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_color',
+    'label' => 'Color',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'commerce_product-product-field_product_dimensions'.
+  $field_instances['commerce_product-product-field_product_dimensions'] = array(
+    'bundle' => 'product',
+    'default_value' => array(
+      0 => array(
+        'length' => 10,
+        'width' => 10,
+        'height' => 10,
+        'unit' => 'in',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'physical',
+        'settings' => array(),
+        'type' => 'physical_dimensions_formatted',
+        'weight' => 7,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_dimensions',
+    'label' => 'Product Dimensions',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'physical',
+      'settings' => array(
+        'default_unit' => 'in',
+        'unit_select_list' => 1,
+      ),
+      'type' => 'physical_dimensions_textfields',
+      'weight' => 42,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-field_product_image'.
+  $field_instances['commerce_product-product-field_product_image'] = array(
+    'bundle' => 'product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_image',
+    'label' => 'Product Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'product-images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 36,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-field_product_size'.
+  $field_instances['commerce_product-product-field_product_size'] = array(
+    'bundle' => 'product',
+    'commerce_cart_settings' => array(
+      'attribute_field' => 1,
+      'attribute_widget' => 'select',
+      'attribute_widget_title' => 'Size',
+    ),
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 6,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_size',
+    'label' => 'Size',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-field_product_weight'.
+  $field_instances['commerce_product-product-field_product_weight'] = array(
+    'bundle' => 'product',
+    'default_value' => array(
+      0 => array(
+        'weight' => 3,
+        'unit' => 'lb',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'physical',
+        'settings' => array(),
+        'type' => 'physical_weight_formatted',
+        'weight' => 8,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_weight',
+    'label' => 'Product Weight',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'physical',
+      'settings' => array(
+        'default_unit' => 'lb',
+        'unit_select_list' => 1,
+      ),
+      'type' => 'physical_weight_textfield',
+      'weight' => 44,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-title_field'.
+  $field_instances['commerce_product-product-title_field'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'membership_entity_commerce' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'fences_wrapper' => 'div',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => 1,
+    'settings' => array(
+      'hide_label' => array(
+        'entity' => 0,
+        'page' => 'page',
+      ),
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Exported field_instance: 'node-advertisement-field_ad_link'.
   $field_instances['node-advertisement-field_ad_link'] = array(
     'bundle' => 'advertisement',
@@ -2431,56 +2904,6 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_display-field_product_dimensions'.
-  $field_instances['node-product_display-field_product_dimensions'] = array(
-    'bundle' => 'product_display',
-    'default_value' => array(
-      0 => array(
-        'length' => 12,
-        'width' => 12,
-        'height' => 12,
-        'unit' => 'in',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'physical',
-        'settings' => array(),
-        'type' => 'physical_dimensions_formatted',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_product_dimensions',
-    'label' => 'Product Dimensions',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'physical',
-      'settings' => array(
-        'default_unit' => 'in',
-        'unit_select_list' => 1,
-      ),
-      'type' => 'physical_dimensions_textfields',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-product_display-field_product_related'.
   $field_instances['node-product_display-field_product_related'] = array(
     'bundle' => 'product_display',
@@ -2524,54 +2947,6 @@ function dfc_content_types_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-product_display-field_product_weight'.
-  $field_instances['node-product_display-field_product_weight'] = array(
-    'bundle' => 'product_display',
-    'default_value' => array(
-      0 => array(
-        'weight' => 3,
-        'unit' => 'lb',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'physical',
-        'settings' => array(),
-        'type' => 'physical_weight_formatted',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_product_weight',
-    'label' => 'Product Weight',
-    'required' => 0,
-    'settings' => array(
-      'membership_entity_join_form' => FALSE,
-      'membership_entity_term_renew_form' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'physical',
-      'settings' => array(
-        'default_unit' => 'lb',
-        'unit_select_list' => 1,
-      ),
-      'type' => 'physical_weight_textfield',
-      'weight' => 33,
     ),
   );
 
@@ -3872,11 +4247,56 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-color-field_color'.
+  $field_instances['taxonomy_term-color-field_color'] = array(
+    'bundle' => 'color',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'add_to_cart_form' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_fancy_attributes',
+        'settings' => array(),
+        'type' => 'commerce_fancy_attributes_color',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_color',
+    'label' => 'Color',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Advertisement');
   t('Banner Image');
   t('Body');
+  t('Color');
   t('Date');
   t('Description');
   t('Enter a comma-separated list of words to describe your content.');
@@ -3901,6 +4321,7 @@ function dfc_content_types_field_default_field_instances() {
   t('Prize Winner');
   t('Prize Winner Points');
   t('Product Dimensions');
+  t('Product Image');
   t('Product Weight');
   t('Product/Sponsor Name');
   t('Products');
@@ -3915,6 +4336,7 @@ function dfc_content_types_field_default_field_instances() {
   t('Second Referral Winner\'s Points');
   t('Second Winner');
   t('Second Winner\'s points');
+  t('Size');
   t('Sponsor');
   t('Tags');
   t('The optimal size of image should be uploaded at 394 x 392.');

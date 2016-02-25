@@ -548,7 +548,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="leader-board-links">
-<div class="link"><a href="#">Check Your Ranking</a></div>
+<div class="link"><a href="#top">Check Your Ranking</a></div>
 <div class="link"><a href="/store">Redeem Points</a></div>
 </div>
 

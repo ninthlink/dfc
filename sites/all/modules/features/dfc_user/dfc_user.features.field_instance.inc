@@ -47,6 +47,43 @@ function dfc_user_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_club_id'.
+  $field_instances['user-user-field_club_id'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'user',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_club_id',
+    'label' => 'Club ID',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_first_name'.
   $field_instances['user-user-field_first_name'] = array(
     'bundle' => 'user',
@@ -155,7 +192,7 @@ function dfc_user_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -193,7 +230,7 @@ function dfc_user_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -201,6 +238,7 @@ function dfc_user_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('<a href="/privacy-policy">View Privacy Policy</a>');
   t('City, State');
+  t('Club ID');
   t('First Name');
   t('Last Name');
   t('Send emails with DFC special promotions and/or offers');

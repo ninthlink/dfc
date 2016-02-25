@@ -2849,7 +2849,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Giveaway date (field_giveaway_date) */
+  /* Sort criterion: Broken/missing handler */
   $handler->display->display_options['sorts']['field_giveaway_date_value']['id'] = 'field_giveaway_date_value';
   $handler->display->display_options['sorts']['field_giveaway_date_value']['table'] = 'field_data_field_giveaway_date';
   $handler->display->display_options['sorts']['field_giveaway_date_value']['field'] = 'field_giveaway_date_value';
@@ -2867,12 +2867,11 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'timed_giveaway' => 'timed_giveaway',
   );
-  /* Filter criterion: Content: Giveaway date (field_giveaway_date) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_giveaway_date_value']['id'] = 'field_giveaway_date_value';
   $handler->display->display_options['filters']['field_giveaway_date_value']['table'] = 'field_data_field_giveaway_date';
   $handler->display->display_options['filters']['field_giveaway_date_value']['field'] = 'field_giveaway_date_value';
   $handler->display->display_options['filters']['field_giveaway_date_value']['operator'] = '>';
-  $handler->display->display_options['filters']['field_giveaway_date_value']['default_date'] = 'now';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -3040,31 +3039,29 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: User: Name */
-  $handler->display->display_options['filters']['uid']['id'] = 'uid';
-  $handler->display->display_options['filters']['uid']['table'] = 'users';
-  $handler->display->display_options['filters']['uid']['field'] = 'uid';
-  $handler->display->display_options['filters']['uid']['value'] = '';
-  $handler->display->display_options['filters']['uid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['uid']['expose']['operator_id'] = 'uid_op';
-  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Enter name to check ranking';
-  $handler->display->display_options['filters']['uid']['expose']['operator'] = 'uid_op';
-  $handler->display->display_options['filters']['uid']['expose']['identifier'] = 'uid';
-  $handler->display->display_options['filters']['uid']['expose']['remember_roles'] = array(
-    2 => 0,
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'contains';
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Enter name to check ranking';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
+    2 => '2',
     1 => 0,
     3 => 0,
+    8 => 0,
     4 => 0,
     5 => 0,
     6 => 0,
+    7 => 0,
   );
-  $handler->display->display_options['filters']['uid']['group_info']['label'] = 'Name';
-  $handler->display->display_options['filters']['uid']['group_info']['identifier'] = 'uid';
-  $handler->display->display_options['filters']['uid']['group_info']['remember'] = FALSE;
-  $handler->display->display_options['filters']['uid']['group_info']['group_items'] = array(
-    1 => array(),
-    2 => array(),
-    3 => array(),
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+    'field_first_name' => 'field_first_name',
+    'field_last_name' => 'field_last_name',
   );
 
   /* Display: Lifetime Block */

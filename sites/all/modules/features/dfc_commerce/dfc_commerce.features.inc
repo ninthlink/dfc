@@ -144,6 +144,29 @@ function dfc_commerce_commerce_flat_rate_default_services() {
 }
 
 /**
+ * Implements hook_commerce_tax_default_rates().
+ */
+function dfc_commerce_commerce_tax_default_rates() {
+  $items = array(
+    'california_sales_tax' => array(
+      'name' => 'california_sales_tax',
+      'display_title' => 'California sales tax',
+      'description' => '',
+      'rate' => '.08',
+      'type' => 'sales_tax',
+      'rules_component' => 'commerce_tax_rate_california_sales_tax',
+      'default_rules_component' => 1,
+      'price_component' => 'tax|california_sales_tax',
+      'calculation_callback' => 'commerce_tax_rate_calculate',
+      'module' => 'commerce_tax_ui',
+      'title' => 'California sales tax',
+      'admin_list' => TRUE,
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implements hook_commerce_tax_default_types().
  */
 function dfc_commerce_commerce_tax_default_types() {

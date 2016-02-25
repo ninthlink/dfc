@@ -114,8 +114,36 @@ body.node-type-landing-page.section-membership {
           bottom: auto;
           top: 0;
         }
+		
+		 @include breakpoint(min 320px) {
+          @include breakpoint(max 959px) {
+		      height: auto !important;
+    max-height: 100%;
+    right: auto;
+    bottom: 0px;
+    left: auto;
+    margin-top: 14px;
+    position: relative;
+    width: 30%;
+		  
+		  }
+        }
+		
+		
       }
+	 /* @media width and (min-width:320px) and (max-width:959px) {
 	
+	 iframe {
+    height: auto !important;
+    max-height: 100%;
+    right: auto;
+    bottom: 0px;
+    left: auto;
+    margin-top: 14px;
+    position: relative;
+    width: 30%;
+}
+	}*/
 	    .video-caption {
       margin: 0 0 0 -152px;
       width: 304px;

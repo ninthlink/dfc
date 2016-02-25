@@ -71,6 +71,18 @@
           padding: 0;
           width: 80%;
           max-width: 80%;
+          
+          &#edit-uid,
+          &#edit-combine {
+            background: none !important;
+            border: none;
+            font-family: $dr;
+            letter-spacing: 2px;
+            line-height: 22px;
+            max-width: 100%;
+            padding: 0 6px;
+            text-transform: uppercase;
+          }
         }
         
         .form-submit {
@@ -88,19 +100,6 @@
     }
   }
   
-}
-#edit-uid {
-  background: none;
-  border: none;
-  font-family: $dr;
-  letter-spacing: 2px;
-  line-height: 22px;
-  max-width: 100%;
-  padding: 0 6px;
-  text-transform: uppercase;
-}
-html.js .form-autocomplete#edit-uid {
-  background: none;
 }
 
 .view-user-ranking {

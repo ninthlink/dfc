@@ -24,7 +24,18 @@
 */
 
 ?>
-<?php if($type = $row->_field_data['nid']['entity']->type):?>
+<?php
+$type = false;
+if(isset( $row->_field_data ) ) {
+  if(isset( $row->_field_data['nid'] ) ) {
+    if(isset( $row->_field_data['nid']['entity'] ) ) {
+      if(isset( $row->_field_data['nid']['entity']->type ) ) {
+        $type = $row->_field_data['nid']['entity']->type;
+      }
+    }
+  }
+}
+if ( $type !== false ): ?>
 <div class="views-item-<?php print str_replace('_', '-', $type);?>">
 <?php endif;?>
 
@@ -39,6 +50,6 @@
   <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
 
-<?php if($type):?>
+<?php if( $type !== false ):?>
   </div>
 <?php endif;?>

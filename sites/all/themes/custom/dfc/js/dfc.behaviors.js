@@ -57,22 +57,24 @@
             }
           });
           // add togglers
-          $('.content-bottom').append('<div class="leadertog"><a href="#" class="lifetime">Lifetime Points</a><a href="#" class="monthly active">Monthly Points</a></div>')
-            .find('.leadertog a.lifetime').click(function() {
-              if ( $(this).hasClass('active') == false ) {
-                $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').hide();
-                $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').show();
-                $(this).addClass('active').next().removeClass('active');
-              }
-              return false;
-            }).next().click(function() {
-              if ( $(this).hasClass('active') == false ) {
-                $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').show();
-                $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').hide();
-                $(this).addClass('active').prev().removeClass('active');
-              }
-              return false;
-            });
+          if ( $('.content-bottom .leadertog').size() == 0 ) {
+            $('.content-bottom').prepend('<a name="top" />').append('<div class="leadertog"><a href="#" class="lifetime">Lifetime Points</a><a href="#" class="monthly active">Monthly Points</a></div>')
+              .find('.leadertog a.lifetime').click(function() {
+                if ( $(this).hasClass('active') == false ) {
+                  $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').hide();
+                  $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').show();
+                  $(this).addClass('active').next().removeClass('active');
+                }
+                return false;
+              }).next().click(function() {
+                if ( $(this).hasClass('active') == false ) {
+                  $('.block--views-user-ranking-block-3, .block--views-leaderboards-block-1').show();
+                  $('.block--views-user-ranking-block-1, .block--views-leaderboards-block-2').hide();
+                  $(this).addClass('active').prev().removeClass('active');
+                }
+                return false;
+              });
+          }
         }
       }
       

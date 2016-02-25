@@ -3949,7 +3949,7 @@ body.node-type-landing-page.section-news-events .block--views-news-events-block 
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-left: 50px;
+  padding-left: 32px;
   text-transform: uppercase; }
 
 /* line 18, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
@@ -3970,44 +3970,48 @@ body.node-type-landing-page.section-news-events .block--views-news-events-block 
   width: 100%;
   background-size: cover; }
 
-/* line 41, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 40, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc {
   width: 50%;
   display: inline-block;
   float: left;
   background-size: cover; }
 
-/* line 43, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 42, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .giveaway-counter {
   background: #373737 none repeat scroll 0% 0%;
   padding: 40px 0px 0px 30px;
   margin-top: -20px;
   min-height: 206px; }
 
-/* line 49, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 46, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+#block-bean-prizeboard .clubhouse-dfc .feb-52 {
+  padding-top: 136px; }
+
+/* line 48, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter h3 {
   font-family: Rockwell;
   font-size: 20px; }
 
-/* line 50, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 49, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter p {
   font-family: Rockwell;
   font-size: 20px;
   margin-top: 2px;
   color: #989898; }
 
-/* line 52, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 51, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .image-2 {
   background-image: url("../images/fab52-img.jpg") !important;
   width: 100%;
   min-height: 360px;
   background-size: cover; }
 
-/* line 54, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 53, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .fishing_trip_clubhouse {
   width: 100%; }
 
-/* line 55, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 54, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc h2 {
   padding-top: 121px;
   margin-left: 33%;
@@ -4019,48 +4023,49 @@ body.node-type-landing-page.section-news-events .block--views-news-events-block 
   padding-bottom: 7px;
   font-family: "dangerregular",Helvetica,sans-serif; }
 
-/* line 67, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 66, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win {
   display: block;
   float: left;
   width: 50%;
   padding: 57px 0px 0px 30px; }
 
-/* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 67, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win h2 {
   font-size: 37px; }
 
-/* line 69, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win h3 {
   color: #707070;
   font-size: 25px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif; }
 
-/* line 70, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 69, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win p {
   margin-top: 3px;
   font-family: Rockwell-Bold;
   font-size: 16px;
   font-weight: bold; }
 
-/* line 71, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 70, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win li {
   font-family: Rockwell-Light;
   font-weight: light;
   font-size: 14.5px;
   margin-left: -22px; }
 
-/* line 72, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 71, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win a {
   font-family: Rockwell-Light;
   font-weight: light;
-  font-size: 14.5px; }
+  font-size: 14.5px;
+  font-weight: 100 !important; }
 
-/* line 73, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 72, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win a:hover {
   color: #fff; }
 
-/* line 74, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 73, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win .button, #block-bean-prizeboard .Official-bottom .how-to-win .load-more a, .load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
 .block--views-media-items-block-3 ul.pager a,
 .block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
@@ -4076,45 +4081,48 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   padding: 10px 30px 10px 30px !important;
   margin-right: 10px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif;
-  font-size: 15.5 !important; }
+  font-size: 15.5 !important;
+  height: 51;
+  width: 228px; }
 
-/* line 76, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 75, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort {
   display: block;
   float: left;
   width: 50%;
   padding: 63px 0px 0px 30px; }
 
-/* line 77, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 76, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort .first-h3 {
   color: #ED604C;
   font-family: "tradegothic-bold-condensed20",Georgia,serif;
   font-size: 26px;
   line-height: 1.1; }
 
-/* line 78, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 77, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort h3 {
   color: #707070;
   font-size: 26px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif; }
 
-/* line 80, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 79, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort li {
   font-family: Rockwell-Light;
   font-weight: 100 !important;
   font-size: 14.5px;
   margin-left: -22px; }
 
-/* line 81, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 80, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .current-resort a {
   font-family: Rockwell-Light;
-  font-size: 14.5px; }
+  font-size: 14.5px;
+  font-weight: 100 !important; }
 
-/* line 82, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 81, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .current-resort a:hover {
   color: #fff; }
 
-/* line 84, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 83, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort p {
   margin-top: 3px;
   font-family: Rockwell;
@@ -4122,11 +4130,11 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   font-weight: bold;
   padding-bottom: 21px; }
 
-/* line 85, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 84, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort li {
   font-weight: 700; }
 
-/* line 86, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 85, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort .button, #block-bean-prizeboard .Official-bottom .current-resort .load-more a, .load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
 .block--views-media-items-block-3 ul.pager a,
 .block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
@@ -4142,22 +4150,24 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   padding: 10px 30px 10px 30px !important;
   margin-right: 10px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif;
-  font-size: 15.5 !important; }
+  font-size: 15.5 !important;
+  height: 51;
+  width: 228px; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  /* line 94, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 93, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .clubhouse-dfc {
     width: 100% !important;
     display: inline-block;
     float: left;
     background-size: cover; }
-  /* line 95, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 94, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .how-to-win {
     display: block;
     float: left;
     width: 100% !important;
     padding: 30px; }
-  /* line 96, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 95, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .current-resort {
     display: block;
     float: left;

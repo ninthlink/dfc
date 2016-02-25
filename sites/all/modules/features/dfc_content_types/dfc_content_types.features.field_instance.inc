@@ -2431,6 +2431,56 @@ function dfc_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product_display-field_product_dimensions'.
+  $field_instances['node-product_display-field_product_dimensions'] = array(
+    'bundle' => 'product_display',
+    'default_value' => array(
+      0 => array(
+        'length' => 12,
+        'width' => 12,
+        'height' => 12,
+        'unit' => 'in',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'physical',
+        'settings' => array(),
+        'type' => 'physical_dimensions_formatted',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_dimensions',
+    'label' => 'Product Dimensions',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'physical',
+      'settings' => array(
+        'default_unit' => 'in',
+        'unit_select_list' => 1,
+      ),
+      'type' => 'physical_dimensions_textfields',
+      'weight' => 32,
+    ),
+  );
+
   // Exported field_instance: 'node-product_display-field_product_related'.
   $field_instances['node-product_display-field_product_related'] = array(
     'bundle' => 'product_display',
@@ -2474,6 +2524,54 @@ function dfc_content_types_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-product_display-field_product_weight'.
+  $field_instances['node-product_display-field_product_weight'] = array(
+    'bundle' => 'product_display',
+    'default_value' => array(
+      0 => array(
+        'weight' => 3,
+        'unit' => 'lb',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'physical',
+        'settings' => array(),
+        'type' => 'physical_weight_formatted',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_product_weight',
+    'label' => 'Product Weight',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'physical',
+      'settings' => array(
+        'default_unit' => 'lb',
+        'unit_select_list' => 1,
+      ),
+      'type' => 'physical_weight_textfield',
+      'weight' => 33,
     ),
   );
 
@@ -3802,6 +3900,8 @@ function dfc_content_types_field_default_field_instances() {
   t('Prize Image');
   t('Prize Winner');
   t('Prize Winner Points');
+  t('Product Dimensions');
+  t('Product Weight');
   t('Product/Sponsor Name');
   t('Products');
   t('Referral Winner');

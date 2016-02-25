@@ -565,6 +565,21 @@ function dfc_content_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_product_dimensions'.
+  $field_bases['field_product_dimensions'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_product_dimensions',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'physical',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'physical_dimensions',
+  );
+
   // Exported field_base: 'field_product_related'.
   $field_bases['field_product_related'] = array(
     'active' => 1,
@@ -619,6 +634,25 @@ function dfc_content_types_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_product_weight'.
+  $field_bases['field_product_weight'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_product_weight',
+    'indexes' => array(
+      'weight' => array(
+        0 => 'weight',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'physical',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'physical_weight',
   );
 
   // Exported field_base: 'field_products'.

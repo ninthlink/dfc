@@ -17,7 +17,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
       'price_component' => 'flat_rate_101_200',
-      'weight' => 0,
+      'weight' => 1,
       'callbacks' => array(
         'rate' => 'commerce_flat_rate_service_rate_order',
         'details_form' => '101_200_details_form',
@@ -43,7 +43,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
       'price_component' => 'flat_rate_1_100',
-      'weight' => 1,
+      'weight' => 2,
       'callbacks' => array(
         'rate' => 'commerce_flat_rate_service_rate_order',
         'details_form' => '1_100_details_form',
@@ -69,7 +69,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
       'price_component' => 'flat_rate_201_300',
-      'weight' => 2,
+      'weight' => 3,
       'callbacks' => array(
         'rate' => 'commerce_flat_rate_service_rate_order',
         'details_form' => '201_300_details_form',
@@ -95,7 +95,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
       'price_component' => 'flat_rate_301_400',
-      'weight' => 3,
+      'weight' => 4,
       'callbacks' => array(
         'rate' => 'commerce_flat_rate_service_rate_order',
         'details_form' => '301_400_details_form',
@@ -121,7 +121,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
       'price_component' => 'flat_rate_401_500',
-      'weight' => 4,
+      'weight' => 5,
       'callbacks' => array(
         'rate' => 'commerce_flat_rate_service_rate_order',
         'details_form' => '401_500_details_form',

@@ -12,7 +12,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
     '101_200' => array(
       'name' => '101_200',
       'base' => '101_200',
-      'display_title' => '$101 - $200',
+      'display_title' => 'Flat rate for $101 - $200',
       'description' => '',
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
@@ -38,7 +38,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
     '1_100' => array(
       'name' => '1_100',
       'base' => '1_100',
-      'display_title' => '$1 - $100',
+      'display_title' => 'Flat rate for $1 - $100',
       'description' => '',
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
@@ -64,7 +64,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
     '201_300' => array(
       'name' => '201_300',
       'base' => '201_300',
-      'display_title' => '$201 - $300',
+      'display_title' => 'Flat rate for $201 - $300',
       'description' => '',
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
@@ -90,7 +90,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
     '301_400' => array(
       'name' => '301_400',
       'base' => '301_400',
-      'display_title' => '$301 - $400',
+      'display_title' => 'Flat rate for $301 - $400',
       'description' => '',
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,
@@ -116,7 +116,7 @@ function dfc_commerce_commerce_flat_rate_default_services() {
     '401_500' => array(
       'name' => '401_500',
       'base' => '401_500',
-      'display_title' => '$401 - $500',
+      'display_title' => 'Flat rate for $401 - $500',
       'description' => '',
       'shipping_method' => 'flat_rate',
       'rules_component' => TRUE,

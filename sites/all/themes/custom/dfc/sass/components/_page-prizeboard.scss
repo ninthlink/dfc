@@ -11,6 +11,7 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+	padding-left:50px;
     text-transform: uppercase;
    }
    
@@ -19,6 +20,7 @@
       background-image: url("../images/clubhouse-img.jpg");
 	  background-size: 600px !important;
 	  width:50%;
+	  height: 368px; 
     }
 	
 	.fab_resort{
@@ -30,33 +32,58 @@
 	}
   
 
-  #block-bean-prizeboard .fishing_trip_clubhouse {    background-image: url("../images/clubhouse-img.jpg");
-	    width: 100%;    min-height: 346px;    background-size: cover;}
+  #block-bean-prizeboard .fishing_trip_clubhouse {    
+  background-image: url("../images/clubhouse-img.jpg");
+  
+  width: 100%;    
+  background-size: cover;
+  }
 .clubhouse-dfc {    width: 50%;    display: inline-block;    float: left;background-size: cover;}
 
-.clubhouse-dfc .giveaway-counter {    background: #373737;    padding: 30PX;    margin-top: -20px;	font-family:"sanchezregular",Helvetica,sans-serif;	min-height: 140px;}
+.clubhouse-dfc .giveaway-counter {    background: #373737 none repeat scroll 0% 0%;
+padding: 40px 0px 0px 30px;
+margin-top: -20px;
 
-.giveaway-counter h3{font-family:"sanchezregular",Helvetica,sans-serif;ont-size: 20px;}
-.giveaway-counter p{font-family:"sanchezregular",Helvetica,sans-serif;font-size: 20px;margin-top: 2px; color:#989898; }
+min-height: 206px;}
+
+.giveaway-counter h3{font-family: Rockwell;font-size: 20px;}
+.giveaway-counter p{font-family: Rockwell; font-size: 20px; margin-top: 2px; color:#989898; }
 
 .clubhouse-dfc .image-2{background-image: url("../images/fab52-img.jpg") !important;width: 100%;    min-height: 360px;    background-size: cover;}
 
 .clubhouse-dfc .fishing_trip_clubhouse{width:100%;}
-.clubhouse-dfc h2 {    padding-top: 110px;padding-left: 11%;font-size: 50px;text-align: center;text-transform:uppercase;min-height: 340px;}
+.clubhouse-dfc h2 {  padding-top: 121px;
+margin-left: 33%;
+font-size: 37px;
+text-align: center;
+text-transform: uppercase;
+width: 34.1%;
+border-bottom: 12px solid #FD6631;
+padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
   
-.Official-bottom .how-to-win {    display: block;    float: left;    width: 50%;    padding: 30px;}
+  
+  
+  
+.Official-bottom .how-to-win {    display: block;    float: left;    width: 50%;    padding: 57px 0px 0px 30px;}
 .Official-bottom .how-to-win  h2{font-size: 37px;}
-.Official-bottom .how-to-win  h3{color:#707070; font-size:26px; font-family:"tradegothic-bold-condensed20",Georgia,serif;}
-.Official-bottom .how-to-win  p{font-weight: 700;margin-top: 3px;}
-.Official-bottom .how-to-win  li {    font-weight: 700;}
-.Official-bottom .how-to-win  .button {    margin-top: 60px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px;}
+.Official-bottom .how-to-win  h3{color:#707070; font-size:25px; font-family:"tradegothic-bold-condensed20",Georgia,serif;}
+.Official-bottom .how-to-win  p{margin-top: 3px;font-family:Rockwell-Bold; font-size:16px; font-weight: bold;}
+.Official-bottom .how-to-win  li {   font-family:Rockwell-Light; font-weight: light; font-size:14.5px; margin-left: -22px;}
+.Official-bottom .how-to-win a{font-family:Rockwell-Light; font-weight: light; font-size:14.5px;}
+.Official-bottom .how-to-win a:hover{color:#fff;}
+.Official-bottom .how-to-win  .button {    margin-top: 58px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px; font-family: "tradegothic-bold-condensed20",Georgia,serif; font-size:15.5 !important;}
 
-.Official-bottom .current-resort {    display: block;    float: left;    width: 50%;    padding: 30px;}
-.Official-bottom .current-resort .first-h3{color:#ED604C;font-family:"tradegothic-bold-condensed20",Georgia,serif; font-size:26px;}
+.Official-bottom .current-resort {    display: block;    float: left;    width: 50%;    padding: 63px 0px 0px 30px;}
+.Official-bottom .current-resort .first-h3{color:#ED604C;font-family:"tradegothic-bold-condensed20",Georgia,serif; font-size:26px; line-height: 1.1;}
 .Official-bottom .current-resort h3{color:#707070; font-size:26px; font-family:"tradegothic-bold-condensed20",Georgia,serif;}
-.Official-bottom .current-resort p{font-weight: 700;margin-top: 3px;}
+
+.Official-bottom .current-resort li{font-family:Rockwell-Light; font-weight: 100 !important; font-size:14.5px; margin-left: -22px;}
+  .current-resort a{  font-family: Rockwell-Light; font-size: 14.5px;}
+  .current-resort a:hover{color:#fff;}
+
+.Official-bottom .current-resort p{margin-top: 3px; font-family:Rockwell; font-size:16px; font-weight: bold; padding-bottom: 21px;}
 .Official-bottom .current-resort li {    font-weight: 700;}
-.Official-bottom .current-resort .button {    margin-top: 235px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px;}
+.Official-bottom .current-resort .button {   margin-top: 142px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px; font-family: "tradegothic-bold-condensed20",Georgia,serif; font-size:15.5 !important;}
 
 
 

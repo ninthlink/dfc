@@ -34,7 +34,16 @@ function dfc_points_views_views_query_alter(&$view, &$query) {
   global $user;
   
   if ($view->name == 'user_ranking'){
-    if(!isset($view->exposed_data['uid']) || empty($view->exposed_data['uid'])){
+    //watchdog('userank', 'view exposed data : <pre>'. print_r($view->exposed_data,true) .'</pre>');
+    $filteruid = true;
+    if ( isset( $view->exposed_data ) ) {
+      if ( isset( $view->exposed_data['combine'] ) ) {
+        if ( $view->exposed_data['combine'] !== '' ) {
+          $filteruid = false;
+        }
+      }
+    }
+    if( $filteruid ){
       if ( $user->uid > 0 ) {
         $query->where[1]['conditions'][] = array('field' => 'users.uid', 'value' => array($user->uid), 'operator' => 'in');
         $view->exposed_data['uid'] = $user->uid;
@@ -47,9 +56,9 @@ function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'views_exposed_form') {
     if ( in_array( $form['#id'] , array( 'views-exposed-form-user-ranking-block-1', 'views-exposed-form-user-ranking-block-3' ) ) ) {
       // replace
-      unset( $form['#info']['filter-uid'] );
-      $form['uid']['#description'] = '';
-      $form['uid']['#attributes']['placeholder'] = t('Enter name to check ranking');
+      unset( $form['#info']['filter-combine'] );
+      $form['combine']['#description'] = '';
+      $form['combine']['#attributes']['placeholder'] = t('Enter name to check ranking');
     }
     if ( $form['#id'] == 'views-exposed-form-resorts-block' ) {
       $form['combine']['#attributes']['placeholder'] = t('Enter City or Country');

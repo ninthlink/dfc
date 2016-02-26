@@ -52,27 +52,26 @@ body.page-store {
       padding: 0;
       position: relative;
 	  
-	  .item-list{
-	  background: #363636 !important; 
-	  float: left; 
-	  display: block;
-	  padding: 0 0 10px 0 !important;
-	  width:100%;
-	  }
-	  
-	  
-ul.adv-list {
-     padding: 0 !important;
-    margin: 1% !important;
-    width: 98%;
-}
-li.adv-row {
-    width: 31.33% !important;
-    float: left;
-    display: block;
-	min-height: 384px;
-	margin: 1% !important;
-  }
+      .item-list{
+        background: #363636 !important; 
+        float: left; 
+        display: block;
+        padding: 0 0 10px !important;
+        width:100%;
+      }
+      
+      ul.adv-list {
+        padding: 0 !important;
+        margin: 1% !important;
+        width: 98%;
+      }
+      li.adv-row {
+        width: 31.33% !important;
+        float: left;
+        display: block;
+        min-height: 384px;
+        margin: 1% !important;
+      }
   
   
     }
@@ -85,12 +84,9 @@ li.adv-row {
       height: 340px;
       width: 300px;
 
-
       .views-field {
         margin: 0 10px;
       }
-	  
-	  
 
       .views-field-field-image {
         margin: 0;

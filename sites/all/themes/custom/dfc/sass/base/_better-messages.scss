@@ -1,6 +1,9 @@
 #better-messages-wrapper {
   @include breakpoint($bp-tab) {
-    right: 5% !important;
+    /*right: 5% !important;
+    bottom: 25% !important;
+	*/
+	right: 12% !important;
     bottom: 25% !important;
   }
 }
@@ -55,7 +58,7 @@
   .bl { background:transparent url(images/bl.png) repeat; }
   */
   a.message-close { 
-    background: none;
+    /*background: none;
     display:block;
     float:right;
     height:auto;
@@ -64,6 +67,17 @@
     top: 50%;
     right: 20px;
     margin-top: -1em;
+	*/
+	background: transparent none repeat scroll 0% 0%;
+    display: block;
+    float: right;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -0.7em;
+    color: #000;
   }
   span.message-timer {
     float:left;
@@ -71,12 +85,20 @@
   }
 
   .messages {
-    padding:10px 70px;
+    /*padding:10px 70px;
     margin-bottom:5px;
     overflow:auto;
     max-height:400px;
     font: 12px/1.2 Arial, sans-serif;
     color: $color-black
+	*/
+	margin: 6px 0px;
+    padding: 10px 10px 10px 50px !important;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(241, 89, 42);
+    padding: 15px 0px 15px 60px !important;
+	
   }
   /*
   div.status {background:transparent url(images/status.png) no-repeat 5px 5px;border:2px solid #77DD77;}

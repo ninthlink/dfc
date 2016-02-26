@@ -1,16 +1,25 @@
 .l-main .l-content .node--media-item--full
 {
-	max-width: 960px;
+	/*max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;	
+	*/
+	    max-width: 1081px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .l-main .l-content .node--media-item--full .media-vimeo-video iframe
 {
-	min-height: 550px;
+	/*min-height: 550px;
 	width: 100%;
 	margin-bottom: 30px;
+	*/
+	min-height: 620px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .l-main .l-content .node--media-item--full .field--media-category

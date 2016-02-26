@@ -93,7 +93,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 0; }
 
 /* generated with grunt-sass-globbing */
-/* line 8, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+/* line 11, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
 #better-messages-default {
   /*
   table {
@@ -134,11 +134,11 @@ The `sprites` mixin generates identical output to the CSS template
   h2.warning {background-color:#F0C020;}
   h2.status {background-color:#77DD77;}
   */ }
-  /* line 9, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 12, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default #messages-inner {
     position: relative;
     width: 100%; }
-  /* line 13, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 16, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .messages-label {
     color: #FFFFFF;
     font-size: 12px;
@@ -147,13 +147,23 @@ The `sprites` mixin generates identical output to the CSS template
     margin-bottom: 3px;
     padding: 5px 10px;
     text-transform: uppercase; }
-  /* line 40, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 43, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .body {
     background-color: #ffffff;
     padding: 5px; }
-  /* line 57, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 60, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default a.message-close {
-    background: none;
+    /*background: none;
+    display:block;
+    float:right;
+    height:auto;
+    width:auto;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -1em;
+	*/
+    background: transparent none repeat scroll 0% 0%;
     display: block;
     float: right;
     height: auto;
@@ -161,26 +171,34 @@ The `sprites` mixin generates identical output to the CSS template
     position: absolute;
     top: 50%;
     right: 20px;
-    margin-top: -1em; }
-  /* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+    margin-top: -0.7em;
+    color: #000; }
+  /* line 82, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default span.message-timer {
     float: left;
     line-height: 22px; }
-  /* line 73, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 87, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .messages {
-    padding: 10px 70px;
-    margin-bottom: 5px;
-    overflow: auto;
-    max-height: 400px;
+    /*padding:10px 70px;
+    margin-bottom:5px;
+    overflow:auto;
+    max-height:400px;
     font: 12px/1.2 Arial, sans-serif;
-    color: #000000; }
-  /* line 89, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+    color: $color-black
+	*/
+    margin: 6px 0px;
+    padding: 10px 10px 10px 50px !important;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border: 1px solid #f1592a;
+    padding: 15px 0px 15px 60px !important; }
+  /* line 111, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .messages--status {
     background: #ffffff url(../images/icon_status.jpg) no-repeat 18px 50%; }
-  /* line 92, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 114, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .messages--warning {
     background: #ffffff url(../images/icon_warning.jpg) no-repeat 16px 50%; }
-  /* line 95, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
+  /* line 117, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/base/_better-messages.scss */
   #better-messages-default .messages--error {
     background: #ffffff url(../images/icon_error.jpg) no-repeat 18px 50%; }
 

@@ -1,6 +1,6 @@
 #block-bean-prizeboard {
  h2.block__title{
-
+/* what is this? not sass... */
     background-color: #f1592a;
     color: #ffffff;
     font-family: "dangerregular",Helvetica,sans-serif;
@@ -112,4 +112,140 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
 	.Official-bottom .how-to-win  .button {    margin-top: 58px;    padding: 10px 10px 10px 10px !important;    margin-right: 10px; font-family: "tradegothic-bold-condensed20",Georgia,serif; font-size:15.5 !important; height:51; width:auto !important;}
 }
 
+/* ugh. and then */
+// prizeboard weekly prizes view stuff
+.view-timed-giveaways {
+  float: left;
+  width: 100%;
+  
+  @include breakpoint($bp-desk) {
+    padding-top: 60px;
+    position: relative;
+  }
+  
+  ul.adv-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .view-content {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    
+    li.adv-row {
+      display: block;
+      float: left;
+      width: 100% !important;
+      min-height: 548px;
+    
+      @include breakpoint($bp-desk) {
+        width: 31.33% !important;
+        margin: 1% !important;
+      }
+    }
 
+
+  }
+  
+  
+  .attachment {
+    float: left;
+    width: 100% !important;
+    
+	  @include breakpoint($bp-desk) {
+      width: 31.33% !important;
+      margin: 1% !important;
+      
+      .view-timed-giveaways {
+        padding-top: 0;
+      
+        .view-content {
+          li.adv-row {
+            width: 100% !important;
+            margin: 0 !important;
+          }
+        }
+        
+        .view-header {
+          display: block;
+          width: 100%;
+          position: absolute;
+          left: 1%;
+          top: -3em;
+          
+          h2 {
+            text-transform: uppercase;
+            
+            strong {
+              font-weight: normal;
+              color: $color-orange;
+            }
+          }
+        }
+        
+        .view-footer {
+          display: block;
+          width: 100%;
+          position: absolute;
+          left: 106%;
+          top: -3em;
+          
+          h2 {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+ 
+  .views-row {
+    background-color: $color-black;
+    margin: 20px 0;
+    overflow: hidden;
+    height: 340px;
+    width: 300px;
+
+    .views-field {
+      margin: 0 10px;
+    }
+
+    .views-field-field-image {
+      margin: 0;
+    }
+
+    .views-field-title {
+      color: $color-white;
+      font-family: $dr;
+      @include rem(font-size, 30px);
+      line-height: 0.85;
+      text-transform: uppercase;
+    }
+
+    .views-field-field-image,
+    .views-field-field-product-image {
+      margin: 0;
+
+     /* img {
+        max-height: 200px;
+      }*/
+    }
+
+    .views-field-commerce-price {
+      font-family: $sr;
+
+      .pts-value {
+        color: $color-orange;
+        font-weight: bold;
+      }
+    }
+
+    .views-field-field-image-1 {
+      margin: 0;
+
+      img {
+      }
+    }
+  }
+}

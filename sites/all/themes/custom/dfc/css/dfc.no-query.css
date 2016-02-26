@@ -3957,6 +3957,7 @@ body.node-type-landing-page.section-news-events .block--views-news-events-block 
 
 /* line 2, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard h2.block__title {
+  /* what is this? not sass... */
   background-color: #f1592a;
   color: #ffffff;
   font-family: "dangerregular",Helvetica,sans-serif;
@@ -4303,6 +4304,69 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     font-size: 15.5 !important;
     height: 51;
     width: auto !important; } }
+
+/* ugh. and then */
+/* line 117, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+.view-timed-giveaways {
+  float: left;
+  width: 100%; }
+  /* line 126, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .view-timed-giveaways ul.adv-list {
+    padding: 0;
+    margin: 0; }
+  /* line 131, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .view-timed-giveaways .view-content {
+    margin: 0 auto;
+    padding: 0;
+    position: relative; }
+    /* line 136, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .view-content li.adv-row {
+      display: block;
+      float: left;
+      width: 100% !important;
+      min-height: 548px; }
+  /* line 152, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .view-timed-giveaways .attachment {
+    float: left;
+    width: 100% !important; }
+  /* line 203, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  .view-timed-giveaways .views-row {
+    background-color: #000000;
+    margin: 20px 0;
+    overflow: hidden;
+    height: 340px;
+    width: 300px; }
+    /* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field {
+      margin: 0 10px; }
+    /* line 214, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field-field-image {
+      margin: 0; }
+    /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field-title {
+      color: #ffffff;
+      font-family: "dangerregular", Helvetica, sans-serif;
+      font-size: 30px;
+      font-size: 1.875rem;
+      line-height: 0.85;
+      text-transform: uppercase; }
+    /* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field-field-image,
+    .view-timed-giveaways .views-row .views-field-field-product-image {
+      margin: 0;
+      /* img {
+        max-height: 200px;
+      }*/ }
+    /* line 235, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field-commerce-price {
+      font-family: "sanchezregular", Helvetica, sans-serif; }
+      /* line 238, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+      .view-timed-giveaways .views-row .views-field-commerce-price .pts-value {
+        color: #f1592a;
+        font-weight: bold; }
+    /* line 244, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    .view-timed-giveaways .views-row .views-field-field-image-1 {
+      margin: 0; }
 
 /* line 3, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 body.node-type-landing-page.section-pro-staff .content-bottom {

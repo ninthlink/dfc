@@ -602,3 +602,14 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash sign to enable.
  */
  $conf['theme_debug'] = TRUE;
+
+// Require SSL.
+if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
+  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
+  if (!isset($_SERVER['HTTP_X_SSL']) ||
+    (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://www.dollarfishingclub.com'. $_SERVER['REQUEST_URI']);
+    exit();
+  }
+}

@@ -146,13 +146,19 @@ function assign_monthly_giveaway($last_month){
     if(!empty($prize->field_winner)){
       return;
     }
+    
+    $subquery = db_select('users_roles', 'ur')
+      ->fields('ur', array('uid'))
+      ->condition('ur.rid', 3);
   
     $giveaway_result = db_select('userpoints', 'u')
       ->fields('u', array('points', 'uid'))
       ->condition('tid', 1, '=')
+      ->condition('uid', $subquery, 'NOT IN')
       ->orderBy('points', 'DESC')
       ->range(0, 3)
       ->execute();
+    
     $winner_num = '';
     while($giveaway_winner = $giveaway_result->fetchAssoc()){
       $prize->{'field_'.$winner_num.'winner'}[LANGUAGE_NONE][0]['target_id'] = $giveaway_winner['uid'];
@@ -224,9 +230,15 @@ function assign_timed_giveaways($yesterday){
     if(!empty($prize->field_prize_winner)){
       return;
     }
+    
+    $subquery = db_select('users_roles', 'ur')
+      ->fields('ur', array('uid'))
+      ->condition('ur.rid', 3);
+    
     $giveaway_result = db_select('userpoints', 'u')
       ->fields('u', array('points', 'uid'))
       ->condition('tid', 1, '=')
+      ->condition('uid', $subquery, 'NOT IN')
       ->orderBy('points', 'DESC')
       ->range(0, 1)
       ->execute();

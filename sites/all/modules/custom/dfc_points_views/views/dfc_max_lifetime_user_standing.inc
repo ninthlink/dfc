@@ -22,6 +22,6 @@ class dfc_max_lifetime_user_standing extends views_handler_field {
     return $standing;
   }
   function query(){
-    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_max_lifetime_count.uid) FROM userpoints userpoints_max_lifetime_count INNER JOIN users userpoints_max_lifetime_count_users ON userpoints_max_lifetime_count_users.uid = userpoints_max_lifetime_count.uid AND userpoints_max_lifetime_count_users.status=1 WHERE userpoints_max_lifetime_count.points > 0 AND userpoints_max_lifetime_count.tid=0)', 'userpoints_max_lifetime_standing');
+    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_max_lifetime_count.uid) FROM userpoints userpoints_max_lifetime_count INNER JOIN users userpoints_max_lifetime_count_users ON userpoints_max_lifetime_count_users.uid = userpoints_max_lifetime_count.uid AND userpoints_max_lifetime_count_users.status=1 WHERE userpoints_max_lifetime_count.points > 0 AND userpoints_max_lifetime_count.tid=0 AND userpoints_max_lifetime_count.uid NOT IN (SELECT uid FROM users_roles userpoints_max_lifetime_count_users_roles WHERE userpoints_max_lifetime_count_users_roles.rid = 3))', 'userpoints_max_lifetime_standing');
   }
 }

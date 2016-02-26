@@ -40,7 +40,7 @@ class dfc_monthly_user_standing extends views_handler_field {
         $alias = $this->query->add_relationship($alias, $join, $this->table_alias, $this->relationship);
         $this->query->add_field($alias, 'points');
     }
-    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_monthly_count.uid) FROM userpoints userpoints_monthly_count INNER JOIN users userpoints_monthly_count_users ON userpoints_monthly_count_users.uid = userpoints_monthly_count.uid AND userpoints_monthly_count_users.status=1 WHERE userpoints_monthly_count.points > userpoints_monthly_points AND userpoints_monthly_count.tid=1)', 'userpoints_monthly_standing');
+    $this->query->add_field(NULL, '(SELECT COUNT(userpoints_monthly_count.uid) FROM userpoints userpoints_monthly_count INNER JOIN users userpoints_monthly_count_users ON userpoints_monthly_count_users.uid = userpoints_monthly_count.uid AND userpoints_monthly_count_users.status=1 WHERE userpoints_monthly_count.points > userpoints_monthly_points AND userpoints_monthly_count.tid=1 AND userpoints_monthly_count.uid NOT IN (SELECT uid FROM users_roles userpoints_monthly_count_users_roles WHERE userpoints_monthly_count_users_roles.rid = 3))', 'userpoints_monthly_standing');
 
   }
 }

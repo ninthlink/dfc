@@ -271,7 +271,7 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   }
   //display store items in points
   if($view->name == 'store' && $field->field == 'commerce_price') {
-    $points = dfc_points_award_get_points_conversion($row->field_commerce_price[0]['raw']['amount']);
+    $points = number_format( dfc_points_award_get_points_conversion($row->field_commerce_price[0]['raw']['amount'] ) );
     if ($vars['output']) {
       $vars['output'] .= " / <span class='pts-value'>{$points}</span> Points";
     }
@@ -605,7 +605,7 @@ function dfc_points_award_get_points_conversion($amount) {
   }
   $conversion_rate = (float)$c['conversion_rate'];
   if (is_numeric($amount)) {
-    $points_value = $amount / $conversion_rate;
+    $points_value = ( $amount / 100 ) / $conversion_rate;
     return (int)$points_value;
   }
 }

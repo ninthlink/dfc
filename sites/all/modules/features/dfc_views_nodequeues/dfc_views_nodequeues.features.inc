@@ -181,6 +181,7 @@ function dfc_views_nodequeues_fe_nodequeue_export_fields() {
     'types' => array(
       0 => 'giveaway_prize',
       1 => 'product_display',
+      2 => 'timed_giveaway',
     ),
     'roles' => array(),
     'count' => 0,

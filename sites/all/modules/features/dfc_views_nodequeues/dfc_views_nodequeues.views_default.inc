@@ -2221,6 +2221,21 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_product_image']['field_api_classes'] = TRUE;
+  /* Field: Content: Prize Image */
+  $handler->display->display_options['fields']['field_prize_image']['id'] = 'field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['table'] = 'field_data_field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['field'] = 'field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['label'] = '';
+  $handler->display->display_options['fields']['field_prize_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_prize_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_image']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_prize_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_prize_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_prize_image']['field_api_classes'] = TRUE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
@@ -2238,7 +2253,10 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
+    'giveaway_prize' => 'giveaway_prize',
     'product_display' => 'product_display',
+    'timed_giveaway' => 'timed_giveaway',
+    'weekly_giveaway' => 'weekly_giveaway',
   );
   /* Filter criterion: Content: Products (field_products:delta) */
   $handler->display->display_options['filters']['delta']['id'] = 'delta';

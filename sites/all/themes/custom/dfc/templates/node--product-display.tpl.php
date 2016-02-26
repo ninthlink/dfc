@@ -79,8 +79,10 @@
  *
  * @ingroup themeable
  */
-$points = $content['product:commerce_price']['#object']->commerce_price[LANGUAGE_NONE][0]['amount'];
-$content['product:commerce_price']['#suffix'] = ' <span class="points">/ <span class="points-value">' . $points . '</span> Points</span>' . $content['product:commerce_price']['#suffix'];
+ if ( function_exists('dfc_points_award_get_points_conversion') ) {
+  $points = number_format( dfc_points_award_get_points_conversion( $content['product:commerce_price']['#object']->commerce_price[LANGUAGE_NONE][0]['amount'] ) );
+  $content['product:commerce_price']['#suffix'] = ' <span class="points">/ <span class="points-value">' . $points . '</span> Points</span>' . $content['product:commerce_price']['#suffix'];
+ }
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="back-banner"><a href="/store">Back to DFC Store</a></div>

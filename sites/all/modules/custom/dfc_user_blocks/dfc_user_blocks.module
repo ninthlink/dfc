@@ -119,3 +119,56 @@ function dfc_user_blocks_init() {
     drupal_goto( 'user/'. arg(1), $options );
   }
 }
+
+// is shipping / checkout stuff counting as user blocks?
+// this is all for membership so..
+
+function _dfc_is_shipable($order_number) {
+  $shipable = false;
+  $wrapper = entity_metadata_wrapper('commerce_order', $order_number);
+  foreach ($wrapper->commerce_line_items as $line_item) {
+    // Retrieve the product type to see if its a type that allows shipping. If at least one item requires shipping,
+    // then the order is considered shipable.
+    
+    //$item = commerce_line_item_load($line_item['line_item_id']);
+    $product_id = $line_item->commerce_product->raw();
+    $prod = commerce_product_load( $product_id );
+    //watchdog('order chk', $order_number .' : <pre>'. print_r($prod,true) .'</pre>');
+    if ( $prod->type == 'product' ) {
+      $shipable = true;
+    }
+  }
+  return $shipable;
+}
+
+// hook commerce_checkout_pane_info_alter
+function dfc_user_blocks_commerce_checkout_pane_info_alter(&$checkout_panes) {
+  global $user;
+  // will this work for anon users too?
+  $order = commerce_cart_order_load($user->uid);
+  if ($order) {
+    if (!_dfc_is_shipable($order->order_number)) {
+      // unset shipping
+      unset($checkout_panes['customer_profile_shipping']);
+      // also unset userpoint exchange because no for membership
+      unset( $checkout_panes['commerce_userpoints_discount'] );
+    }
+  }
+  //watchdog('panealt', '<pre>'. print_r($checkout_panes,true) .'</pre><br />order : <pre>'. print_r($order,true) .'</pre>');
+}
+
+function dfc_user_blocks_commerce_checkout_router($order, $checkout_page) {
+  if ($checkout_page['page_id'] == 'shipping') {
+    if (!_dfc_is_shipable($order->order_number)) {
+      // Support going backwards & forwards in the cart.
+      if (t('Customer continued to the next checkout page via a submit button.') == $order->log) {
+        $order = commerce_order_status_update($order, 'checkout_' . $checkout_page['next_page'], FALSE, TRUE, t('Shipping was skipped - not required for these products.'));
+        drupal_goto('checkout/' . $order->order_id . '/' . $checkout_page['next_page']);
+      }
+      else {
+        $order = commerce_order_status_update($order, 'checkout_checkout', FALSE, TRUE, t('Shipping was skipped - not required for these products.'));
+        drupal_goto('checkout/' . $order->order_id . '/checkout');
+      }
+    }
+  }
+}

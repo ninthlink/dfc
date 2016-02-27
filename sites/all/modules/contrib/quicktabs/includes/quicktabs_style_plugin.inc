@@ -136,7 +136,12 @@ class quicktabs_style_plugin extends views_plugin_style {
       }
     }
 
-    $overrides = array('style' => $view->style_options['tab_style'], 'sorted' => TRUE);
+    $overrides = array('sorted' => TRUE);
+    if ( isset( $view->style_options ) ) {
+      if ( isset( $view->style_options['tab_style'] ) ) {
+        $overrides['style'] = $view->style_options['tab_style'];
+      }
+    }
     $quicktabs = quicktabs_build_quicktabs($qt_name, $overrides, $tabs);
 
     $output = drupal_render($quicktabs);

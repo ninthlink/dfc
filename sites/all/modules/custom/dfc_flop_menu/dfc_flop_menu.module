@@ -73,7 +73,8 @@ function dfc_flop_menu_block_flop_view() {
   $user = user_load($user->uid);
 
   if($user->uid == 0) {
-    $markup = drupal_render(drupal_get_form('user_login_block'));
+    $login_form_block = drupal_get_form('user_login_block');
+    $markup = drupal_render( $login_form_block );
   }else{
     $uname = '';
     if (!empty($user->field_first_name)) {

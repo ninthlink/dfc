@@ -22,7 +22,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1450153673,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '2c83c955-fff2-4f65-b157-3f1647230710',
@@ -35,16 +35,15 @@ function dfc_bean_uuid_features_default_beans() {
 <ul class="social-links">
 <li class="social-twitter"><a href="https://twitter.com/DollarFishing" title="Twitter" target="_blank"><span class="social-text">Twitter</span></a></li>
 <li class="social-facebook"><a href="https://www.facebook.com/dollarfishingclub" title="Facebook" target="_blank"><span class="social-text">Facebook</span></a></li>
-<!--li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
-<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li-->
+<li class="social-instagram"><a href="https://www.instagram.com/dollarfishing/" title="Instagram" target="_blank"><span class="social-text">Instagram</span></a></li>
+<!--li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li-->
 <ul>',
           'format' => 'full_html',
           'safe_value' => '<div class="copyright-info">© 2016 Dollar Fishing Club. All Rights Reserved.</div>
 <ul class="social-links"><li class="social-twitter"><a href="https://twitter.com/DollarFishing" title="Twitter" target="_blank"><span class="social-text">Twitter</span></a></li>
 <li class="social-facebook"><a href="https://www.facebook.com/dollarfishingclub" title="Facebook" target="_blank"><span class="social-text">Facebook</span></a></li>
-<!--li class="social-googleplus"><p><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li>
-<li class="social-instagram"><a href="http://www.instagram.com"><span class="social-text">Instagram</span></a></li-->
-<ul></ul></ul>',
+<li class="social-instagram"><a href="https://www.instagram.com/dollarfishing/" title="Instagram" target="_blank"><span class="social-text">Instagram</span></a></li>
+<!--li class="social-googleplus"><a href="http://plus.google.com"><span class="social-text">Google Plus</span></a></li--><ul></ul></ul>',
         ),
       ),
     ),
@@ -167,7 +166,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453754659,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '05876674-e68c-4782-849c-040d6c5ce5ce',
@@ -190,7 +189,7 @@ function dfc_bean_uuid_features_default_beans() {
   <dd>Marineandoutdoor.com: DFCmad20</dd>
   <dt>Earn <strong>FREE</strong> Day Charter fishing trips in your area</dt>
   <dd></dd>
-  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
   <dd></dd>
   <dt>20% discount on King Sailfish Mounts</dt>
   <dd></dd>
@@ -219,7 +218,7 @@ function dfc_bean_uuid_features_default_beans() {
 <dd>Marineandoutdoor.com: DFCmad20</dd>
 <dt>Earn <strong>FREE</strong> Day Charter fishing trips in your area</dt>
 <dd></dd>
-<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
 <dd></dd>
 <dt>20% discount on King Sailfish Mounts</dt>
 <dd></dd>
@@ -247,7 +246,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453757653,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '751fee72-ec66-42f1-8487-71351f74f2a3',
@@ -266,7 +265,7 @@ function dfc_bean_uuid_features_default_beans() {
   <dd>Fishidy Premium: DFCFishidy12</dd>
   <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
   <dd>Wild Oceans Membership: DFCWildOceans1</dd>
-  <dt>20% discount on products at <a href="http://marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</dt>
+  <dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
   <dd>Marineandoutdoor.com: DFCmad20</dd>
   <dt>20% discount on King Sailfish Mounts</dt>
   <dd></dd>
@@ -300,7 +299,7 @@ function dfc_bean_uuid_features_default_beans() {
 <dd>Fishidy Premium: DFCFishidy12</dd>
 <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
 <dd>Wild Oceans Membership: DFCWildOceans1</dd>
-<dt>20% discount on products at <a href="http://marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
+<dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
 <dd>Marineandoutdoor.com: DFCmad20</dd>
 <dt>20% discount on King Sailfish Mounts</dt>
 <dd></dd>
@@ -393,7 +392,7 @@ function dfc_bean_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1456293494,
     'log' => '',
-    'uid' => 56,
+    'uid' => 57,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '82897f72-4367-43eb-a688-f38cc325724b',
@@ -418,28 +417,13 @@ function dfc_bean_uuid_features_default_beans() {
 					<p>Thursday, March 31, 2016 at 11:59pm (PST)</p>
 <div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
         <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
-        <script type="text/javascript">
-          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("\'.date("Y/m/01", strtotime(\'+1 month\')).\'", function(event) {
-            if(event.offset.days < 1) {
-              jQuery(this).addClass("last_day")
-            }
-            jQuery(this).html(
-              event.strftime("<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%D</span><br>Days</span>"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%H</span><br>Hours</span>"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%M</span><br>Minutes</span>"
-              +"<span class=\\\'countdown_section secs\\\'><span class=\\\'countdown_amount\\\'>%S</span><br>Seconds</span>")
-            );
-          });
-        </script>
-
-
 				</div>
 
 			</div>
 
 			<div class="clubhouse-dfc">
 				<div class="fishing_trip_clubhouse image-2">
-					<h2>Fab52 Resorts</h2>   
+					<h2 class="feb-52">Fab52 Resorts</h2>   
 				</div>
 				
 				
@@ -448,21 +432,6 @@ function dfc_bean_uuid_features_default_beans() {
 					<p>Thursday, March 31, 2016 at 11:59pm (PST)</p>
 <div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
         <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
-        <script type="text/javascript">
-          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("\'.date("Y/m/01", strtotime(\'+1 month\')).\'", function(event) {
-            if(event.offset.days < 1) {
-              jQuery(this).addClass("last_day")
-            }
-            jQuery(this).html(
-              event.strftime("<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%D</span><br>Days</span>"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%H</span><br>Hours</span>"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%M</span><br>Minutes</span>"
-              +"<span class=\\\'countdown_section secs\\\'><span class=\\\'countdown_amount\\\'>%S</span><br>Seconds</span>")
-            );
-          });
-        </script>
-
-
 				</div>
 
 			</div>
@@ -485,7 +454,7 @@ For Two On The DFC Clubhouse</h3>
 <li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 <li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 </ol>
-<a href="#">Official Rules</a>
+<a href="/official-rules">Official Rules</a>
 <a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a> 
 </div>
 			</div>
@@ -500,10 +469,9 @@ Cabo San Lucas, Mexico</h3>
 
 <h3>Eligibility:</h3>
 <ol>
-<li>Need from client.</li>
-<li>Need from client.</li>
+<li>The third place DFC member who has generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest Entities will identify the winner by determining which Contestant accumulated the most points.</li>
 </ol>
-<a href="#">Official Rules</a>
+<a href="/official-rules">Official Rules</a>
 <a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a> 
 </div>
 			
@@ -527,50 +495,18 @@ Cabo San Lucas, Mexico</h3>
 <p>Thursday, March 31, 2016 at 11:59pm (PST)</p>
 <div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
         <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
-<script type="text/javascript">
-<!--//--><![CDATA[// ><!--
-
-          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("\'.date("Y/m/01", strtotime(\'+1 month\')).\'", function(event) {
-            if(event.offset.days < 1) {
-              jQuery(this).addClass("last_day")
-            }
-            jQuery(this).html(
-              event.strftime("<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%D<br>Days"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%H<br>Hours"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%M<br>Minutes"
-              +"<span class=\\\'countdown_section secs\\\'><span class=\\\'countdown_amount\\\'>%S<br>Seconds")
-            );
-          });
-        
-//--><!]]>
-</script></div>
+</div>
 </div>
 <div class="clubhouse-dfc">
 <div class="fishing_trip_clubhouse image-2">
-<h2>Fab52 Resorts</h2>
+<h2 class="feb-52">Fab52 Resorts</h2>
 </div>
 <div class="giveaway-counter">
 <h3>Current Giveaway Ends:</h3>
 <p>Thursday, March 31, 2016 at 11:59pm (PST)</p>
 <div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown">
         <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-span"></span></div>
-<script type="text/javascript">
-<!--//--><![CDATA[// ><!--
-
-          jQuery("#jquery-countdown-giveaway-countdown-span").countdown("\'.date("Y/m/01", strtotime(\'+1 month\')).\'", function(event) {
-            if(event.offset.days < 1) {
-              jQuery(this).addClass("last_day")
-            }
-            jQuery(this).html(
-              event.strftime("<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%D<br>Days"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%H<br>Hours"
-              +"<span class=\\\'countdown_section\\\'><span class=\\\'countdown_amount\\\'>%M<br>Minutes"
-              +"<span class=\\\'countdown_section secs\\\'><span class=\\\'countdown_amount\\\'>%S<br>Seconds")
-            );
-          });
-        
-//--><!]]>
-</script></div>
+</div>
 </div>
 </div>
 <div class="Official-bottom">
@@ -583,7 +519,7 @@ For Two On The DFC Clubhouse</h3>
 <h3>Eligibility:</h3>
 <ol><li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 <li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
-</ol><p><a href="#">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
+</ol><p><a href="/official-rules">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
 </p></div>
 </div>
 <div class="current-resort">
@@ -594,9 +530,8 @@ For Two On The DFC Clubhouse</h3>
 Cabo San Lucas, Mexico</h3>
 <p>5 Nights free accomodations + a room upgrade.</p>
 <h3>Eligibility:</h3>
-<ol><li>Need from client.</li>
-<li>Need from client.</li>
-</ol><p><a href="#">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
+<ol><li>The third place DFC member who has generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest Entities will identify the winner by determining which Contestant accumulated the most points.</li>
+</ol><p><a href="/official-rules">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
 </p></div>
 </div>
 </div>
@@ -982,7 +917,7 @@ Cabo San Lucas, Mexico</h3>
     'view_mode' => 'default',
     'created' => 1453757978,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '060ce1ad-1cff-4bb9-a707-b7a5214465d9',
@@ -1007,7 +942,7 @@ Cabo San Lucas, Mexico</h3>
   <dd></dd>
   <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
   <dd></dd>
-  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
   <dd></dd>
   <dt>20% discount on King Sailfish Mounts</dt>
   <dd></dd>
@@ -1053,7 +988,7 @@ Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,
 <dd></dd>
 <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
 <dd></dd>
-<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
 <dd></dd>
 <dt>20% discount on King Sailfish Mounts</dt>
 <dd></dd>
@@ -1156,7 +1091,7 @@ Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,
     'view_mode' => 'default',
     'created' => 1453757943,
     'log' => '',
-    'uid' => 0,
+    'uid' => 3,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '19b81831-f5f2-432e-8adc-7e45c0254fae',
@@ -1175,7 +1110,7 @@ Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,
   <dd>Fishidy Premium: DFCFishidy12</dd>
   <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
   <dd>Wild Oceans Membership: DFCWildOceans1</dd>
-  <dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+  <dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
   <dd>Marineandoutdoor.com: DFCmad20</dd>
   <dt>20% discount on King Sailfish Mounts</dt>
   <dd></dd>
@@ -1209,7 +1144,7 @@ Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,
 <dd>Fishidy Premium: DFCFishidy12</dd>
 <dt>Earn <strong>FREE</strong> Multi-day International fishing trips</dt>
 <dd>Wild Oceans Membership: DFCWildOceans1</dd>
-<dt>20% discount on products at <a href="http://marineoutdoors.com/" target="_blank">Marineoutdoors.com</a></dt>
+<dt>20% discount on products at <a href="http://www.marineandoutdoor.com/" target="_blank">Marineandoutdoor.com</a></dt>
 <dd>Marineandoutdoor.com: DFCmad20</dd>
 <dt>20% discount on King Sailfish Mounts</dt>
 <dd></dd>

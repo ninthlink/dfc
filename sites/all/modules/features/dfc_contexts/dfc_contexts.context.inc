@@ -609,6 +609,18 @@ function dfc_contexts_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
+        'views-banner_ads-block' => array(
+          'module' => 'views',
+          'delta' => 'banner_ads-block',
+          'region' => 'content_bottom',
+          'weight' => '-7',
+        ),
+        'views-timed_giveaways-block' => array(
+          'module' => 'views',
+          'delta' => 'timed_giveaways-block',
+          'region' => 'content_bottom',
+          'weight' => '-6',
+        ),
       ),
     ),
   );

@@ -55,6 +55,21 @@ function dfc_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 362x243.
+  $styles['362x243'] = array(
+    'label' => '362X243',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 362,
+          'height' => 243,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 394x392.
   $styles['394x392'] = array(
     'label' => '394x392',
@@ -126,6 +141,35 @@ function dfc_image_styles_image_default_styles() {
           'height' => 520,
         ),
         'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: prize_image.
+  $styles['prize_image'] = array(
+    'label' => 'Prize Image',
+    'effects' => array(
+      3 => array(
+        'name' => 'canvasactions_definecanvas',
+        'data' => array(
+          'RGB' => array(
+            'HEX' => '#ffffff',
+          ),
+          'under' => 1,
+          'exact' => array(
+            'width' => 346,
+            'height' => 241,
+            'xpos' => 'center',
+            'ypos' => 'center',
+          ),
+          'relative' => array(
+            'leftdiff' => '',
+            'rightdiff' => '',
+            'topdiff' => '',
+            'bottomdiff' => '',
+          ),
+        ),
+        'weight' => 2,
       ),
     ),
   );

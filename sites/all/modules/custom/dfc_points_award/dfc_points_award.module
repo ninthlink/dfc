@@ -579,19 +579,25 @@ function dfc_points_award_condition_check_refer($user) {
  * Given an email address, check to see if that user was invited, and load the invitation
  */
 function dfc_points_award_action_load_invite_user($user) {
-  $email = $user->mail;
-  $q = db_select('invite', 'i')
-    ->fields('i')
-    ->condition('fiea.field_invitation_email_address_value', $email);
-  $q->join('field_data_field_invitation_email_address', 'fiea', 'i.iid = fiea.entity_id');
-  $invite = $q->execute()->fetchAssoc();
-
-  if ($invite['uid']) {
-    $invite_user = user_load($invite['uid']);
-    if ($invite_user) {
-      return array('invite_user' => $invite_user);
+  if ( isset( $user->mail ) ) {
+    $email = $user->mail;
+    if ( $email != '' ) {
+      $q = db_select('invite', 'i')
+        ->fields('i')
+        ->condition('fiea.field_invitation_email_address_value', $email);
+      $q->join('field_data_field_invitation_email_address', 'fiea', 'i.iid = fiea.entity_id');
+      $invite = $q->execute()->fetchAssoc();
+      if ( isset( $invite['uid'] ) ) {
+        if ($invite['uid']) {
+          $invite_user = user_load($invite['uid']);
+          if ($invite_user) {
+            return array('invite_user' => $invite_user);
+          }
+        }
+      }
     }
   }
+  // else
   return FALSE;
 }
 

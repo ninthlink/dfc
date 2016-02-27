@@ -2196,46 +2196,17 @@ function dfc_views_nodequeues_views_default_views() {
     'memberships' => 0,
     'featured_staff' => 0,
   );
-  /* Relationship: Content: Referenced products */
-  $handler->display->display_options['relationships']['field_products_product_id']['id'] = 'field_products_product_id';
-  $handler->display->display_options['relationships']['field_products_product_id']['table'] = 'field_data_field_products';
-  $handler->display->display_options['relationships']['field_products_product_id']['field'] = 'field_products_product_id';
-  $handler->display->display_options['relationships']['field_products_product_id']['label'] = 'Product';
-  $handler->display->display_options['relationships']['field_products_product_id']['required'] = TRUE;
-  /* Field: Commerce Product: Product Image */
-  $handler->display->display_options['fields']['field_product_image']['id'] = 'field_product_image';
-  $handler->display->display_options['fields']['field_product_image']['table'] = 'field_data_field_product_image';
-  $handler->display->display_options['fields']['field_product_image']['field'] = 'field_product_image';
-  $handler->display->display_options['fields']['field_product_image']['relationship'] = 'field_products_product_id';
-  $handler->display->display_options['fields']['field_product_image']['label'] = '';
-  $handler->display->display_options['fields']['field_product_image']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_product_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_product_image']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_product_image']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_product_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_product_image']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => '',
-  );
-  $handler->display->display_options['fields']['field_product_image']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_product_image']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_product_image']['field_api_classes'] = TRUE;
   /* Field: Content: Prize Image */
-  $handler->display->display_options['fields']['field_prize_image']['id'] = 'field_prize_image';
-  $handler->display->display_options['fields']['field_prize_image']['table'] = 'field_data_field_prize_image';
-  $handler->display->display_options['fields']['field_prize_image']['field'] = 'field_prize_image';
-  $handler->display->display_options['fields']['field_prize_image']['label'] = '';
-  $handler->display->display_options['fields']['field_prize_image']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_prize_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_prize_image']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_prize_image']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_prize_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_prize_image']['settings'] = array(
-    'image_style' => '',
+  $handler->display->display_options['fields']['field_prize_image_1']['id'] = 'field_prize_image_1';
+  $handler->display->display_options['fields']['field_prize_image_1']['table'] = 'field_data_field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image_1']['field'] = 'field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_prize_image_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_image_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_prize_image_1']['settings'] = array(
+    'image_style' => 'prize_image',
     'image_link' => '',
   );
-  $handler->display->display_options['fields']['field_prize_image']['field_api_classes'] = TRUE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
@@ -2258,11 +2229,6 @@ function dfc_views_nodequeues_views_default_views() {
     'timed_giveaway' => 'timed_giveaway',
     'weekly_giveaway' => 'weekly_giveaway',
   );
-  /* Filter criterion: Content: Products (field_products:delta) */
-  $handler->display->display_options['filters']['delta']['id'] = 'delta';
-  $handler->display->display_options['filters']['delta']['table'] = 'field_data_field_products';
-  $handler->display->display_options['filters']['delta']['field'] = 'delta';
-  $handler->display->display_options['filters']['delta']['value']['value'] = '0';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -2739,6 +2705,11 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['delta']['field'] = 'delta';
   $handler->display->display_options['filters']['delta']['value']['value'] = '0';
   $handler->display->display_options['filters']['delta']['group'] = 2;
+  /* Filter criterion: Content: Image (field_image:fid) */
+  $handler->display->display_options['filters']['field_image_fid']['id'] = 'field_image_fid';
+  $handler->display->display_options['filters']['field_image_fid']['table'] = 'field_data_field_image';
+  $handler->display->display_options['filters']['field_image_fid']['field'] = 'field_image_fid';
+  $handler->display->display_options['filters']['field_image_fid']['operator'] = 'not empty';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -2856,18 +2827,50 @@ function dfc_views_nodequeues_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Timed Giveaways';
+  $handler->display->display_options['title'] = '<none>';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['view_mode'] = 'full';
-  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '1';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'adv-row';
+  $handler->display->display_options['style_options']['class'] = 'adv-list';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'prizes' => 'prizes',
+    'homepage_offers_3' => 0,
+    'homepage_offers_6' => 0,
+    'homepage_partners' => 0,
+    'media_homepage' => 0,
+    'media_media_carousel' => 0,
+    'featured_resort' => 0,
+    'memberships' => 0,
+    'featured_staff' => 0,
+  );
+  /* Field: Content: Prize Image */
+  $handler->display->display_options['fields']['field_prize_image']['id'] = 'field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['table'] = 'field_data_field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['field'] = 'field_prize_image';
+  $handler->display->display_options['fields']['field_prize_image']['label'] = '';
+  $handler->display->display_options['fields']['field_prize_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_prize_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_image']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_prize_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_prize_image']['settings'] = array(
+    'image_style' => 'prize_image',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_prize_image']['field_api_classes'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -2875,10 +2878,26 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Giveaway date (field_giveaway_date) */
-  $handler->display->display_options['sorts']['field_giveaway_date_value']['id'] = 'field_giveaway_date_value';
-  $handler->display->display_options['sorts']['field_giveaway_date_value']['table'] = 'field_data_field_giveaway_date';
-  $handler->display->display_options['sorts']['field_giveaway_date_value']['field'] = 'field_giveaway_date_value';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Product/Sponsor Name */
+  $handler->display->display_options['fields']['field_product_sponsor_name']['id'] = 'field_product_sponsor_name';
+  $handler->display->display_options['fields']['field_product_sponsor_name']['table'] = 'field_data_field_product_sponsor_name';
+  $handler->display->display_options['fields']['field_product_sponsor_name']['field'] = 'field_product_sponsor_name';
+  $handler->display->display_options['fields']['field_product_sponsor_name']['label'] = '';
+  $handler->display->display_options['fields']['field_product_sponsor_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_product_sponsor_name']['type'] = 'text_plain';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -2901,6 +2920,30 @@ function dfc_views_nodequeues_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Attachment */
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2>Current <strong>Giveaway</strong></h2>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<h2>Up Next</h2>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
+  $handler->display->display_options['displays'] = array(
+    'block' => 'block',
+    'default' => 0,
+  );
   $export['timed_giveaways'] = $view;
 
   $view = new view();

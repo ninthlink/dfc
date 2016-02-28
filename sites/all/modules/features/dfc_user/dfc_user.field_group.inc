@@ -125,22 +125,11 @@ function dfc_user_field_group_info() {
   $field_group->data = array(
     'label' => 'Privacy Settings',
     'weight' => '2',
-    'children' => array(
-      0 => 'field_send_special_offers',
-      1 => 'field_share_email_with_sponsors',
-    ),
-    'format_type' => 'div',
+    'children' => array(),
+    'format_type' => 'hidden',
     'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'classes' => 'group-privacy-settings field-group-div',
-        'id' => '',
-      ),
+      'formatter' => '',
+      'instance_settings' => array(),
     ),
   );
   $field_groups['group_privacy_settings|user|user|default'] = $field_group;

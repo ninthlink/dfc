@@ -444,14 +444,14 @@ function dfc_bean_uuid_features_default_beans() {
 			
 			<div class="how-to-win">
 			<div class="details">
-<h2>HOW TO WIN</h2>
+<h2>HOW TO EARN YOUR TRIP</h2>
 <h3>All Expense Paid Fishing Trip
 For Two On The DFC Clubhouse</h3>
 6 Day Fishing Trip on DFC Clubhouse: Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 value).
 
 <h3>Eligibility:</h3>
 <ol>
-<li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+<li>The top two DFC members who have generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 <li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 </ol>
 <a href="/official-rules">Official Rules</a>
@@ -512,12 +512,12 @@ Cabo San Lucas, Mexico</h3>
 <div class="Official-bottom">
 <div class="how-to-win">
 <div class="details">
-<h2>HOW TO WIN</h2>
+<h2>HOW TO EARN YOUR TRIP</h2>
 <h3>All Expense Paid Fishing Trip<br />
 For Two On The DFC Clubhouse</h3>
 <p>6 Day Fishing Trip on DFC Clubhouse: Double occupancy with stateroom. All inclusive from U.S. port of departure ($25,000 value).</p>
 <h3>Eligibility:</h3>
-<ol><li>The top two DFC members who have generated teh most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
+<ol><li>The top two DFC members who have generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 <li>The top two DFC Members who have generated the most points from referring people to DFC. Contest entities will identify the winner by determining which contestant accumulated the most points.</li>
 </ol><p><a href="/official-rules">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
 </p></div>

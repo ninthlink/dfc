@@ -271,9 +271,18 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
   }
   //display store items in points
   if($view->name == 'store' && $field->field == 'commerce_price') {
-    $points = number_format( dfc_points_award_get_points_conversion($row->field_commerce_price[0]['raw']['amount'] ) );
-    if ($vars['output']) {
-      $vars['output'] .= " / <span class='pts-value'>{$points}</span> Points";
+    if ( isset( $row->field_commerce_price ) ) {
+      if ( isset( $row->field_commerce_price[0] ) ) {
+        if ( isset( $row->field_commerce_price[0]['raw'] ) ) {
+          if ( isset( $row->field_commerce_price[0]['raw']['amount'] ) ) {
+            $points = $row->field_commerce_price[0]['raw']['amount'];
+            $points = number_format( dfc_points_award_get_points_conversion( $points ) );
+            if ($vars['output']) {
+              $vars['output'] .= " / <span class='pts-value'>{$points}</span> Points";
+            }
+          }
+        }
+      }
     }
   }
 }

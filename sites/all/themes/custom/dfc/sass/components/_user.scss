@@ -390,6 +390,58 @@ form.user-profile-form {
   width: 100%;
   max-width: 1080px;
   
+  .group-privacy-settings div.form-radios input {
+  display: none;
+}
+.form-item.form-type-radio.form-item-field-share-email-with-sponsors-und {
+    width: 120px !important;
+    display: inline-block;
+	margin-bottom: 20px;
+}
+.group-privacy-settings  span {
+    color: rgb(241, 89, 42);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.form-item.form-type-radio.form-item-field-send-special-offers-und {
+    width: 120px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.group-privacy-settings div.form-radios label {
+  color: #777;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  font-family: rockwell;
+text-transform: unset;
+}
+
+.group-privacy-settings div.form-radios label:before {
+  content: '';
+  background-color: #fff;
+  border: 2px solid #fff;
+  display: inline-block;
+  margin-bottom: -11px;
+  margin-right: 9px;
+  padding: 2px;
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 2em;
+  left: 0;
+}
+
+.group-privacy-settings div.form-radios input[type="radio"]:checked + label {
+  color: #fff;
+}
+
+.group-privacy-settings div.form-radios input[type="radio"]:checked + label:before {
+  background-color: #ff5c00;
+  border-color: #C6C3BD;
+}
+
   @include breakpoint($bp-desk) {
     margin: 50px;
   }
@@ -532,6 +584,12 @@ body.section-user.not-logged-in {
   }
 }
 
+body .commerce-checkout-form-checkout {
+.commerce_userpoints_discount .commerce-userpoints-exchange-rate{
+  display:none;
+}
+
+}
 // Points landing, Orders landing
 body.section-user.page-user-orders,
 body.section-user.page-user-points {

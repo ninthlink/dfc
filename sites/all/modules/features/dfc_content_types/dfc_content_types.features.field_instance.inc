@@ -3830,7 +3830,7 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-user_media-field_image'] = array(
     'bundle' => 'user_media',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Maximum upload of 10 photos per month.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3883,7 +3883,7 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-user_media-field_media_link'] = array(
     'bundle' => 'user_media',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Maximum upload of 3 videos per month.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4307,6 +4307,8 @@ function dfc_content_types_field_default_field_instances() {
   t('Link');
   t('Location');
   t('Location of Event');
+  t('Maximum upload of 10 photos per month.');
+  t('Maximum upload of 3 videos per month.');
   t('Media Category');
   t('Media Type');
   t('Membership Product Reference');

@@ -3854,6 +3854,21 @@ body.node-type-landing-page.section-media .l-main {
     width: 30%;
 }
 	}*/
+/* line 642, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+.membership-bar {
+  background: #000000;
+  display: block;
+  margin: 26px 0 32px;
+  width: 100%;
+  max-width: 330px;
+  height: 8px; }
+  /* line 650, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  .membership-bar.gold {
+    background: #b1872c; }
+  /* line 654, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  .membership-bar.platinum {
+    background: #ff6633; }
+
 /* line 5, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-news-events.scss */
 body.node-type-landing-page.section-news-events .block--views-news-events-block h2.block__title {
   background-color: #f1592a;

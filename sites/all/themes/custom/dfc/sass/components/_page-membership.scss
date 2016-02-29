@@ -638,3 +638,20 @@ top: 0;
     width: 30%;
 }
 	}*/
+
+.membership-bar {
+  background: $color-black;
+  display: block;
+  margin: 26px 0 32px;
+  width: 100%;
+  max-width: 330px;
+  height: 8px;
+  
+  &.gold {
+    background: $color-gold;
+  }
+  
+  &.platinum {
+    background: $color-platinum;
+  }
+}

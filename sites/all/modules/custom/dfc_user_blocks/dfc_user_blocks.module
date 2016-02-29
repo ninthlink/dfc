@@ -131,11 +131,13 @@ function _dfc_is_shipable($order_number) {
     // then the order is considered shipable.
     
     //$item = commerce_line_item_load($line_item['line_item_id']);
-    $product_id = $line_item->commerce_product->raw();
-    $prod = commerce_product_load( $product_id );
-    //watchdog('order chk', $order_number .' : <pre>'. print_r($prod,true) .'</pre>');
-    if ( $prod->type == 'product' ) {
-      $shipable = true;
+    if ( isset( $line_item->commerce_product ) ) {
+      $product_id = $line_item->commerce_product->raw();
+      $prod = commerce_product_load( $product_id );
+      //watchdog('order chk', $order_number .' : <pre>'. print_r($prod,true) .'</pre>');
+      if ( $prod->type == 'product' ) {
+        $shipable = true;
+      }
     }
   }
   return $shipable;

@@ -64,6 +64,50 @@ function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
       $form['combine']['#attributes']['placeholder'] = t('Enter City or Country');
     }
   }
+  if ( $form_id == 'commerce_checkout_form_checkout' ) {
+    // fix points discount errors..
+    if ( isset( $form['commerce_userpoints_discount'] ) ) {
+      // first, correct the math for any points that might get exchanged there
+      variable_set('commerce_userpoints_discount_royalties_multiple', 0.3);
+      
+      // remove points discount "exchange" note programmatically
+      if ( isset( $form['commerce_userpoints_discount']['info'] ) ) {
+        if ( isset( $form['commerce_userpoints_discount']['info']['exchange'] ) ) {
+          unset( $form['commerce_userpoints_discount']['info']['exchange'] );
+        }
+      }
+      // check current user's points
+      global $user;
+      $lifetime_points = userpoints_get_current_points($user->uid, 0);
+      // clean up "amount" logic a bit
+      if ( isset( $form['commerce_userpoints_discount']['amount'] ) ) {
+        // the AMOUNT actually is not converted so first reconvert
+        $amount = $form['commerce_userpoints_discount']['amount']['#default_value'];
+        if ( function_exists('dfc_points_award_get_points_conversion') ) {
+          $amount = dfc_points_award_get_points_conversion( $amount );
+          $form['commerce_userpoints_discount']['amount']['#default_value'] = $amount;
+        }
+        // then update description
+        $form['commerce_userpoints_discount']['amount']['#description'] = number_format( $amount ) .' Points will pay this order in full.';
+        
+        // check if no points then disable some other stuff
+        if ( $lifetime_points == 0 ) {
+          // disable?
+          if ( !isset( $form['commerce_userpoints_discount']['amount']['#attributes'] ) ) {
+            $form['commerce_userpoints_discount']['amount']['#attributes'] = array();
+          }
+          $form['commerce_userpoints_discount']['amount']['#attributes']['disabled'] = true;
+          // also disable submit btn
+          if ( isset( $form['commerce_userpoints_discount']['cup_submit'] ) ) {
+            if ( !isset( $form['commerce_userpoints_discount']['cup_submit']['#attributes'] ) ) {
+              $form['commerce_userpoints_discount']['cup_submit']['#attributes'] = array();
+            }
+            $form['commerce_userpoints_discount']['cup_submit']['#attributes']['disabled'] = true;
+          }
+        }
+      }
+    }
+  }
   //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }
 

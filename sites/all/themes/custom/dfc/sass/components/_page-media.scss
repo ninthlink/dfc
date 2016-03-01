@@ -332,11 +332,41 @@ body.node-type-landing-page.section-media {
     
     &:nth-of-type(3n) {
       margin-right: 0;
+	  
+	   @include breakpoint(min-width 959px) {
+		@include breakpoint(max-width 1024px) {
+			margin-right: 15px !important;
+			margin-bottom: 15px !important;
+		  }	  
+	  }
+
+	  @include breakpoint(max-width 958px) {
+		margin: 0 auto!important;
+		margin-bottom: 15px !important;
+	  }
+	  
+	 
     }
 
-    &:nth-of-type(3n+1) {
+   &:nth-of-type(3n+1) {
+	
       clear: left;
+	  
+		 @include breakpoint(min-width 959px) {
+		@include breakpoint(max-width 1024px) {
+			margin-right: 15px !important;
+			margin-bottom: 15px !important;
+			clear: inherit !important;
+		  }
+		}
+
+		  @include breakpoint(max-width 958px) {
+			margin: 0px auto 15px auto !important;
+		  }
+		  
+		  
     }
+	
     
     // points styling
     .views-field-nothing {
@@ -364,10 +394,19 @@ body.node-type-landing-page.section-media {
         width: 100%;
         height: 166px;
 
-  		  @include breakpoint($bp-tab) {
-  				height: 196px;
+  		  /*@include breakpoint($bp-tab) {*/
+		  @include breakpoint(max-width 1024px) {
+  				height: 196px !important;
+				min-height: 196px !important;
   		  }
       }
+	  
+	  .media-vimeo-video iframe{
+			@include breakpoint(max-width 1024px) {
+  				height: 196px !important;
+				min-height: 196px !important;
+  		  }
+	  }
     }
     
     .field--image {}
@@ -483,3 +522,4 @@ body.node-type-landing-page.section-media {
     }
   }
 }
+

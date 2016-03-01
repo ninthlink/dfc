@@ -367,6 +367,26 @@ body.node-type-landing-page.section-fab-52-resorts {
       position: relative;
       padding-right: 80px;
 	  }
+	  
+	  @include breakpoint(max-width 589px) {
+      float: left;
+		margin: 0 auto;
+		position: relative;
+		padding-right: 0;
+		clear: both;
+		width: 100%;
+	  }
+	  
+	  @include breakpoint(min-width 590px) {
+		@include breakpoint(max-width 767px){
+			float: none;
+			margin: 0 auto;
+			position: relative;
+			padding-right: 0;
+			clear: both;
+			width: 60%;
+		}
+	  }
   
     .st_twitter_custom,
     .st_facebook_custom {
@@ -437,6 +457,12 @@ body.node-type-landing-page.section-fab-52-resorts {
     display: inline-block;
     line-height: 1;
     margin-bottom: 20px;
+	
+	 @include breakpoint(max-width 589px) {
+		clear: both !important;
+		width: 100% !important;
+		float: left;
+	  }
     
     &:after {
       content: "|";

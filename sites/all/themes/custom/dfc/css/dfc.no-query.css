@@ -2788,12 +2788,12 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     background: #999999;
     margin: 5px 10px 0 19px; }
 
-/* line 371, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 391, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--resort--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 377, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 397, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -2801,7 +2801,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 384, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 404, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -2809,7 +2809,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: -15px;
     right: -50px;
     width: 30px; }
-  /* line 393, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 413, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -2818,19 +2818,19 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     right: -50px;
     width: 30px; }
 
-/* line 407, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 427, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 417, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 437, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 427, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 447, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 433, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 453, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--resort-category {
   color: #f1592a;
   font-family: "dangerregular", Helvetica, sans-serif;
@@ -2838,13 +2838,13 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   display: inline-block;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 441, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 467, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--resort-category:after {
     content: "|";
     color: #999999;
     margin-left: 6px; }
 
-/* line 448, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 474, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -2853,7 +2853,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   clear: both; }
 
-/* line 456, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 482, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -2862,7 +2862,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   line-height: 1;
   margin-bottom: 20px; }
 
-/* line 464, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 490, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -2870,7 +2870,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   color: #ffffff;
   margin-bottom: 10px; }
 
-/* line 471, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 497, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -2879,7 +2879,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 484, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 510, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -2894,7 +2894,7 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 492, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 518, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -2902,15 +2902,15 @@ body.node-type-landing-page.section-fab-52-resorts .content-bottom {
   font-size: 0.9375rem;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 507, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+  /* line 533, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
   .node.node--resort--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 512, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 538, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .field--link {
   clear: both; }
 
-/* line 520, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
+/* line 546, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-fab52.scss */
 .node.node--resort--teaser .node__links {
   display: none; }
 

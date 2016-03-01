@@ -603,23 +603,35 @@ function dfc_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'dfc_convert_points-double_giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'double_giveaway_countdown',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
         'bean-prizeboard' => array(
           'module' => 'bean',
           'delta' => 'prizeboard',
           'region' => 'content_bottom',
-          'weight' => '-9',
+          'weight' => '-8',
+        ),
+        'dfc_convert_points-next_timed_giveaway_countdown' => array(
+          'module' => 'dfc_convert_points',
+          'delta' => 'next_timed_giveaway_countdown',
+          'region' => 'footer_top',
+          'weight' => '-10',
         ),
         'views-banner_ads-block' => array(
           'module' => 'views',
           'delta' => 'banner_ads-block',
-          'region' => 'content_bottom',
-          'weight' => '-7',
+          'region' => 'footer_top',
+          'weight' => '-9',
         ),
         'views-timed_giveaways-block' => array(
           'module' => 'views',
           'delta' => 'timed_giveaways-block',
-          'region' => 'content_bottom',
-          'weight' => '-6',
+          'region' => 'footer_top',
+          'weight' => '-8',
         ),
       ),
     ),

@@ -37,6 +37,13 @@
       margin-left: 100px;
 	  }
 	  
+	    @include breakpoint(min-width 768px) {
+		 
+		 @include breakpoint(max-width 1024px) { 
+            margin-left: 100px;
+	    }
+	  }
+	  
 	  @include breakpoint($bp-desk) {
       margin-left: 150px;
 	  }

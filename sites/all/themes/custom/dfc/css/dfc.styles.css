@@ -6693,6 +6693,11 @@ body.node-type-product-display #block-views-store-block-1 {
     /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
     .sharethis-buttons .st_facebook_custom {
       margin-left: 100px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+  .sharethis-buttons .st_facebook_custom {
+    margin-left: 100px; } }
   @media (min-width: 960px) {
     /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
     .sharethis-buttons .st_facebook_custom {

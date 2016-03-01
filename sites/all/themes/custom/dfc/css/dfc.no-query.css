@@ -4647,12 +4647,16 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     background: #999999;
     margin: 5px 10px 0 19px; }
 
-/* line 383, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 353, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+.node.node--staff--teaser .group-resort-last .group-bottomctas .collapsible h3 a {
+  padding: 15px 50px; }
+
+/* line 386, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .sharethis-buttons .st_twitter_custom,
 .node.node--staff--teaser .sharethis-buttons .st_facebook_custom {
   border: 0; }
 
-/* line 389, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 392, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .group-resort-price {
   position: relative;
   display: inline-block;
@@ -4660,7 +4664,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1; }
-  /* line 396, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 399, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:before {
     content: "$$$$";
     color: #666666;
@@ -4668,7 +4672,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 0;
     right: -40px;
     width: 30px; }
-  /* line 405, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 408, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .group-resort-price:after {
     content: "$";
     color: #ffffff;
@@ -4677,19 +4681,19 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     right: -40px;
     width: 30px; }
 
-/* line 419, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 422, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-two-dollars .group-resort-price:after {
   content: "$$"; }
 
-/* line 429, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 432, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-three-dollars .group-resort-price:after {
   content: "$$$"; }
 
-/* line 439, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 442, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser.price-four-dollars .group-resort-price:after {
   content: "$$$$"; }
 
-/* line 445, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 448, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--staff-category {
   color: #ffffff;
   text-transform: uppercase;
@@ -4698,13 +4702,13 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-family: "dangerregular", Helvetica, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem; }
-  /* line 460, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 463, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--staff-category:before {
     content: "Category |";
     color: #f1592a;
     margin-right: 6px; }
 
-/* line 468, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 471, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--title-field {
   color: #ffffff;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4714,7 +4718,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   clear: both;
   margin-bottom: 4px; }
 
-/* line 478, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 481, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--businessname {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4723,7 +4727,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   line-height: 1;
   margin-bottom: 5px; }
 
-/* line 486, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 489, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--location {
   color: #999999;
   font-family: "tradegothic-bold-condensed20", Georgia, serif;
@@ -4731,7 +4735,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 1.1875rem;
   line-height: 1; }
 
-/* line 494, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 497, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--product-description {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -4740,7 +4744,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   color: #ffffff;
   margin: 36px 0; }
 
-/* line 502, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 505, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--phone-number {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 15px;
@@ -4749,7 +4753,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 515, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 518, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--phone-number:before {
     content: "";
     display: inline-block;
@@ -4764,7 +4768,7 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
     top: 6px;
     margin-right: 5px; }
 
-/* line 523, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 526, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--website-link {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: bold;
@@ -4772,15 +4776,15 @@ body.node-type-landing-page.section-pro-staff .content-bottom {
   font-size: 0.9375rem;
   line-height: 1;
   margin-bottom: 20px; }
-  /* line 538, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+  /* line 541, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
   .node.node--staff--teaser .field--website-link a {
     color: #ffffff; }
 
-/* line 543, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 546, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .field--link {
   clear: both; }
 
-/* line 551, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
+/* line 554, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prostaff.scss */
 .node.node--staff--teaser .node__links {
   display: none; }
 

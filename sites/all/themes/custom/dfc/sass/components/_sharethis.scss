@@ -33,6 +33,10 @@
     margin-left: 50px;
     overflow: visible;
 
+	   @include breakpoint(max-width $bp-under_tab) {
+      margin-left: 100px;
+	  }
+	  
 	  @include breakpoint($bp-desk) {
       margin-left: 150px;
 	  }

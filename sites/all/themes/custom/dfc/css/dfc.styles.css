@@ -6689,6 +6689,10 @@ body.node-type-product-display #block-views-store-block-1 {
   height: 41px;
   margin-left: 50px;
   overflow: visible; }
+  @media (max-width: 767px) {
+    /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
+    .sharethis-buttons .st_facebook_custom {
+      margin-left: 100px; } }
   @media (min-width: 960px) {
     /* line 31, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_sharethis.scss */
     .sharethis-buttons .st_facebook_custom {

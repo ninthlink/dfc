@@ -123,7 +123,7 @@ function add_giveaway_clock($date, $id = ''){
           event.strftime("<span class=\'countdown_section\'><span class=\'countdown_amount\'>%D</span><br>Days</span>"
             +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%H</span><br>Hours</span>"
             +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%M</span><br>Minutes</span>"
-            +"<span class=\'countdown_section\'><span class=\'countdown_amount\'>%S</span><br>Seconds</span>")
+            +"<span class=\'countdown_section secs\'><span class=\'countdown_amount\'>%S</span><br>Seconds</span>")
         );
       });
     </script>';

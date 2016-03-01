@@ -4656,7 +4656,7 @@ body.node-type-landing-page.section-media .l-main {
   .block--views-media-items-block-3 .media-header .field--media-link iframe,
   .block--views-media-items-block-4 .media-header .field--media-link iframe {
     width: 100%;
-    height: 166px;
+    height: 196px;
     /*@include breakpoint($bp-tab) {*/ }
     @media (max-width: 1024px) {
       /* line 393, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-media.scss */

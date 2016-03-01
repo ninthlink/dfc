@@ -72,6 +72,11 @@ body.section-dfc-prizeboard {
           }
           .countdown_section {
             color: $color-black;
+            
+            
+              &:after {
+                color: $color-gray-36;
+              }
           }
           .countdown_amount {
             background: $color-gray-e;

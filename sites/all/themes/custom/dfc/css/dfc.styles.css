@@ -5530,29 +5530,32 @@ body.section-dfc-prizeboard .footer-top {
         /* line 73, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
         body.section-dfc-prizeboard .footer-top .block--dfc-convert-points-next-timed-giveaway-countdown .inner .jquery-countdown .countdown_section {
           color: #000000; }
-        /* line 76, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          body.section-dfc-prizeboard .footer-top .block--dfc-convert-points-next-timed-giveaway-countdown .inner .jquery-countdown .countdown_section:after {
+            color: #363636; }
+        /* line 81, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
         body.section-dfc-prizeboard .footer-top .block--dfc-convert-points-next-timed-giveaway-countdown .inner .jquery-countdown .countdown_amount {
           background: #eeeeee; }
-          /* line 79, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          /* line 84, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
           body.section-dfc-prizeboard .footer-top .block--dfc-convert-points-next-timed-giveaway-countdown .inner .jquery-countdown .countdown_amount:before {
             background: #ffffff; }
-  /* line 87, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 92, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   body.section-dfc-prizeboard .footer-top .block--views-banner-ads-block {
     float: left;
     margin-top: 60px;
     width: 100%; }
-  /* line 93, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 98, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   body.section-dfc-prizeboard .footer-top .block--views-timed-giveaways-block {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto; }
 
-/* line 100, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 105, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 body.section-dfc-prizeboard .l-footer {
   float: left;
   width: 100%; }
 
-/* line 107, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 112, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1,
 .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 {
   background: #363636;
@@ -5566,20 +5569,20 @@ body.section-dfc-prizeboard .l-footer {
   width: 100%;
   height: 205px; }
   @media (min-width: 590px) {
-    /* line 107, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 112, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1,
     .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 {
       width: 50%; } }
   @media (min-width: 960px) {
-    /* line 107, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 112, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1,
     .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 {
       padding: 30px 45px; } }
-  /* line 126, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 131, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1 .countdown-date,
   .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 .countdown-date {
     color: #999999; }
-  /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 135, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1 .jquery-countdown,
   .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 .jquery-countdown {
     float: left;
@@ -5587,27 +5590,27 @@ body.section-dfc-prizeboard .l-footer {
     text-align: left;
     width: 100%; }
     @media (min-width: 590px) {
-      /* line 130, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+      /* line 135, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
       .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1 .jquery-countdown,
       .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 .jquery-countdown {
         float: left;
         text-align: left;
         width: 100%; } }
 
-/* line 143, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 148, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-1 {
   top: 426px; }
 
-/* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 {
   top: 999px; }
   @media (min-width: 590px) {
-    /* line 146, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 151, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .block--dfc-convert-points-double-giveaway-countdown .countdown-block-month-2 {
       top: 426px;
       left: 50%; } }
 
-/* line 157, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 162, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard h2.block__title {
   /* what is this? not sass... */
   background-color: #f1592a;
@@ -5624,7 +5627,7 @@ body.section-dfc-prizeboard .l-footer {
   padding-left: 32px;
   text-transform: uppercase; }
 
-/* line 173, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 178, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .fishing_trip_clubhouse {
   background-image: url("../images/clubhouse-img.jpg");
   background-size: 600px !important;
@@ -5632,19 +5635,19 @@ body.section-dfc-prizeboard .l-footer {
   background-size: cover !important;
   height: 368px; }
 
-/* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 187, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .fab_resort {
   background-image: url("../images/fab52-img.jpg");
   width: 50%;
   background-size: cover !important; }
 
-/* line 192, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 197, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard #block-bean-prizeboard .fishing_trip_clubhouse {
   background-image: url("../images/clubhouse-img.jpg");
   width: 100%;
   background-size: cover; }
 
-/* line 197, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc {
   width: 50%;
   display: inline-block;
@@ -5652,41 +5655,41 @@ body.section-dfc-prizeboard .l-footer {
   background-size: cover;
   margin-bottom: 205px; }
 
-/* line 199, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 204, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .giveaway-counter {
   background: #373737 none repeat scroll 0% 0%;
   padding: 40px 0px 0px 30px;
   margin-top: -20px;
   min-height: 206px; }
 
-/* line 203, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 208, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .feb-52 {
   padding-top: 136px; }
 
-/* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter h3 {
   font-family: Rockwell;
   font-size: 20px; }
 
-/* line 206, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 211, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter p {
   font-family: Rockwell;
   font-size: 20px;
   margin-top: 2px;
   color: #989898; }
 
-/* line 208, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 213, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .image-2 {
   background-image: url("../images/fab52-img.jpg") !important;
   width: 100%;
   min-height: 360px;
   background-size: cover !important; }
 
-/* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 215, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc .fishing_trip_clubhouse {
   width: 100%; }
 
-/* line 211, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 216, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .clubhouse-dfc h2 {
   padding-top: 121px;
   margin: 0 auto;
@@ -5699,31 +5702,31 @@ body.section-dfc-prizeboard .l-footer {
   padding-bottom: 7px;
   font-family: "dangerregular",Helvetica,sans-serif; }
 
-/* line 223, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win {
   display: block;
   float: left;
   width: 50%;
   padding: 57px 0px 0px 30px; }
 
-/* line 224, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 229, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win h2 {
   font-size: 37px; }
 
-/* line 225, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 230, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win h3 {
   color: #707070;
   font-size: 25px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif; }
 
-/* line 226, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 231, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win p {
   margin-top: 3px;
   font-family: Rockwell;
   font-size: 16px;
   font-weight: 400; }
 
-/* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win li {
   font-family: Rockwell;
   font-weight: light;
@@ -5731,18 +5734,18 @@ body.section-dfc-prizeboard .l-footer {
   margin-left: -22px;
   font-weight: 400; }
 
-/* line 228, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win a {
   font-family: Rockwell;
   font-weight: light;
   font-size: 14.5px;
   font-weight: 400 !important; }
 
-/* line 229, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 234, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win a:hover {
   color: #fff; }
 
-/* line 230, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 235, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win .button, #block-bean-prizeboard .Official-bottom .how-to-win .load-more a, .load-more #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
 .block--views-media-items-block-3 ul.pager a,
 .block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .how-to-win a, #block-bean-prizeboard .Official-bottom .how-to-win
@@ -5762,27 +5765,27 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   height: 51;
   width: 228px; }
 
-/* line 232, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 237, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort {
   display: block;
   float: left;
   width: 50%;
   padding: 63px 0px 0px 30px; }
 
-/* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 238, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort .first-h3 {
   color: #ED604C;
   font-family: "tradegothic-bold-condensed20",Georgia,serif;
   font-size: 26px;
   line-height: 1.1; }
 
-/* line 234, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 239, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort h3 {
   color: #707070;
   font-size: 26px;
   font-family: "tradegothic-bold-condensed20",Georgia,serif; }
 
-/* line 236, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort li {
   font-family: Rockwell;
   font-weight: 100 !important;
@@ -5790,29 +5793,29 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   margin-left: -22px;
   font-weight: 400 !important; }
 
-/* line 237, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 242, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .current-resort a {
   font-family: Rockwell;
   font-size: 14.5px;
   font-weight: 100 !important;
   font-weight: 400 !important; }
 
-/* line 238, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 243, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .current-resort a:hover {
   color: #fff; }
 
-/* line 240, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort p {
   margin-top: 3px;
   font-family: Rockwell;
   font-size: 16px;
   font-weight: 400; }
 
-/* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 246, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort li {
   font-weight: 700; }
 
-/* line 242, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort .button, #block-bean-prizeboard .Official-bottom .current-resort .load-more a, .load-more #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
 .block--views-media-items-block-3 ul.pager a,
 .block--views-media-items-block-3 ul.pager #block-bean-prizeboard .Official-bottom .current-resort a, #block-bean-prizeboard .Official-bottom .current-resort
@@ -5833,89 +5836,89 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   width: 228px; }
 
 /* ugh. and then */
-/* line 251, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .view-timed-giveaways {
   float: left;
   width: 100%; }
   @media (min-width: 960px) {
-    /* line 251, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 256, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways {
       padding-top: 60px;
       position: relative; } }
-  /* line 260, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways ul.adv-list {
     padding: 0;
     margin: 0; }
-  /* line 265, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .view-content {
     margin: 0 auto;
     padding: 0;
     position: relative; }
-    /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 275, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .view-content li.adv-row {
       display: block;
       float: left;
       width: 100% !important;
       min-height: 548px; }
       @media (min-width: 960px) {
-        /* line 270, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+        /* line 275, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
         .view-timed-giveaways .view-content li.adv-row {
           width: 31.33% !important;
           margin: 1% !important; } }
-  /* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 291, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .attachment {
     float: left;
     width: 100% !important; }
     @media (min-width: 960px) {
-      /* line 286, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+      /* line 291, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
       .view-timed-giveaways .attachment {
         width: 31.33% !important;
         margin: 1% !important; }
-        /* line 294, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+        /* line 299, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
         .view-timed-giveaways .attachment .view-timed-giveaways {
           padding-top: 0; }
-          /* line 298, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          /* line 303, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
           .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
             width: 100% !important;
             margin: 0 !important; }
-          /* line 304, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          /* line 309, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
           .view-timed-giveaways .attachment .view-timed-giveaways .view-header {
             display: block;
             width: 100%;
             position: absolute;
             left: 1%;
             top: -3em; }
-            /* line 311, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+            /* line 316, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
             .view-timed-giveaways .attachment .view-timed-giveaways .view-header h2 {
               text-transform: uppercase; }
-              /* line 314, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+              /* line 319, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
               .view-timed-giveaways .attachment .view-timed-giveaways .view-header h2 strong {
                 font-weight: normal;
                 color: #f1592a; }
-          /* line 321, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+          /* line 326, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
           .view-timed-giveaways .attachment .view-timed-giveaways .view-footer {
             display: block;
             width: 100%;
             position: absolute;
             left: 106%;
             top: -3em; }
-            /* line 328, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+            /* line 333, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
             .view-timed-giveaways .attachment .view-timed-giveaways .view-footer h2 {
               text-transform: uppercase; } }
-  /* line 337, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 342, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .views-row {
     background-color: #000000;
     margin: 20px 0;
     overflow: hidden;
     height: 340px;
     width: 300px; }
-    /* line 344, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 349, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field {
       margin: 0 10px; }
-    /* line 348, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 353, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field-field-image {
       margin: 0; }
-    /* line 352, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 357, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field-title {
       color: #ffffff;
       font-family: "dangerregular", Helvetica, sans-serif;
@@ -5923,31 +5926,31 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
       font-size: 1.875rem;
       line-height: 0.85;
       text-transform: uppercase; }
-    /* line 360, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 365, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field-field-image,
     .view-timed-giveaways .views-row .views-field-field-product-image {
       margin: 0;
       /* img {
         max-height: 200px;
       }*/ }
-    /* line 369, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 374, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field-commerce-price {
       font-family: "sanchezregular", Helvetica, sans-serif; }
-      /* line 372, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+      /* line 377, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
       .view-timed-giveaways .views-row .views-field-commerce-price .pts-value {
         color: #f1592a;
         font-weight: bold; }
-    /* line 378, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+    /* line 383, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
     .view-timed-giveaways .views-row .views-field-field-image-1 {
       margin: 0; }
 
-/* line 388, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
   width: 100% !important;
   margin: 0 !important;
   border: 3px solid #FC6424; }
 
-/* line 393, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 398, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .view-timed-giveaways .views-row .views-field-title {
   color: #ffffff;
   font-family: "dangerregular",Helvetica,sans-serif;
@@ -5957,18 +5960,18 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   line-height: 0.85 !important;
   text-transform: uppercase; }
 
-/* line 403, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 408, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .view-timed-giveaways .views-row .views-field {
   margin: 0 30px; }
 
-/* line 406, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 411, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .views-field.views-field-field-product-sponsor-name {
   color: #C44E2A;
   font-family: rockwell;
   font-size: 18px;
   margin-bottom: 15px !important; }
 
-/* line 412, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+/* line 417, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .views-field.views-field-body {
   color: #B4B5B4;
   font-family: rockwell;
@@ -5976,30 +5979,30 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   font-weight: 400; }
 
 @media only screen and (max-width: 589px) {
-  /* line 420, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 425, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .clubhouse-dfc {
     width: 100% !important;
     display: inline-block;
     float: left;
     background-size: cover; }
-  /* line 421, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 426, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .how-to-win {
     display: block;
     float: left;
     width: 100% !important;
     padding: 30px; }
-  /* line 422, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 427, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .current-resort {
     display: block;
     float: left;
     width: 100% !important;
     padding: 30px; }
-  /* line 423, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 428, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .clubhouse-dfc h2 {
     margin-left: 18%;
     width: 202px !important;
     margin: 0 auto !important; }
-  /* line 424, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 429, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .current-resort .button, .Official-bottom .current-resort .load-more a, .load-more .Official-bottom .current-resort a, .Official-bottom .current-resort body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort
   .block--views-media-items-block-3 ul.pager a,
   .block--views-media-items-block-3 ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort
@@ -6018,7 +6021,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     font-size: 15.5 !important;
     height: 51;
     width: 228px; }
-  /* line 426, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 431, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .how-to-win .button, .Official-bottom .how-to-win .load-more a, .load-more .Official-bottom .how-to-win a, .Official-bottom .how-to-win body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win
   .block--views-media-items-block-3 ul.pager a,
   .block--views-media-items-block-3 ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win
@@ -6039,36 +6042,36 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     width: 228px; } }
 
 @media only screen and (min-width: 590px) and (max-width: 959px) {
-  /* line 431, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 436, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .view-content li.adv-row {
     display: block;
     float: left;
     width: 30% !important;
     min-height: 548px; }
-  /* line 439, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 444, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .clubhouse-dfc {
     width: 50% !important;
     display: inline-block;
     float: left;
     background-size: cover; }
-  /* line 440, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 445, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .how-to-win {
     display: block;
     float: left;
     width: 50% !important;
     padding: 30px; }
-  /* line 441, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 446, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .current-resort {
     display: block;
     float: left;
     width: 50% !important;
     padding: 30px; }
-  /* line 442, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 447, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .clubhouse-dfc h2 {
     margin-left: 18%;
     width: 209px !important;
     margin: 0 auto !important; }
-  /* line 444, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .current-resort .button, .Official-bottom .current-resort .load-more a, .load-more .Official-bottom .current-resort a, .Official-bottom .current-resort body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort
   .block--views-media-items-block-3 ul.pager a,
   .block--views-media-items-block-3 ul.pager .Official-bottom .current-resort a, .Official-bottom .current-resort
@@ -6087,7 +6090,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     font-size: 15.5 !important;
     height: 51;
     width: auto !important; }
-  /* line 447, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 452, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .Official-bottom .how-to-win .button, .Official-bottom .how-to-win .load-more a, .load-more .Official-bottom .how-to-win a, .Official-bottom .how-to-win body.node-type-landing-page.section-blog .block--views-blog-block ul.pager a, body.node-type-landing-page.section-blog .block--views-blog-block ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win .block--views-media-items-block ul.pager a, .block--views-media-items-block ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win
   .block--views-media-items-block-3 ul.pager a,
   .block--views-media-items-block-3 ul.pager .Official-bottom .how-to-win a, .Official-bottom .how-to-win
@@ -6106,21 +6109,21 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     font-size: 15.5 !important;
     height: 51;
     width: auto !important; }
-  /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 454, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
     width: 30% !important;
     margin: 0px !important;
     border: 3px solid #FC6424; }
-  /* line 451, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 456, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-footer {
     width: 50%;
     margin-top: -46px !important;
     margin-left: 20px; }
-  /* line 454, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 459, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .attachment {
     float: left;
     width: 30% !important; }
-  /* line 458, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
+  /* line 463, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
   .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
     width: 30% !important;
     margin: 0px !important;

@@ -53,103 +53,102 @@
   .countdown-prize {
     color: $color-white;
   }
+}  
+.jquery-countdown {
+  background: none;
+  border: 0;
+  text-align: center;
+  white-space: nowrap;
   
-  .jquery-countdown {
-    background: none;
-    border: 0;
-    text-align: center;
-    white-space: nowrap;
+  @include breakpoint($bp-tab) {
+    float: right;
+    text-align: right;
+    width: 64%;
+  }
+  
+  // small text
+  .countdown_section {
+    position: relative;
+    display: inline-block;
+    color: $color-gray-9;
+    font-family: $sr;
+    @include rem(font-size, 14px);
+    text-align: right;
+    padding-right: 10px;
+    width: auto;
+      
+    @include breakpoint($bp-desk) {
+      padding-right: 20px;
+    }
     
-	  @include breakpoint($bp-tab) {
-      float: right;
-      text-align: right;
-      width: 64%;
-	  }
-    
-    // small text
-    .countdown_section {
-      position: relative;
-      display: inline-block;
-      color: $color-gray-9;
-      font-family: $sr;
-      @include rem(font-size, 14px);
-      text-align: right;
-      padding-right: 10px;
-      width: auto;
-        
+    &:after {
+      content: ":";
+      display: block;
+      color: $color-white;
+      font-family: $dr;
+      @include rem(font-size, 42px);
+      position: absolute;
+      top: -10px;
+      right: 1px;
+      
       @include breakpoint($bp-desk) {
-        padding-right: 20px;
+        right: 5px;
+      }
+    }
+    
+    &.secs {
+      padding-right: 0;
+      
+      @include breakpoint($bp-desk) {
+        padding-right: 0;
       }
       
       &:after {
-        content: ":";
-        display: block;
-        color: $color-white;
-        font-family: $dr;
-        @include rem(font-size, 42px);
-        position: absolute;
-        top: -10px;
-        right: 1px;
-        
-        @include breakpoint($bp-desk) {
-          right: 5px;
-        }
+        display: none;
       }
-      
-      &.secs {
-        padding-right: 0;
-        
-        @include breakpoint($bp-desk) {
-          padding-right: 0;
-        }
-        
-        &:after {
-          display: none;
-        }
-      }
+    }
+  }
+  
+  // big number
+  .countdown_amount {
+    position: relative;
+    background: $color-white;
+    color: $color-orange;
+    font-family: $dr;
+    @include rem(font-size, 36px);
+    letter-spacing: 15px;
+    height: 56px;
+    line-height: 56px;
+    width: 60px;
+    text-align: right;
+    text-indent: 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    @include breakpoint($bp-tab) {
+      @include rem(font-size, 42px);
+      letter-spacing: 23px;
+      width: 80px;
+      text-indent: 10px;
     }
     
-    // big number
-    .countdown_amount {
-      position: relative;
-      background: $color-white;
-      color: $color-orange;
-      font-family: $dr;
-      @include rem(font-size, 36px);
-      letter-spacing: 15px;
-      height: 56px;
-      line-height: 56px;
-      width: 60px;
-      text-align: right;
-      text-indent: 7px;
-      display: inline-block;
-      margin-bottom: 10px;
-      
-      @include breakpoint($bp-tab) {
-        @include rem(font-size, 42px);
-        letter-spacing: 23px;
-        width: 80px;
-        text-indent: 10px;
-      }
-      
-      @include breakpoint($bp-desk) {
-        letter-spacing: 30px;
-        width: 100px;
-        text-indent: 15px;
-      }
-      
-      // the line between #s
-      &:before {
-        content: "";
-        display: block;
-        background: $color-gray-27;
-        height: 56px;
-        width: 5px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin-left: -2px;
-      }
+    @include breakpoint($bp-desk) {
+      letter-spacing: 30px;
+      width: 100px;
+      text-indent: 15px;
     }
-  }  
+    
+    // the line between #s
+    &:before {
+      content: "";
+      display: block;
+      background: $color-gray-27;
+      height: 56px;
+      width: 5px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
 }

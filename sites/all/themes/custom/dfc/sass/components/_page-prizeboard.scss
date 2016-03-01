@@ -1,10 +1,165 @@
+body.section-dfc-prizeboard {
+  .content-bottom {
+    padding-bottom: 65px;
+    position: relative;
+  }
+
+  // background colors
+  .footer-top {
+    background: $color-gray-36;
+    float: left;
+    width: 100%;
+    .block--dfc-convert-points-next-timed-giveaway-countdown {
+      background: $color-white;
+      color: $color-black;
+      float: left;
+      width: 100%;
+      padding: 30px 0;
+      
+      .inner {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 40px;
+        
+        .countdown-text {
+          font-family: $rw;
+          @include rem(font-size, 20px);
+          line-height: 1.1;
+          float: left;
+          width: 100%;
+          
+          @include breakpoint($bp-desk) {
+            width: 50%;
+          }
+          
+          .countdown-title {
+            font-family: $dr;
+            @include rem(font-size, 37px);
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            
+            span {
+              color: $color-orange;
+            }
+          }
+          
+          .countdown-ending-date {
+            color: $color-gray-9;
+          }
+        }
+        
+        .jquery-countdown {
+        /*
+        <div class="jquery-countdown jquery-countdown-processed hasCountdown" id="jquery-countdown-giveaway-countdown-timed">
+    <span class="countdown_row countdown_show4" id="jquery-countdown-giveaway-countdown-timed-span"><span class="countdown_section"><span class="countdown_amount">03</span><br>Days</span><span class="countdown_section"><span class="countdown_amount">10</span><br>Hours</span><span class="countdown_section"><span class="countdown_amount">55</span><br>Minutes</span><span class="countdown_section"><span class="countdown_amount">40</span><br>Seconds</span></span></div>
+        */
+          float: left;
+          width: 100%;
+          padding-top: 30px;
+          
+          @include breakpoint($bp-tab) {
+            float: left;
+            text-align: center;
+            width: 100%;
+          }
+          @include breakpoint($bp-desk) {
+            float: right;
+            padding-top: 0;
+            text-align: right;
+            width: 50%;
+          }
+          .countdown_section {
+            color: $color-black;
+          }
+          .countdown_amount {
+            background: $color-gray-e;
+            
+            &:before {
+              background: $color-white;
+            }
+          }
+        }
+      }
+    }
+    
+    .block--views-banner-ads-block {
+      float: left;
+      margin-top: 60px;
+      width: 100%;
+    }
+    
+    .block--views-timed-giveaways-block {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+  .l-footer {
+    float: left;
+    width: 100%;
+  }
+}
+// countdownz
+.block--dfc-convert-points-double-giveaway-countdown {
+  .countdown-block-month-1,
+  .countdown-block-month-2 {
+    background: $color-gray-36;
+    font-family: $rw;
+    @include rem(font-size, 20px);
+    line-height: 1;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 205px;
+    
+    @include breakpoint($bp-tab) {
+      width: 50%;
+    }
+    @include breakpoint($bp-desk) {
+      padding: 30px 45px;
+    }
+    
+    .countdown-date {
+      color: $color-gray-9;
+    }
+    
+    .jquery-countdown {
+      float: left;
+      margin-top: 20px;
+      text-align: left;
+      width: 100%;
+      
+      @include breakpoint($bp-tab) {
+        float: left;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+  .countdown-block-month-1 {
+    top: 426px;
+  }
+  .countdown-block-month-2 {
+    top: 999px;
+    
+    @include breakpoint($bp-tab) {
+      top: 426px;
+      left: 50%;
+    }
+  }
+}
+
 #block-bean-prizeboard {
  h2.block__title{
 /* what is this? not sass... */
     background-color: #f1592a;
     color: #ffffff;
-    font-family: "dangerregular",Helvetica,sans-serif;
-    font-size: 1.875rem;
+    font-family: $dr;
+    @include rem(font-size, 30px);
     height: 58px;
     line-height: 58px;
     margin-bottom: 0;
@@ -39,7 +194,7 @@
   width: 100%;    
   background-size: cover;
   }
-.clubhouse-dfc {    width: 50%;    display: inline-block;    float: left;background-size: cover;}
+.clubhouse-dfc {    width: 50%;    display: inline-block;    float: left; background-size: cover; margin-bottom: 205px; }
 
 .clubhouse-dfc .giveaway-counter {    background: #373737 none repeat scroll 0% 0%;
 padding: 40px 0px 0px 30px;
@@ -82,9 +237,9 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
   .current-resort a{  font-family: Rockwell; font-size: 14.5px; font-weight: 100 !important; font-weight: 400 !important;}
   .current-resort a:hover{color:#fff;}
 
-.Official-bottom .current-resort p{margin-top: 3px; font-family:Rockwell; font-size:16px; font-weight: 400; padding-bottom: 21px;}
+.Official-bottom .current-resort p{margin-top: 3px; font-family:Rockwell; font-size:16px; font-weight: 400; }
 .Official-bottom .current-resort li {    font-weight: 700;}
-.Official-bottom .current-resort .button {   margin-top: 142px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px; font-family: "tradegothic-bold-condensed20",Georgia,serif; font-size:15.5 !important;height:51; width:228px;}
+.Official-bottom .current-resort .button {   margin-top: 120px;    padding: 10px 30px 10px 30px !important;    margin-right: 10px; font-family: "tradegothic-bold-condensed20",Georgia,serif; font-size:15.5 !important;height:51; width:228px;}
 
 
 
@@ -261,7 +416,7 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
     font-weight: 400;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 589px){
 .clubhouse-dfc {    width: 100% !important;    display: inline-block;    float: left;background-size: cover;}
     .Official-bottom .how-to-win {    display: block;    float: left;    width: 100% !important;    padding: 30px;}
 	.Official-bottom .current-resort {    display: block;    float: left;    width: 100% !important;    padding: 30px;}
@@ -272,7 +427,7 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
 	
 
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 590px) and (max-width: 959px){
 .view-timed-giveaways .view-content li.adv-row {
     display: block;
     float: left;

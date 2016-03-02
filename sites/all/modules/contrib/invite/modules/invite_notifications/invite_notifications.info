@@ -7,9 +7,9 @@ package = Invite
 
 dependencies[] = invite
 
-; Information added by drupal.org packaging script on 2013-10-27
-version = "7.x-4.0-beta2"
+; Information added by Drupal.org packaging script on 2015-10-12
+version = "7.x-4.0-beta2+17-dev"
 core = "7.x"
 project = "invite"
-datestamp = "1382915128"
+datestamp = "1444637946"
 

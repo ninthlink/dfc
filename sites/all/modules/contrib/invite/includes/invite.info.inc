@@ -95,14 +95,25 @@ class InviteMetadataController extends EntityDefaultMetadataController {
       'entity views field' => TRUE,
     );
 
-    $properties['status'] = array(
-      'label' => t('Status'),
-      'description' => t('Display human-readable status.'),
-      'getter callback' => 'invite_metadata_entity_get_properties',
-      'type' => 'text',
-      'computed' => TRUE,
-      'entity views field' => TRUE,
-    );
+    // $properties['status'] = array(
+    //   'label' => t('Status'),
+    //   'description' => t('Display raw status.'),
+    //   // 'getter callback' => 'invite_metadata_entity_get_properties',
+    //   'type' => 'int',
+    //   'schema field' => 'status',
+    //   // 'computed' => TRUE,
+    //   // 'entity views field' => TRUE,
+    // );
+
+    // $properties['status_text'] = array(
+    //   'label' => t('Status text'),
+    //   'description' => t('Display human-readable status.'),
+    //   'getter callback' => 'invite_metadata_entity_get_properties',
+    //   'type' => 'text',
+    //   // 'schema field' => 'status',
+    //   'computed' => TRUE,
+    //   'entity views field' => TRUE,
+    // );
 
     return $info;
   }

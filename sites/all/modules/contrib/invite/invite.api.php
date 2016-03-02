@@ -93,5 +93,19 @@ function hook_invite_send($invite) {
 }
 
 /**
+ * Alter invite_accept message, type and redirect.
+ */
+function hook_invite_accept_alter($data) {
+  $invite = $data['invite'];
+
+  if (!empty($invite->data['gid']) && INVITE_VALID === $invite->status()) {
+
+    $data['redirect'] = 'node/' . $invite->data['gid'];
+    $data['message'] = t('Please login or register for an account to begin working on this item.');
+    $data['type'] = 'error';
+  }
+}
+
+/**
  * @} End of "addtogroup hooks".
  */

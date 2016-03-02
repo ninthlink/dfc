@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Validity constants.
- */
-define('INVITE_VALID', 1);
-define('INVITE_WITHDRAWN', 2);
-define('INVITE_USED', 3);
-define('INVITE_EXPIRED', 4);
 
 
 class InviteController extends EntityAPIController {
@@ -17,6 +10,7 @@ class InviteController extends EntityAPIController {
       'expiry' => REQUEST_TIME + variable_get('invite_default_expiry_time', 30) * 24 * 60 * 60,
       'uid' => $user->uid,
       'invitee' => 0,
+      'status' => 1,
       'reg_code' => invite_generate_code(),
       'data' => array(),
     );
@@ -162,18 +156,9 @@ class Invite extends Entity {
   }
 
   public function status($readable = FALSE) {
-    if (!$this || $this->canceled != 0) {
-      return $readable ? t('withdrawn') : INVITE_WITHDRAWN;
-    }
-    elseif ($this->joined != 0) {
-      return $readable ? t('used') : INVITE_USED;
-    }
-    elseif ($this->expiry < REQUEST_TIME) {
-      return $readable ? t('expired') : INVITE_EXPIRED;
-    }
-    else {
-      return $readable ? t('valid') : INVITE_VALID;
-    }
+    $options = invite_get_status_options();
+
+    return $readable ? $options[$this->status] : $this->status;
   }
 
   protected function defaultLabel() {
@@ -217,13 +202,15 @@ class InviteType extends Entity {
 
   public function __construct($values = array()) {
     parent::__construct($values, 'invite_type');
-    $controllers = db_select('invite_sending_controller', 'isc')
-      ->fields('isc')
-      ->condition('type', array($this->type))
-      ->execute();
-    $this->invite_sending_controller = array();
-    foreach ($controllers as $controller) {
-      $this->invite_sending_controller[$controller->name] = $controller->name;
+    if (empty($this->invite_sending_controller)) {
+      $controllers = db_select('invite_sending_controller', 'isc')
+        ->fields('isc')
+        ->condition('type', array($this->type))
+        ->execute();
+      $this->invite_sending_controller = array();
+      foreach ($controllers as $controller) {
+        $this->invite_sending_controller[$controller->name] = $controller->name;
+      }
     }
   }
 

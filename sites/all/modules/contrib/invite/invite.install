@@ -39,6 +39,12 @@ function invite_schema() {
         'type' => 'int',
         'not null' => TRUE,
       ),
+      'status' => array(
+        'description' => 'Invitation status.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 1,
+      ),
       'created' => array(
         'description' => 'The Unix timestamp when the invite was created.',
         'type' => 'int',
@@ -201,4 +207,39 @@ function invite_update_7400() {
   variable_set('invite_default_expiry_time', 30);
 
   drupal_set_message(t('Invite was successfully installed. You could migrate !link.', array('!link' => l('old invites', 'admin/config/people/invite/migrate'))));
+}
+
+/**
+ * Adding 'status' to invite table.
+ */
+function invite_update_7401() {
+  db_add_field('invite', 'status', array('type' => 'int', 'not null' => TRUE, 'description' => 'Invitation status.'));
+
+  // Calculate and store invite status from exisitng data.
+  $invites = db_select('invite', 'i')
+    ->fields('i', array('iid', 'created', 'canceled', 'joined', 'expiry'))
+    ->execute();
+
+  foreach ($invites as $invite) {
+    // Default to Valid.
+    $status = 1;
+
+    // Withdrawn.
+    if ($invite->canceled != 0) {
+      $status = 2;
+    }
+    // Used.
+    elseif ($invite->joined != 0) {
+      $status = 3;
+    }
+    // Expired.
+    elseif ($invite->expiry < REQUEST_TIME) {
+      $status = 4;
+    }
+
+    db_update('invite')
+      ->fields(array('status' => $status))
+      ->condition('iid', $invite->iid)
+      ->execute();
+  }
 }

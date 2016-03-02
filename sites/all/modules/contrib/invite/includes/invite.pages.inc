@@ -21,9 +21,11 @@ function invite_accept($invite) {
 
   $redirect = '<front>';
   $message = '';
+  $type = 'status';
 
   if ($user->uid == $invite->uid) {
     $message = t('You could not use own invite.');
+    $type = 'error';
     $redirect = '<front>';
   }
   elseif (!$user->uid && (empty($invite->invitee)) && $invite->status() == INVITE_VALID) {
@@ -34,19 +36,25 @@ function invite_accept($invite) {
   elseif (!empty($user->uid) && ($invite->status() == INVITE_VALID)) {
     $invite->invitee = $user->uid;
     $invite->joined = REQUEST_TIME;
+    $invite->status = INVITE_USED;
     entity_save('invite', $invite);
 
     unset($_SESSION[INVITE_SESSION_CODE]);
     $inviter = $invite->inviter();
-    $message = t('You have accepted the invitation from !user', array('!user' => theme('username', array('account' => $inviter))));
+    $message = t('You have accepted the invitation from !user.', array('!user' => theme('username', array('account' => $inviter))));
     $redirect = 'user';
   }
   elseif (empty($user->uid) && !empty($invite->invitee) && ($invite->status() == INVITE_VALID)) {
     $_SESSION[INVITE_SESSION_CODE] = $invite->reg_code;
-    $message = t('You should login first to accept invite.');
+    $message = t('You should login first to accept this invitation.');
+    $type = 'warning';
     $redirect = 'user/login';
   }
   else {
+    // Cover the rest of the error which redirect to /user instead of 403.
+    $type = 'error';
+    $redirect = 'user';
+
     switch ($invite->status()) {
       case INVITE_WITHDRAWN:
         $message = t('This invitation has been withdrawn.');
@@ -59,14 +67,20 @@ function invite_accept($invite) {
       case INVITE_EXPIRED:
         $message = t('This invitation has expired.');
         break;
-
-      default:
-        $redirect = 'user';
     }
   }
 
+  // Give a chance for customization.
+  $data = array(
+    'redirect' => &$redirect,
+    'message' => &$message,
+    'type' => &$type,
+    'invite' => $invite,
+  );
+  drupal_alter('invite_accept', $data);
+
   if (!empty($message)) {
-    drupal_set_message($message);
+    drupal_set_message($message, $type);
   }
   drupal_goto($redirect);
 }
@@ -81,18 +95,10 @@ function invite_accept($invite) {
  *   renderable array, representing a page.
  */
 function invite_resend($invite) {
-  global $user;
-
-  // Inviter must match current user and invitation must have expired.
-  if ($invite->uid == $user->uid && $invite->expiry < REQUEST_TIME && $invite->joined == 0 && $invite->canceled == 0) {
-    $invite->sendInvite();
-  }
-  else {
-    return MENU_ACCESS_DENIED;
-  }
+  $invite->sendInvite();
 
   return array(
-    'message' => t('Invite was sucessfuly resended.'),
+    'message' => t('Invitation has been sucessfully resent.'),
     'invite' => entity_view('invite', array(entity_id('invite', $invite) => $invite), 'full'),
   );
 }
@@ -113,7 +119,8 @@ function invite_withdraw_form($form, &$form_state, $invite) {
     '#type' => 'value',
     '#value' => $invite,
   );
-  $description = (!$invite->joined && $invite->expiry > REQUEST_TIME) ? t("The invitee won't be able to register any more using this invitation !invite<br/>", array('!invite' => drupal_render(entity_view('invite', array(entity_id('invite', $invite) => $invite), 'full')))) . ' ' : '';
+  $invite_render_tree = entity_view('invite', array(entity_id('invite', $invite) => $invite), 'full');
+  $description = (!$invite->joined && $invite->expiry > REQUEST_TIME) ? t('The invitee no longer be able to register using this invitation !invite<br/>', array('!invite' => drupal_render($invite_render_tree))) : '';
   $redirect = !empty($_REQUEST['destination']) ? $_REQUEST['destination'] : '<front>';
 
   return confirm_form(
@@ -137,8 +144,9 @@ function invite_withdraw_form_submit($form, &$form_state) {
 
   db_update('invite')
     ->fields(array(
-    'canceled' => 1,
-  ))
+      'canceled' => 1,
+      'status' => INVITE_WITHDRAWN,
+    ))
     ->condition('reg_code', $invite->reg_code)
     ->execute();
 
@@ -149,6 +157,7 @@ function invite_withdraw_form_submit($form, &$form_state) {
   if (module_exists('rules')) {
     rules_invoke_event('invite_withdraw', $invite);
   }
-  drupal_goto('<front>');
+
+  $form_state['redirect'] = '<front>';
 }
 

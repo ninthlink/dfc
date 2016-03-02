@@ -5,6 +5,19 @@ define('INVITE_SESSION_FAILED', 'invite_failed');
 define('INVITE_SESSION_ADMIN',  'invite_admin_filter');
 
 /**
+ * Validity constants.
+ */
+define('INVITE_VALID', 1);
+define('INVITE_WITHDRAWN', 2);
+define('INVITE_USED', 3);
+define('INVITE_EXPIRED', 4);
+
+// @TODO
+// - a way to update invite "status" for expired invite, cron likely. Until then,
+//   checking expiry is the best way.
+// - "canceled" is obsolete with "status", remove it.
+
+/**
  * Implements hook_entity_info().
  */
 function invite_entity_info() {
@@ -205,6 +218,20 @@ function invite_menu() {
   );
 
   // Frontend menu items
+  $weight = 20;
+  foreach (invite_get_types() as $type => $info) {
+    $items['user/%/invites/' . $type] = array(
+      'title' => $info->label,
+      'page callback' => 'invite_add',
+      'page arguments' => array(3),
+      'access callback' => 'invite_access',
+      'access arguments' => array('create', $type),
+      'file' => 'includes/invite.admin.inc',
+      'type' => MENU_LOCAL_TASK,
+      'weight' => $weight++,
+    );
+  }
+
   $items['invite/accept/%invite_by_code'] = array(
     'page callback' => 'invite_accept',
     'page arguments' => array(2),
@@ -226,7 +253,8 @@ function invite_menu() {
     'title' => 'Resend invitation',
     'page callback' => 'invite_resend',
     'page arguments' => array(2),
-    'access arguments' => array('send invitations'),
+    'access callback' => 'invite_resend_access',
+    'access arguments' => array(2),
     'type' => MENU_CALLBACK,
     'file' => 'includes/invite.pages.inc',
   );
@@ -297,6 +325,11 @@ function invite_access($op, $invite = NULL, $account = NULL, $entity_type = NULL
 function invite_withdraw_access($invite) {
   global $user;
 
+  if ($invite->status = INVITE_WITHDRAWN) {
+    drupal_set_message(t('The invitation has already been withdrawn.'), 'error');
+    return FALSE;
+  }
+
   if (!$invite->joined ) {
     $permission = 'withdraw own invitations';
   }
@@ -310,6 +343,26 @@ function invite_withdraw_access($invite) {
   else {
     return FALSE;
   }
+}
+
+/**
+ * Access callback for resend invitation.
+ *
+ * @param Invite $invite
+ *   The invitations to be resent.
+ *
+ * @return bool
+ *   Is user have access or no.
+ */
+function invite_resend_access($invite) {
+  global $user;
+
+  $is_valid   = $invite->joined == 0 && $invite->canceled == 0;
+  $access_own = user_access('resend own invitations') && $invite->uid == $user->uid;
+  $access_any = user_access('resend any invitations');
+  $is_expired = $invite->expiry < REQUEST_TIME || user_access('resend unexpired invitations');
+
+  return $is_valid && $is_expired && ($access_own || $access_any);
 }
 
 /**
@@ -368,6 +421,22 @@ function invite_permission() {
     'withdraw own accepted invitations' => array(
       'title' => t('Withdraw own accepted invitations'),
       'description' => t('Allows users to edit own invites.'),
+      'restrict access' => FALSE,
+    ),
+
+    'resend own invitations' => array(
+      'title' => t('Resend own invitations'),
+      'description' => t('Allows users to resend their invitations that have expired. Add the "resend unexpired invitations" permission to allow them to resend their invitations that have not expired yet.'),
+      'restrict access' => FALSE,
+    ),
+    'resend any invitations' => array(
+      'title' => t('Resend any invitations'),
+      'description' => t('Allows users to resend any invitation that have expired. Add the "resend unexpired invitations" permission to allow them to resend the invitations that have not expired yet.'),
+      'restrict access' => FALSE,
+    ),
+    'resend unexpired invitations' => array(
+      'title' => t('Resend unexpired invitations'),
+      'description' => t('Allows users to resend invitations that have not expired yet. This needs to be used in relation with the "resend own invitations" or "resend any invitations" permission.'),
       'restrict access' => FALSE,
     ),
   );
@@ -478,7 +547,7 @@ function invite_delete_multiple($invite_ids) {
 function invite_invite_insert($entity) {
   if ($entity->sendInvite()) {
     if ($entity->sendNotification) {
-      drupal_set_message(t('Invitation was sent'));
+      drupal_set_message(t('Invitation has been sent.'));
     }
   }
   else {
@@ -508,9 +577,6 @@ function invite_metadata_entity_get_properties($entity, array $options, $name, $
       break;
     case 'invite_resend_link':
       $result = url('invite/resend/' . $invite->reg_code->value(), array('absolute' => TRUE));
-      break;
-    case 'status':
-      $result = $entity->status(TRUE);
       break;
     default:
       $result = '';
@@ -578,44 +644,36 @@ function invite_views_api() {
 }
 
 /**
- * Implements hook_form_FORM_ID_alter.
- *
- * @param $form
- * @param $form_state
- * @param $form_id
+ * Implementation of hook_views_data_alter().
+ * - Allow views filter selection based on status text.
  */
-function invite_form_user_login_block_alter(&$form, &$form_state, $form_id) {
-  invite_form_user_login_alter($form, $form_state, $form_id);
+function invite_views_data_alter(&$data) {
+  $data['invite']['status']['field']['handler'] = 'views_handler_field_invite_status';
+  $data['invite']['status']['filter']['handler'] = 'views_handler_filter_in_operator';
+  $data['invite']['status']['filter']['options callback'] = 'invite_get_status_options';
 }
 
 /**
- * Implements hook_form_FORM_ID_alter.
- *
- * @param $form
- * @param $form_state
- * @param $form_id
+ * Helper function to return the list of status option.
  */
-function invite_form_user_login_alter(&$form, &$form_state, $form_id) {
+function invite_get_status_options() {
+  return array(
+    INVITE_VALID => t('Valid'),
+    INVITE_WITHDRAWN => t('Withdrawn'),
+    INVITE_USED => t('Joined'),
+    INVITE_EXPIRED => t('Expired'),
+  );
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function invite_user_login($edit, $account) {
   $invite = invite_load_from_session();
-  global $user;
-
-  if ($invite && $invite->status() == INVITE_VALID && (!$invite->invitee || $invite->invitee == $user->uid)) {
-    $form_state['invite'] = $invite;
-    $form['#submit'][] = 'invite_form_user_login_submit';
-  }
-}
-
-/**
- * Submit handler for user_login form.
- *
- * @param $form
- * @param $form_state
- */
-function invite_form_user_login_submit($form, &$form_state) {
-  if (!empty($form_state['invite'])) {
-    $invite = $form_state['invite'];
-    $invite->invitee = $GLOBALS['user']->uid;
+  if ($invite && $invite->status() == INVITE_VALID) {
+    $invite->invitee = $account->uid;
     $invite->joined = REQUEST_TIME;
+    $invite->status = INVITE_USED;
     entity_save('invite', $invite);
 
     if (isset($_SESSION)) {
@@ -633,9 +691,10 @@ function invite_form_user_login_submit($form, &$form_state) {
  */
 function invite_user_insert(&$edit, $account, $category) {
   $invite = invite_load_from_session();
-  if ($invite && empty($invite->invitee) && $invite->status() == INVITE_VALID) {
+  if ($invite && $invite->status() == INVITE_VALID) {
     $invite->invitee = $account->uid;
     $invite->joined = REQUEST_TIME;
+    $invite->status = INVITE_USED;
     entity_save('invite', $invite);
 
     if (isset($_SESSION)) {
@@ -655,7 +714,6 @@ function invite_invite_update($invite) {
     if (module_exists('rules')) {
       rules_invoke_event('invite_accept', $invite, $account);
     }
-    drupal_set_message(t('You have accepted the invitation from !user.', array('!user' => theme('username', array('account' => $invite->inviter())))));
   }
 }
 

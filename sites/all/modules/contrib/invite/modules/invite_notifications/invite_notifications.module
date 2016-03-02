@@ -3,14 +3,16 @@
 function invite_notifications_init() {
   global $user;
 
-  if ($user->uid == 0) {
+  if (user_is_anonymous()) {
     return FALSE;
   }
 
-  if (isset($user->data['notification_received'])) {
+  $account = user_load($user->uid);
+
+  if (isset($account->data['notification_received'])) {
     $result = db_select('invite_notifications')
       ->fields('invite_notifications')
-      ->condition('uid', $user->uid)
+      ->condition('uid', $account->uid)
       ->condition('status', 1)
       ->execute()
       ->fetchAll();
@@ -18,11 +20,12 @@ function invite_notifications_init() {
       drupal_set_message(invite_notifications_get_message($row->message_type, $row), 'status', FALSE);
     }
     $result = db_query('SELECT count(*) FROM {invite_notifications} WHERE uid = :uid and status = :status', array(
-      ':uid' => $user->uid,
+      ':uid' => $account->uid,
       ':status' => 1
     ))->fetchField();
+
     if ($result == 0) {
-      user_save($user, array('data' => array('notification_received' => FALSE)));
+      user_save($account, array('data' => array('notification_received' => FALSE)));
     }
   }
 }
@@ -59,7 +62,7 @@ function invite_notifications_get_message($message_type, $params) {
         ->execute();
       break;
     case 'registered_user_notification':
-      $result = t('!user sent you invitation. You could !accept or !withdrawn it.', array(
+      $result = t('!user has sent you invitation. You could !accept or !withdrawn it.', array(
         '!user' => theme('username', array('account' => $inviter)),
         '@email' => $invitee->mail,
         '!accept' => l('accept', 'invite/accept/' . $invitation->reg_code),
@@ -92,7 +95,7 @@ function theme_invite_registered_user_notification($variables) {
   return array(
     'message' => array(
       '#type' => 'markup',
-      '#markup' => t('!user sent you invitation. You could !accept or !withdrawn it.', array(
+      '#markup' => t('!user has sent you invitation. You could !accept or !withdrawn it.', array(
         '!user' => theme('username', array('account' => $invitee)),
         '@email' => $invitee->mail,
         '!accept' => l('accept', 'invite/accept/' . $invitation->reg_code),
@@ -164,19 +167,22 @@ function invite_notifications_entity_insert($invite, $type) {
  * @param Invite $invite
  */
 function invite_notifications_invite_withdraw($invite) {
-  $uid = db_select('invite_notifications')
-    ->fields('invite_notifications', array('uid'))
-    ->condition('iid', $invite->iid)
-    ->execute()
-    ->fetchField();
+  if ($invite->invitee != 0) {
+    $uid = db_select('invite_notifications')
+      ->fields('invite_notifications', array('uid'))
+      ->condition('iid', $invite->iid)
+      ->execute()
+      ->fetchField();
 
-  db_delete('invite_notifications')
-    ->condition('iid', $invite->iid)
-    ->execute();
+    db_delete('invite_notifications')
+      ->condition('iid', $invite->iid)
+      ->execute();
 
-  $user = user_load($uid);
-  if (!_invite_notifications_user_messages($user)) {
-    user_save($user, array('data' => array('notification_received' => FALSE)));
+    $user = user_load($uid);
+
+    if (!_invite_notifications_user_messages($user)) {
+      user_save($user, array('data' => array('notification_received' => FALSE)));
+    }
   }
 }
 

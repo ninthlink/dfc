@@ -93,10 +93,10 @@ function invite_by_email_form_invite_type_form_alter(&$form, &$form_state, $invi
   );
 
   $form['invite_by_email']['help'] = array(
-    '#markup' => <<<HELP
-You may update default values for Subject and Body for this certain content type on fields edit page.
-HELP
-,
+    '#type' => 'container',
+    'help' => array(
+      '#markup' => t('You may update the default values for Subject and Body for this content type on the fields edit page.'),
+    ),
     '#states' => array(
       'invisible' => array(
         ':input[name="invite_by_email[use_default]"]' => array('checked' => TRUE),
@@ -167,7 +167,7 @@ function invite_by_email_invite_type_update($invite_type) {
         'entity_type' => 'invite',
         'label' => t('E-mail'),
         'bundle' => 'invite_by_email',
-        'description' => t('Type e-mail address of person you wish invite.'),
+        'description' => t('Type the e-mail address of the person you wish to invite.'),
         'widget' => array(
           'type' => 'text_textfield',
           'weight' => 10,
@@ -267,8 +267,11 @@ function invite_by_email_invite_presave($invite) {
   if ($account = user_load_by_mail($mail_address)) {
     $invite->invitee = $account->uid;
   }
+
   $invite->data['subject'] = $entity->field_invitation_email_subject->value();
-  $invite->data['message'] = $entity->field_invitation_email_body->value();
+  $email_body = $entity->field_invitation_email_body->value();
+  $email_body_text = isset($email_body['format']) ? $email_body['value'] : $email_body;
+  $invite->data['message'] = $email_body_text;
 
   $invite_by_email_settings = $invite->type_details()->data['invite_by_email'];
 
@@ -279,7 +282,12 @@ function invite_by_email_invite_presave($invite) {
       'profile' => user_load($user->uid),
     );
     $entity->field_invitation_email_subject = token_replace(trim($entity->field_invitation_email_subject->value()), $token_data);
-    $entity->field_invitation_email_body = token_replace($entity->field_invitation_email_body->value(), $token_data);
+    if (isset($email_body['format'])) {
+      $entity->field_invitation_email_body->value->set(token_replace($email_body_text, $token_data));
+    }
+    else {
+      $entity->field_invitation_email_body = token_replace($email_body_text, $token_data);
+    }
   }
 }
 
@@ -348,18 +356,20 @@ function invite_by_email_send_invitation($invite) {
   }
 
   $entity = entity_metadata_wrapper('invite', $invite);
+
   if (!variable_get('invite_use_users_email', 0)) {
     $from = variable_get('invite_manual_from', '');
   }
   else {
     $from = $entity->inviter->mail->value();
   }
+
   if (empty($from)) {
     // Never pass an empty string to drupal_mail()
     $from = NULL;
   }
 
-  $params = array('invite' => $invite);
+  $params = array('invite' => $invite->iid);
 
   // Override Reply-To address.
   if (!variable_get('invite_use_users_email_replyto', 0)) {
@@ -368,6 +378,7 @@ function invite_by_email_send_invitation($invite) {
   else {
     $reply_to = $entity->inviter->mail->value();
   }
+
   if (!empty($reply_to)) {
     $params['reply-to'] = $reply_to;
   }
@@ -384,7 +395,7 @@ function invite_by_email_send_invitation($invite) {
 function invite_by_email_mail($key, &$message, $params) {
   global $user;
 
-  $invite = $params['invite'];
+  $invite = invite_load($params['invite']);
 
   if (!empty($params['reply-to'])) {
     $message['headers']['Reply-To'] = $params['reply-to'];
@@ -392,7 +403,8 @@ function invite_by_email_mail($key, &$message, $params) {
 
   $entity = entity_metadata_wrapper('invite', $invite);
   $message['subject'] = str_replace(array("\r", "\n"), '', trim($entity->field_invitation_email_subject->value()));
-  $message['body'][] = $entity->field_invitation_email_body->value();
+  $email_body = $entity->field_invitation_email_body->value();
+  $message['body'][] = isset($email_body['format']) ? $email_body['value'] : $email_body;
 }
 
 /**
@@ -400,6 +412,7 @@ function invite_by_email_mail($key, &$message, $params) {
  */
 function invite_by_email_form_invite_form_alter(&$form, &$form_state, $form_id) {
   $invite = $form['#entity'];
+
   if (!empty($invite->type_details()->invite_sending_controller['invite_by_email'])) {
     $language_subject = $form['field_invitation_email_subject']['#language'];
     $invite_by_email_settings = isset($invite->type_details()->data['invite_by_email']) ? $invite->type_details()->data['invite_by_email'] : array('use_default' => TRUE);
@@ -407,21 +420,22 @@ function invite_by_email_form_invite_form_alter(&$form, &$form_state, $form_id) 
     if ($invite_by_email_settings['use_default']) {
       $message_editable = variable_get('invite_message_editable', FALSE);
       $replace_tokens = variable_get('invite_default_replace_tokens', TRUE);
+
+      // Override the default mail subject and body with the global defaults.
+      $form['field_invitation_email_subject'][$language_subject][0]['value']['#default_value'] = variable_get('invite_default_mail_subject', '');
+      $form['field_invitation_email_body'][$language_subject][0]['value']['#default_value'] = variable_get('invite_default_mail_body', '');
     }
     else {
       $message_editable = $invite_by_email_settings['message_editable'];
       $replace_tokens = isset($invite_by_email_settings['replace_tokens']) ? $invite_by_email_settings['replace_tokens'] : TRUE;
     }
+
     // Hide if message is not editable.
     if (!$message_editable) {
       $form['field_invitation_email_subject']['#type'] = 'hidden';
       $form['field_invitation_email_body']['#type'] = 'hidden';
     }
     else {
-      // Fill defaults as needed.
-      $form['field_invitation_email_subject'][$language_subject][0]['value']['#default_value'] = variable_get('invite_default_mail_subject', '');
-      $form['field_invitation_email_body'][$language_subject][0]['value']['#default_value'] = variable_get('invite_default_mail_body', '');
-
       // Add token help if enabled.
       if (module_exists('token') && $replace_tokens) {
         // Add tokens help
@@ -448,6 +462,7 @@ function invite_by_email_form_invite_form_validate($form, &$form_state) {
   $invite = $form_state['invite'];
   $entity = entity_metadata_wrapper('invite', $invite);
   $mail_address = $form_state['values']['field_invitation_email_address'][LANGUAGE_NONE][0]['value'];
+
   // Validate is email address valid.
   if (!valid_email_address($mail_address)) {
     form_set_error('field_invitation_email_address', t('Email address %email is not valid.', array('%email' => $mail_address)));
@@ -468,6 +483,7 @@ function invite_by_email_form_invite_form_validate($form, &$form_state) {
     ->range(0, 1)
     ->execute()
     ->fetchField();
+
   if ($duplicate) {
     if ($entity->inviter->mail->value() == $mail_address) {
       form_set_error('field_invitation_email_address', t('You have invited this user already.'));
@@ -480,6 +496,7 @@ function invite_by_email_form_invite_form_validate($form, &$form_state) {
  */
 function invite_by_email_form_user_register_form_alter(&$form, &$form_state, $form_id) {
   global $user;
+
   if (($invite = invite_load_from_session()) && !empty($invite->type_details()->invite_sending_controller['invite_by_email'])) {
     $invite_wrapper = entity_metadata_wrapper('invite', $invite);
 
@@ -489,6 +506,7 @@ function invite_by_email_form_user_register_form_alter(&$form, &$form_state, $fo
     else {
       $field = &$form;
     }
+
     if (isset($field['mail'])) {
       $field['mail']['#default_value'] = $invite_wrapper->field_invitation_email_address->value();
     }

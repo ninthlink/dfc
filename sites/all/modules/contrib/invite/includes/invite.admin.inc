@@ -246,7 +246,7 @@ function invite_delete_form($form, &$form_state, $invite) {
   $form['invite_type_id'] = array('#type' => 'value', '#value' => entity_id('invite' ,$invite));
   $invite_uri = entity_uri('invite', $invite);
   return confirm_form($form,
-    t('Are you sure you want to delete invite %title?', array('%title' => entity_label('invite', $invite))),
+    t('Are you sure you want to delete %title?', array('%title' => entity_label('invite', $invite))),
     $invite_uri['path'],
     t('This action cannot be undone.'),
     t('Delete'),
@@ -264,7 +264,7 @@ function invite_delete_form_submit($form, &$form_state) {
   $invite = $form_state['invite'];
   invite_delete($invite);
 
-  drupal_set_message(t('invite %title deleted.', array('%title' => entity_label('invite', $invite))));
+  drupal_set_message(t('%title deleted.', array('%title' => entity_label('invite', $invite))));
 
   $form_state['redirect'] = '<front>';
 }
@@ -439,6 +439,24 @@ function invite_migrate_process($values, &$context) {
       'canceled' => $record->canceled,
       'data' => $record->data,
     );
+
+    // Default to Valid.
+    $status = INVITE_VALID;
+
+    // Withdrawn.
+    if ($record->canceled != 0) {
+      $status = INVITE_WITHDRAWN;
+    }
+    // Used.
+    elseif ($record->joined != 0) {
+      $status = INVITE_USED;
+    }
+    // Expired.
+    elseif ($record->expiry < REQUEST_TIME) {
+      $status = INVITE_EXPIRED;
+    }
+    $invite_data['status'] = $status;
+
     $invite = new Invite($invite_data);
     $invite->field_invitation_email_address[LANGUAGE_NONE][0]['value'] = $record->email;
     $data = unserialize($record->data);

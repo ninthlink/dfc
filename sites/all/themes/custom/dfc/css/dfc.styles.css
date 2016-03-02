@@ -4171,47 +4171,53 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
       /* line 167, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
       body.node-type-landing-page.section-leaderboard .view-leaderboards .pager {
         float: right;
-        width: 22%; } }
+        width: 50%; } }
     @media (min-width: 1180px) {
       /* line 167, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
       body.node-type-landing-page.section-leaderboard .view-leaderboards .pager {
-        width: 22.8%; } }
-    /* line 182, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+        width: 50%; } }
+    @media (min-width: 960px) {
+      /* line 180, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+      body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li {
+        float: left;
+        width: 48%;
+        margin-right: 2%; } }
+    /* line 187, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
     body.node-type-landing-page.section-leaderboard .view-leaderboards .pager li a {
       display: block;
       padding-left: 0;
       padding-right: 0; }
-    /* line 189, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    /* line 194, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
     body.node-type-landing-page.section-leaderboard .view-leaderboards .pager .pager-current {
       display: none; }
-    /* line 192, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
-    body.node-type-landing-page.section-leaderboard .view-leaderboards .pager .pager-next a {
-      margin-top: -24px; }
-  /* line 197, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 202, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .view-footer {
     margin-bottom: 60px; }
-  /* line 201, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 206, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links {
     margin-bottom: 40px;
     overflow: hidden;
     *zoom: 1; }
-    @media (min-width: 960px) {
-      /* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
-      body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links .link {
-        float: left;
-        width: 30.6%;
-        margin-right: 20px; } }
-    @media (min-width: 1180px) {
-      /* line 205, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
-      body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links .link {
-        width: 31.1%; } }
-    /* line 218, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    /* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links .link {
+      /*
+    	  @include breakpoint($bp-full) {
+          width: 50%;
+    	  }
+        */ }
+      @media (min-width: 960px) {
+        /* line 210, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+        body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links .link {
+          float: left;
+          width: 48%;
+          margin-right: 2%; } }
+    /* line 224, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
     body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a {
       margin-bottom: 30px;
       display: block;
       padding-left: 0;
       padding-right: 0; }
-  /* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .leaderboard-text {
     font-size: 14px;
     font-size: 0.875rem;
@@ -4219,16 +4225,16 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
     color: #ffffff;
     clear: both; }
     @media (min-width: 960px) {
-      /* line 227, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+      /* line 233, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
       body.node-type-landing-page.section-leaderboard .view-leaderboards .leaderboard-text {
         margin: auto;
         width: 54%; } }
 
-/* line 241, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+/* line 247, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
 .content-bottom .block {
   float: left;
   width: 100%; }
-  /* line 245, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 251, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   .content-bottom .block .inner,
   .content-bottom .block .view-user-ranking .view-content {
     float: left;

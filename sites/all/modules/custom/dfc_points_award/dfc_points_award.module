@@ -372,7 +372,7 @@ function dfc_points_award_link ( $nid ) {
             'entity_type' => 'node',
             'entity_id' => $nid,
             'operation' => 'dfc_points_award_link',
-            'display' => false
+            'display' => true
         );
         dfc_points_award_grant_points($link_points);
         watchdog('dfc', 'awarding link points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');

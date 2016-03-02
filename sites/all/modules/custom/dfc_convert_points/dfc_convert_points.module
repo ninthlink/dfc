@@ -156,6 +156,7 @@ function assign_monthly_giveaway($last_month){
       ->condition('tid', 1, '=')
       ->condition('uid', $subquery, 'NOT IN')
       ->orderBy('points', 'DESC')
+      ->orderBy('last_update', 'ASC')
       ->range(0, 3)
       ->execute();
     
@@ -240,6 +241,7 @@ function assign_timed_giveaways($yesterday){
       ->condition('tid', 1, '=')
       ->condition('uid', $subquery, 'NOT IN')
       ->orderBy('points', 'DESC')
+      ->orderBy('last_update', 'ASC')
       ->range(0, 1)
       ->execute();
     $winner_num = '';

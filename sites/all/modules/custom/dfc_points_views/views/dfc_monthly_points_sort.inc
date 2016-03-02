@@ -37,5 +37,6 @@ class dfc_monthly_points_sort extends views_handler_sort {
       $this->query->add_field($alias, 'points');
     }
     $this->query->add_orderby($alias, 'points', $this->options['order']);
+    $this->query->add_orderby($alias, 'last_update', 'ASC');
   }
 }

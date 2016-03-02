@@ -488,7 +488,7 @@ function dfc_content_types_field_default_field_instances() {
     'bundle' => 'advertisement',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Absolute URL, like http://www.proangler.us/',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -615,7 +615,7 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-advertisement-field_image'] = array(
     'bundle' => 'advertisement',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Choose from an existing image or upload an Image here, or as a Banner Image below. If both spots are provided, users will only be able to earn a max of 5 points for whichever they click on first. If they should earn 5 points for clicking this block and have the ability to earn another 5 points for Banner Image, then only upload 1 or the other in separate content nodes.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4293,9 +4293,11 @@ function dfc_content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Absolute URL, like http://www.proangler.us/');
   t('Advertisement');
   t('Banner Image');
   t('Body');
+  t('Choose from an existing image or upload an Image here, or as a Banner Image below. If both spots are provided, users will only be able to earn a max of 5 points for whichever they click on first. If they should earn 5 points for clicking this block and have the ability to earn another 5 points for Banner Image, then only upload 1 or the other in separate content nodes.');
   t('Color');
   t('Date');
   t('Description');

@@ -390,6 +390,11 @@ form.user-profile-form {
   width: 100%;
   max-width: 1080px;
  
+  a:hover
+ {
+     color:$color-white !important;
+ } 
+ 
   .group-privacy-settings div.form-radios input {
   display: none;
 }

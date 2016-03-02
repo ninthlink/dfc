@@ -61,6 +61,15 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     $form['picture']['picture_delete']['#description'] = '';
     // also hide club id field
     $form['field_club_id']['#access'] = 0;
+    
+    // tweak terms too
+    if ( isset( $form['field_terms_conditions'] ) ) {
+      // make required
+      $form['field_terms_conditions'][LANGUAGE_NONE]['#required'] = TRUE;
+      // change text
+      $form['field_terms_conditions'][LANGUAGE_NONE]['#title'] = 'I agree to the '. l( $form['field_terms_conditions'][LANGUAGE_NONE]['#title'] , 'terms', array( 'attributes' => array( 'target' => '_blank' ) ) );
+      //watchdog('terms', '<pre>'. print_r($form['field_terms_conditions'],true) .'</pre>');
+    }
   } else if ($form_id == 'user_media_node_form') {
     $form['#submit'][] = 'dfc_points_award_user_media_type_validate';
     $form['#submit'][] = 'dfc_points_award_user_media_type_assign';

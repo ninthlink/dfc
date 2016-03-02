@@ -22,7 +22,7 @@ function pro_staffs_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1453383705,
     'log' => '',
-    'uid' => 3,
+    'uid' => 56,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'd76b1364-7d84-4254-9044-a720118020bf',
@@ -36,7 +36,7 @@ The <strong>Dollar Fishing Club</strong> has proudly partnered with the finest f
 </div>
 <div class="intro_cta">
 <h2>Interested in Joining<br/> The DFC Pro Staff?</h2>
-<a href="#" class="button">Request Application</a>
+<a href="mailto:prostaff@dollarfishingclub.com" class="button">Request Application</a>
 </div>
 <div class="clear"></div>',
           'format' => 'full_html',
@@ -45,7 +45,7 @@ The <strong>Dollar Fishing Club</strong> has proudly partnered with the finest f
 </div>
 <div class="intro_cta">
 <h2>Interested in Joining<br /> The DFC Pro Staff?</h2>
-<p><a href="#" class="button">Request Application</a>
+<p><a href="mailto:prostaff@dollarfishingclub.com" class="button">Request Application</a>
 </p></div>
 <div class="clear"></div>
 ',

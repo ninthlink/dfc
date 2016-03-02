@@ -7,9 +7,9 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
-  $items['dfc/points/grant/link'] = array(
+  $items['dfc/points/grant/link/%'] = array(
     'page callback' => 'dfc_points_award_link',
-    //'page arguments' => array(),
+    'page arguments' => array(4),
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
@@ -380,28 +380,35 @@ function dfc_points_award_check_points_awarded( $nid, $op ) {
   return FALSE;
 }
 
-function dfc_points_award_link () {
-  if ($l = $_GET['l']) {
-    $ls = substr($l, 128);
-    global $user;
-    //@todo verify url validity, don't grant points for just any url?
-    $chk = db_select('userpoints_txn', 'upt')
-        ->fields('upt')
-        ->condition( 'uid', $user->uid )
-        ->condition( 'reference', $ls )
-        ->condition( 'reference', 'dfc_points_award_link' )
-        ->execute()->fetchAssoc();
+function dfc_points_award_link ( $nid ) {
+  $node = node_load( (int) $nid );
+  if ( $node !== false ) {
+    watchdog('dfc', 'dfc_points_award_link : nid = '. $nid .' <pre>'. print_r($node,true) .'</pre>');
+    if ( $node->type == 'advertisement' ) {
+      $chk = dfc_points_award_check_video_awarded( $nid );
 
-    if(!$chk) {
-      $link_points = array(
-        'points' => 5,
-        'reference' => $ls,
-        'operation' => 'dfc_points_award_link'
-      );
-      dfc_points_award_grant_points($link_points);
-      watchdog('dfc', 'awarding link points: ' . $l .' : <pre>'. print_r($link_points,true) .'</pre>');
+      if(!$chk) {
+        $link_points = array(
+            'points' => 5,
+            'entity_type' => 'node',
+            'entity_id' => $nid,
+            'operation' => 'dfc_points_award_link',
+            'display' => false
+        );
+        dfc_points_award_grant_points($link_points);
+        watchdog('dfc', 'awarding link points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');
+      }
+      // then check if the ad has a link to goto
+      if ( isset( $node->field_ad_link ) ) {
+        if ( isset( $node->field_ad_link[LANGUAGE_NONE] ) ) {
+          if ( isset( $node->field_ad_link[LANGUAGE_NONE][0] ) ) {
+            if ( isset( $node->field_ad_link[LANGUAGE_NONE][0]['url'] ) ) {
+              drupal_goto( $node->field_ad_link[LANGUAGE_NONE][0]['url'] );
+            }
+          }
+        }
+      }
     }
-    drupal_goto($l);
   }
 }
 // "page" callback for sharing some nid to twitter or facebook

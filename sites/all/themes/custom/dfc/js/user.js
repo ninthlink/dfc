@@ -16,6 +16,13 @@
       }
       attachHandlers('#edit-field-media-link');
       attachHandlers('#edit-field-image');
+      
+      if ( $('#better-messages-wrapper').size() > 0 ) {
+        $('#better-messages-wrapper').fadeIn('normal');
+        setTimeout(function() {
+          $('#better-messages-wrapper').fadeOut('slow');
+        }, 6000 );
+      }
     }
   };
 })(jQuery);

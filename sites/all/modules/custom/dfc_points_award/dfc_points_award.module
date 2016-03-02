@@ -506,7 +506,11 @@ function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state
 }
 
 function dfc_points_award_grant_points_invite_form(&$form, &$form_state) {
-  $invite_points = 10;
+  $invite_points = array(
+      'points' => 10,
+      'operation' => 'dfc_points_award_invite',
+      'display' => true
+  );
   dfc_points_award_grant_points($invite_points);
   $form_state['redirect'] = '/user';
 }
@@ -641,6 +645,7 @@ function dfc_points_award_userpoints_info() {
     'dfc_points_award_image' => $ar,
     'dfc_points_award_link' => $ar,
     'dfc_points_award_video' => $ar,
+    'dfc_points_award_invite' => $ar,
     'dfc_points_award_share_tw' => $ar,
     'dfc_points_award_share_fb' => $ar,
     'dfc_points_award_slideshow' => $ar
@@ -649,7 +654,8 @@ function dfc_points_award_userpoints_info() {
 
 // Description callback for userpoint operation description/reason.
 function dfc_points_award_userpoints_description_callback($operation, $entity) {
-
+  //watchdog('dfcb', 'op : <pre>'. print_r($operation,true) .'</pre><br />ent <pre>'. print_r($entity,true ).'</pre>');
+  
   $arguments = array();
   // Try to load content type name.
   if ($operation->entity_type == 'node' && $entity) {
@@ -670,6 +676,9 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
       break;
     case 'dfc_points_award_video':
       return t('Watched Video "%title"', $arguments);
+      break;
+    case 'dfc_points_award_invite':
+      return t('Invited a user', $arguments);
       break;
     case 'dfc_points_award_share_fb':
       return t('Shared "%title" on Facebook', $arguments);

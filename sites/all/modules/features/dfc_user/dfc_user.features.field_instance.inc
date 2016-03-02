@@ -173,7 +173,7 @@ function dfc_user_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'user',
@@ -210,7 +210,7 @@ function dfc_user_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'user',
@@ -232,6 +232,45 @@ function dfc_user_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_terms_conditions'.
+  $field_instances['user-user-field_terms_conditions'] = array(
+    'bundle' => 'user',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'user',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_terms_conditions',
+    'label' => 'Terms',
+    'required' => 0,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 8,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<a href="/privacy-policy">View Privacy Policy</a>');
@@ -241,6 +280,7 @@ function dfc_user_field_default_field_instances() {
   t('Last Name');
   t('Send emails with DFC special promotions and/or offers');
   t('Share my email with select DFC sponsors');
+  t('Terms');
 
   return $field_instances;
 }

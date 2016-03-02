@@ -124,7 +124,7 @@ function dfc_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Privacy Settings',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(),
     'format_type' => 'hidden',
     'format_settings' => array(
@@ -178,7 +178,7 @@ function dfc_user_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Profile Points',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'userpoints',
     ),

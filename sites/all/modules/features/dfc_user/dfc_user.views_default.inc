@@ -119,12 +119,9 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['fields']['field_invitation_email_address']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_invitation_email_address']['type'] = 'text_plain';
   /* Field: Invite: Status */
-  $handler->display->display_options['fields']['status']['id'] = 'status';
-  $handler->display->display_options['fields']['status']['table'] = 'views_entity_invite';
-  $handler->display->display_options['fields']['status']['field'] = 'status';
-  $handler->display->display_options['fields']['status']['label'] = 'Invite Status';
-  $handler->display->display_options['fields']['status']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['status']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['fields']['status_1']['table'] = 'invite';
+  $handler->display->display_options['fields']['status_1']['field'] = 'status';
   /* Field: Invite: Invite action link: resend */
   $handler->display->display_options['fields']['invite_resend_link']['id'] = 'invite_resend_link';
   $handler->display->display_options['fields']['invite_resend_link']['table'] = 'views_entity_invite';

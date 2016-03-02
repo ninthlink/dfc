@@ -151,7 +151,7 @@ function dfc_user_blocks_commerce_checkout_pane_info_alter(&$checkout_panes) {
   if ($order) {
     if (!_dfc_is_shipable($order->order_number)) {
       // unset shipping
-      unset($checkout_panes['customer_profile_shipping']);
+      unset( $checkout_panes['customer_profile_shipping'] );
       // also unset userpoint exchange because no for membership
       unset( $checkout_panes['commerce_userpoints_discount'] );
     }
@@ -159,6 +159,7 @@ function dfc_user_blocks_commerce_checkout_pane_info_alter(&$checkout_panes) {
   //watchdog('panealt', '<pre>'. print_r($checkout_panes,true) .'</pre><br />order : <pre>'. print_r($order,true) .'</pre>');
 }
 
+// hook commerce_checkout_router
 function dfc_user_blocks_commerce_checkout_router($order, $checkout_page) {
   if ($checkout_page['page_id'] == 'shipping') {
     if (!_dfc_is_shipable($order->order_number)) {
@@ -172,5 +173,26 @@ function dfc_user_blocks_commerce_checkout_router($order, $checkout_page) {
         drupal_goto('checkout/' . $order->order_id . '/checkout');
       }
     }
+  }
+}
+
+function dfc_user_blocks_form_alter(&$form, &$form_state, $form_id) {
+  if ( $form_id == 'commerce_checkout_form_complete' ) {
+    $msg = '<div class="checkout-completion-message">';
+    if ( isset( $form_state['order'] ) ) {
+      $order = $form_state['order'];
+      if ( !_dfc_is_shipable( $order->order_number ) ) {
+        $msg .= '<p>'. t('Thank you for joining the Dollar Fishing Club! You will be receiving an email shortly with instructions on how to complete your membership, set-up your profile and start earning your piece of $1 Million dollars in trips, perks and gear.') .'</p>';
+      } else {
+        //$msg .= t('ORDER IS SHIPABLE : ITS REAL PRODUCTS?!');
+      }
+      
+      $order_url = 'user/'. $order->uid .'/order/'. $order->order_number;
+      
+      $msg .= '<p>'. t('Your order number is @num. ', array('@num' => $order->order_number ) ) . t('You can !view_order on your account page when logged in.', array( '!view_order' => l( t('view your order'), $order_url ) ) ) .'</p>';
+    }
+    $msg .= '<p>'. l( t('Return to Home Page'), '' ) .'</p></div>';
+    
+    $form['checkout_completion_message']['message']['#markup'] = $msg;
   }
 }

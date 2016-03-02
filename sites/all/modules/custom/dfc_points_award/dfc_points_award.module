@@ -666,7 +666,7 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
       return t('Viewed Photo "%title"', $arguments);
       break;
     case 'dfc_points_award_link':
-      return t('Viewed Sponsored Link / Ad', $arguments);
+      return t('Viewed Sponsor "%title"', $arguments);
       break;
     case 'dfc_points_award_video':
       return t('Watched Video "%title"', $arguments);

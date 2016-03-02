@@ -13,19 +13,29 @@ function dfc_commerce_default_rules_configuration() {
       "LABEL" : "Rate 101-200",
       "PLUGIN" : "rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "commerce_price", "commerce_shipping" ],
+      "REQUIRES" : [ "commerce_rules_extra", "commerce_shipping" ],
       "USES VARIABLES" : { "commerce_order" : { "label" : "Order", "type" : "commerce_order" } },
       "IF" : [
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003E",
-            "second_price" : { "value" : { "amount" : 10000, "currency_code" : "USD" } }
+            "value" : "10000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         },
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003C=",
-            "second_price" : { "value" : { "amount" : 20000, "currency_code" : "USD" } }
+            "value" : "20000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         }
       ],
@@ -42,13 +52,18 @@ function dfc_commerce_default_rules_configuration() {
       "LABEL" : "Rate 1-100",
       "PLUGIN" : "rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "commerce_price", "commerce_shipping" ],
+      "REQUIRES" : [ "commerce_rules_extra", "commerce_shipping" ],
       "USES VARIABLES" : { "commerce_order" : { "type" : "commerce_order", "label" : "Order" } },
       "IF" : [
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003C=",
-            "second_price" : { "value" : { "amount" : 10000, "currency_code" : "USD" } }
+            "value" : "10000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         }
       ],
@@ -65,19 +80,29 @@ function dfc_commerce_default_rules_configuration() {
       "LABEL" : "Rate 201-300",
       "PLUGIN" : "rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "commerce_price", "commerce_shipping" ],
+      "REQUIRES" : [ "commerce_rules_extra", "commerce_shipping" ],
       "USES VARIABLES" : { "commerce_order" : { "type" : "commerce_order", "label" : "Order" } },
       "IF" : [
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003E",
-            "second_price" : { "value" : { "amount" : 20000, "currency_code" : "USD" } }
+            "value" : "20000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         },
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003C=",
-            "second_price" : { "value" : { "amount" : 30000, "currency_code" : "USD" } }
+            "value" : "30000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         }
       ],
@@ -94,19 +119,29 @@ function dfc_commerce_default_rules_configuration() {
       "LABEL" : "Rate 301 - 400",
       "PLUGIN" : "rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "commerce_price", "commerce_shipping" ],
+      "REQUIRES" : [ "commerce_rules_extra", "commerce_shipping" ],
       "USES VARIABLES" : { "commerce_order" : { "type" : "commerce_order", "label" : "Order" } },
       "IF" : [
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003E",
-            "second_price" : { "value" : { "amount" : 30000, "currency_code" : "USD" } }
+            "value" : "30000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         },
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003C=",
-            "second_price" : { "value" : { "amount" : 40000, "currency_code" : "USD" } }
+            "value" : "40000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         }
       ],
@@ -123,19 +158,29 @@ function dfc_commerce_default_rules_configuration() {
       "LABEL" : "Rate 401-500",
       "PLUGIN" : "rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "commerce_price", "commerce_shipping" ],
+      "REQUIRES" : [ "commerce_rules_extra", "commerce_shipping" ],
       "USES VARIABLES" : { "commerce_order" : { "type" : "commerce_order", "label" : "Order" } },
       "IF" : [
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003E",
-            "second_price" : { "value" : { "amount" : 40000, "currency_code" : "USD" } }
+            "value" : "40000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         },
-        { "commerce_price_compare_price" : {
-            "first_price" : [ "commerce-order:commerce-order-total" ],
+        { "commerce_rules_extra_compare_product_amount" : {
+            "order" : [ "commerce-order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "exclude" : "0",
             "operator" : "\\u003C=",
-            "second_price" : { "value" : { "amount" : 50000, "currency_code" : "USD" } }
+            "value" : "50000",
+            "term_id" : { "value" : [] },
+            "product_display" : "0",
+            "term_operator" : "IOO"
           }
         }
       ],
@@ -153,7 +198,7 @@ function dfc_commerce_default_rules_configuration() {
       "PLUGIN" : "rule",
       "OWNER" : "rules",
       "TAGS" : [ "Commerce Tax", "sales_tax" ],
-      "REQUIRES" : [ "commerce_order", "commerce_tax" ],
+      "REQUIRES" : [ "commerce_order", "rules", "commerce_tax" ],
       "USES VARIABLES" : { "commerce_line_item" : { "type" : "commerce_line_item", "label" : "Line item" } },
       "IF" : [
         { "commerce_order_compare_address" : {
@@ -161,6 +206,17 @@ function dfc_commerce_default_rules_configuration() {
             "address_field" : "commerce_customer_shipping|commerce_customer_address",
             "address_component" : "administrative_area",
             "value" : "CA"
+          }
+        },
+        { "entity_has_field" : { "entity" : [ "commerce-line-item" ], "field" : "commerce_product" } },
+        { "entity_has_field" : {
+            "entity" : [ "commerce-line-item:commerce-product" ],
+            "field" : "field_tax_exempt"
+          }
+        },
+        { "NOT data_is" : {
+            "data" : [ "commerce-line-item:commerce-product:field-tax-exempt" ],
+            "value" : "1"
           }
         }
       ],

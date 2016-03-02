@@ -374,6 +374,7 @@ function dfc_points_award_link ( $nid ) {
             'operation' => 'dfc_points_award_link',
             'display' => true
         );
+        // for ad links, set display = true til we can figure how to ajax that?!
         dfc_points_award_grant_points($link_points);
         watchdog('dfc', 'awarding link points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');
       }

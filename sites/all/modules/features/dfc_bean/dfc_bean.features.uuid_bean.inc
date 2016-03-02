@@ -454,7 +454,7 @@ Cabo San Lucas, Mexico</h3>
 <li>The third place DFC member who has generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest Entities will identify the winner by determining which Contestant accumulated the most points.</li>
 </ol>
 <a href="/official-rules">Official Rules</a>
-<a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a> 
+<a href="/leaderboard" class="button">View Leaderboard</a> <a href="/fab-52-resorts" class="button">View Resort</a> 
 </div>
 			
 			
@@ -501,7 +501,7 @@ Cabo San Lucas, Mexico</h3>
 <p>5 Nights free accomodations + a room upgrade.</p>
 <h3>Eligibility:</h3>
 <ol><li>The third place DFC member who has generated the most points during the month. Only points generated for activity specified on the table at the end of the Official Rules count. Contest Entities will identify the winner by determining which Contestant accumulated the most points.</li>
-</ol><p><a href="/official-rules">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/clubhouse" class="button">View Clubhouse</a>
+</ol><p><a href="/official-rules">Official Rules</a><br /><a href="/leaderboard" class="button">View Leaderboard</a> <a href="/fab-52-resorts" class="button">View Resort</a>
 </p></div>
 </div>
 </div>

@@ -162,6 +162,13 @@ function dfc_commerce_default_rules_configuration() {
             "address_component" : "administrative_area",
             "value" : "CA"
           }
+        },
+        { "commerce_order_contains_product_type" : {
+            "commerce_order" : [ "commerce-line-item:order" ],
+            "product_type" : { "value" : { "product" : "product" } },
+            "operator" : "=",
+            "value" : "1"
+          }
         }
       ],
       "DO" : [

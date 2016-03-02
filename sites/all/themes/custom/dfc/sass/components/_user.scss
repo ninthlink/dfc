@@ -2,6 +2,15 @@ body.section-user,
 body.section-users {	
   .l-main {
     color: $color-gray-c;
+	
+	 #block-views-my-invitiations-block{
+	    
+		  a:hover
+		 {
+			 color:$color-white !important;
+		 } 
+ 
+	   }
 	}
   
   h1 {

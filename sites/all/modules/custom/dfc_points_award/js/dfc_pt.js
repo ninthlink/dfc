@@ -10,7 +10,11 @@ function dfcpointsalert( dfcpts ) {
   var dfcbmsg = jQuery('#messages-inner');
   
   dfcbmsg.children('.messages').remove();
-  dfcbmsg.prepend('<div class="messages messages--status">You just earned <strong>'+ dfcpts +' points.</strong></div>');
+  if ( dfcpts > 0 ) {
+    dfcbmsg.prepend('<div class="messages messages--status">You just earned <strong>'+ dfcpts +' points.</strong></div>');
+  } else {
+    dfcbmsg.prepend('<div class="messages messages--warning">Oops! Nice try...</div>');
+  }
   dfcbmsg.parent().parent().fadeIn('normal');
 }
   
@@ -37,7 +41,7 @@ function dfcpointsalert( dfcpts ) {
                 var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
                 $.get(url, function(data) {
                   console.log('got it');
-                  //console.log(data);
+                  console.log(data);
                   dfcpointsalert(5);
                 });
               } else {
@@ -76,8 +80,8 @@ function dfcpointsalert( dfcpts ) {
               var url = '/dfc/points/grant/share/fb/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
-                //console.log(data);
-                dfcpointsalert(5);
+                console.log(data);
+                dfcpointsalert( data.points );
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -86,8 +90,8 @@ function dfcpointsalert( dfcpts ) {
               var url = '/dfc/points/grant/share/tw/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
-                //console.log(data);
-                dfcpointsalert(5);
+                console.log(data);
+                dfcpointsalert( data.points );
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -113,7 +117,7 @@ function dfcpointsalert( dfcpts ) {
                   var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
                   $.get(url, function(data) {
                     console.log('got it');
-                    //console.log(data);
+                    console.log(data);
                     dfcpointsalert(5);
                   });
                 } else {
@@ -144,8 +148,8 @@ function dfcpointsalert( dfcpts ) {
               var url = '/dfc/points/grant/share/fb/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
-                //console.log(data);
-                dfcpointsalert(5);
+                console.log(data);
+                dfcpointsalert( data.points );
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -154,8 +158,8 @@ function dfcpointsalert( dfcpts ) {
               var url = '/dfc/points/grant/share/tw/' + thisnid;
               $.get(url, function(data) {
                 console.log('got it');
-                //console.log(data);
-                dfcpointsalert(5);
+                console.log(data);
+                dfcpointsalert( data.points );
               });
             }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
           }
@@ -182,7 +186,7 @@ function dfcpointsalert( dfcpts ) {
                     var url = '/dfc/points/grant/slideshow/' + thisnid +'/'+ thisowl.itemsAmount;
                     $.get(url, function(data) {
                       console.log('got it');
-                      //console.log(data);
+                      console.log(data);
                       dfcpointsalert(5);
                     });
                   } else {
@@ -222,9 +226,9 @@ function dfcpointsalert( dfcpts ) {
             var nid = Drupal.settings.dfcPointsAward.vid;
             var url = '/dfc/points/grant/share/fb/' + nid;
             $.get(url, function(data) {
-              console.log('got it');
-              //console.log(data);
-              dfcpointsalert(5);
+                console.log('got it');
+                console.log(data);
+                dfcpointsalert( data.points );
             });
           }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }
@@ -233,9 +237,9 @@ function dfcpointsalert( dfcpts ) {
             var nid = Drupal.settings.dfcPointsAward.vid;
             var url = '/dfc/points/grant/share/tw/' + nid;
             $.get(url, function(data) {
-              console.log('got it');
-              //console.log(data);
-              dfcpointsalert(5);
+                console.log('got it');
+                console.log(data);
+                dfcpointsalert( data.points );
             });
           }).append('<span class="dfc-point-value"><span>5</span> Points</span>');
         }

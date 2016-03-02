@@ -3,14 +3,13 @@ body.section-users {
   .l-main {
     color: $color-gray-c;
 	
-	 #block-views-my-invitiations-block{
-	    
-		  a:hover
-		 {
-			 color:$color-white !important;
-		 } 
- 
-	   }
+    #block-views-my-invitiations-block,
+    .block--dfc-user-blocks-membership-benefits {
+    
+      a:hover {
+        color:$color-white !important;
+      }
+	  }
 	}
   
   h1 {
@@ -79,15 +78,43 @@ body.section-users {
 
 .group-image{margin-right:108px; float:left;}
    .group-video{float:left;}
-   
-  @include breakpoint($bp-desk) { 
- .field-group-div {
-    width: 45%;
-    float: left;
+  
+  .field-group-div {
+  
+    @include breakpoint($bp-desk) { 
+    
+      width: 45%;
+      float: left;
 	
-
-   }
+    }
    
+   
+      &.group-image:before,
+      &.group-video:before {
+        background-color: $color-gray-darker;
+        background-image: url('../images/camera_icon_light.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: $color-white;
+        content: '';
+        cursor: default;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        height: 150px;
+        margin-bottom: 16px;
+        width: 40%;
+        text-align: center;
+        vertical-align: top;
+      }
+      &.group-video:before {
+        background-image: url('../images/video_icon_light.png');
+      }
+      /*
+      &:hover:before {
+        background-color:rgba(128,128,128,.5);
+      }
+      */
    }
 
     #edit-field-media-link {
@@ -102,7 +129,7 @@ body.section-users {
         margin-top: 10px;
       }
     }
-
+    /*
     #edit-field-media-link:before {
       background-color: $color-gray-darker;
       background-image: url('../images/video_icon_light.png');
@@ -120,9 +147,11 @@ body.section-users {
       text-align: center;
       vertical-align: top;
     }
+    /*
     #edit-field-media-link:hover:before {
       background-color:rgba(128,128,128,.5);
     }
+    */
     #edit-field-media-link .form-item-field-media-link-und-0:before {
       @extend .button-small;
       
@@ -144,28 +173,30 @@ body.section-users {
       .description {
         margin-top: 10px;
       }
+      /*
+      &:before {
+        background-color: $color-gray-darker;
+        background-image: url('../images/camera_icon_light.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: $color-white;
+        content: '';
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        height: 150px;
+        margin-bottom: 16px;
+        width: 40%;
+        text-align: center;
+        vertical-align: top;
+      }
+      &:hover:before {
+        background-color:rgba(128,128,128,.5);
+      }
+      */
     }
 
-    #edit-field-image:before {
-      background-color: $color-gray-darker;
-      background-image: url('../images/camera_icon_light.png');
-      background-position: center center;
-      background-repeat: no-repeat;
-      color: $color-white;
-      content: '';
-      cursor: pointer;
-      display: inline-block;
-      font-size: 20px;
-      font-weight: bold;
-      height: 150px;
-      margin-bottom: 16px;
-      width: 40%;
-      text-align: center;
-      vertical-align: top;
-    }
-    #edit-field-image:hover:before {
-      background-color:rgba(128,128,128,.5);
-    }
     #edit-field-image .form-item-field-image-und-0:before {
       @extend .button-small;
       

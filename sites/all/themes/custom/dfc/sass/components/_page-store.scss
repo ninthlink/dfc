@@ -252,6 +252,8 @@ body.node-type-product-display {
                 width: 36px;
               }
             }
+			
+			
 
             .form-item-attributes-field-product-size {
               select {
@@ -288,6 +290,25 @@ body.node-type-product-display {
         }
       }
     }
+	.form-wrapper{display: inline-block;}	
+	 .form-submit {
+            background-color: $color-orange;
+            border: 0;
+            color: $color-white;
+            font-family: $dr;
+            @include rem(font-size, 18px);
+            font-weight: bold;
+            height: 60px;
+            width: 260px;
+            text-transform: uppercase;
+          }
+		  
+
+         .form-submit:hover {
+            background-color: $color-gray-medium-dark;
+            color: $color-orange;
+          }
+		  
   }
 
   #block-views-store-block-1 {

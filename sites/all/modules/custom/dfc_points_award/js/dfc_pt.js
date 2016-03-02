@@ -1,3 +1,5 @@
+var dfcpointsalertfader;
+
 function dfcpointsalert( dfcpts ) {
   console.log('dfcalert : '+ dfcpts);
   if ( jQuery('#better-messages-wrapper').size() == 0 ) {
@@ -16,6 +18,11 @@ function dfcpointsalert( dfcpts ) {
     dfcbmsg.prepend('<div class="messages messages--warning">Oops! Nice try...</div>');
   }
   dfcbmsg.parent().parent().fadeIn('normal');
+  
+  clearTimeout(dfcpointsalertfader);
+  dfcpointsalertfader = setTimeout(function() {
+    jQuery('#better-messages-wrapper').fadeOut('slow');
+  }, 6000 );
 }
   
 (function ($) {
@@ -42,8 +49,10 @@ function dfcpointsalert( dfcpts ) {
                 $.get(url, function(data) {
                   console.log('got it');
                   console.log(data);
-                  dfcpointsalert(5);
+                  dfcpointsalert( data.points );
                 });
+                // and unbind
+                $(this).unbind('owlcheck');
               } else {
                 console.log('keep going..');
               }
@@ -118,8 +127,10 @@ function dfcpointsalert( dfcpts ) {
                   $.get(url, function(data) {
                     console.log('got it');
                     console.log(data);
-                    dfcpointsalert(5);
+                    dfcpointsalert( data.points );
                   });
+                  // and unbind
+                  $(this).unbind('owlcheck');
                 } else {
                   console.log('keep going..');
                 }
@@ -187,8 +198,10 @@ function dfcpointsalert( dfcpts ) {
                     $.get(url, function(data) {
                       console.log('got it');
                       console.log(data);
-                      dfcpointsalert(5);
+                      dfcpointsalert( data.points );
                     });
+                    // and unbind
+                    $(this).unbind('owlcheck');
                   } else {
                     console.log('keep going..');
                   }
@@ -318,8 +331,8 @@ function dfcpointsalert( dfcpts ) {
               var vcode = Drupal.settings.dfcPointsAward.vcode;
               var url = '/dfc/points/grant/video/' + nid + '/' + vcode;
               $.get(url, function(data) {
-                //console.log(data);
-                dfcpointsalert(10);
+                console.log(data);
+                dfcpointsalert(data.points);
               });
               awarded = true;
             }

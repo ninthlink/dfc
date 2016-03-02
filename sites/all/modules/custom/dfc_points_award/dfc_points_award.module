@@ -25,29 +25,6 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
-  /*
-  // Returns AJAX commands if the user has JavaScript turned on.
-  $items['dfc/points/award/ajax'] = array(
-    'title' => 'My custom ajax callback',
-    'page callback' => 'dfc_points_award_ajax_callback',
-    'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
-  );
-  // Returns a Non-JavaScript alternative.
-  $items['dfc/points/award/nojs'] = array(
-    'title' => 'My custom non-javascript callback',
-    'page callback' => 'dfc_points_award_nojs_callback',
-    'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
-  );
-  // The page that will run the command.
-  $items['dfc/points/award/trigger-page'] = array(
-    'title' => 'AJAX trigger page',
-    'page callback' => 'dfc_points_award_trigger_page',
-    'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
-  );
-  */
   return $items;
 }
 
@@ -145,7 +122,7 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
       $settings['dfcPointsAward']['vcode'] = dfc_points_award_get_random_string();
       //$settings['dfcPointsAward']['mtype'] = $mtype;
       drupal_add_js($settings, 'setting');
-      drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
+      drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/dfc_pt.js');
       
       $desc_weight = $node->content['field_product_description']['#weight'];
       // on media details, inject # Points field right after Description
@@ -189,7 +166,7 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
   } else if ( $node->type == 'landing_page' ) {
     $settings['dfcPointsAward']['vid'] = $node->nid;
     drupal_add_js($settings, 'setting');
-    drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/award_video.js');
+    drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/dfc_pt.js');
   } else if ( ( $node->type == 'resort' ) || ( $node->type == 'staff' ) ) {
     // we need to inject an extra nid html tag for the share points to hook to..
     $node->content['share_vid'] = array(
@@ -288,24 +265,26 @@ function dfc_points_award_preprocess_views_view_field(&$vars) {
 }
 
 function dfc_points_award_video($vid) {
-  $ret = array('success' => FALSE);
+  $ret = array( 'success' => false, 'points' => 0 );
   $node = node_load($vid);
-  $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
+  if ( $node->type == 'media_item' ) {
+    $cat = $node->field_media_category[LANGUAGE_NONE][0]['tid'];
 
-  $points = dfc_points_award_points_by_cat($cat);
-  if(!dfc_points_award_check_video_awarded($vid)) {
-    $video_points = array(
-        'points' => $points,
-        'entity_type' => 'node',
-        'entity_id' => $vid,
-        'operation' => 'dfc_points_award_video',
-        'display' => false
-    );
-    dfc_points_award_grant_points($video_points);
-    watchdog('dfc', 'awarding video points');
-    $ret['success'] = TRUE;
+    $points = dfc_points_award_points_by_cat($cat);
+    if(!dfc_points_award_check_video_awarded($vid)) {
+      $video_points = array(
+          'points' => $points,
+          'entity_type' => 'node',
+          'entity_id' => $vid,
+          'operation' => 'dfc_points_award_video',
+          'display' => false
+      );
+      dfc_points_award_grant_points($video_points);
+      watchdog('dfc', 'awarding video points');
+      $ret['success'] = true;
+      $ret['points'] = $points;
+    }
   }
-
   drupal_json_output($ret);
 }
 
@@ -440,14 +419,16 @@ function dfc_points_award_share( $wher, $nid ) {
           );
           dfc_points_award_grant_points($link_points);
           watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
-          return '5';
-        } else {
-          //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
-          return '0';
+          $ret = array( 'success' => true, 'points' => 5 );
+          drupal_json_output($ret);
+          exit;
         }
       }
     }
-  }
+  } // else {
+  //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
+  $ret = array( 'success' => FALSE, 'points' => 0 );
+  drupal_json_output($ret);
 }
 // "page" callback for clicking through some gallery
 function dfc_points_award_slideshow( $nid, $count ) {
@@ -476,11 +457,17 @@ function dfc_points_award_slideshow( $nid, $count ) {
         );
         dfc_points_award_grant_points($link_points);
         watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
+        $ret = array( 'success' => true, 'points' => 5 );
+        drupal_json_output($ret);
+        exit;
       } else {
         //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
       }
     }
-  }
+  } // else
+  //drupal_set_message('you already tweeted and got points for '. $nid, 'warning');
+  $ret = array( 'success' => FALSE, 'points' => 0 );
+  drupal_json_output($ret);
 }
 
 function dfc_points_award_grant_points_invite_form_validate(&$form, &$form_state) {
@@ -641,48 +628,6 @@ function dfc_points_award_get_random_string($length = 10) {
   }
   return $randomString;
 }
-/*
-function dfc_points_award_trigger_page() {
-  // Load in Drupal core AJAX library.
-  drupal_add_library('system', 'drupal.ajax');
- 
-  // Load in our custom JavaScript.
-  drupal_add_js(drupal_get_path('module', 'dfc_points_award') . '/js/ajaxtest.js');
- 
-  // Present the user with a link with the id 'my-special-link'.
-  $oot = l('Get share points', 'dfc/points/award/nojs', array(
-    'attributes' => array(
-      'id' => 'my-special-link',
-      'class' => array( 'button' )
-    )
-  ));
-  
-  $oot .= ' '. l('Another trigger chain', '', array(
-    'attributes' => array(
-      'class' => array( 'button', 'triggererd' )
-    )
-  ));
-  
-  return $oot;
-}
-
-// AJAX callback that prints hello world underneath our link.
-function dfc_points_award_ajax_callback() {
-  // Define a new array to hold our AJAX commands.
-  $ajax_commands = array();
-  
-  // Create a new AJAX command that replaces the #page text with our own text.
-  $ajax_commands[] = ajax_command_after('#my-special-link', 'You have earned 5 Points?');
-   
-  // Return our commands in JSON.
-  ajax_deliver(array('#type' => 'ajax', '#commands' => $ajax_commands));
-}
-
-// Non-JavaScript callback that returns whatever
-function dfc_points_award_nojs_callback() {
-  return 'You have earned 5 Points?';
-}
-*/
 
 // Implements hook_userpoints_info().
 function dfc_points_award_userpoints_info() {

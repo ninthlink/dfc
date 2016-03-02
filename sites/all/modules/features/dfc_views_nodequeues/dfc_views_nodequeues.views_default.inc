@@ -33,6 +33,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
   $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
@@ -49,7 +56,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_banner_image']['field'] = 'field_banner_image';
   $handler->display->display_options['fields']['field_banner_image']['label'] = '';
   $handler->display->display_options['fields']['field_banner_image']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_banner_image']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_banner_image']['alter']['path'] = 'dfc/points/grant/link/[nid]';
   $handler->display->display_options['fields']['field_banner_image']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_banner_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_banner_image']['element_default_classes'] = FALSE;
@@ -88,6 +95,13 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Square Banner Random */
   $handler = $view->new_display('block', 'Square Banner Random', 'block_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
   $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
@@ -104,7 +118,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_image']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = 'dfc/points/grant/link/[nid]';
   $handler->display->display_options['fields']['field_image']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
@@ -785,6 +799,13 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Most Popular */
   $handler = $view->new_display('block', 'Most Popular', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
   $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
@@ -871,7 +892,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image_1']['label'] = '';
   $handler->display->display_options['fields']['field_image_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = 'dfc/points/grant/link/[nid]';
   $handler->display->display_options['fields']['field_image_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
@@ -1350,6 +1371,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Videos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
   $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
@@ -1436,7 +1464,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image_1']['label'] = '';
   $handler->display->display_options['fields']['field_image_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = 'df';
   $handler->display->display_options['fields']['field_image_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
@@ -1488,6 +1516,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Images';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ad_link']['id'] = 'field_ad_link';
   $handler->display->display_options['fields']['field_ad_link']['table'] = 'field_data_field_ad_link';
@@ -1574,7 +1609,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image_1']['label'] = '';
   $handler->display->display_options['fields']['field_image_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = 'dfc/points/grant/link/[nid]';
   $handler->display->display_options['fields']['field_image_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
@@ -2568,9 +2603,8 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['row_class'] = 'adv-row';
-  $handler->display->display_options['style_options']['class'] = 'adv-list';
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_media-related-videos';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -2594,6 +2628,13 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['relationships']['field_products_product_id']['table'] = 'field_data_field_products';
   $handler->display->display_options['relationships']['field_products_product_id']['field'] = 'field_products_product_id';
   $handler->display->display_options['relationships']['field_products_product_id']['label'] = 'products';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -2633,7 +2674,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image_1']['label'] = '';
   $handler->display->display_options['fields']['field_image_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = '[field_ad_link]';
+  $handler->display->display_options['fields']['field_image_1']['alter']['path'] = 'dfc/points/grant/link/[nid]';
   $handler->display->display_options['fields']['field_image_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';

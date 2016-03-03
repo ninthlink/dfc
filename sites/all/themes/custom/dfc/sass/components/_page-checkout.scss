@@ -12,7 +12,7 @@ body.page-checkout {
         color: $color-white;
         font-size: 1.25rem;
         display: block;
-        font-family: "dangerregular",Helvetica,sans-serif;
+        font-family: $dr;
         letter-spacing: 2px;
         padding: 15px 60px;
         text-decoration: none;
@@ -35,13 +35,15 @@ body.page-checkout {
 		
 	}
   }
+  
+  
   .commerce_coupon{
 	.form-submit {
         border: 0px none;
         color: $color-white;
         font-size: 1.25rem;
         display: block;
-        font-family: "dangerregular",Helvetica,sans-serif;
+        font-family: $dr;
         letter-spacing: 2px;
         padding: 15px 60px;
         text-decoration: none;
@@ -61,30 +63,41 @@ body.page-checkout {
   
   .checkout-buttons.form-wrapper{
 	#edit-continue{
-		background: #f1592a!important;
-		border: 2px solid #f1592a!important;
-		color: #fff!important;
+		background: $color-orange !important;
+		border: 2px solid $color-orange !important;
+		color: $color-white !important;
 	}
 	#edit-continue:hover{
-		background: #000!important;
-		color: #f1592a!important;
+		background: $color-black !important;
+		color: $color-orange!important;
 	}
+	.fieldset{
+		@include breakpoint(min-width $bp530) {
+			margin: 0 !important;
+		}
+	}
+	.form-submit{
+		@include breakpoint(min-width $bp530) {
+			min-width: 100% !important;
+		}
+	}
+	
   }
 }
 
 body.page-cart {
   #edit-actions input#edit-checkout{
-  background: #f1592a;
-	color: #FFF;
+  background: $color-orange;
+	color: $color-white;
 	font-size: 14px;
-	border:2px solid #f1592a;
+	border:2px solid $color-orange;
   }
   
   #edit-actions input#edit-checkout:hover
      {
-	background: #000;
-	color: #f1592a;
-	border:2px solid #f1592a;
+	background: $color-black;
+	color: $color-orange;
+	border:2px solid $color-orange;
    }
 	
 }

@@ -2305,7 +2305,7 @@ body.page-checkout #commerce-userpoints-discount fieldset {
     color: #ffffff;
     font-size: 1.25rem;
     display: block;
-    font-family: "dangerregular",Helvetica,sans-serif;
+    font-family: "dangerregular", Helvetica, sans-serif;
     letter-spacing: 2px;
     padding: 15px 60px;
     text-decoration: none;
@@ -2325,13 +2325,13 @@ body.page-checkout #commerce-userpoints-discount fieldset {
 body.page-checkout #commerce-userpoints-discount .form-submit {
   float: left; }
 
-/* line 39, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 41, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .commerce_coupon .form-submit {
   border: 0px none;
   color: #ffffff;
   font-size: 1.25rem;
   display: block;
-  font-family: "dangerregular",Helvetica,sans-serif;
+  font-family: "dangerregular", Helvetica, sans-serif;
   letter-spacing: 2px;
   padding: 15px 60px;
   text-decoration: none;
@@ -2344,31 +2344,31 @@ body.page-checkout .commerce_coupon .form-submit {
   margin-left: auto;
   float: left; }
 
-/* line 57, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 59, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .commerce_coupon .form-submit:hover {
   background: #f1592a; }
 
-/* line 63, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 65, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .checkout-buttons.form-wrapper #edit-continue {
   background: #f1592a !important;
   border: 2px solid #f1592a !important;
-  color: #fff !important; }
+  color: #ffffff !important; }
 
-/* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 70, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .checkout-buttons.form-wrapper #edit-continue:hover {
-  background: #000 !important;
+  background: #000000 !important;
   color: #f1592a !important; }
 
-/* line 76, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 89, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-cart #edit-actions input#edit-checkout {
   background: #f1592a;
-  color: #FFF;
+  color: #ffffff;
   font-size: 14px;
   border: 2px solid #f1592a; }
 
-/* line 83, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+/* line 96, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-cart #edit-actions input#edit-checkout:hover {
-  background: #000;
+  background: #000000;
   color: #f1592a;
   border: 2px solid #f1592a; }
 

@@ -214,6 +214,7 @@ top: 0;
     position: relative !important;
     width: 100%;
     min-height: 310px;
+	
 
 
 
@@ -435,6 +436,14 @@ top: 0;
     		@include rem(font-size, 18px);
         font-weight: 300;
         margin-bottom: 50px;
+		
+		 @include breakpoint(min-width 320px) {
+          @include breakpoint(max-width 959px) {
+		     position: relative;
+			 top:40px;
+		  }
+		  
+		  }
       }
       
       h3 {
@@ -531,6 +540,14 @@ top: 0;
       display: none;
     }
     
+	 p.membership_note{
+		@include breakpoint(min-width 320px) {
+          @include breakpoint(max-width 959px) {
+			margin-top:185px!important;
+		  }
+		}
+	  }
+	  
     .quicktabs_main {
       .views-field-title {
         display: none;
@@ -564,6 +581,8 @@ top: 0;
           }
         }
       }
+	  
+	 
       
       h4 {
         font-family: $rw;

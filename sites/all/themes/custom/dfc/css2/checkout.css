@@ -105,17 +105,29 @@ body.page-cart #edit-actions input#edit-submit:hover
 	background: #000;
 }
 
+
+
+
+/* 03-03-16
 body.page-cart #edit-actions input#edit-checkout
 {
-	background: #000;
+	background: #f1592a;
 	color: #FFF;
 	font-size: 14px;
+	border:2px solid #f1592a;
 }
 
 body.page-cart #edit-actions input#edit-checkout:hover
 {
-	background: #f1592a;
+	background: #000;
+	color: #f1592a;
+	border:2px solid #f1592a;
 }
+03-03-16*/
+
+
+
+
 /*
 #edit-customer-profile-billing
 {
@@ -205,7 +217,6 @@ body.page-checkout .checkout-buttons.form-wrapper
 body.page-checkout .checkout-buttons.form-wrapper #edit-continue, .checkout-completion-message p:last-child a
 {
 	border: 0px none;
-    color: #FFF;
     font-size: 1.25rem;
     display: block;
     font-family: "dangerregular",Helvetica,sans-serif;

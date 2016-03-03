@@ -28,5 +28,62 @@ body.page-checkout {
         background: $color-orange;
       }
     }
+	.form-submit{
+		float: left;
+		
+	}
   }
+  #edit-commerce-coupon{
+	.form-submit {
+        border: 0px none;
+        color: $color-white;
+        font-size: 1.25rem;
+        display: block;
+        font-family: "dangerregular",Helvetica,sans-serif;
+        letter-spacing: 2px;
+        padding: 15px 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: middle;
+        text-align: center;
+        background: $color-black;
+        font-size: 14px;
+        min-width: 275px;
+        margin-left: auto;
+		float: left;
+      }
+	  .form-submit:hover {
+        background: $color-orange;
+      }
+  }
+  
+  .checkout-buttons.form-wrapper{
+	#edit-continue{
+		background: #f1592a!important;
+		border: 2px solid #f1592a!important;
+		color: #fff!important;
+	}
+	#edit-continue:hover{
+		background: #000!important;
+		color: #f1592a!important;
+	}
+  }
+}
+
+body.page-cart {
+  #edit-actions input#edit-checkout{
+  background: #f1592a;
+	color: #FFF;
+	font-size: 14px;
+	border:2px solid #f1592a;
+  }
+  
+  
+  #edit-actions input#edit-checkout:hover
+     {
+	background: #000;
+	color: #f1592a;
+	border:2px solid #f1592a;
+   }
+	
 }

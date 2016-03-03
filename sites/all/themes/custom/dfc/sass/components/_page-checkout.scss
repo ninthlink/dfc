@@ -6,7 +6,8 @@ body.page-checkout {
       float: right;
       width: 510px;
       */
-      .form-submit {
+      .form-submit,
+		input.form-submit[disabled]{
         border: 0px none;
         color: $color-white;
         font-size: 1.25rem;
@@ -24,7 +25,8 @@ body.page-checkout {
         margin-left: auto;
       }
 
-      .form-submit:hover {
+      .form-submit:hover,
+		input.form-submit[disabled]:hover	  {
         background: $color-orange;
       }
     }
@@ -33,7 +35,7 @@ body.page-checkout {
 		
 	}
   }
-  #edit-commerce-coupon{
+  .commerce_coupon{
 	.form-submit {
         border: 0px none;
         color: $color-white;
@@ -77,7 +79,6 @@ body.page-cart {
 	font-size: 14px;
 	border:2px solid #f1592a;
   }
-  
   
   #edit-actions input#edit-checkout:hover
      {

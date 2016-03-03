@@ -10,6 +10,124 @@
 function dfc_user_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'invite-invite_by_email-field_invitation_email_address'.
+  $field_instances['invite-invite_by_email-field_invitation_email_address'] = array(
+    'bundle' => 'invite_by_email',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Type e-mail address of person you wish invite.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'invite',
+    'field_name' => 'field_invitation_email_address',
+    'label' => 'E-mail',
+    'required' => FALSE,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'invite-invite_by_email-field_invitation_email_body'.
+  $field_instances['invite-invite_by_email-field_invitation_email_body'] = array(
+    'bundle' => 'invite_by_email',
+    'default_value' => array(
+      0 => array(
+        'value' => '[invite:inviter:name] has invited you to join [site:name] at [site:url].
+
+To become a member of [site:name], click the link below or paste it into the address bar of your browser.
+
+[invite:invite-accept-link]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Enter e-mail body.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
+      ),
+    ),
+    'entity_type' => 'invite',
+    'field_name' => 'field_invitation_email_body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 30,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'invite-invite_by_email-field_invitation_email_subject'.
+  $field_instances['invite-invite_by_email-field_invitation_email_subject'] = array(
+    'bundle' => 'invite_by_email',
+    'default_value' => array(
+      0 => array(
+        'value' => '[invite:inviter:name] has sent you an invite!',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Enter e-mail subject.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'invite',
+    'field_name' => 'field_invitation_email_subject',
+    'label' => 'Subject',
+    'required' => FALSE,
+    'settings' => array(
+      'membership_entity_join_form' => FALSE,
+      'membership_entity_term_renew_form' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 20,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_city_state'.
   $field_instances['user-user-field_city_state'] = array(
     'bundle' => 'user',
@@ -274,13 +392,19 @@ function dfc_user_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('<a href="/privacy-policy">View Privacy Policy</a>');
+  t('Body');
   t('City, State');
   t('Club ID');
+  t('E-mail');
+  t('Enter e-mail body.');
+  t('Enter e-mail subject.');
   t('First Name');
   t('Last Name');
   t('Send emails with DFC special promotions and/or offers');
   t('Share my email with select DFC sponsors');
+  t('Subject');
   t('Terms');
+  t('Type e-mail address of person you wish invite.');
 
   return $field_instances;
 }

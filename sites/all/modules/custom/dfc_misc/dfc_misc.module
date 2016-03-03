@@ -1,0 +1,16 @@
+<?php
+function dfc_misc_entity_view( $entity, $type, $view_mode, $langcode ) {
+  switch ($type) {
+    case 'invite':
+      //Add link back to user's profile
+      $user = user_load($entity->uid);
+      $entity->content['profile_link'] = array(
+        '#type' => 'link',
+        '#title' => t('Back to Profile'),
+        '#href' => '/users/'.$user->name,
+        '#attributes' => array('class' => 'button'),
+        '#weight' => 99
+      );
+    break;
+  }
+}

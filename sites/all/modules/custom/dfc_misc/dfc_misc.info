@@ -1,0 +1,5 @@
+name = DFC Miscellaneous
+project = "DFC"
+package = "DFC"
+description = Miscellaneous custom functions
+core = 7.x

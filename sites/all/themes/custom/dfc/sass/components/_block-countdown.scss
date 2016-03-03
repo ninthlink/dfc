@@ -22,7 +22,7 @@
       float: left;
       margin-bottom: 0;
       text-align: left;
-      width: 36%;
+      width: 44%;
 	  }
   }
   
@@ -45,14 +45,44 @@
   
   .countdown-sponsor,
   .countdown-prize {
-    color: $color-gray-9;
+    /*color: $color-gray-9;*/
+	color: $color-white;
 	  font-family: $sr;
 		@include rem(font-size, 14px);
   }
-  
+  .countdown-sponsor{
+	margin-bottom: 25px;
+  }
   .countdown-prize {
     color: $color-white;
+	padding: 15px 50px;
+	 font-family: $tgc;
+		@include rem(font-size, 16px);	
   }
+  
+  .jquery-countdown{
+	@include breakpoint(max-width 1024px) {
+		text-indent: 0;
+		text-align: center;
+	  }
+  }
+  .jquery-countdown::before {
+	  color: #ffffff;
+	  content: "next giveway";
+	  display: block;
+	  font-size: 20px;
+	  margin-bottom: 15px;
+	  text-align: left;
+	  text-indent: 30%;
+	  text-transform: uppercase;
+	  font-family: $dr;
+	  @include breakpoint(max-width 1024px) {
+		text-indent: 0;
+		text-align: center;
+	  }
+	}
+  
+  
 }  
 .jquery-countdown {
   background: none;
@@ -63,8 +93,9 @@
   @include breakpoint($bp-tab) {
     float: right;
     text-align: right;
-    width: 64%;
+    width: 56%;
   }
+
   
   // small text
   .countdown_section {

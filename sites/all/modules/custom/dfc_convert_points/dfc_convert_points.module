@@ -52,10 +52,16 @@ function add_monthly_giveaway_clock(&$block){
     $prize_nids = array_keys($prize_result['node']);
     $prize_nid = reset($prize_nids);
     $prize = node_load($prize_nid);
-    $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('Giveaway <span>Countdown</span>').'</div>';
+   /* $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('Giveaway <span>Countdown</span>').'</div>';
     $block['content'] .= '<div class="countdown-sponsor">'.$prize->field_sponsor[LANGUAGE_NONE][0]['value'].'</div>';
     $block['content'] .= '<div class="countdown-prize">'.$prize->title.'</div></div>';
+    $block['content'] .= add_giveaway_clock(date("Y/m/01", strtotime('+1 month')));*/
+	
+	 $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('DFC EXCLUSIVE <span>Giveaway</span>').'</div>';
+    $block['content'] .= '<div class="countdown-sponsor">The Dollar Fishing Club member with the most monthly points at the end of the DFC Exclusive Giveaway countdown will earn the giveaway.</div>';
+    $block['content'] .= '<a href="/dfc-prizeboard" class="countdown-prize button">VIEW PRIZEBOARD</a></div>';
     $block['content'] .= add_giveaway_clock(date("Y/m/01", strtotime('+1 month')));
+	
   }
 }
 

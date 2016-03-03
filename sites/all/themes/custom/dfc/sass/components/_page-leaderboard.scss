@@ -201,6 +201,13 @@ body.node-type-landing-page.section-leaderboard {
     
     .view-footer {
       margin-bottom: 60px;
+	  
+	  @include breakpoint(min-width $bp590) {
+		@include breakpoint(max-width 959px) {
+			margin-top: 0px !important;
+		}
+	  }
+	  
     }
     
     .leader-board-links {

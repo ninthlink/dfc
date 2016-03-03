@@ -767,21 +767,40 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
   /* line 46, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
   .block--dfc-convert-points-giveaway-countdown .countdown-sponsor,
   .block--dfc-convert-points-giveaway-countdown .countdown-prize {
-    color: #999999;
+    /*color: $color-gray-9;*/
+    color: #ffffff;
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;
     font-size: 0.875rem; }
   /* line 53, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+  .block--dfc-convert-points-giveaway-countdown .countdown-sponsor {
+    margin-bottom: 25px; }
+  /* line 56, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
   .block--dfc-convert-points-giveaway-countdown .countdown-prize {
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 15px 50px;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
+    font-size: 16px;
+    font-size: 1rem; }
+  /* line 69, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+  .block--dfc-convert-points-giveaway-countdown .jquery-countdown::before {
+    color: #ffffff;
+    content: "next giveway";
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    text-indent: 30%;
+    text-transform: uppercase;
+    font-family: "dangerregular", Helvetica, sans-serif; }
 
-/* line 57, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+/* line 87, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
 .jquery-countdown {
   background: none;
   border: 0;
   text-align: center;
   white-space: nowrap; }
-  /* line 70, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+  /* line 101, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
   .jquery-countdown .countdown_section {
     position: relative;
     display: inline-block;
@@ -792,7 +811,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     text-align: right;
     padding-right: 10px;
     width: auto; }
-    /* line 84, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+    /* line 115, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
     .jquery-countdown .countdown_section:after {
       content: ":";
       display: block;
@@ -803,13 +822,13 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
       position: absolute;
       top: -10px;
       right: 1px; }
-    /* line 99, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+    /* line 130, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
     .jquery-countdown .countdown_section.secs {
       padding-right: 0; }
-      /* line 106, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+      /* line 137, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
       .jquery-countdown .countdown_section.secs:after {
         display: none; }
-  /* line 113, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+  /* line 144, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
   .jquery-countdown .countdown_amount {
     position: relative;
     background: #ffffff;
@@ -825,7 +844,7 @@ body.node-type-page .tabs.tabs--primary, body.node-type-article .tabs.tabs--prim
     text-indent: 7px;
     display: inline-block;
     margin-bottom: 10px; }
-    /* line 142, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
+    /* line 173, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_block-countdown.scss */
     .jquery-countdown .countdown_amount:before {
       content: "";
       display: block;
@@ -3029,25 +3048,25 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
   /* line 202, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .view-footer {
     margin-bottom: 60px; }
-  /* line 206, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 213, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links {
     margin-bottom: 40px;
     overflow: hidden;
     *zoom: 1; }
-    /* line 210, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    /* line 217, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
     body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links .link {
       /*
     	  @include breakpoint($bp-full) {
           width: 50%;
     	  }
         */ }
-    /* line 224, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+    /* line 231, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
     body.node-type-landing-page.section-leaderboard .view-leaderboards .leader-board-links a {
       margin-bottom: 30px;
       display: block;
       padding-left: 0;
       padding-right: 0; }
-  /* line 233, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 240, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   body.node-type-landing-page.section-leaderboard .view-leaderboards .leaderboard-text {
     font-size: 14px;
     font-size: 0.875rem;
@@ -3055,11 +3074,11 @@ body.node-type-landing-page.section-leaderboard .view-leaderboards {
     color: #ffffff;
     clear: both; }
 
-/* line 247, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+/* line 254, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
 .content-bottom .block {
   float: left;
   width: 100%; }
-  /* line 251, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
+  /* line 258, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-leaderboard.scss */
   .content-bottom .block .inner,
   .content-bottom .block .view-user-ranking .view-content {
     float: left;

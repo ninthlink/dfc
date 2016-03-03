@@ -128,6 +128,11 @@ body.page-store {
 }
 
 body.node-type-product-display {
+
+ .ajax-progress-throbber
+ {
+   display:none !important;
+ }
   .l-main {
 
     .back-banner {

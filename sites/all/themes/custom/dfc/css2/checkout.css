@@ -116,7 +116,7 @@ body.page-cart #edit-actions input#edit-checkout:hover
 {
 	background: #f1592a;
 }
-
+/*
 #edit-customer-profile-billing
 {
 	float: left;
@@ -131,7 +131,7 @@ body.page-cart #edit-actions input#edit-checkout:hover
 	margin-right: 2%;
 	border: 0px solid #FFF;
 }
-
+*/
 body.page-checkout #commerce-checkout-form-checkout
 {
 	margin-top: 30px;	

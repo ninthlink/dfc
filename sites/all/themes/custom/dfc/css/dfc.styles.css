@@ -3009,10 +3009,12 @@ body.node-type-landing-page.section-blog .block--views-blog-block .views-field-f
 
 /* line 3, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout #commerce-userpoints-discount fieldset {
-  border: 0;
-  float: right;
-  width: 510px; }
-  /* line 8, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+  /*
+      border: 0;
+      float: right;
+      width: 510px;
+      */ }
+  /* line 9, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
   body.page-checkout #commerce-userpoints-discount fieldset .form-submit {
     border: 0px none;
     color: #ffffff;
@@ -3029,7 +3031,7 @@ body.page-checkout #commerce-userpoints-discount fieldset {
     font-size: 14px;
     min-width: 275px;
     margin-left: auto; }
-  /* line 26, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
+  /* line 27, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
   body.page-checkout #commerce-userpoints-discount fieldset .form-submit:hover {
     background: #f1592a; }
 

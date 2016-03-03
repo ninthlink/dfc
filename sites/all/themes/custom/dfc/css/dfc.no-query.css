@@ -5145,17 +5145,19 @@ body.node-type-product-display .l-main .l-content {
       font-weight: bold;
       height: 60px;
       width: 260px;
-      text-transform: uppercase; }
-    /* line 291, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+      text-transform: uppercase;
+      border: 2px solid #f1592a; }
+    /* line 292, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display .l-main .l-content .node .sidebar #edit-submit:hover {
-      background-color: #828384;
-      color: #f1592a; }
+      background: #000000;
+      color: #f1592a;
+      text-decoration: none; }
 
-/* line 298, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 300, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.node-type-product-display .l-main .form-wrapper {
   display: inline-block; }
 
-/* line 299, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 301, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.node-type-product-display .l-main .form-submit {
   background-color: #f1592a;
   border: 0;
@@ -5166,37 +5168,39 @@ body.node-type-product-display .l-main .form-submit {
   font-weight: bold;
   height: 60px;
   width: 260px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 2px solid #f1592a; }
 
-/* line 312, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 315, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.node-type-product-display .l-main .form-submit:hover {
-  background-color: #828384;
-  color: #f1592a; }
+  background: #000000;
+  color: #f1592a;
+  text-decoration: none; }
 
-/* line 319, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+/* line 323, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
 body.node-type-product-display #block-views-store-block-1 {
   background: #ffffff;
   color: #000000;
   padding: 20px 50px; }
-  /* line 324, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 328, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 h2.block__title {
     color: #f1592a;
     font-size: 36px;
     text-transform: uppercase; }
-  /* line 330, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 334, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
     text-transform: uppercase; }
-  /* line 337, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 341, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-field-product-image img {
     border: 1px solid #c6c6c6;
     width: 200px; }
-  /* line 343, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+  /* line 347, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
   body.node-type-product-display #block-views-store-block-1 .views-field-commerce-price {
     font-family: "sanchezregular", Helvetica, sans-serif; }
-    /* line 346, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
+    /* line 350, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-store.scss */
     body.node-type-product-display #block-views-store-block-1 .views-field-commerce-price .pts-value {
       color: #f1592a;
       font-weight: bold; }

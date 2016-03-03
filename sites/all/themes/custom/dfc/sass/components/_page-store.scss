@@ -286,11 +286,13 @@ body.node-type-product-display {
             height: 60px;
             width: 260px;
             text-transform: uppercase;
+			border: 2px solid $color-orange;
           }
 
           #edit-submit:hover {
-            background-color: $color-gray-medium-dark;
-            color: $color-orange;
+            background: $color-black;
+		   color: $color-orange;
+           text-decoration: none;
           }
         }
       }
@@ -306,12 +308,14 @@ body.node-type-product-display {
             height: 60px;
             width: 260px;
             text-transform: uppercase;
+			border: 2px solid $color-orange;
           }
 		  
 
          .form-submit:hover {
-            background-color: $color-gray-medium-dark;
-            color: $color-orange;
+            background: $color-black;
+		    color: $color-orange;
+            text-decoration: none;
           }
 		  
   }

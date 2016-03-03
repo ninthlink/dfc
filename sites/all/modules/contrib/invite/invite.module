@@ -325,7 +325,7 @@ function invite_access($op, $invite = NULL, $account = NULL, $entity_type = NULL
 function invite_withdraw_access($invite) {
   global $user;
 
-  if ($invite->status = INVITE_WITHDRAWN) {
+  if ($invite->status == INVITE_WITHDRAWN) {
     drupal_set_message(t('The invitation has already been withdrawn.'), 'error');
     return FALSE;
   }

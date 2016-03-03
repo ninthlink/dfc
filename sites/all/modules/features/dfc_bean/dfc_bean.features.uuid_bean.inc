@@ -496,9 +496,9 @@ Cabo San Lucas, Mexico</h3>
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each week a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the week (travel expenses not included) and experience the perks of being a DFC member.',
+          'value' => 'The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each month a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the month (travel expenses not included) and experience the perks of being a DFC member.',
           'format' => 'full_html',
-          'safe_value' => '<p>The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each week a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the week (travel expenses not included) and experience the perks of being a DFC member.</p>
+          'safe_value' => '<p>The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each month a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the month (travel expenses not included) and experience the perks of being a DFC member.</p>
 ',
         ),
       ),

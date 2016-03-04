@@ -7,6 +7,7 @@ dependencies[] = imagecache_canvasactions
 features[features_api][] = api:2
 features[image][] = 1070x610
 features[image][] = 200x200
+features[image][] = 346x241
 features[image][] = 348x196
 features[image][] = 362x243
 features[image][] = 394x392

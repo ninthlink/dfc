@@ -40,6 +40,44 @@ function dfc_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 346x241.
+  $styles['346x241'] = array(
+    'label' => '346x241',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 346,
+          'height' => 241,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+      2 => array(
+        'name' => 'canvasactions_definecanvas',
+        'data' => array(
+          'RGB' => array(
+            'HEX' => '#ffffff',
+          ),
+          'under' => 1,
+          'exact' => array(
+            'width' => 346,
+            'height' => 241,
+            'xpos' => 'center',
+            'ypos' => 'center',
+          ),
+          'relative' => array(
+            'leftdiff' => '',
+            'rightdiff' => '',
+            'topdiff' => '',
+            'bottomdiff' => '',
+          ),
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: 348x196.
   $styles['348x196'] = array(
     'label' => '348x196',

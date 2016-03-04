@@ -263,8 +263,8 @@ body.node-type-product-display {
           }
 
           .attribute-widgets {
-            display: inline-block;
-            max-width: 180px;
+            display: block;
+            min-width: 180px;
 
             .form-type-commerce-fancy-attributes {
               display: inline-block;
@@ -303,7 +303,7 @@ body.node-type-product-display {
           }
           #edit-line-item-fields,
           .inline {
-            display: inline-block;
+            display: block !important;
           }
 
           #edit-submit {

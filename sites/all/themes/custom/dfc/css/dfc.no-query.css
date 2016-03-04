@@ -4504,12 +4504,12 @@ body.section-dfc-prizeboard .l-footer {
 
 /* line 210, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter h3 {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 20px; }
 
 /* line 211, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .giveaway-counter p {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 20px;
   margin-top: 2px;
   color: #989898; }
@@ -4536,7 +4536,7 @@ body.section-dfc-prizeboard .l-footer {
   line-height: 0.85;
   border-bottom: 12px solid #FD6631;
   padding-bottom: 7px;
-  font-family: "dangerregular",Helvetica,sans-serif; }
+  font-family: "dangerregular", Helvetica, sans-serif; }
 
 /* line 228, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win {
@@ -4553,18 +4553,18 @@ body.section-dfc-prizeboard .l-footer {
 #block-bean-prizeboard .Official-bottom .how-to-win h3 {
   color: #707070;
   font-size: 25px;
-  font-family: "tradegothic-bold-condensed20",Georgia,serif; }
+  font-family: "tradegothic-bold-condensed20", Georgia, serif; }
 
 /* line 231, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win p {
   margin-top: 3px;
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 16px;
   font-weight: 400; }
 
 /* line 232, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win li {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-weight: light;
   font-size: 14.5px;
   margin-left: -22px;
@@ -4572,7 +4572,7 @@ body.section-dfc-prizeboard .l-footer {
 
 /* line 233, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .how-to-win a {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-weight: light;
   font-size: 14.5px;
   font-weight: 400 !important; }
@@ -4596,7 +4596,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   margin-top: 58px;
   padding: 10px 30px 10px 30px !important;
   margin-right: 10px;
-  font-family: "tradegothic-bold-condensed20",Georgia,serif;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 15.5 !important;
   height: 51;
   width: 228px; }
@@ -4611,7 +4611,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 /* line 238, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort .first-h3 {
   color: #ED604C;
-  font-family: "tradegothic-bold-condensed20",Georgia,serif;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 26px;
   line-height: 1.1; }
 
@@ -4619,11 +4619,11 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 #block-bean-prizeboard .Official-bottom .current-resort h3 {
   color: #707070;
   font-size: 26px;
-  font-family: "tradegothic-bold-condensed20",Georgia,serif; }
+  font-family: "tradegothic-bold-condensed20", Georgia, serif; }
 
 /* line 241, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort li {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-weight: 100 !important;
   font-size: 14.5px;
   margin-left: -22px;
@@ -4631,7 +4631,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 
 /* line 242, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .current-resort a {
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 14.5px;
   font-weight: 100 !important;
   font-weight: 400 !important; }
@@ -4643,7 +4643,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 /* line 245, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 #block-bean-prizeboard .Official-bottom .current-resort p {
   margin-top: 3px;
-  font-family: Rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 16px;
   font-weight: 400; }
 
@@ -4666,7 +4666,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
   margin-top: 120px;
   padding: 10px 30px 10px 30px !important;
   margin-right: 10px;
-  font-family: "tradegothic-bold-condensed20",Georgia,serif;
+  font-family: "tradegothic-bold-condensed20", Georgia, serif;
   font-size: 15.5 !important;
   height: 51;
   width: 228px; }
@@ -4743,7 +4743,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 /* line 398, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .view-timed-giveaways .views-row .views-field-title {
   color: #ffffff;
-  font-family: "dangerregular",Helvetica,sans-serif;
+  font-family: "dangerregular", Helvetica, sans-serif;
   font-size: 1.875rem !important;
   padding-top: 21px;
   padding-bottom: 20px;
@@ -4757,14 +4757,14 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
 /* line 411, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .views-field.views-field-field-product-sponsor-name {
   color: #C44E2A;
-  font-family: rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 18px;
   margin-bottom: 15px !important; }
 
 /* line 417, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-prizeboard.scss */
 .views-field.views-field-body {
   color: #B4B5B4;
-  font-family: rockwell;
+  font-family: "Rockwell", Georgia, serif;
   font-size: 17px;
   font-weight: 400; }
 
@@ -4807,7 +4807,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     margin-top: 25px !important;
     padding: 10px 30px 10px 30px !important;
     margin-right: 10px;
-    font-family: "tradegothic-bold-condensed20",Georgia,serif;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 15.5 !important;
     height: 51;
     width: 228px; }
@@ -4826,7 +4826,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     margin-top: 25px !important;
     padding: 10px 30px 10px 30px !important;
     margin-right: 10px;
-    font-family: "tradegothic-bold-condensed20",Georgia,serif;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 15.5 !important;
     height: 51;
     width: 228px; } }
@@ -4879,7 +4879,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     margin-top: 58px !important;
     padding: 10px 10px 10px 10px !important;
     margin-right: 10px;
-    font-family: "tradegothic-bold-condensed20",Georgia,serif;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 15.5 !important;
     height: 51;
     width: auto !important; }
@@ -4898,7 +4898,7 @@ body.section-users .content-bottom #block-invite-invite-add-invite-by-email #blo
     margin-top: 58px;
     padding: 10px 10px 10px 10px !important;
     margin-right: 10px;
-    font-family: "tradegothic-bold-condensed20",Georgia,serif;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 15.5 !important;
     height: 51;
     width: auto !important; }

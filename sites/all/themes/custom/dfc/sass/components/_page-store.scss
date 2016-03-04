@@ -6,7 +6,13 @@ body.page-store {
 
   .view-store {
     background:$color-gray-36;
-//    padding: 0 10px;
+//  padding: 0 10px;
+
+
+    img {
+      float: left !important;
+      margin: 0 0 20px;
+    }
 
     h1 {
       display: inline;
@@ -62,15 +68,27 @@ body.page-store {
       
       ul.adv-list {
         padding: 0 !important;
-        margin: 1% !important;
-        width: 98%;
+        margin: 20px !important;
+        width: auto;
       }
       li.adv-row {
-        width: 31.33% !important;
         float: left;
         display: block;
-        min-height: 384px;
-        margin: 1% !important;
+        min-height: 0;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        
+        @include breakpoint($bp-tab) {
+          width: 46% !important;
+          margin: 2% !important;
+          min-height: 479px;
+        }
+
+        @include breakpoint($bp-desk) {
+          width: 30.5% !important;
+          margin: 1.4% !important;
+          min-height: 394px;
+        }
       }
   
   
@@ -79,37 +97,47 @@ body.page-store {
 	 
     .views-row {
       background-color: $color-black;
-      margin: 20px 0;
-      overflow: hidden;
-      height: 340px;
-      width: 300px;
 
       .views-field {
-        margin: 0 10px;
-      }
-
-      .views-field-field-image {
+        float: left;
+        width: 100%;
         margin: 0;
+        padding: 0 30px;
+        
+        &.views-field-field-image,
+        &.views-field-field-product-image {
+          margin: 0;
+          padding: 0;
+        }
       }
 
       .views-field-title {
         color: $color-white;
         font-family: $dr;
         @include rem(font-size, 30px);
+        line-height: 1;
+        min-height: 90px;
         text-transform: uppercase;
       }
-
-      .views-field-field-image,
-      .views-field-field-product-image {
-        margin: 0;
-
-       /* img {
-          max-height: 200px;
-        }*/
+      .views-item-advertisement {
+        .views-field-title {
+          display: none;
+        }
+        
+        
+        .views-field.views-field-field-image-1 {
+          padding: 0 !important;
+          
+          img {
+            float: left;
+            margin: 0 !important;
+          }
+        }
       }
-
       .views-field-commerce-price {
         font-family: $sr;
+        padding-bottom: 18px;
+        text-transform: uppercase;
 
         .pts-value {
           color: $color-orange;
@@ -121,6 +149,8 @@ body.page-store {
         margin: 0;
 
         img {
+          float: left;
+          width: 100%;
         }
       }
     }

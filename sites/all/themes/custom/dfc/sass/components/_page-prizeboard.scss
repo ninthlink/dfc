@@ -392,7 +392,7 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
 
 .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
     width: 100% !important;
-    margin: 0 !important;
+    /*margin: 0 !important;*/
     border: 3px solid #FC6424;
 }
 .view-timed-giveaways .views-row .views-field-title {
@@ -436,8 +436,10 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
 .view-timed-giveaways .view-content li.adv-row {
     display: block;
     float: left;
-    width: 30% !important;
+    width: 275px !important;
     min-height: 548px;
+	margin:1% !important;
+	margin-bottom:2% !important;
 }
 
 
@@ -453,19 +455,24 @@ padding-bottom: 7px;font-family: "dangerregular",Helvetica,sans-serif;}
 	
 	.view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
     width: 30% !important;     margin: 0px !important;     border: 3px solid #FC6424;}
-	.view-footer {    width: 50%;    margin-top: -46px !important;    margin-left: 20px;}
+	.view-footer {    width: 50%;    margin-top: -46px !important;    margin-left: 0px; left: 106%; top: -1.6em; position: relative;}
 	
 	
 .view-timed-giveaways .attachment {
     float: left;
-    width: 30% !important;
+    width: 275px !important;
+	margin:1% !important;
 }
 .view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
-    width: 30% !important;
+    width: 100% !important;
     margin: 0px !important;
     border: 3px solid #FC6424;
+	margin-top:-26px !important;
 }
+.view-timed-giveaways ul.adv-list{margin-top:46px !important;}
 
 
 }
-
+@media only screen and (max-width: 589px){
+.view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row{margin-bottom: 25px!important;}
+}

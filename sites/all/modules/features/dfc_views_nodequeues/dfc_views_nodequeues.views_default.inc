@@ -2664,7 +2664,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_product_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_product_image']['settings'] = array(
-    'image_style' => '362x243',
+    'image_style' => '346x241',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_product_image']['delta_limit'] = '1';
@@ -2699,6 +2699,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['relationship'] = 'field_products_product_id';
   $handler->display->display_options['fields']['commerce_price']['label'] = '';
   $handler->display->display_options['fields']['commerce_price']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['commerce_price']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['commerce_price']['click_sort_column'] = 'amount';
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',

@@ -737,7 +737,7 @@ So much of what we love about the sea, about fish, about fishing, is in the wild
 
 <div class="how-cta">
 	<div class="container">
-		<div class="how-cta-column"><div class="how-cta-title">Claim your piece of over <span>$1 million</span> Dollars in Ships, trips &amp; gear</div>
+		<div class="how-cta-column"><div class="how-cta-title">Claim your piece of over <span>$1 million</span> Dollars in trips, perks &amp; gear</div>
 				<div class="how-cta-subtitle">Hit the big ass button to join DFC for a buck</div></div>
 		<div class="how-cta-link"><a href="/membership"><span>Membership</span></a></div>
 	</div>
@@ -778,7 +778,7 @@ So much of what we love about the sea, about fish, about fishing, is in the wild
 <div class="how-cta">
 <div class="container">
 <div class="how-cta-column">
-<div class="how-cta-title">Claim your piece of over <span>$1 million</span> Dollars in Ships, trips &amp; gear</div>
+<div class="how-cta-title">Claim your piece of over <span>$1 million</span> Dollars in trips, perks &amp; gear</div>
 <div class="how-cta-subtitle">Hit the big ass button to join DFC for a buck</div>
 </div>
 <div class="how-cta-link"><a href="/membership"><span>Membership</span></a></div>

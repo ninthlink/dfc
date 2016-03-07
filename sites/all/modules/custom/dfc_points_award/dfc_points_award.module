@@ -466,7 +466,7 @@ function dfc_points_award_slideshow( $nid, $count ) {
           'display' => false
         );
         dfc_points_award_grant_points($link_points);
-        watchdog('dfc', 'awarding share points: <pre>' . $link_points .'</pre>');
+        watchdog('dfc', 'awarding share points: <pre>'. print_r( $link_points, true ) .'</pre>');
         $ret = array( 'success' => true, 'points' => 5 );
         drupal_json_output($ret);
         exit;

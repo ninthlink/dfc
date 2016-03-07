@@ -106,7 +106,7 @@ function add_timed_giveaway_clock(&$block){
     $prize_nids = array_keys($prize_result['node']);
     $prize_nid = reset($prize_nids);
     $prize = node_load($prize_nid);
-    watchdog('prize_date', '<pre>'.print_r($prize, TRUE).'</pre>');
+    //watchdog('prize_date', '<pre>'.print_r($prize, TRUE).'</pre>');
     $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('DFC Exclusive <span>Giveaways</span>').'</div>';
     $block['content'] .= '<div class="countdown-ending-text">Current Giveaway Ends:</div>';
     $block['content'] .= '<div class="countdown-ending-date">'.date("l, F j, Y", strtotime($prize->field_giveaway_date[LANGUAGE_NONE][0]['value'])).' at 12:00am (PST)</div></div>';

@@ -27,6 +27,7 @@ features[context][] = prizeboard
 features[context][] = user_page
 features[context][] = user_page_edit
 features[context][] = user_pages
+features[context][] = wild_oceans
 features[ctools][] = context:context:3
 features[features_api][] = api:2
 features_exclude[dependencies][dfc_content_types] = dfc_content_types

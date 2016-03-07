@@ -853,5 +853,78 @@ function dfc_contexts_context_default_contexts() {
   t('section');
   $export['user_pages'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'wild_oceans';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'wild-oceans' => 'wild-oceans',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-wild-oceans-top' => array(
+          'module' => 'bean',
+          'delta' => 'wild-oceans-top',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'views-wild_oceans-block' => array(
+          'module' => 'views',
+          'delta' => 'wild_oceans-block',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+    'region' => array(
+      'dfc' => array(
+        'disable' => array(
+          'content' => 'content',
+          'branding' => 0,
+          'header' => 0,
+          'navigation' => 0,
+          'featured_top' => 0,
+          'content_top' => 0,
+          'highlighted' => 0,
+          'help' => 0,
+          'sidebar_first' => 0,
+          'sidebar_second' => 0,
+          'content_bottom' => 0,
+          'footer_top' => 0,
+          'footer' => 0,
+          'dashboard_main' => 0,
+          'dashboard_sidebar' => 0,
+          'dashboard_inactive' => 0,
+        ),
+      ),
+      'dfc_admin' => array(
+        'disable' => array(
+          'content' => 0,
+          'help' => 0,
+          'messages' => 0,
+          'page_top' => 0,
+          'page_bottom' => 0,
+          'sidebar_first' => 0,
+          'dashboard_main' => 0,
+          'dashboard_sidebar' => 0,
+          'dashboard_inactive' => 0,
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['wild_oceans'] = $context;
+
   return $export;
 }

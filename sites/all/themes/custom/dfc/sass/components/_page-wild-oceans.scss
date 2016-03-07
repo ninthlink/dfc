@@ -24,8 +24,9 @@ background:$color-black;
 
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
-.node__title a{ font-family:$tg; color:$color-white; padding:10px; margin-top: 15px;}
-.node__content{ font-family:$rw; @include rem(font-size, 14px); color:$color-white; padding:10px;}
 
+.node__title a{ font-family:$tg; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 50px;}
+.node__content{ font-family:$rw; @include rem(font-size, 14px); color:$color-white;}
+.field--body{ padding:10px 10px 10px 30px;}
 
 }

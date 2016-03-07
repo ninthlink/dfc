@@ -314,15 +314,15 @@ function dfc_views_nodequeues_views_default_views() {
 	<h2>DFC <span>Prizeboard</span></h2>
 	<div class="prize-intro">The DFC Prizeboard is where we recognize members who earn product, swag and trips by consuming content, uploading content, sharing and more.  Participate and earn your way onto the Prizeboard today.</div>
 	<div class="prize-buttons">
-		<a href="/dfc-prizeboard">View More</a><a href="/fab-52-resorts">View Next Giveway</a>
+		<a href="/dfc-prizeboard">View Next Giveway</a>
 	</div>
 </div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_winner_target_id']['id'] = 'field_winner_target_id';
-  $handler->display->display_options['relationships']['field_winner_target_id']['table'] = 'field_data_field_winner';
-  $handler->display->display_options['relationships']['field_winner_target_id']['field'] = 'field_winner_target_id';
-  $handler->display->display_options['relationships']['field_winner_target_id']['required'] = TRUE;
+  $handler->display->display_options['relationships']['field_prize_winner_target_id']['id'] = 'field_prize_winner_target_id';
+  $handler->display->display_options['relationships']['field_prize_winner_target_id']['table'] = 'field_data_field_prize_winner';
+  $handler->display->display_options['relationships']['field_prize_winner_target_id']['field'] = 'field_prize_winner_target_id';
+  $handler->display->display_options['relationships']['field_prize_winner_target_id']['required'] = TRUE;
   /* Field: Global: View result counter */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
@@ -335,7 +335,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
-  $handler->display->display_options['fields']['picture']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['picture']['relationship'] = 'field_prize_winner_target_id';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['link_photo_to_profile'] = FALSE;
@@ -343,7 +343,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_prize_winner_target_id';
   $handler->display->display_options['fields']['field_first_name']['label'] = '';
   $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
@@ -351,7 +351,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
   $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
   $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
-  $handler->display->display_options['fields']['field_last_name']['relationship'] = 'field_winner_target_id';
+  $handler->display->display_options['fields']['field_last_name']['relationship'] = 'field_prize_winner_target_id';
   $handler->display->display_options['fields']['field_last_name']['label'] = '';
   $handler->display->display_options['fields']['field_last_name']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_last_name']['alter']['text'] = '<div class="field-first">[field_first_name]</div><div class="field-last">[field_last_name]</div>';
@@ -372,6 +372,18 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_sponsor']['field'] = 'field_sponsor';
   $handler->display->display_options['fields']['field_sponsor']['label'] = '';
   $handler->display->display_options['fields']['field_sponsor']['element_label_colon'] = FALSE;
+  /* Field: Content: Prize Winner Points */
+  $handler->display->display_options['fields']['field_prize_winner_points']['id'] = 'field_prize_winner_points';
+  $handler->display->display_options['fields']['field_prize_winner_points']['table'] = 'field_data_field_prize_winner_points';
+  $handler->display->display_options['fields']['field_prize_winner_points']['field'] = 'field_prize_winner_points';
+  $handler->display->display_options['fields']['field_prize_winner_points']['label'] = '';
+  $handler->display->display_options['fields']['field_prize_winner_points']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_prize_winner_points']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_winner_points']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_prize_winner_points']['settings'] = array(
+    'thousand_separator' => ',',
+    'prefix_suffix' => 1,
+  );
   /* Field: Content: Winner's points */
   $handler->display->display_options['fields']['field_winners_points']['id'] = 'field_winners_points';
   $handler->display->display_options['fields']['field_winners_points']['table'] = 'field_data_field_winners_points';
@@ -380,11 +392,12 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_winners_points']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_winners_points']['alter']['text'] = '<span class="field-label">Points:</span> <span class="field-content">[field_winners_points]</span>';
   $handler->display->display_options['fields']['field_winners_points']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Winner&#039;s points (field_winners_points) */
-  $handler->display->display_options['sorts']['field_winners_points_value']['id'] = 'field_winners_points_value';
-  $handler->display->display_options['sorts']['field_winners_points_value']['table'] = 'field_data_field_winners_points';
-  $handler->display->display_options['sorts']['field_winners_points_value']['field'] = 'field_winners_points_value';
-  $handler->display->display_options['sorts']['field_winners_points_value']['order'] = 'DESC';
+  $handler->display->display_options['fields']['field_winners_points']['empty'] = '<span class="field-label">Points:</span> <span class="field-content">[field_prize_winner_points]</span>';
+  $handler->display->display_options['fields']['field_winners_points']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_winners_points']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -397,13 +410,8 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'giveaway_prize' => 'giveaway_prize',
+    'timed_giveaway' => 'timed_giveaway',
   );
-  /* Filter criterion: Content: Month and Year (field_month_and_year) */
-  $handler->display->display_options['filters']['field_month_and_year_value']['id'] = 'field_month_and_year_value';
-  $handler->display->display_options['filters']['field_month_and_year_value']['table'] = 'field_data_field_month_and_year';
-  $handler->display->display_options['filters']['field_month_and_year_value']['field'] = 'field_month_and_year_value';
-  $handler->display->display_options['filters']['field_month_and_year_value']['operator'] = '>=';
 
   /* Display: Homepage Block */
   $handler = $view->new_display('block', 'Homepage Block', 'block');

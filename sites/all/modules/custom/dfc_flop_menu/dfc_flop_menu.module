@@ -86,7 +86,11 @@ function dfc_flop_menu_block_flop_view() {
     }
     $uname_markup = dfc_flop_menu_markup_wrapper( check_plain( $uname ), array('class' => 'user-name' ) );
 
-    $ulocation_markup = dfc_flop_menu_markup_wrapper( check_plain( $user->field_city_state[LANGUAGE_NONE][0]['value'] ), array('class' => 'user-city-state' ) );
+    $uloc = '';
+    if ( !empty($user->field_city_state) ) {
+      $uloc .= $user->field_city_state[LANGUAGE_NONE][0]['value'];
+    }
+    $ulocation_markup = dfc_flop_menu_markup_wrapper( check_plain( $uloc ), array('class' => 'user-city-state' ) );
 
     $picture_markup = theme('user_picture', array('account' =>$user));
     

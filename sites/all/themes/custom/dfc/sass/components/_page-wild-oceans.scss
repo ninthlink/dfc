@@ -1,3 +1,31 @@
 body.section-wild-oceans {
-  // wild oceans styles here
+ background:#363636 !important; 
+ 
+ .block__title {background: $color-platinum; padding: 15px 0px 15px 50px;}
+.field--text p{padding: 0px 50px 0px 50px; font-family:$rw;	@include rem(font-size, 14px);}
+.img-1{width: 590px; height: 367px; background-image: url("../images/img2.png"); float:left; background-size:cover;}
+.img-2{width: 590px; height: 367px; background-image: url("../images/img1.png"); float:left; background-size:cover;}
+
+
+.banner-images {clear: both; width: 100%; margin-top: -21px; display: block; margin-bottom: 40PX; min-height: 368px;}
+
+#block-views-wild-oceans-block .block__title{background:#363636; margin-top:30px; text-transform: uppercase;}
+
+#block-views-wild-oceans-block .owl-item{ width: 335px !important; display: inline-block; margin: 15px !important; min-height: 500px; 
+background:$color-black;
+
+
+
+		  
+}
+#block-views-wild-oceans-block .owl-wrapper {margin: 0 auto; display: block !important; margin: 0 auto; width:1108px !important;}
+
+
+
+.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
+.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
+.node__title a{ font-family:$tg; color:$color-white; padding:10px; margin-top: 15px;}
+.node__content{ font-family:$rw; @include rem(font-size, 14px); color:$color-white; padding:10px;}
+
+
 }

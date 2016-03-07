@@ -162,6 +162,14 @@ function dfc_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'wild_ocean_project' => array(
+      'name' => t('Wild Ocean Project'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   drupal_alter('node_info', $items);
   return $items;

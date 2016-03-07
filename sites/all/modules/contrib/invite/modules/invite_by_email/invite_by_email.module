@@ -352,7 +352,10 @@ function invite_by_email_send_invitation($invite) {
   $existing_invite = invite_load($invite->reg_code);
   if ($existing_invite) {
     $invite->expiry = REQUEST_TIME + (variable_get('invite_default_expiry_time', 30) * 60 * 60 * 24);
-    $invite->resent++;
+    if ( !isset( $invite->resent ) ) {
+      $invite->resent = 0;
+    }
+    $invite->resent = $invite->resent + 1;
   }
 
   $entity = entity_metadata_wrapper('invite', $invite);

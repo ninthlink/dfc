@@ -476,6 +476,49 @@ Cabo San Lucas, Mexico</h3>
     ),
   );
   $beans[] = array(
+    'label' => 'Wild Oceans CTA',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'wild-oceans-cta',
+    'view_mode' => 'default',
+    'created' => 1457073668,
+    'log' => '',
+    'uid' => 57,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => 'f85bed2e-7ae1-448c-9db8-dc19ac060009',
+    'uuid' => '7808cc7d-76a3-4343-a078-a480389ffa61',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="home-cta">
+	<div class="container">
+			<div class="home-cta-column">
+			<div class="home-cta-title">Join us in making a difference!</div>
+		</div>
+		<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+	</div>
+</div>',
+          'format' => 'full_html',
+          'safe_value' => '<div class="home-cta">
+<div class="container">
+<div class="home-cta-column">
+<div class="home-cta-title">Join us in making a difference!</div>
+</div>
+<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+</div>
+</div>
+',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
     'label' => 'Fab 52 Intro',
     'description' => NULL,
     'title' => '',
@@ -499,6 +542,47 @@ Cabo San Lucas, Mexico</h3>
           'value' => 'The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each month a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the month (travel expenses not included) and experience the perks of being a DFC member.',
           'format' => 'full_html',
           'safe_value' => '<p>The Dollar Fishing Club proudly presents the FAB 52 premium fishing lodge and resort collection featuring the best international locations, offering the finest fishing experiences, each one surely representing bucket list opportunities when booked and enjoyed. Each month a lucky DFC member will earn a free trip for two to enjoy the FAB 52 resort of the month (travel expenses not included) and experience the perks of being a DFC member.</p>
+',
+        ),
+      ),
+    ),
+  );
+  $beans[] = array(
+    'label' => 'Wild Oceans top',
+    'description' => NULL,
+    'title' => 'WILD OCEANS',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'wild-oceans-top',
+    'view_mode' => 'default',
+    'created' => 1457073423,
+    'log' => '',
+    'uid' => 57,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '38e69ad8-5be7-4a69-b598-d8577f222654',
+    'uuid' => 'bd0d2133-92b1-4d30-877e-6daef20295e9',
+    'field_background_image' => array(),
+    'field_text' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" />
+
+Wild Oceans (formerly the National Coalition for Marine Conservation or NCMC) was founded by anglers in 1973. Like the sportsmen before us who pioneered wildlife conservation on land, we are passionate protectors of fish and the wild world we share.
+
+Our mission is to keep the oceans wild to preserve fishing opportunities for the future. To do this, we bring conservation-minded fishermen and pro-fishing environmentalists together to promote a broad, ecosystems approach to fisheries management that reflects our expanding circle of concern for all marine life and the future of fishing.
+
+Our programs emphasize conserving the ocean’s top predators – the big billfish, swordfish, tunas and sharks that are the lions, tigers and wolves of the sea – while preserving healthy ocean food webs and critical habitats essential to the survival of all fish, marine mammals and seabirds.
+
+So much of what we love about the sea, about fish, about fishing, is in the wildness. But that wild world, and the future of fishing, now hangs in the balance. Everything we do, every decision we make, must be guided by a clear vision of the future we want for our oceans and of how the fishing public and responsible consumers will fit into that future.',
+          'format' => 'full_html',
+          'safe_value' => '<p><img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" /></p>
+<p>Wild Oceans (formerly the National Coalition for Marine Conservation or NCMC) was founded by anglers in 1973. Like the sportsmen before us who pioneered wildlife conservation on land, we are passionate protectors of fish and the wild world we share.</p>
+<p>Our mission is to keep the oceans wild to preserve fishing opportunities for the future. To do this, we bring conservation-minded fishermen and pro-fishing environmentalists together to promote a broad, ecosystems approach to fisheries management that reflects our expanding circle of concern for all marine life and the future of fishing.</p>
+<p>Our programs emphasize conserving the ocean’s top predators – the big billfish, swordfish, tunas and sharks that are the lions, tigers and wolves of the sea – while preserving healthy ocean food webs and critical habitats essential to the survival of all fish, marine mammals and seabirds.</p>
+<p>So much of what we love about the sea, about fish, about fishing, is in the wildness. But that wild world, and the future of fishing, now hangs in the balance. Everything we do, every decision we make, must be guided by a clear vision of the future we want for our oceans and of how the fishing public and responsible consumers will fit into that future.</p>
 ',
         ),
       ),

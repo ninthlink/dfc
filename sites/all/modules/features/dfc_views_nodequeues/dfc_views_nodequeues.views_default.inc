@@ -3534,7 +3534,7 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['field_website_link']['field'] = 'field_website_link';
   $handler->display->display_options['fields']['field_website_link']['label'] = '';
   $handler->display->display_options['fields']['field_website_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_website_link']['alter']['text'] = '<a href="/dfc/points/grant/wo/[nid]">Learn More</a>';
+  $handler->display->display_options['fields']['field_website_link']['alter']['text'] = '<a href="/dfc/points/grant/wo/[nid]" target="_blank">Learn More</a>';
   $handler->display->display_options['fields']['field_website_link']['element_class'] = 'button';
   $handler->display->display_options['fields']['field_website_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_website_link']['element_default_classes'] = FALSE;

@@ -501,7 +501,7 @@ Cabo San Lucas, Mexico</h3>
 			<div class="home-cta-column">
 			<div class="home-cta-title">Join us in making a difference!</div>
 		</div>
-		<div class="home-cta-link"><a href="#" target="_blank">DONATE NOW</a></div>
+		<div class="home-cta-link"><a href="http://wildoceans.org/donate/" target="_blank">DONATE NOW</a></div>
 	</div>
 </div>',
           'format' => 'full_html',
@@ -510,7 +510,7 @@ Cabo San Lucas, Mexico</h3>
 <div class="home-cta-column">
 <div class="home-cta-title">Join us in making a difference!</div>
 </div>
-<div class="home-cta-link"><a href="#" target="_blank">DONATE NOW</a></div>
+<div class="home-cta-link"><a href="http://wildoceans.org/donate/" target="_blank">DONATE NOW</a></div>
 </div>
 </div>
 ',

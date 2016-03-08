@@ -13,6 +13,12 @@ function dfc_points_award_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
+  $items['dfc/points/grant/wo/%'] = array(
+    'page callback' => 'dfc_points_award_link',
+    'page arguments' => array(4),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
   $items['dfc/points/grant/share/%/%'] = array(
     'page callback' => 'dfc_points_award_share',
     'page arguments' => array(4, 5),
@@ -398,7 +404,35 @@ function dfc_points_award_link ( $nid ) {
         }
       }
     }
+    
+    if ( $node->type == 'wild_ocean_project' ) {
+      $chk = dfc_points_award_check_video_awarded( $nid );
+
+      if(!$chk) {
+        $link_points = array(
+            'points' => 5,
+            'entity_type' => 'node',
+            'entity_id' => $nid,
+            'operation' => 'dfc_points_award_link',
+            'display' => true
+        );
+        // for ad links, set display = true til we can figure how to ajax that?!
+        dfc_points_award_grant_points($link_points);
+        watchdog('dfc', 'awarding link points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');
+      }
+      // then check if the ad has a link to goto
+      if ( isset( $node->field_website_link ) ) {
+        if ( isset( $node->field_website_link[LANGUAGE_NONE] ) ) {
+          if ( isset( $node->field_website_link[LANGUAGE_NONE][0] ) ) {
+            if ( isset( $node->field_website_link[LANGUAGE_NONE][0]['url'] ) ) {
+              drupal_goto( $node->field_website_link[LANGUAGE_NONE][0]['url'] );
+            }
+          }
+        }
+      }
+    }
   }
+  
 }
 // "page" callback for sharing some nid to twitter or facebook
 function dfc_points_award_share( $wher, $nid ) {

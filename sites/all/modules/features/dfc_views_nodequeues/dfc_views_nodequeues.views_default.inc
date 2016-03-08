@@ -965,7 +965,7 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Media Filtered */
   $handler = $view->new_display('block', 'Media Filtered', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Media';
+  $handler->display->display_options['title'] = 'Videos and Photos';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;

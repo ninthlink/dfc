@@ -196,3 +196,15 @@ function dfc_user_blocks_form_alter(&$form, &$form_state, $form_id) {
     $form['checkout_completion_message']['message']['#markup'] = $msg;
   }
 }
+
+/**
+ * Implements hook_commerce_price_component_type_info().
+ */
+function dfc_user_blocks_commerce_price_component_type_info_alter( &$components ) {
+  if( isset( $components['userpoints'] ) ) {
+    if( !empty( $components['userpoints'] ) ) {
+      $components['userpoints']['title'] = t('Points Credit');
+      $components['userpoints']['display_title'] = t('Points Credit');
+    }
+  }
+}

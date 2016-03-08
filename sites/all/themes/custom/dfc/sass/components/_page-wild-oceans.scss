@@ -48,25 +48,58 @@ background-position: center top;
 
 
 .banner-images {clear: both; width: 100%; margin-top: -21px; display: block; margin-bottom: 40PX; min-height: 368px;}
-
+#block-views-wild-oceans-block { margin: 0 auto 70px; max-width: 1140px }
 #block-views-wild-oceans-block .block__title{background:#363636; margin-top:60px; text-transform: uppercase;margin-bottom: 0px; }
 
-#block-views-wild-oceans-block .owl-item{ width: 343px !important; display: inline-block; margin: 13px !important; min-height: 410px; 
-background:$color-black;
-
-
-
-		  
+#block-views-wild-oceans-block .owl-item{ background:$color-black;
+  @include breakpoint($bp-tab) {
+    max-width: 348px;
+    margin: 0 16px;
+  }
 }
-#block-views-wild-oceans-block .owl-wrapper {margin: 0 auto; display: block !important; margin: 0 auto; width:1108px !important;}
+#block-views-wild-oceans-block .owl-wrapper { margin: 0 auto; display: block !important; }
 
 
 
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
 
-.views-field-title{	@include rem(font-size, 25px); font-family:$tgc; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
-.field--body{ font-family:$rw; @include rem(font-size, 14px); line-height: 1.5; color:$color-white;padding:10px 10px 10px 30px;}
+.views-field-title{	@include rem(font-size, 25px); font-family:$tgc; color:$color-white; padding:10px 30px 20px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
+.field--body{ font-family:$rw; @include rem(font-size, 14px); line-height: 1.5; color:$color-white;padding:0 30px;}
+.views-field-nothing {
+  padding: 30px;
+  font-family:$rw;
+  @include rem(font-size, 15px);
+  line-height: 1;
+
+  strong {
+    color: $color-orange;
+  }
+}
+.views-item-wild-ocean-project .button {
+  background: none;
+  border: none;
+  float: none;
+  padding: 0;
+  width: 100%;
+  
+  a {
+    background: $color-blue;
+    color: $color-white;
+    display: block;
+    font-family: $tgc;
+    @include rem(font-size, 15.4px);
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &:hover {
+      background-color: $color-orange;
+      text-decoration: none;
+    }
+  }
+}
 
 .l-footer {background:$color-black;}
 .l-header {background:$color-black;}
@@ -87,4 +120,74 @@ background:$color-black;
     background: #F1592A none repeat scroll 0% 0%;
 }
 .owl-prev, .owl-next{display:none !important;}
+}
+
+// Wild Oceans bottom CTA
+.block--bean-wild-oceans-cta {
+	position: relative;
+	text-align: center;
+
+	.home-cta {
+		position: relative;
+		background: $color-orange url(../images/wildoceans-orangebar.jpg) no-repeat 50% 50%;
+    background-size: cover;
+		padding: 31px 30px;
+		text-transform: uppercase;
+		
+	  @include breakpoint($bp-desk) {
+			padding: 31px 0;
+      background-size: initial;
+	  }
+		
+		.home-cta-column {
+			
+		  @include breakpoint($bp-desk) {
+				float: left;
+				width: 55%;
+				text-align: left;
+				padding-left: 310px;
+				padding-right: 10px;
+		  }
+			
+		  @include breakpoint($bp-full) {
+				width: 58%;
+				padding-top: 10px;
+				padding-left: 210px;
+				text-align: center;
+		  }
+		}
+		
+		.home-cta-title {
+      color: $color-white;
+		  font-family: $dr;
+			@include rem(font-size, 36px);
+			line-height: 1;
+			margin-bottom: 10px;
+		}
+		
+		.home-cta-link {
+		  @include breakpoint($bp-desk) {
+				float: right;
+				width: 45%;
+				text-align: left;
+		  }
+			
+		  @include breakpoint($bp-full) {
+				width: 42%;
+		  }
+      
+			a {
+        @extend .button;
+        background: $color-black;
+        
+        font-family: $tgc;
+        @include rem(font-size, 15px);
+        
+        &:hover {
+          background: $color-gray-27;
+          border-color: $color-gray-27;
+        }
+			}
+		}
+	}
 }

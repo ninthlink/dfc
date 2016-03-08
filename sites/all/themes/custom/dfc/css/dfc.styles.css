@@ -7447,16 +7447,25 @@ body.node-type-product-display #block-views-store-block-1 {
 body.section-wild-oceans {
   background: #363636 !important; }
   /* line 4, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
-  body.section-wild-oceans .block__title {
+  body.section-wild-oceans h2.block__title {
     background: #ff6633;
-    padding: 15px 0px 15px 50px; }
-  /* line 5, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+    padding: 15px 0 15px 50px;
+    margin: 0; }
+  /* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .field--text p {
-    padding: 0px 50px 0px 50px;
+    padding: 0 50px;
     font-family: "Rockwell", Georgia, serif;
     font-size: 14px;
     font-size: 0.875rem; }
-  /* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 9, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  body.section-wild-oceans .field--text img {
+    margin: 0; }
+    @media (min-width: 1180px) {
+      /* line 9, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      body.section-wild-oceans .field--text img {
+        width: 1180px;
+        max-width: 1180px; } }
+  /* line 18, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .img-1 {
     width: 590px;
     height: 367px;
@@ -7465,7 +7474,7 @@ body.section-wild-oceans {
     background-size: cover; }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 6, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 18, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .img-1 {
     height: 366px;
     float: left;
@@ -7473,7 +7482,7 @@ body.section-wild-oceans {
     width: 100%;
     margin-top: 20px;
     background-position: center top; } }
-  /* line 22, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .img-2 {
     width: 590px;
     height: 367px;
@@ -7482,7 +7491,7 @@ body.section-wild-oceans {
     background-size: cover; }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 22, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 34, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .img-2 {
     height: 366px;
     float: left;
@@ -7490,7 +7499,7 @@ body.section-wild-oceans {
     width: 100%;
     margin-top: 20px;
     background-position: center top; } }
-  /* line 38, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 50, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .banner-images {
     clear: both;
     width: 100%;
@@ -7498,55 +7507,56 @@ body.section-wild-oceans {
     display: block;
     margin-bottom: 40PX;
     min-height: 368px; }
-  /* line 40, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 52, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans #block-views-wild-oceans-block .block__title {
     background: #363636;
     margin-top: 60px;
     text-transform: uppercase;
     margin-bottom: 0px; }
-  /* line 42, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 54, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans #block-views-wild-oceans-block .owl-item {
     width: 343px !important;
     display: inline-block;
     margin: 13px !important;
     min-height: 410px;
     background: #000000; }
-  /* line 49, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 61, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans #block-views-wild-oceans-block .owl-wrapper {
     margin: 0 auto;
     display: block !important;
     margin: 0 auto;
     width: 1108px !important; }
-  /* line 53, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 65, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {
     background: #000000; }
-  /* line 54, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 66, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {
     padding: 0px !important; }
-  /* line 56, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 68, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .views-field-title {
-    font-size: 23px;
-    font-size: 1.4375rem;
-    font-family: "tradegothic-bold", Georgia, serif;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    font-family: "tradegothic-bold-condensed20", Georgia, serif;
     color: #ffffff;
     padding: 10px 10px 10px 30px;
     margin-top: 15px;
     line-height: 15px;
     font-size: 1.50rem; }
-  /* line 57, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 69, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .field--body {
     font-family: "Rockwell", Georgia, serif;
     font-size: 14px;
     font-size: 0.875rem;
+    line-height: 1.5;
     color: #ffffff;
     padding: 10px 10px 10px 30px; }
-  /* line 59, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 71, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .l-footer {
     background: #000000; }
-  /* line 60, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 72, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .l-header {
     background: #000000; }
-  /* line 65, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .owl-theme .owl-controls .owl-page span {
     display: block;
     width: 32px;
@@ -7555,10 +7565,10 @@ body.section-wild-oceans {
     opacity: 1 !important;
     border-radius: 0px;
     background: #999 none repeat scroll 0% 0%; }
-  /* line 74, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 86, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .owl-theme .owl-controls .owl-page.active span {
     background: #F1592A none repeat scroll 0% 0%; }
-  /* line 77, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 89, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   body.section-wild-oceans .owl-prev, body.section-wild-oceans .owl-next {
     display: none !important; }
 

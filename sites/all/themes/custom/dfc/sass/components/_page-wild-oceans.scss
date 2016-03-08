@@ -1,8 +1,20 @@
 body.section-wild-oceans {
  background:#363636 !important; 
  
- .block__title {background: $color-platinum; padding: 15px 0px 15px 50px;}
-.field--text p{padding: 0px 50px 0px 50px; font-family:$rw;	@include rem(font-size, 14px);}
+ h2.block__title {background: $color-platinum; padding: 15px 0 15px 50px; margin: 0 }
+.field--text {
+  p{
+  padding: 0 50px; font-family:$rw;	@include rem(font-size, 14px);
+  }
+  img {
+    margin: 0;
+    
+    @include breakpoint($bp-full) {
+      width: 1180px;
+      max-width: 1180px;
+    }
+  }
+}
 .img-1{width: 590px; height: 367px; background-image: url("../images/img2.png"); float:left; background-size:cover;
 
  @include breakpoint(min-width 320px) {
@@ -53,8 +65,8 @@ background:$color-black;
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
 
-.views-field-title{	@include rem(font-size, 23px); font-family:$tg; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
-.field--body{ font-family:$rw; @include rem(font-size, 14px); color:$color-white;padding:10px 10px 10px 30px;}
+.views-field-title{	@include rem(font-size, 25px); font-family:$tgc; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
+.field--body{ font-family:$rw; @include rem(font-size, 14px); line-height: 1.5; color:$color-white;padding:10px 10px 10px 30px;}
 
 .l-footer {background:$color-black;}
 .l-header {background:$color-black;}

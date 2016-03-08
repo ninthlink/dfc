@@ -77,12 +77,20 @@ body.page-store {
         min-height: 0;
         width: 100% !important;
         margin: 10px 0 !important;
+		
+		 @include breakpoint(min-width 665px) {
+		  @include breakpoint(max-width 737px) {
+		  min-height: 376px !important;	
+		  }
+		 }
+		
         
         @include breakpoint($bp-tab) {
           width: 46% !important;
           margin: 2% !important;
           min-height: 479px;
         }
+		
 
         @include breakpoint($bp-desk) {
           width: 30.5% !important;

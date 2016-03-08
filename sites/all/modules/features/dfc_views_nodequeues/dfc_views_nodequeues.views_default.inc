@@ -1547,7 +1547,7 @@ function dfc_views_nodequeues_views_default_views() {
   /* Display: Images */
   $handler = $view->new_display('block', 'Images', 'block_4');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Images';
+  $handler->display->display_options['title'] = 'Photos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';

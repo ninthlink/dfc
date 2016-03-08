@@ -857,7 +857,7 @@ function dfc_contexts_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'wild_oceans';
-  $context->description = '';
+  $context->description = 'Wild Oceans landing page';
   $context->tag = 'page';
   $context->conditions = array(
     'path' => array(
@@ -880,6 +880,12 @@ function dfc_contexts_context_default_contexts() {
           'delta' => 'wild_oceans-block',
           'region' => 'content_bottom',
           'weight' => '-9',
+        ),
+        'bean-wild-oceans-cta' => array(
+          'module' => 'bean',
+          'delta' => 'wild-oceans-cta',
+          'region' => 'footer_top',
+          'weight' => '-10',
         ),
       ),
     ),
@@ -923,6 +929,7 @@ function dfc_contexts_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Wild Oceans landing page');
   t('page');
   $export['wild_oceans'] = $context;
 

@@ -1,4 +1,4 @@
-				  
+/*			  
 body.not-logged-in  #edit-account{width: 31%; float:left; margin: 0px 35px 0px 0px;}
 body.not-logged-in  #commerce-userpoints-discount-cart-contents-wrapper{width: 31%; float:right;}
 body.not-logged-in  #edit-customer-profile-billing{width:31%; float:left;}
@@ -6,132 +6,101 @@ body.not-logged-in  #edit-customer-profile-shipping{width: 28.5% !important;floa
 body.not-logged-in  #commerce-userpoints-discount{width:31% !important; float:left !important; margin: 1% 0% 1% 3.3% !important;}
 body.not-logged-in  #commerce-checkout-coupon-ajax-wrapper{width:31% !important; float:right !important; margin: 0px !important;}
 body.not-logged-in  #edit-buttons{width:100% !important; float:right !important; margin-top: 30px !important;}
-
-
-
-
-/*
-body.not-logged-in {#commerce-checkout-coupon-ajax-wrapper{width: 28.5% !important; float: right !important; margin: 0px 0.1% !important; position: absolute !important; margin-top: 10% !important;
-}
-@include breakpoint(max-width $bp960) {
-width: 100% !important;
-float: left !important;
- margin: 0px !important; 
- position: relative !important; 
- margin-top: 30px !important;
-}
-
 */
 
 body.page-checkout {
-
-
-fieldset {
-    margin: 0px 2px;
-    border: 0px solid rgb(192, 192, 192) !important;
-    padding: 0px !important;
-
-/*	 @include breakpoint(max-width $bp960) {
-	
-    display: block !important;
-    -webkit-margin-start: 2px !important;
-    -webkit-margin-end: 2px !important;
-    -webkit-padding-before: 0.35em !important;
-    -webkit-padding-start: 0.75em !important;
-    -webkit-padding-end: 0.75em !important;
-    -webkit-padding-after: 0.625em !important;
-    border-image-source: initial !important;
-    border-image-slice: initial !important;
-    border-image-width: initial !important;
-    border-image-outset: initial !important;
-    border-image-repeat: initial !important;
-    min-width: -webkit-min-content !important;
-    border: 2px groove threedface !important;
-
-}
-	
-	*/
+  fieldset {
+    margin: 0;
+    border: none !important;
+    padding: 0 !important;
 	}
 
-  .l-main{
-		 background-color: $color-white;
-		color: $color-gray-3;
-		padding: 50px;
-		
-		 .l-content h1{
-		  padding: 20px 50px;
-		margin: -50px -50px 50px;
-		background-color: $color-orange;
-		min-height: 58px;
-		font-size: 1.875rem;
-		margin-bottom: 1.25rem;
-		font-family: $dr;
-		text-transform: uppercase;
-		color: $color-white; 
-	  }
-	  #edit-account{width: 31%; float:left; margin: 0px 35px 0px 0px;}
-	  #commerce-userpoints-discount-cart-contents-wrapper{width: 31%; float:right;}
-	  #edit-customer-profile-billing{width:31%; float:left;}
-	  #edit-customer-profile-shipping{width:31%; float:left; margin: 0px 3.5% 0px 3.1%;}
-	  #commerce-userpoints-discount{width:31%; float:left; margin: 1% 0% 1% 0px;}
-	  #commerce-checkout-coupon-ajax-wrapper{width:31%; float:left; margin: 0px 0.1%;}
-	  #edit-buttons{width:31%; float:right; margin-top: 30px;}
-	  
-		/*  @include breakpoint(max-width $bp960) {
-		#edit-account{width: 100%; float:left; margin-top: 30px;}
-	  #commerce-userpoints-discount-cart-contents-wrapper{width: 100%; float:left; margin-top: 30px;}
-	  #edit-customer-profile-billing{width:100%; float:left; margin-top: 30px;}
-	  #edit-customer-profile-shipping{width:100%; float:left; margin-top: 30px;}
-	  #commerce-userpoints-discount{width:100%; float:left; margin-top: 30px;}
-	  #commerce-checkout-coupon-ajax-wrapper{width:100%; float:left; margin-top: 30px;}
-	  #edit-buttons{width:100%; float:left; margin-top: 30px; margin-top: 30px;
-	 
-	  }
-	   .view-footer {width:50%; margin-top:-46px !important; margin-left:0px; left:0; top:1.4em; position:relative;}
-	   
-		  }*/
-		
-		 
-    }
-  
-  table.views-table
-   {
-	background: $color-white;
-	color: $color-gray-3;
-	width: 100%;
-   font-size: 13px;
-   
-   tr{
-   
-      border-bottom: 1px solid $color-gray-e;
-	  
-	  td{
-	     padding: 25px;
-	     background: $color-white;
-	     padding-left: 0px;
-	   }
-    }
-	
-	
-	
-	thead
-      {
-	 border-bottom: 0px solid $color-black;	
-	  tr{
-	     th
-			 {
-				color: $color-orange;
-				background: $color-white;
-				padding: 10px;
-				padding-left: 0px;
-			 }
-	 
-	  }
-	 
-   }
+  .l-main {
+    background-color: $color-white;
+    color: $color-gray-3;
+    padding: 50px;
 
-   	
-    
+    .l-content h1 {
+      background-color: $color-orange;
+      color: $color-white; 
+      font-family: $dr;
+      font-size: 1.875rem;
+      line-height: 58px;
+      margin: -50px -50px 1.25rem;
+      padding-left: 50px;
+      text-transform: uppercase;
+      min-height: 58px;
+    }
+    #commerce-userpoints-discount-cart-contents-wrapper {
+      margin-bottom: 1em;
+    }
+    @include breakpoint($bp-desk) {
+      #edit-account {
+        float:left;
+        margin: 0 0 1em;
+        width: 31%;
+      }
+      #commerce-userpoints-discount-cart-contents-wrapper {
+        float:right;
+        margin-bottom: 0;
+        width: 31%;
+      }
+      #edit-customer-profile-billing {
+        clear: left;
+        float:left;
+        width: 31%;
+      }
+      #edit-customer-profile-shipping {
+        float: left;
+        margin: 0 3.5%;
+        width: 31%;
+      }
+      #commerce-userpoints-discount {
+        clear: left;
+        float:left;
+        margin: 1% 0;
+        width: 31%;
+      }
+      #commerce-checkout-coupon-ajax-wrapper{
+        float:left;
+        clear: left;
+        margin: 0;
+        width: 31%;
+      }
+      #edit-buttons{
+        clear: left;
+        float:right;
+        margin-top: 30px;
+        width:31%;
+      }
+    }
+  }
+
+  table.views-table {
+    background: $color-white;
+    color: $color-gray-3;
+    font-size: 13px;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid $color-gray-e;
+
+      td {
+        background: $color-white;
+        padding: 25px 25px 25px 0;
+      }
+    }
+
+    thead {
+      border-bottom: none;	
+      tr {
+        th {
+          background: $color-white;
+          color: $color-orange;
+          padding: 10px 10px 10px 0;
+        }
+      }
+    }
   }
   
   .field--commerce-order-total
@@ -174,10 +143,13 @@ fieldset {
 	border-radius: 0px;
 	xheight: 25px;
 	width: 100%;
-	max-width: 350px;
 	font-size: 13px;
 	color: $color-black;
 	padding: 7px 5px;
+  
+  @include breakpoint($bp-desk) {
+    max-width: 350px;
+  }
   }
   
   div.addressfield-container-inline 

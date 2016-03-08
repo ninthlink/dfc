@@ -305,6 +305,7 @@ padding-bottom: 7px;font-family: $dr;}
           
           h2 {
             text-transform: uppercase;
+            padding: 0 30px;
             
             strong {
               font-weight: normal !important;
@@ -313,10 +314,9 @@ padding-bottom: 7px;font-family: $dr;}
           }
         }
 		.view-footer {
-    
-          
           h2 {
-            text-transform: uppercase !important;
+            text-transform: uppercase;
+            padding: 0 30px;
           }
         }
 		
@@ -375,11 +375,15 @@ padding-bottom: 7px;font-family: $dr;}
     background-color: $color-black;
     margin: 20px 0;
     overflow: hidden;
-    height: 340px;
+    /*height: 340px;*/
     width: 300px;
 
     .views-field {
       margin: 0 10px;
+      
+      &.views-field-body {
+        padding-bottom: 20px;
+      }
     }
 
     .views-field-field-image {
@@ -489,7 +493,7 @@ padding-bottom: 7px;font-family: $dr;}
 	
 	.view-timed-giveaways .attachment .view-timed-giveaways .view-content li.adv-row {
     width: 30% !important;     margin: 0px !important;     border: 3px solid #FC6424;}
-	/*.view-footer {    width: 50%;    margin-top: -46px !important;    margin-left: 0px; left: 106%; top: -1.6em; position: relative;}*/
+  .view-timed-giveaways .view-footer { width: 50%;    margin-top: -46px !important;    margin-left: 0px; left: 106%; top: -1.6em; position: relative;}
 	
 	
 .view-timed-giveaways .attachment {

@@ -39,7 +39,7 @@ background-position: center top;
 
 #block-views-wild-oceans-block .block__title{background:#363636; margin-top:60px; text-transform: uppercase;margin-bottom: 0px; }
 
-#block-views-wild-oceans-block .owl-item{ width: 343px !important; display: inline-block; margin: 13px !important; min-height: 500px; 
+#block-views-wild-oceans-block .owl-item{ width: 343px !important; display: inline-block; margin: 13px !important; min-height: 410px; 
 background:$color-black;
 
 
@@ -53,9 +53,26 @@ background:$color-black;
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
 
-.node__title a{	@include rem(font-size, 20px); font-family:$tg; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 50px;}
-.node__content{ font-family:$rw; @include rem(font-size, 14px); color:$color-white;}
-.field--body{ padding:10px 10px 10px 30px;}
+.views-field-title{	@include rem(font-size, 23px); font-family:$tg; color:$color-white; padding:10px 10px 10px 30px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
+.field--body{ font-family:$rw; @include rem(font-size, 14px); color:$color-white;padding:10px 10px 10px 30px;}
+
 .l-footer {background:$color-black;}
 .l-header {background:$color-black;}
+
+
+
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin: 10px 8px;
+    opacity: 1 !important;
+    border-radius: 0px;
+    background: #999 none repeat scroll 0% 0%;
+}
+.owl-theme .owl-controls .owl-page.active span {
+    background: #F1592A none repeat scroll 0% 0%;
+}
+.owl-prev, .owl-next{display:none !important;}
 }

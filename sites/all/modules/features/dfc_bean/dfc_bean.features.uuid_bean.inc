@@ -501,7 +501,7 @@ Cabo San Lucas, Mexico</h3>
 			<div class="home-cta-column">
 			<div class="home-cta-title">Join us in making a difference!</div>
 		</div>
-		<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+		<div class="home-cta-link"><a href="#" target="_blank">DONATE NOW</a></div>
 	</div>
 </div>',
           'format' => 'full_html',
@@ -510,7 +510,7 @@ Cabo San Lucas, Mexico</h3>
 <div class="home-cta-column">
 <div class="home-cta-title">Join us in making a difference!</div>
 </div>
-<div class="home-cta-link"><a href="/membership"><span>Membership</span></a></div>
+<div class="home-cta-link"><a href="#" target="_blank">DONATE NOW</a></div>
 </div>
 </div>
 ',
@@ -568,7 +568,7 @@ Cabo San Lucas, Mexico</h3>
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => '<img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" />
+          'value' => '<div><img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" /></div>
 
 Wild Oceans (formerly the National Coalition for Marine Conservation or NCMC) was founded by anglers in 1973. Like the sportsmen before us who pioneered wildlife conservation on land, we are passionate protectors of fish and the wild world we share.
 
@@ -578,7 +578,7 @@ Our programs emphasize conserving the ocean’s top predators – the big billfi
 
 So much of what we love about the sea, about fish, about fishing, is in the wildness. But that wild world, and the future of fishing, now hangs in the balance. Everything we do, every decision we make, must be guided by a clear vision of the future we want for our oceans and of how the fishing public and responsible consumers will fit into that future.',
           'format' => 'full_html',
-          'safe_value' => '<p><img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" /></p>
+          'safe_value' => '<div><img src="/sites/all/themes/custom/dfc/images/wild-oceans.jpg" alt="Together We\'re Making Waves" /></div>
 <p>Wild Oceans (formerly the National Coalition for Marine Conservation or NCMC) was founded by anglers in 1973. Like the sportsmen before us who pioneered wildlife conservation on land, we are passionate protectors of fish and the wild world we share.</p>
 <p>Our mission is to keep the oceans wild to preserve fishing opportunities for the future. To do this, we bring conservation-minded fishermen and pro-fishing environmentalists together to promote a broad, ecosystems approach to fisheries management that reflects our expanding circle of concern for all marine life and the future of fishing.</p>
 <p>Our programs emphasize conserving the ocean’s top predators – the big billfish, swordfish, tunas and sharks that are the lions, tigers and wolves of the sea – while preserving healthy ocean food webs and critical habitats essential to the survival of all fish, marine mammals and seabirds.</p>

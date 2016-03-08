@@ -3479,6 +3479,13 @@ function dfc_views_nodequeues_views_default_views() {
     'featured_staff' => 0,
     'prizes' => 0,
   );
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
@@ -3514,6 +3521,24 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_plain';
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<strong>5</strong> POINTS';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Website Link */
+  $handler->display->display_options['fields']['field_website_link']['id'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['table'] = 'field_data_field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['field'] = 'field_website_link';
+  $handler->display->display_options['fields']['field_website_link']['label'] = '';
+  $handler->display->display_options['fields']['field_website_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_website_link']['alter']['text'] = '<a href="/dfc/points/grant/wo/[nid]">Learn More</a>';
+  $handler->display->display_options['fields']['field_website_link']['element_class'] = 'button';
+  $handler->display->display_options['fields']['field_website_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_website_link']['click_sort_column'] = 'url';
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';

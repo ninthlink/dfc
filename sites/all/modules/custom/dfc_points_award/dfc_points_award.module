@@ -413,12 +413,12 @@ function dfc_points_award_link ( $nid ) {
             'points' => 5,
             'entity_type' => 'node',
             'entity_id' => $nid,
-            'operation' => 'dfc_points_award_link',
+            'operation' => 'dfc_points_award_wo',
             'display' => true
         );
         // for ad links, set display = true til we can figure how to ajax that?!
         dfc_points_award_grant_points($link_points);
-        watchdog('dfc', 'awarding link points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');
+        watchdog('dfc', 'awarding wo points: ' . $nid .' : <pre>'. print_r($link_points,true) .'</pre>');
       }
       // then check if the ad has a link to goto
       if ( isset( $node->field_website_link ) ) {
@@ -687,6 +687,7 @@ function dfc_points_award_userpoints_info() {
   return array(
     'dfc_points_award_image' => $ar,
     'dfc_points_award_link' => $ar,
+    'dfc_points_award_wo' => $ar,
     'dfc_points_award_video' => $ar,
     'dfc_points_award_invite' => $ar,
     'dfc_points_award_share_tw' => $ar,
@@ -716,6 +717,9 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
       break;
     case 'dfc_points_award_link':
       return t('Viewed Sponsor "%title"', $arguments);
+      break;
+    case 'dfc_points_award_wo':
+      return t('Viewed Project "%title"', $arguments);
       break;
     case 'dfc_points_award_video':
       return t('Watched Video "%title"', $arguments);

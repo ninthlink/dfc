@@ -48,17 +48,26 @@ background-position: center top;
 
 
 .banner-images {clear: both; width: 100%; margin-top: -21px; display: block; margin-bottom: 40PX; min-height: 368px;}
-#block-views-wild-oceans-block { margin: 0 auto 70px; max-width: 1140px }
-#block-views-wild-oceans-block .block__title{background:#363636; margin-top:60px; text-transform: uppercase;margin-bottom: 0px; }
-
-#block-views-wild-oceans-block .owl-item{ background:$color-black;
-  @include breakpoint($bp-tab) {
-    max-width: 348px;
-    margin: 0 16px;
+#block-views-wild-oceans-block {
+  margin-bottom: 70px;
+  
+  .inner {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 1140px;
   }
-}
-#block-views-wild-oceans-block .owl-wrapper { margin: 0 auto; display: block !important; }
+  
+  .block__title{background:#363636; margin-top:60px; text-transform: uppercase;margin-bottom: 0px; }
 
+  .owl-item{ background:$color-black;
+    @include breakpoint($bp-tab) {
+      max-width: 348px;
+      margin: 0 16px;
+    }
+  }
+  .owl-wrapper { margin: 0 auto; display: block !important; }
+}
 
 
 .node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}

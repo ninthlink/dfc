@@ -642,6 +642,10 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['sorts']['lifetime_points']['table'] = 'dfc_points_views';
   $handler->display->display_options['sorts']['lifetime_points']['field'] = 'lifetime_points';
   $handler->display->display_options['sorts']['lifetime_points']['order'] = 'DESC';
+  /* Sort criterion: User: Uid */
+  $handler->display->display_options['sorts']['uid']['id'] = 'uid';
+  $handler->display->display_options['sorts']['uid']['table'] = 'users';
+  $handler->display->display_options['sorts']['uid']['field'] = 'uid';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -679,6 +683,10 @@ function dfc_views_nodequeues_views_default_views() {
   $handler->display->display_options['sorts']['monthly_points']['table'] = 'dfc_points_views';
   $handler->display->display_options['sorts']['monthly_points']['field'] = 'monthly_points';
   $handler->display->display_options['sorts']['monthly_points']['order'] = 'DESC';
+  /* Sort criterion: User: Uid */
+  $handler->display->display_options['sorts']['uid']['id'] = 'uid';
+  $handler->display->display_options['sorts']['uid']['table'] = 'users';
+  $handler->display->display_options['sorts']['uid']['field'] = 'uid';
   $export['leaderboards'] = $view;
 
   $view = new view();

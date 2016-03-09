@@ -83,6 +83,10 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     // check if this is for a Membership : is this the right check?
     if ( $form['#action'] == '/membership' ) {
       $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Select');
+      if ( $form_id == 'commerce_cart_add_to_cart_form_4' ) {
+        $form['submit']['#access'] = false;
+      }
+      $form['#suffix'] = l('Contact Us', 'contact-us', array( 'attributes' => array('class' => array('form-submit'))));
     }
   }
   //watchdog('dfalt', 'form_id '. $form_id .' <pre>'. print_r($form,true) .'</pre>');

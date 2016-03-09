@@ -4083,14 +4083,21 @@ body.node-type-landing-page.section-media .l-main {
     border-color: #f1592a;
     background: #f1592a; }
 
-/* line 407, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 405, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+.view-memberships .quicktabs_main .views-field-field-membership-product-referen a.form-submit {
+  line-height: 64px; }
+  /* line 407, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  .view-memberships .quicktabs_main .views-field-field-membership-product-referen a.form-submit:hover {
+    text-decoration: none; }
+
+/* line 413, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .views-field-body {
   padding: 20px;
   color: #ffffff; }
-  /* line 421, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 427, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body strong {
     font-family: "sanchezregular", Helvetica, sans-serif; }
-  /* line 425, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 431, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body h2 {
     font-family: "Rockwell", Georgia, serif;
     font-size: 18px;
@@ -4098,7 +4105,7 @@ body.node-type-landing-page.section-media .l-main {
     letter-spacing: 2px;
     margin-bottom: 30px;
     text-transform: uppercase; }
-  /* line 433, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 439, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body .note-billing {
     color: #999999;
     font-family: "Rockwell", Georgia, serif;
@@ -4106,22 +4113,22 @@ body.node-type-landing-page.section-media .l-main {
     font-size: 1.125rem;
     font-weight: 300;
     margin-bottom: 50px; }
-  /* line 449, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 455, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body h3 {
     color: #b7b7b7;
     font-family: "tradegothic-bold-condensed20", Georgia, serif;
     font-size: 25px;
     font-size: 1.5625rem;
     margin-bottom: 40px; }
-    /* line 455, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+    /* line 461, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
     .view-memberships .quicktabs_main .views-field-body h3 span {
       color: #ffffff; }
-  /* line 463, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 469, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .quicktabs_main .views-field-body ul li {
     font-family: "Rockwell", Georgia, serif;
     position: relative;
     padding: 0 0 10px 10px; }
-    /* line 468, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+    /* line 474, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
     .view-memberships .quicktabs_main .views-field-body ul li:before {
       content: "";
       background: #ff6633;
@@ -4133,44 +4140,44 @@ body.node-type-landing-page.section-media .l-main {
       width: 4px;
       border-radius: 100%; }
 
-/* line 487, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 493, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-title {
   color: #b1872c; }
 
-/* line 493, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 499, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-body h2 {
   /*margin-bottom: 10px;*/ }
 
-/* line 497, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 503, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(2) .views-field-body h3 {
   color: #b1872c; }
 
-/* line 505, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 511, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-title {
   color: #ff6633; }
 
-/* line 511, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 517, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-body h2 {
   /*margin-bottom: 10px;*/ }
 
-/* line 515, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 521, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .quicktabs_main .quicktabs-tabpage:nth-of-type(3) .views-field-body h3 {
   color: #ff6633; }
 
-/* line 524, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 530, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .view-memberships .attachment {
   background: #505050 url(../images/diamondboat.jpg) no-repeat 50% 0;
   float: left;
   width: 99%;
   padding: 330px 0 200px;
   position: relative; }
-  /* line 539, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 545, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs-tabs {
     display: none; }
-  /* line 552, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 558, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main .views-field-title {
     display: none; }
-  /* line 556, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 562, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main h2.diamond-title {
     color: #ffffff;
     font-size: 45px;
@@ -4181,7 +4188,7 @@ body.node-type-landing-page.section-media .l-main {
     left: 0;
     right: 0;
     top: 134px; }
-    /* line 569, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+    /* line 575, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
     .view-memberships .attachment .quicktabs_main h2.diamond-title span.diamond-icon {
       background: url(../images/diamond.png) no-repeat 0 0;
       display: block;
@@ -4189,24 +4196,24 @@ body.node-type-landing-page.section-media .l-main {
       width: 68px;
       height: 64px;
       position: relative; }
-  /* line 587, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 593, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main h4 {
     font-family: "Rockwell", Georgia, serif;
     font-weight: 700;
     font-size: 16px;
     font-size: 1rem;
     letter-spacing: 2px; }
-  /* line 600, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 606, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main .views-field-body h3 {
     color: #f1592a; }
-  /* line 605, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 611, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .quicktabs_main .views-field-body ul li {
     font-family: "Rockwell", Georgia, serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
     padding: 0 0 10px 10px; }
-  /* line 617, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 623, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment a.button-outline {
     font-size: 22px;
     font-size: 1.375rem;
@@ -4214,7 +4221,7 @@ body.node-type-landing-page.section-media .l-main {
     position: absolute;
     left: 30px;
     bottom: 30px; }
-  /* line 630, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 636, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .view-memberships .attachment .views-field-field-membership-product-referen {
     position: absolute;
     right: auto;
@@ -4233,7 +4240,7 @@ body.node-type-landing-page.section-media .l-main {
     width: 30%;
 }
 	}*/
-/* line 661, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+/* line 667, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
 .membership-bar {
   background: #000000;
   display: block;
@@ -4241,10 +4248,10 @@ body.node-type-landing-page.section-media .l-main {
   width: 100%;
   max-width: 330px;
   height: 8px; }
-  /* line 669, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 675, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .membership-bar.gold {
     background: #b1872c; }
-  /* line 673, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
+  /* line 679, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-membership.scss */
   .membership-bar.platinum {
     background: #ff6633; }
 

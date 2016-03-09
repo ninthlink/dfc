@@ -402,6 +402,12 @@ top: 0;
           background: $color-orange;
         }
       }
+      a.form-submit {
+        line-height: 64px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
     
     .views-field-body {

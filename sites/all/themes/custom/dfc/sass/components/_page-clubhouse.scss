@@ -1,9 +1,28 @@
 // Clubhouse Feature
+
+.block--bean-clubhouse-intro-text{
+.field--text{
+h2{
+	font-size: 2.375rem;
+	margin-bottom: 10px;
+	width: 60%;
+	
+  }
+	
+p {  font-family: $sr;
+	@include rem(font-size, 14px);
+	line-height: 1.5;
+  }
+	
+}
+
+}
 .block--bean-clubhouse-feature {
 	position: relative;
 	height: 270px;
 	overflow: hidden;
 
+	
   @include breakpoint($bp-desk) {
 		height: 460px;
   }

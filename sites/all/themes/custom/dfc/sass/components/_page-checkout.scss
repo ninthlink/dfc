@@ -30,7 +30,7 @@ body.page-checkout {
       padding-left: 50px;
       text-transform: uppercase;
       min-height: 58px;
-    }
+    }	
     #commerce-userpoints-discount-cart-contents-wrapper {
       margin-bottom: 1em;
     }
@@ -103,75 +103,64 @@ body.page-checkout {
     }
   }
   
-  .field--commerce-order-total
-   {
-	margin-top: 30px;
+  .field--commerce-order-total {
 	background: $color-white;
+	margin-top: 30px;
+	
     .commerce-price-formatted-components {
-    width: 100%;
-    margin-left: 0px;
+		width: 100%;
+		margin-left: 0px;
     }
 	
-	tr
-      {
-	background: #FFF;	
+	tr{
+	  background: $color-white;	
+	}
    }
 
- 	
-  }
-
-  .commerce-order-handler-area-order-total 
-   {
+  .commerce-order-handler-area-order-total {
     .commerce-price-formatted-components{
 	   .component-title{
 	     @include rem(font-size,14px);
-	   }
-	 } 
+	    }
+	}
 	
   }
 
-  label
-   {
-	 @include rem(font-size,12px);
+  label{
+	@include rem(font-size,12px);
 	color:$color-black;
 	margin-bottom: 5px;
   }  
   
-  input[type="text"],input[type="email"],input[type="tel"],select
-   {
+  input[type="text"],input[type="email"],input[type="tel"],select{
 	border: 1px solid $color-gray-f;
 	border-radius: 0px;
+	color: $color-black;
+	font-size: 13px;
+	padding: 7px 5px;
 	xheight: 25px;
 	width: 100%;
-	font-size: 13px;
-	color: $color-black;
-	padding: 7px 5px;
-  
-  @include breakpoint($bp-desk) {
-    max-width: 350px;
-  }
+	@include breakpoint($bp-desk) {
+		max-width: 350px;
+    }
   }
   
-  div.addressfield-container-inline 
-   {
+  div.addressfield-container-inline {
    div.form-item{
      float: none;
-	margin-right: 0px;
+	 margin-right: 0px;
    }
 	
   }
   
-  #commerce-checkout-form-checkout
-   {
+  #commerce-checkout-form-checkout {
 	margin-top: 30px;	
   } 
   
-  legend
-   {
+  legend {
 	color: $color-orange;
 	font-family: $sr;
 	@include rem(font-size, 16px);
-	
   }
 
 
@@ -182,71 +171,68 @@ body.page-checkout {
       float: right;
       width: 510px;
       */
-      .form-submit,
-		input.form-submit[disabled]{
-        border: 0px none;
-        color: $color-white;
-        font-size: 1.25rem;
-        display: block;
-        font-family: $dr;
-        letter-spacing: 2px;
-        padding: 15px 60px;
-        text-decoration: none;
-        text-transform: uppercase;
-        vertical-align: middle;
-        text-align: center;
-        background: $color-black;
-        font-size: 14px;
-        min-width: 275px;
-        margin-left: auto;
+      .form-submit,input.form-submit[disabled]{
+		  background: $color-black;
+		  border: 0px none;
+		  color: $color-white;
+		  /*font-size: 1.25rem;*/
+		  display: block;
+		  font-family: $dr;
+		  @include rem(font-size, 14px);
+		  letter-spacing: 2px;
+		  margin-left: auto;
+		  padding: 15px 60px;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  text-align: center;
+		  vertical-align: middle;
+		  min-width: 275px;
       }
 
-      .form-submit:hover,
-		input.form-submit[disabled]:hover	  {
+      .form-submit:hover,input.form-submit[disabled]:hover {
         background: $color-orange;
       }
     }
+	
 	.form-submit{
 		float: left;
-		
 	}
   }
   
-  
-  .commerce_coupon{
+  .commerce_coupon {
 	.form-submit {
+	    background: $color-black;
         border: 0px none;
         color: $color-white;
-        font-size: 1.25rem;
         display: block;
-        font-family: $dr;
-        letter-spacing: 2px;
-        padding: 15px 60px;
-        text-decoration: none;
-        text-transform: uppercase;
-        vertical-align: middle;
-        text-align: center;
-        background: $color-black;
-        font-size: 14px;
-        min-width: 275px;
-        margin-left: auto;
 		float: left;
-      }
-	  .form-submit:hover {
+		font-family: $dr;
+		@include rem(font-size, 14px);
+        letter-spacing: 2px;
+		margin-left: auto;
+        padding: 15px 60px;
+        text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+        vertical-align: middle;
+		min-width: 275px;
+    }
+	
+	.form-submit:hover {
         background: $color-orange;
-      }
+    }
   }
   
   .checkout-buttons.form-wrapper{
-	#edit-continue{
+	  #edit-continue{
 		background: $color-orange !important;
 		border: 2px solid $color-orange !important;
 		color: $color-white !important;
 		clear: both;
-	    font-size: 0.875rem;
+	    /*font-size: 0.875rem;*/
+		@include rem(font-size,0.875rem);
         display: block;
-		
-        font-family: $dr;
+		font-family: $dr;
         letter-spacing: 2px;
         padding: 15px 60px;
         text-decoration: none;
@@ -255,96 +241,95 @@ body.page-checkout {
         text-align: center;
  	    min-width: 275px;
 	    margin-left: auto;
-	}
-	#edit-continue:hover{
+	  }
+	
+	  #edit-continue:hover{
 		background: $color-black !important;
 		color: $color-orange!important;
-	}
-	.fieldset{
-		@include breakpoint(min-width $bp530) {
+	  }
+	
+	  .fieldset{
+		 @include breakpoint(min-width $bp530) {
 			margin: 0 !important;
-		}
-	}
-	.form-submit{
+	     }
+	  }
+	  
+	  .form-submit{
 		@include breakpoint(max-width $bp530) {
 			min-width: 100% !important;
 		}
-	}
-	.button-operator
-      {
-	opacity: 0;
-   }
-   #edit-cancel,#edit-back{
+	  }
+	  
+	  .button-operator{
+		 opacity: 0;
+      }
+  
+       #edit-cancel,#edit-back {
    
-   border: 2px solid $color-gray-9;
-    color: $color-gray-9;
-    font-size: 1.25rem;
-    display: block;
-    font-family: $dr;
-    letter-spacing: 2px;
-    padding: 15px 60px;
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle;
-    text-align: center;
-	background: $color-white;
-	@include rem(font-size, 14px);
-	min-width: 275px;
-	margin-left: auto;
-   
-   }
-   #edit-cancel:hover,#edit-back:hover{
-    background: $color-orange;
-	color: $color-white;
-   }
+		  background: $color-white;
+		  border: 2px solid $color-gray-9;
+		  color: $color-gray-9;
+		   /*font-size: 1.25rem;*/
+		  display: block;
+		  font-family: $dr;
+		  @include rem(font-size, 14px);
+		  letter-spacing: 2px;
+		  margin-left: auto;
+		  padding: 15px 60px;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  vertical-align: middle;
+		  text-align: center;
+		  min-width: 275px;
+       }
+	   
+       #edit-cancel:hover,#edit-back:hover{
+         background: $color-orange;
+	     color: $color-white;
+       }
 	
-  }
-  .checkout-completion-message{
-    .p:last-child a {
+    }
 	
-			  border: 0px none;
-			font-size: 1.25rem;
+    .checkout-completion-message {
+	  .p:last-child a {
+	        background: $color-black;  
+			border: 0px none;
+			color: $color-white;
+			/*font-size: 1.25rem;*/
 			display: block;
 			font-family: $dr;
+			@include rem(font-size, 14px);
 			letter-spacing: 2px;
 			padding: 15px 60px;
+			text-align: center;
 			text-decoration: none;
 			text-transform: uppercase;
 			vertical-align: middle;
-			text-align: center;
-			background: $color-black;
-			color: $color-white;
-			font-size: 14px;
-			min-width: 275px;
-			margin-left: auto;
-			max-width: 355px;
+			/*margin-left: auto;*/
 			margin-left: 0px;
-	
-	
-	   }
-     
-	   p:last-child a:hover
-           {
-	  background: $color-orange;
-      }
-	  p
-           {
-	     
-	     xfont-family: $dr;
-		 @include rem(font-size, 16px);
-	     color:$color-gray-9;
-     }
-
-
-	
+			min-width: 275px;
+			max-width: 355px;
 	}
+     
+	p:last-child a:hover{
+	     background: $color-orange;
+    }
+	  
+	p{
+	  color:$color-gray-9;
+	  xfont-family: $dr;
+	  @include rem(font-size, 16px);
+	}
+
+
+}		
 	.checkout-help
 	{
-	color:$color-orange;
-	font-family: $sr;
-	@include rem(font-size, 16px);
-	margin-bottom: 20px;
-   }
+		color:$color-orange;
+		font-family: $sr;
+		@include rem(font-size, 16px);
+		margin-bottom: 20px;
+    }
 	
 }
 
@@ -352,162 +337,145 @@ body.page-cart {
 
   .l-main{
      background-color: $color-white;
-    color: $color-gray-3;
-    padding: 50px;
+     color: $color-gray-3;
+     padding: 50px;
 	
 	 .l-content h1{
-	  padding: 20px 50px;
-    margin: -50px -50px 50px;
-    background-color: $color-orange;
-    min-height: 58px;
-    font-size: 1.875rem;
-	margin-bottom: 1.25rem;
-	font-family: $dr;
-	text-transform: uppercase;
-	color: $color-white; 
+	   background-color: $color-orange;
+	   color: $color-white; 
+	   font-family: $dr;
+	   @include rem(font-size, 14px);
+       /*margin: -50px -50px 50px;*/
+       margin: -50px -50px 1.25rem;
+       padding: 20px 50px;
+	   text-transform: uppercase;
+	   min-height: 58px;
 	  }
 	  
-  }
+    }
   
-   table.views-table
-   {
-	background: $color-white;
-	color: $color-gray-3;
-	width: 100%;
+    table.views-table {
+	  background: $color-white;
+	  color: $color-gray-3;
+	  width: 100%;
   
-   
-   tr{
-   
-      border-bottom: 1px solid $color-gray-e;
-	  td{
+      tr{
+        border-bottom: 1px solid $color-gray-e;
+	    td{
 	      padding: 25px;
 	      background: $color-white;
 		  
+	    }
+      }
+	
+	  td,td a {
+	     color: $color-gray-3;
+	     @include rem(font-size, 15px);
+	     line-height: 19px;
+	
 	  }
-    }
 	
-	td,td a {
-	
-	  color: $color-gray-3;
-	@include rem(font-size, 15px);
-	line-height: 19px;
-	
-	}
-	
-	thead tr
-	{
+	  thead tr{
 		border-bottom: 0px solid $color-black;	
-	th 
-     {
-		color: $color-orange;
-		background: $color-white;
-		padding: 25px;
-    }
+	    
+		th {
+			color: $color-orange;
+			background: $color-white;
+			padding: 25px;
+        }
 
-    }
+      }
 	
 	
    	
     
-  }
-  
-  .commerce-line-item-views-form input.delete-line-item
-  {
-	background: $color-white;
-	border: 0px solid $color-white;
-	text-indent: -9999px;
-	background: url('../images/icon_cross.png') 0 0 no-repeat transparent;
-	height: 8px;
-	width: 8px;
-	display: block;
-  }
-  
-  .line-item-summary
-  {
-	margin-top: 30px;
- }
-
-
-
-  table.checkout-review
-   {
-	@include rem(font-size, 13px);
-		width: 100%;
-	.pane-data-full
-    {
-	padding: 0px;	
     }
-	.pane-title td
-       {
-	padding: 0px;
-	font-weight: 400;
-	padding-top: 30px;
+  
+    .commerce-line-item-views-form input.delete-line-item {
+	  background: $color-white;
+	  background: url('../images/icon_cross.png') 0 0 no-repeat transparent;
+	  border: 0px solid $color-white;
+	  display: block;
+	  text-indent: -9999px;
+	  height: 8px;
+	  width: 8px;
+	  
+    }
+  
+    .line-item-summary{
+	   margin-top: 30px;
+    }
+
+
+
+    table.checkout-review {
+	  @include rem(font-size, 13px);
+	  width: 100%;
+	  
+	  .pane-data-full{
+	    padding: 0px;	
+      }
+	  
+	  .pane-title td {
+	    font-weight: 400;
+		padding: 0px;
+	    padding-top: 30px;
+       }
+
+      tr {
+	    background: $color-white;
+	    
+		td{
+	      padding: 0px;
+        }
+      }
+    }
+	
+   
+   .pane-title {
+	 color: $color-orange;
+	 font-family: $sr;
+	 @include rem(font-size, 14px);
+	 margin-bottom: 20px;
    }
-
-    tr
-    {
-	background: $color-white;
-	 td  
-    {
-	padding: 0px;
-    }
-  }
- }
- .pane-title
-  {
-	color: $color-orange;
-	font-family: $sr;
-	@include rem(font-size, 14px);
-	margin-bottom: 20px;
- }
   
- #edit-commerce-payment
-  {
-	border: 0px solid $color-white;
-	padding: 0px;
-	margin-top: 30px;
-  }
+   #edit-commerce-payment {
+	 border: 0px solid $color-white;
+	 padding: 0px;
+	 margin-top: 30px;
+   }
  
-  #edit-actions input#edit-checkout{
-  background: $color-orange;
-	color: $color-white;
-	font-size: 14px;
-	border:2px solid $color-orange;
-  }
+   #edit-actions input#edit-checkout {
+     background: $color-orange;
+	 color: $color-white;
+	 font-size: 14px;
+	 border:2px solid $color-orange;
+   }
   
-  #edit-actions input#edit-checkout:hover
-     {
-	background: $color-black;
-	color: $color-orange;
-	border:2px solid $color-orange;
+   #edit-actions input#edit-checkout:hover {
+	 background: $color-black;
+	 border:2px solid $color-orange;
+	 color: $color-orange;
+	
    }
    
-   #edit-actions input#edit-submit
-    {
-	float: left;
-	margin-bottom: 20px;
-	background: $color-white;
-	color: $color-orange;
-	font-size: 14px;
-	border: 2px solid $color-orange;
-  }
-  #edit-actions input#edit-submit:hover
-  {
+   #edit-actions input#edit-submit {
+	  background: $color-white;
+	  border: 2px solid $color-orange;
+	  color: $color-orange;
+	  float: left;
+	  @include rem(font-size, 14px);
+	  margin-bottom: 0px 0px 20px 0px;
+   }
+   
+  #edit-actions input#edit-submit:hover {
 	background: $color-black;
   }
   
-  div.addressfield-container-inline 
-   {
+  div.addressfield-container-inline {
     div.form-item{
-	
 	 float: none;
-	margin-right: 0px;
-	
+	 margin-right: 0px;
 	}
-	
- }
-
-
-
-	
+  }
 }

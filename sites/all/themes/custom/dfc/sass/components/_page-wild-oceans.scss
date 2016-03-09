@@ -1,134 +1,285 @@
 body.section-wild-oceans {
- background:#363636 !important; 
+  background:#363636 !important; 
+  
+  h2.block__title {
+   background: $color-platinum; 
+   padding: 15px 0 15px 30px !important; 
+   margin: 0 
+  }
  
- h2.block__title {background: $color-platinum; padding: 15px 0 15px 50px; margin: 0 }
-.field--text {
-  p{
-  padding: 0 50px; font-family:$rw;	@include rem(font-size, 14px);
-  }
-  img {
-    margin: 0;
+  .field--text {
+	p{
+	  
+	   font-family:$rw;	
+	   @include rem(font-size, 14px);
+	    padding: 0 50px; 
+	}
+  
+    img {
+	   margin: 0;
     
-    @include breakpoint($bp-full) {
-      width: 1180px;
-      max-width: 1180px;
+	   @include breakpoint($bp-full) {
+         width: 1180px;
+         max-width: 1180px;
+       }
     }
   }
-}
-.img-1{width: 590px; height: 367px; background-image: url("../images/img2.png"); float:left; background-size:cover;
 
- @include breakpoint(min-width 320px) {
+  .img-1 {
+      background-size:cover;
+	  background-image: url("../images/img2.png"); 
+	  float:left; 
+      width: 590px; 
+	  height: 367px; 
+	  
+
+      @include breakpoint(min-width 320px) {
           @include breakpoint(max-width $bp767) {
+		  background-size: unset;
+		  background-position: center top;
+		  float: left;
+		  margin-top: 20px;
 		  height: 366px;
-float: left;
-background-size: unset;
-width: 100%;
-margin-top: 20px;
-background-position: center top;
-		  }
+		  width: 100%;
+		}
 		  
-		  }
+	  }
 
 
-}
-.img-2{width: 590px; height: 367px; background-image: url("../images/img1.png"); float:left; background-size:cover;
-
- @include breakpoint(min-width 320px) {
+    }
+	
+	.img-2 {
+	  background-image: url("../images/img1.png"); 
+	  background-size:cover;
+	  float:left; 
+  	  width: 590px; 
+	  height: 367px; 
+	  
+	  @include breakpoint(min-width 320px) {
           @include breakpoint(max-width $bp767) {
-		  height: 366px;
-float: left;
-background-size: unset;
-width: 100%;
-margin-top: 20px;
-background-position: center top;
+			height: 366px;
+			float: left;
+			background-size: unset;
+			width: 100%;
+			margin-top: 20px;
+			background-position: center top;
 		  }
-		  
-		  }
-}
+	  }
+    }
 
 
-.banner-images {clear: both; width: 100%; margin-top: -21px; display: block; margin-bottom: 40PX; min-height: 368px;}
-#block-views-wild-oceans-block {
-  margin-bottom: 70px;
+	.banner-images {
+		clear: both; 
+		display: block; 
+		margin-top: -21px; 
+		margin-bottom: 40PX; 
+		min-height: 368px;
+		width: 100%;
+	}
+	
+	#block-views-wild-oceans-block {
+		margin-bottom: 70px;
   
-  .inner {
+		.inner {
+			display: block;
+			float: none;
+			margin: 0 auto;
+			max-width: 1140px;
+		}
+  
+		.block__title {
+			background:#363636; 
+			margin-top:60px; 
+			margin-bottom: 0px;
+            text-transform:uppercase;			
+		}
+
+		.owl-item { 
+			background:$color-black;
+			margin: 0px 23px !important;
+			max-width: 338px !important;
+			@include breakpoint($bp-tab) {
+				max-width: 348px;
+				margin: 0 16px;
+			}
+		}
+		
+		.owl-wrapper {
+			display: block !important;
+            margin: 0 auto; 			
+		}
+	}
+
+
+	.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {   
+		background: $color-black;
+	}
+
+	.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {
+		padding: 0px !important;
+	}
+
+	.views-field-title {
+		@include rem(font-size, 25px); 
+		color:$color-white; 
+		font-family:$tgc;
+        /*font-size: 1.50rem;*/
+        @include rem(font-size, 1.50rem); 		
+		line-height: 15px;
+        margin-top: 15px;
+        padding:10px 30px 20px;		
+		
+	}
+	
+	.field--body {  
+		color:$color-white;
+		font-family:$rw; 
+		@include rem(font-size, 14px); 
+		line-height: 1.5; 
+		min-height: 120px;
+		padding:0 30px;
+	}
+	
+	.views-field-nothing {
+		font-family:$rw;
+		@include rem(font-size, 15px);
+		line-height: 1;
+        padding: 30px;
+		strong {
+			color: $color-orange;
+		}
+	}
+	
+	.views-item-wild-ocean-project .button {
+		background: none;
+		border: none;
+		float: none;
+		padding: 0;
+		width: 100%;
+  
+		a {
+			background: $color-blue !important;
+			color: $color-white !important;
+			display: block !important;
+			font-family: $tgc !important;
+			@include rem(font-size, 15.4px);
+			line-height: 50px !important;
+			height: 50px !important;
+			text-align: center !important;
+			text-transform: uppercase !important;
+			
+			&:hover {
+			  background-color: $color-orange !important;
+			  text-decoration: none !important;
+			}
+		}
+	}
+
+	.l-footer {
+		background:$color-black;
+	}
+	
+	.l-header {
+		background:$color-black;
+	}
+
+	.owl-controls {
     float: none;
-    display: block;
-    margin: 0 auto;
-    max-width: 1140px;
-  }
-  
-  .block__title{background:#363636; margin-top:60px; text-transform: uppercase;margin-bottom: 0px; }
+    margin-top: 50px;
 
-  .owl-item{ background:$color-black;
-    @include breakpoint($bp-tab) {
-      max-width: 348px;
-      margin: 0 16px;
-    }
-  }
-  .owl-wrapper { margin: 0 auto; display: block !important; }
-}
+   
+	
+	
+	 .owl-pagination {
+    padding: 0 20px;
 
+     .owl-page {
 
-.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {    background: $color-black;}
-.node.node--wild-ocean-project.node--full.node--wild-ocean-project--full {padding: 0px !important;}
-
-.views-field-title{	@include rem(font-size, 25px); font-family:$tgc; color:$color-white; padding:10px 30px 20px; margin-top: 15px; line-height: 15px; font-size: 1.50rem;}
-.field--body{ font-family:$rw; @include rem(font-size, 14px); line-height: 1.5; color:$color-white;padding:0 30px;}
-.views-field-nothing {
-  padding: 30px;
-  font-family:$rw;
-  @include rem(font-size, 15px);
-  line-height: 1;
-
-  strong {
-    color: $color-orange;
-  }
-}
-.views-item-wild-ocean-project .button {
-  background: none;
-  border: none;
-  float: none;
-  padding: 0;
-  width: 100%;
-  
-  a {
-    background: $color-blue;
-    color: $color-white;
-    display: block;
-    font-family: $tgc;
-    @include rem(font-size, 15.4px);
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    text-transform: uppercase;
+      span {
+        border-radius: 0;
+        opacity: 1;
+        background: $color-gray-9;
+        height: 4px;
+        width: 32px;
+        margin: 10px 8px;
+      }
     
-    &:hover {
-      background-color: $color-orange;
-      text-decoration: none;
+      &.active {
+      
+        span {
+          background: $color-orange;
+        }
+      }
     }
+    }
+  
+		
+		.owl-buttons {
+			.owl-prev{	
+				top: 95% !important;
+				left: 39% !important;
+				 @include breakpoint(min-width $bp-tab) {
+					left: 10%;
+			  }
+				}
+			.owl-next{
+				top: 95% !important;
+				right: 39% !important;
+				
+				 @include breakpoint(min-width $bp-tab) {
+					right: 10%;
+			  }}
+				
+			.owl-prev,
+			.owl-next {
+				position: absolute;
+				top: 50%;
+				left: 5%;
+				@extend .transform-50;
+			  background: none;
+				border-radius: 0;
+				margin: 0;
+				opacity: 1;
+				padding: 0;
+				text-indent: -9999px;
+				@include use-sprite($icon-arrow-left);
+        /*
+			  @include breakpoint($bp-tab) {
+					left: 20%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					left: 10%;
+			  }
+
+			  @include breakpoint($bp-full) {
+					left: 20%;
+			  }
+        */
+			}
+			
+			.owl-next {
+				left: auto;
+				right: 5%;
+				@include use-sprite($icon-arrow-right);
+        /*
+			  @include breakpoint($bp-tab) {
+					right: 20%;
+			  }
+
+			  @include breakpoint($bp-desk) {
+					right: 10%;
+			  }
+        
+			  @include breakpoint($bp-full) {
+					right: 20%;
+			  }
+        */
+			}
+		}
   }
-}
+  
 
-.l-footer {background:$color-black;}
-.l-header {background:$color-black;}
-
-
-
-
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 32px;
-    height: 4px;
-    margin: 10px 8px;
-    opacity: 1 !important;
-    border-radius: 0px;
-    background: #999 none repeat scroll 0% 0%;
-}
-.owl-theme .owl-controls .owl-page.active span {
-    background: #F1592A none repeat scroll 0% 0%;
-}
-.owl-prev, .owl-next{display:none !important;}
 }
 
 // Wild Oceans bottom CTA
@@ -137,38 +288,38 @@ background-position: center top;
 	text-align: center;
 
 	.home-cta {
-		position: relative;
 		background: $color-orange url(../images/wildoceans-orangebar.jpg) no-repeat 50% 50%;
-    background-size: cover;
+		background-size: cover;
 		padding: 31px 30px;
+		position: relative;
 		text-transform: uppercase;
 		
-	  @include breakpoint($bp-desk) {
+		@include breakpoint($bp-desk) {
 			padding: 31px 0;
-      background-size: initial;
-	  }
+			background-size: initial;
+		}
 		
 		.home-cta-column {
 			
 		  @include breakpoint($bp-desk) {
 				float: left;
-				width: 55%;
-				text-align: left;
 				padding-left: 310px;
 				padding-right: 10px;
+				width: 55%;
+				text-align: left;
 		  }
 			
 		  @include breakpoint($bp-full) {
-				width: 58%;
 				padding-top: 10px;
 				padding-left: 210px;
 				text-align: center;
+				width: 58%;
 		  }
 		}
 		
 		.home-cta-title {
-      color: $color-white;
-		  font-family: $dr;
+			color: $color-white;
+			font-family: $dr;
 			@include rem(font-size, 36px);
 			line-height: 1;
 			margin-bottom: 10px;
@@ -177,26 +328,26 @@ background-position: center top;
 		.home-cta-link {
 		  @include breakpoint($bp-desk) {
 				float: right;
-				width: 45%;
 				text-align: left;
+				width: 45%;
 		  }
 			
 		  @include breakpoint($bp-full) {
 				width: 42%;
 		  }
       
-			a {
-        @extend .button;
-        background: $color-black;
+		  a {
+			 @extend .button;
+			 background: $color-black;
         
-        font-family: $tgc;
-        @include rem(font-size, 15px);
-        
-        &:hover {
-          background: $color-gray-27;
-          border-color: $color-gray-27;
-        }
-			}
+			 font-family: $tgc;
+			 @include rem(font-size, 15px);
+			
+			 &:hover {
+				background: $color-gray-27;
+				border-color: $color-gray-27;
+			  }
+		   }
 		}
 	}
 }

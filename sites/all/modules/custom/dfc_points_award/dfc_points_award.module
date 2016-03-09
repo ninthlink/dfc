@@ -34,11 +34,35 @@ function dfc_points_award_menu() {
   return $items;
 }
 
+ 
+function dfc_points_award_commerce_cart_attributes_refresh_alter(&$commands, $form, $form_state) {
+	
+	
+  // Display an alert message showing the new default product ID.
+  //$commands[] = ajax_command_alert(t('Now defaulted to product @product_id.', array('@product_id' => $form['product_id']['#value'])));
+  //$commands[] = ajax_command_alert(t('Now defaulted to product @product_id.', array('@product_id' => $form['product_id']['#value'])));
+  
+   $product_id = $form_state['input']['product_id'];
+   $product = commerce_product_load($product_id);
+   $price = entity_metadata_wrapper('commerce_product', $product)->commerce_price->value();
+   $price_display = commerce_currency_format($price['amount'], $price['currency_code'], $product);
+   $amount = dfc_points_award_get_points_conversion($price['amount']);
+	 
+    $commands [] = ajax_command_replace('.node-256-product-commerce-price', '<div class="field--commerce-price"> '.$price_display.'</div><span class="points"> / <span class="points-value">'.$amount.'</span> Points</span>');
+	
+ 
+}
+
 // hook_form_alter
 function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
+	
   global $user;
   $role = is_array($user->roles) && in_array('administrator', $user->roles);
 
+
+
+  
+  
   if ($form_id == 'invite_form') {
     $form['#validate'][] = 'dfc_points_award_grant_points_invite_form_validate';
     $form['#submit'][] = 'dfc_points_award_grant_points_invite_form';
@@ -90,6 +114,9 @@ function dfc_points_award_form_alter(&$form, &$form_state, $form_id) {
     }
   }
   //watchdog('dfalt', 'form_id '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
+  
+ 
+	
 }
 
 function dfc_points_award_user_media_type_validate(&$form, &$form_state) {
@@ -751,3 +778,6 @@ function dfc_points_award_userpoints_description_callback($operation, $entity) {
 	}
   
 }
+
+
+

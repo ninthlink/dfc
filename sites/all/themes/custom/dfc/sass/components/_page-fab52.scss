@@ -6,6 +6,15 @@ body.node-type-landing-page.section-fab-52-resorts {
     @extend .row-padding;
   }
 }
+.block--bean-fab-52-intro{
+	.field--text {
+		p{
+		  font-family: $sr !important;
+		   @include rem(font-size, 14px);
+		  line-height: 1.5 !important;
+		}
+   }
+}
 
 .block--bean-fab-52-resorts-top-block {
 	position: relative;
@@ -49,7 +58,8 @@ body.node-type-landing-page.section-fab-52-resorts {
 		top: 0;
 		left: 0;
 		padding: 40px;
-
+		
+	
 	  @include breakpoint($bp-desk) {
       background: rgba(0,0,0,0.5);
 			width: 41.7%;

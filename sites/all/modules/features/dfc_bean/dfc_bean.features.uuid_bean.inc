@@ -398,7 +398,7 @@ Cabo San Lucas, Mexico</h3>
     'view_mode' => 'default',
     'created' => 1450331675,
     'log' => '',
-    'uid' => 57,
+    'uid' => 56,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => '95dcb470-9820-483b-871c-bf63e2b924bb',
@@ -407,9 +407,11 @@ Cabo San Lucas, Mexico</h3>
     'field_text' => array(
       'und' => array(
         0 => array(
-          'value' => 'Our unique combination of luxury and performance allows the Pacific Provider to deliver the ultimate experience to an individual Superyacht or a fleet of Sportfishers. With a 75,000 gallon fuel capacity the Pacific Provider can reach further than most ships of its kind and stay there for extended periods of time. Her range 8,000 mile range can make the most remote atoll or island easily accessible.',
+          'value' => '<h2>THE 160\' PACIFIC PROVIDER</h2>
+Our unique combination of luxury and performance allows the Pacific Provider to deliver the ultimate experience to an individual Superyacht or a fleet of Sportfishers. With a 75,000 gallon fuel capacity the Pacific Provider can reach further than most ships of its kind and stay there for extended periods of time. Her range 8,000 mile range can make the most remote atoll or island easily accessible.',
           'format' => 'full_html',
-          'safe_value' => '<p>Our unique combination of luxury and performance allows the Pacific Provider to deliver the ultimate experience to an individual Superyacht or a fleet of Sportfishers. With a 75,000 gallon fuel capacity the Pacific Provider can reach further than most ships of its kind and stay there for extended periods of time. Her range 8,000 mile range can make the most remote atoll or island easily accessible.</p>
+          'safe_value' => '<h2>THE 160\' PACIFIC PROVIDER</h2>
+<p>Our unique combination of luxury and performance allows the Pacific Provider to deliver the ultimate experience to an individual Superyacht or a fleet of Sportfishers. With a 75,000 gallon fuel capacity the Pacific Provider can reach further than most ships of its kind and stay there for extended periods of time. Her range 8,000 mile range can make the most remote atoll or island easily accessible.</p>
 ',
         ),
       ),

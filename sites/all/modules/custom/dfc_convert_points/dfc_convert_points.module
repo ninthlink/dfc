@@ -82,11 +82,11 @@ function add_double_monthly_giveaway_clock(&$block){
     $end_date = date("Y/m/01", strtotime('+1 month'));
     $block['content'] = '<div class="countdown-block-month-1"><div class="countdown-text-month-1">';
     $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
-    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date)).' at 12:00am (PST)</div></div>';
+    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date .' -1 day')) .' at 11:59pm (PST)</div></div>';
     $block['content'] .= add_giveaway_clock($end_date, 'month-1').'</div>';
     $block['content'] .= '<div class="countdown-block-month-2"><div class="countdown-text-month-2">';
     $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
-    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date)).' at 12:00am (PST)</div></div>';
+    $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date .' -1 day')) .' at 11:59pm (PST)</div></div>';
     $block['content'] .= add_giveaway_clock($end_date, 'month-2').'</div>';
   }
 }
@@ -109,7 +109,7 @@ function add_timed_giveaway_clock(&$block){
     //watchdog('prize_date', '<pre>'.print_r($prize, TRUE).'</pre>');
     $block['content'] = '<div class="countdown-text"><div class="countdown-title">'.t('DFC Exclusive <span>Giveaways</span>').'</div>';
     $block['content'] .= '<div class="countdown-ending-text">Current Giveaway Ends:</div>';
-    $block['content'] .= '<div class="countdown-ending-date">'.date("l, F j, Y", strtotime($prize->field_giveaway_date[LANGUAGE_NONE][0]['value'])).' at 12:00am (PST)</div></div>';
+    $block['content'] .= '<div class="countdown-ending-date">'.date("l, F j, Y", strtotime( $prize->field_giveaway_date[LANGUAGE_NONE][0]['value'] .' -1 day' ) ) .' at 11:59pm (PST)</div></div>';
     $block['content'] .= add_giveaway_clock($prize->field_giveaway_date[LANGUAGE_NONE][0]['value'], 'timed');
   }
 }

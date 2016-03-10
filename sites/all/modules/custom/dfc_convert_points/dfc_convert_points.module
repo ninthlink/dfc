@@ -260,13 +260,13 @@ function assign_timed_giveaways($yesterday){
 
 function dfc_convert_points_cron(){
   //intermittant chores: timed giveaways
-  $yesterday = date('Y-m-d 00:00:00', strtotime('-1 day'));
+  $yesterday = date('Y-m-d 00:00:00');
   $last_timed_giveaway = variable_get('last_timed_giveaway', 0);
-  if($last_timed_giveaway <> $yesterday){
+  //if($last_timed_giveaway <> $yesterday){
     //find timed giveaway winner
     assign_timed_giveaways($yesterday);
     variable_set('last_timed_giveaway', $yesterday);
-  }
+  //}
   
   //monthly chores: monthly giveaways and convert points
   $cur_month = date('n');

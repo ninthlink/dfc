@@ -156,8 +156,11 @@ function dfc_points_award_node_view($node, $view_mode, $langcode) {
       // figure out how long to watch video is ok
       switch ( $cat ) {
         case 5:
+          // for Member Videos, watching 6 seconds is enough
+          $threshold = 30;
+          break;
         case 17:
-          // for Advertisements & Member Videos, watching 30 seconds is enough
+          // for Advertisements, watching 30 seconds is enough
           $threshold = 30;
           break;
         case 6:

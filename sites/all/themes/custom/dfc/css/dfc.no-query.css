@@ -2677,45 +2677,45 @@ body.page-cart div.addressfield-container-inline div.form-item {
 .block--bean-clubhouse-intro-text .field--text h2 {
   font-size: 2.375rem;
   margin-bottom: 10px;
-  width: 60%; }
+  width: 100%; }
 
-/* line 12, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 11, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-intro-text .field--text p {
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.5; }
 
-/* line 20, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 19, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-feature {
   position: relative;
   height: 270px;
   overflow: hidden; }
-  /* line 34, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 33, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-feature .field--background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 270px; }
-    /* line 45, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 44, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-feature .field--background-image img {
       height: 100%;
       max-width: none;
       width: auto; }
-  /* line 58, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 57, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-feature .field--text {
     position: absolute;
     top: 0;
     left: 0;
     padding: 40px; }
-  /* line 69, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 68, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-feature .ch-pre-title {
     font-family: "sanchezregular", Helvetica, sans-serif;
     color: #f1592a;
     line-height: 1;
     text-transform: uppercase; }
-  /* line 80, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 79, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-feature h1 {
     font-family: "dangerregular", Helvetica, sans-serif;
     color: #ffffff;
@@ -2725,45 +2725,45 @@ body.page-cart div.addressfield-container-inline div.form-item {
     font-size: 2.625rem;
     margin-bottom: 10px; }
 
-/* line 103, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 102, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-intro-text {
   background: #f1592a;
   padding: 30px 20px;
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif; }
 
-/* line 133, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 140, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-boat-tour {
-  position: relative;
-  height: 226px;
-  overflow: hidden; }
-  /* line 149, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+  /* line 168, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-boat-tour .field--background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 226px; }
-    /* line 164, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 183, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-boat-tour .field--background-image img {
       height: 100%;
       max-width: none;
       width: auto; }
-  /* line 176, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 210, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-boat-tour .ch-tour-link {
     position: absolute;
-    top: 170px;
+    top: 220px !important;
     left: 30px;
     width: 100%;
     text-transform: uppercase;
     font-family: "sanchezregular", Helvetica, sans-serif; }
-    /* line 196, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 239, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-boat-tour .ch-tour-link a {
       position: relative;
       display: block;
       color: #ffffff;
       padding: 4px 0 0 70px; }
-      /* line 202, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+      /* line 245, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
       .block--bean-clubhouse-boat-tour .ch-tour-link a:before {
         content: "";
         display: inline-block;
@@ -2778,19 +2778,19 @@ body.page-cart div.addressfield-container-inline div.form-item {
         top: 0;
         left: 0; }
 
-/* line 213, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 262, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-slideshow {
   position: relative;
   clear: both; }
 
-/* line 237, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 289, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-features-and-highlight {
   padding: 30px 20px;
   color: #ffffff;
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-size: 14px;
   font-size: 0.875rem; }
-  /* line 255, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 307, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-features-and-highlight h2 {
     font-family: "dangerregular", Helvetica, sans-serif;
     text-transform: uppercase;
@@ -2798,41 +2798,41 @@ body.page-cart div.addressfield-container-inline div.form-item {
     font-size: 2.25rem;
     line-height: 1;
     color: #ffffff; }
-    /* line 272, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 324, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-features-and-highlight h2 span {
       color: #f1592a; }
-  /* line 277, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 329, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-features-and-highlight ul {
     margin: 0;
     padding: 0 15px; }
-    /* line 281, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 333, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-features-and-highlight ul li {
       margin-bottom: 5px; }
 
-/* line 296, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 348, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-book {
   position: relative;
   height: 400px;
   overflow: hidden; }
-  /* line 308, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 360, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-book .field--background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 400px; }
-    /* line 323, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 375, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-book .field--background-image img {
       height: 100%;
       max-width: none;
       width: auto; }
-  /* line 342, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 394, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-book .field--text {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 30px; }
-  /* line 354, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 406, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-book .ch-book-title {
     font-family: "dangerregular", Helvetica, sans-serif;
     text-transform: uppercase;
@@ -2841,24 +2841,24 @@ body.page-cart div.addressfield-container-inline div.form-item {
     line-height: 1;
     color: #f1592a;
     margin-bottom: 10px; }
-  /* line 367, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 419, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-book .ch-book-text {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 20px;
     font-size: 1.25rem;
     color: #ebebeb;
     margin-bottom: 20px; }
-  /* line 376, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 428, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-book .ch-book-link a {
     padding: 10px 25px; }
 
-/* line 391, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 443, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-location .ch-location-header {
   background: #999999;
   position: relative;
   color: #ffffff;
   padding: 20px 70px 20px 20px; }
-  /* line 405, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 457, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-header:after {
     content: "";
     display: inline-block;
@@ -2872,30 +2872,30 @@ body.page-cart div.addressfield-container-inline div.form-item {
     position: absolute;
     top: 20px;
     right: 20px; }
-  /* line 412, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 464, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-header h2 {
     color: #000000;
     margin-bottom: 5px; }
-  /* line 421, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 473, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-header .ch-location-spot {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;
     font-size: 0.875rem; }
 
-/* line 431, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 483, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-location .ch-location-map {
   overflow: hidden;
   *zoom: 1; }
-  /* line 434, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 486, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-map iframe {
     width: 100%;
     float: left; }
 
-/* line 444, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+/* line 496, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
 .block--bean-clubhouse-location .ch-location-more {
   background: #f1592a;
   padding: 30px 20px; }
-  /* line 456, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 508, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-more .ch-location-title {
     font-family: "dangerregular", Helvetica, sans-serif;
     font-size: 36px;
@@ -2904,14 +2904,14 @@ body.page-cart div.addressfield-container-inline div.form-item {
     color: #ffffff;
     margin-bottom: 20px;
     line-height: 1; }
-    /* line 464, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+    /* line 516, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
     .block--bean-clubhouse-location .ch-location-more .ch-location-title span {
       color: #000000;
       float: left;
       width: 100%;
       line-height: 1;
       margin-bottom: 30px; }
-  /* line 473, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
+  /* line 525, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-clubhouse.scss */
   .block--bean-clubhouse-location .ch-location-more .ch-location-text {
     font-family: "sanchezregular", Helvetica, sans-serif;
     font-size: 14px;

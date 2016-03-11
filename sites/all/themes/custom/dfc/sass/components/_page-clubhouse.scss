@@ -157,7 +157,7 @@ p {  font-family: $sr;
   @include breakpoint($bp-tab) {
 		float: left;
 		width: 100%;
-		height: 550px;
+		/*height: 550px;*/
   }
 	
   @include breakpoint($bp-desk) {

@@ -29,6 +29,12 @@ body.node-type-landing-page.section-media {
 	  @include breakpoint($bp-desk) {
 			padding: 0 50px;
 	  }
+	  
+	   @include breakpoint(min-width 320px) {
+		   @include breakpoint(max-width 380px){
+				margin-bottom:58px;
+		  }
+	  }
   }
   
   // points styling
@@ -58,6 +64,8 @@ body.node-type-landing-page.section-media {
       // cover player
       right: 37%;
       bottom: 0;
+	  
+	  
     }
   }
     
@@ -66,6 +74,14 @@ body.node-type-landing-page.section-media {
     top: 0;
     right: 0;
     
+	@include breakpoint(min-width 320px) {
+			@include breakpoint(max-width 380px){
+				left: 0px;
+				top: 58px;
+				position: absolute;
+			
+		}
+	}
     .views-exposed-widgets {
       margin: 0;
     }
@@ -95,7 +111,12 @@ body.node-type-landing-page.section-media {
         height: 58px;
         width: 80px;
         background: $color-gray-89;
-
+	   
+	   @include breakpoint(min-width 320px) {
+			@include breakpoint(max-width 380px){
+				width: 100px;
+			}
+	   }
     	  @include breakpoint($bp-desk) {
           width: 210px;
     	  }

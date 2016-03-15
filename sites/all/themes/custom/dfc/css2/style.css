@@ -171,3 +171,23 @@
 		width: 100%;
 	}
 }
+
+/* sws modified start */
+body.node-type-product-display .l-main .l-content .node .main-content .images-enlarge{
+	font-size: .9em;
+    font-weight: normal;	
+}
+
+#edit-continue-shopping{
+	 float: left;
+    margin-right: 10px;
+    font-size: .9rem;	
+}
+
+#customer-profile-shipping-ajax-wrapper{
+	margin-left:20px;
+	float:left;
+}
+#edit-customer-profile-shipping{
+	width:auto!important;
+}

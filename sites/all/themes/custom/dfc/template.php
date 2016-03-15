@@ -10,3 +10,4 @@ function dfc_preprocess_node($vars) {
     drupal_add_js(drupal_get_path('theme', 'dfc') . '/js/product.js');
   }
 }
+

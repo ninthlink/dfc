@@ -3883,7 +3883,8 @@ function dfc_content_types_field_default_field_instances() {
   $field_instances['node-user_media-field_media_link'] = array(
     'bundle' => 'user_media',
     'deleted' => 0,
-    'description' => 'Maximum upload of 3 videos per month.',
+    'description' => 'Videos must be at least 6 seconds<br>
+Maximum upload of 3 videos per month.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4470,7 +4471,6 @@ function dfc_content_types_field_default_field_instances() {
   t('Location');
   t('Location of Event');
   t('Maximum upload of 10 photos per month.');
-  t('Maximum upload of 3 videos per month.');
   t('Media Category');
   t('Media Type');
   t('Membership Product Reference');
@@ -4511,6 +4511,8 @@ function dfc_content_types_field_default_field_instances() {
   t('Upload an image to go with this article.');
   t('Video');
   t('Video Title');
+  t('Videos must be at least 6 seconds<br>
+Maximum upload of 3 videos per month.');
   t('Website Link');
   t('Winner');
   t('Winner\'s points');

@@ -218,17 +218,26 @@ body.section-wild-oceans {
 			.owl-prev{	
 				top: 95% !important;
 				left: 39% !important;
+				margin-top:10px !important;
 				 @include breakpoint(min-width $bp-tab) {
-					left: 10%;
+					left: 33%  !important;
+			  }
+			  @include breakpoint(max-width $bp530) {
+					left: 12%  !important;
 			  }
 				}
 			.owl-next{
 				top: 95% !important;
+				margin-top:10px !important;
 				right: 39% !important;
 				
 				 @include breakpoint(min-width $bp-tab) {
-					right: 10%;
-			  }}
+					right: 30%  !important;
+			  }
+			  @include breakpoint(max-width $bp530) {
+					right: 10%  !important;
+			  }
+			  }
 				
 			.owl-prev,
 			.owl-next {

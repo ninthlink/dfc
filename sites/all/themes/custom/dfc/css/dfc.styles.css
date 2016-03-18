@@ -7744,20 +7744,30 @@ body.section-wild-oceans {
     /* line 218, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     body.section-wild-oceans .owl-controls .owl-buttons .owl-prev {
       top: 95% !important;
-      left: 39% !important; }
+      left: 39% !important;
+      margin-top: 10px !important; }
       @media (min-width: 590px) {
         /* line 218, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
         body.section-wild-oceans .owl-controls .owl-buttons .owl-prev {
-          left: 10%; } }
-    /* line 225, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+          left: 33%  !important; } }
+      @media (max-width: 530px) {
+        /* line 218, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+        body.section-wild-oceans .owl-controls .owl-buttons .owl-prev {
+          left: 12%  !important; } }
+    /* line 229, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     body.section-wild-oceans .owl-controls .owl-buttons .owl-next {
       top: 95% !important;
+      margin-top: 10px !important;
       right: 39% !important; }
       @media (min-width: 590px) {
-        /* line 225, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+        /* line 229, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
         body.section-wild-oceans .owl-controls .owl-buttons .owl-next {
-          right: 10%; } }
-    /* line 233, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+          right: 30%  !important; } }
+      @media (max-width: 530px) {
+        /* line 229, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+        body.section-wild-oceans .owl-controls .owl-buttons .owl-next {
+          right: 10%  !important; } }
+    /* line 242, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     body.section-wild-oceans .owl-controls .owl-buttons .owl-prev,
     body.section-wild-oceans .owl-controls .owl-buttons .owl-next {
       position: absolute;
@@ -7791,7 +7801,7 @@ body.section-wild-oceans {
 					left: 20%;
 			  }
         */ }
-    /* line 261, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+    /* line 270, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     body.section-wild-oceans .owl-controls .owl-buttons .owl-next {
       left: auto;
       right: 5%;
@@ -7818,11 +7828,11 @@ body.section-wild-oceans {
 			  }
         */ }
 
-/* line 286, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+/* line 295, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
 .block--bean-wild-oceans-cta {
   position: relative;
   text-align: center; }
-  /* line 290, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+  /* line 299, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
   .block--bean-wild-oceans-cta .home-cta {
     background: #f1592a url(../images/wildoceans-orangebar.jpg) no-repeat 50% 50%;
     background-size: cover;
@@ -7830,12 +7840,12 @@ body.section-wild-oceans {
     position: relative;
     text-transform: uppercase; }
     @media (min-width: 960px) {
-      /* line 290, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 299, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta {
         padding: 31px 0;
         background-size: initial; } }
     @media (min-width: 960px) {
-      /* line 302, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 311, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta .home-cta-column {
         float: left;
         padding-left: 310px;
@@ -7843,13 +7853,13 @@ body.section-wild-oceans {
         width: 55%;
         text-align: left; } }
     @media (min-width: 1180px) {
-      /* line 302, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 311, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta .home-cta-column {
         padding-top: 10px;
         padding-left: 210px;
         text-align: center;
         width: 58%; } }
-    /* line 320, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+    /* line 329, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     .block--bean-wild-oceans-cta .home-cta .home-cta-title {
       color: #ffffff;
       font-family: "dangerregular", Helvetica, sans-serif;
@@ -7858,22 +7868,22 @@ body.section-wild-oceans {
       line-height: 1;
       margin-bottom: 10px; }
     @media (min-width: 960px) {
-      /* line 328, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 337, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta .home-cta-link {
         float: right;
         text-align: left;
         width: 45%; } }
     @media (min-width: 1180px) {
-      /* line 328, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 337, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta .home-cta-link {
         width: 42%; } }
-    /* line 339, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+    /* line 348, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
     .block--bean-wild-oceans-cta .home-cta .home-cta-link a {
       background: #000000;
       font-family: "tradegothic-bold-condensed20", Georgia, serif;
       font-size: 15px;
       font-size: 0.9375rem; }
-      /* line 346, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
+      /* line 355, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-wild-oceans.scss */
       .block--bean-wild-oceans-cta .home-cta .home-cta-link a:hover {
         background: #272727;
         border-color: #272727; }

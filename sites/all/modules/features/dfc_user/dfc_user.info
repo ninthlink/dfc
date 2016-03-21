@@ -48,6 +48,7 @@ features[field_instance][] = user-user-field_terms_conditions
 features[invite_type][] = invite_by_email
 features[rules_config][] = commerce_cart_redirect_to_checkout_on_add_to_cart
 features[views_view][] = my_invitiations
+features[views_view][] = points_check
 features[views_view][] = user_media
 features_exclude[dependencies][file] = file
 features_exclude[dependencies][options] = options

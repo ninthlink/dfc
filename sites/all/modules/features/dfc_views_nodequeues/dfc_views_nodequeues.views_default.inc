@@ -314,7 +314,7 @@ function dfc_views_nodequeues_views_default_views() {
 	<h2>DFC <span>Prizeboard</span></h2>
 	<div class="prize-intro">The DFC Prizeboard is where we recognize members who earn product, swag and trips by consuming content, uploading content, sharing and more.  Participate and earn your way onto the Prizeboard today.</div>
 	<div class="prize-buttons">
-		<a href="/dfc-prizeboard">View Next Giveway</a>
+		<a href="/dfc-prizeboard">View Next Giveaway</a>
 	</div>
 </div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';

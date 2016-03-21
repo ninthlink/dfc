@@ -82,7 +82,7 @@ function dfc_user_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = 'Earn <strong>10 points</strong> for every friend or family member you invite to become a member of DFC and when they join - you earn an additional <strong>50 points</strong>.';
+  $handler->display->display_options['header']['area']['content'] = 'Earn <strong>50 points</strong> for every friend or family member you invite who becomes a member of DFC.';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';

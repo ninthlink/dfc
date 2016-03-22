@@ -11,3 +11,14 @@ function dfc_preprocess_node($vars) {
   }
 }
 
+function dfc_preprocess_commerce_checkout_review(&$variables) {
+	
+  $panes = array();
+  foreach ($variables['form']['#data'] as $pane_id => $data) {
+    $panes[$pane_id] = array(
+      'title' => $data['title'],
+      'data' => $data['data'],
+    );
+  }
+  $variables['panes'] = $panes;
+}

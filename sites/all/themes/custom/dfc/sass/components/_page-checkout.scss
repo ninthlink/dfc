@@ -20,6 +20,114 @@ body.page-checkout {
     color: $color-gray-3;
     padding: 50px;
 
+	.l-content #commerce-checkout-form-review{
+	
+		.cart_contents{
+			width: 46%;
+			border-bottom: 1px solid $color-gray-e !important;
+			display:block !important; 
+			float: right;
+			padding-bottom: 20px !important; 
+			margin-bottom: 20px !important; 
+			.field--commerce-order-total{
+				width: 94% !important;
+			}
+	
+			@include breakpoint(max-width $bp960) {
+					float: none; 
+					width: 100%; 
+					
+			}
+	
+		}
+	
+		.account {
+			width: 46%;
+			border-bottom: 1px solid $color-gray-e !important;
+			padding-bottom: 20px !important; 
+			margin-bottom: 20px !important; 
+			display:block !important; 
+	        
+			 @include breakpoint(max-width $bp960) {
+				width: 100%;
+			}
+		}
+	
+		.customer_profile_billing{
+			border-bottom: 1px solid $color-gray-e !important;
+			display:block !important;
+			margin-bottom: 20px !important; 
+			padding-bottom: 20px !important; 
+			width: 46%;
+	
+			.first-name{
+				font-weight:700 !important;
+			}
+
+			.last-name{
+				font-weight:700 !important;
+			}
+			
+			@include breakpoint(max-width $bp960) {
+				width: 100%;
+			}
+		}
+	
+		.customer_profile_shipping {
+		
+			border-bottom: 1px solid $color-gray-e !important;
+			display:block !important;
+			margin-bottom: 20px !important; 
+			padding-bottom: 20px !important; 
+			width: 46%;
+			
+			.first-name {
+				font-weight:700 !important;
+			}
+			
+			.last-name {
+				font-weight:700 !important;
+			}
+	
+			@include breakpoint(max-width $bp960) {
+				width: 100%;
+			}
+		}
+	
+		.commerce_userpoints_discount {
+			border-bottom: 1px solid $color-gray-e !important;
+			display:block !important;
+	        padding-bottom: 20px !important; 
+			margin-bottom: 20px !important; 
+			width: 46%;
+			
+			@include breakpoint(max-width $bp960) {
+				width: 100%;
+			}
+		}
+	
+	
+		.commerce_payment{
+			width: 46%;
+			border-bottom: 0px solid $color-gray-e !important;
+			display:block !important;
+			padding-bottom: 20px !important; 
+			margin-bottom: 20px !important; 
+			
+			@include breakpoint(max-width $bp960) {
+				width: 100%;
+			}
+		}
+	
+		.checkout-buttons {
+			margin-top: -60% !important;
+			@include breakpoint(max-width $bp960) {
+				margin-top:1% !important;
+			}
+		}
+	
+	}
+	
     .l-content h1 {
       background-color: $color-orange;
       color: $color-white; 
@@ -74,8 +182,45 @@ body.page-checkout {
         width:31%;
       }
     }
+	
+	.commerce_payment{
+	.form-select{display:block;}
+	span{color: #fff;}
+	#edit-commerce-payment-payment-details-credit-card-code{width: 150px;}
+	
+	
+	}
   }
 
+   
+   table.checkout-review {
+   
+	 
+	  tr {td
+	  {@include rem(font-size,14px)	  }
+	  .first-name, .last-name{font-weight:700;}
+	  }
+	  .pane-title td {
+	    font-weight: 100;
+		padding: 0px;
+	    padding-top: 30px;
+		font-family:$sr;
+		color:$color-orange;
+		@include rem(font-size,16px);
+		border-top: 1px solid rgb(238, 238, 238);
+margin-top: 30px !important;
+display: block;
+       }
+
+      tr {
+	    background: $color-white;
+	    
+		td{
+	      padding: 0px;
+        }
+      }
+    }
+	
   table.views-table {
     background: $color-white;
     color: $color-gray-3;
@@ -88,6 +233,8 @@ body.page-checkout {
       td {
         background: $color-white;
         padding: 25px 25px 25px 0;
+		
+		@include rem(font-size,14px);
       }
     }
 
@@ -120,14 +267,15 @@ body.page-checkout {
   .commerce-order-handler-area-order-total {
     .commerce-price-formatted-components{
 	   .component-title{
-	     @include rem(font-size,14px);
+	     @include rem(font-size,14px) ;
 	    }
+	   .component-total{@include rem(font-size,14px) ;}
 	}
 	
   }
 
   label{
-	@include rem(font-size,12px);
+	@include rem(font-size,14px);
 	color:$color-black;
 	margin-bottom: 5px;
   }  
@@ -149,6 +297,7 @@ body.page-checkout {
    div.form-item{
      float: none;
 	 margin-right: 0px;
+	 
    }
 	
   }
@@ -225,8 +374,8 @@ body.page-checkout {
   
   .checkout-buttons.form-wrapper{
 	  #edit-continue{
-		background: $color-orange !important;
-		border: 2px solid $color-orange !important;
+		background: $color-black !important;
+		border: 2px solid $color-black !important;
 		color: $color-white !important;
 		clear: both;
 	    /*font-size: 0.875rem;*/
@@ -244,8 +393,8 @@ body.page-checkout {
 	  }
 	
 	  #edit-continue:hover{
-		background: $color-black !important;
-		color: $color-orange!important;
+		background: $color-white !important;
+		color: $color-black!important;
 	  }
 	
 	  .fieldset{
@@ -284,7 +433,7 @@ body.page-checkout {
        }
 	   
        #edit-cancel:hover,#edit-back:hover{
-         background: $color-orange;
+         background: $color-black;
 	     color: $color-white;
        }
 	
@@ -327,8 +476,10 @@ body.page-checkout {
 	{
 		color:$color-orange;
 		font-family: $sr;
+		font-weight:700;
 		@include rem(font-size, 16px);
 		margin-bottom: 20px;
+		
     }
 	
 }
@@ -413,13 +564,20 @@ body.page-cart {
 	  width: 100%;
 	  
 	  .pane-data-full{
-	    padding: 0px;	
+	    padding: 0px;
+			label {
+				@include rem(font-size, 14px);
+				
+				
+			}		
       }
 	  
 	  .pane-title td {
-	    font-weight: 400;
+	    font-weight: 100;
 		padding: 0px;
 	    padding-top: 30px;
+		font-family:$sr;
+		color:$color-orange;
        }
 
       tr {

@@ -192,6 +192,6 @@ body.node-type-product-display .l-main .l-content .node .main-content .images-en
 	width:auto!important;
 }
 
-body.node-type-product-display .views-field-field-product-image img, body.node-type-product-display .views-field-title{
-	width:90%;
+body.node-type-product-display .l-region--content-bottom .views-field-field-product-image img, body.node-type-product-display .l-region--content-bottom .views-field-title{
+	width:90%!important;
 }

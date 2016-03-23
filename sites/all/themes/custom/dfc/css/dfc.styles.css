@@ -3470,7 +3470,7 @@ body.page-checkout .checkout-completion-message p {
 
 /* line 475, C:/xampp/htdocs/dollar-fishing/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .checkout-help {
-  color: #f1592a;
+  color: #000000;
   font-family: "sanchezregular", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;

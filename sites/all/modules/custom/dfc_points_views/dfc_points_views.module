@@ -108,6 +108,14 @@ function dfc_points_views_form_alter(&$form, $form_state, $form_id) {
       }
     }
   }
+  if ( $form_id == 'commerce_checkout_form_review' ) {
+    // change Submit to CHECK OUT
+    if( isset( $form['buttons'] ) ) {
+      if ( isset( $form['buttons']['continue'] ) ) {
+        $form['buttons']['continue']['#value'] = t('Check Out');
+      }
+    }
+  }
   //watchdog('dfalt', 'dfc_points_views_form_alter : '. $form_id .' <pre>'. print_r($form,true) .'</pre>');
 }
 

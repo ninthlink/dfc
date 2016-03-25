@@ -109,15 +109,23 @@ function dfc_user_blocks_markup_wrapper($markup, $attributes = NULL, $tag = 'div
 function dfc_user_blocks_init() {
   if ( arg(0) == 'user' ) {
     if ( arg(2) == 'edit' ) {
-      $options = array();
-      // with password resets like /user/#/edit?pass-reset-token=sometoken
-      if ( isset( $_GET['pass-reset-token'] ) ) {
-        $options['query'] = array(
-          'pass-reset-token' => $_GET['pass-reset-token']
-        );
+      // redirect /user/#/edit to just /user, UNLESS $user is admin?!
+      if ( user_access( 'administer users' ) == false ) {
+        $options = array();
+        // with password resets like /user/#/edit?pass-reset-token=sometoken
+        if ( isset( $_GET['pass-reset-token'] ) ) {
+          $options['query'] = array(
+            'pass-reset-token' => $_GET['pass-reset-token']
+          );
+          drupal_goto( 'user/'. arg(1), $options );
+        } else {
+          global $user;
+          if ( $user->uid > 0 ) {
+            // in this case, not admin user, not password reset, logged in,
+            drupal_goto( 'user/'. $user->uid );
+          }
+        }
       }
-      
-      drupal_goto( 'user/'. arg(1), $options );
     }
     if ( arg(2) == 'order' ) {
       // redirect 'order' to 'orders'

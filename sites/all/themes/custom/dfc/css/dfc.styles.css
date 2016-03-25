@@ -3393,8 +3393,8 @@ body.page-checkout .commerce_coupon .form-submit:hover {
 
 /* line 398, C:/xampp/htdocs/dfc/sites/all/themes/custom/dfc/sass/components/_page-checkout.scss */
 body.page-checkout .checkout-buttons.form-wrapper #edit-continue {
-  background: #000000 !important;
-  border: 2px solid #000000 !important;
+  background: #f1592a !important;
+  border: 2px solid #f1592a !important;
   color: #ffffff !important;
   clear: both;
   /*font-size: 0.875rem;*/

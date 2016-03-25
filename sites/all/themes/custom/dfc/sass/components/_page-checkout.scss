@@ -23,33 +23,31 @@ body.page-checkout {
 	.l-content #commerce-checkout-form-review{
 	
 		.cart_contents{
-			width: 46%;
+			width: 100%;
 			border-bottom: 1px solid $color-gray-e !important;
 			display:block !important; 
-			float: right;
+			float: none;
 			padding-bottom: 20px !important; 
 			margin-bottom: 20px !important; 
-			.field--commerce-order-total{
+			.field--commerce-order-total {
 				width: 94% !important;
 			}
 	
-			@include breakpoint(max-width $bp960) {
-					float: none; 
-					width: 100%; 
-					
+			@include breakpoint($bp-desk) {
+        float: right; 
+        width: 46%;
 			}
-	
 		}
 	
 		.account {
-			width: 46%;
+			width: 100%;
 			border-bottom: 1px solid $color-gray-e !important;
 			padding-bottom: 20px !important; 
 			margin-bottom: 20px !important; 
 			display:block !important; 
 	        
-			 @include breakpoint(max-width $bp960) {
-				width: 100%;
+			 @include breakpoint($bp-desk) {
+				width: 46%;
 			}
 		}
 	
@@ -58,7 +56,7 @@ body.page-checkout {
 			display:block !important;
 			margin-bottom: 20px !important; 
 			padding-bottom: 20px !important; 
-			width: 46%;
+			width: 100%;
 	
 			.first-name{
 				font-weight:700 !important;
@@ -68,8 +66,8 @@ body.page-checkout {
 				font-weight:700 !important;
 			}
 			
-			@include breakpoint(max-width $bp960) {
-				width: 100%;
+			@include breakpoint($bp-desk) {
+				width: 46%;
 			}
 		}
 	
@@ -79,7 +77,7 @@ body.page-checkout {
 			display:block !important;
 			margin-bottom: 20px !important; 
 			padding-bottom: 20px !important; 
-			width: 46%;
+			width: 100%;
 			
 			.first-name {
 				font-weight:700 !important;
@@ -89,39 +87,49 @@ body.page-checkout {
 				font-weight:700 !important;
 			}
 	
-			@include breakpoint(max-width $bp960) {
-				width: 100%;
+			@include breakpoint($bp-desk) {
+				width: 46%;
 			}
 		}
 	
 		.commerce_userpoints_discount {
 			border-bottom: 1px solid $color-gray-e !important;
 			display:block !important;
-	        padding-bottom: 20px !important; 
+	    padding-bottom: 20px !important; 
 			margin-bottom: 20px !important; 
-			width: 46%;
+			width: 100%;
 			
-			@include breakpoint(max-width $bp960) {
-				width: 100%;
+			@include breakpoint($bp-desk) {
+				width: 46%;
+			}
+		}
+	
+		.commerce_coupon {
+			display:block !important;
+			width: 100%;
+	    padding-bottom: 20px !important; 
+			margin-bottom: 20px !important; 
+			
+			@include breakpoint($bp-desk) {
+				width: 46%;
 			}
 		}
 	
 	
 		.commerce_payment{
-			width: 46%;
+			width: 100%;
 			border-bottom: 0px solid $color-gray-e !important;
 			display:block !important;
 			padding-bottom: 20px !important; 
 			margin-bottom: 20px !important; 
 			
 			clear: none;
-			float: left;
+			float: none;
 			
-			@include breakpoint(max-width $bp767) {
-				width: 100% !important;
+			@include breakpoint($bp-desk) {
+				width: 46%;
+        float: left;
 			}
-			
-			
 		}
 	
 		.checkout-buttons {
@@ -134,7 +142,7 @@ body.page-checkout {
 			@include breakpoint(min-width 768px) {
 				@include breakpoint(max-width 1024px) {
 					margin-top:30px !important;
-				}			
+				}
 			}
 		}
 	
@@ -195,13 +203,15 @@ body.page-checkout {
       }
     }
 	
-	.commerce_payment{
-	.form-select{display:block;}
-	span{color: #fff;}
-	#edit-commerce-payment-payment-details-credit-card-code{width: 150px;}
-	
-	
-	}
+    .commerce_payment{
+      .form-select{
+        display: inline;
+        width: auto;
+      }
+      #edit-commerce-payment-payment-details-credit-card-code{
+        width: 150px;
+      }
+    }
   }
 
    

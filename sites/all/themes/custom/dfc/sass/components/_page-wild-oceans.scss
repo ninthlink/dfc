@@ -84,23 +84,25 @@ body.section-wild-oceans {
 			display: block;
 			float: none;
 			margin: 0 auto;
-			max-width: 1140px;
+			/*max-width: 1140px;*/
 		}
   
 		.block__title {
-			background:#363636; 
+			background:#363636;
 			margin-top:60px; 
 			margin-bottom: 0px;
             text-transform:uppercase;			
 		}
 
 		.owl-item { 
+		   
+			/*margin-right:5px !important;*/
 			background:$color-black;
-			margin: 0px 23px !important;
-			max-width: 338px !important;
+			/*margin: 0px 23px !important;*/
+			/*max-width: 338px !important;*/
 			@include breakpoint($bp-tab) {
-				max-width: 348px;
-				margin: 0 16px;
+				/*max-width: 348px;*/
+				/*margin: 0 16px;*/
 			}
 		}
 		

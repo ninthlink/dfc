@@ -74,12 +74,14 @@ function add_double_monthly_giveaway_clock(&$block){
     ->range(0, 1);
 
   $prize_result = $prize_query->execute();
-    
+  
   if(isset($prize_result['node'])) {
     $prize_nids = array_keys($prize_result['node']);
     $prize_nid = reset($prize_nids);
     $prize = node_load($prize_nid);
-    $end_date = date("Y/m/01", strtotime('+1 month'));
+    $end_date = date( 'Y/m/d', strtotime('first day of next month') );
+    //$last_month = date( 'Y-m-01 00:00:00', strtotime('first day of last month') );
+    
     $block['content'] = '<div class="countdown-block-month-1"><div class="countdown-text-month-1">';
     $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
     $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date .' -1 day')) .' at 11:59pm (PST)</div></div>';
@@ -88,6 +90,11 @@ function add_double_monthly_giveaway_clock(&$block){
     $block['content'] .= '<div class="countdown-title">'.t('Current Giveaway Ends:').'</div>';
     $block['content'] .= '<div class="countdown-date">'.date("l, F j, Y", strtotime($end_date .' -1 day')) .' at 11:59pm (PST)</div></div>';
     $block['content'] .= add_giveaway_clock($end_date, 'month-2').'</div>';
+    /*
+    if ( function_exists('watchdog') ) {
+      watchdog('pchk', 'end_date = '. $end_date .' : last mo = '. $last_month .' : prize = <pre>'. print_r($prize,true) .'</pre>');
+    }
+    */
   }
 }
 
@@ -270,7 +277,8 @@ function dfc_convert_points_cron(){
   
   //monthly chores: monthly giveaways and convert points
   $cur_month = date('n');
-  $last_month = date('Y-m-01 00:00:00', strtotime('-1 month'));
+  //$last_month = date('Y-m-01 00:00:00', strtotime('-1 month'));
+  $last_month = date( 'Y-m-01 00:00:00', strtotime('first day of last month') );
   $points_converted_month = variable_get('points_coverted_month', 0);
   if($points_converted_month <> $cur_month){
     //find giveaway winners
@@ -280,4 +288,3 @@ function dfc_convert_points_cron(){
     variable_set('points_coverted_month', $cur_month);
   }
 }
-?>
